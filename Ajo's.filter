@@ -509,7 +509,7 @@ Show
 
 #Tier 6
 #These are worth less than or equal to 1c and generally should remain hidden.
-Show
+Hide
     BaseType "Atziri's Arsenal" "Dialla's Subjugation" "Earth Drinker" "Emperor's Luck" "Glimmer of Hope" "Harmony of Souls" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Merciless Armament" "No Traces" "The Admirer" "The Aesthete" "The Body" "The Cacophony" "The Cataclysm" "The Demoness" "The Formless Sea" "The Garish Power" "The Harvester" "The Insatiable" "The One With All" "The Pact" "The Penitent" "The Rite of Elements" "The Road to Power" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Wrath" "Treasure Hunter" "Vinia's Token" "Blessing of God" "The Realm" "The Beast" "Blind Venture" "Blind Venture" "The Forsaken" "The Lord in Black" "Lysah's Respite" "The Pack Leader" "Boundless" "Call to the First Ones" "Forbidden Power" "Gemcutter's Promise" "Hope" "Hubris" "Rain Tempter" "The Arena Champion" "The Conduit" "The Darkest Dream" "The Drunken Aristocrat" "Tranquillity" "Volatile Power" "Loyalty" "The Gemcutter" "The Surgeon" "The Explorer" "The Mercenary" "The Oath" "The Poet" "The Sun" "The Fathomless Depths" "Three Voices" "Three Faces in the Dark" "Rain of Chaos" "The Gladiator" "The Blazing Fire" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Cartographer's Delight" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Gift of the Gemling Queen" "Grave Knowledge" "Hunter's Resolve" "Light and Truth" "Might is Right" "Mitts" "Prosperity" "Rats" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "The Battle Born" "The Betrayal" "The Calling" "The Carrion Crow" "The Catalyst" "The Coming Storm" "The Deceiver" "The Doppelganger" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Fox" "The Gambler" "The Gentleman" "The Incantation" "The Inoculated" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Puzzle" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Summoner" "The Tower" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "The Wolverine" "The Lich" "Thunderous Skies" "Turn the Other Cheek" "Her Mask" "Lantador's Lost Love" "The Hermit"
     Class "Divination Card"
 	SetTextColor 0 0 0
@@ -1291,7 +1291,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1300,7 +1300,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Body Armour"
@@ -1328,7 +1328,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1337,7 +1337,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Body Armour"
@@ -1365,7 +1365,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel < 60
     Rarity = Rare
@@ -1374,7 +1374,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel < 60
     Rarity = Rare
 	Class "Body Armour"
@@ -1415,7 +1415,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1424,7 +1424,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Helmets"
@@ -1433,7 +1433,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1442,7 +1442,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Helmets"
@@ -1483,7 +1483,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1492,7 +1492,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Gloves"
@@ -1501,7 +1501,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1510,7 +1510,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Gloves"
@@ -1551,7 +1551,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1560,7 +1560,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Boots"
@@ -1569,7 +1569,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1578,7 +1578,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Boots"
@@ -1623,7 +1623,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1633,7 +1633,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Height = 3
@@ -1643,7 +1643,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1653,7 +1653,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Height = 3
@@ -1718,7 +1718,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1726,7 +1726,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
     SetBorderColor 30 144 255
@@ -1751,7 +1751,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1759,7 +1759,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     SetBorderColor 255 255 119
