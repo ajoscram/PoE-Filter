@@ -621,7 +621,7 @@ Show
 #Atlas Strategy Map
 #Use this Show section only if you shaped your atlas a certain way and want map(s) highlighted.
 #For instance here I am running Shaped Moon Temple and set it's color to light blue.
-Show
+Hide
     ShapedMap True
     BaseType "Jungle Valley Map"
     Class "Maps"
@@ -645,7 +645,7 @@ Show
 	PlayEffect Red
 
 #Shaped Red Maps
-Show
+Hide
     ShapedMap True
     MapTier >= 11
 	Class "Maps"
@@ -653,11 +653,11 @@ Show
     SetBackgroundColor 240 80 80
     SetBorderColor 0 0 0
 	SetFontSize 40
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Red Temp
+	#MinimapIcon 1 Red Hexagon
+	#PlayEffect Red Temp
 
 #Shaped Yellow Maps
-Show
+Hide
     ShapedMap True
     MapTier >= 6
 	Class "Maps"
@@ -665,30 +665,30 @@ Show
     SetBackgroundColor 255 255 119
     SetBorderColor 0 0 0
 	SetFontSize 40
-	MinimapIcon 1 Yellow Hexagon
-	PlayEffect Yellow Temp
+	#MinimapIcon 1 Yellow Hexagon
+	#PlayEffect Yellow Temp
 
 #White Maps
 #This list should be set to Hide later on in the league if you have good layout maps listed above.
-Show
+Hide
     MapTier <= 5
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 255
     SetBorderColor 0 0 0
 	SetFontSize 40
-	MinimapIcon 2 White Hexagon
+	#MinimapIcon 2 White Hexagon
 
 #Yellow Maps
 #This list should be set to Hide later on in the league if you have good layout maps listed above.
-Show
+Hide
     MapTier <= 10
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 119
     SetBorderColor 0 0 0
 	SetFontSize 40
-	MinimapIcon 2 Yellow Hexagon
+	#MinimapIcon 2 Yellow Hexagon
 
 #Red Maps
 Show
@@ -1041,14 +1041,14 @@ Hide
 #Icon Color: None
 
 #Rare jewels
-Show
+Hide
     Rarity = Rare
     Class "Jewel"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
 #Magic or lower
-Show
+Hide
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0
@@ -1149,7 +1149,7 @@ Show
 	SetFontSize 40
 
 #Chromatics
-Show
+Hide
     SocketGroup RGB
 	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBackgroundColor 37 97 30
@@ -1157,7 +1157,7 @@ Show
 	SetFontSize 40
 
 #Miscellaneous
-Show
+Hide
 	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBorderColor 0 0 0
 	SetFontSize 40
