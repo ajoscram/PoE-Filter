@@ -1,0 +1,534 @@
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# Section: Maps
+
+Show
+    Class "Labyrinth Item" "Labyrinth Trinket"
+    SetTextColor 50 230 100
+
+Show
+    Class "Map Fragments" "Labyrinth Map Item"
+    SetTextColor 0 0 0
+    SetBackgroundColor 50 230 100
+    SetBorderColor 0 0 0
+
+Show
+    Rarity = Unique
+    Class "Maps"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 165 0
+    SetBorderColor 0 0 0
+    PlayAlertSound 1 79
+
+#Disabled Block Start
+#Show
+#    Class "Maps"
+#    SetTextColor 255 255 255
+#    SetBackgroundColor 97 97 212
+#    SetBorderColor 255 255 255
+#    SetFontSize 40
+#    PlayAlertSound 15 80
+#Disabled Block End
+
+Show
+    Class "Maps"
+    BaseType "Lair of the Hydra Map" "Pit of the Chimera Map" "Maze of the Minotaur Map" "Forge of the Phoenix Map" "Vaal Temple Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 144 255
+    SetBorderColor 0 0 0
+    PlayAlertSound 15 80
+
+Show
+    ShapedMap True
+    Class "Maps"
+    BaseType "Mausoleum Map" "Fields Map" "Jungle Valley Map" "Phantasmagoria Map" "Academy Map" "Thicket Map" "Wharf Map" "Ashen Wood Map" "Atoll Map" "Cemetery Map" "Underground Sea Map" "Tribunal Map" "Coral Ruins Map" "Lava Chamber Map" "Residence Map" "Ramparts Map" "Dunes Map" "Bone Crypt Map" "Underground River Map" "Gardens Map" "Arachnid Nest Map" "Bazaar Map" "Laboratory Map" "Infested Valley Map" "Overgrown Ruin Map" "Vaal Pyramid Map" "Geode Map" "Armoury Map" "Courtyard Map" "Mud Geyser Map" "Shore Map" "Tropical Island Map" "Mineral Pools Map" "Moon Temple Map" "Sepulchre Map" "Tower Map" "Waste Pool Map" "Plateau Map" "Estuary Map" "Vault Map" "Temple Map" "Arena Map" "Museum Map" "Scriptorium Map" "Siege Map" "Shipyard Map" "Belfry Map" "Arachnid Tomb Map" "Wasteland Map" "Precinct Map" "Bog Map" "Pier Map" "Cursed Crypt Map" "Orchard Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 237 81 81
+    SetBorderColor 0 0 0
+
+Show
+    Class "Maps"
+    BaseType "Mausoleum Map" "Fields Map" "Jungle Valley Map" "Phantasmagoria Map" "Academy Map" "Thicket Map" "Wharf Map" "Ashen Wood Map" "Atoll Map" "Cemetery Map" "Underground Sea Map" "Tribunal Map" "Coral Ruins Map" "Lava Chamber Map" "Residence Map" "Ramparts Map" "Dunes Map" "Bone Crypt Map" "Underground River Map" "Gardens Map" "Arachnid Nest Map" "Bazaar Map" "Laboratory Map" "Infested Valley Map" "Overgrown Ruin Map" "Vaal Pyramid Map" "Geode Map" "Armoury Map" "Courtyard Map" "Mud Geyser Map" "Shore Map" "Tropical Island Map" "Mineral Pools Map" "Moon Temple Map" "Sepulchre Map" "Tower Map" "Waste Pool Map" "Plateau Map" "Estuary Map" "Vault Map" "Temple Map" "Arena Map" "Museum Map" "Scriptorium Map" "Siege Map" "Shipyard Map" "Belfry Map" "Arachnid Tomb Map" "Wasteland Map" "Precinct Map" "Bog Map" "Pier Map" "Cursed Crypt Map" "Orchard Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 119
+    SetBorderColor 0 0 0
+
+Show
+    ShapedMap True
+    Class "Maps"
+    BaseType "Lookout Map" "Beach Map" "Graveyard Map" "Dungeon Map" "Alleyways Map" "Pen Map" "Desert Map" "Arid Lake Map" "Flooded Mine Map" "Marshes Map" "Iceberg Map" "Cage Map" "Springs Map" "Excavation Map" "Leyline Map" "Peninsula Map" "Port Map" "Burial Chambers Map" "Cells Map" "Arcade Map" "City Square Map" "Relic Chambers Map" "Courthouse Map" "Strand Map" "Chateau Map" "Grotto Map" "Gorge Map" "Volcano Map" "Lighthouse Map" "Canyon Map" "Conservatory Map" "Sulphur Vents Map" "Haunted Mansion Map" "Maze Map" "Channel Map" "Toxic Sewer Map" "Ancient City Map" "Ivory Temple Map" "Spider Lair Map" "Barrows Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 119
+    SetBorderColor 0 0 0
+
+Show
+    Class "Maps"
+    BaseType "Lookout Map" "Beach Map" "Graveyard Map" "Dungeon Map" "Alleyways Map" "Pen Map" "Desert Map" "Arid Lake Map" "Flooded Mine Map" "Marshes Map" "Iceberg Map" "Cage Map" "Springs Map" "Excavation Map" "Leyline Map" "Peninsula Map" "Port Map" "Burial Chambers Map" "Cells Map" "Arcade Map" "City Square Map" "Relic Chambers Map" "Courthouse Map" "Strand Map" "Chateau Map" "Grotto Map" "Gorge Map" "Volcano Map" "Lighthouse Map" "Canyon Map" "Conservatory Map" "Sulphur Vents Map" "Haunted Mansion Map" "Maze Map" "Channel Map" "Toxic Sewer Map" "Ancient City Map" "Ivory Temple Map" "Spider Lair Map" "Barrows Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+
+Show
+    Class "Maps"
+    BaseType "Promenade Map" "Lair Map" "Colonnade Map" "Primordial Pool Map" "Spider Forest Map" "Coves Map" "Waterways Map" "Factory Map" "Mesa Map" "Pit Map" "Defiled Cathedral Map" "Summit Map" "Overgrown Shrine Map" "Castle Ruins Map" "Crystal Ore Map" "Villa Map" "Torture Chamber Map" "Necropolis Map" "Racecourse Map" "Caldera Map" "Ghetto Map" "Park Map" "Malformation Map" "Terrace Map" "Shrine Map" "Arsenal Map" "Desert Spring Map" "Core Map" "Colosseum Map" "Acid Lakes Map" "Dark Forest Map" "Crimson Temple Map" "Plaza Map" "Dig Map" "Palace Map" "Lava Lake Map" "Basilica Map" "Sunken City Map" "Reef Map" "Carcass Map"
+    SetTextColor 0 0 0
+    SetBackgroundColor 237 81 81
+    SetBorderColor 0 0 0
+
+Show
+    Class "Maps"
+    SetTextColor 0 0 0
+    SetBackgroundColor 210 0 220
+    SetBorderColor 0 0 0
+    PlayAlertSound 15 80
+
+# Section: Essences
+
+Show
+    BaseType "Remnant of Corruption"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    PlayAlertSound 8 100
+
+Show
+    BaseType "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"
+    SetTextColor 255 0 0
+
+# Section: Shards
+
+Show
+    BaseType "Mirror Shard"
+    SetTextColor 255 255 255
+    SetBorderColor 210 0 0
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+Show
+    BaseType "Exalted Shard"
+    SetTextColor 170 158 130
+    SetBorderColor 210 0 0
+    SetFontSize 45
+    PlayAlertSound 8 100
+
+Show
+    BaseType "Binding Shard" "Engineer's Shard" "Horizon Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard"
+    SetTextColor 170 158 130
+    SetBorderColor 30 144 255
+    SetFontSize 34
+
+Show
+    BaseType "Chaos Shard" "Regal Shard"
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetFontSize 34
+
+Show
+    BaseType "Alchemy Shard" "Alteration Shard"
+    SetTextColor 170 158 130
+    SetFontSize 34
+
+Hide
+    BaseType "Transmutation Shard"
+    SetTextColor 170 158 130
+    SetFontSize 34
+
+# Section: Currency
+
+Show
+    BaseType "Mirror of Kalandra" "Eternal Orb" "Exalted Orb"
+    SetTextColor 255 255 255
+    SetBorderColor 210 0 0
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+Show
+    BaseType "Apprentice Cartographer's Sextant" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Regal Orb" "Divine Orb" "Blessed Orb"
+    SetTextColor 170 158 130
+    SetBorderColor 210 0 0
+    SetFontSize 38
+    PlayAlertSound 8 100
+
+Show
+    BaseType "Jeweller's Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel" "Glassblower's Bauble"
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetFontSize 38
+    PlayAlertSound 2 100
+
+Show
+    Class "Currency"
+    BaseType "Splinter of Tul"
+    SetTextColor 170 158 130
+    SetBorderColor 255 255 255
+    SetFontSize 38
+
+Show
+    Class "Currency"
+    BaseType "Splinter of Esh"
+    SetTextColor 170 158 130
+    SetBorderColor 0 0 255
+    SetFontSize 38
+
+Show
+    Class "Currency"
+    BaseType "Splinter of Xoph"
+    SetTextColor 170 158 130
+    SetBorderColor 255 0 0
+    SetFontSize 38
+
+Show
+    Class "Currency"
+    BaseType "Splinter of Chayula"
+    SetTextColor 170 158 130
+    SetBorderColor 188 4 196
+    SetFontSize 38
+
+Show
+    Class "Currency"
+    BaseType "Splinter of Uul-Netol"
+    SetTextColor 170 158 130
+    SetBorderColor 255 255 0
+    SetFontSize 38
+
+Hide
+    Class "Currency"
+    BaseType "Scroll of Wisdom" "Portal Scroll"
+    SetTextColor 170 158 130
+    SetFontSize 34
+
+Show
+    Class "Currency"
+    SetTextColor 170 158 130
+    SetFontSize 34
+
+# Section: Jewels
+
+Show
+    Rarity = Rare
+    Class "Jewel"
+
+Show
+    Rarity = Magic
+    Class "Jewel"
+
+# Section: Uniques
+
+Show
+    Rarity = Unique
+    SetTextColor 255 165 0
+    PlayAlertSound 1 100
+
+# Section: Rares
+
+Show
+    LinkedSockets = 6
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetTextColor 255 255 119
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 255
+    SetFontSize 40
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetTextColor 255 255 119
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
+    SocketGroup "RGB"
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetTextColor 255 255 119
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
+    LinkedSockets = 6
+    ItemLevel >= 84
+    Rarity = Rare
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 255
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    ItemLevel >= 84
+    Rarity = Rare
+    SetBackgroundColor 19 19 255
+    SetBorderColor 255 255 255
+
+Show
+    SocketGroup "RGB"
+    ItemLevel >= 84
+    Rarity = Rare
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 255
+
+Show
+    ItemLevel >= 84
+    Rarity = Rare
+    SetBorderColor 255 255 255
+
+Show
+    LinkedSockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBackgroundColor 255 0 0
+    SetBorderColor 30 144 255
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBackgroundColor 19 19 156
+    SetBorderColor 30 144 255
+
+Show
+    SocketGroup "RGB"
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBackgroundColor 37 97 30
+    SetBorderColor 30 144 255
+
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBorderColor 30 144 255
+
+Show
+    LinkedSockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 119
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 119
+
+Show
+    SocketGroup "RGB"
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 119
+
+Show
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBorderColor 255 255 119
+
+Show
+    LinkedSockets = 6
+    Rarity = Rare
+    SetBackgroundColor 255 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    Rarity = Rare
+    SetBackgroundColor 19 19 156
+    SetBorderColor 0 0 0
+
+Show
+    SocketGroup "RGB"
+    Rarity = Rare
+    SetBackgroundColor 37 97 30
+    SetBorderColor 0 0 0
+
+Show
+    Rarity = Rare
+
+# Section: Flasks
+
+Show
+    Quality = 20
+    Class "Mana Flasks" "Hybrid Flasks" "Critical Utility Flasks" "Utility Flasks" "Life Flasks"
+    SetTextColor 184 218 242
+    SetBorderColor 184 218 242
+
+Show
+    ItemLevel <= 60
+    Class "Critical Utility Flasks" "Utility Flasks"
+    SetTextColor 184 218 242
+
+# Section: Gems
+
+# Vaal Gems
+Show
+    Corrupted True
+    Class "Active Skill Gems" "Support Skill Gems"
+    SetBorderColor 210 0 0
+
+Show
+    Class "Active Skill Gems" "Support Skill Gems"
+    BaseType "Empower Support" "Enhance Support" "Enlighten Support"
+    SetBorderColor 27 162 155
+    PlayAlertSound 6 79
+
+Show
+    Class "Active Skill Gems" "Support Skill Gems"
+    BaseType "Added Chaos Damage Support" "Detonate Mines" "Portal"
+
+Show
+    Quality = 20
+    Class "Active Skill Gems" "Support Skill Gems"
+    SetFontSize 40
+    PlayAlertSound 6 79
+
+Show
+    Quality >= 15
+    Class "Active Skill Gems" "Support Skill Gems"
+
+# Section: Normal and Magic Items
+
+Show
+    LinkedSockets = 6
+    ItemLevel >= 84
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 255
+    SetFontSize 40
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    ItemLevel >= 84
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Hide
+    SocketGroup "RGB"
+    ItemLevel >= 84
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Hide
+    ItemLevel >= 84
+    Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
+    BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
+    LinkedSockets = 6
+    SetBackgroundColor 255 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound 6 80
+
+Show
+    Sockets = 6
+    SetBackgroundColor 19 19 156
+    SetBorderColor 0 0 0
+
+Hide
+    SocketGroup "RGB"
+    SetBackgroundColor 37 97 30
+    SetBorderColor 0 0 0
+
+Show
+    LinkedSockets >= 4
+    ItemLevel < 60
+    SetBackgroundColor 99 93 93
+
+# Section: Belts, Rings, Amulets
+
+Show
+    ItemLevel >= 84
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    SetBorderColor 255 255 255
+    SetFontSize 45
+    PlayAlertSound 4 100
+
+Show
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    SetFontSize 45
+    PlayAlertSound 4 100
+
+Show
+    ItemLevel >= 84
+    Class "Belts" "Rings" "Amulets"
+    SetBorderColor 255 255 255
+
+# Section: Divination Cards
+
+Show
+    Class "Divination Card"
+    BaseType "House of Mirrors" "The Doctor" "The Fiend" "The Immortal"
+    SetTextColor 30 144 255
+    SetBorderColor 255 0 0
+    SetFontSize 45
+    PlayAlertSound 12 79
+
+Show
+    Class "Divination Card"
+    BaseType "The Wolven King's Bite" "Hunter's Reward" "The Queen" "Abandoned Wealth" "The Wolf" "The Last One Standing" "The Formless Sea" "The Dragon's Heart" "The Spark and the Flame" "The Brittle Emperor" "The Valkyrie" "Wealth and Power" "Pride Before the Fall" "The King's Heart" "The Artist" "The Standoff" "The Wind" "The Saint's Treasure" "The Thaumaturgist" "Last Hope" "The Hunger" "Heterochromia" "The Celestial Justicar" "The Sephirot" "Time-Lost Relic" "The Vast" "Chaotic Disposition" "The Enlightened" "The Valley of Steel Boxes" "The Cursed King" "The Hoarder"
+    SetTextColor 30 144 255
+    SetBorderColor 30 144 255
+    SetFontSize 40
+    PlayAlertSound 5 79
+
+Hide
+    Class "Divination Card"
+    BaseType "Emperor's Luck" "Doedre's Madness" "Her Mask" "Lantador's Lost Love" "Shard of Fate" "The Endurance" "The Gambler" "The Inoculated" "The Lover" "The Metalsmith's Gift" "Struck by Lightning" "The King's Blade" "The Carrion Crow" "The Rabid Rhoa" "The Incantation"
+    SetTextColor 30 144 255
+
+Show
+    Class "Divination Card"
+    SetTextColor 30 144 255
+
+# Section: Miscellaneous
+
+Show
+    BaseType "Fishing Rod"
+    SetBorderColor 255 165 0
+    PlayAlertSound 10 79
+
+# These items are needed for the Chisel recipe.
+Show
+    Quality >= 10
+    Rarity = Normal
+    BaseType "Gavel" "Stone Hammer" "Rock Breaker"
+    SetBorderColor 170 158 130
+
+Show
+    Class "Quest Items"
+
+# Section: Hide Default
+
+# Hide everything else.
+Hide
+
