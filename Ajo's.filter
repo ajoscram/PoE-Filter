@@ -1363,7 +1363,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1372,7 +1372,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Body Armour"
@@ -1400,7 +1400,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1409,7 +1409,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Body Armour"
@@ -1487,7 +1487,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1496,7 +1496,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Helmets"
@@ -1505,7 +1505,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1514,7 +1514,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Helmets"
@@ -1555,7 +1555,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1564,7 +1564,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Gloves"
@@ -1573,7 +1573,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1582,7 +1582,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Gloves"
@@ -1623,7 +1623,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1632,7 +1632,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Boots"
@@ -1641,7 +1641,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1650,7 +1650,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Boots"
@@ -1695,7 +1695,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1705,7 +1705,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Height = 3
@@ -1715,7 +1715,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1725,7 +1725,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Height = 3
@@ -1790,7 +1790,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1798,7 +1798,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
     SetBorderColor 30 144 255
@@ -1823,7 +1823,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1831,7 +1831,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     SetBorderColor 255 255 119
