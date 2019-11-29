@@ -131,28 +131,47 @@ Hide
     SetTextColor 170 158 130
     SetFontSize 34
 
-# Section: Currency
+# Section: Breach
 
 Show
-    BaseType "Mirror of Kalandra" "Eternal Orb" "Exalted Orb"
+    Class "Currency"
+    BaseType "Blessing of Tul"
     SetTextColor 255 255 255
-    SetBorderColor 210 0 0
-    SetFontSize 45
-    PlayAlertSound 5 100
+    SetBorderColor 255 255 255
+    SetFontSize 40
+    PlayAlertSound 12 80
 
 Show
-    BaseType "Apprentice Cartographer's Sextant" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Regal Orb" "Divine Orb" "Blessed Orb"
-    SetTextColor 170 158 130
-    SetBorderColor 210 0 0
-    SetFontSize 38
-    PlayAlertSound 8 100
+    Class "Currency"
+    BaseType "Blessing of Esh"
+    SetTextColor 0 0 255
+    SetBorderColor 0 0 255
+    SetFontSize 40
+    PlayAlertSound 12 80
 
 Show
-    BaseType "Jeweller's Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel" "Glassblower's Bauble"
-    SetTextColor 170 158 130
-    SetBorderColor 170 158 130
-    SetFontSize 38
-    PlayAlertSound 2 100
+    Class "Currency"
+    BaseType "Blessing of Xoph"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetFontSize 40
+    PlayAlertSound 12 80
+
+Show
+    Class "Currency"
+    BaseType "Blessing of Chayula"
+    SetTextColor 189 41 189
+    SetBorderColor 189 41 189
+    SetFontSize 40
+    PlayAlertSound 12 80
+
+Show
+    Class "Currency"
+    BaseType "Blessing of Uul-Netol"
+    SetTextColor 255 255 0
+    SetBorderColor 255 255 0
+    SetFontSize 40
+    PlayAlertSound 12 80
 
 Show
     Class "Currency"
@@ -189,7 +208,43 @@ Show
     SetBorderColor 255 255 0
     SetFontSize 38
 
-Hide
+# Section: Currency
+
+Show
+    BaseType "Mirror of Kalandra" "Eternal Orb" "Exalted Orb"
+    SetTextColor 255 255 255
+    SetBorderColor 210 0 0
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+Show
+    BaseType "Apprentice Cartographer's Sextant" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Regal Orb" "Divine Orb" "Blessed Orb"
+    SetTextColor 170 158 130
+    SetBorderColor 210 0 0
+    SetFontSize 38
+    PlayAlertSound 8 100
+
+Show
+    BaseType "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Cartographer's Chisel"
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetFontSize 38
+    PlayAlertSound 2 100
+
+Show
+    Class "Currency"
+    BaseType "Prophecy"
+    SetTextColor 255 255 255
+    SetBackgroundColor 128 0 128
+    SetFontSize 34
+
+Show
+    Class "Currency"
+    BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Jeweller's Orb"
+    SetTextColor 170 158 130
+    SetFontSize 34
+
+Show
     Class "Currency"
     BaseType "Scroll of Wisdom" "Portal Scroll"
     SetTextColor 170 158 130
@@ -216,6 +271,44 @@ Show
     Rarity = Unique
     SetTextColor 255 165 0
     PlayAlertSound 1 100
+
+# Section: Belts, Rings, Amulets
+
+Show
+    ItemLevel >= 84
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    SetBorderColor 255 255 255
+    SetFontSize 45
+    PlayAlertSound 4 100
+
+Show
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    SetFontSize 45
+    PlayAlertSound 4 100
+
+Show
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Belts" "Rings" "Amulets"
+    SetBorderColor 255 255 255
+
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Belts" "Rings" "Amulets"
+    SetBorderColor 30 144 255
+
+Show
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Belts" "Rings" "Amulets"
+    SetBorderColor 255 255 119
+
+Show
+    Rarity = Normal
+    BaseType "Gold Amulet" "Leather Belt"
+    SetTextColor 0 0 0
+    SetBackgroundColor 200 200 200
 
 # Section: Rares
 
@@ -427,7 +520,7 @@ Show
     SetBorderColor 255 255 255
     SetFontSize 40
 
-Hide
+Show
     SocketGroup "RGB"
     ItemLevel >= 84
     Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
@@ -436,7 +529,7 @@ Hide
     SetBorderColor 255 255 255
     SetFontSize 40
 
-Hide
+Show
     ItemLevel >= 84
     Class "Body Armours" "Shields" "Boots" "Gloves" "Helmets" "Bows" "Claws" "Daggers" "One Hand Maces" "Sceptres" "Two Hand Maces" "Staves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "One Hand Axes" "Two Hand Axes"
     BaseType "Astral Plate" "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Teak Round Shield" "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots" "Two-Toned Boots" "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Bone Helmet" "Vaal Mask" "Deicide Mask" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Ambusher" "Ezomyte Dagger" "Platinum Kris" "Imperial Skean" "Demon Dagger" "Sai" "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernarch" "Gavel" "Void Sceptre" "Sambar Sceptre" "Piledriver" "Meatgrinder" "Coronal Maul" "Maelström Staff" "Imperial Staff" "Eclipse Staff" "Legion Sword" "Vaal Blade" "Eternal Sword" "Tiger Hook" "Vaal Rapier" "Jewelled Foil" "Pecoraro" "Dragoon Sword" "Harpy Rapier" "Vaal Greatsword" "Lion Sword" "Exquisite Blade" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Vaal Axe" "Fleshripper"
@@ -454,7 +547,7 @@ Show
     SetBackgroundColor 19 19 156
     SetBorderColor 0 0 0
 
-Hide
+Show
     SocketGroup "RGB"
     SetBackgroundColor 37 97 30
     SetBorderColor 0 0 0
@@ -463,25 +556,6 @@ Show
     LinkedSockets >= 4
     ItemLevel < 60
     SetBackgroundColor 99 93 93
-
-# Section: Belts, Rings, Amulets
-
-Show
-    ItemLevel >= 84
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    SetBorderColor 255 255 255
-    SetFontSize 45
-    PlayAlertSound 4 100
-
-Show
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    SetFontSize 45
-    PlayAlertSound 4 100
-
-Show
-    ItemLevel >= 84
-    Class "Belts" "Rings" "Amulets"
-    SetBorderColor 255 255 255
 
 # Section: Divination Cards
 
