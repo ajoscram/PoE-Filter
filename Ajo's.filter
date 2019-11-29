@@ -37,7 +37,7 @@ Show
 #Tier 3
 #These are worth over 5c and less than or equal to 10c.
 #Show
-#	BaseType ""
+#	BaseType 
 #	SetTextColor 0 0 0
 #	SetBackgroundColor 215 215 0
 #	SetBorderColor 0 0 0
@@ -260,7 +260,6 @@ Show
 #Beam Color: White
 #Beam Color: White
 
-#There is currently no way to differentiate prophecies, so they all go bundled here FeelsBadMan
 Show
 	BaseType "Prophecy"
 	Class "Currency"
@@ -335,7 +334,7 @@ Hide
 
 #These items are invaluably rare.
 Show
-    BaseType "Mirror of Kalandra" "Eternal Orb" 
+    BaseType "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
     Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -449,7 +448,7 @@ Hide
 #Tier 1
 #These are worth 100c or more.
 Show
-    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Beauty Through Death" "The Immortal" "The Wolven King's Bite" "Immortal Resolve"
+    BaseType "House of Mirrors" "The Doctor" "The Fiend" "The Life Thief" "Beauty Through Death" "The Immortal" "The Wolven King's Bite" "Immortal Resolve"
     Class "Divination Card"
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 150 255
@@ -462,7 +461,7 @@ Show
 #Tier 2
 #These are worth more than 50c but less than or equals to 100c.
 Show
-    BaseType "The Spark and the Flame" "Immortal Resolve" "Hunter's Reward" "The Samurai's Eye" "The Mayor" "Abandoned Wealth"
+    BaseType "The Nurse" "The Spark and the Flame" "Immortal Resolve" "Hunter's Reward" "The Samurai's Eye" "The Mayor" "Abandoned Wealth"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 50 150 255
@@ -475,7 +474,7 @@ Show
 #Tier 3
 #These are worth more than 10c but less than or equals to 50c.
 Show
-    BaseType "The Iron Bard" "The Queen" "Pride Before the Fall" "Wealth and Power" "The Dragon's Heart" "The Master" "The Saint's Treasure" "Mawr Blaidd" "The Artist" "The Wolf" "The Endless Darkness" "The Professor" "The Undaunted" "The Valkyrie" "Boon of the First Ones" "The Wind" "The Sephirot" "The Enlightened"
+    BaseType "A Dab of Ink" "The Iron Bard" "The Queen" "Pride Before the Fall" "Wealth and Power" "The Dragon's Heart" "The Master" "The Saint's Treasure" "Mawr Blaidd" "The Artist" "The Wolf" "The Endless Darkness" "The Professor" "The Undaunted" "The Valkyrie" "Boon of the First Ones" "The Wind" "The Sephirot" "The Enlightened"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 40 130 235
@@ -501,7 +500,7 @@ Show
 #Tier 5
 #These are worth more than 1c but less than or equals to 5c.
 Show
-    BaseType "The Valley of Steel Boxes" "Bowyer's Dream" "Chaotic Disposition" "The Hale Heart" "The Polymath" "The Thaumaturgist" "The Void" "The Throne" "The Risk" "Left to Fate" "The Cartographer" "The Dreamer" "The Ethereal" "The Porcupine" "The Undisputed" "The Wilted Rose" "The World Eater" "Lucky Deck" "Rebirth" "The Brittle Emperor" "The Dapper Prodigy" "The Obscured" "The Offering" "The Twilight Moon" "Time-Lost Relic" "Humility" "Last Hope" "Lingering Remnants" "Scholar of the Seas" "The Dark Mage" "The Fletcher" "The Innocent" "The Jeweller's Boon" "The Lion" "The Price of Protection" "The Standoff" "The Warlord" "The Jester" "Emperor of Purity" "The Cursed King" "The Chains that Bind" "The Dreamland" "The Inventor" "The Encroaching Darkness" "The Wretched"
+    BaseType "The Sacrifice" "The Master Artisan" "The Valley of Steel Boxes" "Bowyer's Dream" "Chaotic Disposition" "The Hale Heart" "The Polymath" "The Thaumaturgist" "The Void" "The Throne" "The Risk" "Left to Fate" "The Cartographer" "The Dreamer" "The Ethereal" "The Porcupine" "The Undisputed" "The Wilted Rose" "The World Eater" "Lucky Deck" "Rebirth" "The Brittle Emperor" "The Dapper Prodigy" "The Obscured" "The Offering" "The Twilight Moon" "Time-Lost Relic" "Humility" "Last Hope" "Lingering Remnants" "Scholar of the Seas" "The Dark Mage" "The Fletcher" "The Innocent" "The Jeweller's Boon" "The Lion" "The Price of Protection" "The Standoff" "The Warlord" "The Jester" "Emperor of Purity" "The Cursed King" "The Chains that Bind" "The Dreamland" "The Inventor" "The Encroaching Darkness" "The Wretched"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 20 60 165
@@ -554,7 +553,7 @@ Show
 #Tier 2
 #These are worth between 10 and 100c.
 Show
-	BaseType "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur"
+	BaseType "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -608,10 +607,10 @@ Show
 
 #Atlas Strategy Map
 #Use this Show section only if you shaped your atlas a certain way and want map(s) highlighted.
-#For instance here I am running Shaped Burial Chambers and set it's color to light blue.
+#For instance here I am running Shaped Channel and set it's color to light blue.
 Show
     ShapedMap True
-    BaseType "Burial Chambers Map"
+    BaseType "Channel Map"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 30 155 255
@@ -619,18 +618,6 @@ Show
     SetFontSize 40
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue
-
-#Elder Map
-#The map will be highlighted as the other T16s listed below.
-Show
-    ElderMap True
-	Class "Maps"
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 0 0
-    SetBorderColor 0 0 0
-    SetFontSize 40
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Red
 
 #Tier 16 Maps
 Show
@@ -671,7 +658,7 @@ Show
 #White Maps (Good Layouts)
 #This list is personal preference and should be curated accordingly.
 Show
-    BaseType "Beach Map" "Desert Map" "Iceberg Map" "Burial Chambers Map" "Strand Map" "Gorge Map" "Channel Map" "Toxic Sewer Map" "Spider Lair Map"
+    BaseType "Channel Map" "Atoll Map" "Iceberg Map" "Strand Map" "Spider Lair Map" "Beach Map"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 255
@@ -694,7 +681,7 @@ Show
 #Yellow Maps (Good Layouts)
 #This list is personal preference and should be curated accordingly.
 Show
-    BaseType "Phantasmagoria Map" "Atoll Map" "Lava Chamber Map" "Underground River Map" "Laboratory Map" "Vault Map" "Belfry Map" "Arachnid Tomb Map" "Wasteland Map" "Precinct Map" "Bog Map" "Pier Map" "Cursed Crypt Map" "Orchard Map"
+    BaseType "Phantasmagoria Map" "Toxic Sewer Map" "Underground River Map" "Laboratory Map" "Vault Map"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 119
@@ -931,7 +918,7 @@ Show
 
 #Show every utility flask up to endgame before maps.
 Show
-    ItemLevel <= 67
+    ItemLevel <= 65
 	SetTextColor 0 0 0
     Class "Critical Utility Flasks" "Utility Flasks"
 	SetBackgroundColor 200 230 255
@@ -1044,7 +1031,7 @@ Show
 #Tier 11 (Divine & Eternal)
 Show
 	DropLevel >= 60
-	ItemLevel < 67
+	ItemLevel < 65
 	Class "Flasks"
 	SetTextColor 0 0 0
 	SetBackgroundColor 200 230 255
@@ -1059,7 +1046,6 @@ Hide
 	SetBorderColor 0 0 0
     SetFontSize 32
 
-	
 #JEWELS-----------------------------------------------------------------------------------------------------
 #Base Color: None
 #Beam Color: None
@@ -1073,126 +1059,212 @@ Show
 	SetFontSize 40
 
 #Magic or lower
-Hide
+Show
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SHAPER/ELDER-----------------------------------------------------------------------------------------------
+#VEILED-----------------------------------------------------------------------------------------------------
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
+#Beam Color: None
+#Icon Color: None
+
+#Six Links
+Show
+    LinkedSockets = 6
+	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+
+#Six Sockets
+Show
+    Sockets = 6
+	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Chromatics
+Show
+    SocketGroup RGB
+	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+Show
+	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#SHAPER-----------------------------------------------------------------------------------------------------
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
+#Beam Color: Red
+#Icon Color: Red
+
+#Drop-Only High Level Bases
+Show
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    ShaperItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 300
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
+
+#Six Links
+Show
+    LinkedSockets = 6
+    ShaperItem True
+	SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+
+#Six Sockets
+Show
+    Sockets = 6
+    ShaperItem True
+	SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Chromatics
+Show
+	SocketGroup RGB
+    ShaperItem True
+	SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+Show
+	ShaperItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#ELDER------------------------------------------------------------------------------------------------------
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
+#Beam Color: Blue
+#Icon Color: Blue
+
+#Drop-Only High Level Bases
+Show
+    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    ElderItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 300
+	MinimapIcon 2 Blue Triangle
+	PlayEffect Blue
+
+#Six Links
+Show
+    LinkedSockets = 6
+    ElderItem True
+	SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+
+#Six Sockets
+Show
+    Sockets = 6
+	ElderItem True
+    SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Chromatics
+Show
+    SocketGroup RGB
+	ElderItem True
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+Show
+	ElderItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#RINGS/AMULETS----------------------------------------------------------------------------------------------
 #Base Color: None
-#Beam Color: White / Blue / Yellow
-#Icon Color: White / Blue / Yellow
+#Beam Color: None
+#Icon Color: None
 
-#Rare
-Show
-    ShaperItem True
-	Rarity = Rare
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	MinimapIcon 2 Yellow Triangle
-	PlayEffect Yellow Temp
-	
-Show
-    ElderItem True
-	Rarity = Rare
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	MinimapIcon 2 Yellow Triangle
-	PlayEffect Yellow Temp
-
-#Magic
-Show
-    ShaperItem True
-	Rarity = Magic
-	SetFontSize 40
-	SetBorderColor 0 0 0
-	MinimapIcon 2 Blue Triangle
-	PlayEffect Blue Temp
-	
-Show
-    ElderItem True
-	Rarity = Magic
-	SetFontSize 40
-	SetBorderColor 0 0 0
-	MinimapIcon 2 Blue Triangle
-	PlayEffect Blue Temp
-
-#Normal
-Show
-    ShaperItem True
-	Rarity = Normal
-	SetFontSize 40
-	SetBorderColor 0 0 0
-	MinimapIcon 2 White Triangle
-	PlayEffect White Temp
-	
-Show
-    ElderItem True
-	Rarity = Normal
-	SetFontSize 40
-	SetBorderColor 0 0 0
-	MinimapIcon 2 White Triangle
-	PlayEffect White Temp
-
-#BELTS/RINGS/AMULETS----------------------------------------------------------------------------------------
-#Base Color: None
-#Beam Color: White / Blue / Yellow
-#Icon Color: White / Blue / Yellow
-
-#Drop-only high level bases.
-##Rare
-Show
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    Class "Belts" "Rings" "Amulets"
-	Rarity = Rare
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	MinimapIcon 2 Yellow Triangle
-	PlayEffect Yellow Temp
-##Magic
-Show
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    Class "Belts" "Rings" "Amulets"
-	Rarity = Magic
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	MinimapIcon 2 Blue Triangle
-	PlayEffect Blue Temp
-##Normal
-Show
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-	Class "Belts" "Rings" "Amulets"
-    Rarity = Normal
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	MinimapIcon 2 White Triangle
-	PlayEffect White Temp
-
-#Items for the Regal recipe will have a blue border.
+#iLvl 75+ Rares (Blue border for Regal recipe)
 Show
     ItemLevel >= 75
     Rarity = Rare
-    Class "Belts" "Rings" "Amulets"
+    Class "Rings" "Amulets"
     SetBorderColor 30 144 255
 	SetFontSize 40
 
-#Items for the Chaos recipe will have a yellow border.
+#iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
     ItemLevel >= 60
     Rarity = Rare
-    Class "Belts" "Rings" "Amulets"
+    Class "Rings" "Amulets"
     SetBorderColor 255 255 119
 	SetFontSize 40
 
-#iLvl 59 and less will be shown for levelling.
+#iLvl <60 Rares (Kept for levelling)
 Show
     ItemLevel < 60
 	Rarity = Rare
-    Class "Belts" "Rings" "Amulets"
+    Class "Rings" "Amulets"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Drop-Only High Level Bases
+Show
+    BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
+    Class "Rings" "Amulets"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	
+#BELTS------------------------------------------------------------------------------------------------------
+#Base Color: None
+#Beam Color: None
+#Icon Color: None
+
+#iLvl 75+ Rares (Blue border for Regal recipe)
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Belts"
+    SetBorderColor 30 144 255
+	SetFontSize 40
+
+#iLvl 60-74 Rares (Yellow border for Chaos recipe)
+Show
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Belts"
+    SetBorderColor 255 255 119
+	SetFontSize 40
+
+#iLvl <60 Rares (Kept for levelling)
+Show
+    ItemLevel < 60
+	Rarity = Rare
+    Class "Belts"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Drop-Only High Level Bases
+Show
+    BaseType "Vanguard Belt" "Crystal Belt"
+    Class "Belts"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
 #BODY ARMOURS-----------------------------------------------------------------------------------------------
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
 #Beam Color: None
@@ -1748,7 +1820,14 @@ Hide
     Rarity <= Magic
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40	
+	SetFontSize 40
+##Four / Five Links (Up to the start of act of 5)
+Show
+	LinkedSockets >= 4
+	ItemLevel < 45
+    Rarity <= Magic
+	SetBorderColor 0 0 0
+	SetFontSize 40
 ##Fising Rods (For fun)
 Show
     BaseType "Fishing Rod"
@@ -1761,18 +1840,17 @@ Show
     SetBorderColor 0 0 0
 	SetFontSize 40
 
-
 #CHANCE-----------------------------------------------------------------------------------------------------
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
 
 #Chuck every normal base you want to chance here. For instance here I chose Leather Belts.
-Show
-    Rarity = Normal
-    BaseType "Leather Belt"
-	SetBorderColor 0 0 0
-	SetFontSize 40
+#Show
+#    Rarity = Normal
+#    BaseType "Leather Belt"
+#	SetBorderColor 0 0 0
+#	SetFontSize 40
 
 #-----------------------------------------------------------------------------------------------------------
 #-												H I D E									     		       -
