@@ -474,7 +474,7 @@ Show
 #Tier 3
 #These are worth more than 10c but less than or equals to 50c.
 Show
-    BaseType "A Dab of Ink" "The Iron Bard" "The Queen" "Pride Before the Fall" "Wealth and Power" "The Dragon's Heart" "The Master" "The Saint's Treasure" "Mawr Blaidd" "The Artist" "The Wolf" "The Endless Darkness" "The Professor" "The Undaunted" "The Valkyrie" "Boon of the First Ones" "The Wind" "The Sephirot" "The Enlightened"
+    BaseType "The Seeker" "The Messenger" "The Mad King" "Boon of Justice" "The Journey" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Monochrome" "Dark Temptation" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "A Dab of Ink" "The Iron Bard" "The Queen" "Pride Before the Fall" "Wealth and Power" "The Dragon's Heart" "The Master" "The Saint's Treasure" "Mawr Blaidd" "The Artist" "The Wolf" "The Endless Darkness" "The Professor" "The Undaunted" "The Valkyrie" "Boon of the First Ones" "The Wind" "The Sephirot" "The Enlightened"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 40 130 235
@@ -509,7 +509,7 @@ Show
 
 #Tier 6
 #These are worth less than or equal to 1c and generally should remain hidden.
-Show
+Hide
     BaseType "Atziri's Arsenal" "Dialla's Subjugation" "Earth Drinker" "Emperor's Luck" "Glimmer of Hope" "Harmony of Souls" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Merciless Armament" "No Traces" "The Admirer" "The Aesthete" "The Body" "The Cacophony" "The Cataclysm" "The Demoness" "The Formless Sea" "The Garish Power" "The Harvester" "The Insatiable" "The One With All" "The Pact" "The Penitent" "The Rite of Elements" "The Road to Power" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Wrath" "Treasure Hunter" "Vinia's Token" "Blessing of God" "The Realm" "The Beast" "Blind Venture" "Blind Venture" "The Forsaken" "The Lord in Black" "Lysah's Respite" "The Pack Leader" "Boundless" "Call to the First Ones" "Forbidden Power" "Gemcutter's Promise" "Hope" "Hubris" "Rain Tempter" "The Arena Champion" "The Conduit" "The Darkest Dream" "The Drunken Aristocrat" "Tranquillity" "Volatile Power" "Loyalty" "The Gemcutter" "The Surgeon" "The Explorer" "The Mercenary" "The Oath" "The Poet" "The Sun" "The Fathomless Depths" "Three Voices" "Three Faces in the Dark" "Rain of Chaos" "The Gladiator" "The Blazing Fire" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Cartographer's Delight" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Gift of the Gemling Queen" "Grave Knowledge" "Hunter's Resolve" "Light and Truth" "Might is Right" "Mitts" "Prosperity" "Rats" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "The Battle Born" "The Betrayal" "The Calling" "The Carrion Crow" "The Catalyst" "The Coming Storm" "The Deceiver" "The Doppelganger" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Fox" "The Gambler" "The Gentleman" "The Incantation" "The Inoculated" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Puzzle" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Summoner" "The Tower" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "The Wolverine" "The Lich" "Thunderous Skies" "Turn the Other Cheek" "Her Mask" "Lantador's Lost Love" "The Hermit"
     Class "Divination Card"
 	SetTextColor 0 0 0
@@ -607,10 +607,10 @@ Show
 
 #Atlas Strategy Map
 #Use this Show section only if you shaped your atlas a certain way and want map(s) highlighted.
-#For instance here I am running Shaped Channel and set it's color to light blue.
+#For instance here I am running Shaped Moon Temple and set it's color to light blue.
 Show
     ShapedMap True
-    BaseType "Channel Map"
+    BaseType "Moon Temple"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 30 155 255
@@ -658,7 +658,7 @@ Show
 #White Maps (Good Layouts)
 #This list is personal preference and should be curated accordingly.
 Show
-    BaseType "Channel Map" "Atoll Map" "Iceberg Map" "Strand Map" "Spider Lair Map" "Beach Map"
+    BaseType "Channel Map" "Atoll Map" "Iceberg Map" "Strand Map" "Beach Map" "Ramparts Map"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 255
@@ -681,7 +681,7 @@ Show
 #Yellow Maps (Good Layouts)
 #This list is personal preference and should be curated accordingly.
 Show
-    BaseType "Phantasmagoria Map" "Toxic Sewer Map" "Underground River Map" "Laboratory Map" "Vault Map"
+    BaseType "Lighthouse Map" "Phantasmagoria Map" "Mesa Map" "Toxic Sewer Map" "Waterways Map" "Laboratory Map" "Vault Map"
     Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 255 119
@@ -1065,7 +1065,79 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#VEILED-----------------------------------------------------------------------------------------------------
+#FRACTURED-------------------------------------------------------------------------------------------------
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
+#Beam Color: None
+#Icon Color: None
+
+#Six Links
+Show
+    LinkedSockets = 6
+	FracturedItem True
+	SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+
+#Six Sockets
+Show
+    Sockets = 6
+	FracturedItem True
+	SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Chromatics
+Show
+    SocketGroup RGB
+	FracturedItem True
+	SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+Show
+	FracturedItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#SYNTHESISED-----------------------------------------------------------------------------------------------
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
+#Beam Color: None
+#Icon Color: None
+
+#Six Links
+Show
+    LinkedSockets = 6
+	SynthesisedItem True
+	SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+
+#Six Sockets
+Show
+    Sockets = 6
+	SynthesisedItem True
+	SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Chromatics
+Show
+    SocketGroup RGB
+	SynthesisedItem True
+	SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+Show
+	SynthesisedItem True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	
+#VEILED----------------------------------------------------------------------------------------------------
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
