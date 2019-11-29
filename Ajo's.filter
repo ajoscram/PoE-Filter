@@ -399,7 +399,7 @@ Show
 	SetFontSize 40
 
 #These items should be picked up at the start of the league.
-Show
+Hide
     BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	Class "Currency"
     SetTextColor 0 0 0
@@ -669,7 +669,7 @@ Show
 
 #White Maps
 #This list should be set to Hide later on in the league if you have good layout maps listed above.
-Show
+Hide
     MapTier <= 5
 	Class "Maps"
 	SetTextColor 0 0 0
@@ -1059,7 +1059,7 @@ Show
 	SetFontSize 40
 
 #Magic or lower
-Show
+Hide
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0
@@ -1365,7 +1365,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Chromatics
-Hide
+Show
     SocketGroup RGB
     ItemLevel < 60
     Rarity = Rare
@@ -1374,7 +1374,7 @@ Hide
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Miscellaneous
-Hide
+Show
     ItemLevel < 60
     Rarity = Rare
 	Class "Body Armour"
