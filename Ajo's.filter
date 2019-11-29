@@ -629,8 +629,8 @@ Hide
     SetBackgroundColor 30 155 255
     SetBorderColor 0 0 0
     SetFontSize 40
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	#MinimapIcon 0 Blue Hexagon
+	#PlayEffect Blue
 
 #Tier 16 Maps
 Show
@@ -691,15 +691,15 @@ Hide
 	#MinimapIcon 2 Yellow Hexagon
 
 #Red Maps
-Show
+Hide
     MapTier >= 11
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 237 81 81
     SetBorderColor 0 0 0
 	SetFontSize 40
-	MinimapIcon 2 Red Hexagon
-	PlayEffect Red Temp
+	#MinimapIcon 2 Red Hexagon
+	#PlayEffect Red Temp
 
 #CATCHALL-----------------------------------------------------------------------------------------------------
 #This is here to catch errors. Should never be seen.
@@ -1281,7 +1281,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1290,7 +1290,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Identified True
@@ -1318,7 +1318,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1327,7 +1327,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Identified True
