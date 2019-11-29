@@ -412,7 +412,7 @@ Show
 	SetFontSize 40
 
 #These items should be picked up at the start of the league.
-Show
+Hide
     BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Chance"
 	Class "Currency"
     SetTextColor 0 0 0
