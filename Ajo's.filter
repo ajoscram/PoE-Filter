@@ -108,7 +108,7 @@ Show
 
 #Tier 4
 #These are worth less than or equal to 1c.
-Show
+Hide
 	BaseType "Amber Oil" "Clear Oil" "Sepia Oil" "Verdant Oil"
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -220,7 +220,7 @@ Show
 	PlayEffect Blue
 
 #Tier 4
-Show
+Hide
 	BaseType "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal"
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -229,7 +229,7 @@ Show
 	SetFontSize 40
 
 #Tier 5
-Show
+Hide
 	BaseType "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath"
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -238,7 +238,7 @@ Show
 	SetFontSize 40
 
 #Tier 6
-Show
+Hide
 	BaseType "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe"
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -247,7 +247,7 @@ Show
 	SetFontSize 40
 
 #Tier 7
-Show
+Hide
 	BaseType "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -301,7 +301,7 @@ Show
 	PlayEffect White Temp
 
 #These are for the most part worthless but harmless to show usually.
-Show
+Hide
     BaseType "Chaos Shard" "Binding Shard" "Engineer's Shard" "Horizon Shard"
     Class "Currency"
 	SetTextColor 0 0 0
@@ -310,7 +310,7 @@ Show
 	SetFontSize 40
 
 #These are for the most part worthless.
-Show
+Hide
     BaseType "Regal Shard" "Alchemy Shard" "Alteration Shard"
     Class "Currency"
 	SetTextColor 0 0 0
@@ -395,7 +395,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Potent Chaotic Resonator" "Primitive Chaotic Resonator"
+    BaseType "Perandus Coin" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Potent Chaotic Resonator" "Primitive Chaotic Resonator"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -403,8 +403,8 @@ Show
 	SetFontSize 40
 
 #These items are useful to pick up but should be discontinued if quota is met.
-Show
-	BaseType "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Transmutation" "Primitive Alchemical Resonator" "Potent Alchemical Resonator"
+Hide
+	BaseType "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Primitive Alchemical Resonator" "Potent Alchemical Resonator"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -1411,7 +1411,7 @@ Hide
 #Icon Color: None
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
     Class "Rings" "Amulets"
@@ -1419,7 +1419,7 @@ Show
 	SetFontSize 40
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     Class "Rings" "Amulets"
@@ -1447,7 +1447,7 @@ Show
 #Icon Color: None
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
     Class "Belts"
@@ -1455,7 +1455,7 @@ Show
 	SetFontSize 40
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"
@@ -1503,7 +1503,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1512,7 +1512,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Body Armour"
@@ -1540,7 +1540,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1549,7 +1549,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Body Armour"
@@ -1627,7 +1627,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1636,7 +1636,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Helmets"
@@ -1645,7 +1645,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1654,7 +1654,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Helmets"
@@ -1695,7 +1695,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1704,7 +1704,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Gloves"
@@ -1713,7 +1713,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1722,7 +1722,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Gloves"
@@ -1763,7 +1763,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1772,7 +1772,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Class "Boots"
@@ -1781,7 +1781,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1790,7 +1790,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Class "Boots"
@@ -1835,7 +1835,7 @@ Hide
 
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1845,7 +1845,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
 	Height = 3
@@ -1855,7 +1855,7 @@ Show
 
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1865,7 +1865,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
 	Height = 3
@@ -1930,7 +1930,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1938,7 +1938,7 @@ Show
     SetBorderColor 30 144 255
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 75
     Rarity = Rare
     SetBorderColor 30 144 255
@@ -1963,7 +1963,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Chromatics
-Show
+Hide
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1971,7 +1971,7 @@ Show
     SetBorderColor 255 255 119
 	SetFontSize 40
 ##Miscellaneous
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     SetBorderColor 255 255 119
