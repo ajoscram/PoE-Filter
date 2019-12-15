@@ -1,0 +1,32 @@
+To-Do:
+    Update maps section for shaper/elder maps.
+    Add prophecy tiers.
+    Divide the Fragments and mapping sections in subsections including:
+        Breachstones
+        Emblems
+        Scarabs
+        Miscellaneous
+    Clean up high-level influenced bases section.
+    Support "Atlas Region Upgrade Item"
+
+
+3.9:
+    General Changes:   
+        Chromatic items are now shown until the end of act 5.
+        5-links are now always shown up to end-game before maps instead of up t act 5.
+        Changed tier 2 currency shards' sound to better match their cost.
+        Jeweller's Orb and Perandus Coins were upped one tier.
+        Added blighted maps (somehow missed this on 3.8 lol).
+        Added an extra splinter tier to hide the worthless ones later on in the league.
+        Now atlas-only bases are shown for all items instead of just jewelry. They can be hidden later on in the league if not on SSF.
+        The divination cards section was refactored with less tiers to make it easier to maintain.
+        Some divination cards that were missing were added.
+        Streamlined the fossils, resonators, incubators, oils and incursion vials sections into the normal currency colors to make them more maintainable and readable in game. Future league sub-currencies should follow this trend as well; barring exceptions like splinters.
+    3.9 Changes:
+        Updated the maps section in general for 3.9.
+        Added all divination cards tiered.
+        Changed the old sextant names for the new ones.
+        Addded catalysts.
+        Added the new Exalted Orbs.
+        Added the new fragments.
+        Added Awakened gems.
