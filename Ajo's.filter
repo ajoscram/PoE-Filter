@@ -153,6 +153,7 @@ Show
 Show
 	BaseType "Time-Lost Incubator" "Eldritch Incubator" "Thaumaturge's Incubator" "Obscured Incubator" "Celestial Jeweller's Incubator" "Decadent Incubator" "Foreboding Incubator" "Otherworldly Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Ornate Incubator" "Infused Incubator" "Skittering Incubator" "Mysterious Incubator" "Feral Incubator" "Cartographer's Incubator" "Diviner's Incubator" "Enchanted Incubator" "Fine Incubator" "Fossilised Incubator" "Fragmented Incubator" "Primal Incubator" "Singular Incubator" "Abyssal Incubator" "Gemcutter's Incubator" "Whispering Incubator"
 	Class "Incubator"
+	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -704,7 +705,7 @@ Show
 
 #All "quest" type items are listed here. This includes shaper orbs.
 Show
-    Class "Quest Items" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item"
+    Class "Quest Items" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item" "Atlas Region Upgrade Item"
     SetTextColor 50 230 100
     SetBorderColor 50 230 100
     SetFontSize 40
@@ -1155,25 +1156,25 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SHAPER-----------------------------------------------------------------------------------------------------
+#INFLUENCED-------------------------------------------------------------------------------------------------
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
-#Beam Color: Red
-#Icon Color: Red
+#Beam Color: White
+#Icon Color: White
 
 #Drop-Only High Level Bases
 Show
     BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    ShaperItem True
+    HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	PlayAlertSoundPositional 4 300
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red
+	MinimapIcon 0 White Triangle
+	PlayEffect White
 
 #Six Links
 Show
     LinkedSockets = 6
-    ShaperItem True
+    HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBackgroundColor 255 0 0
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1182,7 +1183,7 @@ Show
 #Six Sockets
 Show
     Sockets = 6
-    ShaperItem True
+    HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBackgroundColor 19 19 156
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1190,60 +1191,14 @@ Show
 #Chromatics
 Show
 	SocketGroup RGB
-    ShaperItem True
+    HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
 #Miscellaneous
 Show
-	ShaperItem True
-	SetBorderColor 0 0 0
-	SetFontSize 40
-
-#ELDER------------------------------------------------------------------------------------------------------
-#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
-#Beam Color: Blue
-#Icon Color: Blue
-
-#Drop-Only High Level Bases
-Show
-    BaseType "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet"
-    ElderItem True
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 4 300
-	MinimapIcon 2 Blue Triangle
-	PlayEffect Blue
-
-#Six Links
-Show
-    LinkedSockets = 6
-    ElderItem True
-	SetBackgroundColor 255 0 0
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 6 100
-
-#Six Sockets
-Show
-    Sockets = 6
-	ElderItem True
-    SetBackgroundColor 19 19 156
-	SetBorderColor 0 0 0
-	SetFontSize 40
-
-#Chromatics
-Show
-    SocketGroup RGB
-	ElderItem True
-    SetBackgroundColor 37 97 30
-	SetBorderColor 0 0 0
-	SetFontSize 40
-
-#Miscellaneous
-Show
-	ElderItem True
+	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
@@ -1420,6 +1375,13 @@ Show
     Class "Rings" "Amulets"
     SetBorderColor 255 255 119
 	SetFontSize 40
+##Magic & Normal
+Show
+    BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
+	Rarity <= Magic
+    Class "Rings" "Amulets"
+	SetFontSize 40
+	SetBorderColor 0 0 0
 
 #Miscellaneous
 ##iLvl 75+ Rares (Blue border for Regal recipe)
@@ -1466,6 +1428,13 @@ Show
     Class "Belts"
     SetBorderColor 255 255 119
 	SetFontSize 40
+##Magic & Normal
+Show
+    BaseType "Vanguard Belt" "Crystal Belt"
+	Rarity <= Magic
+    Class "Belts"
+	SetFontSize 40
+	SetBorderColor 0 0 0
 
 #Miscellaneous
 ##iLvl 75+ Rares (Blue border for Regal recipe)
@@ -1731,6 +1700,24 @@ Show
 	Class "Helmets"
 	SetFontSize 40
 
+#Atlas-Only Magic & Normal
+##Chromatics
+Show
+	BaseType "Bone Helmet"
+    SocketGroup RGB
+    Rarity <= Magic
+	Class "Helmets"
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	BaseType "Bone Helmet"
+    Rarity <= Magic
+	Class "Helmets"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
 #Magic & Normal
 ##Chromatics
 Hide
@@ -1839,6 +1826,24 @@ Show
 	Class "Gloves"
 	SetFontSize 40
 
+#Atlas-Only Magic & Normal
+##Chromatics
+Show
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+    SocketGroup RGB
+    Rarity <= Magic
+	Class "Gloves"
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+    Rarity <= Magic
+	Class "Gloves"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
 #Magic & Normal
 ##Chromatics
 Hide
@@ -1944,6 +1949,24 @@ Show
 Show
     ItemLevel < 60
     Rarity = Rare
+	Class "Boots"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Atlas-Only Magic & Normal
+##Chromatics
+Show
+	BaseType "Two-Toned Boots"
+    SocketGroup RGB
+    Rarity <= Magic
+	Class "Boots"
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	BaseType "Two-Toned Boots"
+    Rarity <= Magic
 	Class "Boots"
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -2065,6 +2088,26 @@ Show
 Show
     ItemLevel < 60
     Rarity = Rare
+	Height = 3
+	Width = 1
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Atlas-Only Magic & Normal
+##Chromatics
+Show
+	BaseType "Convoking Wand"
+    SocketGroup RGB
+    Rarity <= Magic
+	Height = 3
+	Width = 1
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	BaseType "Convoking Wand"
+    Rarity <= Magic
 	Height = 3
 	Width = 1
 	SetBorderColor 0 0 0

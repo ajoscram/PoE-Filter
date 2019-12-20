@@ -6,19 +6,26 @@ To-Do:
         Emblems
         Scarabs
         Miscellaneous
-    Clean up high-level influenced bases section.
-    Support "Atlas Region Upgrade Item"
+    Expand the Influenced base types section with the best bases/levels per influence.
+    Merge the Shaper / Elder sections into a HasInfluence section.
 
+3.9b:
+    General Changes:
+        Fixed the letter color on incubators from grey to black.
+        Added Atlas-only base types to the Normal & Magic sections of gear to show them when they have those rarities.
+    3.9 Changes:
+        Support for "Atlas Region Upgrade Item" (Watchstones) was added.
+        Support for new influenced types was added and it was streamlined into a single section alongside Shaper and Elder influence.
 
 3.9:
     General Changes:   
         Chromatic items are now shown until the end of act 5.
-        5-links are now always shown up to end-game before maps instead of up t act 5.
+        5-links are now always shown up to end-game before maps instead of up to act 5.
         Changed tier 2 currency shards' sound to better match their cost.
         Jeweller's Orb and Perandus Coins were upped one tier.
         Added blighted maps (somehow missed this on 3.8 lol).
         Added an extra splinter tier to hide the worthless ones later on in the league.
-        Now atlas-only bases are shown for all items instead of just jewelry. They can be hidden later on in the league if not on SSF.
+        Now atlas-only bases are shown for all items instead of just jewellery. They can be hidden later on in the league if not on SSF.
         The divination cards section was refactored with less tiers to make it easier to maintain.
         Some divination cards that were missing were added.
         Streamlined the fossils, resonators, incubators, oils and incursion vials sections into the normal currency colors to make them more maintainable and readable in game. Future league sub-currencies should follow this trend as well; barring exceptions like splinters.
