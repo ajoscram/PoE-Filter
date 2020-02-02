@@ -1,2 +1,4 @@
 pictures/
+*.bat
 sounds.filter
+generated/

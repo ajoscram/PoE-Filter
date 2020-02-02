@@ -1,16 +1,104 @@
-#-----------------------------------------------------------------------------------------------------------
-#-												C U R R E N C Y											   -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#				          _                                    _       ______ _ _ _
+#				    /\   (_)                                  ( )     |  ____(_) | |
+#				   /  \   _  ___  ___  ___ _ __ __ _ _ __ ___ |/ ___  | |__   _| | |_ ___ _ __
+#				  / /\ \ | |/ _ \/ __|/ __| '__/ _` | '_ ` _ \  / __| |  __| | | | __/ _ \ '__|
+# 				 / ____ \| | (_) \__ \ (__| | | (_| | | | | | | \__ \ | |    | | | ||  __/ |
+#				/_/    \_\ |\___/|___/\___|_|  \__,_|_| |_| |_| |___/ |_|    |_|_|\__\___|_|
+#				        _/ |
+#				       |__/                                                                    	  version 3.9c
+#-------------------------------------------------------------------------------------------------------------
+#
+#	Check out the latest release at: https://github.com/ajoscram/PoE-Filter/releases/latest
+#	GitHub repo for this filter: https://github.com/ajoscram/PoE-Filter
+#
+#	This filter uses PoE Filter Generator meta-syntax rules.
+#	To learn more about them visit: https://github.com/ajoscram/PoE-Filter-Generator/wiki
+#
+#	.chaos:
+#		Bodies	 	shows only iLvl 60+ rare body armours.
+#		Helmets 	shows only iLvl 60+ rare helmets.
+#		Gloves	 	shows only iLvl 60+ rare gloves.
+#		Boots 		shows only iLvl 60+ rare boots.
+#		Weapons		shows only iLvl 60+ rare 3x1 weapons.
+#
+#	.strict:
+#		0 			Shows everything.
+#		1 			Hides start of the league currency.
+#		2 			Hides currency that becomes obsolete once quota is met and atlas bases.
+#		3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
+#		4 			Hides yellow maps, rare jewels, rare jewellry and ID'ed rares.
+#
+#	.econ:			fra, oil, inc, sca, fos, div, pro
+#
+#	I hope you love the filter!
+#
+#-------------------------------------------------------------------------------------------------------------
+#													I N D E X											[0000]
+#-------------------------------------------------------------------------------------------------------------
+#
+#	CTRL+F the IDs below to jump to any super-section in the document.
+#
+#	[0000]	Index
+#	-------------------------
+#	[0100]	Currency
+#	[0111]		Catalysts
+#	[0110]		Vials
+#	[0109]		Fossils
+#	[0108]		Resonators
+#	[0107]		Oils
+#	[0106]		Incubators
+#	[0105]		Splinters
+#	[0104]		Prophecies
+#	[0103]		Essences
+#	[0102]		Shards
+#	[0101]		Miscellaneous
+#	-------------------------
+#	[0200]	Divination Cards
+#	-------------------------
+#	[0300]	Mapping
+#	[0303]		Scarabs
+#	[0302]		Fragments
+#	[0301]		Maps
+#	-------------------------
+#	[0400]	Quests
+#	[0402]		Unique Watchstones
+#	[0401]		Miscellaneous
+#	-------------------------
+#	[0500]	Gems
+#	-------------------------
+#	[0600]	Equipment
+#	[0617]		Uniques
+#	[0616]		Flasks
+#	[0615]		Jewels
+#	[0614]		Fractured
+#	[0613]		Synthesized
+#	[0612]		Veiled
+#	[0611]		Influenced
+#	[0610]		Identified
+#	[0609]		Rings/Amulets
+#	[0608]		Belts
+#	[0607]		Body Armours
+#	[0606]		Helmets
+#	[0605]		Gloves
+#	[0604]		Boots
+#	[0603]		3x1 Items
+#	[0602]		Miscellaneous
+#	[0601]		Chance
+#
+#-------------------------------------------------------------------------------------------------------------
+#												C U R R E N C Y											[0100]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Circle
 
-#CATALYSTS--------------------------------------------------------------------------------------------------
+#CATALYSTS----------------------------------------------------------------------------------------------[0111]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
-	
+
 #Tiered as a chaos orb kinda item for the time being.
 Show
-	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst"
+	BaseType == "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -20,14 +108,14 @@ Show
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#VIALS------------------------------------------------------------------------------------------------------
+#VIALS--------------------------------------------------------------------------------------------------[0110]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
-	
+
 #No clue how to tier these since information on their rarity is scarce.
 Show
-	BaseType "Vial of Dominance" "Vial of Summoning" "Vial of Awakening" "Vial of the Ritual" "Vial of Fate" "Vial of Consequence" "Vial of Transcendence" "Vial of the Ghost" "Vial of Sacrifice"
+	BaseType == "Vial of Dominance" "Vial of Summoning" "Vial of Awakening" "Vial of the Ritual" "Vial of Fate" "Vial of Consequence" "Vial of Transcendence" "Vial of the Ghost" "Vial of Sacrifice"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -37,16 +125,31 @@ Show
 	MinimapIcon 1 White Circle
 	PlayEffect White
 
-#FOSSILS----------------------------------------------------------------------------------------------------
+#FOSSILS------------------------------------------------------------------------------------------------[0109]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
 #Tier 1
-#These are worth over 50c.
+#These are worth 100c or more.
 Show
-	BaseType "Fractured Fossil" "Faceted Fossil" "Hollow Fossil" "Glyphic Fossil" "Tangled Fossil" "Bloodstained Fossil"
+#.econ: fos 100
+	BaseType == "Faceted Fossil" "Fractured Fossil"
 	Class "Currency"
+	SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 300
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+#Tier 2
+#These are worth more than or equal to 10c and less than 100c.
+Show
+#.econ: fos 10 100
+	BaseType == "Hollow Fossil" "Bloodstained Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Serrated Fossil" "Gilded Fossil" "Enchanted Fossil"
+    Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 0 0
@@ -54,12 +157,13 @@ Show
 	PlayAlertSoundPositional 6 100
 	MinimapIcon 1 White Circle
 	PlayEffect White
-	
-#Tier 2
-#These are less than or equal to 50c.
+
+#Tier 3
+#These are more than or equal to 1c and less than 10c.
 Show
-	BaseType "Gilded Fossil" "Lucent Fossil" "Sanctified Fossil" "Dense Fossil" "Pristine Fossil" "Corroded Fossil" "Aetheric Fossil" "Jagged Fossil" "Serrated Fossil" "Perfect Fossil" "Enchanted Fossil" "Prismatic Fossil" "Encrusted Fossil" "Bound Fossil" "Metallic Fossil" "Scorched Fossil" "Frigid Fossil" "Aberrant Fossil" "Shuddering Fossil"
-	Class "Currency"
+#.econ: fos 1 10
+	BaseType == "Perfect Fossil" "Prismatic Fossil" "Aetheric Fossil" "Corroded Fossil" "Bound Fossil" "Shuddering Fossil" "Pristine Fossil" "Dense Fossil" "Encrusted Fossil" "Jagged Fossil" "Frigid Fossil"
+    Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
 	SetBorderColor 0 0 0
@@ -68,15 +172,26 @@ Show
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#RESONATORS-------------------------------------------------------------------------------------------------
+#Tier 4
+#These are less than 1c.
+Show
+#.econ: fos 0 1
+	BaseType == "Aberrant Fossil" "Scorched Fossil" "Metallic Fossil" "Lucent Fossil"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 170 155 130
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#RESONATORS---------------------------------------------------------------------------------------------[0108]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
-	
+
 #Tier 1
 #These are rare.
 Show
-	BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+	BaseType == "Prime Alchemical Resonator" "Prime Chaotic Resonator"
 	Class "Delve Stackable Socketable Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -85,11 +200,11 @@ Show
 	PlayAlertSoundPositional 6 100
 	MinimapIcon 1 White Circle
 	PlayEffect White
-	
+
 #Tier 2
 #These are not rare.
 Show
-	BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator"
+	BaseType == "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator"
 	Class "Delve Stackable Socketable Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -99,47 +214,17 @@ Show
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#OILS----------------------------------------------------------------------------------------------------------
+#OILS---------------------------------------------------------------------------------------------------[0107]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
 #Tier 1
-#These are worth over 50c.
+#These are worth more than or equal to 10c and less than 100c.
 Show
-	BaseType "Opalescent Oil" "Silver Oil" "Golden Oil"
-	Class "Currency"
-	SetTextColor 0 0 0
-	SetBackgroundColor 255 255 255
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 6 100
-	MinimapIcon 1 White Circle
-	PlayEffect White
-	
-#Tier 2
-#These are worth over 10c and less or equal to 50c.
-Show
-	BaseType "Black Oil" "Crimson Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Amber Oil" "Clear Oil" "Sepia Oil" "Verdant Oil"
-	Class "Currency"
-	SetTextColor 0 0 0
-	SetBackgroundColor 255 240 210
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 13 50
-	MinimapIcon 2 White Circle
-	PlayEffect White Temp
-
-#INCUBATORS----------------------------------------------------------------------------------------------------
-#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
-#Beam Color: White
-#Icon Color: White
-	
-#Tier 1
-#These are worth over 20c.
-Show
-	BaseType "Geomancer's Incubator" 
-	Class "Incubator"
+#.econ: oil 10
+	BaseType == "Golden Oil" "Silver Oil" "Opalescent Oil"
+    Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 0 0
@@ -149,10 +234,11 @@ Show
 	PlayEffect White
 
 #Tier 2
-#These are worth over 1c and less than or equal to 20c.
+#These are more than or equal to 1c and less than 10c.
 Show
-	BaseType "Time-Lost Incubator" "Eldritch Incubator" "Thaumaturge's Incubator" "Obscured Incubator" "Celestial Jeweller's Incubator" "Decadent Incubator" "Foreboding Incubator" "Otherworldly Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Ornate Incubator" "Infused Incubator" "Skittering Incubator" "Mysterious Incubator" "Feral Incubator" "Cartographer's Incubator" "Diviner's Incubator" "Enchanted Incubator" "Fine Incubator" "Fossilised Incubator" "Fragmented Incubator" "Primal Incubator" "Singular Incubator" "Abyssal Incubator" "Gemcutter's Incubator" "Whispering Incubator"
-	Class "Incubator"
+#.econ: oil 1 10
+	BaseType == "Crimson Oil" "Black Oil" "Violet Oil" "Sepia Oil" "Teal Oil" "Azure Oil"
+    Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
 	SetBorderColor 0 0 0
@@ -161,14 +247,58 @@ Show
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#SPLINTERS--------------------------------------------------------------------------------------------------
+#Tier 3
+#These are less than 1c.
+Show
+#.econ: oil 0 1 .strict: 2
+	BaseType == "Amber Oil" "Verdant Oil" "Clear Oil"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 170 155 130
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#INCUBATORS---------------------------------------------------------------------------------------------[0106]
+#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
+#Beam Color: White
+#Icon Color: White
+
+#Tier 1
+#These are worth more than or equal to 10c.
+Show
+#.econ: inc 10
+	BaseType == "Fine Incubator" "Gemcutter's Incubator" "Geomancer's Incubator" "Time-Lost Incubator" "Thaumaturge's Incubator" "Foreboding Incubator" "Diviner's Incubator"
+    Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 255 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+	MinimapIcon 1 White Circle
+	PlayEffect White
+
+#Tier 2
+#These are less than 10c.
+Show
+#.econ: inc 0 10
+	BaseType == "Otherworldly Incubator" "Ornate Incubator" "Skittering Incubator" "Fossilised Incubator" "Celestial Jeweller's Incubator" "Obscured Incubator" "Whispering Incubator" "Singular Incubator" "Primal Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Abyssal Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
+    Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 240 210
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 13 50
+	MinimapIcon 2 White Circle
+	PlayEffect White Temp
+
+#SPLINTERS----------------------------------------------------------------------------------------------[0105]
 #Base Color: White (255 255 255) / Dark Purple (50 0 90)
 #Beam Color: White
 #Icon Color: White
 
 #These splinters are worth a couple chaos.
 Show
-    BaseType "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
+    BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 50 0 90
@@ -177,37 +307,80 @@ Show
 
 #These splinters should be hidden later on in the league.
 Show
-    BaseType "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+#.strict: 2
+    BaseType == "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 50 0 90
     SetBorderColor 0 0 0
     SetFontSize 40
 
-#PROPHECIES-------------------------------------------------------------------------------------------------
-#Base Color: Purple (165 0 255)
+#PROPHECIES---------------------------------------------------------------------------------------------[0104]
+#Base Color: Purple (90 0 140)
 #Beam Color: White
-#Beam Color: White
+#Icon Color: White
 
+#Tier 1
+#These are worth 100c or more.
 Show
-	BaseType "Prophecy"
+#.econ: pro 100
+	Prophecy == "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Song of the Sekhema"
 	Class "Currency"
+	SetTextColor 255 0 0
+	SetBackgroundColor 163 0 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 5 300
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+#Tier 2
+#These are worth more than or equal to 10c and less than 100c.
+Show
+#.econ: pro 10 100
+	Prophecy == "Path of Betrayal" "A Dishonourable Death" "Lost in the Pages" "The Mentor" "The Bowstring's Music" "A Master Seeks Help" "A Prodigious Hand" "Blind Faith" "Cleanser of Sins" "The King's Path" "Darktongue's Shriek" "Monstrous Treasure" "Vaal Winds"
+    Class "Currency"
 	SetTextColor 255 255 255
-	SetBackgroundColor 165 0 255
+	SetBackgroundColor 163 0 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 200
+	MinimapIcon 1 White Circle
+	PlayEffect White
+
+#Tier 3
+#These are more than or equal to 1c and less than 10c.
+Show
+#.econ: pro 1 10
+	Prophecy == "Pools of Wealth" "A Master Seeks Help" "Fire and Ice" "Storm on the Horizon" "The Malevolent Witch" "Twice Enchanted" "Fire and Brimstone" "The Great Leader of the North" "The Jeweller's Touch" "The Ambitious Bandit III" "Thaumaturgical History IV" "The Apex Predator" "The Misunderstood Queen" "The Unbreathing Queen V" "The Karui Rebellion" "The Bishop's Legacy" "Beyond Sight IV" "Echoes of Witchcraft" "Fire, Wood and Stone" "Flesh of the Beast" "The Feral Lord V" "Wind and Thunder" "A Master Seeks Help" "The Servant's Heart" "Visions of the Drowned" "The Eagle's Cry" "Unbearable Whispers V" "The Mysterious Gift" "Severed Limbs" "A Master Seeks Help" "The Great Mind of the North" "The Forgotten Soldiers" "Ancient Doom" "The Ward's Ward" "A Call into the Void" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Baptism by Death" "Beyond Sight III" "Blood in the Eyes" "Bountiful Traps" "Crushing Squall" "Custodians of Silence" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Dying Cry" "Erasmus' Gift" "Fire from the Sky" "Ice from Above" "Kalandra's Craft" "Lightning Falls" "Plague of Frogs" "Plague of Rats" "Possessed Foe" "Resistant to Change" "Thaumaturgical History II" "The Beautiful Guide" "The Brutal Enforcer" "The Child of Lunaris" "The Flayed Man" "The Forgotten Garrison" "The Fortune Teller's Collection" "The Hollow Pledge" "The Hungering Swarm" "The Lost Maps" "The Lost Undying" "The Nest" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Silverwood" "The Snuffed Flame" "The Soulless Beast" "The Sword King's Passion" "The Undead Storm" "The Vanguard" "The Warmongers IV" "The Watcher's Watcher" "Unbearable Whispers IV" "Unnatural Energy" "Vital Transformation" "Weeping Death" "Agony at Dusk" "Cold Blooded Fury" "Dance of Steel" "The Storm Spire" "Last of the Wildmen" "End of the Light" "A Rift in Time" "Cold Greed" "The Nightmare Awakens" "A Vision of Ice and Fire" "Crimson Hues" "Battle Hardened" "A Master Seeks Help"
+    Class "Currency"
+	SetTextColor 255 255 255
+	SetBackgroundColor 90 0 140
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	PlayAlertSoundPositional 13 100
-	MinimapIcon 0 White Circle
+	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#ESSENCES---------------------------------------------------------------------------------------------------
+#Tier 4
+#These are less than 1c.
+Show
+#.econ: pro 0 1 .strict: 2
+	Prophecy == "A Forest of False Idols" "Pleasure and Pain" "Power Magnified" "The King and the Brambles" "The Dreaded Rhoa" "Burning Dread" "Defiled in the Sceptre" "Mouth of Horrors" "The Twins" "Living Fires" "The Plaguemaw IV" "The Warmongers I" "Faith Exhumed" "The Cursed Choir" "The Hardened Armour" "Blood of the Betrayed" "In the Grasp of Corruption" "Waiting in Ambush" "Beyond Sight II" "Heart of the Fire" "Nature's Resilience" "The Beginning and the End" "The Sinner's Stone" "Hunter's Lesson" "Dark Instincts" "Sun's Punishment" "Day of Sacrifice III" "Graceful Flames" "Thaumaturgical History I" "Deadly Rivalry III" "The Scout" "Winter's Mournful Melodies" "Trapped in the Tower" "Gilded Within" "Deadly Rivalry II" "Overflowing Riches" "Beyond Sight I" "The Last Watch" "The Warmongers II" "The Dream Trial" "The Walking Mountain" "Fallow At Last" "Greed's Folly" "An Unseen Peril" "Black Devotion" "The Feral Lord IV" "Undead Uprising" "The Wealthy Exile" "A Whispered Prayer" "Fear's Wide Reach" "The Flow of Energy" "The Trembling Earth" "The Feral Lord III" "From The Void" "Holding the Bridge" "Roth's Legacy" "The Warmongers III" "Storm on the Reef" "Reforged Bonds" "The Invader" "Erased from Memory" "Mysterious Invaders" "Strong as a Bull" "The Corrupt" "The Unbreathing Queen IV" "The Sharpened Blade" "Forceful Exorcism" "Hidden Reinforcements" "Rebirth" "The Ambitious Bandit I" "Touched by the Wind" "Ending the Torment" "The Alchemist" "The Unbreathing Queen I" "The Lady in Black" "The Petrified" "Thaumaturgical History III" "Nemesis of Greed" "The Dreamer's Dream" "The Unbreathing Queen II" "Smothering Tendrils" "The Brothers of Necromancy" "The Fall of an Empire" "The Singular Spirit" "Abnormal Effulgence" "A Regal Death" "The Queen's Vaults" "Unbearable Whispers I" "Heavy Blows" "Blinding Light" "From Death Springs Life" "The Four Feral Exiles" "The Stockkeeper" "A Firm Foothold" "The Plaguemaw III" "Unbearable Whispers II" "A Valuable Combination" "Notched Flesh" "The Bloody Flowers Redux" "Hidden Vaal Pathways" "The God of Misfortune" "Vaal Invasion" "Soil, Worms and Blood" "Against the Tide" "Lasting Impressions" "The Ambitious Bandit II" "The Feral Lord I" "The Feral Lord II" "The Plaguemaw I" "The Plaguemaw II" "The Unbreathing Queen III" "The Undead Brutes" "Unbearable Whispers III" "Golden Touch" "Risen Blood"
+	Class "Currency"
+	SetTextColor 255 255 255
+	SetBackgroundColor 49 0 76
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#ESSENCES-----------------------------------------------------------------------------------------------[0103]
 #Base Color: Turquoise (0 255 255)
 #Beam Color: Blue
 #Icon Color: Blue
 
 #Tier S
 Show
-	BaseType "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity"
+	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity"
 	Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 0 255 255
@@ -219,7 +392,7 @@ Show
 
 #Tier 1
 Show
-	BaseType "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal"
+	BaseType == "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 255 255
@@ -228,10 +401,10 @@ Show
 	PlayAlertSoundPositional 7 100
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
-	
+
 #Tier 2
 Show
-	BaseType "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal"
+	BaseType == "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 225 225
@@ -243,7 +416,7 @@ Show
 
 #Tier 3
 Show
-	BaseType "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal"
+	BaseType == "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 195 195
@@ -254,7 +427,8 @@ Show
 
 #Tier 4
 Show
-	BaseType "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal"
+#.strict: 2
+	BaseType == "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 165 165
@@ -263,7 +437,8 @@ Show
 
 #Tier 5
 Show
-	BaseType "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath"
+#.strict: 2
+	BaseType == "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 135 135
@@ -272,7 +447,8 @@ Show
 
 #Tier 6
 Show
-	BaseType "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe"
+#.strict: 2
+	BaseType == "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 105 105
@@ -281,21 +457,22 @@ Show
 
 #Tier 7
 Show
-	BaseType "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"
+#.strict: 2
+	BaseType == "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 0 75 75
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SHARDS-----------------------------------------------------------------------------------------------------
+#SHARDS-------------------------------------------------------------------------------------------------[0102]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
 #This is an invaluable shard.
 Show
-    BaseType "Mirror Shard"
+    BaseType == "Mirror Shard"
     Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -307,7 +484,7 @@ Show
 
 #These usually go for one to a couple chaos.
 Show
-    BaseType "Exalted Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard"
+    BaseType == "Exalted Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -319,7 +496,8 @@ Show
 
 #These are for the most part worthless but harmless to show usually.
 Show
-    BaseType "Chaos Shard" "Binding Shard" "Engineer's Shard" "Horizon Shard"
+#.strict: 1
+    BaseType == "Chaos Shard" "Binding Shard" "Engineer's Shard" "Horizon Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -328,7 +506,8 @@ Show
 
 #These are for the most part worthless.
 Show
-    BaseType "Regal Shard" "Alchemy Shard" "Alteration Shard"
+#.strict: 1
+    BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 80 70 60
@@ -337,21 +516,21 @@ Show
 
 #These are trash.
 Hide
-    BaseType "Transmutation Shard" "Scroll Fragment"
+    BaseType == "Transmutation Shard" "Scroll Fragment"
     Class "Currency"
 	SetTextColor 0 0 0
     SetBackgroundColor 60 55 50
 	SetBorderColor 0 0 0
     SetFontSize 30
 
-#MISCELLANEOUS----------------------------------------------------------------------------------------------
+#MISCELLANEOUS------------------------------------------------------------------------------------------[0101]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
 #These items are invaluably rare.
 Show
-    BaseType "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
+    BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
     Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -361,9 +540,9 @@ Show
 	MinimapIcon 0 White Circle
 	PlayEffect White
 
-#These items are usually about 100c.
+#These items are usually mote than 100c.
 Show
-	BaseType "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
+	BaseType == "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
 	Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -375,7 +554,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -387,7 +566,7 @@ Show
 
 #These items are usually about one to a couple chaos.
 Show
-    BaseType "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Simple Sextant" "Prime Sextant" "Awakened Sextant"
+    BaseType == "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Simple Sextant" "Prime Sextant" "Awakened Sextant"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -399,7 +578,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType "Perandus Coin" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
+    BaseType == "Perandus Coin" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -408,7 +587,8 @@ Show
 
 #These items are useful to pick up but should be discontinued if quota is met.
 Show
-	BaseType "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation"
+#.strict: 1
+	BaseType == "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -417,7 +597,8 @@ Show
 
 #These items should be picked up at the start of the league.
 Show
-    BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Chance"
+#.strict: 0
+    BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Chance"
 	Class "Currency"
     SetTextColor 0 0 0
 	SetBackgroundColor 80 70 60
@@ -426,14 +607,14 @@ Show
 
 #These items are worthless.
 Hide
-    BaseType "Scroll of Wisdom" "Portal Scroll"
+    BaseType == "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
 	SetTextColor 0 0 0
     SetBackgroundColor 60 55 50
 	SetBorderColor 0 0 0
     SetFontSize 32
 
-#CATCHALL---------------------------------------------------------------------------------------------------
+#CATCHALL-----------------------------------------------------------------------------------------------------
 #This is here to catch errors. Should never be seen.
 Show
     Class "Currency"
@@ -443,9 +624,9 @@ Show
     SetFontSize 45
 	PlayAlertSoundPositional 15 300
 
-#-----------------------------------------------------------------------------------------------------------
-#-										D I V I N A T I O N  C A R D S							           -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#										D I V I N A T I O N  C A R D S							        [0200]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Square
 #Base Color: Blue (0 150 255)
 #Beam Color: Blue
@@ -454,7 +635,8 @@ Show
 #Tier 1
 #These are worth 100c or more.
 Show
-    BaseType == "The Demon" "House of Mirrors" "The Doctor" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "Succor of the Sinless" "Birth of the Three" "The Devastator" "Luck of the Vaal" "Dying Anguish" "The Price of Protection"
+#.econ: div 100
+	BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Succor of the Sinless" "Alluring Bounty" "The Samurai's Eye" "The Iron Bard" "The Nurse" "Pride of the First Ones" "Seven Years Bad Luck" "Abandoned Wealth"
     Class "Divination Card"
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 150 255
@@ -467,7 +649,8 @@ Show
 #Tier 2
 #These are worth more than 10c but less than or equals to 100c.
 Show
-    BaseType == "Nook's Crown" "Burning Blood" "Etched in Blood" "The Nurse" "The Spark and the Flame" "Immortal Resolve" "Hunter's Reward" "Pride of the First Ones" "The Samurai's Eye" "Abandoned Wealth" "Void of the Elements" "The Price of Loyalty" "The Eye of Terror" "The Bargain" "The Craving" "The Seeker" "The Messenger" "The Landing" "Seven Years Bad Luck" "The Iron Bard" "The Queen" "Wealth and Power" "The Dragon's Heart" "The Saint's Treasure" "Mawr Blaidd" "The Enlightened" "Squandered Prosperity" "The Damned" "The Escape" "The Fishmonger" "The Soul" "The Wolven King's Bite" "The World Eater"
+#.econ: div 10 100
+	BaseType == "The Price of Loyalty" "Wealth and Power" "Immortal Resolve" "The Dragon's Heart" "Nook's Crown" "The Damned" "The Eye of Terror" "Void of the Elements" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "Etched in Blood" "Hunter's Reward" "The Bargain" "The Celestial Stone" "The World Eater" "The Escape" "The Enlightened" "The Soul" "The Mayor" "The Sephirot" "The Undaunted" "Squandered Prosperity" "The Polymath" "Azyran's Reward" "The Hoarder" "Blessing of God" "The Celestial Justicar" "Remembrance" "Pride Before the Fall" "The Landing" "The Valkyrie"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 50 150 255
@@ -480,7 +663,8 @@ Show
 #Tier 3
 #These are worth more than 1c but less than or equals to 10c.
 Show
-    BaseType == "A Dab of Ink" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Cameria's Cut" "Deathly Designs" "Divine Justice" "Monochrome" "Pride Before the Fall" "Remembrance" "Vanity" "The Deep Ones" "Dark Dreams" "Buried Treasure" "Demigod's Wager" "The Artist" "The Breach" "The Vast" "The Celestial Justicar" "The Celestial Stone" "Heterochromia" "The Hoarder" "The Hunger" "The Last One Standing" "Perfection" "The Skeleton" "The Old Man" "The King's Heart" "More is Never Enough" "The Heroic Shot" "Akil's Prophecy" "The Sacrifice" "Bowyer's Dream" "Chaotic Disposition" "The Hale Heart" "The Polymath" "The Endless Darkness" "The Void" "The Throne" "The Risk" "Left to Fate" "The Cartographer" "The Dreamer" "The Ethereal" "The Porcupine" "The Undisputed" "The Wilted Rose" "Lucky Deck" "The Brittle Emperor" "The Dapper Prodigy" "The Offering" "Humility" "Scholar of the Seas" "The Dark Mage" "The Innocent" "The Jeweller's Boon" "The Warlord" "The Jester" "Emperor of Purity" "The Cursed King" "The Chains that Bind" "The Inventor" "The Journey" "The Life Thief" "The Master" "The Mayor" "The Pact" "The Professor" "The Sephirot" "The Undaunted" "The Valkyrie" "The Wind" "The Wolf" "Tranquillity" "Underground Forest"
+#.econ: div 1 10
+	BaseType == "The Old Man" "Chaotic Disposition" "Akil's Prophecy" "The Warlord" "The Wolven King's Bite" "The Professor" "Divine Justice" "The Rite of Elements" "Lucky Deck" "Mawr Blaidd" "The Artist" "The Ethereal" "The Void" "The Life Thief" "Burning Blood" "Dark Dreams" "The Craving" "Underground Forest" "The Fishmonger" "Dialla's Subjugation" "The Avenger" "Volatile Power" "Rebirth" "Friendship" "Baited Expectations" "Deathly Designs" "Bowyer's Dream" "The Betrayal" "The Dapper Prodigy" "The Dark Mage" "The King's Heart" "The Risk" "The Throne" "The Vast" "Time-Lost Relic" "The Puzzle" "The Jeweller's Boon" "The Hale Heart" "Perfection" "Boon of the First Ones" "The Wilted Rose" "The Endless Darkness" "The Sacrifice" "Arrogance of the Vaal" "The Mad King" "The Seeker" "Buried Treasure" "The Heroic Shot" "The Skeleton" "The Side Quest" "The Bones" "The Dreamer" "Left to Fate" "Boundless Realms" "Cartographer's Delight" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Shard of Fate" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Encroaching Darkness" "The Gambler" "The Gemcutter" "The Offering" "The One With All" "The Surveyor" "The Union" "The Wolf" "The Wolf's Shadow" "The Valley of Steel Boxes" "The Wretched" "The Garish Power" "The Porcupine" "No Traces" "The Breach" "The Undisputed" "The Innocent" "The Journey" "Monochrome" "Vanity" "The Deep Ones" "Vile Power" "The Chosen" "The Scholar" "The Formless Sea" "Alone in the Darkness" "The Survivalist" "Merciless Armament" "Three Voices" "The Brittle Emperor" "Rain of Chaos" "Three Faces in the Dark" "The Catalyst" "Anarchy's Price" "Audacity" "Blind Venture" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Hunter's Resolve" "Jack in the Box" "Last Hope" "Light and Truth" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Rain Tempter" "Rats" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Calling" "The Conduit" "The Cursed King" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Fox" "The Gentleman" "The Gladiator" "The Harvester" "The Hunger" "The Incantation" "The Inoculated" "The Inventor" "The Jester" "The Last One Standing" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Watcher" "The Web" "The Wind" "The Wrath" "Tranquillity" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Mitts" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "The Standoff" "The Forsaken" "Might is Right" "Atziri's Arsenal" "The Opulent" "Struck by Lightning" "The Blazing Fire" "The Ruthless Ceinture" "The Eye of the Dragon" "The Realm" "The Obscured" "The Deceiver" "The Insatiable" "Forbidden Power" "The Army of Blood" "The Beast" "The Sword King's Salute" "The Master" "The Fathomless Depths" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Cacophony" "The Master Artisan" "A Dab of Ink" "Sambodhi's Vow" "The Lord of Celebration" "Dark Temptation" "The Messenger" "The Golden Era" "Boon of Justice" "Thirst for Knowledge" "Imperial Legacy" "Echoes of Love" "The Fool" "Demigod's Wager" "The Primordial" "The Archmage's Right Hand" "The Mountain" "The Wolf's Legacy" "The Deal" "More is Never Enough" "Cameria's Cut"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 30 100 205
@@ -500,18 +684,18 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	MinimapIcon 2 Blue Square
-	PlayEffect Blue Temp
 
 #Tier 5
 #These are trash and should always remain hidden.
 Hide
-    BaseType == "Boon of Justice" "Vile Power" "The Side Quest" "The Mountain" "Atziri's Arsenal" "Baited Expectations" "Dialla's Subjugation" "Dark Temptation" "Earth Drinker" "Echoes of Love" "Emperor's Luck" "Friendship" "Glimmer of Hope" "Harmony of Souls" "Imperial Legacy" "Jack in the Box" "Last Hope" "Lingering Remnants" "Lost Worlds" "Merciless Armament" "No Traces" "Rebirth" "The Admirer" "The Aesthete" "The Body" "The Cacophony" "The Cataclysm" "The Catalyst" "The Demoness" "The Formless Sea" "The Garish Power" "The Harvester" "The Insatiable" "The One With All" "The Penitent" "The Rite of Elements" "The Road to Power" "The Spoiled Prince" "The Stormcaller" "The Sword King's Salute" "The Traitor" "The Trial" "The Tyrant" "The Wrath" "Treasure Hunter" "Blessing of God" "The Beast" "The Bones" "Blind Venture" "The Forsaken" "The Lord in Black" "Lysah's Respite" "The Pack Leader" "Boundless Realms" "Call to the First Ones" "Forbidden Power" "Gemcutter's Promise" "Hope" "Hubris" "Rain Tempter" "The Arena Champion" "The Conduit" "The Chosen" "The Darkest Dream" "The Drunken Aristocrat" "Volatile Power" "The Gemcutter" "The Surgeon" "The Explorer" "The Mercenary" "The Oath" "The Poet" "The Sun" "The Fathomless Depths" "Three Voices" "Three Faces in the Dark" "Rain of Chaos" "The Blazing Fire" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Cartographer's Delight" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Gift of the Gemling Queen" "Grave Knowledge" "Hunter's Resolve" "Light and Truth" "Might is Right" "Mitts" "Prosperity" "Rats" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "The Battle Born" "The Betrayal" "The Calling" "The Carrion Crow" "The Coming Storm" "The Deceiver" "The Doppelganger" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Feast" "The Fox" "The Gambler" "The Gentleman" "The Incantation" "The Inoculated" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Puzzle" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Summoner" "The Tower" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "The Wolverine" "The Lich" "Thunderous Skies" "Turn the Other Cheek" "Her Mask" "Lantador's Lost Love" "The Hermit" "The Archmage's Right Hand" "The Avenger" "The Fletcher" "The Flora's Gift" "The Fool" "The Golden Era" "The Lord of Celebration" "The Mad King" "The Primordial" "The Standoff" "The Thaumaturgist" "The Wolf's Legacy" "Thirst for Knowledge"
+#.econ: div 0 1
+	BaseType == "A Mother's Parting Gift" "The Surgeon" "The Lunaris Priestess" "Thunderous Skies" "The Coming Storm" "Assassin's Favour" "The Carrion Crow" "The Hermit" "Lantador's Lost Love" "The King's Blade" "Prosperity" "The Metalsmith's Gift" "The Warden"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 20 60 165
     SetBorderColor 0 0 0
 
-#CATCHALL---------------------------------------------------------------------------------------------------
+#CATCHALL-----------------------------------------------------------------------------------------------------
 #This is here to catch errors. Should never be seen.
 Show
     Class "Divination Card"
@@ -521,20 +705,66 @@ Show
     SetFontSize 45
 	PlayAlertSoundPositional 15 300
 
-#-----------------------------------------------------------------------------------------------------------
-#-											 M A P P I N G										           -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#											 M A P P I N G												[0300]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Hexagon
 
-#FRAGMENTS--------------------------------------------------------------------------------------------------
+#SCARABS------------------------------------------------------------------------------------------------[0303]
 #Base Color: Green (50 230 100)
 #Beam Color: Green
 #Icon Color: Green
 
 #Tier 1
-#These are worth over 100c.
+#These are worth more than or equal to 10c and less than 100c.
 Show
-    BaseType "Timeworn Reliquary Key" "Ancient Reliquary Key" "Chayula's Breachstone"
+#.econ: sca 10
+	BaseType == "Gilded Legion Scarab" "Gilded Bestiary Scarab" "Gilded Sulphite Scarab" "Gilded Harbinger Scarab" "Polished Bestiary Scarab" "Polished Sulphite Scarab" "Polished Legion Scarab" "Gilded Divination Scarab" "Rusted Sulphite Scarab" "Gilded Ambush Scarab"
+	Class "Map Fragments" "Labyrinth Map Item"
+	SetTextColor 0 0 0
+    SetBackgroundColor 50 230 100
+    SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 100
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+
+#Tier 2
+#These are worth more than 1 but less than 10c.
+Show
+#.econ: sca 1 10
+	BaseType == "Gilded Breach Scarab" "Polished Harbinger Scarab" "Gilded Reliquary Scarab" "Rusted Legion Scarab" "Rusted Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Shaper Scarab" "Gilded Perandus Scarab" "Rusted Harbinger Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Shaper Scarab" "Rusted Perandus Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab"
+	Class "Map Fragments" "Labyrinth Map Item"
+	SetTextColor 0 0 0
+    SetBackgroundColor 50 150 100
+    SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 13 100
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green Temp
+
+#Tier 3
+#These are worth up to 1c.
+Show
+#.econ: sca 0 1 .strict: 2
+	BaseType == "Rusted Reliquary Scarab" "Rusted Torment Scarab"
+	Class "Map Fragments" "Labyrinth Map Item"
+	SetTextColor 0 0 0
+    SetBackgroundColor 50 110 100
+    SetBorderColor 0 0 0
+	SetFontSize 40
+	MinimapIcon 2 Green Hexagon
+
+#FRAGMENTS----------------------------------------------------------------------------------------------[0302]
+#Base Color: Green (50 230 100)
+#Beam Color: Green
+#Icon Color: Green
+
+#Tier 1
+#These are worth 100c or more.
+Show
+#.econ: fra 100
+	BaseType == "Chayula's Pure Breachstone" "Uul-Netol's Pure Breachstone" "Timeless Maraketh Emblem" "Chayula's Breachstone" "Fragment of Shape" "Fragment of Knowledge" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Tul's Pure Breachstone" "Xoph's Pure Breachstone" "Timeless Templar Emblem" "Esh's Pure Breachstone"
 	Class "Map Fragments" "Labyrinth Map Item"
     SetTextColor 255 0 0
     SetBackgroundColor 50 230 100
@@ -545,9 +775,10 @@ Show
 	PlayEffect Green
 
 #Tier 2
-#These are worth between 10 and 100c.
+#These are worth more than or equal to 10c and less than 100c.
 Show
-	BaseType "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+#.econ fra 10 100
+	BaseType == "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -560,7 +791,8 @@ Show
 #Tier 3
 #These are worth more than 1 but less than 10c.
 Show
-	BaseType "Timeless Vaal Emblem" "Timeless Eternal Emblem" "Timeless Karui Emblem" "Esh's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Yriel's Key" "Volkuur's Key" "Eber's Key" "Inya's Key" "Fragment of the Hydra" "Mortal Grief" "Sacrifice at Midnight" "Offering to the Goddess" "Polished Legion Scarab" "Rusted Legion Scarab"
+#.econ: fra 1 10
+	BaseType == "Xoph's Charged Breachstone" "Esh's Charged Breachstone" "Eber's Key" "Mortal Hope" "Mortal Rage" "Mortal Grief" "Xoph's Breachstone" "Divine Vessel" "Esh's Breachstone" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Offering to the Goddess" "Sacrifice at Midnight"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 150 100
@@ -573,7 +805,8 @@ Show
 #Tier 4
 #These are worth up to 1c.
 Show
-	BaseType "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Noon" "Divine Vessel"
+#.econ: fra 0 1
+	BaseType == "Sacrifice at Noon" "Sacrifice at Dawn" "Sacrifice at Dusk" "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 110 100
@@ -581,7 +814,7 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Green Hexagon
 
-#MAPS-------------------------------------------------------------------------------------------------------
+#MAPS---------------------------------------------------------------------------------------------------[0301]
 #Base Color: White (255 255 255) / Light Yellow (255 255 119) / Light Red (240 80 80) /
 #			 Red(255 0 0) / Light Orange (255 170 80)
 #Beam Color: White / Yellow / Red / Brown
@@ -640,13 +873,14 @@ Show
     SetBackgroundColor 255 0 0
     SetBorderColor 0 0 0
     SetFontSize 40
-	PlayAlertSoundPositional 2 100	
+	PlayAlertSoundPositional 2 100
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
 #Miscellaneous Maps
 ##White
 Show
+#.strict: 2
     MapTier <= 5
 	Class "Maps"
 	SetTextColor 0 0 0
@@ -656,6 +890,7 @@ Show
 	MinimapIcon 2 White Hexagon
 ##Yellow
 Show
+#.strict: 3
     MapTier <= 10
 	Class "Maps"
 	SetTextColor 0 0 0
@@ -665,6 +900,7 @@ Show
 	MinimapIcon 2 Yellow Hexagon
 ##Red
 Show
+#.strict: 4
     MapTier <= 15
 	Class "Maps"
 	SetTextColor 0 0 0
@@ -681,7 +917,7 @@ Show
     SetBackgroundColor 255 0 0
     SetBorderColor 0 0 0
     SetFontSize 40
-	PlayAlertSoundPositional 2 100	
+	PlayAlertSoundPositional 2 100
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
@@ -695,15 +931,29 @@ Show
     SetFontSize 45
 	PlayAlertSoundPositional 15 300
 
-#-----------------------------------------------------------------------------------------------------------
-#-											 Q U E S T S										           -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#											 Q U E S T S												[0400]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Star
+
+#UNIQUE WATCHSTONES-------------------------------------------------------------------------------------[0402]
+#Base Color: PoE's Orange (255 165 0)
+#Beam Color: Brown
+#Icon Color: Browm
+Show
+	Class "Atlas Region Upgrade Item"
+    Rarity = Unique
+    SetTextColor 255 165 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 1 100
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown Temp
+
+#MISCELLANEOUS------------------------------------------------------------------------------------------[0401]
 #Base Color: PoE's Green (50 230 100)
 #Beam Color: Green
 #Icon Color: Green
-
-#All "quest" type items are listed here. This includes shaper orbs.
 Show
     Class "Quest Items" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item" "Atlas Region Upgrade Item"
     SetTextColor 50 230 100
@@ -712,7 +962,7 @@ Show
 	MinimapIcon 0 Green Star
 	PlayEffect Green
 
-#CATCHALL---------------------------------------------------------------------------------------------------
+#CATCHALL-----------------------------------------------------------------------------------------------------
 #This is here to catch errors. Should never be seen.
 Show
     Class "Quest Items" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item"
@@ -722,9 +972,9 @@ Show
     SetFontSize 45
 	PlayAlertSoundPositional 15 300
 
-#-----------------------------------------------------------------------------------------------------------
-#-												 G E M S										           -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#-												 G E M S												[0500]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Diamond
 #Base Color: Light Turquoise (80 210 200)
 #Beam Color: White
@@ -844,7 +1094,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	PlayAlertSoundPositional 13 100
-	
+
 #Tier 5
 #Drop-only worthless gems. These drop rarely enough that there is no harm in leaving them up.
 Show
@@ -864,12 +1114,12 @@ Hide
 	SetBorderColor 0 0 0
 	SetFontSize 32
 
-#-----------------------------------------------------------------------------------------------------------
-#-											 E Q U I P M E N T									           -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#-											 E Q U I P M E N T											[0600]
+#-------------------------------------------------------------------------------------------------------------
 #Base Shape: Triangle
 
-#UNIQUES----------------------------------------------------------------------------------------------------
+#UNIQUES------------------------------------------------------------------------------------------------[0617]
 #Base Color: PoE's Orange (255 165 0)
 #Beam Color: Brown
 #Icon Color: Browm
@@ -885,7 +1135,7 @@ Show
 	MinimapIcon 2 Brown Triangle
 	PlayEffect Brown Temp
 
-#FLASKS-----------------------------------------------------------------------------------------------------
+#FLASKS-------------------------------------------------------------------------------------------------[0616]
 #Base Color: Light Blue (200 230 255)
 #Beam Color: None
 #Icon Color: None
@@ -1000,7 +1250,7 @@ Show
 	SetBackgroundColor 200 230 255
 	SetBorderColor 0 0 0
     SetFontSize 40
-	
+
 #Tier 10 (Sanctified)
 Show
 	DropLevel >= 50
@@ -1029,13 +1279,14 @@ Hide
 	SetBorderColor 0 0 0
     SetFontSize 32
 
-#JEWELS-----------------------------------------------------------------------------------------------------
+#JEWELS-------------------------------------------------------------------------------------------------[0615]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
 
 #Rare jewels
 Show
+#.strict: 3
     Rarity = Rare
     Class "Jewel"
 	SetBorderColor 0 0 0
@@ -1043,12 +1294,13 @@ Show
 
 #Magic or lower
 Show
+#.strict: 2
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#FRACTURED-------------------------------------------------------------------------------------------------
+#FRACTURED----------------------------------------------------------------------------------------------[0614]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1084,7 +1336,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SYNTHESISED-----------------------------------------------------------------------------------------------
+#SYNTHESISED--------------------------------------------------------------------------------------------[0613]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1119,8 +1371,8 @@ Show
 	SynthesisedItem True
 	SetBorderColor 0 0 0
 	SetFontSize 40
-	
-#VEILED----------------------------------------------------------------------------------------------------
+
+#VEILED-------------------------------------------------------------------------------------------------[0612]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1144,6 +1396,7 @@ Show
 
 #Chromatics
 Show
+#.strict: 3
     SocketGroup RGB
 	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBackgroundColor 37 97 30
@@ -1152,12 +1405,13 @@ Show
 
 #Miscellaneous
 Show
+#.strict: 3
 	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#INFLUENCED-------------------------------------------------------------------------------------------------
-#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
+#INFLUENCED---------------------------------------------------------------------------------------------[0611]
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30)
 #Beam Color: White
 #Icon Color: White
 
@@ -1167,7 +1421,7 @@ Show
     HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 0 0 0
 	SetFontSize 40
-	PlayAlertSoundPositional 4 300
+	PlayAlertSoundPositional 6 300
 	MinimapIcon 0 White Triangle
 	PlayEffect White
 
@@ -1202,7 +1456,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#IDENTIFIED ITEMS-------------------------------------------------------------------------------------------
+#IDENTIFIED--------------------------------------------------------------------------------------------[0610]
 #Identified magic and rare items usually carry powerful mods with them and don't appear often.
 #Base Color: None
 #Beam Color: None
@@ -1230,6 +1484,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict: 3
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1239,6 +1494,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 3
     ItemLevel >= 75
     Rarity = Rare
 	Identified True
@@ -1267,6 +1523,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict: 3
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1276,6 +1533,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 3
     ItemLevel >= 60
     Rarity = Rare
 	Identified True
@@ -1338,7 +1596,9 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Chromatics
-Hide
+Show
+#.strict: 1
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity = Magic
 	Identified True
@@ -1346,14 +1606,15 @@ Hide
 	SetBorderColor 0 0 0
 	SetFontSize 40
 ##Miscellaneous
-Hide
+Show
+#.strict: 1
     Rarity = Magic
 	Identified True
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#RINGS/AMULETS----------------------------------------------------------------------------------------------
+#RINGS/AMULETS------------------------------------------------------------------------------------------[0609]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
@@ -1361,6 +1622,7 @@ Hide
 #Atlas-Only Bases
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
+#.strict: 3
     BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
     ItemLevel >= 75
     Rarity = Rare
@@ -1369,6 +1631,7 @@ Show
 	SetFontSize 40
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
+#.strict: 3
     BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
     ItemLevel >= 60
     Rarity = Rare
@@ -1377,6 +1640,7 @@ Show
 	SetFontSize 40
 ##Magic & Normal
 Show
+#.strict: 1
     BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
     Class "Rings" "Amulets"
@@ -1386,6 +1650,7 @@ Show
 #Miscellaneous
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
+#.strict: 3
     ItemLevel >= 75
     Rarity = Rare
     Class "Rings" "Amulets"
@@ -1393,6 +1658,7 @@ Show
 	SetFontSize 40
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
+#.strict: 3
     ItemLevel >= 60
     Rarity = Rare
     Class "Rings" "Amulets"
@@ -1405,8 +1671,8 @@ Show
     Class "Rings" "Amulets"
 	SetBorderColor 0 0 0
 	SetFontSize 40
-	
-#BELTS------------------------------------------------------------------------------------------------------
+
+#BELTS--------------------------------------------------------------------------------------------------[0608]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
@@ -1414,6 +1680,7 @@ Show
 #Atlas-Only Bases
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
+#.strict: 3
 	BaseType "Vanguard Belt" "Crystal Belt"
     ItemLevel >= 75
     Rarity = Rare
@@ -1422,6 +1689,7 @@ Show
 	SetFontSize 40
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
+#.strict: 3
 	BaseType "Vanguard Belt" "Crystal Belt"
     ItemLevel >= 60
     Rarity = Rare
@@ -1430,6 +1698,7 @@ Show
 	SetFontSize 40
 ##Magic & Normal
 Show
+#.strict: 1
     BaseType "Vanguard Belt" "Crystal Belt"
 	Rarity <= Magic
     Class "Belts"
@@ -1439,6 +1708,7 @@ Show
 #Miscellaneous
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
+#.strict: 3
     ItemLevel >= 75
     Rarity = Rare
     Class "Belts"
@@ -1446,6 +1716,7 @@ Show
 	SetFontSize 40
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
+#.strict: 3
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"
@@ -1459,8 +1730,8 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#BODY ARMOURS-----------------------------------------------------------------------------------------------
-#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
+#BODY ARMOURS-------------------------------------------------------------------------------------------[0607]
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
@@ -1486,6 +1757,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.chaos: Bodies .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1495,6 +1767,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Bodies .strict: 2
     ItemLevel >= 75
     Rarity = Rare
 	Class "Body Armour"
@@ -1523,6 +1796,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.chaos: Bodies .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1532,6 +1806,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Bodies .strict: 2
     ItemLevel >= 60
     Rarity = Rare
 	Class "Body Armour"
@@ -1595,21 +1870,23 @@ Show
 	SetFontSize 40
 ##Chromatics
 Hide
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity <= Magic
 	Class "Body Armour"
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 
-#HELMETS----------------------------------------------------------------------------------------------------
-#Base Color: Mossy Green (37 97 30) 
+#HELMETS------------------------------------------------------------------------------------------------[0606]
+#Base Color: Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
 #iLvl 75+ Atlas-Only Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Bone Helmet"
     SocketGroup RGB
     ItemLevel >= 75
@@ -1620,6 +1897,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Bone Helmet"
     ItemLevel >= 75
     Rarity = Rare
@@ -1630,6 +1908,7 @@ Show
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.chaos: Helmets .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1639,6 +1918,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Helmets .strict: 2
     ItemLevel >= 75
     Rarity = Rare
 	Class "Helmets"
@@ -1648,6 +1928,7 @@ Show
 #iLvl 60-74 Atlas-Only Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Bone Helmet"
     SocketGroup RGB
     ItemLevel >= 60
@@ -1658,6 +1939,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Bone Helmet"
     ItemLevel >= 60
     Rarity = Rare
@@ -1668,6 +1950,7 @@ Show
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.chaos: Helmets .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1677,6 +1960,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Helmets .strict: 2
     ItemLevel >= 60
     Rarity = Rare
 	Class "Helmets"
@@ -1703,6 +1987,7 @@ Show
 #Atlas-Only Magic & Normal
 ##Chromatics
 Show
+#.strict: 1
 	BaseType "Bone Helmet"
     SocketGroup RGB
     Rarity <= Magic
@@ -1712,6 +1997,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 1
 	BaseType "Bone Helmet"
     Rarity <= Magic
 	Class "Helmets"
@@ -1721,21 +2007,23 @@ Show
 #Magic & Normal
 ##Chromatics
 Hide
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity <= Magic
 	Class "Helmets"
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 
-#GLOVES-----------------------------------------------------------------------------------------------------
-#Base Color: Mossy Green (37 97 30) 
+#GLOVES-------------------------------------------------------------------------------------------------[0605]
+#Base Color: Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
 #iLvl 75+ Atlas-Only Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     SocketGroup RGB
     ItemLevel >= 75
@@ -1746,6 +2034,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     ItemLevel >= 75
     Rarity = Rare
@@ -1756,6 +2045,7 @@ Show
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.chaos: Gloves .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1765,6 +2055,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Gloves .strict: 2
     ItemLevel >= 75
     Rarity = Rare
 	Class "Gloves"
@@ -1774,6 +2065,7 @@ Show
 #iLvl 60-74 Atlas-Only Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     SocketGroup RGB
     ItemLevel >= 60
@@ -1784,6 +2076,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     ItemLevel >= 60
     Rarity = Rare
@@ -1794,6 +2087,7 @@ Show
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.chaos: Gloves .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1803,6 +2097,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Gloves .strict: 2
     ItemLevel >= 60
     Rarity = Rare
 	Class "Gloves"
@@ -1829,6 +2124,7 @@ Show
 #Atlas-Only Magic & Normal
 ##Chromatics
 Show
+#.strict: 1
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     SocketGroup RGB
     Rarity <= Magic
@@ -1838,6 +2134,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 1
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
     Rarity <= Magic
 	Class "Gloves"
@@ -1847,21 +2144,23 @@ Show
 #Magic & Normal
 ##Chromatics
 Hide
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity <= Magic
 	Class "Gloves"
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 
-#BOOTS------------------------------------------------------------------------------------------------------
-#Base Color: Mossy Green (37 97 30) 
+#BOOTS--------------------------------------------------------------------------------------------------[0604]
+#Base Color: Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
 #iLvl 75+ Atlas-Only Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Two-Toned Boots"
     SocketGroup RGB
     ItemLevel >= 75
@@ -1872,6 +2171,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Two-Toned Boots"
     ItemLevel >= 75
     Rarity = Rare
@@ -1882,6 +2182,7 @@ Show
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.chaos: Boots .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1891,6 +2192,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Boots .strict: 2
     ItemLevel >= 75
     Rarity = Rare
 	Class "Boots"
@@ -1900,6 +2202,7 @@ Show
 #iLvl 60-74 Atlas-Only Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Two-Toned Boots"
     SocketGroup RGB
     ItemLevel >= 60
@@ -1910,6 +2213,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Two-Toned Boots"
     ItemLevel >= 60
     Rarity = Rare
@@ -1920,6 +2224,7 @@ Show
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.chaos: Boots .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1929,6 +2234,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Boots .strict: 2
     ItemLevel >= 60
     Rarity = Rare
 	Class "Boots"
@@ -1956,6 +2262,7 @@ Show
 #Atlas-Only Magic & Normal
 ##Chromatics
 Show
+#.strict: 1
 	BaseType "Two-Toned Boots"
     SocketGroup RGB
     Rarity <= Magic
@@ -1965,6 +2272,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 1
 	BaseType "Two-Toned Boots"
     Rarity <= Magic
 	Class "Boots"
@@ -1974,24 +2282,26 @@ Show
 #Magic & Normal
 ##Chromatics
 Hide
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity <= Magic
 	Class "Boots"
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 
-#3x1 SIZE ITEMS---------------------------------------------------------------------------------------------
-#Base Color: Mossy Green (37 97 30) 
+#3x1 SIZE ITEMS-----------------------------------------------------------------------------------------[0603]
+#Base Color: Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
-#NOTE: This section was added for the chaos recipe (Most space efficient way to store items).
+#NOTE: This super-section was added for the chaos recipe (Most space efficient way to store items).
 #	   If you're not going to bother with it feel free to delete or hide it.
 
 #iLvl 75+ Atlas-Only Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     SocketGroup RGB
     ItemLevel >= 75
@@ -2003,6 +2313,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     ItemLevel >= 75
     Rarity = Rare
@@ -2014,6 +2325,7 @@ Show
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Chromatics
 Show
+#.chaos: Weapons .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2024,6 +2336,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Weapons .strict: 2
     ItemLevel >= 75
     Rarity = Rare
 	Height = 3
@@ -2034,6 +2347,7 @@ Show
 #iLvl 60-74 Atlas-Only Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     SocketGroup RGB
     ItemLevel >= 60
@@ -2045,6 +2359,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     ItemLevel >= 60
     Rarity = Rare
@@ -2056,6 +2371,7 @@ Show
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Chromatics
 Show
+#.chaos: Weapons .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2066,6 +2382,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Weapons .strict: 2
     ItemLevel >= 60
     Rarity = Rare
 	Height = 3
@@ -2096,6 +2413,7 @@ Show
 #Atlas-Only Magic & Normal
 ##Chromatics
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     SocketGroup RGB
     Rarity <= Magic
@@ -2106,6 +2424,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 2
 	BaseType "Convoking Wand"
     Rarity <= Magic
 	Height = 3
@@ -2116,16 +2435,17 @@ Show
 #Magic & Normal
 ##Chromatics
 Hide
+	ItemLevel >= 45
     SocketGroup RGB
     Rarity <= Magic
 	Height = 3
 	Width = 1
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 
-#MISCELLANEOUS----------------------------------------------------------------------------------------------
-#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) 
+#MISCELLANEOUS------------------------------------------------------------------------------------------[0602]
+#Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30)
 #Beam Color: None
 #Icon Color: None
 
@@ -2151,6 +2471,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.chaos: Miscellaneous .strict: 2
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2159,6 +2480,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Miscellaneous .strict: 2
     ItemLevel >= 75
     Rarity = Rare
     SetBorderColor 30 144 255
@@ -2184,6 +2506,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.chaos: Miscellaneous .strict: 2
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2192,6 +2515,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.chaos: Miscellaneous .strict: 2
     ItemLevel >= 60
     Rarity = Rare
     SetBorderColor 255 255 119
@@ -2248,6 +2572,7 @@ Show
 	SetFontSize 40
 ##Chromatics (up to the start of act 6)
 Show
+#.strict: 1
     SocketGroup RGB
     Rarity <= Magic
 	ItemLevel < 45
@@ -2261,7 +2586,7 @@ Hide
 	ItemLevel >= 45
     SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 32
 ##Four Links (Up to the start of act of 6)
 Show
 	LinkedSockets = 4
@@ -2288,20 +2613,20 @@ Show
     SetBorderColor 0 0 0
 	SetFontSize 40
 
-#CHANCE-----------------------------------------------------------------------------------------------------
+#CHANCE-------------------------------------------------------------------------------------------------[0601]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
 
 #Chuck every normal base you want to chance here. For instance here I chose Leather Belts.
 #Show
-#    Rarity = Normal
-#    BaseType "Leather Belt"
+#	Rarity = Normal
+#	BaseType "Leather Belt"
 #	SetBorderColor 0 0 0
 #	SetFontSize 40
 
-#-----------------------------------------------------------------------------------------------------------
-#-												H I D E									     		       -
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
+#-												H I D E									     			[0700]
+#-------------------------------------------------------------------------------------------------------------
 #Hide eveything else.
 Hide
