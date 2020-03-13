@@ -6,7 +6,7 @@
 # 				 / ____ \| | (_) \__ \ (__| | | (_| | | | | | | \__ \ | |    | | | ||  __/ |
 #				/_/    \_\ |\___/|___/\___|_|  \__,_|_| |_| |_| |___/ |_|    |_|_|\__\___|_|
 #				        _/ |
-#				       |__/                                                                    	  version 3.9c
+#				       |__/                                                                    	  version 3.10
 #-------------------------------------------------------------------------------------------------------------
 #
 #	Check out the latest release at: https://github.com/ajoscram/PoE-Filter/releases/latest
@@ -25,9 +25,10 @@
 #	.strict:
 #		0 			Shows everything.
 #		1 			Hides start of the league currency.
-#		2 			Hides currency that becomes obsolete once quota is met and atlas bases.
+#		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
 #		3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
-#		4 			Hides yellow maps, rare jewels, rare jewellry and ID'ed rares.
+#		4 			Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
+#		5			Hides all red maps except T16s.
 #
 #	.econ:			fra, oil, inc, sca, fos, div, pro
 #
@@ -42,6 +43,7 @@
 #	[0000]	Index
 #	-------------------------
 #	[0100]	Currency
+#	[0112]		Delirium Orbs
 #	[0111]		Catalysts
 #	[0110]		Vials
 #	[0109]		Fossils
@@ -90,6 +92,23 @@
 #												C U R R E N C Y											[0100]
 #-------------------------------------------------------------------------------------------------------------
 #Base Shape: Circle
+
+#DELIRIUM ORBS------------------------------------------------------------------------------------------[0112]
+#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
+#Beam Color: White
+#Icon Color: White
+
+#Tiered as a chaos orb kinda item for the time being.
+Show
+	BaseType == "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Portentous Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb" "Amorphous Delirium Orb"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 240 210
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 13 50
+	MinimapIcon 2 White Circle
+	PlayEffect White Temp
 
 #CATALYSTS----------------------------------------------------------------------------------------------[0111]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
@@ -298,7 +317,7 @@ Show
 
 #These splinters are worth a couple chaos.
 Show
-    BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
+    BaseType == "Simulacrum Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 50 0 90
@@ -650,7 +669,7 @@ Show
 #These are worth more than 10c but less than or equals to 100c.
 Show
 #.econ: div 10 100
-	BaseType == "The Price of Loyalty" "Wealth and Power" "Immortal Resolve" "The Dragon's Heart" "Nook's Crown" "The Damned" "The Eye of Terror" "Void of the Elements" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "Etched in Blood" "Hunter's Reward" "The Bargain" "The Celestial Stone" "The World Eater" "The Escape" "The Enlightened" "The Soul" "The Mayor" "The Sephirot" "The Undaunted" "Squandered Prosperity" "The Polymath" "Azyran's Reward" "The Hoarder" "Blessing of God" "The Celestial Justicar" "Remembrance" "Pride Before the Fall" "The Landing" "The Valkyrie"
+	BaseType == "The Strategist" "The Cheater" "The Tinkerer's Table" "The Easy Stroll" "The Progeny of Lunaris" "The Eldritch Decay" "Council of Cats" "The Price of Loyalty" "Wealth and Power" "Immortal Resolve" "The Dragon's Heart" "Nook's Crown" "The Damned" "The Eye of Terror" "Void of the Elements" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "Etched in Blood" "Hunter's Reward" "The Bargain" "The Celestial Stone" "The World Eater" "The Escape" "The Enlightened" "The Soul" "The Mayor" "The Sephirot" "The Undaunted" "Squandered Prosperity" "The Polymath" "Azyran's Reward" "The Hoarder" "Blessing of God" "The Celestial Justicar" "Remembrance" "Pride Before the Fall" "The Landing" "The Valkyrie"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 50 150 255
@@ -733,7 +752,7 @@ Show
 #These are worth more than 1 but less than 10c.
 Show
 #.econ: sca 1 10
-	BaseType == "Gilded Breach Scarab" "Polished Harbinger Scarab" "Gilded Reliquary Scarab" "Rusted Legion Scarab" "Rusted Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Shaper Scarab" "Gilded Perandus Scarab" "Rusted Harbinger Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Shaper Scarab" "Rusted Perandus Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab"
+	BaseType == "Rusted Metamorph Scarab" "Polished Metamorph Scarab" "Gilded Metamorph Scarab" "Gilded Breach Scarab" "Polished Harbinger Scarab" "Gilded Reliquary Scarab" "Rusted Legion Scarab" "Rusted Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Shaper Scarab" "Gilded Perandus Scarab" "Rusted Harbinger Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Shaper Scarab" "Rusted Perandus Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 150 100
@@ -778,7 +797,7 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ fra 10 100
-	BaseType == "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+	BaseType == "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -1284,7 +1303,65 @@ Hide
 #Beam Color: None
 #Icon Color: None
 
-#Rare jewels
+#Large Cluster
+##Rare jewels
+Show
+#.strict: 3
+	BaseType == "Large Cluster Jewel"
+    Rarity = Rare
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+##Magic or lower
+Show
+#.strict: 2
+	BaseType == "Large Cluster Jewel"
+    Rarity <= Magic
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Medium Cluster
+##Rare jewels
+Show
+#.strict: 3
+	BaseType == "Medium Cluster Jewel"
+    Rarity = Rare
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+##Magic or lower
+Show
+#.strict: 2
+	BaseType == "Medium Cluster Jewel"
+    Rarity <= Magic
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Small Cluster
+##Rare jewels
+Show
+#.strict: 3
+	BaseType == "Small Cluster Jewel"
+    Rarity = Rare
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+##Magic or lower
+Show
+#.strict: 2
+	BaseType == "Small Cluster Jewel"
+    Rarity <= Magic
+    Class "Jewel"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Miscellaneous
+##Rare jewels
 Show
 #.strict: 3
     Rarity = Rare
@@ -1292,7 +1369,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#Magic or lower
+##Magic or lower
 Show
 #.strict: 2
     Rarity <= Magic

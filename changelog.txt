@@ -3,28 +3,39 @@ To-Do:
     Expand the Influenced base types section with the best bases/levels per influence.
     Add unique watchstone tiering.
     Add beasts section.
+    Add a wiki page for this project.
+    Implement changes listed here: https://www.pathofexile.com/forum/view-thread/2771031
+    Use the new colors and icons listed here: https://www.pathofexile.com/forum/view-thread/2784312
+
+3.10:
+    3.10 Changes
+        Added support for Delirium Orbs.
+        Added support for the Simulacrum fragment and splinters.
+        Added Metamorph scarabs.
+        Added the new divination cards.
+        Added large, medium and small cluster jewels, but they are currently functionally equivalent to regular jewels and look the same.
 
 3.9c:
-    Split scarabs into their own section.
-    Added support for unique watchstones.
-    Added economy based prophecy tiers.
-    General economy update on all .econ sections (see the list below).
-    Fixed a bug where chromatic items would not show up in the first three acts of the game.
-    Gave hidden chromatic items a smaller font.
-    Added a preface, an index and links to various important resources (and ASCII ART :D).
-    Implemented support for PoE Filter Generator.
-
-Filters Folder:
-    PoE Generator allows for some very neat sub-filtering.
-    Added .chaos rules for: Bodies, Helmets, Gloves, Boots and Weapons.
-    Added .econ rules for: fragments, oils, incubator, scarabs, fossils, divination cards and prophecies.
-    Added .strict rules where:
-        0: Shows everything.
-        1: Hides start of the league currency in [0101].
-        2: Hides currency that becomes obsolete once quota is met, non-rare atlas bases and non-rare identified items.
-        3: Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
-        4: Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
-        5: Hides all red maps except T16s.
+    General Changes:
+        Split scarabs into their own section.
+        Added support for unique watchstones.
+        Added economy based prophecy tiers.
+        General economy update on all .econ sections (see the list below).
+        Fixed a bug where chromatic items would not show up in the first five acts of the game.
+        Gave hidden chromatic items a smaller font.
+        Added a preface, an index and links to various important resources (and ASCII ART :D).
+        Implemented support for PoE Filter Generator.
+    Filters Folder:
+        PoE Generator allows for some very neat sub-filtering.
+        Added .chaos rules for: Bodies, Helmets, Gloves, Boots and Weapons.
+        Added .econ rules for: fragments, oils, incubator, scarabs, fossils, divination cards and prophecies.
+        Added .strict rules where:
+            0: Shows everything.
+            1: Hides start of the league currency in [0101].
+            2: Hides currency that becomes obsolete once quota is met, non-rare atlas bases and non-rare identified items.
+            3: Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
+            4: Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
+            5: Hides all red maps except T16s.
 
 3.9b:
     General Changes:
