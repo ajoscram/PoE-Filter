@@ -6,9 +6,16 @@ To-Do:
     Add a wiki page for this project.
     Implement changes listed here: https://www.pathofexile.com/forum/view-thread/2771031
     Use the new colors and icons listed here: https://www.pathofexile.com/forum/view-thread/2784312
+    Remove the identified items section and narrow to enchants and temple mods
+    
+
+3.10b:
+    General changes:
+        General economy update.
+        Bugfixed magic identified items appearing with a green background.
 
 3.10:
-    3.10 Changes
+    3.10 Changes:
         Added support for Delirium Orbs.
         Added support for the Simulacrum fragment and splinters.
         Added Metamorph scarabs.

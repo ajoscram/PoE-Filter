@@ -6,7 +6,7 @@
 # 				 / ____ \| | (_) \__ \ (__| | | (_| | | | | | | \__ \ | |    | | | ||  __/ |
 #				/_/    \_\ |\___/|___/\___|_|  \__,_|_| |_| |_| |___/ |_|    |_|_|\__\___|_|
 #				        _/ |
-#				       |__/                                                                    	  version 3.10
+#				       |__/                                                                    	 version 3.10b
 #-------------------------------------------------------------------------------------------------------------
 #
 #	Check out the latest release at: https://github.com/ajoscram/PoE-Filter/releases/latest
@@ -167,7 +167,7 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ: fos 10 100
-	BaseType == "Hollow Fossil" "Bloodstained Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Serrated Fossil" "Gilded Fossil" "Enchanted Fossil"
+	BaseType == "Hollow Fossil" "Bloodstained Fossil" "Tangled Fossil" "Glyphic Fossil" "Corroded Fossil"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -181,7 +181,7 @@ Show
 #These are more than or equal to 1c and less than 10c.
 Show
 #.econ: fos 1 10
-	BaseType == "Perfect Fossil" "Prismatic Fossil" "Aetheric Fossil" "Corroded Fossil" "Bound Fossil" "Shuddering Fossil" "Pristine Fossil" "Dense Fossil" "Encrusted Fossil" "Jagged Fossil" "Frigid Fossil"
+	BaseType == "Serrated Fossil" "Perfect Fossil" "Gilded Fossil" "Sanctified Fossil" "Shuddering Fossil" "Aetheric Fossil" "Bound Fossil" "Prismatic Fossil" "Enchanted Fossil" "Encrusted Fossil" "Jagged Fossil" "Dense Fossil" "Pristine Fossil" "Lucent Fossil" "Aberrant Fossil" "Metallic Fossil"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -195,7 +195,7 @@ Show
 #These are less than 1c.
 Show
 #.econ: fos 0 1
-	BaseType == "Aberrant Fossil" "Scorched Fossil" "Metallic Fossil" "Lucent Fossil"
+	BaseType == "Scorched Fossil" "Frigid Fossil"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -256,7 +256,7 @@ Show
 #These are more than or equal to 1c and less than 10c.
 Show
 #.econ: oil 1 10
-	BaseType == "Crimson Oil" "Black Oil" "Violet Oil" "Sepia Oil" "Teal Oil" "Azure Oil"
+	BaseType == "Black Oil" "Crimson Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Sepia Oil" "Verdant Oil"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -270,7 +270,7 @@ Show
 #These are less than 1c.
 Show
 #.econ: oil 0 1 .strict: 2
-	BaseType == "Amber Oil" "Verdant Oil" "Clear Oil"
+	BaseType == "Clear Oil" "Amber Oil"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -286,7 +286,7 @@ Show
 #These are worth more than or equal to 10c.
 Show
 #.econ: inc 10
-	BaseType == "Fine Incubator" "Gemcutter's Incubator" "Geomancer's Incubator" "Time-Lost Incubator" "Thaumaturge's Incubator" "Foreboding Incubator" "Diviner's Incubator"
+	BaseType == "Geomancer's Incubator"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -300,7 +300,7 @@ Show
 #These are less than 10c.
 Show
 #.econ: inc 0 10
-	BaseType == "Otherworldly Incubator" "Ornate Incubator" "Skittering Incubator" "Fossilised Incubator" "Celestial Jeweller's Incubator" "Obscured Incubator" "Whispering Incubator" "Singular Incubator" "Primal Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Abyssal Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
+	BaseType == "Thaumaturge's Incubator" "Time-Lost Incubator" "Gemcutter's Incubator" "Diviner's Incubator" "Foreboding Incubator" "Ornate Incubator" "Whispering Incubator" "Singular Incubator" "Primal Incubator" "Celestial Jeweller's Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Skittering Incubator" "Fossilised Incubator" "Abyssal Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Otherworldly Incubator" "Obscured Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -343,7 +343,7 @@ Show
 #These are worth 100c or more.
 Show
 #.econ: pro 100
-	Prophecy == "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Song of the Sekhema"
+	Prophecy == "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections"
 	Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 163 0 255
@@ -357,7 +357,7 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ: pro 10 100
-	Prophecy == "Path of Betrayal" "A Dishonourable Death" "Lost in the Pages" "The Mentor" "The Bowstring's Music" "A Master Seeks Help" "A Prodigious Hand" "Blind Faith" "Cleanser of Sins" "The King's Path" "Darktongue's Shriek" "Monstrous Treasure" "Vaal Winds"
+	Prophecy == "The Hollow Pledge" "Darktongue's Shriek" "Song of the Sekhema" "Lost in the Pages" "The Jeweller's Touch" "The Great Leader of the North" "The Bowstring's Music" "A Master Seeks Help" "A Dishonourable Death" "Cleanser of Sins" "Fire, Wood and Stone" "A Prodigious Hand"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 163 0 255
@@ -371,7 +371,7 @@ Show
 #These are more than or equal to 1c and less than 10c.
 Show
 #.econ: pro 1 10
-	Prophecy == "Pools of Wealth" "A Master Seeks Help" "Fire and Ice" "Storm on the Horizon" "The Malevolent Witch" "Twice Enchanted" "Fire and Brimstone" "The Great Leader of the North" "The Jeweller's Touch" "The Ambitious Bandit III" "Thaumaturgical History IV" "The Apex Predator" "The Misunderstood Queen" "The Unbreathing Queen V" "The Karui Rebellion" "The Bishop's Legacy" "Beyond Sight IV" "Echoes of Witchcraft" "Fire, Wood and Stone" "Flesh of the Beast" "The Feral Lord V" "Wind and Thunder" "A Master Seeks Help" "The Servant's Heart" "Visions of the Drowned" "The Eagle's Cry" "Unbearable Whispers V" "The Mysterious Gift" "Severed Limbs" "A Master Seeks Help" "The Great Mind of the North" "The Forgotten Soldiers" "Ancient Doom" "The Ward's Ward" "A Call into the Void" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Baptism by Death" "Beyond Sight III" "Blood in the Eyes" "Bountiful Traps" "Crushing Squall" "Custodians of Silence" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Dying Cry" "Erasmus' Gift" "Fire from the Sky" "Ice from Above" "Kalandra's Craft" "Lightning Falls" "Plague of Frogs" "Plague of Rats" "Possessed Foe" "Resistant to Change" "Thaumaturgical History II" "The Beautiful Guide" "The Brutal Enforcer" "The Child of Lunaris" "The Flayed Man" "The Forgotten Garrison" "The Fortune Teller's Collection" "The Hollow Pledge" "The Hungering Swarm" "The Lost Maps" "The Lost Undying" "The Nest" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Silverwood" "The Snuffed Flame" "The Soulless Beast" "The Sword King's Passion" "The Undead Storm" "The Vanguard" "The Warmongers IV" "The Watcher's Watcher" "Unbearable Whispers IV" "Unnatural Energy" "Vital Transformation" "Weeping Death" "Agony at Dusk" "Cold Blooded Fury" "Dance of Steel" "The Storm Spire" "Last of the Wildmen" "End of the Light" "A Rift in Time" "Cold Greed" "The Nightmare Awakens" "A Vision of Ice and Fire" "Crimson Hues" "Battle Hardened" "A Master Seeks Help"
+	Prophecy == "A Master Seeks Help" "Flesh of the Beast" "The Ambitious Bandit III" "The King's Path" "The Misunderstood Queen" "The Silverwood" "The Dreaded Rhoa" "A Vision of Ice and Fire" "The Bishop's Legacy" "The Mentor" "Monstrous Treasure" "The Apex Predator" "Ancient Doom" "Fire and Brimstone" "Fire and Ice" "Twice Enchanted" "Wind and Thunder" "The Great Mind of the North" "The Malevolent Witch" "Erasmus' Gift" "Heart of the Fire" "Kalandra's Craft" "The Dream Trial" "The Plaguemaw V" "The Servant's Heart" "The Soulless Beast" "The Unbreathing Queen V" "Vaal Winds" "Dance of Steel" "Last of the Wildmen" "Blind Faith" "Battle Hardened" "A Master Seeks Help" "The Flayed Man" "Blood in the Eyes" "The Karui Rebellion" "Deadly Rivalry V" "A Call into the Void" "A Firm Foothold" "A Forest of False Idols" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Baptism by Death" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Bountiful Traps" "Crushing Squall" "Custodians of Silence" "Day of Sacrifice I" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry IV" "Deadly Twins" "Dying Cry" "Echoes of Witchcraft" "Erased from Memory" "Fallow At Last" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Hunter's Lesson" "Ice from Above" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Pleasure and Pain" "Possessed Foe" "Power Magnified" "Reforged Bonds" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Storm on the Horizon" "Strong as a Bull" "Thaumaturgical History I" "Thaumaturgical History IV" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Beautiful Guide" "The Beginning and the End" "The Brutal Enforcer" "The Child of Lunaris" "The Dreamer's Dream" "The Feral Lord II" "The Feral Lord V" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The Hardened Armour" "The Hungering Swarm" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Plaguemaw I" "The Plaguemaw IV" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Sharpened Blade" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Stockkeeper" "The Unbreathing Queen IV" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "Touched by the Wind" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Visions of the Drowned" "Weeping Death" "Winter's Mournful Melodies" "Storm on the Reef" "Greed's Folly" "Dark Instincts" "Cold Blooded Fury" "Burning Dread" "The Storm Spire" "Black Devotion" "Trapped in the Tower" "End of the Light" "A Rift in Time" "Sun's Punishment" "Cold Greed" "The Nightmare Awakens" "The Fall of an Empire" "Crimson Hues" "Blinding Light" "Faith Exhumed" "A Master Seeks Help" "A Master Seeks Help"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 90 0 140
@@ -385,7 +385,7 @@ Show
 #These are less than 1c.
 Show
 #.econ: pro 0 1 .strict: 2
-	Prophecy == "A Forest of False Idols" "Pleasure and Pain" "Power Magnified" "The King and the Brambles" "The Dreaded Rhoa" "Burning Dread" "Defiled in the Sceptre" "Mouth of Horrors" "The Twins" "Living Fires" "The Plaguemaw IV" "The Warmongers I" "Faith Exhumed" "The Cursed Choir" "The Hardened Armour" "Blood of the Betrayed" "In the Grasp of Corruption" "Waiting in Ambush" "Beyond Sight II" "Heart of the Fire" "Nature's Resilience" "The Beginning and the End" "The Sinner's Stone" "Hunter's Lesson" "Dark Instincts" "Sun's Punishment" "Day of Sacrifice III" "Graceful Flames" "Thaumaturgical History I" "Deadly Rivalry III" "The Scout" "Winter's Mournful Melodies" "Trapped in the Tower" "Gilded Within" "Deadly Rivalry II" "Overflowing Riches" "Beyond Sight I" "The Last Watch" "The Warmongers II" "The Dream Trial" "The Walking Mountain" "Fallow At Last" "Greed's Folly" "An Unseen Peril" "Black Devotion" "The Feral Lord IV" "Undead Uprising" "The Wealthy Exile" "A Whispered Prayer" "Fear's Wide Reach" "The Flow of Energy" "The Trembling Earth" "The Feral Lord III" "From The Void" "Holding the Bridge" "Roth's Legacy" "The Warmongers III" "Storm on the Reef" "Reforged Bonds" "The Invader" "Erased from Memory" "Mysterious Invaders" "Strong as a Bull" "The Corrupt" "The Unbreathing Queen IV" "The Sharpened Blade" "Forceful Exorcism" "Hidden Reinforcements" "Rebirth" "The Ambitious Bandit I" "Touched by the Wind" "Ending the Torment" "The Alchemist" "The Unbreathing Queen I" "The Lady in Black" "The Petrified" "Thaumaturgical History III" "Nemesis of Greed" "The Dreamer's Dream" "The Unbreathing Queen II" "Smothering Tendrils" "The Brothers of Necromancy" "The Fall of an Empire" "The Singular Spirit" "Abnormal Effulgence" "A Regal Death" "The Queen's Vaults" "Unbearable Whispers I" "Heavy Blows" "Blinding Light" "From Death Springs Life" "The Four Feral Exiles" "The Stockkeeper" "A Firm Foothold" "The Plaguemaw III" "Unbearable Whispers II" "A Valuable Combination" "Notched Flesh" "The Bloody Flowers Redux" "Hidden Vaal Pathways" "The God of Misfortune" "Vaal Invasion" "Soil, Worms and Blood" "Against the Tide" "Lasting Impressions" "The Ambitious Bandit II" "The Feral Lord I" "The Feral Lord II" "The Plaguemaw I" "The Plaguemaw II" "The Unbreathing Queen III" "The Undead Brutes" "Unbearable Whispers III" "Golden Touch" "Risen Blood"
+	Prophecy == "Plague of Frogs" "Deadly Rivalry II" "The Sword King's Passion" "Plague of Rats" "Waiting in Ambush" "The Eagle's Cry" "The Bloody Flowers Redux" "Agony at Dusk" "Living Fires" "The Alchemist" "The Trembling Earth" "Beyond Sight I" "Day of Sacrifice II" "The Twins" "The Feral Lord IV" "Heavy Blows" "Resistant to Change" "Lightning Falls" "Blood of the Betrayed" "Mysterious Invaders" "The Corrupt" "The Wealthy Exile" "Vaal Invasion" "The Scout" "A Regal Death" "Deadly Rivalry III" "Ending the Torment" "Fear's Wide Reach" "Fire from the Sky" "Forceful Exorcism" "From Death Springs Life" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "In the Grasp of Corruption" "Lasting Impressions" "Mouth of Horrors" "Pools of Wealth" "Rebirth" "Risen Blood" "Soil, Worms and Blood" "Thaumaturgical History II" "Thaumaturgical History III" "The Brothers of Necromancy" "The Cursed Choir" "The Feral Lord I" "The Feral Lord III" "The God of Misfortune" "The Invader" "The Plaguemaw II" "The Plaguemaw III" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Undead Brutes" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Vital Transformation" "Defiled in the Sceptre" "A Valuable Combination"
 	Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 49 0 76
@@ -655,7 +655,7 @@ Show
 #These are worth 100c or more.
 Show
 #.econ: div 100
-	BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Succor of the Sinless" "Alluring Bounty" "The Samurai's Eye" "The Iron Bard" "The Nurse" "Pride of the First Ones" "Seven Years Bad Luck" "Abandoned Wealth"
+	BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Cheater" "Succor of the Sinless" "The Immortal" "The World Eater" "Alluring Bounty" "The Progeny of Lunaris" "The Nurse" "Nook's Crown"
     Class "Divination Card"
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 150 255
@@ -669,7 +669,7 @@ Show
 #These are worth more than 10c but less than or equals to 100c.
 Show
 #.econ: div 10 100
-	BaseType == "The Strategist" "The Cheater" "The Tinkerer's Table" "The Easy Stroll" "The Progeny of Lunaris" "The Eldritch Decay" "Council of Cats" "The Price of Loyalty" "Wealth and Power" "Immortal Resolve" "The Dragon's Heart" "Nook's Crown" "The Damned" "The Eye of Terror" "Void of the Elements" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "Etched in Blood" "Hunter's Reward" "The Bargain" "The Celestial Stone" "The World Eater" "The Escape" "The Enlightened" "The Soul" "The Mayor" "The Sephirot" "The Undaunted" "Squandered Prosperity" "The Polymath" "Azyran's Reward" "The Hoarder" "Blessing of God" "The Celestial Justicar" "Remembrance" "Pride Before the Fall" "The Landing" "The Valkyrie"
+	BaseType == "Immortal Resolve" "The Samurai's Eye" "Pride of the First Ones" "The Iron Bard" "The Dragon's Heart" "The Strategist" "The Spark and the Flame" "Abandoned Wealth" "The Price of Loyalty" "Hunter's Reward" "Wealth and Power" "Seven Years Bad Luck" "The Life Thief" "The Craving" "The Enlightened" "The Eye of Terror" "The Offering" "The Escape" "The Celestial Justicar" "Pride Before the Fall" "The Cursed King" "The Damned" "The Polymath" "The Saint's Treasure" "Burning Blood" "The Bargain" "Etched in Blood" "The Ethereal" "The Queen" "The Celestial Stone" "The Eldritch Decay" "The King's Heart" "The Soul" "Blessing of God" "Void of the Elements" "Dark Dreams" "The Pact" "The Sacrifice" "Council of Cats"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 50 150 255
@@ -683,7 +683,7 @@ Show
 #These are worth more than 1c but less than or equals to 10c.
 Show
 #.econ: div 1 10
-	BaseType == "The Old Man" "Chaotic Disposition" "Akil's Prophecy" "The Warlord" "The Wolven King's Bite" "The Professor" "Divine Justice" "The Rite of Elements" "Lucky Deck" "Mawr Blaidd" "The Artist" "The Ethereal" "The Void" "The Life Thief" "Burning Blood" "Dark Dreams" "The Craving" "Underground Forest" "The Fishmonger" "Dialla's Subjugation" "The Avenger" "Volatile Power" "Rebirth" "Friendship" "Baited Expectations" "Deathly Designs" "Bowyer's Dream" "The Betrayal" "The Dapper Prodigy" "The Dark Mage" "The King's Heart" "The Risk" "The Throne" "The Vast" "Time-Lost Relic" "The Puzzle" "The Jeweller's Boon" "The Hale Heart" "Perfection" "Boon of the First Ones" "The Wilted Rose" "The Endless Darkness" "The Sacrifice" "Arrogance of the Vaal" "The Mad King" "The Seeker" "Buried Treasure" "The Heroic Shot" "The Skeleton" "The Side Quest" "The Bones" "The Dreamer" "Left to Fate" "Boundless Realms" "Cartographer's Delight" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Shard of Fate" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Encroaching Darkness" "The Gambler" "The Gemcutter" "The Offering" "The One With All" "The Surveyor" "The Union" "The Wolf" "The Wolf's Shadow" "The Valley of Steel Boxes" "The Wretched" "The Garish Power" "The Porcupine" "No Traces" "The Breach" "The Undisputed" "The Innocent" "The Journey" "Monochrome" "Vanity" "The Deep Ones" "Vile Power" "The Chosen" "The Scholar" "The Formless Sea" "Alone in the Darkness" "The Survivalist" "Merciless Armament" "Three Voices" "The Brittle Emperor" "Rain of Chaos" "Three Faces in the Dark" "The Catalyst" "Anarchy's Price" "Audacity" "Blind Venture" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Hunter's Resolve" "Jack in the Box" "Last Hope" "Light and Truth" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Rain Tempter" "Rats" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Calling" "The Conduit" "The Cursed King" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Fox" "The Gentleman" "The Gladiator" "The Harvester" "The Hunger" "The Incantation" "The Inoculated" "The Inventor" "The Jester" "The Last One Standing" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Watcher" "The Web" "The Wind" "The Wrath" "Tranquillity" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Mitts" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "The Standoff" "The Forsaken" "Might is Right" "Atziri's Arsenal" "The Opulent" "Struck by Lightning" "The Blazing Fire" "The Ruthless Ceinture" "The Eye of the Dragon" "The Realm" "The Obscured" "The Deceiver" "The Insatiable" "Forbidden Power" "The Army of Blood" "The Beast" "The Sword King's Salute" "The Master" "The Fathomless Depths" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Cacophony" "The Master Artisan" "A Dab of Ink" "Sambodhi's Vow" "The Lord of Celebration" "Dark Temptation" "The Messenger" "The Golden Era" "Boon of Justice" "Thirst for Knowledge" "Imperial Legacy" "Echoes of Love" "The Fool" "Demigod's Wager" "The Primordial" "The Archmage's Right Hand" "The Mountain" "The Wolf's Legacy" "The Deal" "More is Never Enough" "Cameria's Cut"
+	BaseType == "The Endless Darkness" "Azyran's Reward" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Last Hope" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Warlord" "The Realm" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Easy Stroll" "The Heroic Shot" "Heterochromia" "The Lord of Celebration" "Emperor's Luck" "Humility" "Loyalty" "Lucky Deck" "The Aesthete" "The Cartographer" "The Catalyst" "The Dark Mage" "The Formless Sea" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Throne" "The Union" "The Void" "Time-Lost Relic" "Vinia's Token" "No Traces" "Left to Fate" "Rebirth" "Three Voices" "Harmony of Souls" "A Dab of Ink" "Vanity" "Imperial Legacy" "Buried Treasure" "The Primordial" "The Old Man" "The Chosen" "Sambodhi's Vow" "The Gambler" "The Wrath" "Struck by Lightning" "Assassin's Favour" "Audacity" "Blind Venture" "Boundless Realms" "Cartographer's Delight" "Coveted Possession" "Dialla's Subjugation" "Doedre's Madness" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hunter's Resolve" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Scholar of the Seas" "Shard of Fate" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fletcher" "The Fox" "The Gemcutter" "The Gentleman" "The Harvester" "The Incantation" "The Inoculated" "The Inventor" "The Jester" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Mercenary" "The Oath" "The One With All" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Survivalist" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Watcher" "The Wind" "The Wolf's Shadow" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter" "Turn the Other Cheek" "Volatile Power" "Mitts" "The Valley of Steel Boxes" "Call to the First Ones" "The Wretched" "Lingering Remnants" "The Coming Storm" "The Wolverine" "The Garish Power" "The Standoff" "The Forsaken" "Might is Right" "Atziri's Arsenal" "The Opulent" "The Ruthless Ceinture" "The Eye of the Dragon" "The Obscured" "The Deceiver" "The Puzzle" "The Insatiable" "Forbidden Power" "The Army of Blood" "The Beast" "The Sword King's Salute" "The Master" "The Fathomless Depths" "The Rite of Elements" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "The Twilight Moon" "The Wilted Rose" "The Price of Protection" "The Cacophony" "The Master Artisan" "Arrogance of the Vaal" "The Mad King" "Alone in the Darkness" "Dark Temptation" "The Journey" "The Messenger" "Monochrome" "The Golden Era" "Boon of Justice" "The Seeker" "Echoes of Love" "The Deep Ones" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "Vile Power" "The Mountain" "The Skeleton" "Akil's Prophecy" "The Wolf's Legacy" "The Deal" "The Side Quest" "More is Never Enough" "Cameria's Cut" "The Bones" "Friendship" "Baited Expectations" "Deathly Designs" "The Tinkerer's Table"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 30 100 205
@@ -708,7 +708,7 @@ Show
 #These are trash and should always remain hidden.
 Hide
 #.econ: div 0 1
-	BaseType == "A Mother's Parting Gift" "The Surgeon" "The Lunaris Priestess" "Thunderous Skies" "The Coming Storm" "Assassin's Favour" "The Carrion Crow" "The Hermit" "Lantador's Lost Love" "The King's Blade" "Prosperity" "The Metalsmith's Gift" "The Warden"
+	BaseType == "Light and Truth" "The Scarred Meadow" "The Pack Leader" "The Flora's Gift" "Hubris" "Thirst for Knowledge" "The Carrion Crow" "A Mother's Parting Gift" "Anarchy's Price" "Death" "Destined to Crumble" "Lantador's Lost Love" "The Endurance" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Warden" "The Web" "Thunderous Skies" "The Blazing Fire"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 20 60 165
@@ -738,7 +738,7 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ: sca 10
-	BaseType == "Gilded Legion Scarab" "Gilded Bestiary Scarab" "Gilded Sulphite Scarab" "Gilded Harbinger Scarab" "Polished Bestiary Scarab" "Polished Sulphite Scarab" "Polished Legion Scarab" "Gilded Divination Scarab" "Rusted Sulphite Scarab" "Gilded Ambush Scarab"
+	BaseType == "Gilded Bestiary Scarab" "Gilded Legion Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Cartography Scarab" "Polished Bestiary Scarab" "Gilded Breach Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -752,7 +752,7 @@ Show
 #These are worth more than 1 but less than 10c.
 Show
 #.econ: sca 1 10
-	BaseType == "Rusted Metamorph Scarab" "Polished Metamorph Scarab" "Gilded Metamorph Scarab" "Gilded Breach Scarab" "Polished Harbinger Scarab" "Gilded Reliquary Scarab" "Rusted Legion Scarab" "Rusted Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Shaper Scarab" "Gilded Perandus Scarab" "Rusted Harbinger Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Shaper Scarab" "Rusted Perandus Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab"
+	BaseType == "Polished Sulphite Scarab" "Gilded Harbinger Scarab" "Gilded Metamorph Scarab" "Gilded Elder Scarab" "Polished Legion Scarab" "Rusted Sulphite Scarab" "Polished Cartography Scarab" "Gilded Ambush Scarab" "Gilded Reliquary Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Gilded Shaper Scarab" "Gilded Perandus Scarab" "Polished Harbinger Scarab" "Polished Divination Scarab" "Rusted Legion Scarab" "Polished Metamorph Scarab" "Rusted Cartography Scarab" "Polished Elder Scarab" "Polished Perandus Scarab" "Polished Ambush Scarab" "Rusted Metamorph Scarab" "Rusted Divination Scarab" "Rusted Reliquary Scarab" "Rusted Elder Scarab" "Rusted Torment Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Shaper Scarab" "Rusted Perandus Scarab" "Rusted Harbinger Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Reliquary Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 150 100
@@ -766,7 +766,7 @@ Show
 #These are worth up to 1c.
 Show
 #.econ: sca 0 1 .strict: 2
-	BaseType == "Rusted Reliquary Scarab" "Rusted Torment Scarab"
+	BaseType == "Rusted Bestiary Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 110 100
@@ -783,7 +783,7 @@ Show
 #These are worth 100c or more.
 Show
 #.econ: fra 100
-	BaseType == "Chayula's Pure Breachstone" "Uul-Netol's Pure Breachstone" "Timeless Maraketh Emblem" "Chayula's Breachstone" "Fragment of Shape" "Fragment of Knowledge" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Tul's Pure Breachstone" "Xoph's Pure Breachstone" "Timeless Templar Emblem" "Esh's Pure Breachstone"
+	BaseType == "Timeless Maraketh Emblem" "Chayula's Pure Breachstone" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Timeless Templar Emblem"
 	Class "Map Fragments" "Labyrinth Map Item"
     SetTextColor 255 0 0
     SetBackgroundColor 50 230 100
@@ -811,7 +811,7 @@ Show
 #These are worth more than 1 but less than 10c.
 Show
 #.econ: fra 1 10
-	BaseType == "Xoph's Charged Breachstone" "Esh's Charged Breachstone" "Eber's Key" "Mortal Hope" "Mortal Rage" "Mortal Grief" "Xoph's Breachstone" "Divine Vessel" "Esh's Breachstone" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Offering to the Goddess" "Sacrifice at Midnight"
+	BaseType == "Uul-Netol's Breachstone" "Mortal Rage" "Inya's Key" "Yriel's Key" "Xoph's Charged Breachstone" "Xoph's Breachstone" "Eber's Key" "Esh's Charged Breachstone" "Mortal Grief" "Volkuur's Key" "Esh's Breachstone" "Divine Vessel" "Timeless Maraketh Splinter" "Offering to the Goddess" "Timeless Templar Splinter"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 150 100
@@ -825,7 +825,7 @@ Show
 #These are worth up to 1c.
 Show
 #.econ: fra 0 1
-	BaseType == "Sacrifice at Noon" "Sacrifice at Dawn" "Sacrifice at Dusk" "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
+	BaseType == "Sacrifice at Midnight" "Timeless Vaal Splinter" "Sacrifice at Noon" "Timeless Karui Splinter" "Sacrifice at Dawn" "Timeless Eternal Empire Splinter" "Sacrifice at Dusk"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 110 100
@@ -1687,7 +1687,6 @@ Show
 #.strict: 1
     Rarity = Magic
 	Identified True
-    SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
