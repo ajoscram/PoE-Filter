@@ -23,12 +23,12 @@
 #		Weapons		shows only iLvl 60+ rare 3x1 weapons.
 #
 #	.strict:
-#		0 			Shows everything.
-#		1 			Hides start of the league currency.
-#		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
-#		3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
-#		4 			Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
-#		5			Hides all red maps except T16s.
+#		Base			0 			Shows everything.
+#		Lenient			1 			Hides start of the league currency.
+#		Semi-strict		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
+#		Strict			3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
+#		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
+#		Uber-strict		5			Hides all red maps except T16s.
 #
 #	.econ:			fra, oil, inc, sca, fos, div, pro
 #
@@ -43,6 +43,9 @@
 #	[0000]	Index
 #	-------------------------
 #	[0100]	Currency
+#	[0115]		Harbinger Scrolls
+#	[0114]		Harvest Infrastructure
+#	[0113]		Harvest Seeds
 #	[0112]		Delirium Orbs
 #	[0111]		Catalysts
 #	[0110]		Vials
@@ -70,14 +73,16 @@
 #	[0500]	Gems
 #	-------------------------
 #	[0600]	Equipment
-#	[0617]		Uniques
-#	[0616]		Flasks
-#	[0615]		Jewels
-#	[0614]		Fractured
-#	[0613]		Synthesized
-#	[0612]		Veiled
-#	[0611]		Influenced
-#	[0610]		Identified
+#	[0619]		Uniques
+#	[0618]		Flasks
+#	[0617]		Jewels
+#	[0616]		Fractured
+#	[0615]		Synthesized
+#	[0614]		Veiled
+#	[0613]		Influenced
+#	[0612]		Temple
+#	[0611]		Lab Enchanted
+#	[0610]		Corrupted
 #	[0609]		Rings/Amulets
 #	[0608]		Belts
 #	[0607]		Body Armours
@@ -93,15 +98,31 @@
 #-------------------------------------------------------------------------------------------------------------
 #Base Shape: Circle
 
-#DELIRIUM ORBS------------------------------------------------------------------------------------------[0112]
+#HARBINGER SCROLLS--------------------------------------------------------------------------------------[0115]
+#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
+#Beam Color: White
+#Icon Color: White
+
+#Tiered as a pristine currency kinda item for the time being.
+Show
+	BaseType == "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 255 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+	MinimapIcon 1 White Circle
+	PlayEffect White
+
+#HARVEST INFRASTRUCTURE---------------------------------------------------------------------------------[0114]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
 #Tiered as a chaos orb kinda item for the time being.
 Show
-	BaseType == "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Portentous Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb" "Amorphous Delirium Orb"
-	Class "Currency"
+	BaseType == "Disperser" "Horticrafting Station" "Wild Lifeforce Collector" "Vivid Lifeforce Collector" "Primal Lifeforce Collector"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
 	SetBorderColor 0 0 0
@@ -109,15 +130,48 @@ Show
 	PlayAlertSoundPositional 13 50
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
+
+#HARVEST SEEDS------------------------------------------------------------------------------------------[0113]
+#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
+#Beam Color: White
+#Icon Color: White
+
+#Tiered as a chaos orb kinda item for the time being.
+Show
+	Class "Harvest Seed"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 240 210
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 13 50
+	MinimapIcon 2 White Circle
+	PlayEffect White Temp
+
+#DELIRIUM ORBS------------------------------------------------------------------------------------------[0112]
+#Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
+#Beam Color: White
+#Icon Color: White
+
+#Tiered as a pristine currency kinda item for the time being.
+Show
+	BaseType == "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Portentous Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb" "Amorphous Delirium Orb"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 255 255
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+	MinimapIcon 1 White Circle
+	PlayEffect White
 
 #CATALYSTS----------------------------------------------------------------------------------------------[0111]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
 #Beam Color: White
 #Icon Color: White
 
-#Tiered as a chaos orb kinda item for the time being.
+#These are worth a couple of chaos.
 Show
-	BaseType == "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst"
+	BaseType == "Fertile Catalyst" "Prismatic Catalyst"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -126,6 +180,16 @@ Show
 	PlayAlertSoundPositional 13 50
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
+
+#These are not worth much and should be hidden once quota is met.
+Show
+#.strict 2
+	BaseType == "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Intrinsic Catalyst"
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 170 155 130
+	SetBorderColor 0 0 0
+	SetFontSize 40
 
 #VIALS--------------------------------------------------------------------------------------------------[0110]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
@@ -239,7 +303,7 @@ Show
 #Icon Color: White
 
 #Tier 1
-#These are worth more than or equal to 10c and less than 100c.
+#These are worth more than or equal to 10c.
 Show
 #.econ: oil 10
 	BaseType == "Golden Oil" "Silver Oil" "Opalescent Oil"
@@ -256,7 +320,7 @@ Show
 #These are more than or equal to 1c and less than 10c.
 Show
 #.econ: oil 1 10
-	BaseType == "Black Oil" "Crimson Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Sepia Oil" "Verdant Oil"
+	BaseType == "Black Oil" "Crimson Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Sepia Oil" "Verdant Oil"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -287,7 +351,7 @@ Show
 Show
 #.econ: inc 10
 	BaseType == "Geomancer's Incubator"
-    Class "Currency"
+    Class "Incubator"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 0 0
@@ -301,7 +365,7 @@ Show
 Show
 #.econ: inc 0 10
 	BaseType == "Thaumaturge's Incubator" "Time-Lost Incubator" "Gemcutter's Incubator" "Diviner's Incubator" "Foreboding Incubator" "Ornate Incubator" "Whispering Incubator" "Singular Incubator" "Primal Incubator" "Celestial Jeweller's Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Skittering Incubator" "Fossilised Incubator" "Abyssal Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Otherworldly Incubator" "Obscured Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
-    Class "Currency"
+    Class "Incubator"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
 	SetBorderColor 0 0 0
@@ -370,7 +434,7 @@ Show
 #Tier 3
 #These are more than or equal to 1c and less than 10c.
 Show
-#.econ: pro 1 10
+#.econ: pro 2 10
 	Prophecy == "A Master Seeks Help" "Flesh of the Beast" "The Ambitious Bandit III" "The King's Path" "The Misunderstood Queen" "The Silverwood" "The Dreaded Rhoa" "A Vision of Ice and Fire" "The Bishop's Legacy" "The Mentor" "Monstrous Treasure" "The Apex Predator" "Ancient Doom" "Fire and Brimstone" "Fire and Ice" "Twice Enchanted" "Wind and Thunder" "The Great Mind of the North" "The Malevolent Witch" "Erasmus' Gift" "Heart of the Fire" "Kalandra's Craft" "The Dream Trial" "The Plaguemaw V" "The Servant's Heart" "The Soulless Beast" "The Unbreathing Queen V" "Vaal Winds" "Dance of Steel" "Last of the Wildmen" "Blind Faith" "Battle Hardened" "A Master Seeks Help" "The Flayed Man" "Blood in the Eyes" "The Karui Rebellion" "Deadly Rivalry V" "A Call into the Void" "A Firm Foothold" "A Forest of False Idols" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Baptism by Death" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Bountiful Traps" "Crushing Squall" "Custodians of Silence" "Day of Sacrifice I" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry IV" "Deadly Twins" "Dying Cry" "Echoes of Witchcraft" "Erased from Memory" "Fallow At Last" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Hunter's Lesson" "Ice from Above" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Pleasure and Pain" "Possessed Foe" "Power Magnified" "Reforged Bonds" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Storm on the Horizon" "Strong as a Bull" "Thaumaturgical History I" "Thaumaturgical History IV" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Beautiful Guide" "The Beginning and the End" "The Brutal Enforcer" "The Child of Lunaris" "The Dreamer's Dream" "The Feral Lord II" "The Feral Lord V" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The Hardened Armour" "The Hungering Swarm" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Plaguemaw I" "The Plaguemaw IV" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Sharpened Blade" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Stockkeeper" "The Unbreathing Queen IV" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "Touched by the Wind" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Visions of the Drowned" "Weeping Death" "Winter's Mournful Melodies" "Storm on the Reef" "Greed's Folly" "Dark Instincts" "Cold Blooded Fury" "Burning Dread" "The Storm Spire" "Black Devotion" "Trapped in the Tower" "End of the Light" "A Rift in Time" "Sun's Punishment" "Cold Greed" "The Nightmare Awakens" "The Fall of an Empire" "Crimson Hues" "Blinding Light" "Faith Exhumed" "A Master Seeks Help" "A Master Seeks Help"
     Class "Currency"
 	SetTextColor 255 255 255
@@ -382,9 +446,9 @@ Show
 	PlayEffect White Temp
 
 #Tier 4
-#These are less than 1c.
+#These are less than 2c.
 Show
-#.econ: pro 0 1 .strict: 2
+#.econ: pro 0 2 .strict: 2
 	Prophecy == "Plague of Frogs" "Deadly Rivalry II" "The Sword King's Passion" "Plague of Rats" "Waiting in Ambush" "The Eagle's Cry" "The Bloody Flowers Redux" "Agony at Dusk" "Living Fires" "The Alchemist" "The Trembling Earth" "Beyond Sight I" "Day of Sacrifice II" "The Twins" "The Feral Lord IV" "Heavy Blows" "Resistant to Change" "Lightning Falls" "Blood of the Betrayed" "Mysterious Invaders" "The Corrupt" "The Wealthy Exile" "Vaal Invasion" "The Scout" "A Regal Death" "Deadly Rivalry III" "Ending the Torment" "Fear's Wide Reach" "Fire from the Sky" "Forceful Exorcism" "From Death Springs Life" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "In the Grasp of Corruption" "Lasting Impressions" "Mouth of Horrors" "Pools of Wealth" "Rebirth" "Risen Blood" "Soil, Worms and Blood" "Thaumaturgical History II" "Thaumaturgical History III" "The Brothers of Necromancy" "The Cursed Choir" "The Feral Lord I" "The Feral Lord III" "The God of Misfortune" "The Invader" "The Plaguemaw II" "The Plaguemaw III" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Undead Brutes" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Vital Transformation" "Defiled in the Sceptre" "A Valuable Combination"
 	Class "Currency"
 	SetTextColor 255 255 255
@@ -573,7 +637,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType == "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -597,7 +661,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Perandus Coin" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
+    BaseType == "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -607,7 +671,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 Show
 #.strict: 1
-	BaseType == "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation"
+	BaseType == "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -624,7 +688,18 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#These items are worthless.
+#These items are only shown in the first five acts of the game.
+Show
+#.strict: 0
+    BaseType == "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel < 45
+	SetTextColor 0 0 0
+    SetBackgroundColor 60 55 50
+	SetBorderColor 0 0 0
+    SetFontSize 40
+
+#These items are worthless later on so they're hidden.
 Hide
     BaseType == "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
@@ -655,7 +730,7 @@ Show
 #These are worth 100c or more.
 Show
 #.econ: div 100
-	BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Cheater" "Succor of the Sinless" "The Immortal" "The World Eater" "Alluring Bounty" "The Progeny of Lunaris" "The Nurse" "Nook's Crown"
+	BaseType == "The Greatest Intentions" "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Cheater" "Succor of the Sinless" "The Immortal" "The World Eater" "Alluring Bounty" "The Progeny of Lunaris" "The Nurse" "Nook's Crown"
     Class "Divination Card"
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 150 255
@@ -669,7 +744,7 @@ Show
 #These are worth more than 10c but less than or equals to 100c.
 Show
 #.econ: div 10 100
-	BaseType == "Immortal Resolve" "The Samurai's Eye" "Pride of the First Ones" "The Iron Bard" "The Dragon's Heart" "The Strategist" "The Spark and the Flame" "Abandoned Wealth" "The Price of Loyalty" "Hunter's Reward" "Wealth and Power" "Seven Years Bad Luck" "The Life Thief" "The Craving" "The Enlightened" "The Eye of Terror" "The Offering" "The Escape" "The Celestial Justicar" "Pride Before the Fall" "The Cursed King" "The Damned" "The Polymath" "The Saint's Treasure" "Burning Blood" "The Bargain" "Etched in Blood" "The Ethereal" "The Queen" "The Celestial Stone" "The Eldritch Decay" "The King's Heart" "The Soul" "Blessing of God" "Void of the Elements" "Dark Dreams" "The Pact" "The Sacrifice" "Council of Cats"
+	BaseType == "A Note in the Wind" "The White Knight" "Prometheus' Armoury" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "Immortal Resolve" "The Samurai's Eye" "Pride of the First Ones" "The Iron Bard" "The Dragon's Heart" "The Strategist" "The Spark and the Flame" "Abandoned Wealth" "The Price of Loyalty" "Hunter's Reward" "Wealth and Power" "Seven Years Bad Luck" "The Life Thief" "The Craving" "The Enlightened" "The Eye of Terror" "The Offering" "The Escape" "The Celestial Justicar" "Pride Before the Fall" "The Cursed King" "The Damned" "The Polymath" "The Saint's Treasure" "Burning Blood" "The Bargain" "Etched in Blood" "The Ethereal" "The Queen" "The Celestial Stone" "The Eldritch Decay" "The King's Heart" "The Soul" "Blessing of God" "Void of the Elements" "Dark Dreams" "The Pact" "The Sacrifice" "Council of Cats"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 50 150 255
@@ -680,10 +755,10 @@ Show
 	PlayEffect Blue
 
 #Tier 3
-#These are worth more than 1c but less than or equals to 10c.
+#These are worth more than 2c but less than or equals to 10c.
 Show
-#.econ: div 1 10
-	BaseType == "The Endless Darkness" "Azyran's Reward" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Last Hope" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Warlord" "The Realm" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Easy Stroll" "The Heroic Shot" "Heterochromia" "The Lord of Celebration" "Emperor's Luck" "Humility" "Loyalty" "Lucky Deck" "The Aesthete" "The Cartographer" "The Catalyst" "The Dark Mage" "The Formless Sea" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Throne" "The Union" "The Void" "Time-Lost Relic" "Vinia's Token" "No Traces" "Left to Fate" "Rebirth" "Three Voices" "Harmony of Souls" "A Dab of Ink" "Vanity" "Imperial Legacy" "Buried Treasure" "The Primordial" "The Old Man" "The Chosen" "Sambodhi's Vow" "The Gambler" "The Wrath" "Struck by Lightning" "Assassin's Favour" "Audacity" "Blind Venture" "Boundless Realms" "Cartographer's Delight" "Coveted Possession" "Dialla's Subjugation" "Doedre's Madness" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hunter's Resolve" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Scholar of the Seas" "Shard of Fate" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fletcher" "The Fox" "The Gemcutter" "The Gentleman" "The Harvester" "The Incantation" "The Inoculated" "The Inventor" "The Jester" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Mercenary" "The Oath" "The One With All" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Survivalist" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Watcher" "The Wind" "The Wolf's Shadow" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter" "Turn the Other Cheek" "Volatile Power" "Mitts" "The Valley of Steel Boxes" "Call to the First Ones" "The Wretched" "Lingering Remnants" "The Coming Storm" "The Wolverine" "The Garish Power" "The Standoff" "The Forsaken" "Might is Right" "Atziri's Arsenal" "The Opulent" "The Ruthless Ceinture" "The Eye of the Dragon" "The Obscured" "The Deceiver" "The Puzzle" "The Insatiable" "Forbidden Power" "The Army of Blood" "The Beast" "The Sword King's Salute" "The Master" "The Fathomless Depths" "The Rite of Elements" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "The Twilight Moon" "The Wilted Rose" "The Price of Protection" "The Cacophony" "The Master Artisan" "Arrogance of the Vaal" "The Mad King" "Alone in the Darkness" "Dark Temptation" "The Journey" "The Messenger" "Monochrome" "The Golden Era" "Boon of Justice" "The Seeker" "Echoes of Love" "The Deep Ones" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "Vile Power" "The Mountain" "The Skeleton" "Akil's Prophecy" "The Wolf's Legacy" "The Deal" "The Side Quest" "More is Never Enough" "Cameria's Cut" "The Bones" "Friendship" "Baited Expectations" "Deathly Designs" "The Tinkerer's Table"
+#.econ: div 2 10
+	BaseType == "Gift of Asenath" "The Hive of Knowledge" "The Endless Darkness" "Azyran's Reward" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Last Hope" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Warlord" "The Realm" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Easy Stroll" "The Heroic Shot" "Heterochromia" "The Lord of Celebration" "Emperor's Luck" "Humility" "Loyalty" "Lucky Deck" "The Aesthete" "The Cartographer" "The Catalyst" "The Dark Mage" "The Formless Sea" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Throne" "The Union" "The Void" "Time-Lost Relic" "Vinia's Token" "No Traces" "Left to Fate" "Rebirth" "Three Voices" "Harmony of Souls" "A Dab of Ink" "Vanity" "Imperial Legacy" "Buried Treasure" "The Primordial" "The Old Man" "The Chosen" "Sambodhi's Vow" "The Gambler" "The Wrath" "Struck by Lightning" "Assassin's Favour" "Audacity" "Blind Venture" "Boundless Realms" "Cartographer's Delight" "Coveted Possession" "Dialla's Subjugation" "Doedre's Madness" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hunter's Resolve" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Scholar of the Seas" "Shard of Fate" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fletcher" "The Fox" "The Gemcutter" "The Gentleman" "The Harvester" "The Incantation" "The Inoculated" "The Inventor" "The Jester" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Mercenary" "The Oath" "The One With All" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Survivalist" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Watcher" "The Wind" "The Wolf's Shadow" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter" "Turn the Other Cheek" "Volatile Power" "Mitts" "The Valley of Steel Boxes" "Call to the First Ones" "The Wretched" "Lingering Remnants" "The Coming Storm" "The Wolverine" "The Garish Power" "The Standoff" "The Forsaken" "Might is Right" "Atziri's Arsenal" "The Opulent" "The Ruthless Ceinture" "The Eye of the Dragon" "The Obscured" "The Deceiver" "The Puzzle" "The Insatiable" "Forbidden Power" "The Army of Blood" "The Beast" "The Sword King's Salute" "The Master" "The Fathomless Depths" "The Rite of Elements" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "The Twilight Moon" "The Wilted Rose" "The Price of Protection" "The Cacophony" "The Master Artisan" "Arrogance of the Vaal" "The Mad King" "Alone in the Darkness" "Dark Temptation" "The Journey" "The Messenger" "Monochrome" "The Golden Era" "Boon of Justice" "The Seeker" "Echoes of Love" "The Deep Ones" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "Vile Power" "The Mountain" "The Skeleton" "Akil's Prophecy" "The Wolf's Legacy" "The Deal" "The Side Quest" "More is Never Enough" "Cameria's Cut" "The Bones" "Friendship" "Baited Expectations" "Deathly Designs" "The Tinkerer's Table"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 30 100 205
@@ -696,7 +771,7 @@ Show
 #Tier 4
 #Here go any cards that cost less than 1c but you'd like to keep shown.
 Show
-	BaseType == "Loyalty" "Lucky Connections" "The Survivalist" "The Union" "Vinia's Token" "Sambodhi's Vow" "The Deal" "The Dreamland" "The Encroaching Darkness" "The Gladiator" "The Lion" "The Master Artisan" "The Obscured" "The Realm" "The Surveyor" "The Twilight Moon" "The Valley of Steel Boxes" "The Wretched" "Time-Lost Relic"
+	BaseType == "The Tumbleweed" "Loyalty" "Lucky Connections" "The Survivalist" "The Union" "Vinia's Token" "Sambodhi's Vow" "The Deal" "The Dreamland" "The Encroaching Darkness" "The Gladiator" "The Lion" "The Master Artisan" "The Obscured" "The Realm" "The Surveyor" "The Twilight Moon" "The Valley of Steel Boxes" "The Wretched" "Time-Lost Relic"
 	Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 20 60 165
@@ -735,10 +810,10 @@ Show
 #Icon Color: Green
 
 #Tier 1
-#These are worth more than or equal to 10c and less than 100c.
+#These are worth more than 10c.
 Show
 #.econ: sca 10
-	BaseType == "Gilded Bestiary Scarab" "Gilded Legion Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Cartography Scarab" "Polished Bestiary Scarab" "Gilded Breach Scarab"
+	BaseType == "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Gilded Bestiary Scarab" "Gilded Legion Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Cartography Scarab" "Polished Bestiary Scarab" "Gilded Breach Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -797,7 +872,7 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ fra 10 100
-	BaseType == "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+	BaseType == "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
@@ -918,9 +993,10 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Yellow Hexagon
 ##Red
+#These red maps don't make the cut eventually because they are too low tier for full atlas.
 Show
 #.strict: 4
-    MapTier <= 15
+    MapTier <= 13
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 237 81 81
@@ -928,9 +1004,10 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Red Hexagon
 	PlayEffect Red Temp
-##Tier 16
+##Tier 14+
+#Maps on this tier belong on fully watchstoned atlases.
 Show
-    MapTier = 16
+    MapTier <= 14
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 0 0
@@ -1117,8 +1194,18 @@ Show
 #Tier 5
 #Drop-only worthless gems. These drop rarely enough that there is no harm in leaving them up.
 Show
+#.strict: 1
 	BaseType "Added Chaos Damage Support" "Detonate Mines" "Portal" "Enhance Support"
     Class "Active Skill Gems" "Support Skill Gems"
+    SetTextColor 0 0 0
+	SetBackgroundColor 40 105 100
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Showing level 1 gems. This is merely a convenience for new players.
+Show
+    Class "Active Skill Gems" "Support Skill Gems"
+	AreaLevel = 1
     SetTextColor 0 0 0
 	SetBackgroundColor 40 105 100
 	SetBorderColor 0 0 0
@@ -1138,7 +1225,7 @@ Hide
 #-------------------------------------------------------------------------------------------------------------
 #Base Shape: Triangle
 
-#UNIQUES------------------------------------------------------------------------------------------------[0617]
+#UNIQUES------------------------------------------------------------------------------------------------[0619]
 #Base Color: PoE's Orange (255 165 0)
 #Beam Color: Brown
 #Icon Color: Browm
@@ -1154,7 +1241,7 @@ Show
 	MinimapIcon 2 Brown Triangle
 	PlayEffect Brown Temp
 
-#FLASKS-------------------------------------------------------------------------------------------------[0616]
+#FLASKS-------------------------------------------------------------------------------------------------[0618]
 #Base Color: Light Blue (200 230 255)
 #Beam Color: None
 #Icon Color: None
@@ -1298,7 +1385,7 @@ Hide
 	SetBorderColor 0 0 0
     SetFontSize 32
 
-#JEWELS-------------------------------------------------------------------------------------------------[0615]
+#JEWELS-------------------------------------------------------------------------------------------------[0617]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
@@ -1306,7 +1393,6 @@ Hide
 #Large Cluster
 ##Rare jewels
 Show
-#.strict: 3
 	BaseType == "Large Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1315,7 +1401,6 @@ Show
 
 ##Magic or lower
 Show
-#.strict: 2
 	BaseType == "Large Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
@@ -1325,7 +1410,6 @@ Show
 #Medium Cluster
 ##Rare jewels
 Show
-#.strict: 3
 	BaseType == "Medium Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1334,7 +1418,6 @@ Show
 
 ##Magic or lower
 Show
-#.strict: 2
 	BaseType == "Medium Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
@@ -1344,7 +1427,6 @@ Show
 #Small Cluster
 ##Rare jewels
 Show
-#.strict: 3
 	BaseType == "Small Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1353,7 +1435,6 @@ Show
 
 ##Magic or lower
 Show
-#.strict: 2
 	BaseType == "Small Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
@@ -1377,7 +1458,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#FRACTURED----------------------------------------------------------------------------------------------[0614]
+#FRACTURED----------------------------------------------------------------------------------------------[0616]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1413,7 +1494,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SYNTHESISED--------------------------------------------------------------------------------------------[0613]
+#SYNTHESISED--------------------------------------------------------------------------------------------[0615]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1449,7 +1530,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#VEILED-------------------------------------------------------------------------------------------------[0612]
+#VEILED-------------------------------------------------------------------------------------------------[0614]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1487,7 +1568,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#INFLUENCED---------------------------------------------------------------------------------------------[0611]
+#INFLUENCED---------------------------------------------------------------------------------------------[0613]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30)
 #Beam Color: White
 #Icon Color: White
@@ -1533,8 +1614,8 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#IDENTIFIED--------------------------------------------------------------------------------------------[0610]
-#Identified magic and rare items usually carry powerful mods with them and don't appear often.
+#TEMPLE------------------------------------------------------------------------------------------------[0612]
+#Atzoatl temple mod items are really good to craft on and generally scarce.
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
@@ -1542,6 +1623,7 @@ Show
 #iLvl 75+ Rares (Blue border for Regal recipe)
 ##Six Links
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     LinkedSockets = 6
     ItemLevel >= 75
     Rarity = Rare
@@ -1552,6 +1634,7 @@ Show
 	PlayAlertSoundPositional 6 100
 ##Six Sockets
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Sockets = 6
     ItemLevel >= 75
     Rarity = Rare
@@ -1561,7 +1644,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict: 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -1571,7 +1654,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict: 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 75
     Rarity = Rare
 	Identified True
@@ -1581,6 +1664,7 @@ Show
 #iLvl 60-74 Rares (Yellow border for Chaos recipe)
 ##Six Links
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     LinkedSockets = 6
     ItemLevel >= 60
     Rarity = Rare
@@ -1591,6 +1675,7 @@ Show
 	PlayAlertSoundPositional 6 100
 ##Six Sockets
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Sockets = 6
     ItemLevel >= 60
     Rarity = Rare
@@ -1600,7 +1685,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict: 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -1610,7 +1695,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict: 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 60
     Rarity = Rare
 	Identified True
@@ -1620,6 +1705,7 @@ Show
 #iLvl <60 Rares (Kept for levelling)
 ##Six Links
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     LinkedSockets = 6
     ItemLevel < 60
     Rarity = Rare
@@ -1630,6 +1716,7 @@ Show
 	PlayAlertSoundPositional 6 100
 ##Six Sockets
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Sockets = 6
     ItemLevel < 60
     Rarity = Rare
@@ -1639,6 +1726,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel < 60
     Rarity = Rare
@@ -1648,6 +1736,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel < 60
     Rarity = Rare
 	Identified True
@@ -1657,6 +1746,7 @@ Show
 #Magic
 ##Six Links
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     LinkedSockets = 6
     Rarity = Magic
 	Identified True
@@ -1666,6 +1756,7 @@ Show
 	PlayAlertSoundPositional 6 100
 ##Six Sockets
 Show
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Sockets = 6
     Rarity = Magic
 	Identified True
@@ -1674,7 +1765,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict: 1
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 	ItemLevel >= 45
     SocketGroup RGB
     Rarity = Magic
@@ -1684,8 +1775,304 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict: 1
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Rarity = Magic
+	Identified True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#LAB ENCHANTED-----------------------------------------------------------------------------------------[0611]
+#Currently shows all lab enchanted gear. This is bound to change once PFG implements Lab Enchants.
+#Base Color: None
+#Beam Color: None
+#Icon Color: None
+
+#iLvl 75+ Rares (Blue border for Regal recipe)
+##Six Links
+Show
+	AnyEnchantment True
+    LinkedSockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 30 144 255
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	AnyEnchantment True
+    Sockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Chromatics
+Show
+	AnyEnchantment True
+    SocketGroup RGB
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Miscellaneous
+Show
+	AnyEnchantment True
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBorderColor 30 144 255
+	SetFontSize 40
+
+#iLvl 60-74 Rares (Yellow border for Chaos recipe)
+##Six Links
+Show
+	AnyEnchantment True
+    LinkedSockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 119
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	AnyEnchantment True
+    Sockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Chromatics
+Show
+	AnyEnchantment True
+    SocketGroup RGB
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Miscellaneous
+Show
+	AnyEnchantment True
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBorderColor 255 255 119
+	SetFontSize 40
+
+#iLvl <60 Rares (Kept for levelling)
+##Six Links
+Show
+	AnyEnchantment True
+    LinkedSockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	AnyEnchantment True
+    Sockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Chromatics
+Show
+	AnyEnchantment True
+    SocketGroup RGB
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	AnyEnchantment True
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Magic & Normal
+##Six Links
+Show
+	AnyEnchantment True
+    LinkedSockets = 6
+    Rarity <= Magic
+	Identified True
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	AnyEnchantment True
+    Sockets = 6
+    Rarity <= Magic
+	Identified True
+    SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Chromatics
+Show
+	AnyEnchantment True
+	ItemLevel >= 45
+    SocketGroup RGB
+    Rarity <= Magic
+	Identified True
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	AnyEnchantment True
+    Rarity <= Magic
+	Identified True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#CORRUPTED---------------------------------------------------------------------------------------------[0610]
+#Shows all corrupted rare gear dropped with corrupted implicit mods.
+#Base Color: None
+#Beam Color: None
+#Icon Color: None
+
+#iLvl 75+ Rares (Blue border for Regal recipe)
+##Six Links
+Show
+	CorruptedMods >= 1
+    LinkedSockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 30 144 255
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	CorruptedMods >= 1
+    Sockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Chromatics
+Show
+	CorruptedMods >= 1
+    SocketGroup RGB
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Miscellaneous
+Show
+	CorruptedMods >= 1
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBorderColor 30 144 255
+	SetFontSize 40
+
+#iLvl 60-74 Rares (Yellow border for Chaos recipe)
+##Six Links
+Show
+	CorruptedMods >= 1
+    LinkedSockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 119
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	CorruptedMods >= 1
+    Sockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Chromatics
+Show
+	CorruptedMods >= 1
+    SocketGroup RGB
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Miscellaneous
+Show
+	CorruptedMods >= 1
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBorderColor 255 255 119
+	SetFontSize 40
+
+#iLvl <60 Rares (Kept for levelling)
+##Six Links
+Show
+	CorruptedMods >= 1
+    LinkedSockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	CorruptedMods >= 1
+    Sockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Chromatics
+Show
+	CorruptedMods >= 1
+    SocketGroup RGB
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	CorruptedMods >= 1
+    ItemLevel < 60
+    Rarity = Rare
 	Identified True
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -2648,7 +3035,7 @@ Show
 	SetFontSize 40
 ##Chromatics (up to the start of act 6)
 Show
-#.strict: 1
+#.strict: 0
     SocketGroup RGB
     Rarity <= Magic
 	ItemLevel < 45
@@ -2706,3 +3093,6 @@ Show
 #-------------------------------------------------------------------------------------------------------------
 #Hide eveything else.
 Hide
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 175
+	SetFontSize 18
