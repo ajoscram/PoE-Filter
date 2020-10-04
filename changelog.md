@@ -1,4 +1,4 @@
-# To-Do:
+# To-Do
 * Update maps section for shaper/elder maps.
 * Expand the Influenced base types section with the best bases/levels per influence.
 * Tier delirium orbs.
@@ -8,27 +8,34 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
-# 3.12:
-## 3.12 Changes:
+# 3.12b
+## General Changes
+* General economy update.
+* Changed the Equipment's base shape from Triangle to Kite.
+* Chance orbs were up-tiered once for Heist contract rolling. They are still hidden in stricter filter versions.
+* Moved a lot of divination cards to tier 5 (trash) for the base filter. These are simply not worth picking up anymore. Make sure a card you're interested in is not being removed by reaading through the list at the divination cards tier 5.
+
+# 3.12
+## 3.12 Changes
 * Added all the new Divination Cards.
 * Added the new currency items: Prime Regrading Lens, Secondary Regrading Lens, Tempering Orb, Tailoring Orb and Rogue's Marker.
 * Added Heist Targets as quest items.
 * Added Blueprints and Contracts in the mapping section.
 * Added all Alternate Quality gems as tier 3 gems.
 * Added trinkets and all Heist rouge equipment. There is no highlighting of any sort, this might be changed eventually.
-## General Changes:
+## General changes
 * Added +1 Flesh and Stone and Brand Recall as tier 1 gems.
 * Uniques now use the new orange color for map icons and beams instead of brown. Brown is used for Heist instead.
 * Added normal and rare rings and belts up to the start of act 3.
 * Added 3-links up to the start of act 3.
 
 # 3.11b
-## General changes:
+## General changes
 * General economy update.
 * Bugfixed the upper range on divination cards still being 1c instead of 2c.
 
-# 3.11:
-## 3.11 Changes:
+# 3.11
+## 3.11 Changes
 * Added the new Indigo Oil.
 * Added the new divination cards on various tiers until the economy settles.
 * Added the new scarabs as tier 1 drops until the economy settles.
@@ -36,7 +43,7 @@
 * Added both the Infused Engineer's Orb and the Facetor's Lens to the list of miscellaneous currencies as premier.
 * Added all Harvest seeds and intrastructure items and displayed them as chaos orb kinda items until the economy settles.
 * Added the Harbinger Scrolls as premier currencies.
-## General changes:
+## General changes
 * Made naturally hidden items the smallest possible and game them transparent backgrounds.
 * Perandus coins were dropped down by one tier.
 * Added an additional lower tier for catalysts. This tier is shown until the Strict version of the filter.
@@ -52,21 +59,21 @@
 * Twlight Strand gems are always shown. Intended for new players.
 * Drop-only worthless gems (tier 5) now have a strictness of 1.
 
-# 3.10b:
-## General changes:
+# 3.10b
+## General changes
 * General economy update.
 * Bugfixed magic identified items appearing with a green background.
 
-# 3.10:
-## 3.10 Changes:
+# 3.10
+## 3.10 Changes
 * Added support for Delirium Orbs.
 * Added support for the Simulacrum fragment and splinters.
 * Added Metamorph scarabs.
 * Added the new divination cards.
 * Added large, medium and small cluster jewels, but they are currently functionally equivalent to regular jewels and look the same.
 
-# 3.9c:
-## General changes:
+# 3.9c
+## General changes
 * Split scarabs into their own section.
 * Added support for unique watchstones.
 * Added economy based prophecy tiers.
@@ -75,7 +82,7 @@
 * Gave hidden chromatic items a smaller font.
 * Added a preface, an index and links to various important resources (and ASCII ART :D).
 * Implemented support for PoE Filter Generator.
-## Filters folder:
+## Filters folder
 * PoE Generator allows for some very neat sub-filtering.
 * Added .chaos rules for: Bodies, Helmets, Gloves, Boots and Weapons.
 * Added .econ rules for: fragments, oils, incubator, scarabs, fossils, divination cards and prophecies.
@@ -87,16 +94,16 @@
     * 4: Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
     * 5: Hides all red maps except T16s.
 
-# 3.9b:
-## General changes:
+# 3.9b
+## General changes
 * Fixed the letter color on incubators from grey to black.
 * Added Atlas-only base types to the Normal & Magic sections of gear to show them when they have those rarities.
-## 3.9 Changes:
+## 3.9 Changes
 * Support for "Atlas Region Upgrade Item" (Watchstones) was added.
 * Support for new influenced types was added and it was streamlined into a single section alongside Shaper and Elder influence.
 
-# 3.9:
-## General changes:   
+# 3.9
+## General changes
 * Chromatic items are now shown until the end of act 5.
 * 5-links are now always shown up to end-game before maps instead of up to act 5.
 * Changed tier 2 currency shards' sound to better match their cost.
@@ -107,7 +114,7 @@
 * The divination cards section was refactored with less tiers to make it easier to maintain.
 * Some divination cards that were missing were added.
 * Streamlined the fossils, resonators, incubators, oils and incursion vials sections into the normal currency colors to make them more maintainable and readable in game. Future league sub-currencies should follow this trend as well; barring exceptions like splinters.
-## 3.9 Changes:
+## 3.9 Changes
 * Updated the maps section in general for 3.9.
 * Added all divination cards tiered.
 * Changed the old sextant names for the new ones.
