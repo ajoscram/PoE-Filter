@@ -8,6 +8,17 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
+# 3.12c
+## General Changes
+* General economy update.
+* Lowered Silver Coins' tier down once. They're not worth picking up later on in the league.
+* Fixed a bug where oils were shown rarer than they should've.
+* Belts have been soft tiered. Studded, Cloth and Chain belts have been removed from the filter at Strict+ strictness.
+* Normal and Magic Cluster Jewels now are hidden from Lenient+ since they are now too cheap to justify always showing.
+
+## 3.12 Changes
+* Tiered Rogue Equipment so that stricter versions of the filters don't show as many of these items.
+
 # 3.12b
 ## General Changes
 * General economy update.

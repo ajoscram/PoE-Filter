@@ -664,7 +664,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Rogue's Marker" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Silver Coin" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
+    BaseType == "Rogue's Marker" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -674,7 +674,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 Show
 #.strict: 1
-	BaseType == "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -1294,10 +1294,47 @@ Show
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
+
+#Level 5
 Show
+#.strict: 3
+	BaseType "Obsidian Sharpening Stone" "Precise Arrowhead" "Burst Band" "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Whisper-woven Cloak" "Foliate Brooch"
 	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
 	SetBorderColor 0 0 0
 	SetFontSize 40
+
+#Level 4
+Show
+#.strict: 2
+	BaseType "Fine Sharpening Stone" "Hollowpoint Arrowhead" "Aggregator Charm" "Fine Lockpick" "Runed Bracers" "Polished Sensing Charm" "Azurite Flashpowder" "Shining Ward" "Skeleton Keyring" "Winged Sole" "Espionage Disguise Kit" "Sulphur Blowtorch" "Hooded Cloak" "Enamel Brooch"
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Level 3
+Show
+#.strict: 1
+	BaseType "Standard Sharpening Stone" "Fragmenting Arrowhead" "Conduit Line" "Standard Lockpick" "Studded Bracers" "Fine Sensing Charm" "Trarthan Flashpowder" "Lustrous Ward" "Versatile Keyring" "Foxhide Sole" "Theatre Disguise Kit" "Flanged Drill" "Tattered Cloak" "Golden Brooch"
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Level 2
+Show
+#.strict: 1
+	BaseType "Rough Sharpening Stone" "Flanged Arrowhead" "Focal Stone" "Simple Lockpick" "Leather Bracers" "Crude Sensing Charm" "Voltaxic Flashpowder" "Crude Ward" "Essential Keyring" "Eelskin Sole" "Basic Disguise Kit" "Steel Drill" "Torn Cloak" "Silver Brooch"
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Catchall
+Show
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetTextColor 0 0 0 0
+	SetBorderColor 255 0 255
+	SetBackgroundColor 255 0 255
+    SetFontSize 45
+	PlayAlertSoundPositional 15 300
 
 #FLASKS-------------------------------------------------------------------------------------------------[0619]
 #Base Color: Light Blue (200 230 255)
@@ -1459,6 +1496,7 @@ Show
 
 ##Magic or lower
 Show
+#.strict: 2
 	BaseType == "Large Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
@@ -1476,6 +1514,7 @@ Show
 
 ##Magic or lower
 Show
+#.strict: 2
 	BaseType == "Medium Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
@@ -1493,6 +1532,7 @@ Show
 
 ##Magic or lower
 Show
+#.strict: 2
 	BaseType == "Small Cluster Jewel"
     Rarity <= Magic
     Class "Jewel"
