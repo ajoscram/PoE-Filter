@@ -26,7 +26,7 @@
 #		Base			0 			Shows everything.
 #		Lenient			1 			Hides start of the league currency.
 #		Semi-strict		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
-#		Strict			3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry.
+#		Strict			3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry and good belt bases.
 #		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
 #		Uber-strict		5			Hides all red maps except T16s.
 #
@@ -868,7 +868,7 @@ Show
 #Tier 3
 #These are worth up to 1c.
 Show
-#.econ: sca 0 1 .strict: 2
+#.econ: sca 0 1
 	BaseType == "Rusted Bestiary Scarab"
 	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
@@ -2272,10 +2272,11 @@ Show
 	SetFontSize 40
 	SetBorderColor 0 0 0
 
-#Miscellaneous
+#iLvl60+ Good Bases
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
 #.strict: 3
+	BaseType "Stygian Vise" "Leather Belt" "Heavy Belt" "Rustic Sash"
     ItemLevel >= 75
     Rarity = Rare
     Class "Belts"
@@ -2284,6 +2285,25 @@ Show
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
 #.strict: 3
+	BaseType "Stygian Vise" "Leather Belt" "Heavy Belt" "Rustic Sash"
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Belts"
+    SetBorderColor 255 255 119
+	SetFontSize 40
+
+#Miscellaneous
+##iLvl 75+ Rares (Blue border for Regal recipe)
+Show
+#.strict: 2
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Belts"
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##iLvl 60-74 Rares (Yellow border for Chaos recipe)
+Show
+#.strict: 2
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"
