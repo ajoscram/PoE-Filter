@@ -8,6 +8,18 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
+# 3.13
+# 3.13 Changes
+* Added support for new moddable watchstones.
+* Added all new divination cards.
+* Added the Ritual and Crescent splinters.
+* Added all 5 special Maven Invitations.
+* Added all 8 map area invitations.
+* Added all 5 Maven's Invitations and the Maven's Writ map fragments.
+* Added The Maven's Orb, Orb of Unmaking, Elevated Sextant and Ritual Vessel currency items.
+* Added the Bloof Filled Vessel map fragments.
+* Removed the Harvest Disperser, Collectors and Seeds since they are no longer in the game.
+
 
 # 3.12d
 ## General Changes
