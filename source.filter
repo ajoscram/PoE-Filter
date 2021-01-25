@@ -66,7 +66,7 @@
 #	[0301]		Maps
 #	-------------------------
 #	[0400]	Quests
-#	[0402]		Unique Watchstones
+#	[0402]		Watchstones
 #	[0401]		Miscellaneous
 #	-------------------------
 #	[0500]	Gems
@@ -630,7 +630,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Rogue's Marker" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
+    BaseType == "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -640,7 +640,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 Show
 #.strict: 1
-	BaseType == "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
+	BaseType == "Rogue's Marker" "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -1040,24 +1040,24 @@ Show
 	SetFontSize 40
 	PlayAlertSoundPositional 1 100
 	MinimapIcon 2 Orange Star
-	PlayEffect Orange Temp
-##Normal and Magic
-Show
-	Class "Atlas Region Upgrade Item"
-    Rarity >= Normal
-	SetBorderColor 0 0 0
-	SetBackgroundColor 255 0 0
-	SetFontSize 40
-	MinimapIcon 2 White Star
-	PlayEffect White Temp
+	PlayEffect Orange
 ##Quest Watchstones
 Show
+	BaseType == "Cobalt Watchstone" "Viridian Watchstone" "Golden Watchstone" "Crimson Watchstone"
     Class "Atlas Region Upgrade Item"
     SetTextColor 50 230 100
     SetBorderColor 50 230 100
     SetFontSize 40
 	MinimapIcon 0 Green Star
 	PlayEffect Green
+##Miscellaneous
+Show
+	Class "Atlas Region Upgrade Item"
+    Rarity >= Normal
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	MinimapIcon 2 White Star
+	PlayEffect White
 
 #MISCELLANEOUS------------------------------------------------------------------------------------------[0401]
 #Base Color: PoE's Green (50 230 100)
