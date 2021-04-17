@@ -10,12 +10,25 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
+# 3.14
+## 3.14 Changes
+* Added all new Divination Cards.
+* Added all 3 new Catalysts as tier 1 catalysts.
+* Added all 3 new Incubators as tier 1 incubators, except the Morphing Incubator which is tier 2.
+* Added all new Blight and Abyss scarabs in multiple tiers.
+* Added the Veiled Chaos Orb as a chaos orb tiered item.
+* Added the Tainted Oil as a tier 2 oil.
+* Added the Sacred Blossom, Chronicle of Atzoatl and Inscribed Ultimatum map fragments / misc map items as a tier 2 map fragments.
+* Added the Vaal Reliquary Key as a tier 1 map fragment.
+* Added the Iolite Ring and Seaglass Amulet as Atlas Base drops. Other atlas only bases were ignored since they should be too plentiful to include.
+## General Changes
+* Attempted to fix a bug where oils were mislabeled.
+
 # 3.13b
 ## General Changes
 * Fixed a bug where quest watchstones were shown as the new moddable watchstones.
 * Lowered the tier of Rogue's Markers. They are simply not worth picking up from the ground as oppossed to getting them from contracts. They are now hidden starting at semi-strictness.
 * General economy update.
-
 
 # 3.13
 ## 3.13 Changes
@@ -28,7 +41,6 @@
 * Added The Maven's Orb, Orb of Unmaking, Elevated Sextant and Ritual Vessel currency items.
 * Added the Bloof Filled Vessel map fragments.
 * Removed the Harvest Disperser, Collectors and Seeds since they are no longer in the game. Their sections have also been removed as a result.
-
 
 # 3.12d
 ## General Changes
