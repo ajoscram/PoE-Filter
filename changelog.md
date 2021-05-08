@@ -10,6 +10,17 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
+# 3.14c
+## General Changes
+* Currency shards have been re-tiered to better reflect their value in modern PoE.
+* The last visible shard tier has been given a strictness of 0.
+* Identified gear no longer shows up for chaos recipe.
+* General economy update.
+
+# 3.14b
+## General Changes 
+* General economy update.
+
 # 3.14
 ## 3.14 Changes
 * Added all new Divination Cards.

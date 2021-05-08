@@ -536,7 +536,7 @@ Show
 
 #These usually go for one to a couple chaos.
 Show
-    BaseType == "Exalted Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard"
+    BaseType == "Exalted Shard" "Ancient Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -549,7 +549,7 @@ Show
 #These are for the most part worthless but harmless to show usually.
 Show
 #.strict: 1
-    BaseType == "Chaos Shard" "Binding Shard" "Engineer's Shard" "Horizon Shard"
+    BaseType == "Chaos Shard" "Horizon Shard" "Harbinger's Shard" "Annulment Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -558,8 +558,8 @@ Show
 
 #These are for the most part worthless.
 Show
-#.strict: 1
-    BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard"
+#.strict: 0
+    BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard" "Binding Shard" "Engineer's Shard"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 80 70 60
@@ -2345,6 +2345,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Bodies .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2355,6 +2356,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Bodies .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
 	Class "Body Armour"
@@ -2384,6 +2386,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Bodies .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2394,6 +2397,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Bodies .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
 	Class "Body Armour"
@@ -2496,6 +2500,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Helmets .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2506,6 +2511,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Helmets .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
 	Class "Helmets"
@@ -2538,6 +2544,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Helmets .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2548,6 +2555,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Helmets .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
 	Class "Helmets"
@@ -2633,6 +2641,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Gloves .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2643,6 +2652,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Gloves .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
 	Class "Gloves"
@@ -2675,6 +2685,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Gloves .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2685,6 +2696,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Gloves .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
 	Class "Gloves"
@@ -2694,6 +2706,7 @@ Show
 #iLvl <60 Rares (Kept for levelling)
 ##Chromatics
 Show
+	Identified False
     SocketGroup RGB
     ItemLevel < 60
     Rarity = Rare
@@ -2770,6 +2783,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Boots .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2780,6 +2794,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Boots .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
 	Class "Boots"
@@ -2812,6 +2827,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Boots .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2822,6 +2838,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Boots .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
 	Class "Boots"
@@ -2913,6 +2930,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Weapons .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -2924,6 +2942,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Weapons .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
 	Height = 3
@@ -2959,6 +2978,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Weapons .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -2970,6 +2990,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Weapons .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
 	Height = 3
@@ -3059,6 +3080,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Miscellaneous .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 75
     Rarity = Rare
@@ -3068,6 +3090,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Miscellaneous .strict: 2
+	Identified False
     ItemLevel >= 75
     Rarity = Rare
     SetBorderColor 30 144 255
@@ -3094,6 +3117,7 @@ Show
 ##Chromatics
 Show
 #.chaos: Miscellaneous .strict: 2
+	Identified False
     SocketGroup RGB
     ItemLevel >= 60
     Rarity = Rare
@@ -3103,6 +3127,7 @@ Show
 ##Miscellaneous
 Show
 #.chaos: Miscellaneous .strict: 2
+	Identified False
     ItemLevel >= 60
     Rarity = Rare
     SetBorderColor 255 255 119
