@@ -606,7 +606,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType == "Horticrafting Station" "Elevated Sextant" "Orb of Unmaking" "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Elevated Sextant" "Orb of Unmaking" "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -1535,7 +1535,7 @@ Show
 
 ##Magic or lower
 Show
-#.strict: 2
+#.strict: 1
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0

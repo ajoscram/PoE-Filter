@@ -10,6 +10,12 @@
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 
+# 3.14d
+## General Changes
+* Removed the "Horticrafting Station" BaseType since it was removed from the game.
+* Magic and Normal jewels now have a strictness of 1 instead of 2. This does not apply to Cluster Jewels.
+* General economy update.
+
 # 3.14c
 ## General Changes
 * Currency shards have been re-tiered to better reflect their value in modern PoE.
