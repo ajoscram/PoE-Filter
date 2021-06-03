@@ -350,7 +350,7 @@ Show
 
 #These splinters are worth a couple chaos.
 Show
-    BaseType == "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
+    BaseType == "Ritual Splinter" "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Splinter of Chayula"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 50 0 90
@@ -360,7 +360,7 @@ Show
 #These splinters should be hidden later on in the league.
 Show
 #.strict: 2
-    BaseType == "Ritual Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+    BaseType == "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
     Class "Currency"
 	SetTextColor 255 255 255
 	SetBackgroundColor 50 0 90
@@ -594,7 +594,7 @@ Show
 
 #These items are usually mote than 100c.
 Show
-	BaseType == "Maven's Orb" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
+	BaseType == "Tempering Orb" "Tailoring Orb" "Maven's Orb" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
 	Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -606,7 +606,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType == "Elevated Sextant" "Orb of Unmaking" "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Ritual Vessel" "Elevated Sextant" "Orb of Unmaking" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -618,7 +618,7 @@ Show
 
 #These items are usually about one to a couple chaos.
 Show
-    BaseType == "Veiled Chaos Orb" "Ritual Vessel" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Simple Sextant" "Prime Sextant" "Awakened Sextant"
+    BaseType == "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Simple Sextant" "Prime Sextant" "Awakened Sextant"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -630,7 +630,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb"
+    BaseType == "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -640,7 +640,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 Show
 #.strict: 1
-	BaseType == "Rogue's Marker" "Perandus Coin" "Orb of Alteration" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
+	BaseType == "Orb of Regret" "Rogue's Marker" "Perandus Coin" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -1328,6 +1328,7 @@ Show
 
 #Show every 20% quality flask, since it is a equivalent to a Glassblower's.
 Show
+#.strict 2
     Quality = 20
     Class "Flasks"
 	SetTextColor 0 0 0

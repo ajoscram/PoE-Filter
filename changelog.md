@@ -9,6 +9,18 @@
 * Add beasts section.
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
+* Missing all Pale Court keys on fragments. There is likely an issue with frags.
+* Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# 3.14e
+## General Changes
+* Added the Bestiary Orb as a Chaos tier currency item.
+* Given the current demand for alterations to roll Watchstones, moved the Alteration Orbs to Alchemy tier currency.
+* Given how worthless they are later on in the league, moved Regret orbs to Armourer tier currency.
+* Flasks with 20% quality now have a strictness of 2. Glassblowers aren't that rare and 20% flasks are a nuissance in the late game.
+* Moved Tailoring and Tempering orbs to Exalt tier currency given their general cost throughout leagues.
+* Moved Ritual splinters to splinters worth always picking up given their cost.
+* General economy update.
 
 # 3.14d
 ## General Changes
