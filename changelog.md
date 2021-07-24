@@ -1,4 +1,5 @@
 # To-Do
+* Add support for Maven's Invitations.
 * Fix Watchstones bug.
 * Lower tier of Rogue Markers.
 * Update maps section for shaper/elder maps.
@@ -11,6 +12,17 @@
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# 3.15
+## 3.15 Changes
+* Added all new divination cards.
+* Added all new Expedition currency items.
+* Added Enkindling and Instilling orbs as chaos tier items.
+* Added the new Expedition Logbook. It's appearance is equivalent to a Heist blueprint.
+
+# 3.14f
+## General Changes
+* Created a Catch-all for Fragments. Further work needs to be done to ensure some testing methodology for filters that ensures all items in a base type are being caught.
 
 # 3.14e
 ## General Changes
