@@ -1,7 +1,6 @@
 # To-Do
 * Add support for Maven's Invitations.
 * Fix Watchstones bug.
-* Lower tier of Rogue Markers.
 * Update maps section for shaper/elder maps.
 * Expand the Influenced base types section with the best bases/levels per influence.
 * Tier delirium orbs.
@@ -12,6 +11,13 @@
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# 3.15b
+## 3.15 Changes
+* Moved all Expedition shard currency into a single below chaos tier, except reroll currency which is still chaos tier.
+
+## General Changes
+* Removed the upper-most fossil tier. Fossils just aren't that expensive anymore.
 
 # 3.15
 ## 3.15 Changes

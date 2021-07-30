@@ -105,21 +105,9 @@
 #Beam Color: White
 #Icon Color: White
 
-#These items cost more than 10c.
-Show
-    BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact"
-    Class "Currency"
-	SetTextColor 0 0 0
-	SetBackgroundColor 255 255 255
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 6 100
-	MinimapIcon 1 White Circle
-	PlayEffect White
-
 #These items go from one to a couple chaos.
 Show
-    BaseType == "Astragali" "Burial Medallion" "Exotic Coinage" "Scrap Metal" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact"
+    BaseType == "Astragali" "Burial Medallion" "Exotic Coinage" "Scrap Metal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -131,11 +119,10 @@ Show
 
 #These items should be picked up at the start of the league.
 Show
-#.strict: 1
-    BaseType == "Common Black Scythe Artifact" "Common Broken Circle Artifact" "Common Order Artifact" "Common Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
+    BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact" "Common Black Scythe Artifact" "Common Broken Circle Artifact" "Common Order Artifact" "Common Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
 	Class "Currency"
     SetTextColor 0 0 0
-	SetBackgroundColor 80 70 60
+	SetBackgroundColor 170 155 130
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
@@ -221,24 +208,10 @@ Show
 #Icon Color: White
 
 #Tier 1
-#These are worth 100c or more.
-Show
-#.econ: fos 100
-	BaseType == "Faceted Fossil" "Fractured Fossil"
-	Class "Currency"
-	SetTextColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetBorderColor 0 0 0
-	SetFontSize 40
-	PlayAlertSoundPositional 4 300
-	MinimapIcon 0 White Circle
-	PlayEffect White
-
-#Tier 2
 #These are worth more than or equal to 10c and less than 100c.
 Show
-#.econ: fos 10 100
-	BaseType == "Hollow Fossil" "Bloodstained Fossil" "Tangled Fossil" "Glyphic Fossil" "Corroded Fossil"
+#.econ: fos 10
+	BaseType == "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil" "Tangled Fossil" "Glyphic Fossil" "Corroded Fossil"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -248,7 +221,7 @@ Show
 	MinimapIcon 1 White Circle
 	PlayEffect White
 
-#Tier 3
+#Tier 2
 #These are more than or equal to 1c and less than 10c.
 Show
 #.econ: fos 1 10
@@ -262,7 +235,7 @@ Show
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
 
-#Tier 4
+#Tier 3
 #These are less than 1c.
 Show
 #.econ: fos 0 1
