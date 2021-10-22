@@ -1,4 +1,6 @@
 # To-Do
+* Add support for scourged items and base defences.
+* Add support for currency stacks (might need to update the generator).
 * Add support for Maven's Invitations.
 * Fix Watchstones bug.
 * Update maps section for shaper/elder maps.
@@ -11,6 +13,12 @@
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# 3.16
+## 3.16 Changes
+* Added all new divination cards.
+* Added all new Scourge currency item.
+* Removed all Perandus league items, the Hollow Plegde prophecy, the Enchanted fossil and the Encrusted fossil since they are no longr in the game.
 
 # 3.15b
 ## 3.15 Changes
