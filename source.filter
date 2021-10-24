@@ -72,17 +72,18 @@
 #	-------------------------
 #	[0500]	Gems
 #	-------------------------
-#	[0622]	Equipment
+#	[0600]	Equipment
+#	[0622]		Uniques
 #	[0621]		Rogue Equipment
-#	[0620]		Uniques
-#	[0619]		Flasks
-#	[0618]		Jewels
-#	[0617]		Fractured
-#	[0616]		Synthesized
-#	[0615]		Veiled
-#	[0614]		Influenced
-#	[0613]		Temple
-#	[0612]		Lab Enchanted
+#	[0620]		Flasks
+#	[0619]		Jewels
+#	[0618]		Fractured
+#	[0617]		Synthesized
+#	[0616]		Veiled
+#	[0615]		Influenced
+#	[0614]		Temple
+#	[0613]		Lab Enchanted
+#	[0612]		Scourged
 #	[0611]		Corrupted
 #	[0610]		Rings/Amulets
 #	[0609]		Belts
@@ -369,6 +370,15 @@ Show
     SetFontSize 40
 
 #These splinters should be hidden later on in the league.
+#Acceptable to pick up in stacks of 5 or more.
+Show
+    BaseType == "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+    StackSize >= 5
+	Class "Currency"
+	SetTextColor 255 255 255
+	SetBackgroundColor 50 0 90
+    SetBorderColor 0 0 0
+    SetFontSize 40
 Show
 #.strict: 2
     BaseType == "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
@@ -641,17 +651,27 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+    BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
 	SetBorderColor 0 0 0
 	SetFontSize 40
+	MinimapIcon 2 White Circle
 
 #These items are useful to pick up but should be discontinued if quota is met.
+#Acceptable to pick up in stacks equal to or greater than 5.
+Show
+	BaseType == "Orb of Regret" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
+	StackSize >= 5
+	Class "Currency"
+	SetTextColor 0 0 0
+	SetBackgroundColor 110 95 80
+	SetBorderColor 0 0 0
+	SetFontSize 40
 Show
 #.strict: 1
-	BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Orb of Regret" "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
+	BaseType == "Orb of Regret" "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Silver Coin"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -659,6 +679,15 @@ Show
 	SetFontSize 40
 
 #These items should be picked up at the start of the league.
+#Acceptable to pick up in stacks equal to or greater than 10.
+Show
+    BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	StackSize >= 10
+	Class "Currency"
+    SetTextColor 0 0 0
+	SetBackgroundColor 80 70 60
+	SetBorderColor 0 0 0
+	SetFontSize 40
 Show
 #.strict: 0
     BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -669,6 +698,15 @@ Show
 	SetFontSize 40
 
 #These items are only shown in the first five acts of the game.
+#Acceptable to pick up in stacks equal to or greater than 10.
+Show
+    BaseType == "Scroll of Wisdom" "Portal Scroll"
+	StackSize >= 10
+	Class "Currency"
+	SetTextColor 0 0 0
+    SetBackgroundColor 60 55 50
+	SetBorderColor 0 0 0
+    SetFontSize 40
 Show
 #.strict: 0
     BaseType == "Scroll of Wisdom" "Portal Scroll"
@@ -738,7 +776,7 @@ Show
 #These are worth more than 2c but less than or equals to 10c.
 Show
 #.econ: div 2 10
-	BaseType == "Treasures of the Vaal" "The Forgotten Treasure" "Guardian's Challenge" "Disdain" "The Price of Prescience" "The Last Supper" "Lachrymal Necrosis" "Ambitious Obsession" "A Modest Request" "The Shortcut" "The Card Sharp" "The Enthusiasts" "Prejudice" "Sambodhi's Wisdom" "Broken Promises" "The Astromancer" "Society's Remorse" "Haunting Shadows" "Fateful Meeting" "Acclimatisation" "The Academic" "Triskaidekaphobia" "Sambodhi's Vow" "The Endless Darkness" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Heroic Shot" "Heterochromia" "Lucky Deck" "The Cartographer" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Void" "Left to Fate" "Rebirth" "A Dab of Ink" "The Old Man" "The Avenger" "The Betrayal" "The Brittle Emperor" "The Lion" "The Trial" "The Wilted Rose" "The Mad King" "The Bones" "Deathly Designs"
+	BaseType == "Dying Anguish" "Treasures of the Vaal" "The Forgotten Treasure" "Guardian's Challenge" "Disdain" "The Price of Prescience" "The Last Supper" "Lachrymal Necrosis" "Ambitious Obsession" "A Modest Request" "The Shortcut" "The Card Sharp" "The Enthusiasts" "Prejudice" "Sambodhi's Wisdom" "Broken Promises" "The Astromancer" "Society's Remorse" "Haunting Shadows" "Fateful Meeting" "Acclimatisation" "The Academic" "Triskaidekaphobia" "Sambodhi's Vow" "The Endless Darkness" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Heroic Shot" "Heterochromia" "Lucky Deck" "The Cartographer" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Void" "Left to Fate" "Rebirth" "A Dab of Ink" "The Old Man" "The Avenger" "The Betrayal" "The Brittle Emperor" "The Lion" "The Trial" "The Wilted Rose" "The Mad King" "The Bones" "Deathly Designs"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 30 100 205
@@ -1280,7 +1318,7 @@ Hide
 #-------------------------------------------------------------------------------------------------------------
 #Base Shape: Kite
 
-#UNIQUES------------------------------------------------------------------------------------------------[0620]
+#UNIQUES------------------------------------------------------------------------------------------------[0622]
 #Base Color: PoE's Orange (255 165 0)
 #Beam Color: Orange
 #Icon Color: Orange
@@ -1342,7 +1380,7 @@ Show
     SetFontSize 45
 	PlayAlertSoundPositional 15 300
 
-#FLASKS-------------------------------------------------------------------------------------------------[0619]
+#FLASKS-------------------------------------------------------------------------------------------------[0620]
 #Base Color: Light Blue (200 230 255)
 #Beam Color: None
 #Icon Color: None
@@ -1487,7 +1525,7 @@ Hide
 	SetBorderColor 0 0 0
     SetFontSize 32
 
-#JEWELS-------------------------------------------------------------------------------------------------[0618]
+#JEWELS-------------------------------------------------------------------------------------------------[0619]
 #Base Color: None
 #Beam Color: None
 #Icon Color: None
@@ -1563,7 +1601,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#FRACTURED----------------------------------------------------------------------------------------------[0617]
+#FRACTURED----------------------------------------------------------------------------------------------[0618]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1599,7 +1637,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#SYNTHESISED--------------------------------------------------------------------------------------------[0616]
+#SYNTHESISED--------------------------------------------------------------------------------------------[0617]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1635,7 +1673,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#VEILED-------------------------------------------------------------------------------------------------[0615]
+#VEILED-------------------------------------------------------------------------------------------------[0616]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30) / Gray (125 125 125)
 #Beam Color: None
 #Icon Color: None
@@ -1673,7 +1711,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#INFLUENCED---------------------------------------------------------------------------------------------[0614]
+#INFLUENCED---------------------------------------------------------------------------------------------[0615]
 #Base Color: Red (255 0 0) / Dark Blue (19 19 156) / Mossy Green (37 97 30)
 #Beam Color: White
 #Icon Color: White
@@ -1719,7 +1757,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#TEMPLE------------------------------------------------------------------------------------------------[0613]
+#TEMPLE------------------------------------------------------------------------------------------------[0614]
 #Atzoatl temple mod items are really good to craft on and generally scarce.
 #Base Color: None
 #Beam Color: None
@@ -1886,7 +1924,7 @@ Show
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
-#LAB ENCHANTED-----------------------------------------------------------------------------------------[0612]
+#LAB ENCHANTED-----------------------------------------------------------------------------------------[0613]
 #Currently shows all lab enchanted gear. This is bound to change once PFG implements Lab Enchants.
 #Base Color: None
 #Beam Color: None
@@ -2049,6 +2087,135 @@ Show
 Show
 	AnyEnchantment True
     Rarity <= Magic
+	Identified True
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#SCOURGED---------------------------------------------------------------------------------------------[0612]
+#Shows all corrupted rare gear dropped with scourged mods.
+#Base Color: None
+#Beam Color: None
+#Icon Color: None
+
+#iLvl 75+ Rares (Blue border for Regal recipe)
+##Six Links
+Show
+	Scourged True
+    LinkedSockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 30 144 255
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	Scourged True
+    Sockets = 6
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Chromatics
+Show
+	Scourged True
+    SocketGroup RGB
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 30 144 255
+	SetFontSize 40
+##Miscellaneous
+Show
+	Scourged True
+    ItemLevel >= 75
+    Rarity = Rare
+	Identified True
+    SetBorderColor 30 144 255
+	SetFontSize 40
+
+#iLvl 60-74 Rares (Yellow border for Chaos recipe)
+##Six Links
+Show
+	Scourged True
+    LinkedSockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+    SetBorderColor 255 255 119
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	Scourged True
+    Sockets = 6
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Chromatics
+Show
+	Scourged True
+    SocketGroup RGB
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+    SetBorderColor 255 255 119
+	SetFontSize 40
+##Miscellaneous
+Show
+	Scourged True
+    ItemLevel >= 60
+    Rarity = Rare
+	Identified True
+    SetBorderColor 255 255 119
+	SetFontSize 40
+
+#iLvl <60 Rares (Kept for levelling)
+##Six Links
+Show
+	Scourged True
+    LinkedSockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+	Scourged True
+    Sockets = 6
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Chromatics
+Show
+	Scourged True
+    SocketGroup RGB
+    ItemLevel < 60
+    Rarity = Rare
+	Identified True
+    SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+##Miscellaneous
+Show
+	Scourged True
+    ItemLevel < 60
+    Rarity = Rare
 	Identified True
 	SetBorderColor 0 0 0
 	SetFontSize 40

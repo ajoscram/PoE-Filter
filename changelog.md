@@ -1,6 +1,5 @@
 # To-Do
-* Add support for scourged items and base defences.
-* Add support for currency stacks (might need to update the generator).
+* Add support for base defences (BaseDefencePercentile).
 * Add support for Maven's Invitations.
 * Fix Watchstones bug.
 * Update maps section for shaper/elder maps.
@@ -14,11 +13,16 @@
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.16b
+## 3.16 Changes
+* Added Scourged items.
+* Added support for basic currency stacks and splinters.
+
 # 3.16
 ## 3.16 Changes
 * Added all new divination cards.
-* Added all new Scourge currency item.
-* Removed all Perandus league items, the Hollow Plegde prophecy, the Enchanted fossil and the Encrusted fossil since they are no longr in the game.
+* Added all new Scourge currency items.
+* Removed all Perandus league items, the Hollow Pledge prophecy, the Enchanted fossil and the Encrusted fossil since they are no longer in the game.
 
 # 3.15b
 ## 3.15 Changes
