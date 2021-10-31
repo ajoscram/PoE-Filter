@@ -1587,7 +1587,7 @@ Show
 #Miscellaneous
 ##Rare jewels
 Show
-#.strict: 3
+#.strict: 1
     Rarity = Rare
     Class "Jewel"
 	SetBorderColor 0 0 0
@@ -1595,7 +1595,7 @@ Show
 
 ##Magic or lower
 Show
-#.strict: 1
+#.strict: 0
     Rarity <= Magic
     Class "Jewel"
 	SetBorderColor 0 0 0
@@ -2121,6 +2121,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict: 1
 	Scourged True
     SocketGroup RGB
     ItemLevel >= 75
@@ -2131,6 +2132,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 1
 	Scourged True
     ItemLevel >= 75
     Rarity = Rare
@@ -2162,6 +2164,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict: 1
 	Scourged True
     SocketGroup RGB
     ItemLevel >= 60
@@ -2172,6 +2175,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict: 1
 	Scourged True
     ItemLevel >= 60
     Rarity = Rare

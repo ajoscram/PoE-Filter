@@ -13,6 +13,13 @@
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.16c
+## 3.16 Changes
+* Scourge items are bad. They're now removed from the filter at higher strictness settings.
+## General Changes
+* Basic jewel strictness was tightened. Jewels simply aren't as expensive anymore.
+* General economy update.
+
 # 3.16b
 ## 3.16 Changes
 * Added Scourged items.
