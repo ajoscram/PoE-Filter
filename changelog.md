@@ -13,6 +13,11 @@
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.16d
+## General Changes
+* Obtaining veiled crafts in the game is more srteamlined now, so non character-specific veiled items are now hidden at a lower strictness. Character specific veiled items on the other hand are now shown at a higher strictness wince you're likely to not have unveiled their crafts.
+* General economy update.
+
 # 3.16c
 ## 3.16 Changes
 * Scourge items are bad. They're now removed from the filter at higher strictness settings.

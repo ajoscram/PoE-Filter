@@ -26,9 +26,9 @@
 #		Base			0 			Shows everything.
 #		Lenient			1 			Hides start of the league currency.
 #		Semi-strict		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
-#		Strict			3 			Hides worthless currency, white maps, magic jewels and all basic rares except jewellry and good belt bases.
-#		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry, ID'ed rares and veiled rares.
-#		Uber-strict		5			Hides all red maps except T16s.
+#		Strict			3 			Hides worthless currency, white maps, magic jewels, non-character specific veiled items and all basic rares except jewellry and good belt bases.
+#		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry and ID'ed rares.
+#		Uber-strict		5			Hides all red maps except T16s and the remaining veiled rares.
 #
 #	.econ:			fra, oil, inc, sca, fos, div, pro
 #
@@ -1678,36 +1678,65 @@ Show
 #Beam Color: None
 #Icon Color: None
 
-#Six Links
+#Character Veils
+##Six Links
 Show
     LinkedSockets = 6
-	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
     SetBackgroundColor 255 0 0
 	SetBorderColor 0 0 0
 	SetFontSize 40
 	PlayAlertSoundPositional 6 100
-
-#Six Sockets
+##Six Sockets
 Show
     Sockets = 6
-	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBackgroundColor 19 19 156
 	SetBorderColor 0 0 0
 	SetFontSize 40
-
 #Chromatics
 Show
-#.strict: 3
+#.strict: 4
     SocketGroup RGB
-	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetBackgroundColor 37 97 30
 	SetBorderColor 0 0 0
 	SetFontSize 40
-
 #Miscellaneous
 Show
-#.strict: 3
-	HasExplicitMod "Veiled" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+#.strict: 4
+	HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+#Basic Veils
+##Six Links
+Show
+    LinkedSockets = 6
+	HasExplicitMod "Veiled" "of the Veil"
+    SetBackgroundColor 255 0 0
+	SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 6 100
+##Six Sockets
+Show
+    Sockets = 6
+	HasExplicitMod "Veiled" "of the Veil"
+	SetBackgroundColor 19 19 156
+	SetBorderColor 0 0 0
+	SetFontSize 40
+#Chromatics
+Show
+#.strict: 2
+    SocketGroup RGB
+	HasExplicitMod "Veiled" "of the Veil"
+	SetBackgroundColor 37 97 30
+	SetBorderColor 0 0 0
+	SetFontSize 40
+#Miscellaneous
+Show
+#.strict: 2
+	HasExplicitMod "Veiled" "of the Veil"
 	SetBorderColor 0 0 0
 	SetFontSize 40
 
