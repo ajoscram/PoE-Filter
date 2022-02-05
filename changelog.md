@@ -13,6 +13,24 @@
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.17
+## 3.17 Changes
+* Added all new Divination cards.
+* Added the Archnemesis currency drops. Some might be missing and this will get hotfixed if necessary.
+* Removed outdated currency and prophecies because they are no longer in the game.
+* Removed "Common" expedition currencies as they are appearently not in the game anymore.
+* Removed watchstones.
+* Added the new Elderslayer fragments.
+* Added the new invitations.
+* Voidstones were added as a collateral of filtering for "Atlas Upgrade Item".
+* Added all new Ember and Ichor currencies.
+* Added the new Compass currencies.
+* Added the orbs of Dominance and Conflict.
+* Added the new Eldritch currecies.
+* Added the Oil Extractor currency.
+* Added the new Scouting Report currencies.
+* Added Searing Exarch and Eater of Worlds influenced items.
+
 # 3.16d
 ## General Changes
 * Obtaining veiled crafts in the game is more srteamlined now, so non character-specific veiled items are now hidden at a lower strictness. Character specific veiled items on the other hand are now shown at a higher strictness wince you're likely to not have unveiled their crafts.
