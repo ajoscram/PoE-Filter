@@ -13,6 +13,10 @@
 * Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.17b
+## 3.17 Changes
+* Fixed a bug where some Archnemesis mod currency items would be ignored in the filter.
+
 # 3.17
 ## 3.17 Changes
 * Added all new Divination cards.
