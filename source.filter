@@ -26,7 +26,7 @@
 #		Base			0 			Shows everything.
 #		Lenient			1 			Hides start of the league currency.
 #		Semi-strict		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
-#		Strict			3 			Hides worthless currency, white maps, magic jewels, non-character specific veiled items and all basic rares except jewellry and good belt bases.
+#		Strict			3 			Hides worthless currency, white maps, magic jewels, non-character specific veiled items and all basic rares.
 #		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry and ID'ed rares.
 #		Uber-strict		5			Hides all red maps with a tier lower than 14 and the remaining veiled rares.
 #
@@ -126,12 +126,13 @@ Show
 Show
     ArchnemesisMod ""
 	SetTextColor 0 0 0
-	SetBackgroundColor 255 240 210
+	SetBackgroundColor 207 181 59
 	SetBorderColor 0 0 0
 	SetFontSize 40
-	PlayAlertSoundPositional 13 50
-	MinimapIcon 2 White Circle
-	PlayEffect White Temp	
+	PlayAlertSoundPositional 11 25
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow Temp
+	DisableDropSound
 
 #EXPEDITION---------------------------------------------------------------------------------------------[0113]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
@@ -600,7 +601,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType == "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Charged Compass" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Tainted Exalted Orb" "Tainted Mythic Orb" "Ritual Vessel" "Elevated Sextant" "Orb of Unmaking" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Charged Compass" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Tainted Exalted Orb" "Tainted Mythic Orb" "Ritual Vessel" "Elevated Sextant" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -612,7 +613,7 @@ Show
 
 #These items are usually about one to a couple chaos.
 Show
-    BaseType == "Oil Extractor" "Surveyor's Compass" "Lesser Eldritch Ember" "Greater Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Tainted Blessing" "Tainted Chaos Orb" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Lesser Eldritch Ember" "Greater Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Tainted Blessing" "Tainted Chaos Orb" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -624,7 +625,7 @@ Show
 
 #These items are less than a chaos but useful to pick up.
 Show
-    BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+    BaseType == "Orb of Regret" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 170 155 130
@@ -635,7 +636,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 #Acceptable to pick up in stacks equal to or greater than 5.
 Show
-	BaseType == "Orb of Regret" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
 	StackSize >= 5
 	Class "Currency"
 	SetTextColor 0 0 0
@@ -749,7 +750,7 @@ Show
 #These are worth more than 2c but less than or equals to 10c.
 Show
 #.econ: div 2 10
-	BaseType == "Duality" "Parasitic Passengers" "Justified Ambition" "Judging Voices" "Dying Anguish" "Treasures of the Vaal" "The Forgotten Treasure" "Guardian's Challenge" "Disdain" "The Price of Prescience" "The Last Supper" "Lachrymal Necrosis" "Ambitious Obsession" "A Modest Request" "The Shortcut" "The Card Sharp" "The Enthusiasts" "Prejudice" "Sambodhi's Wisdom" "Broken Promises" "The Astromancer" "Society's Remorse" "Haunting Shadows" "Fateful Meeting" "Acclimatisation" "The Academic" "Triskaidekaphobia" "Sambodhi's Vow" "The Endless Darkness" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Heroic Shot" "Heterochromia" "Lucky Deck" "The Cartographer" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Void" "Left to Fate" "Rebirth" "A Dab of Ink" "The Old Man" "The Avenger" "The Betrayal" "The Brittle Emperor" "The Lion" "The Trial" "The Wilted Rose" "The Mad King" "The Bones" "Deathly Designs"
+	BaseType == "The Tumbleweed" "Duality" "Parasitic Passengers" "Justified Ambition" "Judging Voices" "Dying Anguish" "Treasures of the Vaal" "The Forgotten Treasure" "Guardian's Challenge" "Disdain" "The Price of Prescience" "The Last Supper" "Lachrymal Necrosis" "Ambitious Obsession" "A Modest Request" "The Shortcut" "The Card Sharp" "The Enthusiasts" "Prejudice" "Sambodhi's Wisdom" "Broken Promises" "The Astromancer" "Society's Remorse" "Haunting Shadows" "Fateful Meeting" "Acclimatisation" "The Academic" "Triskaidekaphobia" "Sambodhi's Vow" "The Endless Darkness" "The Dapper Prodigy" "The Hoarder" "The Wolven King's Bite" "The Porcupine" "The Mayor" "Bowyer's Dream" "Remembrance" "Squandered Prosperity" "Chaotic Disposition" "The Artist" "The Sephirot" "The Wolf" "The Professor" "The Undaunted" "Boon of the First Ones" "The Landing" "Earth Drinker" "Mawr Blaidd" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Innocent" "Underground Forest" "The Valkyrie" "Emperor of Purity" "The Chains that Bind" "The Last One Standing" "The Risk" "The Vast" "The Breach" "The Dreamer" "The Undisputed" "Divine Justice" "The Fishmonger" "The Heroic Shot" "Heterochromia" "Lucky Deck" "The Cartographer" "The Gladiator" "The Hunger" "The Scavenger" "The Thaumaturgist" "The Void" "Left to Fate" "Rebirth" "A Dab of Ink" "The Old Man" "The Avenger" "The Betrayal" "The Brittle Emperor" "The Lion" "The Trial" "The Wilted Rose" "The Mad King" "The Bones" "Deathly Designs"
     Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBackgroundColor 30 100 205
@@ -1022,7 +1023,7 @@ Show
 #These red maps don't make the cut eventually because they are too low tier for full atlas.
 Show
 #.strict: 4
-    MapTier <= 13
+    MapTier <= 15
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 237 81 81
@@ -1033,7 +1034,7 @@ Show
 ##Tier 14+
 #Maps on this tier belong on fully watchstoned atlases.
 Show
-    MapTier >= 14
+    MapTier = 16
 	Class "Maps"
 	SetTextColor 0 0 0
     SetBackgroundColor 255 0 0
@@ -2503,7 +2504,7 @@ Show
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
 #.strict: 3
-	BaseType "Stygian Vise" "Leather Belt" "Heavy Belt" "Rustic Sash"
+	BaseType "Stygian Vise" "Leather Belt" "Rustic Sash"
     ItemLevel >= 75
     Rarity = Rare
     Class "Belts"
@@ -2512,7 +2513,7 @@ Show
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
 #.strict: 3
-	BaseType "Stygian Vise" "Leather Belt" "Heavy Belt" "Rustic Sash"
+	BaseType "Stygian Vise" "Leather Belt" "Rustic Sash"
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"
@@ -2522,7 +2523,7 @@ Show
 #Miscellaneous
 ##iLvl 75+ Rares (Blue border for Regal recipe)
 Show
-#.strict: 2
+#.strict: 1
     ItemLevel >= 75
     Rarity = Rare
     Class "Belts"
@@ -2530,7 +2531,7 @@ Show
 	SetFontSize 40
 ##iLvl 60-74 Rares (Yellow border for Chaos recipe)
 Show
-#.strict: 2
+#.strict: 1
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"

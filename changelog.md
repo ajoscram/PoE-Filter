@@ -1,7 +1,6 @@
 # To-Do
 * Add support for base defences (BaseDefencePercentile).
 * Add support for Maven's Invitations.
-* Fix Watchstones bug.
 * Update maps section for shaper/elder maps.
 * Expand the Influenced base types section with the best bases/levels per influence.
 * Tier delirium orbs.
@@ -10,12 +9,24 @@
 * Add beasts section.
 * Add a wiki page for this project.
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
-* Missing all Pale Court keys on fragments. There is likely an issue with frags.
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# 3.17c
+## 3.17 Changes
+* Archnemesis mods that drop on the ground were given a different color and their drop sound was removed, since it is very similar to currency.
+
+## General Changes
+* Added The Tumbleweed divination card to the base filter.
+* Bad belt bases are now filtered more strictly. Not only are they usually bad, but the amount of rare belts one can obtain this league exacerbates the issue. Heavy Belt was added to the list of bad belt bases as well.
+* Regret Orbs are a lot more important now due to the Atlas changes. They are now always shown.
+* Orbs of Unmaking are a lot more common now and have been brought down in tier. They are still always shown.
+* Only T16 maps are shown as bright red, given the new atlas changes and how one can get their entire atlas to Tier 16. This also means that on the higher strictness only T16 maps drop.
+* General economy update.
 
 # 3.17b
 ## 3.17 Changes
 * Fixed a bug where some Archnemesis mod currency items would be ignored in the filter.
+* Lowered the tier of Orb of Unmaking since it is much more common now.
 
 # 3.17
 ## 3.17 Changes
