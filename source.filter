@@ -637,7 +637,7 @@ Show
 #These items are useful to pick up but should be discontinued if quota is met.
 #Acceptable to pick up in stacks equal to or greater than 5 up to a particular strictness.
 Show
-#.strict 3
+#.strict: 3
 	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
 	StackSize >= 5
 	Class "Currency"
@@ -657,7 +657,7 @@ Show
 #These items should be picked up at the start of the league.
 #Acceptable to pick up in stacks equal to or greater than 10 up to a particular strictness.
 Show
-#.strict 3
+#.strict: 3
     BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	StackSize >= 10
 	Class "Currency"
@@ -677,7 +677,7 @@ Show
 #These items are only shown in the first five acts of the game.
 #Acceptable to pick up in stacks equal to or greater than 10 up to a particular strictness.
 Show
-#.strict 3
+#.strict: 3
     BaseType == "Scroll of Wisdom" "Portal Scroll"
 	StackSize >= 10
 	Class "Currency"
@@ -1497,7 +1497,7 @@ Hide
 #Large Cluster
 ##Rare jewels
 Show
-#.strict 3
+#.strict: 3
 	BaseType == "Large Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1516,7 +1516,7 @@ Show
 #Medium Cluster
 ##Rare jewels
 Show
-#.strict 3
+#.strict: 3
 	BaseType == "Medium Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1535,7 +1535,7 @@ Show
 #Small Cluster
 ##Rare jewels
 Show
-#.strict 3
+#.strict: 3
 	BaseType == "Small Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1592,7 +1592,7 @@ Show
 
 #Chromatics
 Show
-#.strict 3
+#.strict: 3
     SocketGroup RGB
 	FracturedItem True
 	SetBackgroundColor 37 97 30
@@ -1601,7 +1601,7 @@ Show
 
 #Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	FracturedItem True
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1630,7 +1630,7 @@ Show
 
 #Chromatics
 Show
-#.strict 3
+#.strict: 3
     SocketGroup RGB
 	SynthesisedItem True
 	SetBackgroundColor 37 97 30
@@ -1639,7 +1639,7 @@ Show
 
 #Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	SynthesisedItem True
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1745,7 +1745,7 @@ Show
 
 #Chromatics
 Show
-#.strict 3
+#.strict: 3
 	SocketGroup RGB
     HasEaterOfWorldsImplicit >= 1
 	SetBackgroundColor 37 97 30
@@ -1754,7 +1754,7 @@ Show
 
 #Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasEaterOfWorldsImplicit >= 1
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1793,7 +1793,7 @@ Show
 
 #Chromatics
 Show
-#.strict 3
+#.strict: 3
 	SocketGroup RGB
     HasSearingExarchImplicit >= 1
 	SetBackgroundColor 37 97 30
@@ -1802,7 +1802,7 @@ Show
 
 #Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasSearingExarchImplicit >= 1
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1841,7 +1841,7 @@ Show
 
 #Chromatics
 Show
-#.strict 3
+#.strict: 3
 	SocketGroup RGB
     HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBackgroundColor 37 97 30
@@ -1850,7 +1850,7 @@ Show
 
 #Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1885,7 +1885,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 75
@@ -1896,7 +1896,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 75
     Rarity = Rare
@@ -1928,7 +1928,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 60
@@ -1939,7 +1939,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 60
     Rarity = Rare
@@ -1971,7 +1971,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel < 60
@@ -1982,7 +1982,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel < 60
     Rarity = Rare
@@ -2012,7 +2012,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 	ItemLevel >= 45
     SocketGroup RGB
@@ -2023,7 +2023,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Rarity = Magic
 	Identified True
@@ -2060,7 +2060,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel >= 75
@@ -2071,7 +2071,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     ItemLevel >= 75
     Rarity = Rare
@@ -2103,7 +2103,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel >= 60
@@ -2114,7 +2114,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     ItemLevel >= 60
     Rarity = Rare
@@ -2146,7 +2146,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel < 60
@@ -2157,7 +2157,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     ItemLevel < 60
     Rarity = Rare
@@ -2187,7 +2187,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
 	ItemLevel >= 45
     SocketGroup RGB
@@ -2198,7 +2198,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	AnyEnchantment True
     Rarity <= Magic
 	Identified True
@@ -2368,7 +2368,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel >= 75
@@ -2379,7 +2379,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     ItemLevel >= 75
     Rarity = Rare
@@ -2411,7 +2411,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel >= 60
@@ -2422,7 +2422,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     ItemLevel >= 60
     Rarity = Rare
@@ -2454,7 +2454,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel < 60
@@ -2465,7 +2465,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
-#.strict 3
+#.strict: 3
 	CorruptedMods >= 1
     ItemLevel < 60
     Rarity = Rare
