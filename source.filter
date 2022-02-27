@@ -28,7 +28,7 @@
 #		Semi-strict		2 			Hides miscellaneous currency that becomes obsolete once quota is met and atlas bases.
 #		Strict			3 			Hides worthless currency, white maps, magic jewels, non-character specific veiled items and all basic rares.
 #		Very-strict		4 			Hides yellow maps, rare jewels, rare jewellry and ID'ed rares.
-#		Uber-strict		5			Hides all red maps with a tier lower than 14 and the remaining veiled rares.
+#		Uber-strict		5			Hides all red maps with a tier lower than 16 and the remaining veiled rares.
 #
 #	.econ:			fra, oil, inc, sca, fos, div, pro
 #
@@ -62,8 +62,9 @@
 #	[0200]	Divination Cards
 #	-------------------------
 #	[0300]	Mapping
-#	[0304]		Non-Map Runnables
-#	[0303]		Scarabs
+#	[0305]		Non-Map Runnables
+#	[0304]		Scarabs
+#	[0303]		Invitations
 #	[0302]		Fragments
 #	[0301]		Maps
 #	-------------------------
@@ -589,7 +590,7 @@ Show
 
 #These items are usually mote than 100c.
 Show
-	BaseType == "Orb of Conflict" "Orb of Dominance" "Tainted Divine Teardrop" "Sacred Orb" "Tempering Orb" "Tailoring Orb" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
+	BaseType == "Orb of Conflict" "Orb of Dominance" "Tainted Divine Teardrop" "Tempering Orb" "Tailoring Orb" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
 	Class "Currency"
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
@@ -601,7 +602,7 @@ Show
 
 #These items are usually more than 10c but less than 100c.
 Show
-    BaseType == "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Charged Compass" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Tainted Exalted Orb" "Tainted Mythic Orb" "Ritual Vessel" "Elevated Sextant" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Sacred Orb" "Eldritch Chaos Orb" "Charged Compass" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Tainted Exalted Orb" "Tainted Mythic Orb" "Ritual Vessel" "Elevated Sextant" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 255 255
@@ -613,7 +614,7 @@ Show
 
 #These items are usually about one to a couple chaos.
 Show
-    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Lesser Eldritch Ember" "Greater Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Tainted Blessing" "Tainted Chaos Orb" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+    BaseType == "Orb of Unmaking" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Surveyor's Compass" "Lesser Eldritch Ember" "Greater Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Tainted Blessing" "Tainted Chaos Orb" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
     Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 240 210
@@ -634,8 +635,9 @@ Show
 	MinimapIcon 2 White Circle
 
 #These items are useful to pick up but should be discontinued if quota is met.
-#Acceptable to pick up in stacks equal to or greater than 5.
+#Acceptable to pick up in stacks equal to or greater than 5 up to a particular strictness.
 Show
+#.strict 3
 	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
 	StackSize >= 5
 	Class "Currency"
@@ -653,8 +655,9 @@ Show
 	SetFontSize 40
 
 #These items should be picked up at the start of the league.
-#Acceptable to pick up in stacks equal to or greater than 10.
+#Acceptable to pick up in stacks equal to or greater than 10 up to a particular strictness.
 Show
+#.strict 3
     BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	StackSize >= 10
 	Class "Currency"
@@ -672,8 +675,9 @@ Show
 	SetFontSize 40
 
 #These items are only shown in the first five acts of the game.
-#Acceptable to pick up in stacks equal to or greater than 10.
+#Acceptable to pick up in stacks equal to or greater than 10 up to a particular strictness.
 Show
+#.strict 3
     BaseType == "Scroll of Wisdom" "Portal Scroll"
 	StackSize >= 10
 	Class "Currency"
@@ -796,7 +800,7 @@ Show
 #-------------------------------------------------------------------------------------------------------------
 #Base Shape: Hexagon
 
-#NON-MAP RUNNABLES--------------------------------------------------------------------------------------[0304]
+#NON-MAP RUNNABLES--------------------------------------------------------------------------------------[0305]
 #Base Color: Brown (186 95 61)
 #Beam Color: Brown
 #Icon Color: Brown
@@ -821,7 +825,7 @@ Show
 	MinimapIcon 2 Brown Hexagon
 	PlayEffect Brown Temp
 
-#SCARABS------------------------------------------------------------------------------------------------[0303]
+#SCARABS------------------------------------------------------------------------------------------------[0304]
 #Base Color: Green (50 230 100)
 #Beam Color: Green
 #Icon Color: Green
@@ -866,6 +870,37 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Green Hexagon
 
+#INVITATIONS--------------------------------------------------------------------------------------------[0303]
+#Base Color: Green (50 230 100)
+#Beam Color: Green
+#Icon Color: Green
+
+#Tier 1
+#These are worth more than 10c.
+Show
+	BaseType == "Maven's Invitation: The Elderslayers" "Screaming Invitation"  "Incandescent Invitation" "Maven's Invitation: The Formed" "Maven's Invitation: The Twisted" "Inscribed Ultimatum" "Chronicle of Atzoatl"
+	Class "Misc Map Item"
+	SetTextColor 0 0 0
+    SetBackgroundColor 50 230 100
+    SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 4 100
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+
+#Tier 2
+#These are worth less than 10c.
+Show
+	BaseType == "Maven's Invitation: The Forgotten" "Maven's Invitation: The Hidden" "Polaric Invitation" "Maven's Invitation: The Feared" "Writhing Invitation" "Maven's Invitation: The Atlas"
+	Class "Misc Map Item"
+	SetTextColor 0 0 0
+    SetBackgroundColor 50 150 100
+    SetBorderColor 0 0 0
+	SetFontSize 40
+	PlayAlertSoundPositional 13 100
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green Temp
+
 #FRAGMENTS----------------------------------------------------------------------------------------------[0302]
 #Base Color: Green (50 230 100)
 #Beam Color: Green
@@ -875,8 +910,8 @@ Show
 #These are worth 100c or more.
 Show
 #.econ: fra 100
-	BaseType == "Maven's Invitation: The Elderslayers" "Writhing Invitation" "Screaming Invitation" "Polaric Invitation" "Incandescent Invitation" "Maven's Invitation: The Atlas" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Chayula's Flawless Breachstone" "Vaal Reliquary Key" "Timeworn Reliquary Key" "Maven's Invitation: The Formed" "Maven's Invitation: The Twisted" "Maven's Invitation: The Forgotten" "Maven's Invitation: The Hidden" "Maven's Invitation: The Feared" "The Maven's Writ" "Timeless Maraketh Emblem" "Chayula's Pure Breachstone" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Timeless Templar Emblem"
-	Class "Map Fragments" "Labyrinth Map Item" "Misc Map Items"
+	BaseType == "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Chayula's Flawless Breachstone" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Chayula's Pure Breachstone" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Timeless Templar Emblem"
+	Class "Map Fragments" "Labyrinth Map Item"
     SetTextColor 255 0 0
     SetBackgroundColor 50 230 100
     SetBorderColor 0 0 0
@@ -889,8 +924,8 @@ Show
 #These are worth more than or equal to 10c and less than 100c.
 Show
 #.econ fra 10 100
-	BaseType == "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Karui Emblem" "Uul-Netol's Flawless Breachstone" "Xoph's Flawless Breachstone" "Esh's Flawless Breachstone" "Tul's Flawless Breachstone" "Inscribed Ultimatum" "Chronicle of Atzoatl" "Sacred Blossom" "Maven's Invitation: Haewark Hamlet" "Maven's Invitation: Tirn's End" "Maven's Invitation: Lex Proxima" "Maven's Invitation: Lex Ejoris" "Maven's Invitation: New Vastir" "Maven's Invitation: Glennach Cairns" "Maven's Invitation: Valdo's Rest" "Maven's Invitation: Lira Arthain" "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
-	Class "Map Fragments" "Labyrinth Map Item" "Misc Map Items"
+	BaseType == "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Karui Emblem" "Uul-Netol's Flawless Breachstone" "Xoph's Flawless Breachstone" "Esh's Flawless Breachstone" "Tul's Flawless Breachstone" "Sacred Blossom" "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 230 100
     SetBorderColor 0 0 0
@@ -904,7 +939,7 @@ Show
 Show
 #.econ: fra 1 10
 	BaseType == "Blood-filled Vessel" "Uul-Netol's Breachstone" "Mortal Rage" "Xoph's Charged Breachstone" "Xoph's Breachstone" "Esh's Charged Breachstone" "Mortal Grief" "Esh's Breachstone" "Divine Vessel" "Timeless Maraketh Splinter" "Offering to the Goddess" "Timeless Templar Splinter"
-	Class "Map Fragments" "Labyrinth Map Item" "Misc Map Items"
+	Class "Map Fragments" "Labyrinth Map Item"
 	SetTextColor 0 0 0
     SetBackgroundColor 50 150 100
     SetBorderColor 0 0 0
@@ -1462,6 +1497,7 @@ Hide
 #Large Cluster
 ##Rare jewels
 Show
+#.strict 3
 	BaseType == "Large Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1480,6 +1516,7 @@ Show
 #Medium Cluster
 ##Rare jewels
 Show
+#.strict 3
 	BaseType == "Medium Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1498,6 +1535,7 @@ Show
 #Small Cluster
 ##Rare jewels
 Show
+#.strict 3
 	BaseType == "Small Cluster Jewel"
     Rarity = Rare
     Class "Jewel"
@@ -1554,6 +1592,7 @@ Show
 
 #Chromatics
 Show
+#.strict 3
     SocketGroup RGB
 	FracturedItem True
 	SetBackgroundColor 37 97 30
@@ -1562,6 +1601,7 @@ Show
 
 #Miscellaneous
 Show
+#.strict 3
 	FracturedItem True
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1590,6 +1630,7 @@ Show
 
 #Chromatics
 Show
+#.strict 3
     SocketGroup RGB
 	SynthesisedItem True
 	SetBackgroundColor 37 97 30
@@ -1598,6 +1639,7 @@ Show
 
 #Miscellaneous
 Show
+#.strict 3
 	SynthesisedItem True
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1703,6 +1745,7 @@ Show
 
 #Chromatics
 Show
+#.strict 3
 	SocketGroup RGB
     HasEaterOfWorldsImplicit >= 1
 	SetBackgroundColor 37 97 30
@@ -1711,6 +1754,7 @@ Show
 
 #Miscellaneous
 Show
+#.strict 3
 	HasEaterOfWorldsImplicit >= 1
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1749,6 +1793,7 @@ Show
 
 #Chromatics
 Show
+#.strict 3
 	SocketGroup RGB
     HasSearingExarchImplicit >= 1
 	SetBackgroundColor 37 97 30
@@ -1757,6 +1802,7 @@ Show
 
 #Miscellaneous
 Show
+#.strict 3
 	HasSearingExarchImplicit >= 1
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1795,6 +1841,7 @@ Show
 
 #Chromatics
 Show
+#.strict 3
 	SocketGroup RGB
     HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBackgroundColor 37 97 30
@@ -1803,6 +1850,7 @@ Show
 
 #Miscellaneous
 Show
+#.strict 3
 	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 0 0 0
 	SetFontSize 40
@@ -1837,6 +1885,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 75
@@ -1847,6 +1896,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 75
     Rarity = Rare
@@ -1878,6 +1928,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel >= 60
@@ -1888,6 +1939,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel >= 60
     Rarity = Rare
@@ -1919,6 +1971,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     SocketGroup RGB
     ItemLevel < 60
@@ -1929,6 +1982,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     ItemLevel < 60
     Rarity = Rare
@@ -1958,6 +2012,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 	ItemLevel >= 45
     SocketGroup RGB
@@ -1968,6 +2023,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
     Rarity = Magic
 	Identified True
@@ -2004,6 +2060,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel >= 75
@@ -2014,6 +2071,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	AnyEnchantment True
     ItemLevel >= 75
     Rarity = Rare
@@ -2045,6 +2103,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel >= 60
@@ -2055,6 +2114,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	AnyEnchantment True
     ItemLevel >= 60
     Rarity = Rare
@@ -2086,6 +2146,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	AnyEnchantment True
     SocketGroup RGB
     ItemLevel < 60
@@ -2096,6 +2157,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	AnyEnchantment True
     ItemLevel < 60
     Rarity = Rare
@@ -2125,6 +2187,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	AnyEnchantment True
 	ItemLevel >= 45
     SocketGroup RGB
@@ -2135,6 +2198,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	AnyEnchantment True
     Rarity <= Magic
 	Identified True
@@ -2304,6 +2368,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel >= 75
@@ -2314,6 +2379,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	CorruptedMods >= 1
     ItemLevel >= 75
     Rarity = Rare
@@ -2345,6 +2411,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel >= 60
@@ -2355,6 +2422,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	CorruptedMods >= 1
     ItemLevel >= 60
     Rarity = Rare
@@ -2386,6 +2454,7 @@ Show
 	SetFontSize 40
 ##Chromatics
 Show
+#.strict 3
 	CorruptedMods >= 1
     SocketGroup RGB
     ItemLevel < 60
@@ -2396,6 +2465,7 @@ Show
 	SetFontSize 40
 ##Miscellaneous
 Show
+#.strict 3
 	CorruptedMods >= 1
     ItemLevel < 60
     Rarity = Rare

@@ -1,4 +1,5 @@
 # To-Do
+* Add support for the Ritual base types, which are usually expensive
 * Add support for base defences (BaseDefencePercentile).
 * Add support for Maven's Invitations.
 * Update maps section for shaper/elder maps.
@@ -11,10 +12,18 @@
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.17d
+## 3.17 Changes
+* The Eldritch Exalted and Annulment Orbs were lowered in tier due to their market price.
+## General Changes
+* The Sacred Orb was tiered way too high for it's value, and has been dropped one tier.
+* Fixed the Maven invitations bug which caused them to not not get caught properly.
+* Added a new strictness restriction to low value currency that drops in stacks.
+* More identified rares are now ignored at higher strictness valuesdue to them being too plenty in the game: Fractured, Corrupted, Synthesized, Influenced, Temple, Lab Enchanted items and Cluster Jewels are now hidden starting from Very Strict.
+
 # 3.17c
 ## 3.17 Changes
 * Archnemesis mods that drop on the ground were given a different color and their drop sound was removed, since it is very similar to currency.
-
 ## General Changes
 * Added The Tumbleweed divination card to the base filter.
 * Bad belt bases are now filtered more strictly. Not only are they usually bad, but the amount of rare belts one can obtain this league exacerbates the issue. Heavy Belt was added to the list of bad belt bases as well.
