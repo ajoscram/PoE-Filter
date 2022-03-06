@@ -12,6 +12,12 @@
 * Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
 * Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
 
+# 3.17e
+## 3.17 Changes
+* The Orb of Conflict was lowered in tier due to its market price.
+## General Changes
+* General economy update.
+
 # 3.17d
 ## 3.17 Changes
 * The Eldritch Exalted and Annulment Orbs were lowered in tier due to their market price.
