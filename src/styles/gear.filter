@@ -3,14 +3,17 @@ Show #.name unique
     #.import unique -> foreground
 
 Show #.name six_link
-	SetBackgroundColor 255 0 0
+	SetBackgroundColor 100 0 0
+	MinimapIcon 2 Red Kite
+	PlayEffect Red Temp
 	PlayAlertSoundPositional 6 100
 
 Show #.name six_socket
-	SetBackgroundColor 19 19 156
+	SetBackgroundColor 0 0 100
+	MinimapIcon 2 Blue Kite
 
 Show #.name chromatic
-	SetBackgroundColor 37 97 30
+	SetBackgroundColor 0 50 0
 
 Show #.name regal
     SetBorderColor 30 144 255

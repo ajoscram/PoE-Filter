@@ -1,6 +1,6 @@
 Show
     #.econ inv 100
-    BaseType == "Screaming Invitation"  "Incandescent Invitation"
+    BaseType == "Screaming Invitation" "Incandescent Invitation"
     #.import < < styles > fragment -> 100+c
 
 Show

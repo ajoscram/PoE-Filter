@@ -3,6 +3,7 @@ Show
     Rarity = Unique
     #.import < < styles > mapping -> unique
 
+
 Show
     MapTier >= 1
     #.import < < styles > mapping -> white
@@ -39,14 +40,18 @@ Show
 Show
     #.strict 2
     MapTier <= 5
+    Class "Maps"
 
 Show
     #.strict 3
     MapTier <= 10
+    Class "Maps"
 
 Show
     #.strict 4
     MapTier <= 15
+    Class "Maps"
 
 Show
     MapTier = 16
+    Class "Maps"

@@ -54,6 +54,7 @@ Show
     #.import < styles > gem -> tier_3
 
 Show
+    Class == "Active Skill Gems" "Support Skill Gems"
 	AlternateQuality True
     #.import < styles > gem -> tier_3
 
