@@ -1,0 +1,11 @@
+Show #.name unique
+	MinimapIcon 2 Orange Raindrop
+	#.import unique -> background
+
+Show #.name quality
+	SetBackgroundColor 200 230 255
+	MinimapIcon 1 White Raindrop
+	PlayEffect White
+
+Show #.name base
+	SetBackgroundColor 170 200 225

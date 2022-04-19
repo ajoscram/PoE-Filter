@@ -1,0 +1,33 @@
+Show
+    Class "Trinket" "Fishing Rod"
+
+Show
+    #.strict 3
+    Class "Rings" "Amulets"
+    Rarity = Rare
+Show
+    #.strict 1
+    BaseType "Seaglass Amulet" "Iolite Ring" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
+    Rarity < Rare
+
+Show
+    #.strict 3
+    BaseType "Vanguard Belt" "Crystal Belt" "Stygian Vise" "Leather Belt" "Rustic Sash"
+    Rarity = Rare
+Show
+    #.strict 1
+    Rarity = Rare
+    Class "Belts"
+Show
+    #.strict 1
+    BaseType "Vanguard Belt" "Crystal Belt"
+    Rarity < Rare
+
+Show
+    #.strict 2
+	BaseType "Bone Helmet" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand"
+    Rarity = Rare
+Show
+    #.strict 1
+	BaseType "Bone Helmet" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand"
+    Rarity < Rare

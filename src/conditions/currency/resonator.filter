@@ -1,0 +1,7 @@
+Show
+	BaseType == "Prime Chaotic Resonator"
+	#.import < < styles > currency -> 10_100c
+
+Show
+	BaseType == "Primitive Chaotic Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator"
+	#.import < < styles > currency -> 1_10c

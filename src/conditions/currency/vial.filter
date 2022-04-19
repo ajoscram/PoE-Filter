@@ -1,0 +1,18 @@
+Show
+	#.econ via 100
+	BaseType == "Vial of Sacrifice" "Vial of Summoning" "Vial of Awakening" "Vial of the Ghost"
+	#.import < < styles > currency -> 100+c
+
+Show
+	#.econ via 10 100
+	BaseType == "Vial of Dominance" "Vial of Transcendence" "Vial of Fate" "Vial of Consequence"
+    #.import < < styles > currency -> 10_100c
+
+Show
+	#.econ via 0 10
+	BaseType == "Vial of the Ritual"
+    #.import < < styles > currency -> 1_10c
+
+Show
+	BaseType "Vial of"
+	#.import < < styles > currency -> 10_100c

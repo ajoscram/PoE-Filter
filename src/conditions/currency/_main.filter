@@ -1,0 +1,22 @@
+Show
+    Class == "Currency" "Incubator" "Delve Stackable Socketable Currency"
+    #.import < < styles > general -> text
+    Continue
+
+#.import scouting_report
+#.import expedition
+#.import delirium_orb
+#.import catalyst
+#.import incubator
+#.import vial
+#.import fossil
+#.import resonator
+#.import oil
+#.import splinter
+#.import essence
+#.import shard
+#.import miscellaneous
+
+Show
+    Class == "Currency" "Incubator" "Delve Stackable Socketable Currency"
+    #.import < < styles > currency -> catchall

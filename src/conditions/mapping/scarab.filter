@@ -1,0 +1,14 @@
+Show
+	#.econ sca 10
+	BaseType == "Winged Expedition Scarab" "Gilded Blight Scarab" "Winged Blight Scarab" "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Gilded Bestiary Scarab" "Gilded Legion Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Cartography Scarab" "Polished Bestiary Scarab" "Gilded Breach Scarab"
+    #.import < < styles > fragment -> 10_100c
+
+Show
+	#.econ sca 1 10
+	BaseType == "Polished Expedition Scarab" "Gilded Expedition Scarab" "Rusted Blight Scarab" "Polished Blight Scarab" "Polished Abyss Scarab" "Gilded Abyss Scarab" "Winged Abyss Scarab" "Polished Sulphite Scarab" "Gilded Harbinger Scarab" "Gilded Metamorph Scarab" "Gilded Elder Scarab" "Polished Legion Scarab" "Rusted Sulphite Scarab" "Polished Cartography Scarab" "Gilded Ambush Scarab" "Gilded Reliquary Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Gilded Shaper Scarab" "Polished Harbinger Scarab" "Polished Divination Scarab" "Rusted Legion Scarab" "Polished Metamorph Scarab" "Rusted Cartography Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Metamorph Scarab" "Rusted Divination Scarab" "Rusted Reliquary Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Reliquary Scarab"
+    #.import < < styles > fragment -> 1_10c
+
+Show
+	#.econ sca 0 1
+	BaseType == "Rusted Shaper Scarab" "Rusted Torment Scarab" "Rusted Elder Scarab" "Rusted Abyss Scarab" "Rusted Bestiary Scarab" "Rusted Expedition Scarab"
+	#.import < < styles > fragment -> 1-c

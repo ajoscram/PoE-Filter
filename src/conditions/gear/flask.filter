@@ -1,0 +1,81 @@
+Show
+	Class "Flasks"
+    #.import < < styles > general -> text
+    #.import < < styles > flask -> base
+    Continue
+
+Show
+    Class "Flask"
+    Rarity = Unique
+    #.import < < styles > flask -> unique
+
+Show
+    Class "Flasks"
+    Quality > 20
+    #.import < < styles > flask -> quality
+
+Show
+    #.strict 0
+    Class == "Critical Utility Flasks" "Utility Flasks"
+
+Show
+    #.strict 2
+    Class "Flasks"
+    Quality = 20
+
+# Levelling
+
+Show # Small
+	Class "Flasks"
+	DropLevel = 1
+	ItemLevel < 3
+
+Show # Medium
+	Class "Flasks"
+	DropLevel >= 3
+	ItemLevel < 6
+
+Show # Large
+	Class "Flasks"
+	DropLevel >= 6
+	ItemLevel < 12
+
+Show # Greater
+	Class "Flasks"
+	DropLevel >= 12
+	ItemLevel < 18
+
+Show # Grand
+	Class "Flasks"
+	DropLevel >= 18
+	ItemLevel < 24
+
+Show # Giant
+	Class "Flasks"
+	DropLevel >= 24
+	ItemLevel < 30
+
+Show # Colossal
+	Class "Flasks"
+	DropLevel >= 30
+	ItemLevel < 36
+
+Show # Sacred
+	Class "Flasks"
+	DropLevel >= 36
+	ItemLevel < 42
+
+Show # Hallowed
+	Class "Flasks"
+	DropLevel >= 42
+	ItemLevel < 50
+
+Show # Sanctified
+	Class "Flasks"
+	DropLevel >= 50
+	ItemLevel < 60
+
+Show # Divine and Eternal
+	Class "Flasks"
+	DropLevel >= 60
+	ItemLevel < 68

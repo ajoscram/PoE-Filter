@@ -1,0 +1,52 @@
+Show
+    Class "Maps"
+    Rarity = Unique
+    #.import < < styles > mapping -> unique
+
+Show
+    MapTier >= 1
+    #.import < < styles > mapping -> white
+	Continue
+Show
+    MapTier > 5
+    #.import < < styles > mapping -> yellow
+	Continue
+Show
+    MapTier > 10
+    #.import < < styles > mapping -> red
+	Continue
+Show
+    MapTier = 16
+    #.import < < styles > mapping -> high_red
+    Continue
+
+Show
+    ElderMap True
+    #.import < < styles > mapping -> elder
+
+Show
+    ShapedMap True
+    #.import < < styles > mapping -> shaper
+
+Show
+    BlightedMap True
+    #.import < < styles > mapping -> blight
+
+Show
+    UberBlightedMap True
+    #.import < < styles > mapping -> uber_blight
+
+Show
+    #.strict 2
+    MapTier <= 5
+
+Show
+    #.strict 3
+    MapTier <= 10
+
+Show
+    #.strict 4
+    MapTier <= 15
+
+Show
+    MapTier = 16

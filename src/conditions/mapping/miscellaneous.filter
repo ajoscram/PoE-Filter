@@ -1,0 +1,16 @@
+Show
+	Class == "Expedition Logbooks" "Blueprint" "Contract"
+	Rarity = Unique
+	#.import < < styles > mapping -> unique
+
+Show
+	Class == "Expedition Logbooks"
+	#.import < < styles > mapping -> logbook
+
+Show
+    Class == "Blueprint"
+	#.import < < styles > mapping -> blueprint
+
+Show
+	Class == "Contract"
+	#.import < < styles > mapping -> contract

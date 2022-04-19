@@ -1,0 +1,29 @@
+Show #.name 100+c
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 150 255
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	PlayAlertSoundPositional 5 300
+
+Show #.name 10_100c
+	SetBackgroundColor 50 150 255
+	MinimapIcon 1 Blue Square
+	PlayEffect Blue
+	PlayAlertSoundPositional 4 200
+
+Show #.name 2_10c
+	SetBackgroundColor 30 100 205
+	MinimapIcon 2 Blue Square
+	PlayEffect Blue Temp
+	PlayAlertSoundPositional 13 100
+
+Show #.name 2-c
+	SetBackgroundColor 20 60 165
+
+Show #.name 2-c good
+	MinimapIcon 2 Blue Square
+	#.import -> 2-c
+
+Show #.name catchall
+	MinimapIcon 0 Pink Square
+	#.import general -> catchall

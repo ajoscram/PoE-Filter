@@ -1,0 +1,7 @@
+Show #.name 1+c
+    SetTextColor 255 255 255
+	SetBackgroundColor 100 0 180
+
+Show #.name 1-c
+	SetTextColor 255 255 255
+	SetBackgroundColor 50 0 90

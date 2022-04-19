@@ -1,0 +1,7 @@
+Show
+    BaseType == "Otherworldly Scouting Report" "Comprehensive Scouting Report" "Influenced Scouting Report"
+	#.import < < styles > currency -> 10_100c
+
+Show
+    BaseType == "Singular Scouting Report" "Vaal Scouting Report" "Delirious Scouting Report" "Operative's Scouting Report" "Blighted Scouting Report" "Explorer's Scouting Report"
+	#.import < < styles > currency -> 1_10c

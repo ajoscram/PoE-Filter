@@ -1,0 +1,14 @@
+Show
+    #.import styles > general -> shown
+    Continue
+
+#.import conditions > quest
+#.import conditions > currency > _main
+#.import conditions > mapping > _main
+#.import conditions > divination_card
+#.import conditions > gem
+#.import conditions > rogue_equipment
+#.import conditions > gear > _main
+
+Hide
+	#.import styles > general -> hidden

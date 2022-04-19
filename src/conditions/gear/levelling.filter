@@ -1,0 +1,29 @@
+Show # Five Links (up to endgame before maps)
+	LinkedSockets = 5
+	AreaLevel < 68
+    ItemLevel < 68
+
+Show # Four Links (up to act 5) 
+	LinkedSockets = 4
+	AreaLevel < 45
+    ItemLevel < 45
+
+Show # Three links (up to act 3)
+	LinkedSockets = 3
+	AreaLevel < 24
+    ItemLevel < 24
+
+Show # Levelling rares (up to chaos recipe)
+    Rarity = Rare
+    AreaLevel < 60
+    ItemLevel < 60
+
+Show # Levelling jewelry (up to act 5)
+    AreaLevel < 45
+    ItemLevel < 45
+	Class "Rings" "Amulets" "Belts"
+
+Show # Chromatics (up to act 5)
+    #.strict 0
+    SocketGroup RGB
+	ItemLevel < 45

@@ -6,7 +6,7 @@
 # 				 / ____ \| | (_) \__ \ (__| | | (_| | | | | | | \__ \ | |    | | | ||  __/ |
 #				/_/    \_\ |\___/|___/\___|_|  \__,_|_| |_| |_| |___/ |_|    |_|_|\__\___|_|
 #				        _/ |
-#				       |__/                                                                    	 version 3.10b
+#				       |__/
 #-------------------------------------------------------------------------------------------------------------
 #
 #	Check out the latest release at: https://github.com/ajoscram/PoE-Filter/releases/latest
@@ -118,7 +118,7 @@ Show
 	SetFontSize 40
 	PlayAlertSoundPositional 13 50
 	MinimapIcon 2 White Circle
-	PlayEffect White Temp	
+	PlayEffect White Temp
 
 #ARCHNEMESIS--------------------------------------------------------------------------------------------[0114]
 #Base Color: White(255 255 255) -> PoE's Brown (170 155 130)
@@ -647,7 +647,7 @@ Show
 	SetFontSize 40
 Show
 #.strict: 1
-	BaseType == "Orb of Regret" "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
 	Class "Currency"
 	SetTextColor 0 0 0
 	SetBackgroundColor 110 95 80
@@ -665,6 +665,7 @@ Show
 	SetBackgroundColor 80 70 60
 	SetBorderColor 0 0 0
 	SetFontSize 40
+
 Show
 #.strict: 0
     BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -1362,8 +1363,8 @@ Show
 #Show every utility flask up to endgame before maps.
 Show
     ItemLevel <= 65
-	SetTextColor 0 0 0
     Class "Critical Utility Flasks" "Utility Flasks"
+	SetTextColor 0 0 0
 	SetBackgroundColor 200 230 255
 	SetBorderColor 0 0 0
     SetFontSize 40
@@ -3529,7 +3530,7 @@ Show
 ##Five Links (Up to endgame before maps)
 Show
 	LinkedSockets = 5
-	ItemLevel <= 65
+	ItemLevel < 68
     Rarity <= Magic
 	SetBorderColor 0 0 0
 	SetFontSize 40

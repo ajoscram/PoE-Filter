@@ -1,0 +1,43 @@
+Show #.name 100+c expensive
+    SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	MinimapIcon 0 White Circle
+	PlayEffect White
+	PlayAlertSoundPositional 5 300
+	SetFontSize 45
+
+Show #.name 100+c
+    SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	MinimapIcon 0 White Circle
+	PlayEffect White
+	PlayAlertSoundPositional 4 300
+
+Show #.name 10_100c
+	SetBackgroundColor 255 255 255
+	MinimapIcon 1 White Circle
+	PlayEffect White
+	PlayAlertSoundPositional 6 100
+
+Show #.name 1_10c
+	SetBackgroundColor 255 240 210
+	MinimapIcon 2 White Circle
+	PlayEffect White Temp
+	PlayAlertSoundPositional 13 50
+
+Show #.name 1-c good
+	SetBackgroundColor 170 155 130
+	MinimapIcon 2 White Circle
+
+Show #.name 1-c fine
+	SetBackgroundColor 110 95 80
+
+Show #.name 1-c early
+	SetBackgroundColor 80 70 60
+
+Show #.name 1-c trash
+    SetBackgroundColor 60 55 50
+
+Show #.name catchall
+    MinimapIcon 0 Pink Circle
+    #.import general -> catchall

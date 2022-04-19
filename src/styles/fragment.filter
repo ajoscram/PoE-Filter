@@ -1,0 +1,22 @@
+Show #.name 100+c
+    SetTextColor 255 0 0
+    SetBackgroundColor 50 230 100
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
+	PlayAlertSoundPositional 5 100
+
+Show #.name 10_100c
+    SetBackgroundColor 50 230 100
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+	PlayAlertSoundPositional 4 100
+
+Show #.name 1_10c
+    SetBackgroundColor 50 150 100
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green Temp
+	PlayAlertSoundPositional 13 100
+
+Show #.name 1-c
+    SetBackgroundColor 50 110 100
+	MinimapIcon 2 Green Hexagon

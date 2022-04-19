@@ -1,16 +1,21 @@
+# Official docs
+https://www.pathofexile.com/item-filter/about
+
 # To-Do
 * Add support for the Ritual base types, which are usually expensive
 * Add support for base defences (BaseDefencePercentile).
-* Add support for Maven's Invitations.
-* Update maps section for shaper/elder maps.
 * Expand the Influenced base types section with the best bases/levels per influence.
-* Tier delirium orbs.
-* Add support for the "Continue" clause (very daunting, but rewarding!).
-* Add unique watchstone tiering.
 * Add beasts section.
 * Add a wiki page for this project.
-* Update filter's colors and icons here: https://pathofexile.gamepedia.com/Item_filter
-* Rare gear being hidden is currently bugged since the last update: they show up without their border. This should be fixed upon rewritting the filter.
+
+# BIG REWRITE NOTES:
+* Add line imports to avoid string repetition.
+* Add == on every string comparison that needs it.
+
+# 3.17f
+## General Changes
+* Tiered delirium orbs, vials and invitations with the new `.econ` options.
+* Completely re-wrote the entire filter codebase to make use of the Continue clause and the `.import` rule in PoE Filter Generator.
 
 # 3.17e
 ## 3.17 Changes
@@ -25,7 +30,7 @@
 * The Sacred Orb was tiered way too high for it's value, and has been dropped one tier.
 * Fixed the Maven invitations bug which caused them to not not get caught properly.
 * Added a new strictness restriction to low value currency that drops in stacks.
-* More identified rares are now ignored at higher strictness valuesdue to them being too plenty in the game: Fractured, Corrupted, Synthesized, Influenced, Temple, Lab Enchanted items and Cluster Jewels are now hidden starting from Very Strict.
+* More identified rares are now ignored at higher strictness values due to them being too plenty in the game: Fractured, Corrupted, Synthesized, Influenced, Temple, Lab Enchanted items and Cluster Jewels are now hidden starting from Very Strict.
 
 # 3.17c
 ## 3.17 Changes

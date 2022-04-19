@@ -1,0 +1,7 @@
+Show
+    ArchnemesisMod ""
+    #.import < styles > quest -> general
+
+Show
+    Class "Quest Items" "Heist Target" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item" "Atlas Upgrade Item"
+    #.import < styles > quest -> important

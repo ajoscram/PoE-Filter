@@ -1,0 +1,19 @@
+Show #.name unique
+	MinimapIcon 2 Orange Kite
+    #.import unique -> foreground
+
+Show #.name six_link
+	SetBackgroundColor 255 0 0
+	PlayAlertSoundPositional 6 100
+
+Show #.name six_socket
+	SetBackgroundColor 19 19 156
+
+Show #.name chromatic
+	SetBackgroundColor 37 97 30
+
+Show #.name regal
+    SetBorderColor 30 144 255
+
+Show #.name chaos
+    SetBorderColor 255 255 119

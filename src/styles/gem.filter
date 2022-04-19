@@ -1,0 +1,25 @@
+Show #.name tier_1
+    SetTextColor 255 0 0
+	SetBackgroundColor 120 240 250
+    MinimapIcon 0 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSoundPositional 5 300
+
+Show #.name tier_2
+	SetBackgroundColor 120 240 250
+    MinimapIcon 1 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSoundPositional 4 200
+
+Show #.name tier_3
+	SetBackgroundColor 80 210 200
+    MinimapIcon 2 Cyan Diamond
+	PlayEffect Cyan Temp
+	PlayAlertSoundPositional 6 100
+
+Show #.name tier_4
+	SetBackgroundColor 80 210 200
+	PlayAlertSoundPositional 13 100
+
+Show #.name tier_5
+	SetBackgroundColor 40 105 100
