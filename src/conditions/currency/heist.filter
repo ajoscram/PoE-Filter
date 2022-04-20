@@ -1,0 +1,19 @@
+Show
+	BaseType == "Tempering Orb" "Tailoring Orb"
+    #.import < < styles > currency -> 100+c
+
+Show
+    BaseType == "Prime Regrading Lens" "Secondary Regrading Lens"
+    #.import < < styles > currency -> 10_100c
+
+Show
+    BaseType == "Rogue's Marker"
+    #.import < < styles > currency -> 1-c fine
+    Continue
+Show
+    #.strict 3
+	BaseType == "Rogue's Marker"
+	StackSize >= 500
+Show
+    #.strict 1
+	BaseType == "Rogue's Marker"

@@ -3,56 +3,50 @@ Show
     #.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Orb of Dominance" "Tainted Divine Teardrop" "Tempering Orb" "Tailoring Orb" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Exalted Orb" "Blessing of Chayula"
+	BaseType == "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula" "Exalted Orb"
     #.import < < styles > currency -> 100+c
 
 Show
-    BaseType == "Orb of Conflict" "Sacred Orb" "Eldritch Chaos Orb" "Charged Compass" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Tainted Exalted Orb" "Tainted Mythic Orb" "Ritual Vessel" "Elevated Sextant" "Prime Regrading Lens" "Secondary Regrading Lens" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+    BaseType == "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     #.import < < styles > currency -> 10_100c
 
 Show
-    BaseType == "Orb of Unmaking" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Surveyor's Compass" "Lesser Eldritch Ember" "Greater Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Tainted Blessing" "Tainted Chaos Orb" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
     #.import < < styles > currency -> 1_10c
 
 Show
-    BaseType == "Orb of Regret" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+    BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
     #.import < < styles > currency -> 1-c good
 
-Show
-    BaseType == "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+Show #.name 1-c fine
+    BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
     #.import < < styles > currency -> 1-c fine
     Continue
 Show
-    #.strict 3
-	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+    #.strict 3 .import -> 1-c fine -> BaseType
 	StackSize >= 5
 Show
-    #.strict 1
-	BaseType == "Rogue's Marker" "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+    #.strict 1 .import -> 1-c fine -> BaseType
 
-Show
+Show #.name 1-c early
     BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
     #.import < < styles > currency -> 1-c early
     Continue
 Show
-    #.strict 3
-    BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
+    #.strict 3 .import -> 1-c early -> BaseType
 	StackSize >= 10
 Show
-    #.strict 0
-    BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
+    #.strict 0 .import -> 1-c early -> BaseType
 
-Show
+Show #.name 1-c trash
     BaseType == "Scroll of Wisdom" "Portal Scroll"
     #.import < < styles > currency -> 1-c trash
     Continue
 Show
-    #.strict 3
-    BaseType == "Scroll of Wisdom" "Portal Scroll"
+    #.strict 3 .import -> 1-c trash -> BaseType
 	StackSize >= 15
 Show
-    #.strict 0
-    BaseType == "Scroll of Wisdom" "Portal Scroll"
+    #.strict 0 .import -> 1-c trash -> BaseType
 	AreaLevel < 45
 Hide
-    BaseType == "Scroll of Wisdom" "Portal Scroll"
+    #.import -> 1-c trash -> BaseType

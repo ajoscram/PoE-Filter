@@ -3,8 +3,11 @@ Show
     #.import < < styles > general -> text
     Continue
 
+#.import eldritch
 #.import scouting_report
+#.import scourge
 #.import expedition
+#.import heist
 #.import delirium_orb
 #.import catalyst
 #.import incubator
