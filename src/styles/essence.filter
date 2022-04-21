@@ -6,37 +6,30 @@ Show #.name special
 	PlayEffect Cyan
 
 Show #.name deafening
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 255 255
 	PlayAlertSoundPositional 7 100
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
 Show #.name shreaking
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 225 225
 	PlayAlertSoundPositional 9 100
 	MinimapIcon 1 Cyan Circle
 	PlayEffect Cyan
 
 Show #.name screaming
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 195 195
 	MinimapIcon 2 Cyan Circle
 	PlayEffect Cyan
 
 Show #.name wailing
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 165 165
 
 Show #.name weeping
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 135 135
 
 Show #.name muttering
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 105 105
 
 Show #.name whispering
-	SetTextColor 0 0 0
 	SetBackgroundColor 0 75 75

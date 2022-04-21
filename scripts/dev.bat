@@ -1,0 +1,1 @@
+nodemon --exec scripts/test.bat --ext filter --watch src/

@@ -2,18 +2,18 @@
 https://www.pathofexile.com/item-filter/about
 
 # To-Do
-* Add support for the Ritual base types, which are usually expensive
+* Implement a deployment pipeline for online filters / GitHub.
+* Add support for the Ritual base types, which are usually expensive.
 * Add support for base defences (BaseDefencePercentile).
 * Expand the Influenced base types section with the best bases/levels per influence.
 * Add beasts section.
 * Add a wiki page for this project.
 
-# BIG REWRITE NOTES:
-* Add line imports to avoid string repetition.
-* Add == on every string comparison that needs it.
-
 # 3.17f
 ## General Changes
+* Added == on every string comparison which didn't need ambiguity.
+* Unique flasks now have a different style, similar to unique maps.
+* The six-link, six-socket and chromatic background colors were toned down a lot. They were too bright and letters were hard to read.
 * Tiered delirium orbs, vials and invitations with the new `.econ` options.
 * Completely re-wrote the entire filter codebase to make use of the Continue clause and the `.import` rule in PoE Filter Generator.
 

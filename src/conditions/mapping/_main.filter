@@ -1,5 +1,5 @@
-Show
-    Class "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Item" "Contract" "Blueprint" "Expedition Logbooks" 
+Show #.name text
+    Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" 
     #.import < < styles > general -> text
     Continue
 
@@ -10,5 +10,5 @@ Show
 #.import miscellaneous
 
 Show
-    Class "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Item" "Contract" "Blueprint" "Expedition Logbooks"
+    #.import -> text -> Class
     #.import < < styles > mapping -> catchall

@@ -19,9 +19,9 @@ Show # Levelling rares (up to chaos recipe)
     ItemLevel < 60
 
 Show # Levelling jewelry (up to act 5)
+	Class == "Rings" "Amulets" "Belts"
     AreaLevel < 45
     ItemLevel < 45
-	Class "Rings" "Amulets" "Belts"
 
 Show # Chromatics (up to act 5)
     #.strict 0

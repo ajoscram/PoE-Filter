@@ -1,5 +1,5 @@
-Show
-    Class "Divination Card"
+Show #.name text
+    Class == "Divination Card"
     #.import < styles > general -> text
     Continue
 
@@ -28,5 +28,5 @@ Hide
     #.import < styles > divination_card -> 2-c
 
 Show
-    Class "Divination Card"
+    #.import -> text -> Class
     #.import < styles > divination_card -> catchall

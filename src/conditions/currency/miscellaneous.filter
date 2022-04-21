@@ -11,11 +11,11 @@ Show
     #.import < < styles > currency -> 10_100c
 
 Show
-    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
     #.import < < styles > currency -> 1_10c
 
 Show
-    BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Bestiary Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+    BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
     #.import < < styles > currency -> 1-c good
 
 Show #.name 1-c fine

@@ -1,4 +1,4 @@
-Show
+Show #.name text
     Class == "Active Skill Gems" "Support Skill Gems"
     #.import < styles > general -> text
     Continue
@@ -54,12 +54,12 @@ Show
     #.import < styles > gem -> tier_3
 
 Show
-    Class == "Active Skill Gems" "Support Skill Gems"
+    #.import -> text -> Class
 	AlternateQuality True
     #.import < styles > gem -> tier_3
 
 Show
-	Class == "Active Skill Gems" "Support Skill Gems"
+	#.import -> text -> Class
     Quality >= 20
     #.import < styles > gem -> tier_4
 
@@ -73,17 +73,16 @@ Show
     #.import < styles > gem -> tier_5
 
 Show
-    Class == "Active Skill Gems" "Support Skill Gems"
+    #.import -> text -> Class
 	AreaLevel = 1
     #.import < styles > gem -> tier_5
 
 Show
-    #.strict 1
-    Class == "Active Skill Gems" "Support Skill Gems"
+    #.strict 1 .import -> text -> Class
 	AreaLevel < 45
     #.import < styles > gem -> tier_5
 
 Hide
-    Class == "Active Skill Gems" "Support Skill Gems"
+    #.import -> text -> Class
     #.import < styles > gem -> tier_5
     Continue

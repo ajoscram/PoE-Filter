@@ -3,5 +3,5 @@ Show
     #.import < styles > quest -> general
 
 Show
-    Class "Quest Items" "Heist Target" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul" "Incursion Item" "Atlas Upgrade Item"
+    Class == "Quest Items" "Heist Target" "Labyrinth Items" "Labyrinth Trinket" "Pantheon Souls" "Incursion Item" "Atlas Upgrade Items"
     #.import < styles > quest -> important

@@ -26,11 +26,11 @@ Show
 
 Show
     #.strict 4
-	HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	HasExplicitMod == "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 
 Show
     #.strict 2
-	HasExplicitMod "Veiled" "of the Veil"
+	HasExplicitMod == "Veiled" "of the Veil"
 
 Show
     #.strict 3

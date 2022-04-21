@@ -1,11 +1,11 @@
 Show
     #.strict 3
-    Class "Rings" "Amulets"
+    Class == "Rings" "Amulets"
     Rarity = Rare
 
 Show
     #.strict 2
-    Class "Belts"
+    Class == "Belts"
     Rarity = Rare
 
 Show
