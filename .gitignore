@@ -1,4 +1,6 @@
+__pycache__/
+temp/
 pictures/
-scripts/test.bat
 build/
+.env
 sounds.filter

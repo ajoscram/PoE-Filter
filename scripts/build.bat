@@ -5,7 +5,7 @@ set chaos_types=Bodies Helmets Gloves Boots Boots Nothing
 set strictness=0
 
 if not exist ".\build" mkdir ".\build"
-pfg "src/_main.filter" "build\temp.filter" .import
+pfg "src\_main.filter" "build\temp.filter" .import
 pfg "build\temp.filter" .econ
 
 if not exist ".\build\chaos" mkdir ".\build\chaos"
