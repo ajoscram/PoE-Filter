@@ -1,4 +1,5 @@
 @echo off
+
 setlocal enabledelayedexpansion
 set strict_file_names=Base Lenient Semi-strict Strict Very-strict Uber-strict
 set chaos_types=Bodies Helmets Gloves Boots Boots Nothing
@@ -23,3 +24,5 @@ for %%i in (%strict_file_names%) do (
 )
 
 del "build\temp.filter"
+
+@echo on
