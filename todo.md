@@ -2,7 +2,7 @@
 https://www.pathofexile.com/item-filter/about
 
 # To-Do
-* Implement a deployment pipeline for online filters / GitHub.
+* Implement online filter deployment via OAuth2.
 * Add support for the Ritual base types, which are usually expensive.
 * Add support for base defences (BaseDefencePercentile).
 * Expand the Influenced base types section with the best bases/levels per influence.

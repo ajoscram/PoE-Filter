@@ -12,7 +12,7 @@ class PO(ABC):
         self.driver.close()
 
     @abstractclassmethod
-    def login(self, username, password):
+    def login(self, email, password):
         pass
 
     def _click(self, selector):
@@ -27,11 +27,10 @@ class PO(ABC):
         element = self.__get_element(selector)
         return element.text
     
-    def _wait_for(self, selector):
-        self.__get_element(selector)
+    def _wait_for(self, selector, attempts: int = 5):
+        self.__get_element(selector, attempts)
 
-    def __get_element(self, selector):
-        attempts = 5
+    def __get_element(self, selector, attempts: int = 5):
         while True:
             try:
                 return self.driver.find_element_by_css_selector(selector)

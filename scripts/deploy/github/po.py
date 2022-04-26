@@ -2,9 +2,9 @@ from common.po import PO
 from github.release import Release, Attachments
 
 class GithubPO(PO):
-    def login(self, username, password):
+    def login(self, email, password):
         self.driver.get("https://github.com/login")
-        self._write("#login_field", username)
+        self._write("#login_field", email)
         self._write("#password", password)
         self._click(".btn")
     
