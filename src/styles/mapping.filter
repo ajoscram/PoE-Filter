@@ -1,15 +1,15 @@
 Show #.name logbook
-    SetBackgroundColor 160 160 160
+	SetBackgroundColor 160 160 160
 	MinimapIcon 2 Grey Hexagon
 	PlayEffect Grey
 
 Show #.name blueprint
-    SetBackgroundColor 205 110 80
+	SetBackgroundColor 205 110 80
 	MinimapIcon 1 Brown Hexagon
 	PlayEffect Brown
 
 Show #.name contract
-    SetBackgroundColor 175 85 50
+	SetBackgroundColor 175 85 50
 	MinimapIcon 2 Brown Hexagon
 	PlayEffect Brown Temp
 
@@ -18,25 +18,25 @@ Show #.name unique
 	#.import unique -> background
 
 Show #.name white
-    SetBackgroundColor 255 255 255
+	SetBackgroundColor 255 255 255
 	MinimapIcon 2 White Hexagon
-    PlayEffect White Temp
+	PlayEffect White Temp
 
 Show #.name yellow
-    SetBackgroundColor 255 255 119
+	SetBackgroundColor 255 255 119
 	MinimapIcon 2 Yellow Hexagon
-    PlayEffect Yellow Temp
+	PlayEffect Yellow Temp
 
 Show #.name red
-    SetBackgroundColor 237 81 81
+	SetBackgroundColor 237 81 81
 	MinimapIcon 2 Red Hexagon
 	PlayEffect Red Temp
 
 Show #.name high_red
-    SetBackgroundColor 255 0 0
+	SetBackgroundColor 255 0 0
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
-    PlayAlertSoundPositional 2 100
+	PlayAlertSoundPositional 2 100
 
 Show #.name elder
 	SetBorderColor 0 0 255
@@ -51,5 +51,5 @@ Show #.name uber_blight
 	SetBorderColor 255 255 119
 
 Show #.name catchall
-    MinimapIcon 0 Pink Hexagon
-    #.import general -> catchall
+	MinimapIcon 0 Pink Hexagon
+	#.import general -> catchall

@@ -1,13 +1,13 @@
 Show
-    #.strict 3
-    Class == "Rings" "Amulets"
-    Rarity = Rare
+	#.strict 3
+	Class == "Rings" "Amulets"
+	Rarity = Rare
 
 Show
-    #.strict 2
-    Class == "Belts"
-    Rarity = Rare
+	#.strict 2
+	Class == "Belts"
+	Rarity = Rare
 
 Show
-    #.strict 1
-    Rarity = Rare
+	#.strict 1
+	Rarity = Rare

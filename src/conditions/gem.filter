@@ -1,88 +1,88 @@
 Show #.name text
-    Class == "Active Skill Gems" "Support Skill Gems"
-    #.import < styles > general -> text
-    Continue
+	Class == "Active Skill Gems" "Support Skill Gems"
+	#.import < styles > general -> text
+	Continue
 
 Show
-    BaseType == "Empower Support" "Enhance Support" "Enlighten Support"
+	BaseType == "Empower Support" "Enhance Support" "Enlighten Support"
 	GemLevel 4
-    #.import < styles > gem -> tier_1
+	#.import < styles > gem -> tier_1
 
 Show
 	BaseType "Awakened"
 	Class == "Support Skill Gems"
-    #.import < styles > gem -> tier_1
+	#.import < styles > gem -> tier_1
 
 Show
 	GemLevel 21
-    Quality = 23
-    #.import < styles > gem -> tier_1
+	Quality = 23
+	#.import < styles > gem -> tier_1
 
 Show
-    BaseType == "Blood and Sand" "Brand Recall"
+	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
-    Quality = 23
-    #.import < styles > gem -> tier_1
+	Quality = 23
+	#.import < styles > gem -> tier_1
 
 Show
 	GemLevel 21
-    Quality >= 20
-    #.import < styles > gem -> tier_2
+	Quality >= 20
+	#.import < styles > gem -> tier_2
 
 Show
-    BaseType == "Blood and Sand" "Brand Recall"
+	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
-    Quality >= 20
-    #.import < styles > gem -> tier_2
+	Quality >= 20
+	#.import < styles > gem -> tier_2
 
 Show
 	BaseType == "Empower Support" "Enlighten Support" "Enlighten Support"
-    #.import < styles > gem -> tier_2
+	#.import < styles > gem -> tier_2
 
 Show
-    BaseType == "Blood and Sand" "Brand Recall"
+	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
-    #.import < styles > gem -> tier_3
+	#.import < styles > gem -> tier_3
 
 Show
 	GemLevel 21
-    #.import < styles > gem -> tier_3
+	#.import < styles > gem -> tier_3
 
 Show
 	GemLevel = 20
 	Quality = 20
-    #.import < styles > gem -> tier_3
-
-Show
-    #.import -> text -> Class
-	AlternateQuality True
-    #.import < styles > gem -> tier_3
+	#.import < styles > gem -> tier_3
 
 Show
 	#.import -> text -> Class
-    Quality >= 20
-    #.import < styles > gem -> tier_4
+	AlternateQuality True
+	#.import < styles > gem -> tier_3
+
+Show
+	#.import -> text -> Class
+	Quality >= 20
+	#.import < styles > gem -> tier_4
 
 Show
 	GemLevel = 20
-    #.import < styles > gem -> tier_4
+	#.import < styles > gem -> tier_4
 
 Show
-    #.strict 2
+	#.strict 2
 	BaseType == "Portal"
-    #.import < styles > gem -> tier_5
+	#.import < styles > gem -> tier_5
 
 Show
-    #.import -> text -> Class
+	#.import -> text -> Class
 	AreaLevel = 1
-    #.import < styles > gem -> tier_5
+	#.import < styles > gem -> tier_5
 
 Show
-    #.strict 1 .import -> text -> Class
+	#.strict 1 .import -> text -> Class
 	AreaLevel < 45
-    #.import < styles > gem -> tier_5
+	#.import < styles > gem -> tier_5
 
 Hide
-    #.import -> text -> Class
-    #.import < styles > gem -> tier_5
-    Continue
+	#.import -> text -> Class
+	#.import < styles > gem -> tier_5
+	Continue

@@ -1,16 +1,16 @@
 Show
-    BaseType == "Ritual Splinter" "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Splinter of Chayula"
-    #.import < < styles > splinter -> 1+c
+	BaseType == "Ritual Splinter" "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Splinter of Chayula"
+	#.import < < styles > splinter -> 1+c
 
 Show #.name 1-c
-    BaseType == "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+	BaseType == "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
 	#.import < < styles > splinter -> 1-c
-    Continue
+	Continue
 Show
-    #.import -> 1-c -> BaseType
-    StackSize >= 10
+	#.import -> 1-c -> BaseType
+	StackSize >= 10
 Show
-    #.strict 3 .import -> 1-c -> BaseType
-    StackSize >= 5
+	#.strict 3 .import -> 1-c -> BaseType
+	StackSize >= 5
 Show
-    #.strict 2 .import -> 1-c -> BaseType
+	#.strict 2 .import -> 1-c -> BaseType

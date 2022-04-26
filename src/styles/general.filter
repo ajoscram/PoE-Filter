@@ -1,16 +1,16 @@
 Show #.name shown
-    SetBorderColor 0 0 0
-    SetFontSize 40
+	SetBorderColor 0 0 0
+	SetFontSize 40
 
 Show #.name hidden
-    SetFontSize 15
+	SetFontSize 15
 
 Show #.name text
-    SetTextColor 0 0 0
+	SetTextColor 0 0 0
 
 Show #.name catchall
-    SetTextColor 0 0 0 0
+	SetTextColor 0 0 0 0
 	SetBorderColor 255 0 255
 	SetBackgroundColor 255 0 255
-    PlayEffect Pink
+	PlayEffect Pink
 	PlayAlertSoundPositional 15 300

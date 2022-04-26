@@ -1,15 +1,15 @@
 Show
 	BaseType == "Tainted Divine Teardrop"
-    #.import < < styles > currency -> 100+c
+	#.import < < styles > currency -> 100+c
 
 Show
-    BaseType == "Tainted Exalted Orb" "Tainted Mythic Orb"
-    #.import < < styles > currency -> 10_100c
+	BaseType == "Tainted Exalted Orb" "Tainted Mythic Orb"
+	#.import < < styles > currency -> 10_100c
 
 Show
-    BaseType == "Tainted Chaos Orb"
-    #.import < < styles > currency -> 1_10c
+	BaseType == "Tainted Chaos Orb"
+	#.import < < styles > currency -> 1_10c
 
 Show
-    BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
-    #.import < < styles > currency -> 1-c good
+	BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
+	#.import < < styles > currency -> 1-c good

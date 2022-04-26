@@ -1,11 +1,11 @@
 Show
-    BaseType == "Burial Medallion"
-    #.import < < styles > currency -> 10_100c
+	BaseType == "Burial Medallion"
+	#.import < < styles > currency -> 10_100c
 
 Show
-    BaseType == "Astragali" "Exotic Coinage" "Scrap Metal"
-    #.import < < styles > currency -> 1_10c
+	BaseType == "Astragali" "Exotic Coinage" "Scrap Metal"
+	#.import < < styles > currency -> 1_10c
 
 Show
-    BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
+	BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
 	#.import < < styles > currency -> 1-c good

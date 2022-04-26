@@ -1,57 +1,57 @@
 Show
-    Class == "Maps"
-    Rarity = Unique
-    #.import < < styles > mapping -> unique
+	Class == "Maps"
+	Rarity = Unique
+	#.import < < styles > mapping -> unique
 
 
 Show
-    MapTier >= 1
-    #.import < < styles > mapping -> white
+	MapTier >= 1
+	#.import < < styles > mapping -> white
 	Continue
 Show
-    MapTier > 5
-    #.import < < styles > mapping -> yellow
+	MapTier > 5
+	#.import < < styles > mapping -> yellow
 	Continue
 Show
-    MapTier > 10
-    #.import < < styles > mapping -> red
+	MapTier > 10
+	#.import < < styles > mapping -> red
 	Continue
 Show
-    MapTier = 16
-    #.import < < styles > mapping -> high_red
-    Continue
+	MapTier = 16
+	#.import < < styles > mapping -> high_red
+	Continue
 
 Show
-    ElderMap True
-    #.import < < styles > mapping -> elder
+	ElderMap True
+	#.import < < styles > mapping -> elder
 
 Show
-    ShapedMap True
-    #.import < < styles > mapping -> shaper
+	ShapedMap True
+	#.import < < styles > mapping -> shaper
 
 Show
-    BlightedMap True
-    #.import < < styles > mapping -> blight
+	BlightedMap True
+	#.import < < styles > mapping -> blight
 
 Show
-    UberBlightedMap True
-    #.import < < styles > mapping -> uber_blight
+	UberBlightedMap True
+	#.import < < styles > mapping -> uber_blight
 
 Show
-    #.strict 2
-    MapTier <= 5
-    Class == "Maps"
+	#.strict 2
+	MapTier <= 5
+	Class == "Maps"
 
 Show
-    #.strict 3
-    MapTier <= 10
-    Class == "Maps"
+	#.strict 3
+	MapTier <= 10
+	Class == "Maps"
 
 Show
-    #.strict 4
-    MapTier <= 15
-    Class == "Maps"
+	#.strict 4
+	MapTier <= 15
+	Class == "Maps"
 
 Show
-    MapTier = 16
-    Class == "Maps"
+	MapTier = 16
+	Class == "Maps"

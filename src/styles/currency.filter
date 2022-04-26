@@ -1,5 +1,5 @@
 Show #.name 100+c expensive
-    SetTextColor 255 0 0
+	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	MinimapIcon 0 White Circle
 	PlayEffect White
@@ -7,7 +7,7 @@ Show #.name 100+c expensive
 	SetFontSize 45
 
 Show #.name 100+c
-    SetTextColor 255 0 0
+	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	MinimapIcon 0 White Circle
 	PlayEffect White
@@ -36,8 +36,8 @@ Show #.name 1-c early
 	SetBackgroundColor 80 70 60
 
 Show #.name 1-c trash
-    SetBackgroundColor 60 55 50
+	SetBackgroundColor 60 55 50
 
 Show #.name catchall
-    MinimapIcon 0 Pink Circle
-    #.import general -> catchall
+	MinimapIcon 0 Pink Circle
+	#.import general -> catchall

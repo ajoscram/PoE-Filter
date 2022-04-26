@@ -20,4 +20,5 @@ github_po.publish(release)
 print("Closing the browser and deleting temporal files...")
 release.attachments.delete()
 github_po.close()
-print("Release complete!\n")
+
+print("\nDeployment complete!")

@@ -1,52 +1,52 @@
 Show
-    BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
-    #.import < < styles > currency -> 100+c expensive
+	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
+	#.import < < styles > currency -> 100+c expensive
 
 Show
 	BaseType == "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula" "Exalted Orb"
-    #.import < < styles > currency -> 100+c
+	#.import < < styles > currency -> 100+c
 
 Show
-    BaseType == "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
-    #.import < < styles > currency -> 10_100c
+	BaseType == "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Divine Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+	#.import < < styles > currency -> 10_100c
 
 Show
-    BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
-    #.import < < styles > currency -> 1_10c
+	BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+	#.import < < styles > currency -> 1_10c
 
 Show
-    BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
-    #.import < < styles > currency -> 1-c good
+	BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+	#.import < < styles > currency -> 1-c good
 
 Show #.name 1-c fine
-    BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
-    #.import < < styles > currency -> 1-c fine
-    Continue
+	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+	#.import < < styles > currency -> 1-c fine
+	Continue
 Show
-    #.strict 3 .import -> 1-c fine -> BaseType
+	#.strict 3 .import -> 1-c fine -> BaseType
 	StackSize >= 5
 Show
-    #.strict 1 .import -> 1-c fine -> BaseType
+	#.strict 1 .import -> 1-c fine -> BaseType
 
 Show #.name 1-c early
-    BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
-    #.import < < styles > currency -> 1-c early
-    Continue
+	BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	#.import < < styles > currency -> 1-c early
+	Continue
 Show
-    #.strict 3 .import -> 1-c early -> BaseType
+	#.strict 3 .import -> 1-c early -> BaseType
 	StackSize >= 10
 Show
-    #.strict 0 .import -> 1-c early -> BaseType
+	#.strict 0 .import -> 1-c early -> BaseType
 
 Show #.name 1-c trash
-    BaseType == "Scroll of Wisdom" "Portal Scroll"
-    #.import < < styles > currency -> 1-c trash
-    Continue
+	BaseType == "Scroll of Wisdom" "Portal Scroll"
+	#.import < < styles > currency -> 1-c trash
+	Continue
 Show
-    #.strict 3 .import -> 1-c trash -> BaseType
+	#.strict 3 .import -> 1-c trash -> BaseType
 	StackSize >= 15
 Show
-    #.strict 0 .import -> 1-c trash -> BaseType
+	#.strict 0 .import -> 1-c trash -> BaseType
 	AreaLevel < 45
 Hide
-    #.import -> 1-c trash -> BaseType
+	#.import -> 1-c trash -> BaseType

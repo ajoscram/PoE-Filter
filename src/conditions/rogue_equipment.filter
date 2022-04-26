@@ -1,19 +1,19 @@
 Show
-    #.strict 4
+	#.strict 4
 	BaseType == "Obsidian Sharpening Stone" "Precise Arrowhead" "Burst Band" "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Whisper-woven Cloak" "Foliate Brooch"
 
 Show
-    #.strict 3
+	#.strict 3
 	BaseType == "Fine Sharpening Stone" "Hollowpoint Arrowhead" "Aggregator Charm" "Fine Lockpick" "Runed Bracers" "Polished Sensing Charm" "Azurite Flashpowder" "Shining Ward" "Skeleton Keyring" "Winged Sole" "Espionage Disguise Kit" "Sulphur Blowtorch" "Hooded Cloak" "Enamel Brooch"
 
 Show
-    #.strict 2
+	#.strict 2
 	BaseType == "Standard Sharpening Stone" "Fragmenting Arrowhead" "Conduit Line" "Standard Lockpick" "Studded Bracers" "Fine Sensing Charm" "Trarthan Flashpowder" "Lustrous Ward" "Versatile Keyring" "Foxhide Sole" "Theatre Disguise Kit" "Flanged Drill" "Tattered Cloak" "Golden Brooch"
 
 Show
-    #.strict 2
+	#.strict 2
 	BaseType == "Rough Sharpening Stone" "Flanged Arrowhead" "Focal Stone" "Simple Lockpick" "Leather Bracers" "Crude Sensing Charm" "Voltaxic Flashpowder" "Crude Ward" "Essential Keyring" "Eelskin Sole" "Basic Disguise Kit" "Steel Drill" "Torn Cloak" "Silver Brooch"
 
 Show
 	Class == "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
-    #.import < styles > general -> catchall
+	#.import < styles > general -> catchall

@@ -1,14 +1,14 @@
 Show
-    #.econ oil 10
+	#.econ oil 10
 	BaseType == "Golden Oil" "Silver Oil" "Opalescent Oil"
 	#.import < < styles > currency -> 10_100c
 
 Show
-    #.econ oil 1 10
+	#.econ oil 1 10
 	BaseType == "Tainted Oil" "Black Oil" "Crimson Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Sepia Oil" "Verdant Oil"
 	#.import < < styles > currency -> 1_10c
 
 Show
-    #.econ oil 0 1 .strict 2
+	#.econ oil 0 1 .strict 2
 	BaseType == "Clear Oil" "Amber Oil"
 	#.import < < styles > currency -> 1-c fine

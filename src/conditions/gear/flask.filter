@@ -1,27 +1,27 @@
 Show
 	Class "Flasks"
-    #.import < < styles > general -> text
-    #.import < < styles > flask -> base
-    Continue
+	#.import < < styles > general -> text
+	#.import < < styles > flask -> base
+	Continue
 
 Show
-    Class "Flask"
-    Rarity = Unique
-    #.import < < styles > flask -> unique
+	Class "Flask"
+	Rarity = Unique
+	#.import < < styles > flask -> unique
 
 Show
-    Class "Flasks"
-    Quality > 20
-    #.import < < styles > flask -> quality
+	Class "Flasks"
+	Quality > 20
+	#.import < < styles > flask -> quality
 
 Show
-    #.strict 0
-    Class == "Critical Utility Flasks" "Utility Flasks"
+	#.strict 0
+	Class == "Critical Utility Flasks" "Utility Flasks"
 
 Show
-    #.strict 2
-    Class "Flasks"
-    Quality = 20
+	#.strict 2
+	Class "Flasks"
+	Quality = 20
 
 # Levelling
 
