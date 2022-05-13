@@ -1,8 +1,8 @@
 Show
 	#.tag chaos Bodies .strict 2
+	Class == "Body Armours"
 	Identified False
 	Rarity = Rare
-	Class "Body Armour"
 
 Show
 	#.tag chaos Helmets .strict 2

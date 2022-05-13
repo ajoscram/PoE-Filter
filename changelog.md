@@ -1,3 +1,11 @@
+# Sentinel
+
+## 3.18
+### League Changes
+* Added all new divination cards.
+* Added the new Sentinel currencies.
+* Added all the new sentinel units. Future work will make them pretty and add tiers likely.
+
 # Archnemesis / Siege of the Atlas
 
 ## 3.17f

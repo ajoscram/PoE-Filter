@@ -1,0 +1,7 @@
+Show
+	BaseType == "Armour Recombinator" "Weapon Recombinator" "Jewellery Recombinator"
+	#.import < < styles > currency -> 10_100c
+
+Show
+	BaseType == "Power Core" "Transforming Power Core" "Amplifying Power Core" "Augmenting Power Core"
+	#.import < < styles > currency -> 1_10c

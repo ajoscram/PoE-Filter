@@ -1,0 +1,9 @@
+Show #.name stalker
+    SetBorderColor 255 0 0
+
+Show #.name pandemonium
+    SetBorderColor 0 0 255
+    
+Show #.name apex
+    SetBorderColor 255 255 0
+    

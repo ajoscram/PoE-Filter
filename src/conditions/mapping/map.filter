@@ -3,7 +3,6 @@ Show
 	Rarity = Unique
 	#.import < < styles > mapping -> unique
 
-
 Show
 	MapTier >= 1
 	#.import < < styles > mapping -> white

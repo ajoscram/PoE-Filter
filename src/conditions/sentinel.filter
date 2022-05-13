@@ -1,0 +1,14 @@
+Show
+    BaseType "Stalker"
+    Class == "Sentinel"
+    #.import < styles > sentinel -> stalker
+
+Show
+    BaseType "Pandemonium"
+    Class == "Sentinel"
+    #.import < styles > sentinel -> pandemonium
+
+Show
+    BaseType "Apex"
+    Class == "Sentinel"
+    #.import < styles > sentinel -> apex
