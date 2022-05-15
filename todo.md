@@ -11,4 +11,6 @@ https://www.pathofexile.com/item-filter/about
 * Add a wiki page for this project.
 
 # Deployment To-Do
-* remove the geckodriver.log file from appearing
+* Add git commands to the deployment process
+* Add a league-start switch which makes the deployment without invoking .econ
+* Remove the geckodriver.log file from appearing

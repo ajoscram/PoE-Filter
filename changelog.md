@@ -1,5 +1,9 @@
 # Sentinel
 
+## 3.18b
+### General Changes
+* Fixed a bug with rare gear which hid rare rings and amulets on chaos recipe filters.
+
 ## 3.18
 ### League Changes
 * Added all new divination cards.

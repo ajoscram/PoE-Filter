@@ -1,13 +1,16 @@
 Show
 	Class == "Trinket" "Fishing Rod"
 
-Show
-	#.strict 1
+Show #.name atlas_rings_amulets
+	#.strict 3 .tag chaos _
 	BaseType == "Seaglass Amulet" "Iolite Ring" "Opal Ring" "Steel Ring" "Marble Amulet" "Blue Pearl Amulet" "Vermillion Ring" "Cerulean Ring"
+	Rarity = Rare
+Show
+	#.strict 1 .import -> atlas_rings_amulets -> BaseType
 	Rarity < Rare
 
 Show
-	#.strict 3
+	#.strict 3 .tag chaos _
 	BaseType == "Vanguard Belt" "Crystal Belt" "Stygian Vise" "Leather Belt" "Rustic Sash"
 	Rarity = Rare
 Show
@@ -15,10 +18,10 @@ Show
 	BaseType == "Vanguard Belt" "Crystal Belt" "Stygian Vise"
 	Rarity < Rare
 
-Show #.name ok_atlas_bases
+Show #.name atlas_armours
 	#.strict 2
 	BaseType == "Bone Helmet" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand"
 	Rarity = Rare
 Show
-	#.strict 1 .import -> ok_atlas_bases -> BaseType
+	#.strict 1 .import -> atlas_armours -> BaseType
 	Rarity < Rare

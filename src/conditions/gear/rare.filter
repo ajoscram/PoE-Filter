@@ -1,5 +1,36 @@
 Show
-	#.strict 3
+	#.tag chaos Bodies .strict 2
+	Class == "Body Armours"
+	Identified False
+	Rarity = Rare
+
+Show
+	#.tag chaos Helmets .strict 2
+	Class == "Helmets"
+	Identified False
+	Rarity = Rare
+
+Show
+	#.tag chaos Gloves .strict 2
+	Class == "Gloves"
+	Identified False
+	Rarity = Rare
+
+Show
+	#.tag chaos Boots .strict 2
+	Class == "Boots"
+	Identified False
+	Rarity = Rare
+
+Show
+	#.tag chaos Weapons .strict 2
+	Height = 3
+	Width = 1
+	Identified False
+	Rarity = Rare
+
+Show
+	#.tag chaos _ .strict 3
 	Class == "Rings" "Amulets"
 	Rarity = Rare
 
@@ -9,5 +40,5 @@ Show
 	Rarity = Rare
 
 Show
-	#.strict 1
+	#.tag chaos Miscellaneous .strict 1
 	Rarity = Rare
