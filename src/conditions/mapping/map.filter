@@ -4,14 +4,17 @@ Show
 	#.import < < styles > mapping -> unique
 
 Show
+	#.strict 2
 	MapTier >= 1
 	#.import < < styles > mapping -> white
 	Continue
 Show
+	#.strict 3
 	MapTier > 5
 	#.import < < styles > mapping -> yellow
 	Continue
 Show
+	#.strict 4
 	MapTier > 10
 	#.import < < styles > mapping -> red
 	Continue

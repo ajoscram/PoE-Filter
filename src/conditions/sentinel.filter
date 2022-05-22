@@ -1,14 +1,50 @@
-Show
+Show #name stalker
     BaseType "Stalker"
     Class == "Sentinel"
     #.import < styles > sentinel -> stalker
+    Continue
 
 Show
     BaseType "Pandemonium"
     Class == "Sentinel"
     #.import < styles > sentinel -> pandemonium
+    Continue
 
 Show
     BaseType "Apex"
     Class == "Sentinel"
     #.import < styles > sentinel -> apex
+    Continue
+
+Show
+    Class == "Sentinel"
+    Rarity = Unique
+    #.import < styles > sentinel -> unique
+
+Show
+    BaseType "Cryptic" "Primeval" "Ancient" "Cosmic"
+    Class == "Sentinel"
+    #.import < styles > sentinel -> good
+
+Show #.name regular_rare
+    BaseType "Brimstone" "Emberstone" "Obsidian"
+    Class == "Sentinel"
+    Rarity = Rare
+    #.import < styles > sentinel -> regular
+Show
+    #.strict 3
+    #.import -> regular_rare -> BaseType
+    #.import -> regular_rare -> Class
+    Rarity = Magic
+    #.import -> regular_rare -> import
+Show
+    #.strict 2
+    #.import -> regular_rare -> BaseType
+    #.import -> regular_rare -> Class
+    Rarity = Normal
+    #.import -> regular_rare -> import
+
+Show
+    #.strict 1
+    BaseType "Rusted" "Bronze" "Cobalt"
+    Class == "Sentinel"

@@ -1,5 +1,12 @@
 # Sentinel
 
+## 3.18c
+### League Changes
+* Added tiers for sentinel base types. Higher strictness filters now hide less desireable sentinels.
+### General Changes
+* Readded the `Weapons` category on chaos recipe sub-filters. Oops!
+* Maps which are hidden no longer appear on the minimap.
+
 ## 3.18b
 ### General Changes
 * Fixed a bug with rare gear which hid rare rings and amulets on chaos recipe filters.

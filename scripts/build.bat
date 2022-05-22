@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 set strict_file_names=Base Lenient Semi-strict Strict Very-strict Uber-strict
-set chaos_types=Bodies Helmets Gloves Boots Boots Nothing
+set chaos_types=Bodies Helmets Gloves Boots Boots Weapons Nothing
 set strictness=0
 
 if not exist ".\build" mkdir ".\build"
