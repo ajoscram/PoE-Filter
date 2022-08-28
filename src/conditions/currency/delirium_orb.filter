@@ -1,11 +1,6 @@
 Show
-	#.econ del 100
-	BaseType == "Kalguuran Delirium Orb"
-	#.import < < styles > currency -> 100+c
-
-Show
-	#.econ del 10 100
-	BaseType == "Primal Delirium Orb" "Diviner's Delirium Orb" "Skittering Delirium Orb" "Foreboding Delirium Orb" "Cartographer's Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb"
+	#.econ del 10
+	BaseType == "Kalguuran Delirium Orb" "Primal Delirium Orb" "Diviner's Delirium Orb" "Skittering Delirium Orb" "Foreboding Delirium Orb" "Cartographer's Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb"
 	#.import < < styles > currency -> 10_100c
 
 Show

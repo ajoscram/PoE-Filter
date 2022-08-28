@@ -9,8 +9,10 @@
 * Added the new Atlas memories.
 * Added Mirrored Tablets.
 ### General Changes
+* Inverted the prices of Exalted Orbs and Divine Orbs.
 * Removed Convoking Wand as an Atlas-only equpment because of the new minion wand base types.
 * Updated Tainted currencies to better reflect market prices.
+* Removed a bug where Rogue's Marker could drop with some high currency style properties.
 
 # Sentinel
 
