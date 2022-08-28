@@ -1,3 +1,17 @@
+# Kalandra
+
+## 3.19
+### League Changes
+* Added all new Divination Cards.
+* Added all new Reliquary Keys.
+* Added the new Reflective Oil.
+* Added the new Harverst currencies.
+* Added the new Atlas memories.
+* Added Mirrored Tablets.
+### General Changes
+* Removed Convoking Wand as an Atlas-only equpment because of the new minion wand base types.
+* Updated Tainted currencies to better reflect market prices.
+
 # Sentinel
 
 ## 3.18c

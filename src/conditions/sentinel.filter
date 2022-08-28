@@ -32,19 +32,17 @@ Show #.name regular_rare
     Rarity = Rare
     #.import < styles > sentinel -> regular
 Show
-    #.strict 3
-    #.import -> regular_rare -> BaseType
-    #.import -> regular_rare -> Class
+    #.strict 2 .import -> regular_rare -> BaseType
+    Class == "Sentinel"
     Rarity = Magic
     #.import -> regular_rare -> import
 Show
-    #.strict 2
-    #.import -> regular_rare -> BaseType
-    #.import -> regular_rare -> Class
+    #.strict 1 .import -> regular_rare -> BaseType
+    Class == "Sentinel"
     Rarity = Normal
     #.import -> regular_rare -> import
 
 Show
-    #.strict 1
+    #.strict 0
     BaseType "Rusted" "Bronze" "Cobalt"
     Class == "Sentinel"

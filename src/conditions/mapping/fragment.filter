@@ -1,16 +1,22 @@
 Show
 	#.econ fra 100
-	BaseType == "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Chayula's Flawless Breachstone" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Chayula's Pure Breachstone" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Timeless Templar Emblem"
+	BaseType == "Gift to the Goddess" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Chayula's Flawless Breachstone" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Chayula's Pure Breachstone" "Chayula's Enriched Breachstone" "Chayula's Charged Breachstone" "Timeless Templar Emblem"
+	#.import < < styles > fragment -> 100+c
+Show
+	BaseType == "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
 	#.import < < styles > fragment -> 100+c
 
 Show
 	#.econ fra 10 100
-	BaseType == "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Karui Emblem" "Uul-Netol's Flawless Breachstone" "Xoph's Flawless Breachstone" "Esh's Flawless Breachstone" "Tul's Flawless Breachstone" "Sacred Blossom" "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+	BaseType == "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Karui Emblem" "Uul-Netol's Flawless Breachstone" "Xoph's Flawless Breachstone" "Esh's Flawless Breachstone" "Tul's Flawless Breachstone" "Sacred Blossom" "Tribute to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
 	#.import < < styles > fragment -> 10_100c
 
 Show
 	#.econ fra 1 10
-	BaseType == "Blood-filled Vessel" "Uul-Netol's Breachstone" "Mortal Rage" "Xoph's Charged Breachstone" "Xoph's Breachstone" "Esh's Charged Breachstone" "Mortal Grief" "Esh's Breachstone" "Divine Vessel" "Offering to the Goddess"
+	BaseType == "Uul-Netol's Breachstone" "Mortal Rage" "Xoph's Charged Breachstone" "Xoph's Breachstone" "Esh's Charged Breachstone" "Mortal Grief" "Esh's Breachstone" "Divine Vessel" "Offering to the Goddess"
+	#.import < < styles > fragment -> 1_10c
+Show
+	BaseType == "Blood-filled Vessel" "Mirrored Tablet"
 	#.import < < styles > fragment -> 1_10c
 
 Show

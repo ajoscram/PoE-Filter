@@ -3,6 +3,7 @@ Show #.name text
 	#.import < < styles > general -> text
 	Continue
 
+#.import lifeforce
 #.import sentinel
 #.import eldritch
 #.import scouting_report

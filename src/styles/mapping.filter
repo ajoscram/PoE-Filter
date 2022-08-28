@@ -1,6 +1,11 @@
+Show #.name memory
+	SetBackgroundColor 97 97 212
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue
+
 Show #.name logbook
 	SetBackgroundColor 160 160 160
-	MinimapIcon 2 Grey Hexagon
+	MinimapIcon 1 Grey Hexagon
 	PlayEffect Grey
 
 Show #.name blueprint

@@ -1,6 +1,6 @@
 Show
 	#.econ oil 10
-	BaseType == "Golden Oil" "Silver Oil" "Opalescent Oil"
+	BaseType == "Reflective Oil" "Golden Oil" "Silver Oil" "Opalescent Oil"
 	#.import < < styles > currency -> 10_100c
 
 Show
