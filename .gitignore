@@ -1,6 +1,6 @@
 __pycache__/
 temp/
 pictures/
-build/
+/build/
 .env
 sounds.filter

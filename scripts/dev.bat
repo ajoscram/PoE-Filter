@@ -1,1 +1,1 @@
-nodemon --exec scripts/dev/prebuild_and_copy_to_output.bat --ext filter --watch src/
+nodemon --exec "scripts/build/temp.bat %1" --ext filter --watch src/

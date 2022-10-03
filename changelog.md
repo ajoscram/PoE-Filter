@@ -1,11 +1,17 @@
 # Kalandra
 
+## 3.19b
+### General Changes
+* All lifeforce was tiered up in value.
+* Six socketed items are now hidden on the highest tier strictness since their value is diminished due to orbs of fusing being more attainable through the six link recipe.
+* Scouting Reports and Eldritch currencies were shuffled in rarity due to fluctuations in price since they came out.
+
 ## 3.19
 ### League Changes
 * Added all new Divination Cards.
 * Added all new Reliquary Keys.
 * Added the new Reflective Oil.
-* Added the new Harverst currencies.
+* Added the new Harvest currencies.
 * Added the new Atlas memories.
 * Added Mirrored Tablets.
 ### General Changes

@@ -6,6 +6,7 @@ Show
 	LinkedSockets = 6
 
 Show
+	#.strict 4
 	Sockets = 6
 
 Show

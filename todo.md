@@ -2,6 +2,9 @@
 https://www.pathofexile.com/item-filter/about
 
 # To-Do
+* Add currency shard stack size filtering.
+* Group gear by class and tier base types.
+* The Sacred Blossom fight thingy is not supported in fragments for some reason.
 * Add Pieces (Harbinger and Ultimatum map) to unique tiering.
 * Blood-filled veessels are not supported by PoE ninja in fragments.
 * Implement stacks filtering for currency shards.
@@ -12,8 +15,6 @@ https://www.pathofexile.com/item-filter/about
 * Streamline sounds so that only a handful of sounds are used.
 * Add beasts section.
 * Add a wiki page for this project.
-* Implement online filter deployment via OAuth2.
 
 # Deployment To-Do
-* Add a league-start switch which makes the deployment without invoking .econ
-* Modify the dev script so that it gets output to the poe folder as well and calls league-start deployment
+* Implement online filter deployment via OAuth2.
