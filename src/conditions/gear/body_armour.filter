@@ -1,0 +1,17 @@
+#.subsection Body Armour
+
+Show #.import combinables -> body_armour .combine 4
+    BaseType ""
+    #.import < < styles > gear -> tier_1
+
+Show #.combine 3 .import combinables -> body_armour
+    BaseType ""
+    #.import < < styles > gear -> tier_2
+
+Show #.combine 2 .import combinables -> body_armour
+    BaseType ""
+    #.import < < styles > gear -> tier_3
+
+Show #.combine 1 .import combinables -> body_armour
+    BaseType ""
+    #.import < < styles > gear -> tier_4

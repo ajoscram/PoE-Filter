@@ -1,7 +1,6 @@
-Show #.name text
+Show Continue #.name text
 	Class == "Divination Card"
 	#.import < styles > general -> text
-	Continue
 
 Show
 	#.econ div 100

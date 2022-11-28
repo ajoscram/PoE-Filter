@@ -1,20 +1,17 @@
-Show #name stalker
+Show Continue
     BaseType "Stalker"
     Class == "Sentinel"
     #.import < styles > sentinel -> stalker
-    Continue
 
-Show
+Show Continue
     BaseType "Pandemonium"
     Class == "Sentinel"
     #.import < styles > sentinel -> pandemonium
-    Continue
 
-Show
+Show Continue
     BaseType "Apex"
     Class == "Sentinel"
     #.import < styles > sentinel -> apex
-    Continue
 
 Show
     Class == "Sentinel"

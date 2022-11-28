@@ -1,3 +1,5 @@
+#.subsection Jewel
+
 Show
 	#.strict 3
 	BaseType == "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"

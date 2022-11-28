@@ -20,3 +20,8 @@ Show #.name regal
 
 Show #.name chaos
 	SetBorderColor 255 255 119
+
+Show #.name tier_1
+Show #.name tier_2
+Show #.name tier_3
+Show #.name tier_4

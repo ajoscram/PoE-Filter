@@ -1,7 +1,6 @@
-Show #.name text
+Show Continue #.name text
 	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" 
 	#.import < < styles > general -> text
-	Continue
 
 #.import invitation
 #.import scarab
