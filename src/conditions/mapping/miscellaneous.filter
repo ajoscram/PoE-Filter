@@ -1,3 +1,5 @@
+#.subsection Miscellaneous
+
 Show
 	Class == "Expedition Logbooks" "Blueprint" "Contract"
 	Rarity = Unique

@@ -1,3 +1,5 @@
+#.subsection Map
+
 Show
 	Class == "Maps"
 	Rarity = Unique

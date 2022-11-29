@@ -1,3 +1,5 @@
+#.section Quest
+
 Show
 	ArchnemesisMod ""
 	#.import < styles > quest -> general

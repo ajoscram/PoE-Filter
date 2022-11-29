@@ -1,3 +1,5 @@
+#.subsection Oil
+
 Show
 	#.econ oil 10
 	BaseType == "Reflective Oil" "Golden Oil" "Silver Oil" "Opalescent Oil"

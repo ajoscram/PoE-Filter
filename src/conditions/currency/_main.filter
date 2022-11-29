@@ -1,3 +1,5 @@
+#.section Currency
+
 Show Continue #.name text
 	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency"
 	#.import < < styles > general -> text
@@ -6,7 +8,7 @@ Show Continue #.name text
 #.import sentinel
 #.import eldritch
 #.import scouting_report
-#.import scourge
+#.import tainted
 #.import expedition
 #.import heist
 #.import delirium_orb

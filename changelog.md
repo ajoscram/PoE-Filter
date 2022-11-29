@@ -1,3 +1,10 @@
+# The Forbidden Sanctum
+
+## 3.20
+### General Changes
+* Added support for the PFG `.index` handler, which means all filters now have an index to navigate around.
+* All filters are now formatted with PFG's `.format`, which should improve readibility.
+
 # Kalandra
 
 ## 3.19b

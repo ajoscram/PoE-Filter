@@ -1,3 +1,5 @@
+#.subsection Scouting Report
+
 Show
 	BaseType == "Otherworldly Scouting Report" "Comprehensive Scouting Report"
 	#.import < < styles > currency -> 10_100c

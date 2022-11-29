@@ -1,3 +1,5 @@
+#.subsection Shard
+
 Show
 	BaseType == "Mirror Shard"
 	#.import < < styles > currency -> 100+c expensive

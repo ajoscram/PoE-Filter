@@ -1,3 +1,5 @@
+#.subsection Essence
+
 Show
 	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity"
 	#.import < < styles > essence -> special

@@ -1,3 +1,5 @@
+#.subsection Heist
+
 Show
 	BaseType == "Tempering Orb" "Tailoring Orb"
 	#.import < < styles > currency -> 100+c

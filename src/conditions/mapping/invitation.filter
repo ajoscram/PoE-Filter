@@ -1,3 +1,5 @@
+#.subsection Invitation
+
 Show
 	#.econ inv 100
 	BaseType == "Screaming Invitation" "Incandescent Invitation"

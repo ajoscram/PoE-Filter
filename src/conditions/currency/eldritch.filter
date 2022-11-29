@@ -1,3 +1,5 @@
+#.subsection Eldritch
+
 Show
 	BaseType == "Orb of Conflict" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Eldritch Chaos Orb" "Exceptional Eldritch Ichor" "Exceptional Eldritch Ember"
 	#.import < < styles > currency -> 10_100c

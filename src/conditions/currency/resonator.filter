@@ -1,3 +1,5 @@
+#.subsection Resonator
+
 Show
 	BaseType == "Prime Chaotic Resonator"
 	#.import < < styles > currency -> 10_100c

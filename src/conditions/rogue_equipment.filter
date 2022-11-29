@@ -1,3 +1,5 @@
+#.section Rogue Equipment
+
 Show
 	#.strict 4
 	BaseType == "Obsidian Sharpening Stone" "Precise Arrowhead" "Burst Band" "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Whisper-woven Cloak" "Foliate Brooch"

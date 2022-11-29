@@ -3,6 +3,7 @@ https://www.pathofexile.com/item-filter/about
 https://www.poewiki.net/wiki/Body_armour
 https://www.craftofexile.com/?b=45&ob=both&v=d&a=e&l=a&lg=11&bp=y&as=1&hb=0&bld={}&im={}&ggt=|&ccp={}
 https://www.filterblade.xyz/
+https://github.com/ajoscram/PoE-Filter/tree/28ffa9f0f5821540138253391b051a9724a01cdb/src/conditions/gear
 
 # conditions
 bases
@@ -54,7 +55,6 @@ SetTextColor
 
 # To-Do
 * Add support for the entire index.
-* Move "Continue" clauses to the top of each block, fix any formatting issues left by reordering.
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
 * Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.

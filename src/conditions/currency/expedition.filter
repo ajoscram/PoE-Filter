@@ -1,3 +1,5 @@
+#.subsection Expedition
+
 Show
 	BaseType == "Burial Medallion"
 	#.import < < styles > currency -> 10_100c

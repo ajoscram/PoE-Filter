@@ -1,3 +1,5 @@
+#.section Gem
+
 Show Continue #.name text
 	Class == "Active Skill Gems" "Support Skill Gems"
 	#.import < styles > general -> text

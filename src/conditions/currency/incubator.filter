@@ -1,3 +1,5 @@
+#.subsection Incubator
+
 Show
 	#.econ inc 10
 	BaseType == "Geomancer's Incubator" "Blighted Incubator" "Maddening Incubator"

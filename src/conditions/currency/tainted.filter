@@ -1,3 +1,5 @@
+#.subsection Tainted
+
 Show
 	BaseType == "Tainted Chaos Orb" "Tainted Divine Teardrop" "Tainted Exalted Orb" "Tainted Mythic Orb"
 	#.import < < styles > currency -> 10_100c

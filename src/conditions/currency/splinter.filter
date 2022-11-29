@@ -1,3 +1,5 @@
+#.subsection Splinter
+
 Show
 	BaseType == "Ritual Splinter" "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Splinter of Chayula"
 	#.import < < styles > splinter -> 1+c

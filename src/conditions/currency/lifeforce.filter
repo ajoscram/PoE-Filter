@@ -1,3 +1,5 @@
+#.subsection Lifeforce
+
 Show
 	BaseType == "Sacred Crystallised Lifeforce"
 	#.import < < styles > currency -> 100+c

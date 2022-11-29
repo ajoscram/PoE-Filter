@@ -1,3 +1,5 @@
+#.section Sentinel
+
 Show Continue
     BaseType "Stalker"
     Class == "Sentinel"

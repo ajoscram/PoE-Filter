@@ -1,3 +1,5 @@
+#.section Divination Card
+
 Show Continue #.name text
 	Class == "Divination Card"
 	#.import < styles > general -> text

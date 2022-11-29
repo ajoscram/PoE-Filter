@@ -1,3 +1,5 @@
+#.subsection Catalyst
+
 Show
 	BaseType == "Fertile Catalyst" "Prismatic Catalyst" "Noxious Catalyst" "Accelerating Catalyst" "Unstable Catalyst"
 	#.import < < styles > currency -> 1_10c

@@ -1,6 +1,8 @@
-#.import styles > headers -> Cursive
+#.import utils > headers -> Cursive
 
 #.index
+
+#.section General
 
 Show Continue
 	#.import styles > general -> shown
@@ -13,6 +15,8 @@ Show Continue
 #.import conditions > sentinel
 #.import conditions > rogue_equipment
 #.import conditions > gear > _main
+
+#.section Catchall
 
 Hide
 	#.import styles > general -> hidden

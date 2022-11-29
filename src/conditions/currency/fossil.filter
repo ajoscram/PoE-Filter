@@ -1,3 +1,5 @@
+#.subsection Fossil
+
 Show
 	#.econ fos 10
 	BaseType == "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil" "Tangled Fossil" "Glyphic Fossil" "Corroded Fossil"

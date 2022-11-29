@@ -1,3 +1,5 @@
+#.subsection Miscellaneous
+
 Show
 	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
 	#.import < < styles > currency -> 100+c expensive

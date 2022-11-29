@@ -1,3 +1,5 @@
+#.subsection Delirium Orb
+
 Show
 	#.econ del 10
 	BaseType == "Kalguuran Delirium Orb" "Primal Delirium Orb" "Diviner's Delirium Orb" "Skittering Delirium Orb" "Foreboding Delirium Orb" "Cartographer's Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb"

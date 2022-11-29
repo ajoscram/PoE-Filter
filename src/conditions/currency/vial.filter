@@ -1,3 +1,5 @@
+#.subsection Vial
+
 Show
 	#.econ via 100
 	BaseType == "Vial of Sacrifice" "Vial of Summoning" "Vial of Awakening" "Vial of the Ghost"
