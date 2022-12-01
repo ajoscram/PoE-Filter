@@ -9,13 +9,11 @@ if not exist ".\build" mkdir ".\build"
 
 for %%i in (%strict_file_names%) do (
     
-    pfg "%TEMP_OUTPUT%" "build\%%i.filter" .strict !strictness!
-    pfg "build\%%i.filter" .format
+    pfg "%TEMP_OUTPUT%" "build\%%i.filter" .strict !strictness! .format
 
     if not exist ".\build\chaos\%%i" mkdir ".\build\chaos\%%i"
     for %%j in (%chaos_types%) do (
-        pfg "build\%%i.filter" "build\chaos\%%i\%%j.filter" .tag chaos %%j
-        pfg "build\chaos\%%i\%%j.filter" .format
+        pfg "build\%%i.filter" "build\chaos\%%i\%%j.filter" .tag chaos %%j .format
     )
 
     set /a strictness+=1

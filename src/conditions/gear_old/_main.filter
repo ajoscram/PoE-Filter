@@ -1,0 +1,36 @@
+#.section Old Gear - Work in Progress
+
+#.import flask
+#.import jewel
+
+Show
+	SocketGroup RGB
+	#.import < < styles > gear -> chromatic
+	Continue
+
+Show
+	Sockets = 6
+	#.import < < styles > gear -> six_socket
+	Continue
+
+Show
+	LinkedSockets = 6
+	#.import < < styles > gear -> six_link
+	Continue
+
+Show
+	Rarity = Rare
+	ItemLevel >= 60
+	#.import < < styles > gear -> chaos
+	Continue
+
+Show
+	Rarity = Rare
+	ItemLevel >= 75
+	#.import < < styles > gear -> regal
+	Continue
+
+#.import exceptional
+#.import levelling
+#.import base
+#.import rare

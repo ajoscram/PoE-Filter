@@ -14,7 +14,7 @@ Show Continue
 #.import conditions > gem
 #.import conditions > sentinel
 #.import conditions > rogue_equipment
-#.import conditions > gear > _main
+#.import conditions > gear_old > _main
 
 #.section Catchall
 

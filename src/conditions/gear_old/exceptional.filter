@@ -1,0 +1,55 @@
+Show
+	Rarity = Unique
+	#.import < < styles > gear -> unique
+
+Show
+	LinkedSockets = 6
+
+Show
+	#.strict 4
+	Sockets = 6
+
+Show
+	#.strict 3
+	HasEaterOfWorldsImplicit >= 1
+
+Show
+	#.strict 3
+	HasSearingExarchImplicit >= 1
+
+Show
+	#.strict 1
+	Scourged True
+
+Show
+	#.strict 3
+	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
+
+Show
+	#.strict 4
+	HasExplicitMod == "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+
+Show
+	#.strict 2
+	HasExplicitMod == "Veiled" "of the Veil"
+
+Show
+	#.strict 3
+	FracturedItem True
+
+Show
+	#.strict 3
+	SynthesisedItem True
+
+Show
+	#.strict 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
+
+Show
+	#.strict 3
+	AnyEnchantment True
+
+Show
+	#.strict 3
+	CorruptedMods >= 1
+	Rarity = Rare

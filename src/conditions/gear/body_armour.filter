@@ -2,16 +2,20 @@
 
 Show #.combine 4 .import < < utils > combinables -> body_armour
     BaseType ""
+    Class == "Body Armour"
     #.import < < styles > gear -> tier_1
 
 Show #.combine 3 .import < < utils > combinables -> body_armour
     BaseType ""
+    Class == "Body Armour"
     #.import < < styles > gear -> tier_2
 
 Show #.combine 2 .import < < utils > combinables -> body_armour
     BaseType ""
+    Class == "Body Armour"
     #.import < < styles > gear -> tier_3
 
 Show #.combine 1 .import < < utils > combinables -> body_armour
     BaseType ""
+    Class == "Body Armour"
     #.import < < styles > gear -> tier_4
