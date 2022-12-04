@@ -4,8 +4,9 @@
 
 #.section General
 
-Show Continue
+Show
 	#.import styles > general -> shown
+	Continue
 
 #.import conditions > quest
 #.import conditions > currency > _main

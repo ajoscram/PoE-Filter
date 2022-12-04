@@ -1,8 +1,9 @@
 #.section Gem
 
-Show Continue #.name text
+Show #.name text
 	Class == "Active Skill Gems" "Support Skill Gems"
 	#.import < styles > general -> text
+	Continue
 
 Show
 	BaseType == "Empower Support" "Enhance Support" "Enlighten Support"

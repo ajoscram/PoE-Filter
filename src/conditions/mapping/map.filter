@@ -5,21 +5,25 @@ Show
 	Rarity = Unique
 	#.import < < styles > mapping -> unique
 
-Show Continue
+Show
 	#.strict 2
 	MapTier >= 1
 	#.import < < styles > mapping -> white
-Show Continue
+	Continue
+Show
 	#.strict 3
 	MapTier > 5
 	#.import < < styles > mapping -> yellow
-Show Continue
+	Continue
+Show
 	#.strict 4
 	MapTier > 10
 	#.import < < styles > mapping -> red
-Show Continue
+	Continue
+Show
 	MapTier = 16
 	#.import < < styles > mapping -> high_red
+	Continue
 
 Show
 	ElderMap True

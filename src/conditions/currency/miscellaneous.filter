@@ -20,27 +20,30 @@ Show
 	BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
 	#.import < < styles > currency -> 1-c good
 
-Show Continue #.name 1-c fine
+Show #.name 1-c fine
 	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
 	#.import < < styles > currency -> 1-c fine
+	Continue
 Show
 	#.strict 3 .import -> 1-c fine -> BaseType
 	StackSize >= 5
 Show
 	#.strict 1 .import -> 1-c fine -> BaseType
 
-Show Continue #.name 1-c early
+Show #.name 1-c early
 	BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	#.import < < styles > currency -> 1-c early
+	Continue
 Show
 	#.strict 3 .import -> 1-c early -> BaseType
 	StackSize >= 10
 Show
 	#.strict 0 .import -> 1-c early -> BaseType
 
-Show Continue #.name 1-c trash
+Show #.name 1-c trash
 	BaseType == "Scroll of Wisdom" "Portal Scroll"
 	#.import < < styles > currency -> 1-c trash
+	Continue
 Show
 	#.strict 3 .import -> 1-c trash -> BaseType
 	StackSize >= 15

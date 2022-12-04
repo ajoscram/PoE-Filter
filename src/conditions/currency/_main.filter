@@ -1,8 +1,9 @@
 #.section Currency
 
-Show Continue #.name text
+Show #.name text
 	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency"
 	#.import < < styles > general -> text
+	Continue
 
 #.import lifeforce
 #.import sentinel

@@ -1,14 +1,14 @@
 #.section Gear
 
 #.import flask
+#.import jewel
 #.import amulet
+#.import ring
 #.import belt
 #.import body_armour
 #.import boots
 #.import gloves
 #.import helmet
-#.import jewel
 #.import quiver
-#.import ring
 #.import shield
 #.import weapons > _main
