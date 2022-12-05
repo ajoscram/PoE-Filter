@@ -41,7 +41,6 @@ Show #.name high_red
 	SetBackgroundColor 255 0 0
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
-	PlayAlertSoundPositional 2 100
 
 Show #.name elder
 	SetBorderColor 0 0 255

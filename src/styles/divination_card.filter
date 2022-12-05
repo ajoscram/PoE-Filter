@@ -3,19 +3,19 @@ Show #.name 100+c
 	SetBackgroundColor 50 150 255
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
-	PlayAlertSoundPositional 5 300
+	#.import sounds -> short -> t1
 
 Show #.name 10_100c
 	SetBackgroundColor 50 150 255
 	MinimapIcon 1 Blue Square
 	PlayEffect Blue
-	PlayAlertSoundPositional 4 200
+	#.import sounds -> short -> t2
 
 Show #.name 2_10c
 	SetBackgroundColor 30 100 205
 	MinimapIcon 2 Blue Square
 	PlayEffect Blue Temp
-	PlayAlertSoundPositional 13 100
+	#.import sounds -> short -> t3
 
 Show #.name 2-c
 	SetBackgroundColor 20 60 165

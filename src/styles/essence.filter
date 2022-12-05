@@ -1,21 +1,21 @@
 Show #.name special
 	SetTextColor 255 0 0
 	SetBackgroundColor 0 255 255
-	PlayAlertSoundPositional 8 100
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
+	#.import sounds -> short -> t2
 
 Show #.name deafening
 	SetBackgroundColor 0 255 255
-	PlayAlertSoundPositional 7 100
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
+	#.import sounds -> short -> t3
 
 Show #.name shreaking
 	SetBackgroundColor 0 225 225
-	PlayAlertSoundPositional 9 100
 	MinimapIcon 1 Cyan Circle
 	PlayEffect Cyan
+	#.import sounds -> short -> t3
 
 Show #.name screaming
 	SetBackgroundColor 0 195 195

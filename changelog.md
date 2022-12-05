@@ -4,6 +4,7 @@
 ### General Changes
 * Added support for the PFG `.index` handler, which means all filters now have an index to navigate around.
 * All filters are now formatted with PFG's `.format`, which should improve readibility.
+* Streamlined the sounds in the filter down to only 5 different ones. The intent here is to associate sound with value / rarity regardless of the item type being shown.
 
 # Kalandra
 

@@ -8,4 +8,4 @@ Show #.name background
 
 Show #.name base
 	PlayEffect Orange Temp
-	PlayAlertSoundPositional 1 100
+	#.import sounds -> long -> t2

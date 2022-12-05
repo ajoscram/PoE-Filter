@@ -6,7 +6,6 @@ Show #.name six_link
 	SetBackgroundColor 100 0 0
 	MinimapIcon 2 Red Kite
 	PlayEffect Red Temp
-	PlayAlertSoundPositional 6 100
 
 Show #.name six_socket
 	SetBackgroundColor 0 0 100
@@ -15,6 +14,9 @@ Show #.name six_socket
 Show #.name chromatic
 	SetBackgroundColor 0 50 0
 
+Show #.name all_mods
+	SetBorderColor 255 255 255
+
 Show #.name regal
 	SetBorderColor 30 144 255
 
@@ -22,6 +24,13 @@ Show #.name chaos
 	SetBorderColor 255 255 119
 
 Show #.name tier_1
+	PlayEffect White
+	#.import sounds -> short -> t1
+
 Show #.name tier_2
+	#.import sounds -> short -> t2
+
 Show #.name tier_3
+	#.import sounds -> short -> t3
+
 Show #.name tier_4

@@ -13,4 +13,4 @@ Show #.name catchall
 	SetBorderColor 255 0 255
 	SetBackgroundColor 255 0 255
 	PlayEffect Pink
-	PlayAlertSoundPositional 15 300
+	#.import sounds -> error

@@ -3,27 +3,27 @@ Show #.name 100+c expensive
 	SetBackgroundColor 255 255 255
 	MinimapIcon 0 White Circle
 	PlayEffect White
-	PlayAlertSoundPositional 5 300
 	SetFontSize 45
+	#.import sounds -> short -> t0
 
 Show #.name 100+c
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	MinimapIcon 0 White Circle
 	PlayEffect White
-	PlayAlertSoundPositional 4 300
+	#.import sounds -> short -> t1
 
 Show #.name 10_100c
 	SetBackgroundColor 255 255 255
 	MinimapIcon 1 White Circle
 	PlayEffect White
-	PlayAlertSoundPositional 6 100
+	#.import sounds -> short -> t2
 
 Show #.name 1_10c
 	SetBackgroundColor 255 240 210
 	MinimapIcon 2 White Circle
 	PlayEffect White Temp
-	PlayAlertSoundPositional 13 50
+	#.import sounds -> short -> t3
 
 Show #.name 1-c good
 	SetBackgroundColor 170 155 130

@@ -54,7 +54,6 @@ SetBorderColor
 SetTextColor
 
 # To-Do
-* Add support for the entire index.
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
 * Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.
@@ -69,7 +68,6 @@ SetTextColor
 * Add unique filtering by base type.
 * Add support for base defences (BaseDefencePercentile).
 * Expand the Influenced base types section with the best bases/levels per influence.
-* Streamline sounds so that only a handful of sounds are used.
 * Add beasts section.
 * Add a wiki page for this project.
 
