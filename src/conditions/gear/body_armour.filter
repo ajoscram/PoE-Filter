@@ -1,21 +1,29 @@
 #.subsection Body Armour
 
-Show #.combine 4 .import < < utils > combinables -> body_armour
-    BaseType ""
-    Class == "Body Armour"
+Show
+    Continue
+    ItemLevel >= 86
+    Class == "Body Armours"
+    #.import < < styles > gear -> all_mods
+
+Show ##.combine 4 .import < < utils > combinables -> body_armour
+    BaseType "Exquisite Leather"
+    Class == "Body Armours"
     #.import < < styles > gear -> tier_1
 
-Show #.combine 3 .import < < utils > combinables -> body_armour
-    BaseType ""
-    Class == "Body Armour"
+Show ##.combine 3 .import < < utils > combinables -> body_armour
+    BaseType "Crypt Armour"
+    Class == "Body Armours"
     #.import < < styles > gear -> tier_2
 
-Show #.combine 2 .import < < utils > combinables -> body_armour
-    BaseType ""
-    Class == "Body Armour"
+Show ##.combine 2 .import < < utils > combinables -> body_armour
+    BaseType "Full Wyrmscale"
+    Class == "Body Armours"
     #.import < < styles > gear -> tier_3
 
-Show #.combine 1 .import < < utils > combinables -> body_armour
-    BaseType ""
-    Class == "Body Armour"
+Show ##.combine 1 .import < < utils > combinables -> body_armour
+    BaseType "Crusader Plate"
+    Class == "Body Armours"
     #.import < < styles > gear -> tier_4
+
+# show six links and six sockets wherever possible, cause removing post item type filtering

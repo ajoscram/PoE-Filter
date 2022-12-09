@@ -5,7 +5,7 @@ Show
 	#.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Exalted Shard" "Ancient Shard" "Annulment Shard"
+	BaseType == "Fracturing Shard" "Exalted Shard" "Ancient Shard" "Annulment Shard"
 	#.import < < styles > currency -> 1_10c
 
 Show

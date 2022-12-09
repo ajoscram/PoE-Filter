@@ -1,9 +1,6 @@
 Show #.name error
 	PlayAlertSoundPositional 15 300
 
-Show #.name unique
-	PlayAlertSoundPositional 16 300
-
 Show #.name short
 	PlayAlertSoundPositional 5 300 # t0
 	PlayAlertSoundPositional 4 300 # t1

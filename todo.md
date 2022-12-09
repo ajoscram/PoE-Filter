@@ -46,23 +46,24 @@ unique
     double+ abyss socket unique
 
 # styles available
-PlayAlertSound
+SetBackgroundColor -> used for chromatic / six socket / six link
+SetBorderColor -> used for item level
+SetTextColor -> used for rarity (poe standard)
+
 PlayEffect (beam)
 MinimapIcon
-SetBackgroundColor
-SetBorderColor
-SetTextColor
+PlayAlertSound
 
 # To-Do
+* Add Sanctum relics, trinkets and fishing rods to the new gear section
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
 * Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.
 * Fix six sockets on minimap bug.
 * Add currency shard stack size filtering.
 * Group gear by class and tier base types.
-* The Sacred Blossom fight thingy is not supported in fragments for some reason.
+* The Sacred Blossom and Blood-filled veesselsare  not supported in fragments for some reason.
 * Add Pieces (Harbinger and Ultimatum map) to unique tiering.
-* Blood-filled veessels are not supported by PoE ninja in fragments.
 * Implement stacks filtering for currency shards.
 * Add support for the Ritual base types, which are usually expensive.
 * Add unique filtering by base type.

@@ -5,7 +5,7 @@ Show
 	#.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	BaseType == "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
 	#.import < < styles > currency -> 100+c
 
 Show

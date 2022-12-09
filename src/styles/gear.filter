@@ -24,13 +24,18 @@ Show #.name chaos
 	SetBorderColor 255 255 119
 
 Show #.name tier_1
+	MinimapIcon 0 White Kite
 	PlayEffect White
 	#.import sounds -> short -> t1
 
 Show #.name tier_2
+	MinimapIcon 1 White Kite
+	PlayEffect White Temp
 	#.import sounds -> short -> t2
 
 Show #.name tier_3
+	MinimapIcon 2 White Kite
 	#.import sounds -> short -> t3
 
 Show #.name tier_4
+	MinimapIcon 2 White Kite

@@ -84,6 +84,7 @@ Show
 	AreaLevel < 45
 	#.import < styles > gem -> tier_5
 
-Hide Continue
+Hide
 	#.import -> text -> Class
 	#.import < styles > gem -> tier_5
+	Continue

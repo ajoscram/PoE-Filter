@@ -2,6 +2,11 @@
 
 #.import flask
 #.import jewel
+
+# here i want background application (links and sockets)
+# here i want border application (itemlevel)
+# here i want generic levelling
+
 #.import amulet
 #.import ring
 #.import belt
