@@ -37,6 +37,6 @@ class GithubPO(PO):
         self._wait_for("li.p-2:nth-child(3)[data-state='uploaded']")
 
     def _submit(self):
-        self._click("button.btn:nth-child(11)")
+        self._click("button.js-publish-release")
         # wait for an element on the next screen
         self._wait_for("span.css-truncate > span:nth-child(2)")
