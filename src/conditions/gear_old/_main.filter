@@ -4,31 +4,31 @@
 #.import jewel
 
 Show
+	Continue
 	SocketGroup RGB
 	#.import < < styles > gear -> chromatic
-	Continue
 
 Show
+	Continue
 	Sockets = 6
 	#.import < < styles > gear -> six_socket
-	Continue
 
 Show
+	Continue
 	LinkedSockets = 6
 	#.import < < styles > gear -> six_link
-	Continue
 
 Show
+	Continue
 	Rarity = Rare
 	ItemLevel >= 60
 	#.import < < styles > gear -> chaos
-	Continue
 
 Show
+	Continue
 	Rarity = Rare
 	ItemLevel >= 75
 	#.import < < styles > gear -> regal
-	Continue
 
 #.import exceptional
 #.import levelling

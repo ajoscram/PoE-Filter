@@ -1,9 +1,9 @@
 #.section Gem
 
 Show #.name text
+	Continue
 	Class == "Active Skill Gems" "Support Skill Gems"
 	#.import < styles > general -> text
-	Continue
 
 Show
 	BaseType == "Empower Support" "Enhance Support" "Enlighten Support"
@@ -85,6 +85,6 @@ Show
 	#.import < styles > gem -> tier_5
 
 Hide
+	Continue
 	#.import -> text -> Class
 	#.import < styles > gem -> tier_5
-	Continue

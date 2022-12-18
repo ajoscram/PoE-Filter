@@ -1,8 +1,8 @@
 Show
+	Continue
 	Class "Flasks"
 	#.import < < styles > general -> text
 	#.import < < styles > flask -> base
-	Continue
 
 Show
 	Class "Flask"

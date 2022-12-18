@@ -6,24 +6,24 @@ Show
 	#.import < < styles > mapping -> unique
 
 Show
+	Continue
 	#.strict 2
 	MapTier >= 1
 	#.import < < styles > mapping -> white
-	Continue
 Show
+	Continue
 	#.strict 3
 	MapTier > 5
 	#.import < < styles > mapping -> yellow
-	Continue
 Show
+	Continue
 	#.strict 4
 	MapTier > 10
 	#.import < < styles > mapping -> red
-	Continue
 Show
+	Continue
 	MapTier = 16
 	#.import < < styles > mapping -> high_red
-	Continue
 
 Show
 	ElderMap True

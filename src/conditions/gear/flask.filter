@@ -1,10 +1,10 @@
 #.subsection Flask
 
 Show
+	Continue
 	Class "Flasks"
 	#.import < < styles > flask -> base
 	#.import < < styles > general -> text
-	Continue
 
 Show
 	Class "Flask"

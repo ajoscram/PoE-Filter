@@ -1,5 +1,11 @@
 # The Forbidden Sanctum
 
+## 3.20b
+### General Changes
+* The `The Betrayal` divination card was brought down in value, so that it is no longer shown.
+* The `Ever-Changing` divination card was brought down in value, but is still always shown.
+* General economy update.
+
 ## 3.20
 ### League Changes
 * Added the new Fracturing Orb and Fracturing Shard.

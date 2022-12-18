@@ -1,22 +1,22 @@
 #.section Sentinel
 
 Show
+    Continue
     BaseType "Stalker"
     Class == "Sentinel"
     #.import < styles > sentinel -> stalker
-    Continue
 
 Show
+    Continue
     BaseType "Pandemonium"
     Class == "Sentinel"
     #.import < styles > sentinel -> pandemonium
-    Continue
 
 Show
+    Continue
     BaseType "Apex"
     Class == "Sentinel"
     #.import < styles > sentinel -> apex
-    Continue
 
 Show
     Class == "Sentinel"

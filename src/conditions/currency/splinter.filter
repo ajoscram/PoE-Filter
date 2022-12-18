@@ -5,9 +5,9 @@ Show
 	#.import < < styles > splinter -> 1+c
 
 Show #.name 1-c
+	Continue
 	BaseType == "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
 	#.import < < styles > splinter -> 1-c
-	Continue
 Show
 	#.import -> 1-c -> BaseType
 	StackSize >= 10
