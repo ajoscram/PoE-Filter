@@ -21,7 +21,7 @@ Show
 	#.import < styles > divination_card -> 2_10c
 
 Show
-	BaseType == "Man With Bear" "Parasitic Passengers" "The Tireless Extractor" "The Prince of Darkness" "A Sea of Blue" "Society's Remorse" "Acclimatisation" "Loyalty" "Lucky Connections" "The Survivalist" "The Union" "Vinia's Token" "The Deal" "The Encroaching Darkness" "The Master Artisan" "The Obscured" "No Traces" "Three Voices" "Vanity" "Buried Treasure" "The Wrath" "The Inventor" "Humility" "Three Faces in the Dark" "The Journey" "Monochrome" "The Seeker" "The Fool" "The Side Quest" "More is Never Enough" "Cameria's Cut" "Friendship" "The Tinkerer's Table"
+	BaseType == "Disdain" "Man With Bear" "Parasitic Passengers" "The Tireless Extractor" "The Prince of Darkness" "A Sea of Blue" "Society's Remorse" "Acclimatisation" "Loyalty" "Lucky Connections" "The Survivalist" "The Union" "Vinia's Token" "The Deal" "The Encroaching Darkness" "The Master Artisan" "The Obscured" "No Traces" "Three Voices" "Vanity" "Buried Treasure" "The Wrath" "The Inventor" "Humility" "Three Faces in the Dark" "The Journey" "Monochrome" "The Seeker" "The Fool" "The Side Quest" "More is Never Enough" "Cameria's Cut" "Friendship" "The Tinkerer's Table"
 	#.import < styles > divination_card -> 2-c good
 
 Hide

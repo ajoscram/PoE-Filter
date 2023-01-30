@@ -16,4 +16,6 @@
 #.import helmet
 #.import quiver
 #.import shield
+#.import trinket
+#.import reilc
 #.import weapons > _main

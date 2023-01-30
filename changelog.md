@@ -1,9 +1,17 @@
 # The Forbidden Sanctum
 
+## 3.20c
+### General Changes
+* General economy update.
+* Added the **Disdain** divination card to the list of cards that can never be hidden.
+### League Changes
+* Added all Lycia's invocation currencies.
+* Added Voidbord Reliquary keys.
+
 ## 3.20b
 ### General Changes
-* The `The Betrayal` divination card was brought down in value, so that it is no longer shown.
-* The `Ever-Changing` divination card was brought down in value, but is still always shown.
+* **The Betrayal** divination card was brought down in value, so that it is no longer shown.
+* **Ever-Changing** divination card was brought down in value, but is still always shown.
 * General economy update.
 
 ## 3.20

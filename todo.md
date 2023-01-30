@@ -55,14 +55,13 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
-* Add Sanctum relics, trinkets and fishing rods to the new gear section
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
 * Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.
 * Fix six sockets on minimap bug.
 * Add currency shard stack size filtering.
 * Group gear by class and tier base types.
-* The Sacred Blossom and Blood-filled veesselsare  not supported in fragments for some reason.
+* The Sacred Blossom and Blood-filled veessels are  not supported in fragments for some reason.
 * Add Pieces (Harbinger and Ultimatum map) to unique tiering.
 * Implement stacks filtering for currency shards.
 * Add support for the Ritual base types, which are usually expensive.
