@@ -1,3 +1,18 @@
+# Crucible
+
+## 3.21
+### League Changes
+* Added very preliminary support for items with Crucible trees.
+* Added **Igneous Geode**, **Crystalline Geode** and **Magmatic Ore** currencies.
+* Added all new divination cards.
+* Added **Primeval Remnant**s.
+
+### General Changes
+* Renamed **The Iron Bard** to **The Rusted Bard**.
+* Removed the deprecated breachstones (charged, enriched and pure).
+* Re-tiered the remainig breachstones.
+* Fixed a couple of silly class name bugs patched out by GGG.
+
 # The Forbidden Sanctum
 
 ## 3.20c

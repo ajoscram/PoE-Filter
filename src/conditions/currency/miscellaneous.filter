@@ -9,7 +9,7 @@ Show
 	#.import < < styles > currency -> 100+c
 
 Show
-	BaseType == "Exalted Orb" "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
+	BaseType == "Exalted Orb" "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
 	#.import < < styles > currency -> 10_100c
 
 Show

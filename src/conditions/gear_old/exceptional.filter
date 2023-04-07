@@ -43,8 +43,11 @@ Show
 
 Show
 	#.strict 3
-	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
+	HasCruciblePassiveTree True
 
+Show
+	#.strict 3
+	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 Show
 	#.strict 3
 	AnyEnchantment True

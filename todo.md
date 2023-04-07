@@ -70,6 +70,7 @@ PlayAlertSound
 * Expand the Influenced base types section with the best bases/levels per influence.
 * Add beasts section.
 * Add a wiki page for this project.
+* Do a pass of existing tiered items on the base filter for league-start.
 
 # Deployment To-Do
 * Implement online filter deployment via OAuth2.
