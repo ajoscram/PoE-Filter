@@ -1,27 +1,30 @@
 # Crucible
 
+## 3.21b
+### General Changes
+* General economy update.
+
 ## 3.21
 ### League Changes
 * Added very preliminary support for items with Crucible trees.
 * Added **Igneous Geode**, **Crystalline Geode** and **Magmatic Ore** currencies.
 * Added all new divination cards.
 * Added **Primeval Remnant**s.
-
 ### General Changes
 * Renamed **The Iron Bard** to **The Rusted Bard**.
 * Removed the deprecated breachstones (charged, enriched and pure).
-* Re-tiered the remainig breachstones.
+* Re-tiered the remaining breachstones.
 * Fixed a couple of silly class name bugs patched out by GGG.
 
 # The Forbidden Sanctum
 
 ## 3.20c
-### General Changes
-* General economy update.
-* Added the **Disdain** divination card to the list of cards that can never be hidden.
 ### League Changes
 * Added all Lycia's invocation currencies.
 * Added Voidbord Reliquary keys.
+### General Changes
+* General economy update.
+* Added the **Disdain** divination card to the list of cards that can never be hidden.
 
 ## 3.20b
 ### General Changes
