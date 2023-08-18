@@ -2,7 +2,7 @@
 
 Show #.name text
 	Continue
-	Class == "Active Skill Gems" "Support Skill Gems"
+	Class == "Skill Gems" "Support Gems"
 	#.import < styles > general -> text
 
 Show
@@ -12,7 +12,7 @@ Show
 
 Show
 	BaseType "Awakened"
-	Class == "Support Skill Gems"
+	Class == "Support Gems"
 	#.import < styles > gem -> tier_1
 
 Show

@@ -55,6 +55,8 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
+* Uncomment the .econ instructions on omen.filter and tattoo.filter.
+* Figure out a re-organization of the "mapping" filter section.
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
 * Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.

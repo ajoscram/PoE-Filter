@@ -7,7 +7,7 @@ Show
 
 Show
 	#.econ inv 10 100
-	BaseType == "Maven's Invitation: The Twisted" "Maven's Invitation: The Elderslayers" "Maven's Invitation: The Formed" "Inscribed Ultimatum" "Chronicle of Atzoatl"
+	BaseType == "Maven's Invitation: The Twisted" "Maven's Invitation: The Elderslayers" "Maven's Invitation: The Formed"
 	#.import < < styles > fragment -> 10_100c
 
 Show

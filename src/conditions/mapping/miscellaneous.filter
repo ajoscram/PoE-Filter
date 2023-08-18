@@ -1,6 +1,15 @@
 #.subsection Miscellaneous
 
 Show
+    BaseType == "Inscribed Ultimatum" "Chronicle of Atzoatl"
+	#.import < < styles > fragment -> 10_100c
+
+Show
+    BaseType == "Forbidden Tome" "Sanctum Archives Research" "Sanctum Vaults Research" "Sanctum Cathedral Research" "Sanctum Necropolis Research"
+	Class == "Sanctum Research"
+    #.import < < styles > fragment -> 10_100c
+
+Show
 	Class == "Expedition Logbooks" "Blueprint" "Contract"
 	Rarity = Unique
 	#.import < < styles > mapping -> unique

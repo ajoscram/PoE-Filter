@@ -1,3 +1,13 @@
+# Trial of the Ancestors
+
+## 3.22
+* Implemented changes to skill gem class names.
+* Added the new Sanctum **Forbidden Tomes**.
+* Added the new divination cards.
+* Added the new **Hinekora's Lock** and **Silver Coin** currency items.
+* Added the new **Tattoo** currencies. Currently the styles applied to them were guessed, but they will be pulled from PoE Ninja as soon as PFG supports them. This will also mean less desireable tattoos will eventually be hidden.
+* Added the new **Omen** currencies. Currently the styles applied to them were guessed, but they will be pulled from PoE Ninja as soon as PFG supports them.
+
 # Crucible
 
 ## 3.21b

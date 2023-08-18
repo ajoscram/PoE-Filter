@@ -5,7 +5,7 @@ Show
 	#.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	BaseType == "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
 	#.import < < styles > currency -> 100+c
 
 Show
@@ -17,7 +17,7 @@ Show
 	#.import < < styles > currency -> 1_10c
 
 Show
-	BaseType == "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+	BaseType == "Silver Coin" "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
 	#.import < < styles > currency -> 1-c good
 
 Show #.name 1-c fine

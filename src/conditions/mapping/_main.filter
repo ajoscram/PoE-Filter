@@ -2,7 +2,7 @@
 
 Show #.name text
 	Continue
-	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones"
+	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones" "Sanctum Research"
 	#.import < < styles > general -> text
 
 #.import invitation

@@ -5,6 +5,8 @@ Show #.name text
 	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency"
 	#.import < < styles > general -> text
 
+#.import omen
+#.import tattoo
 #.import invocation
 #.import lifeforce
 #.import sentinel
