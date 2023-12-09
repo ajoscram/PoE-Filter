@@ -2,6 +2,8 @@
 
 #.import flask
 #.import jewel
+#.import tincture
+#.import charm
 
 # here i want background application (links and sockets)
 # here i want border application (itemlevel)

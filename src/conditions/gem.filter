@@ -57,7 +57,7 @@ Show
 
 Show
 	#.import -> text -> Class
-	AlternateQuality True
+    TransfiguredGem True
 	#.import < styles > gem -> tier_3
 
 Show
@@ -67,6 +67,16 @@ Show
 
 Show
 	GemLevel = 20
+	#.import < styles > gem -> tier_4
+
+Show
+    #.strict 4
+	Quality >= 5
+	#.import < styles > gem -> tier_4
+
+Show
+    #.strict 3
+	Quality > 0
 	#.import < styles > gem -> tier_4
 
 Show

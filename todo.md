@@ -55,6 +55,7 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
+* Reorganize gems with the Trafigured Gems changes.
 * Uncomment the .econ instructions on omen.filter and tattoo.filter.
 * Figure out a re-organization of the "mapping" filter section.
 * Support 5+ mods abyss jewels.

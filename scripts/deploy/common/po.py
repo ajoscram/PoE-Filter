@@ -6,7 +6,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 class PO(ABC):
     def __init__(self):
-        self.driver = webdriver.Firefox(service_log_path=os.devnull)
+        self.driver = webdriver.Firefox()
 
     def close(self):
         self.driver.close()

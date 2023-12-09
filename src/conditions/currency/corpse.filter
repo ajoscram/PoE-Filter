@@ -1,0 +1,16 @@
+Show
+    BaseType == "Perfect Forest Warrior" "Perfect Shadow Construct" "Perfect Guardian Turtle" "Perfect Forest Tiger" "Perfect Eldritch Eye" "Perfect Meatsack" "Perfect Half-remembered Goliath" "Perfect Spider Matriarch" "Perfect Sanguimancer Demon" "Perfect Hulking Miscreation" "Perfect Dark Reaper" "Perfect Warlord" "Perfect Runic Skeleton" "Perfect Primal Demiurge" "Perfect Spirit of Fortune" "Perfect Primal Thunderbird" "Perfect Judgemental Spirit" "Perfect Blasphemer" "Perfect Druidic Alchemist" "Perfect Slashing Horror" "Perfect Blood Demon" "Perfect Sawblade Horror" "Perfect Pain Artist" "Perfect Serpent Warrior" "Perfect Needle Horror" "Perfect Dancing Sword" "Perfect Naval Officer" "Perfect Dark Marionette" "Perfect Fiery Cannibal" "Perfect Frozen Cannibal" "Perfect Hydra"
+    #.import < < styles > currency -> 10_100c
+
+Show
+    BaseType == "Hydra" "Frozen Cannibal" "Fiery Cannibal" "Dark Marionette" "Naval Officer" "Dancing Sword" "Needle Horror" "Serpent Warrior" "Pain Artist" "Sawblade Horror" "Blood Demon" "Slashing Horror" "Druidic Alchemist" "Blasphemer" "Judgemental Spirit" "Primal Thunderbird" "Spirit of Fortune" "Primal Demiurge" "Runic Skeleton" "Warlord" "Dark Reaper" "Hulking Miscreation" "Sanguimancer Demon" "Spider Matriarch" "Half-remembered Goliath" "Meatsack" "Eldritch Eye" "Forest Tiger" "Guardian Turtle" "Forest Warrior" "Shadow Construct"
+    #.import < < styles > currency -> 1_10c
+
+    
+Show
+    BaseType == "Imperfect Forest Warrior" "Imperfect Shadow Construct" "Imperfect Guardian Turtle" "Imperfect Forest Tiger" "Imperfect Eldritch Eye" "Imperfect Meatsack" "Imperfect Half-remembered Goliath" "Imperfect Spider Matriarch" "Imperfect Sanguimancer Demon" "Imperfect Hulking Miscreation" "Imperfect Dark Reaper" "Imperfect Warlord" "Imperfect Runic Skeleton" "Imperfect Primal Demiurge" "Imperfect Spirit of Fortune" "Imperfect Primal Thunderbird" "Imperfect Judgemental Spirit" "Imperfect Blasphemer" "Imperfect Druidic Alchemist" "Imperfect Slashing Horror" "Imperfect Blood Demon" "Imperfect Sawblade Horror" "Imperfect Pain Artist" "Imperfect Serpent Warrior" "Imperfect Needle Horror" "Imperfect Dancing Sword" "Imperfect Naval Officer" "Imperfect Dark Marionette" "Imperfect Fiery Cannibal" "Imperfect Frozen Cannibal" "Imperfect Hydra"
+    #.import < < styles > currency -> 1-c good
+
+Show
+	Class == "Corpses"
+    #.import < < styles > currency -> 1_10c

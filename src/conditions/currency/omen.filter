@@ -1,11 +1,16 @@
 #.subsection Omen
 
 Show
-	##.econ omn 10
-	BaseType == "Omen of Revenge" "Omen of Blanching" "Omen of Connections" "Omen of the Jeweller" "Omen of Fortune" "Omen of Death-dancing" "Omen of Amelioration"
+	#.econ omn 100
+	BaseType == "Omen of Fortune" "Omen of Connections"
+	#.import < < styles > currency -> 100+c
+
+Show
+	#.econ omn 10
+	BaseType == "Omen of Fortune" "Omen of the Jeweller" "Omen of Amelioration" "Omen of Brilliance" "Omen of Connections" "Omen of Blanching"
 	#.import < < styles > currency -> 10_100c
 
 Show
-	##.econ omn 1 10
-	BaseType == "Omen of Brilliance" "Omen of Death's Door" "Omen of Adrenaline" "Omen of Resurgence" "Omen of Bequeathal" "Omen of Acceleration" "Omen of the Soul Devourer" "Omen of Refreshment" "Omen of Return"
+	#.econ omn 0 10
+	BaseType == "Omen of Revenge" "Omen of Adrenaline" "Omen of the Soul Devourer" "Omen of Bequeathal" "Omen of Resurgence" "Omen of Death's Door" "Omen of Acceleration" "Omen of Refreshment" "Omen of Return" "Omen of Death-dancing"
 	#.import < < styles > currency -> 1_10c

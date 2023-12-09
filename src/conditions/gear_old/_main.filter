@@ -2,6 +2,7 @@
 
 #.import flask
 #.import jewel
+#.import affliction
 
 Show
 	Continue

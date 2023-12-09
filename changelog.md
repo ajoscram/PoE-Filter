@@ -1,6 +1,30 @@
+# Affliction
+
+## 3.23
+### League Changes
+* Added barebones support for **Tinctures** and **Charms**.
+* Added **Corpses** tiered by perfection level.
+### General Changes
+* Removed all alternate gem quality filtering.
+* Added barebones support for transfigured gems.
+* Added the new **Tainted Catalyst** currency item.
+* Swapped the **Morphing Incubator** and **Amorphous Delirium Orb** for the **Challenging Incubator** and **Challenging Delirium Orb** respectively.
+* Swapped all Metamorph scarabs to Ultimatum. 
+* Added the new divination cards.
+* Gems with quality between 0 and 5 are now shown until the `strict` filter.
+* Gems with quality between 5 and 20 are now shown until the `very strict` filter.
+
 # Trial of the Ancestors
 
+## 3.22b
+## League Changes
+* Omens and tattoos are now monitored economically.
+### General Changes
+* Added **Fragment of the Hydra**, which was missing in the base filter.
+* General economy update.
+
 ## 3.22
+### League Changes
 * Implemented changes to skill gem class names.
 * Added the new Sanctum **Forbidden Tomes**.
 * Added the new divination cards.
