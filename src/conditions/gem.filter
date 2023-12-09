@@ -71,11 +71,13 @@ Show
 
 Show
     #.strict 4
+	#.import -> text -> Class
 	Quality >= 5
 	#.import < styles > gem -> tier_4
 
 Show
     #.strict 3
+	#.import -> text -> Class
 	Quality > 0
 	#.import < styles > gem -> tier_4
 
