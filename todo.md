@@ -1,6 +1,3 @@
-try out the most recent create-release action: https://github.com/marketplace/actions/create-release
-delete all these release tests
-
 # Official docs
 https://www.pathofexile.com/item-filter/about
 https://www.poewiki.net/wiki/Body_armour
