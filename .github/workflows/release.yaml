@@ -28,14 +28,14 @@ jobs:
     - name: Set up .env
       shell: bash
       run: |
-        ls
-        echo ${{ github.event.inputs.leaguestart }}
         touch .env
         echo "OUTPUT=\"./temp.filter\"" > .env
 
-    # - name: Build
-    #   shell: bash
-    #   run: scripts/build.sh subfilter ${{}} # missing leaguestart switch
+    - name: Build
+      shell: bash
+      run: |
+        leaguestart="" && ${{ github.event.inputs.leaguestart }} && leaguestart="leaguestart"
+        scripts/build.sh subfilter $leaguestart
     
     # - name: Create release artifacts
     #   shell: bash
