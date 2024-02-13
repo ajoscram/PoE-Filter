@@ -25,23 +25,24 @@ jobs:
         fileName: "pfg.exe"
         latest: true
 
-    - name: Setting up environment
+    - name: Set up environment
       shell: bash
       run: |
         touch .env
         echo "OUTPUT=\"temp.filter\"" > .env
         echo $GITHUB_WORKSPACE >> $GITHUB_PATH
 
-    - name: Build
+    - name: Build filters
       shell: bash
       run: |
         leaguestart="" && ${{ github.event.inputs.leaguestart }} && leaguestart="leaguestart"
         scripts/build.sh subfilter $leaguestart
-        ls build
     
-    # - name: Create release artifacts
-    #   shell: bash
-    #   run: scripts/create-release.sh
+    - name: Create release artifacts
+      shell: bash
+      run: |
+        scripts/create-release.sh
+        ls release
     
     # - name: Get release version & league
     # # missing
