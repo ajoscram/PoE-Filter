@@ -1,7 +1,5 @@
-# Deployment TO-DO
-* Download pfg
-* Name: {version} Ajoscram's Filter Update - {league}
-* notes from the changelog
+try out the most recent create-release action: https://github.com/marketplace/actions/create-release
+delete all these release tests
 
 # Official docs
 https://www.pathofexile.com/item-filter/about

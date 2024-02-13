@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       leaguestart:
-        description: "Leaguestart?"
+        description: "Leaguestart"
         type: boolean
         required: true
         default: false
@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     
     - name: Download PFG
       uses: robinraju/release-downloader@v1.9
@@ -28,7 +28,6 @@ jobs:
     - name: Set up environment
       shell: bash
       run: |
-        touch .env
         echo "OUTPUT=\"temp.filter\"" > .env
         echo $GITHUB_WORKSPACE >> $GITHUB_PATH
 
@@ -40,15 +39,23 @@ jobs:
     
     - name: Create release artifacts
       shell: bash
+      run: scripts/create-release.sh
+    
+    - name: Create release metadata
+      id: metadata
+      shell: bash
       run: |
-        scripts/create-release.sh
-        ls release
+        echo "LEAGUE=$(scripts/league.sh)" >> $GITHUB_OUTPUT
+        echo "VERSION=$(scripts/version.sh)" >> $GITHUB_OUTPUT
+        scripts/notes.sh > notes.md
     
-    # - name: Get release version & league
-    # # missing
-    
-    # - name: Get release notes
-    # # missing
+    - name: Create release
+      uses: ncipollo/release-action@v1
+      with:
+        name: ${{ steps.metadata.outputs.VERSION }} Ajoscram's Filter Update - ${{ steps.metadata.outputs.LEAGUE }}
+        tag: ${{ steps.metadata.outputs.VERSION }}
+        bodyFile: "notes.md"
+        artifacts: "release/*.*"
 
     # - name: Create release
     #   id: release
@@ -63,4 +70,3 @@ jobs:
 
     # - name: Attach subfilters to release
     # # missing
-      
