@@ -25,11 +25,13 @@ jobs:
         fileName: "pfg.exe"
         latest: true
 
-    - name: Set up .env
+    - name: Setting up environment
       shell: bash
       run: |
         touch .env
         echo "OUTPUT=\"./temp.filter\"" > .env
+        echo $GITHUB_WORKSPACE >> $GITHUB_PATH
+        echo $GITHUB_WORKSPACE
 
     - name: Build
       shell: bash
