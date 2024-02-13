@@ -1,3 +1,4 @@
+# gh workflow run release -f leaguestart=true
 name: release
 run-name: "${{ github.workflow }} by ${{ github.triggering_actor }}"
 
@@ -5,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       leaguestart:
-        description: "Leaguestart"
+        description: "Leaguestart?"
         type: boolean
         required: true
         default: false

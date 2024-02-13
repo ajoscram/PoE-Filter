@@ -3,6 +3,7 @@
 ## 3.23b
 ### General Changes
 * Added the `The Bitter Blossom` card which was missing from the filter.
+* General economy update.
 
 ## 3.23
 ### League Changes
