@@ -29,15 +29,15 @@ jobs:
       shell: bash
       run: |
         touch .env
-        echo "OUTPUT=\"./temp.filter\"" > .env
+        echo "OUTPUT=\"temp.filter\"" > .env
         echo $GITHUB_WORKSPACE >> $GITHUB_PATH
-        echo $GITHUB_WORKSPACE
 
     - name: Build
       shell: bash
       run: |
         leaguestart="" && ${{ github.event.inputs.leaguestart }} && leaguestart="leaguestart"
         scripts/build.sh subfilter $leaguestart
+        ls build
     
     # - name: Create release artifacts
     #   shell: bash
