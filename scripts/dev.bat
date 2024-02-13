@@ -1,1 +1,0 @@
-nodemon --exec "scripts/build/temp.bat %1" --ext filter --watch src/

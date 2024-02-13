@@ -1,0 +1,63 @@
+name: release
+run-name: "${{ github.workflow }} by ${{ github.triggering_actor }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      leaguestart:
+        description: "Leaguestart?"
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Download PFG
+      uses: robinraju/release-downloader@v1.9
+      with:
+        repository: ajoscram/PoE-Filter-Generator
+        fileName: "pfg.exe"
+        latest: true
+
+    - name: Set up .env
+      shell: bash
+      run: |
+        ls
+        echo ${{ event.inputs.leaguestart }}
+        touch .env
+        echo "OUTPUT=\"./temp.filter\"" > .env
+
+    # - name: Build
+    #   shell: bash
+    #   run: scripts/build.sh subfilter ${{}} # missing leaguestart switch
+    
+    # - name: Create release artifacts
+    #   shell: bash
+    #   run: scripts/create-release.sh
+    
+    # - name: Get release version & league
+    # # missing
+    
+    # - name: Get release notes
+    # # missing
+
+    # - name: Create release
+    #   id: release
+    #   uses: actions/create-release@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     # missing
+    
+    # - name: Attach base filter to release
+    # # missing
+
+    # - name: Attach subfilters to release
+    # # missing
+      

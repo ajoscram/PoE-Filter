@@ -1,5 +1,9 @@
 # Affliction
 
+## 3.23b
+### General Changes
+* Added the The Bitter Blossom card which was missing from the filter.
+
 ## 3.23
 ### League Changes
 * Added barebones support for **Tinctures** and **Charms**.
@@ -17,7 +21,7 @@
 # Trial of the Ancestors
 
 ## 3.22b
-## League Changes
+### League Changes
 * Omens and tattoos are now monitored economically.
 ### General Changes
 * Added **Fragment of the Hydra**, which was missing in the base filter.

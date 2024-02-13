@@ -1,3 +1,8 @@
+# Deployment TO-DO
+* Download pfg
+* Name: {version} Ajoscram's Filter Update - {league}
+* notes from the changelog
+
 # Official docs
 https://www.pathofexile.com/item-filter/about
 https://www.poewiki.net/wiki/Body_armour
@@ -55,6 +60,7 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
+* Add Valdo's Puzzle Box, either as a fragment or currency.
 * Reorganize gems with the Trafigured Gems changes.
 * Uncomment the .econ instructions on omen.filter and tattoo.filter.
 * Figure out a re-organization of the "mapping" filter section.
@@ -74,6 +80,3 @@ PlayAlertSound
 * Add beasts section.
 * Add a wiki page for this project.
 * Do a pass of existing tiered items on the base filter for league-start.
-
-# Deployment To-Do
-* Implement online filter deployment via OAuth2.
