@@ -42,7 +42,7 @@ jobs:
       shell: bash
       run: scripts/create-release.sh
     
-    - name: Create release metadata
+    - name: Get release metadata
       id: metadata
       shell: bash
       run: |

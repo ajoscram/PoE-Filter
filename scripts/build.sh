@@ -5,9 +5,9 @@ econ=".econ" && contains "leaguestart" $@ && econ=""
 pfg.exe "src/_main.filter" "$OUTPUT" .import .index .choose $econ || exit
 ! contains "subfilter" $@ && exit
 
-[ ! -d "build" ] && mkdir "build"
 strictness_types=(Base Lenient Semi-strict Strict Very-strict Uber-strict)
-chaos_types=(Bodies Helmets Gloves Boots Boots Weapons Nothing)
+chaos_types=(Bodies Helmets Gloves Boots Weapons Nothing)
+[ ! -d "build" ] && mkdir "build"
 
 for strictness_value in "${!strictness_types[@]}"
 do
@@ -21,7 +21,7 @@ do
             "build/$strictness.filter" \
             "build/chaos/$strictness/$chaos_type.filter" \
             .tag chaos $chaos_type .format \
-            || exit false
+            || exit
     done
 
     pfg.exe "build/$strictness.filter" .format || exit
