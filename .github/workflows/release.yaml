@@ -36,7 +36,7 @@ jobs:
       shell: bash
       run: |
         leaguestart="" && ${{ github.event.inputs.leaguestart }} && leaguestart="leaguestart"
-        scripts/build.sh subfilter $leaguestart
+        scripts/build.sh $leaguestart
     
     - name: Create release artifacts
       shell: bash

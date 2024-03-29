@@ -1,3 +1,19 @@
+# Necropolis
+
+## 3.24
+### League Changes
+* Added the new **Empty Coffin** and **Filled Coffin** currency items.
+* Added the new **Allflame Ember** items, currently displayed as if they were currency.
+### General Changes
+* T16 maps were brought back in line color-wise to the rest of the maps.
+* Added the new T17 maps. They are displayed with a purple-ish color.
+* Removed the **Surveyor's Compass**, **Charged Compass**, **Awakened Sextant** and **Elevated Sextant** currency items as they were also removed from the game.
+* Re-tiered and renamed and the **Veiled Chaos Orb** to **Veiled Orb**.
+* Removed invitations that were removed from the game.
+* Added the new **Veiled Scarab** currency item.
+* Added the new "Uber Boss" fragments.
+* Swapped out old scarabs with the new ones. Their economic value was guessed and will be updated at a later stage once there is enough info about them.
+
 # Affliction
 
 ## 3.23b

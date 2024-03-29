@@ -1,3 +1,5 @@
+#.subsection Corpse
+
 Show
     BaseType == "Perfect Forest Warrior" "Perfect Shadow Construct" "Perfect Guardian Turtle" "Perfect Forest Tiger" "Perfect Eldritch Eye" "Perfect Meatsack" "Perfect Half-remembered Goliath" "Perfect Spider Matriarch" "Perfect Sanguimancer Demon" "Perfect Hulking Miscreation" "Perfect Dark Reaper" "Perfect Warlord" "Perfect Runic Skeleton" "Perfect Primal Demiurge" "Perfect Spirit of Fortune" "Perfect Primal Thunderbird" "Perfect Judgemental Spirit" "Perfect Blasphemer" "Perfect Druidic Alchemist" "Perfect Slashing Horror" "Perfect Blood Demon" "Perfect Sawblade Horror" "Perfect Pain Artist" "Perfect Serpent Warrior" "Perfect Needle Horror" "Perfect Dancing Sword" "Perfect Naval Officer" "Perfect Dark Marionette" "Perfect Fiery Cannibal" "Perfect Frozen Cannibal" "Perfect Hydra"
     #.import < < styles > currency -> 10_100c

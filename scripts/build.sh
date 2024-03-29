@@ -2,8 +2,9 @@ source scripts/utils.sh
 source .env
 
 econ=".econ" && contains "leaguestart" $@ && econ=""
-pfg.exe "src/_main.filter" "$OUTPUT" .import .index .choose $econ || exit
-! contains "subfilter" $@ && exit
+watch=":watch" && ! contains "dev" $@ && watch=""
+pfg.exe $watch "src/_main.filter" "$OUTPUT" .import .index .choose $econ || exit
+contains "dev" $@ && exit
 
 strictness_types=(Base Lenient Semi-strict Strict Very-strict Uber-strict)
 chaos_types=(Bodies Helmets Gloves Boots Weapons Nothing)

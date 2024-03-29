@@ -1,16 +1,21 @@
 #.subsection Scarab
 
 Show
-	#.econ sca 10
-	BaseType == "Winged Expedition Scarab" "Gilded Blight Scarab" "Winged Blight Scarab" "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Ultimatum Scarab" "Gilded Bestiary Scarab" "Gilded Legion Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Cartography Scarab" "Polished Bestiary Scarab" "Gilded Breach Scarab"
+	#.econ sca 100
+	BaseType == "Horned Scarab of Preservation" "Horned Scarab of Pandemonium" "Delirium Scarab of Delusions" "Ultimatum Scarab of Dueling"
+	#.import < < styles > fragment -> 100+c
+
+Show
+	#.econ sca 10 100
+	BaseType ==  "Horned Scarab of Glittering" "Horned Scarab of Bloodlines" "Scarab of Stability" "Delirium Scarab of Neuroses" "Delirium Scarab of Paranoia" "Delirium Scarab of Mania" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Bribing" "Legion Scarab of Eternal Conflict" "Legion Scarab of The Sekhema" "Expedition Scarab of Archaeology" "Expedition Scarab of the Skald" "Ambush Scarab of Containment" "Ambush Scarab of Potency" "Cartography Scarab of Singularity" "Breach Scarab of the Dreamer" "Blight Scarab of Blooming" "Betrayal Scarab of Intelligence" "Incursion Scarab of Invasion" "Domination Scarab of Teachings" "Essence Scarab of Calcification" "Harbinger Scarab of Warhoards" "Harbinger Scarab of Regency" "Harbinger Scarab of Discernment" "Influencing Scarab of Conversion" "Influencing Scarab of Hordes" "Bestiary Scarab of the Shadowed Crow" "Bestiary Scarab of Duplicating" "Harvest Scarab of Cornucopia" "Harvest Scarab of Doubling" "Harvest Scarab" "Ritual Scarab of Abundance" "Reliquary Scarab of Vision" "Sulphite Scarab of Fumes" "Divination Scarab of Curation" "Divination Scarab of Completion"
 	#.import < < styles > fragment -> 10_100c
 
 Show
 	#.econ sca 1 10
-	BaseType == "Polished Expedition Scarab" "Gilded Expedition Scarab" "Rusted Blight Scarab" "Polished Blight Scarab" "Polished Abyss Scarab" "Gilded Abyss Scarab" "Winged Abyss Scarab" "Polished Sulphite Scarab" "Gilded Harbinger Scarab" "Gilded Ultimatum Scarab" "Gilded Elder Scarab" "Polished Legion Scarab" "Rusted Sulphite Scarab" "Polished Cartography Scarab" "Gilded Ambush Scarab" "Gilded Reliquary Scarab" "Polished Breach Scarab" "Gilded Torment Scarab" "Gilded Shaper Scarab" "Polished Harbinger Scarab" "Polished Divination Scarab" "Rusted Legion Scarab" "Polished Ultimatum Scarab" "Rusted Cartography Scarab" "Polished Elder Scarab" "Polished Ambush Scarab" "Rusted Ultimatum Scarab" "Rusted Divination Scarab" "Rusted Reliquary Scarab" "Rusted Breach Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Polished Reliquary Scarab"
+	BaseType == "Horned Scarab of Tradition" "Horned Scarab of Awakening" "Horned Scarab of Nemeses" "Scarab of Hunted Traitors" "Scarab of Adversaries" "Scarab of Monstrous Lineage" "Delirium Scarab" "Ultimatum Scarab of Inscription" "Ultimatum Scarab" "Beyond Scarab of the Invasion" "Beyond Scarab of Haemophilia" "Beyond Scarab" "Legion Scarab of Command" "Legion Scarab of Officers" "Legion Scarab" "Expedition Scarab of Verisium Powder" "Expedition Scarab of Runefinding" "Expedition Scarab" "Ambush Scarab of Discernment" "Ambush Scarab of Hidden Compartments" "Ambush Scarab" "Cartography Scarab of Duplication" "Cartography Scarab of Corruption" "Cartography Scarab of Ascension" "Cartography Scarab" "Breach Scarab of Splintering" "Breach Scarab of Lordship" "Breach Scarab" "Blight Scarab of Oils" "Betrayal Scarab of Perpetuation" "Betrayal Scarab" "Incursion Scarab" "Domination Scarab of Terrors" "Domination Scarab" "Essence Scarab of Stability" "Essence Scarab of Ascent" "Essence Scarab" "Abyss Scarab of Edifice" "Harbinger Scarab" "Bestiary Scarab of the Herd" "Ritual Scarab of Selectiveness" "Sulphite Scarab of Greed" "Divination Scarab" "Torment Scarab of Peculiarity" "Anarchy Scarab of Partnership" "Anarchy Scarab of Gigantification" 
 	#.import < < styles > fragment -> 1_10c
 
 Show
 	#.econ sca 0 1
-	BaseType == "Rusted Shaper Scarab" "Rusted Torment Scarab" "Rusted Elder Scarab" "Rusted Abyss Scarab" "Rusted Bestiary Scarab" "Rusted Expedition Scarab"
+	BaseType == "Mysterious Scarab" "Beyond Scarab of Corruption" "Beyond Scarab of Resurgence" "Breach Scarab of Snares" "Blight Scarab of Bounty" "Blight Scarab" "Betrayal Scarab of Reinforcements" "Incursion Scarab of Timelines" "Incursion Scarab of Champions" "Abyss Scarab of Emptiness" "Abyss Scarab of Multitudes" "Abyss Scarab" "Influencing Scarab of the Elder" "Influencing Scarab of the Shaper" "Bestiary Scarab" "Ritual Scarab of Recognition" "Reliquary Scarab" "Reliquary Scarab of Overlords" "Sulphite Scarab" "Torment Scarab" "Torment Scarab of Release" "Anarchy Scarab"
 	#.import < < styles > fragment -> 1-c

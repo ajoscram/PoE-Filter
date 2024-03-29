@@ -24,6 +24,10 @@ Show
 	Continue
 	MapTier = 16
 	#.import < < styles > mapping -> high_red
+Show
+    Continue
+    MapTier = 17
+    #.import  < < styles > mapping -> purple
 
 Show
 	ElderMap True
@@ -59,3 +63,7 @@ Show
 Show
 	MapTier = 16
 	Class == "Maps"
+
+Show
+    MapTier = 17
+    Class == "Maps"

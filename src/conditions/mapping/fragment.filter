@@ -2,10 +2,10 @@
 
 Show
 	#.econ fra 100
-	BaseType == "Chayula's Breachstone" "Chayula's Flawless Breachstone" "Gift to the Goddess" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	BaseType == "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment" "Chayula's Breachstone" "Chayula's Flawless Breachstone" "Gift to the Goddess" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
 	#.import < < styles > fragment -> 100+c
 Show
-	BaseType == "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
+	BaseType == "Screaming Invitation" "Incandescent Invitation" "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
 	#.import < < styles > fragment -> 100+c
 
 Show
@@ -18,7 +18,7 @@ Show
 	BaseType == "Mortal Rage" "Mortal Grief" "Divine Vessel" "Offering to the Goddess"
 	#.import < < styles > fragment -> 1_10c
 Show
-	BaseType == "Primeval Remnant" "Blood-filled Vessel" "Mirrored Tablet"
+	BaseType == "Primeval Remnant" "Blood-filled Vessel" "Mirrored Tablet" "Writhing Invitation" "Polaric Invitation"
 	#.import < < styles > fragment -> 1_10c
 
 Show

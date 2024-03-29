@@ -5,19 +5,19 @@ Show
 	#.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	BaseType == "Veiled Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
 	#.import < < styles > currency -> 100+c
 
 Show
-	BaseType == "Exalted Orb" "Sacred Orb" "Charged Compass" "Ritual Vessel" "Elevated Sextant" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+	BaseType == "Exalted Orb" "Sacred Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
 	#.import < < styles > currency -> 10_100c
 
 Show
-	BaseType == "Orb of Unmaking" "Oil Extractor" "Surveyor's Compass" "Tainted Blessing" "Veiled Chaos Orb" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb" "Awakened Sextant"
+	BaseType == "Filled Coffin" "Ritual Vessel" "Veiled Scarab" "Orb of Unmaking" "Oil Extractor" "Tainted Blessing" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb"
 	#.import < < styles > currency -> 1_10c
 
 Show
-	BaseType == "Silver Coin" "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
+	BaseType == "Empty Coffin" "Silver Coin" "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Blessed Orb" "Regal Orb" "Orb of Alteration"
 	#.import < < styles > currency -> 1-c good
 
 Show #.name 1-c fine

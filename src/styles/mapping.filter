@@ -38,9 +38,14 @@ Show #.name red
 	PlayEffect Red Temp
 
 Show #.name high_red
-	SetBackgroundColor 255 0 0
+	#.import -> red -> SetBackgroundColor
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
+
+Show #.name purple
+    SetBackgroundColor 180 90 255
+	MinimapIcon 0 Purple Hexagon
+	PlayEffect Purple
 
 Show #.name elder
 	SetBorderColor 0 0 255

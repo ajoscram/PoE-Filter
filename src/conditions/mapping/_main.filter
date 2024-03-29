@@ -5,7 +5,6 @@ Show #.name text
 	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones" "Sanctum Research"
 	#.import < < styles > general -> text
 
-#.import invitation
 #.import scarab
 #.import fragment
 #.import map

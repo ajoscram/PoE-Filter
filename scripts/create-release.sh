@@ -2,4 +2,4 @@
 cp "build/Base.filter" "release/Ajos.filter"
 
 # Requires powershell
-powershell "Compress-Archive -Path build/* -DestinationPath release/Subfilters.zip"
+powershell "Compress-Archive -Force -Path build/* -DestinationPath release/Subfilters.zip"

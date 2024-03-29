@@ -24,8 +24,6 @@ mods
     corrupted implicits
     eldritch
 
-enchantments
-
 quality
 
 defence percentile (maybe ignore this)
@@ -56,8 +54,7 @@ PlayAlertSound
 
 # To-Do
 * Add Valdo's Puzzle Box, either as a fragment or currency.
-* Reorganize gems with the Trafigured Gems changes.
-* Uncomment the .econ instructions on omen.filter and tattoo.filter.
+* Reorganize gems with the Trasfigured Gems changes.
 * Figure out a re-organization of the "mapping" filter section.
 * Support 5+ mods abyss jewels.
 * Add support for HasInfluence on maps.
