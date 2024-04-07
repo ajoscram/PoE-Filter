@@ -2,20 +2,20 @@
 
 Show
 	#.econ tat 100
-	BaseType == "Honoured Tattoo of the Berserker" "Tattoo of the Hinekora Makanga" "Honoured Tattoo of the Wise" "Tattoo of the Arohongui Makanga" "Tattoo of the Ramako Makanga"
+	BaseType == "Journey Tattoo of the Soul" "Journey Tattoo of the Mind" "Journey Tattoo of the Body"
 	#.import < < styles > currency -> 100+c
 
 Show
 	#.econ tat 10 100
-	BaseType == "Honoured Tattoo of the Hatungo" "Tattoo of the Ngamahu Makanga" "Tattoo of the Tawhoa Makanga" "Tattoo of the Tukohama Makanga" "Honoured Tattoo of the Mountain" "Tattoo of the Ngamahu Warmonger" "Tattoo of the Valako Makanga" "Honoured Tattoo of the Pillager" "Honoured Tattoo of the Hunter" "Tattoo of the Ramako Shaman" "Honoured Tattoo of the Warlord" "Tattoo of the Ramako Sniper" "Honoured Tattoo of the Storm" "Honoured Tattoo of the Pa" "Honoured Tattoo of the Tuatara" "Honoured Tattoo of the Oak" "Tattoo of the Rongokurai Turtle" "Honoured Tattoo of the Flock" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Tasalio Makanga" "Honoured Tattoo of the Barbarian" "Tattoo of the Kitava Makanga"
+	BaseType == "Tattoo of the Tasalio Scout" "Tattoo of the Ramako Shaman" "Tattoo of the Hinekora Storyteller" "Tattoo of the Tawhoa Shaman" "Tattoo of the Rongokurai Turtle" "Tattoo of the Ramako Fleetfoot"
 	#.import < < styles > currency -> 10_100c
 
 Show
 	#.econ tat 1 10
-	BaseType == "Loyalty Tattoo of Kiloava" "Tattoo of the Tawhoa Shaman" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Valako Shieldbearer" "Tattoo of the Ramako Archer" "Tattoo of the Hinekora Storyteller" "Loyalty Tattoo of Rakiata" "Tattoo of the Valako Shaman" "Tattoo of the Hinekora Warrior" "Loyalty Tattoo of Kahuturoa" "Tattoo of the Valako Stormrider" "Tattoo of the Tasalio Scout" "Honoured Tattoo of the Dove" "Tattoo of the Tasalio Warrior" "Tattoo of the Rongokurai Makanga" "Loyalty Tattoo of Ahuana" "Honoured Tattoo of the Flood" "Tattoo of the Ramako Fleetfoot" "Honoured Tattoo of the Sky" "Tattoo of the Rongokurai Warrior" "Tattoo of the Arohongui Warmonger" "Loyalty Tattoo of Akoya" "Loyalty Tattoo of Utula" "Tattoo of the Hinekora Deathwarden" "Tattoo of the Hinekora Shaman" "Tattoo of the Kitava Warrior" "Tattoo of the Tasalio Tideshifter" "Loyalty Tattoo of Maata" "Tattoo of the Rongokurai Goliath" "Tattoo of the Ngamahu Woodcarver" "Loyalty Tattoo of Kaom" "Tattoo of the Arohongui Moonwarden" "Tattoo of the Tukohama Warmonger" "Tattoo of the Arohongui Shaman" "Honoured Tattoo of the Turtle" "Tattoo of the Tukohama Warcaller" "Tattoo of the Hinekora Warmonger" "Tattoo of the Kitava Shaman" "Loyalty Tattoo of Ikiaho"
+	BaseType == "Tattoo of the Kitava Shaman" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Valako Shieldbearer" "Tattoo of the Ramako Sniper" "Tattoo of the Tasalio Warrior" "Tattoo of the Tukohama Warcaller" "Tattoo of the Ngamahu Woodcarver" "Tattoo of the Arohongui Shaman" "Tattoo of the Hinekora Warmonger" "Tattoo of the Arohongui Moonwarden" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Valako Stormrider" "Tattoo of the Ngamahu Warmonger"
 	#.import < < styles > currency -> 1_10c
 
 Show
 	#.econ tat 0 1
-	BaseType == "Tattoo of the Tasalio Bladedancer" "Tattoo of the Arohongui Warrior" "Tattoo of the Ngamahu Warrior" "Tattoo of the Ngamahu Shaman" "Tattoo of the Kitava Heart Eater" "Tattoo of the Tawhoa Naturalist" "Tattoo of the Tasalio Shaman" "Tattoo of the Ramako Scout" "Tattoo of the Rongokurai Guard" "Tattoo of the Tawhoa Warrior" "Tattoo of the Valako Warrior" "Tattoo of the Tukohama Warrior" "Tattoo of the Kitava Rebel" "Tattoo of the Tawhoa Scout" "Tattoo of the Kitava Blood Drinker" "Tattoo of the Tukohama Brawler" "Loyalty Tattoo of Tawhanuku" "Tattoo of the Arohongui Scout" "Tattoo of the Rongokurai Brute" "Tattoo of the Tukohama Shaman" "Tattoo of the Valako Scout"
+	BaseType == "Tattoo of the Tasalio Bladedancer" "Tattoo of the Tukohama Brawler" "Tattoo of the Tasalio Tideshifter" "Tattoo of the Kitava Heart Eater" "Tattoo of the Hinekora Shaman" "Tattoo of the Tukohama Shaman" "Tattoo of the Arohongui Warmonger" "Tattoo of the Tawhoa Warrior" "Tattoo of the Tawhoa Naturalist" "Tattoo of the Tukohama Warrior" "Tattoo of the Kitava Rebel" "Tattoo of the Valako Scout" "Tattoo of the Hinekora Deathwarden" "Tattoo of the Rongokurai Guard" "Tattoo of the Ramako Scout" "Tattoo of the Hinekora Warrior" "Tattoo of the Kitava Blood Drinker" "Tattoo of the Rongokurai Warrior" "Tattoo of the Tukohama Warmonger" "Tattoo of the Arohongui Scout" "Tattoo of the Valako Warrior" "Tattoo of the Arohongui Warrior" "Tattoo of the Ngamahu Shaman" "Tattoo of the Ngamahu Warrior" "Tattoo of the Tawhoa Scout" "Tattoo of the Tasalio Shaman" "Tattoo of the Rongokurai Brute" "Tattoo of the Kitava Warrior" "Tattoo of the Rongokurai Goliath" "Tattoo of the Ramako Archer" "Tattoo of the Valako Shaman"
 	#.import < < styles > currency -> 1-c fine

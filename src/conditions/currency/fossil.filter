@@ -2,15 +2,15 @@
 
 Show
 	#.econ fos 10
-	BaseType == "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil" "Tangled Fossil" "Glyphic Fossil" "Corroded Fossil"
+	BaseType == "Glyphic Fossil" "Fractured Fossil" "Hollow Fossil" "Faceted Fossil"
 	#.import < < styles > currency -> 10_100c
 
 Show
 	#.econ fos 1 10
-	BaseType == "Deft Fossil" "Fundamental Fossil" "Serrated Fossil" "Perfect Fossil" "Gilded Fossil" "Sanctified Fossil" "Shuddering Fossil" "Aetheric Fossil" "Bound Fossil" "Prismatic Fossil" "Jagged Fossil" "Dense Fossil" "Pristine Fossil" "Lucent Fossil" "Aberrant Fossil" "Metallic Fossil"
+	BaseType == "Bloodstained Fossil" "Corroded Fossil" "Sanctified Fossil" "Tangled Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil" "Bound Fossil" "Perfect Fossil"
 	#.import < < styles > currency -> 1_10c
 
 Show
 	#.econ fos 0 1
-	BaseType == "Scorched Fossil" "Frigid Fossil"
+	BaseType == "Scorched Fossil" "Deft Fossil" "Frigid Fossil" "Dense Fossil" "Gilded Fossil" "Jagged Fossil" "Aetheric Fossil" "Aberrant Fossil" "Metallic Fossil" "Lucent Fossil" "Fundamental Fossil" "Pristine Fossil"
 	#.import < < styles > currency -> 1-c good

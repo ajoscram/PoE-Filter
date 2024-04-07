@@ -1,27 +1,27 @@
 #.subsection Fragment
 
 Show
-	#.econ fra 100
-	BaseType == "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment" "Chayula's Breachstone" "Chayula's Flawless Breachstone" "Gift to the Goddess" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Maraketh Emblem" "Vaal Reliquary Key" "Timeworn Reliquary Key" "The Maven's Writ" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	#.econ fra 100 .econ inv 100
+	BaseType == "Voidborn Reliquary Key" "Einhar's Memory" "Uul-Netol's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Chayula's Flawless Breachstone" "Valdo's Puzzle Box" "Xoph's Flawless Breachstone"
 	#.import < < styles > fragment -> 100+c
 Show
-	BaseType == "Screaming Invitation" "Incandescent Invitation" "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
+	BaseType == "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
 	#.import < < styles > fragment -> 100+c
 
 Show
-	#.econ fra 10 100
-	BaseType == "Uul-Netol's Flawless Breachstone" "Xoph's Flawless Breachstone" "Esh's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Breachstone" "Xoph's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Karui Emblem" "Sacred Blossom" "Tribute to the Goddess" "Dedication to the Goddess" "Simulacrum" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Xoph's Breachstone" "Mortal Ignorance" "Mortal Hope" "Mortal Rage" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Terror" "Fragment of Emptiness" "Fragment of Shape" "Fragment of Knowledge"
+	#.econ fra 10 100 .econ inv 10 100
+	BaseType == "Fragment of Emptiness" "Gift to the Goddess" "The Maven's Writ" "Fragment of the Chimera" "Incandescent Invitation" "Unrelenting Timeless Eternal Emblem" "Mortal Ignorance" "Fragment of Enslavement" "Timeless Templar Emblem" "Mortal Hope" "Fragment of Terror" "Xoph's Breachstone" "Screaming Invitation" "Unrelenting Timeless Vaal Emblem" "Esh's Breachstone" "Fragment of Purification" "Tul's Breachstone" "Fragment of Shape" "Fragment of the Hydra" "Baran's Crest" "Fragment of the Phoenix" "Veritania's Crest" "Uul-Netol's Breachstone" "Fragment of Knowledge" "Unrelenting Timeless Templar Emblem" "Timeless Maraketh Emblem" "Al-Hezmin's Crest" "Mortal Rage" "Drox's Crest" "Polaric Invitation" "Fragment of Constriction" "Unrelenting Timeless Karui Emblem" "Simulacrum" "Fragment of Eradication" "Fragment of the Minotaur" "Dedication to the Goddess" "Chayula's Breachstone" "Mortal Grief" "Unrelenting Timeless Maraketh Emblem" "Sacred Blossom"
 	#.import < < styles > fragment -> 10_100c
 
 Show
-	#.econ fra 1 10
-	BaseType == "Mortal Rage" "Mortal Grief" "Divine Vessel" "Offering to the Goddess"
+	#.econ fra 1 10 .econ inv 1 10
+	BaseType == "Alva's Memory" "Kirac's Memory" "Timeless Karui Emblem" "Divine Vessel" "Crescent Splinter" "Timeless Eternal Emblem" "Offering to the Goddess" "Writhing Invitation" "Tribute to the Goddess" "Niko's Memory" "Timeless Vaal Emblem"
 	#.import < < styles > fragment -> 1_10c
 Show
-	BaseType == "Primeval Remnant" "Blood-filled Vessel" "Mirrored Tablet" "Writhing Invitation" "Polaric Invitation"
+	BaseType == "Primeval Remnant" "Blood-filled Vessel" "Mirrored Tablet"
 	#.import < < styles > fragment -> 1_10c
 
 Show
-	#.econ fra 0 1
-	BaseType == "Sacrifice at Midnight" "Sacrifice at Noon" "Sacrifice at Dawn" "Sacrifice at Dusk"
+	#.econ fra 0 1 .econ inv 0 1
+	BaseType == "Sacrifice at Dawn" "Splinter of Xoph" "Splinter of Tul" "Timeless Vaal Splinter" "Timeless Karui Splinter" "Sacrifice at Dusk" "Splinter of Uul-Netol" "Sacrifice at Midnight" "Timeless Maraketh Splinter" "Simulacrum Splinter" "Timeless Templar Splinter" "Splinter of Esh" "Sacrifice at Noon" "Timeless Eternal Empire Splinter" "Splinter of Chayula"
 	#.import < < styles > fragment -> 1-c

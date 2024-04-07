@@ -1,5 +1,12 @@
 # Necropolis
 
+## 3.24b
+### League Changes
+* **Allflame Embers** are now correctly tiered depending on their economic value.
+### General Changes
+* General economy update.
+* The base filter was updated with the most recent economy values. 
+
 ## 3.24
 ### League Changes
 * Added the new **Empty Coffin** and **Filled Coffin** currency items.
