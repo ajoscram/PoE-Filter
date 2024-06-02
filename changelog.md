@@ -1,5 +1,12 @@
 # Necropolis
 
+## 3.24c
+### League Changes
+**Allflame Embers** tiering has been corrected per item level.
+**Scarabs** added mid league have been added to the filter.
+### General Changes
+* General economy update.
+
 ## 3.24b
 ### League Changes
 * **Allflame Embers** are now correctly tiered depending on their economic value.
