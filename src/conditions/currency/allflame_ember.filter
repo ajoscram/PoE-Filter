@@ -1,38 +1,72 @@
 #.subsection Allflame Embers
 
+# iLvl 84+
 Show
     #.econ mbr 100
-	BaseType == "Flaring Allflame Ember of Kalguurans" "Allflame Ember of The Shaper" "Allflame Ember of Manifested Wealth" "Allflame Ember of Meatsacks"
-    #.choose 3 1
-    ItemLevel >= 84
-    ItemLevel >= 80
-    ItemLevel < 80
+	BaseType == "Flaring Allflame Ember of Kalguurans" "Allflame Ember of The Shaper" "Allflame Ember of Meatsacks" "Allflame Ember of Manifested Wealth"
+    ItemLevel > 83
 	#.import < < styles > currency -> 100+c
-
 Show
     #.econ mbr 10 100
-	BaseType == "Flaring Allflame Ember of Breachlords" "Flaring Allflame Ember of The First Ones" "Allflame Ember of Chayula" "Allflame Ember of Rats" "Allflame Ember of Ngamahu" "Flaring Allflame Ember of Kalguurans" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Hinekora" "Allflame Ember of Frogs" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Arohongui" "Allflame Ember of Rongokurai" "Allflame Ember of Kitava" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Untainted Chimerals" "Allflame Ember of The Redeemer" "Allflame Ember of Untainted Maws" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Untainted Apes" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Meatsacks" "Allflame Ember of Xoph" "Allflame Ember of Untainted Devourers" "Allflame Ember of Trial Cores" "Allflame Ember of The Elder" "Allflame Ember of Tasalio" "Allflame Ember of Anarchy" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Trial Guards" "Allflame Ember of The Black Scythe" "Allflame Ember of Untainted Spitters" "Allflame Ember of Ramako" "Allflame Ember of K'tash" "Flaring Allflame Ember of the Vaal" "Allflame Ember of Valako" "Allflame Ember of Syndicate Guards" "Flaring Allflame Ember of Scientists" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Tawhoa" "Allflame Ember of Untainted Beasts" "Allflame Ember of Tukohama"
-    #.choose 3 1
-    ItemLevel >= 84
-    ItemLevel >= 80
-    ItemLevel < 80
+	BaseType == "Allflame Ember of Anarchy" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Trial Guards" "Allflame Ember of The Black Scythe" "Allflame Ember of Valako" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of The Elder" "Allflame Ember of Syndicate Escorts" "Allflame Ember of K'tash" "Allflame Ember of Xoph" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Arohongui" "Allflame Ember of Tawhoa" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Devourers" "Allflame Ember of The Redeemer" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Frogs" "Allflame Ember of Trial Cores" "Allflame Ember of Rongokurai" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Maws" "Allflame Ember of Ngamahu" "Allflame Ember of Chayula" "Allflame Ember of Untainted Spitters" "Allflame Ember of Hinekora" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Tasalio" "Allflame Ember of Tukohama" "Allflame Ember of Untainted Beasts" "Allflame Ember of Ramako" "Allflame Ember of Syndicate Guards" "Flaring Allflame Ember of Breachlords" "Allflame Ember of Rats" "Allflame Ember of Untainted Chimerals" "Flaring Allflame Ember of Scientists" "Allflame Ember of Kitava"
+    ItemLevel > 83
 	#.import < < styles > currency -> 10_100c
-
 Show
     #.econ mbr 2 10
-	BaseType == "Flaring Allflame Ember of The First Ones" "Allflame Ember of Berserking Gemlings" "Allflame Ember of The Vaal Legion" "Allflame Ember of Uul-Netol" "Allflame Ember of Chayula" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Ngamahu" "Allflame Ember of Rats" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Hinekora" "Allflame Ember of Frogs" "Allflame Ember of Arohongui" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Rongokurai" "Allflame Ember of The Hunter" "Allflame Ember of Wildwood Beasts" "Allflame Ember of Kitava" "Allflame Ember of Abyss" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Untainted Chimerals" "Allflame Ember of The Karui Legion" "Allflame Ember of The Broken Circle" "Allflame Ember of Esh" "Allflame Ember of The Redeemer" "Allflame Ember of Syndicate Researchers" "Allflame Ember of the False God" "Allflame Ember of Untainted Apes" "Allflame Ember of Ghorr" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Untainted Maws" "Allflame Ember of The Crusader" "Allflame Ember of The Maraketh Legion" "Allflame Ember of Meatsacks" "Allflame Ember of Wildwood Treants" "Allflame Ember of Xoph" "Allflame Ember of Untainted Devourers" "Allflame Ember of Trial Cores" "Allflame Ember of The Elder" "Allflame Ember of Tasalio" "Allflame Ember of The Eternal Legion" "Allflame Ember of Anarchy" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Trial Guards" "Flaring Allflame Ember of Abyss" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Black Scythe" "Allflame Ember of Tul" "Allflame Ember of Untainted Spitters" "Allflame Ember of Ramako" "Allflame Ember of K'tash" "Allflame Ember of The Templar Legion" "Allflame Ember of The Warlord" "Allflame Ember of Valako" "Allflame Ember of Beidat" "Allflame Ember of Syndicate Guards" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Sulphite" "Allflame Ember of Tawhoa" "Allflame Ember of Untainted Beasts" "Allflame Ember of Tukohama" "Allflame Ember of Synthetic Fury"
-    #.choose 3 1
-    ItemLevel >= 84
-    ItemLevel >= 80
-    ItemLevel < 80
+	BaseType == "Allflame Ember of Uul-Netol" "Allflame Ember of The Crusader" "Allflame Ember of Abyss" "Allflame Ember of The Knights of the Sun" "Allflame Ember of The Broken Circle" "Allflame Ember of The Order of the Chalice" "Allflame Ember of Sulphite" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Ghorr" "Allflame Ember of Beidat" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Warlord" "Allflame Ember of Tul" "Flaring Allflame Ember of Abyss" "Allflame Ember of Wildwood Treants" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Esh" "Allflame Ember of The Karui Legion" "Allflame Ember of Synthetic Fury" "Allflame Ember of Wildwood Beasts" "Allflame Ember of The Hunter" "Allflame Ember of Artillery Gemlings" "Allflame Ember of The Templar Legion" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of The Maraketh Legion" "Allflame Ember of the False God"
+    ItemLevel > 83
 	#.import < < styles > currency -> 1_10c
-
 Show
     #.econ mbr 0 2 .strict 3
-	BaseType == "Allflame Ember of Berserking Gemlings" "Allflame Ember of The Vaal Legion" "Allflame Ember of Uul-Netol" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Ngamahu" "Allflame Ember of Rats" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Hinekora" "Allflame Ember of Frogs" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Arohongui" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Rongokurai" "Allflame Ember of Wildwood Beasts" "Allflame Ember of Kitava" "Allflame Ember of Abyss" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Untainted Chimerals" "Allflame Ember of The Karui Legion" "Allflame Ember of The Broken Circle" "Allflame Ember of Esh" "Allflame Ember of Untainted Maws" "Allflame Ember of the False God" "Allflame Ember of Ghorr" "Allflame Ember of Untainted Apes" "Allflame Ember of The Maraketh Legion" "Allflame Ember of Wildwood Treants" "Allflame Ember of Xoph" "Allflame Ember of Trial Cores" "Allflame Ember of Tasalio" "Allflame Ember of The Eternal Legion" "Allflame Ember of Trial Guards" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Black Scythe" "Allflame Ember of Tul" "Allflame Ember of The Templar Legion" "Allflame Ember of Valako" "Allflame Ember of Beidat" "Allflame Ember of Sulphite" "Allflame Ember of Tawhoa" "Allflame Ember of Tukohama" "Allflame Ember of Synthetic Fury"
-    #.choose 3 1
-    ItemLevel >= 84
+	BaseType == "Allflame Ember of The Eternal Legion"
+    ItemLevel > 83
+	#.import < < styles > currency -> 1-c good
+
+## iLvl 80-83
+Show
+    #.econ mbr 100
+	BaseType == "Flaring Allflame Ember of Kalguurans" "Allflame Ember of The Shaper" "Allflame Ember of Meatsacks" "Allflame Ember of Manifested Wealth"
+    ItemLevel <= 83
     ItemLevel >= 80
+	#.import < < styles > currency -> 100+c
+Show
+    #.econ mbr 10 100
+	BaseType == "Allflame Ember of Anarchy" "Flaring Allflame Ember of the Vaal" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Devourers" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Frogs" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Spitters" "Flaring Allflame Ember of The First Ones" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Tasalio" "Allflame Ember of Untainted Beasts" "Allflame Ember of Ramako" "Allflame Ember of Syndicate Guards" "Flaring Allflame Ember of Breachlords" "Allflame Ember of Rats" "Allflame Ember of Untainted Chimerals" "Flaring Allflame Ember of Scientists"
+    ItemLevel <= 83
+    ItemLevel >= 80
+	#.import < < styles > currency -> 10_100c
+Show
+    #.econ mbr 2 10
+	BaseType == "Allflame Ember of Brawling Gemlings" "Allflame Ember of Trial Guards" "Allflame Ember of The Black Scythe" "Allflame Ember of Valako" "Allflame Ember of Uul-Netol" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of The Elder" "Allflame Ember of The Crusader" "Allflame Ember of K'tash" "Allflame Ember of Abyss" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Xoph" "Allflame Ember of Arohongui" "Allflame Ember of Tawhoa" "Allflame Ember of The Broken Circle" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Redeemer" "Allflame Ember of Sulphite" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Ghorr" "Allflame Ember of Beidat" "Allflame Ember of Trial Cores" "Allflame Ember of Rongokurai" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Warlord" "Allflame Ember of Ngamahu" "Allflame Ember of Tul" "Flaring Allflame Ember of Abyss" "Allflame Ember of Wildwood Treants" "Allflame Ember of Chayula" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Esh" "Allflame Ember of The Karui Legion" "Allflame Ember of Hinekora" "Allflame Ember of Synthetic Fury" "Allflame Ember of Wildwood Beasts" "Allflame Ember of The Hunter" "Allflame Ember of Tukohama" "Allflame Ember of Artillery Gemlings" "Allflame Ember of The Templar Legion" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of The Maraketh Legion" "Allflame Ember of the False God" "Allflame Ember of Kitava"
+    ItemLevel <= 83
+    ItemLevel >= 80
+	#.import < < styles > currency -> 1_10c
+Show
+    #.econ mbr 0 2 .strict 3
+	BaseType == "Allflame Ember of The Eternal Legion"
+    ItemLevel <= 83
+    ItemLevel >= 80
+	#.import < < styles > currency -> 1-c good
+
+# iLvl 79-
+Show
+    #.econ mbr 100
+	BaseType == "Allflame Ember of The Shaper" "Allflame Ember of Manifested Wealth"
+    ItemLevel < 80
+	#.import < < styles > currency -> 100+c
+Show
+    #.econ mbr 10 100
+	BaseType == "Allflame Ember of Anarchy" "Flaring Allflame Ember of The First Ones" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Meatsacks" "Flaring Allflame Ember of Kalguurans"
+    ItemLevel < 80
+	#.import < < styles > currency -> 10_100c
+Show
+    #.econ mbr 2 10
+	BaseType == "Allflame Ember of Anarchy" "Allflame Ember of The Black Scythe" "Allflame Ember of Meatsacks" "Allflame Ember of Valako" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of The Elder" "Allflame Ember of Syndicate Escorts" "Allflame Ember of The Crusader" "Allflame Ember of K'tash" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Arohongui" "Allflame Ember of Tawhoa" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Devourers" "Allflame Ember of The Redeemer" "Allflame Ember of Sulphite" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Frogs" "Allflame Ember of Ghorr" "Allflame Ember of Beidat" "Allflame Ember of Rongokurai" "Allflame Ember of The Warlord" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Maws" "Allflame Ember of Ngamahu" "Flaring Allflame Ember of Abyss" "Allflame Ember of Chayula" "Allflame Ember of Untainted Spitters" "Allflame Ember of Berserking Gemlings" "Flaring Allflame Ember of The First Ones" "Allflame Ember of Hinekora" "Allflame Ember of Synthetic Fury" "Allflame Ember of The Hunter" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Tasalio" "Allflame Ember of Tukohama" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Untainted Beasts" "Allflame Ember of Ramako" "Allflame Ember of Syndicate Guards" "Allflame Ember of Rats" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Kitava"
+    ItemLevel < 80
+	#.import < < styles > currency -> 1_10c
+Show
+    #.econ mbr 0 2 .strict 3
+	BaseType == "Allflame Ember of Brawling Gemlings" "Allflame Ember of Trial Guards" "Allflame Ember of The Black Scythe" "Allflame Ember of Valako" "Allflame Ember of Uul-Netol" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Abyss" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Xoph" "Allflame Ember of The Eternal Legion" "Allflame Ember of Arohongui" "Allflame Ember of Tawhoa" "Allflame Ember of The Broken Circle" "Allflame Ember of The Order of the Chalice" "Allflame Ember of Untainted Apes" "Allflame Ember of Sulphite" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Frogs" "Allflame Ember of Ghorr" "Allflame Ember of Beidat" "Allflame Ember of Trial Cores" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of Rongokurai" "Allflame Ember of The Vaal Legion" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Maws" "Allflame Ember of Ngamahu" "Allflame Ember of Tul" "Allflame Ember of Wildwood Treants" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Esh" "Allflame Ember of The Karui Legion" "Allflame Ember of Hinekora" "Allflame Ember of Synthetic Fury" "Allflame Ember of Wildwood Beasts" "Allflame Ember of Tasalio" "Allflame Ember of Tukohama" "Allflame Ember of Artillery Gemlings" "Allflame Ember of The Templar Legion" "Allflame Ember of Rats" "Allflame Ember of Untainted Chimerals" "Allflame Ember of The Maraketh Legion" "Allflame Ember of the False God" "Allflame Ember of Kitava"
     ItemLevel < 80
 	#.import < < styles > currency -> 1-c good
 
