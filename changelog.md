@@ -1,3 +1,19 @@
+# Settlers of Kalguur
+
+## 3.25
+## League Changes
+* Added all new Divination Cards.
+* Updated the tiering of changed Divination Cards.
+* Added the **Reflecting Mist** and **Prismatic Oil** currencies.
+* Added Gold, currently with unchanged graphics.
+* Added the new **Maven's Chisel**s.
+* Added **Rune**s.
+* Renamed **Perfect Fossil** to **Opulent Fossil**.
+* Renamed all scarabs that got reworked. Their filter tier might be incorrect until there is economy data on them.
+## General Changes
+* Added **Valdo's Puzzle Box** as a currency.
+* Added **Uber Fragments**.
+
 # Necropolis
 
 ## 3.24c
@@ -32,7 +48,7 @@
 
 ## 3.23b
 ### General Changes
-* Added the `The Bitter Blossom` card which was missing from the filter.
+* Added the **The Bitter Blossom** card which was missing from the filter.
 * General economy update.
 
 ## 3.23

@@ -1,0 +1,13 @@
+#.subsection Chisel
+
+Show
+	BaseType == "Maven's Chisel of Divination" "Maven's Chisel of Avarice"
+	#.import < < styles > currency -> 10_100c
+
+Show
+	BaseType == "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation"
+	#.import < < styles > currency -> 1_10c
+
+Show
+	BaseType == "Cartographer's Chisel"
+	#.import < < styles > currency -> 1-c good

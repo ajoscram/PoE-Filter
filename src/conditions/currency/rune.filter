@@ -1,0 +1,6 @@
+#.subsection Rune
+
+
+Show
+	BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+	#.import < < styles > currency -> 1_10c

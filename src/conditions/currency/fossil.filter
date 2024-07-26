@@ -7,7 +7,7 @@ Show
 
 Show
 	#.econ fos 1 10
-	BaseType == "Bloodstained Fossil" "Corroded Fossil" "Sanctified Fossil" "Tangled Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil" "Bound Fossil" "Perfect Fossil"
+	BaseType == "Bloodstained Fossil" "Corroded Fossil" "Sanctified Fossil" "Tangled Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil" "Bound Fossil" "Opulent Fossil"
 	#.import < < styles > currency -> 1_10c
 
 Show

@@ -53,7 +53,6 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
-* Add Valdo's Puzzle Box, either as a fragment or currency.
 * Reorganize gems with the Trasfigured Gems changes.
 * Figure out a re-organization of the "mapping" filter section.
 * Support 5+ mods abyss jewels.
