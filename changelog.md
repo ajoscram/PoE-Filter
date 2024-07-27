@@ -1,7 +1,7 @@
 # Settlers of Kalguur
 
 ## 3.25
-## League Changes
+### League Changes
 * Added all new Divination Cards.
 * Updated the tiering of changed Divination Cards.
 * Added the **Reflecting Mist** and **Prismatic Oil** currencies.
@@ -10,7 +10,7 @@
 * Added **Rune**s.
 * Renamed **Perfect Fossil** to **Opulent Fossil**.
 * Renamed all scarabs that got reworked. Their filter tier might be incorrect until there is economy data on them.
-## General Changes
+### General Changes
 * Added **Valdo's Puzzle Box** as a currency.
 * Added **Uber Fragments**.
 
