@@ -32,9 +32,6 @@ Show #.name 1-c good
 Show #.name 1-c fine
 	SetBackgroundColor 110 95 80
 
-Show #.name 1-c early
-	SetBackgroundColor 80 70 60
-
 Show #.name 1-c trash
 	SetBackgroundColor 60 55 50
 

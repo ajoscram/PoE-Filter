@@ -16,7 +16,7 @@ Show
 Show
 	#.strict 0
 	BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard" "Binding Shard" "Engineer's Shard"
-	#.import < < styles > currency -> 1-c early
+	#.import < < styles > currency -> 1-c trash
 
 Hide
 	BaseType == "Transmutation Shard" "Scroll Fragment"

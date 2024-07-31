@@ -2,6 +2,7 @@
 
 Show
     Class == "Gold"
+    SetFontSize 25
 
 Show
 	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
@@ -25,7 +26,7 @@ Show
 
 Show #.name 1-c fine
 	Continue
-	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
 	#.import < < styles > currency -> 1-c fine
 Show
 	#.strict 3 .import -> 1-c fine -> BaseType
@@ -33,25 +34,15 @@ Show
 Show
 	#.strict 1 .import -> 1-c fine -> BaseType
 
-Show #.name 1-c early
-	Continue
-	BaseType == "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap"
-	#.import < < styles > currency -> 1-c early
-Show
-	#.strict 3 .import -> 1-c early -> BaseType
-	StackSize >= 10
-Show
-	#.strict 0 .import -> 1-c early -> BaseType
-
 Show #.name 1-c trash
 	Continue
-	BaseType == "Scroll of Wisdom" "Portal Scroll"
+	BaseType == "Scroll of Wisdom" "Portal Scroll" "Orb of Augmentation"
 	#.import < < styles > currency -> 1-c trash
 Show
 	#.strict 3 .import -> 1-c trash -> BaseType
 	StackSize >= 15
 Show
 	#.strict 0 .import -> 1-c trash -> BaseType
-	AreaLevel < 45
+	AreaLevel < 68
 Hide
 	#.import -> 1-c trash -> BaseType

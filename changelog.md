@@ -1,5 +1,13 @@
 # Settlers of Kalguur
 
+## 3.25b
+### League Changes
+* **Gold**'s font size has been reduced.
+* Added **Maven's Chisel of Scarabs** and **Scarab of Bisection** which were missing by accident.
+### General Changes
+* **Blacksmith's Whetstone**s and **Armourer's Scrap**s have up-tiered, as they are less plentiful and more important.
+* **Orbs of Augmentation** have been moved down a tier into trash currency. **Scrolls of Wisdom** and **Portal Scrolls** are now shown up until the end of the campaign in the base filter only.
+
 ## 3.25
 ### League Changes
 * Added all new Divination Cards.
