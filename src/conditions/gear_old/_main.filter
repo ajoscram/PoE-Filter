@@ -2,7 +2,6 @@
 
 #.import flask
 #.import jewel
-#.import affliction
 
 Show
 	Continue
@@ -32,6 +31,7 @@ Show
 	#.import < < styles > gear -> regal
 
 #.import exceptional
+#.import affliction
 #.import levelling
 #.import base
 #.import rare

@@ -1,5 +1,11 @@
 # Settlers of Kalguur
 
+## 3.25c
+### League Changes
+* Tinctures are now hidden from Semi-strict onwards.
+### General Changes
+* General economy update.
+
 ## 3.25b
 ### League Changes
 * **Gold**'s font size has been reduced.

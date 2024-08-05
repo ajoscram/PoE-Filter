@@ -1,4 +1,5 @@
 Show
+    #.strict 1
     Class == "Tincture"
 
 Show
