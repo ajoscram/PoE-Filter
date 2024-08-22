@@ -5,7 +5,7 @@ Show
 	#.import < < styles > currency -> 10_100c
 
 Show
-	BaseType == "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Proliferation"
+	BaseType == "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs"
 	#.import < < styles > currency -> 1_10c
 
 Show

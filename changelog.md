@@ -1,5 +1,12 @@
 # Settlers of Kalguur
 
+## 3.25d
+### League Changes
+* Fixed a bug displaying **Maven's Chisel of Scarabs**.
+* **Runes** are now correctly tiered depending on their economic value.
+### General Changes
+* General economy update.
+
 ## 3.25c
 ### League Changes
 * Tinctures are now hidden from Semi-strict onwards.
