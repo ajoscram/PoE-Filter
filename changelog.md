@@ -1,5 +1,9 @@
 # Settlers of Kalguur
 
+## 3.25e
+### League Changes
+* **Idols** were added.
+
 ## 3.25d
 ### League Changes
 * Fixed a bug displaying **Maven's Chisel of Scarabs**.

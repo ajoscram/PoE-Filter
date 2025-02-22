@@ -1,5 +1,5 @@
 Show
-	Class == "Trinket" "Fishing Rod" "Relic" "Sanctified Relics"
+	Class == "Trinket" "Fishing Rod" "Relic" "Sanctified Relics" "Idols"
 
 Show #.name atlas_rings_amulets
 	#.strict 3 .tag chaos _
