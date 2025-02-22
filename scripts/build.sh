@@ -3,7 +3,7 @@ source .env
 
 econ=".econ" && contains "leaguestart" $@ && econ=""
 watch=":watch" && ! contains "dev" $@ && watch=""
-pfg.exe $watch "src/_main.filter" "$OUTPUT" .import .index .choose $econ || exit
+pfg.exe $watch "src/_main.filter" "$OUTPUT" .import .index $econ || exit
 contains "dev" $@ && exit
 
 strictness_types=(Base Lenient Semi-strict Strict Very-strict Uber-strict)
