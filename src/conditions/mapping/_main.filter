@@ -2,9 +2,10 @@
 
 Show #.name text
 	Continue
-	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones" "Sanctum Research"
+	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones" "Sanctum Research" "Vault Key"
 	#.import < < styles > general -> text
 
+#.import allflame_ember
 #.import scarab
 #.import fragment
 #.import map

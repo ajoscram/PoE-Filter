@@ -5,7 +5,7 @@ Show #.name text
 	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame"
 	#.import < < styles > general -> text
 
-#.import rune
+#.import runegraft
 #.import allflame_ember
 #.import corpse
 #.import omen

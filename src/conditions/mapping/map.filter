@@ -27,7 +27,7 @@ Show
 Show
     Continue
     MapTier = 17
-    #.import  < < styles > mapping -> purple
+    #.import < < styles > mapping -> purple
 
 Show
 	ElderMap True
@@ -35,6 +35,10 @@ Show
 
 Show
 	ShapedMap True
+	#.import < < styles > mapping -> shaper
+
+Show
+    ZanaMemory True
 	#.import < < styles > mapping -> shaper
 
 Show

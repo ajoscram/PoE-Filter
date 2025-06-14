@@ -2,7 +2,7 @@
 
 Show
 	#.econ fra 100 .econ inv 100
-	BaseType == "An Audience With The King" "Voidborn Reliquary Key" "Einhar's Memory" "Uul-Netol's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Chayula's Flawless Breachstone" "Valdo's Puzzle Box" "Xoph's Flawless Breachstone"
+	BaseType == "Syndicate Medallion" "An Audience With The King" "Voidborn Reliquary Key" "Uul-Netol's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Chayula's Flawless Breachstone" "Valdo's Puzzle Box" "Xoph's Flawless Breachstone"
 	#.import < < styles > fragment -> 100+c
 Show
 	BaseType == "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Decaying Fragment" "Cosmic Fragment" "Blazing Fragment" "Awakening Fragment" "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
@@ -15,7 +15,7 @@ Show
 
 Show
 	#.econ fra 1 10 .econ inv 1 10
-	BaseType == "Alva's Memory" "Kirac's Memory" "Timeless Karui Emblem" "Divine Vessel" "Crescent Splinter" "Timeless Eternal Emblem" "Offering to the Goddess" "Writhing Invitation" "Tribute to the Goddess" "Niko's Memory" "Timeless Vaal Emblem"
+	BaseType == "Timeless Karui Emblem" "Divine Vessel" "Crescent Splinter" "Timeless Eternal Emblem" "Offering to the Goddess" "Writhing Invitation" "Tribute to the Goddess" "Timeless Vaal Emblem"
 	#.import < < styles > fragment -> 1_10c
 Show
 	BaseType == "Primeval Remnant" "Blood-filled Vessel" "Mirrored Tablet"

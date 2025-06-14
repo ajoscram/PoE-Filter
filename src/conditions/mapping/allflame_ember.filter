@@ -1,0 +1,13 @@
+#.subsection Catarina's Allflame Ember
+
+Show
+	BaseType == "Allflame Ember of Toads" "Allflame Ember of the Ethereal" "Allflame Ember of Kulemak" "Allflame Ember of Resplendence" "Allflame Ember of Propagation" 
+	#.import < < styles > fragment -> 10_100c
+
+Show
+	BaseType == "Allflame Ember of Flesh" "Allflame Ember of the Wildwood"
+	#.import < < styles > fragment -> 1_10c
+
+Show
+	BaseType == "Allflame Ember of the Gilded"
+	#.import < < styles > fragment -> 1-c

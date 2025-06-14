@@ -15,10 +15,6 @@ Show
 	#.import < < styles > mapping -> unique
 
 Show
-	Class == "Memory"
-	#.import < < styles > mapping -> memory
-
-Show
 	Class == "Expedition Logbooks"
 	#.import < < styles > mapping -> logbook
 

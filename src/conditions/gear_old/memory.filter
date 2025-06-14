@@ -1,0 +1,16 @@
+#.subsection Memory strand gear
+
+Show
+	#.strict 1
+	MemoryStrands <= 25
+
+Show
+	#.strict 3
+	MemoryStrands <= 50
+
+Show
+	#.strict 5
+	MemoryStrands <= 75
+
+Show
+	MemoryStrands == 100

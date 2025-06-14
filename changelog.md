@@ -1,10 +1,30 @@
-# Settlers of Kalguur
+# Secrets of the Atlas
 
-## 3.25f
+## 3.26
+### League Changes
+* Added support for **Zana influenced memory maps**.
+* Implemented basic support for gear with **memory strands**.
+* Added the **Veiled Exalted Orb** and **Veiled Chaos Orb**.
+* Added the **Syndicate Medallion** map fragment.
+* Added the **Shaper** and **Elder Exalted Orbs**.
+* Added the **Orb of Rememberance**, **Orb of Unravelling** and **Orb of Intention**.
+* Added the **Betrayal Scarab of the Allflame** and removed the **Betrayal Scarab of Intelligence** since it is no longer in the game.
+* Added the new **Kalguuran Scarab**, **Kalguuran Scarab of Guarded Riches** and **Kalguuran Scarab of Refinement**.
+* Added the new **runegrafts**.
+* Added the new **Catarina Allflame Embers**.
+* Added the new and returning divination cards.
+### General Changes
+* Added the **Vault Key** class as a type of fragment.
+* Removed support for **memories** and **runes**, as they were removed from the game.
+* Removed the **Veiled Orb** as it was removed from the game.
+
+# Settlers of Kalguur
 
 ## 3.25e
 ### League Changes
 * **Idols** were added.
+### General Changes
+* None. Economy currently ignored.
 
 ## 3.25d
 ### League Changes

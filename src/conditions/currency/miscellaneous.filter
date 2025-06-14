@@ -9,11 +9,11 @@ Show
 	#.import < < styles > currency -> 100+c expensive
 
 Show
-	BaseType == "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	BaseType ==  "Orb of Remembrance" "Orb of Unravelling" "Shaper's Exalted Orb" "Elder's Exalted Orb" "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Exalted Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
 	#.import < < styles > currency -> 100+c
 
 Show
-	BaseType == "Prismatic Oil" "Exalted Orb" "Sacred Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+	BaseType == "Orb of Intention" "Prismatic Oil" "Exalted Orb" "Sacred Orb" "Veiled Chaos Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
 	#.import < < styles > currency -> 10_100c
 
 Show
