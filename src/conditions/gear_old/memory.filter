@@ -3,14 +3,18 @@
 Show
 	#.strict 1
 	MemoryStrands <= 25
+	MemoryStrands > 0
 
 Show
 	#.strict 3
 	MemoryStrands <= 50
+	MemoryStrands > 0
 
 Show
 	#.strict 5
 	MemoryStrands <= 75
+	MemoryStrands > 0
 
 Show
 	MemoryStrands == 100
+	MemoryStrands > 0

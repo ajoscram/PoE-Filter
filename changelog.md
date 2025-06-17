@@ -1,5 +1,9 @@
 # Secrets of the Atlas
 
+## 3.26b
+### League Changes
+* Fixed memory strand items filtering making all gear drops show always.
+
 ## 3.26
 ### League Changes
 * Added support for **Zana influenced memory maps**.
