@@ -1,5 +1,13 @@
 # Secrets of the Atlas
 
+## 3.26c
+### League Changes
+* **Runegrafts** are now tiered economically.
+* The new **Allflame Embers** are now tiered economically.
+* The **Necropolis Allflame Embers** are now **not** tiered economically, and were left in the last Necropolis' economy snapshot tier.
+### General Changes
+* General economy update.
+
 ## 3.26b
 ### League Changes
 * Fixed memory strand items filtering making all gear drops show always.

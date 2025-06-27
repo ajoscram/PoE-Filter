@@ -1,17 +1,16 @@
 #.subsection Rune
 
-Show #.econ run 100
-    BaseType == "Runegraft of Quaffing" "Runegraft of the Angler"
+Show
+    #.econ run 100
+    BaseType == "Runegraft of Gemcraft" "Runegraft of the Angler"
 	#.import < < styles > currency -> 100+c
 
-Show #.econ run 10 100
-    BaseType == "Runegraft of Treachery" "Runegraft of Stability" "Runegraft of Gemcraft" "Runegraft of the Fortress" "Runegraft of the Sinistral" "Runegraft of Blasphemy" "Runegraft of the Soulwick" "Runegraft of the Witchmark"
+Show
+    #.econ run 10 100
+    BaseType == "Runegraft of the Soulwick" "Runegraft of the Warp" "Runegraft of Stability" "Runegraft of the Fortress" "Runegraft of Quaffing" "Runegraft of Treachery"
 	#.import < < styles > currency -> 10_100c
 
-Show #.econ run 2 10
-    BaseType == "Runegraft of Time" "Runegraft of Restitching" "Runegraft of the Bound" "Runegraft of the Novamark" "Runegraft of the Warp"
+Show
+    #.econ run 0 10
+    BaseType == "Runegraft of the River" "Runegraft of Bellows" "Runegraft of the Bound" "Runegraft of Time" "Runegraft of the Witchmark" "Runegraft of the Sinistral" "Runegraft of Restitching" "Runegraft of the Novamark" "Runegraft of Blasphemy" "Runegraft of the Combatant" "Runegraft of Recompense" "Runegraft of the Jeweller" "Runegraft of Loyalty"
     #.import < < styles > currency -> 1_10c
-
-Show #.econ run 0 2
-    BaseType == "Runegraft of Recompense" "Runegraft of Loyalty" "Runegraft of the Combatant" "Runegraft of the Jeweller" "Runegraft of the River" "Runegraft of Bellows"
-	#.import < < styles > currency -> 1-c fine
