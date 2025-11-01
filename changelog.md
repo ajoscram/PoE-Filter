@@ -1,10 +1,23 @@
+# Keepers of the Flame
+
+## 3.27
+### League Changes
+* Added the new **implants**.
+* Added the new **Foulborn** currency items.
+* Added **Grafts**, currently showing all of them.
+* Added **Wombgifts**, currently displayed with currrency styles.
+* Added the new divinations cards.
+* Added the new **Traumatic Fragment**, **Reverent Fragment**, **Lonely Fragment**, and **Hivebrain Gland** fragments.
+* Added the new **Lonely Reliquary Key** **Reverent Reliquary Key** and **Traumatic Reliquary Key**.
+### General Changes
+* Renamed **Runegraft of Recompense** to **Runegraft of Refraction**. It has also been re-tiered.
+
 # Secrets of the Atlas
 
 ## 3.26c
 ### League Changes
-* **Runegrafts** are now tiered economically.
-* The new **Allflame Embers** are now tiered economically.
-* The **Necropolis Allflame Embers** are now **not** tiered economically, and were left in the last Necropolis' economy snapshot tier.
+* **Runegrafts** and the new **Allflame Embers** are now tiered economically.
+* The **Necropolis Allflame Embers** are now **not** tiered economically, and were left in the state present on the last Necropolis' economy snapshot tier.
 ### General Changes
 * General economy update.
 

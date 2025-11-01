@@ -1,3 +1,9 @@
+# Path to overrhaul in line with PoE 2's filter structure
+1. Update scripts to ensure similar workflow
+2. Add conditions constants
+3. Move to the "multi-style" version
+4. Add style constants
+
 # Official docs
 https://www.pathofexile.com/item-filter/about
 https://www.poewiki.net/wiki/Body_armour
@@ -53,6 +59,7 @@ MinimapIcon
 PlayAlertSound
 
 # To-Do
+* Account for Foulborn Uniques in the future when restructuring the filter (?)
 * Reorganize gems with the Trasfigured Gems changes.
 * Figure out a re-organization of the "mapping" filter section.
 * Support 5+ mods abyss jewels.

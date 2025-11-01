@@ -5,7 +5,7 @@ Show
 	#.import < < styles > flask -> base
 
 Show
-	Class "Flask"
+	Class "Flasks"
 	Rarity = Unique
 	#.import < < styles > flask -> unique
 

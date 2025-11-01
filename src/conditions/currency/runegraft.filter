@@ -2,7 +2,7 @@
 
 Show
     #.econ run 100
-    BaseType == "Runegraft of Gemcraft" "Runegraft of the Angler"
+    BaseType == "Runegraft of Refraction" "Runegraft of Gemcraft" "Runegraft of the Angler"
 	#.import < < styles > currency -> 100+c
 
 Show
@@ -12,5 +12,5 @@ Show
 
 Show
     #.econ run 0 10
-    BaseType == "Runegraft of the River" "Runegraft of Bellows" "Runegraft of the Bound" "Runegraft of Time" "Runegraft of the Witchmark" "Runegraft of the Sinistral" "Runegraft of Restitching" "Runegraft of the Novamark" "Runegraft of Blasphemy" "Runegraft of the Combatant" "Runegraft of Recompense" "Runegraft of the Jeweller" "Runegraft of Loyalty"
+    BaseType == "Runegraft of the River" "Runegraft of Bellows" "Runegraft of the Bound" "Runegraft of Time" "Runegraft of the Witchmark" "Runegraft of the Sinistral" "Runegraft of Restitching" "Runegraft of the Novamark" "Runegraft of Blasphemy" "Runegraft of the Combatant" "Runegraft of the Jeweller" "Runegraft of Loyalty"
     #.import < < styles > currency -> 1_10c

@@ -1,0 +1,9 @@
+#.subsection Implant
+
+Show
+	BaseType == "Exalted Implant"
+	#.import < < styles > currency -> 10_100c
+
+Show
+	BaseType == "Augmentation Implant" "Regal Implant" "Unstable Implant"
+	#.import < < styles > currency -> 1_10c

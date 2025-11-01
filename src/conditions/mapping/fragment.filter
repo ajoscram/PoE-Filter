@@ -2,15 +2,15 @@
 
 Show
 	#.econ fra 100 .econ inv 100
-	BaseType == "Syndicate Medallion" "An Audience With The King" "Voidborn Reliquary Key" "Uul-Netol's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Chayula's Flawless Breachstone" "Valdo's Puzzle Box" "Xoph's Flawless Breachstone"
+	BaseType == "Lonely Reliquary Key" "Reverent Reliquary Key" "Traumatic Reliquary Key" "Syndicate Medallion" "An Audience With The King" "Voidborn Reliquary Key" "Uul-Netol's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Chayula's Flawless Breachstone" "Valdo's Puzzle Box" "Xoph's Flawless Breachstone"
 	#.import < < styles > fragment -> 100+c
 Show
-	BaseType == "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Decaying Fragment" "Cosmic Fragment" "Blazing Fragment" "Awakening Fragment" "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
+	BaseType == "Traumatic Fragment" "Reverent Fragment" "Lonely Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Decaying Fragment" "Cosmic Fragment" "Blazing Fragment" "Awakening Fragment" "Sacred Blossom" "Voidborn Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
 	#.import < < styles > fragment -> 100+c
 
 Show
 	#.econ fra 10 100 .econ inv 10 100
-	BaseType == "Fragment of Emptiness" "Gift to the Goddess" "The Maven's Writ" "Fragment of the Chimera" "Incandescent Invitation" "Unrelenting Timeless Eternal Emblem" "Mortal Ignorance" "Fragment of Enslavement" "Timeless Templar Emblem" "Mortal Hope" "Fragment of Terror" "Xoph's Breachstone" "Screaming Invitation" "Unrelenting Timeless Vaal Emblem" "Esh's Breachstone" "Fragment of Purification" "Tul's Breachstone" "Fragment of Shape" "Fragment of the Hydra" "Baran's Crest" "Fragment of the Phoenix" "Veritania's Crest" "Uul-Netol's Breachstone" "Fragment of Knowledge" "Unrelenting Timeless Templar Emblem" "Timeless Maraketh Emblem" "Al-Hezmin's Crest" "Mortal Rage" "Drox's Crest" "Polaric Invitation" "Fragment of Constriction" "Unrelenting Timeless Karui Emblem" "Simulacrum" "Fragment of Eradication" "Fragment of the Minotaur" "Dedication to the Goddess" "Chayula's Breachstone" "Mortal Grief" "Unrelenting Timeless Maraketh Emblem" "Sacred Blossom"
+	BaseType == "Hivebrain Gland" "Fragment of Emptiness" "Gift to the Goddess" "The Maven's Writ" "Fragment of the Chimera" "Incandescent Invitation" "Unrelenting Timeless Eternal Emblem" "Mortal Ignorance" "Fragment of Enslavement" "Timeless Templar Emblem" "Mortal Hope" "Fragment of Terror" "Xoph's Breachstone" "Screaming Invitation" "Unrelenting Timeless Vaal Emblem" "Esh's Breachstone" "Fragment of Purification" "Tul's Breachstone" "Fragment of Shape" "Fragment of the Hydra" "Baran's Crest" "Fragment of the Phoenix" "Veritania's Crest" "Uul-Netol's Breachstone" "Fragment of Knowledge" "Unrelenting Timeless Templar Emblem" "Timeless Maraketh Emblem" "Al-Hezmin's Crest" "Mortal Rage" "Drox's Crest" "Polaric Invitation" "Fragment of Constriction" "Unrelenting Timeless Karui Emblem" "Simulacrum" "Fragment of Eradication" "Fragment of the Minotaur" "Dedication to the Goddess" "Chayula's Breachstone" "Mortal Grief" "Unrelenting Timeless Maraketh Emblem" "Sacred Blossom"
 	#.import < < styles > fragment -> 10_100c
 
 Show

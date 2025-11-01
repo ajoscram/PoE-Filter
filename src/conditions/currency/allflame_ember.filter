@@ -1,4 +1,4 @@
-#.subsection Allflame Embers
+#.subsection Necropolis Allflame Ember
 
 # iLvl 84+
 Show
@@ -18,7 +18,7 @@ Show
     ItemLevel > 83
 	#.import < < styles > currency -> 1-c good
 
-## iLvl 80-83
+# iLvl 80-83
 Show
 	BaseType == "Flaring Allflame Ember of Kalguurans" "Allflame Ember of The Shaper" "Allflame Ember of Meatsacks" "Allflame Ember of Manifested Wealth"
     ItemLevel <= 83

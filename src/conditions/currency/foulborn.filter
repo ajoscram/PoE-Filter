@@ -1,0 +1,9 @@
+#.subsection Foulborn
+
+Show
+    BaseType == "Foulborn Exalted Orb"
+	#.import < < styles > currency -> 10_100c
+
+Show
+    BaseType == "Foulborn Regal Orb" "Foulborn Orb of Augmentation"
+    #.import < < styles > currency -> 1_10c
