@@ -2,7 +2,7 @@
 
 Show #.name text
 	Continue
-	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame"
+	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame" "Wombgift"
 	#.import < < styles > general -> text
 
 #.import Wombgift

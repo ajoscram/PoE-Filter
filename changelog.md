@@ -1,5 +1,11 @@
 # Keepers of the Flame
 
+## 3.27b
+### League Changes
+* Fixed a small bug where **Wombgifts** had the incorrect text color.
+### General Changes
+* General economy update.
+
 ## 3.27
 ### League Changes
 * Added the new **implants**.
