@@ -11,11 +11,11 @@ Show
 
 Show
 	#.strict 3 .tag chaos _
-	BaseType == "Vanguard Belt" "Crystal Belt" "Stygian Vise" "Leather Belt" "Rustic Sash"
+	BaseType == "Cord Belt" "Vanguard Belt" "Crystal Belt" "Stygian Vise" "Leather Belt" "Rustic Sash"
 	Rarity = Rare
 Show
 	#.strict 1
-	BaseType == "Vanguard Belt" "Crystal Belt" "Stygian Vise"
+	BaseType == "Cord Belt" "Vanguard Belt" "Crystal Belt" "Stygian Vise"
 	Rarity < Rare
 
 Show #.name atlas_armours

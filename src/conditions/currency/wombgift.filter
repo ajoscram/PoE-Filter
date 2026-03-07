@@ -1,5 +1,5 @@
 #.subsection Wombgift
 
 Show
-    BaseType == "Growing Wombgift" "Lavish Wombgift" "Ancient Wombgift" "Mysterious Wombgift" "Provisioning Wombgift"
+    BaseType == "Lavish Wombgift" "Ancient Wombgift" "Mysterious Wombgift" "Provisioning Wombgift"
     #.import < < styles > currency -> 1_10c

@@ -1,4 +1,23 @@
-# Keepers of the Flame
+# Mirage
+
+## 3.28
+### League Changes
+* Added the new **Astrolabe** items.
+* Added these new currency items introduced for previous league content: **Refracting Fog**, **Essence of Desolation**, **Flesh of Xesht**, **Sinistral Catalyst**, **Dextral Catalyst**, **Volatile Vaal Orb** and **Crystallised Rancour**.
+* Added the new **Memory** currency items.
+* Added the new **Coin** currency items.
+* Added **The Black Barya** map fragment.
+* Added the new Mirage themed **incubators**.
+* Added the new Mirage/Ritual **corpses**.
+### General Changes
+* Added the new **Cord Belt** base type.
+* Added the new **Runegrafts**.
+* Removed many **currency** and **scarab** items that no longer exist in the game. 
+* Removed **grafts** because they no longer exist in the game.
+* Added the new reworked **scarabs**.
+* Added the new **divination cards**.
+* Added support for all existing **exceptional** gems.
+* Added support for **imbued** gems.
 
 ## 3.27b
 ### League Changes

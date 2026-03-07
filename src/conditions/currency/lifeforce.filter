@@ -1,7 +1,7 @@
 #.subsection Lifeforce
 
 Show
-	BaseType == "Sacred Crystallised Lifeforce"
+	BaseType == "Sacred Crystallised Lifeforce" "Crystallised Rancour"
 	#.import < < styles > currency -> 100+c
 
 Show

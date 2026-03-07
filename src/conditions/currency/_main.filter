@@ -5,8 +5,10 @@ Show #.name text
 	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame" "Wombgift"
 	#.import < < styles > general -> text
 
-#.import Wombgift
-#.import Foulborn
+#.import coin
+#.import astrolabe
+#.import wombgift
+#.import foulborn
 #.import implant
 #.import runegraft
 #.import allflame_ember

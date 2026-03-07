@@ -20,6 +20,10 @@ Show
 	Quality = 23
 	#.import < styles > gem -> tier_1
 
+Show #.name exceptional
+    BaseType == "Greater Spell Cascade Support" "Eclipse Support" "Invert the Rules Support" "Cast on Ward Break Support" "Vaal Sacrifice Support" "Greater Spell Echo Support" "Vaal Temptation Support" "Machinations Support" "Pyre Support" "Bonespire Support" "Foulgrasp Support" "Hiveborn Support" "Scornful Herald Support" "Cull the Weak Support" "Greater Ancestral Call Support" "Fissure Support" "Hextoad Support" "Hexpass Support" "Greater Fork Support" "Greater Chain Support" "Lethal Dose Support" "Companionship Support" "Divine Sentinel Support" "Annihilation Support" "Invention Support" "Greater Kinetic Instability Support" "Cooldown Recovery Support" "Voidstorm Support" "Void Shockwave Support" "Eldritch Blasphemy Support" "Gluttony Support" "Overheat Support" "Greater Multistrike Support" "Congregation Support" "Frostmage Support" "Greater Devour Support" "Greater Unleash Support" "Pacifism Support" "Bloodsoaked Banner Support" "Minion Pact Support" "Unholy Trinity Support" "Overloaded Intensity Support" "Transfusion Support"
+	#.import < styles > gem -> tier_1
+
 Show
 	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
@@ -35,6 +39,11 @@ Show
 	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
 	Quality >= 20
+	#.import < styles > gem -> tier_2
+
+Show
+	#.import -> text -> Class
+    Imbued True
 	#.import < styles > gem -> tier_2
 
 Show

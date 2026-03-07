@@ -7,7 +7,7 @@ Show
 
 Show
 	#.econ del 0 10
-	BaseType == "Blighted Delirium Orb" "Blacksmith's Delirium Orb" "Fragmented Delirium Orb" "Singular Delirium Orb" "Jeweller's Delirium Orb" "Thaumaturge's Delirium Orb" "Abyssal Delirium Orb" "Foreboding Delirium Orb" "Fine Delirium Orb" "Obscured Delirium Orb" "Cartographer's Delirium Orb" "Whispering Delirium Orb" "Armoursmith's Delirium Orb" "Timeless Delirium Orb" "Diviner's Delirium Orb" "Fossilised Delirium Orb"
+	BaseType == "Blighted Delirium Orb" "Blacksmith's Delirium Orb" "Fragmented Delirium Orb" "Singular Delirium Orb" "Jeweller's Delirium Orb" "Thaumaturge's Delirium Orb" "Abyssal Delirium Orb" "Fine Delirium Orb" "Obscured Delirium Orb" "Cartographer's Delirium Orb" "Whispering Delirium Orb" "Armoursmith's Delirium Orb" "Timeless Delirium Orb" "Diviner's Delirium Orb" "Fossilised Delirium Orb"
 	#.import < < styles > currency -> 1_10c
 
 Show
