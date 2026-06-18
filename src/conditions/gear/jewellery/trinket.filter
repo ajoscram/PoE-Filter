@@ -1,0 +1,5 @@
+#.subsection Trinket
+
+Show
+	Class == "Trinkets"
+    #.import STYLE | miscellaneous -> catchall

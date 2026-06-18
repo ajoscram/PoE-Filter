@@ -1,31 +1,23 @@
 source scripts/utils.sh
 source .env
 
-econ=".econ" && contains "leaguestart" $@ && econ=""
-watch=":watch" && ! contains "dev" $@ && watch=""
-pfg.exe $watch "src/_main.filter" "$OUTPUT" .import .index $econ || exit
-contains "dev" $@ && exit
+DOT_STAND_IN="%"
+VERSION=$(scripts/version.sh | sed "s/\./\\$DOT_STAND_IN/")
+ECON=".econ" && contains "leaguestart" $@ && ECON=""
 
-strictness_types=(Base Lenient Semi-strict Strict Very-strict Uber-strict)
-chaos_types=(Bodies Helmets Gloves Boots Weapons Nothing)
-[ ! -d "build" ] && mkdir "build"
+get_styles | while read style; do
 
-for strictness_value in "${!strictness_types[@]}"
-do
-    strictness="${strictness_types[$strictness_value]}"
-    pfg.exe "$OUTPUT" "build/$strictness.filter" .strict $strictness_value || exit
-    [ ! -d "build/chaos/$strictness" ] && mkdir -p "build/chaos/$strictness"
+    title_style=${$style^}
+    pfg.exe "src/_main.filter" "$OUTPUT" .import STYLE=styles \> $style || exit
 
-    for chaos_type in "${chaos_types[@]}"
-    do
-        pfg.exe \
-            "build/$strictness.filter" \
-            "build/chaos/$strictness/$chaos_type.filter" \
-            .tag chaos $chaos_type .format \
-            || exit
+    get_strictness_values | while read strictness number; do
+
+        title_strictness=${strictness^}
+        pfg.exe "$OUTPUT" "build/$title_style/$title_strictness.filter" \
+            .alias VERSION=$VERSION, STYLE=$title_style, VARIANT=$title_strictness .index \
+            .alias $DOT_STAND_IN=. .strict $number .if $ECON .multi .format || exit
+
     done
-
-    pfg.exe "build/$strictness.filter" .format || exit
 done
 
 rm "$OUTPUT"

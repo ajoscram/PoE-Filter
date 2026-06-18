@@ -1,15 +1,9 @@
 #.section Currency
 
-Show #.name text
-	Continue
-	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame" "Wombgift"
-	#.import < < styles > general -> text
-
 #.import coin
 #.import astrolabe
 #.import wombgift
 #.import foulborn
-#.import implant
 #.import runegraft
 #.import allflame_ember
 #.import corpse
@@ -37,5 +31,5 @@ Show #.name text
 #.import miscellaneous
 
 Show
-	#.import -> text -> Class
-	#.import < < styles > currency -> catchall
+	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame" "Wombgift"
+	#.import STYLE | currency -> catchall

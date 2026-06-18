@@ -2,8 +2,8 @@
 
 Show
 	BaseType == "Orb of Conflict" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Eldritch Chaos Orb" "Exceptional Eldritch Ichor" "Exceptional Eldritch Ember"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Grand Eldritch Ichor" "Grand Eldritch Ember"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3

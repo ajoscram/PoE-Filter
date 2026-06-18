@@ -1,0 +1,5 @@
+#.section Gold
+
+Show
+    Class == "Gold"
+    SetFontSize 25

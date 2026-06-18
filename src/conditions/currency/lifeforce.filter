@@ -2,8 +2,8 @@
 
 Show
 	BaseType == "Sacred Crystallised Lifeforce" "Crystallised Rancour"
-	#.import < < styles > currency -> 100+c
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Wild Crystallised Lifeforce" "Vivid Crystallised Lifeforce" "Primal Crystallised Lifeforce"
-	#.import < < styles > currency -> 1-c good
+	#.import STYLE | currency -> t2

@@ -1,0 +1,19 @@
+Show #.name shown
+    SetFontSize 36
+
+Show #.name hidden
+    SetFontSize 18
+    MinimapIcon ICON_SIZE_DISABLED
+    PlayEffect None
+    PlayAlertSoundPositional None
+    DisableDropSound
+
+Show #.name quest
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+	SetTextColor 50 230 100
+	SetBorderColor 50 230 100
+
+Show #.name catchall
+    MinimapIcon ICON_SIZE_LARGE Pink Star
+    #.import shared > miscellaneous -> catchall

@@ -1,0 +1,217 @@
+#.subsection Miscellaneous
+
+# Uniques
+
+Show
+    Rarity == Unique
+    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    LinkedSockets == 6
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Rarity == Unique
+    #.multi
+        Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+        LinkedSockets == 5
+    #.multi
+        Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+        CorruptedMods == 2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Rarity == Unique
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    CorruptedMods == 1
+
+Show #.strict STRICTNESS_BASE .if Show
+    Rarity == Unique
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+
+# Fractured
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_JEWELLERY GEAR_FLASKS
+    FracturedItem True
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    FracturedItem True
+
+# Synthesized
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    SynthesisedItem True
+
+# Influenced
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED MODS_ELEVATED
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == GEAR_JEWELLERY
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+
+# Eater / Exarch
+
+Show
+    Class == GEAR_ARMOUR
+    #.multi
+        HasEaterOfWorldsImplicit == ELDRITCH_PERFECT
+    #.multi
+        HasSearingExarchImplicit == ELDRITCH_PERFECT
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_ARMOUR
+    #.multi
+        HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    #.multi
+        HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR
+    #.multi
+        HasEaterOfWorldsImplicit >= ELDRITCH_LESSER
+    #.multi
+        HasSearingExarchImplicit >= ELDRITCH_LESSER
+
+# Memory Strands
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    #.multi
+        MemoryStrands >= 75 #.strict STRICTNESS_STRICT .if Show
+    #.multi
+        MemoryStrands >= 50 #.strict STRICTNESS_LENIENT .if Show
+    #.multi
+        MemoryStrands >= 25 #.strict STRICTNESS_BASE .if Show
+
+# Veiled
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    #.multi
+        HasExplicitMod == MODS_VEILED_NAMED
+    #.multi
+        HasExplicitMod == MODS_VEILED_UNNAMED
+        FracturedItem True
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    HasExplicitMod == MODS_VEILED_UNNAMED
+
+# Legacy
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+    #.multi
+	    HasCruciblePassiveTree True
+    #.multi
+        Scourged True
+    #.multi
+        AnyEnchantment True
+
+# Sockets
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    LinkedSockets == 6
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    #.multi
+        LinkedSockets == 5
+    #.multi
+        Sockets == 6
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_ARMOUR GEAR_6_SOCKET_WEAPON
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    LinkedSockets == 4
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    AreaLevel < LEVEL_ACT_6_START
+    #.multi
+        SocketGroup RGB
+    #.multi
+        LinkedSockets == 3
+
+# Progression
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_PROGRESSABLE_FLASKS
+    #.multi
+        AreaLevel <= LEVEL_RED_MAPS_T16
+        DropLevel >= LEVEL_RED_MAPS_START
+    #.multi
+        AreaLevel < LEVEL_RED_MAPS_START
+        DropLevel >= LEVEL_YELLOW_MAPS_START
+    #.multi
+        AreaLevel < LEVEL_YELLOW_MAPS_START
+        DropLevel >= LEVEL_WHITE_MAPS_START
+    #.multi
+        AreaLevel < LEVEL_WHITE_MAPS_START
+        DropLevel >= LEVEL_ACT_10_START
+    #.multi
+        AreaLevel < LEVEL_ACT_10_START
+        DropLevel >= LEVEL_ACT_9_START
+    #.multi
+        AreaLevel < LEVEL_ACT_9_START
+        DropLevel >= LEVEL_ACT_8_START
+    #.multi
+        AreaLevel < LEVEL_ACT_8_START
+        DropLevel >= LEVEL_ACT_7_START
+    #.multi
+        AreaLevel < LEVEL_ACT_7_START
+        DropLevel >= LEVEL_ACT_6_START
+    #.multi
+        AreaLevel < LEVEL_ACT_6_START
+        DropLevel >= LEVEL_ACT_5_START
+    #.multi
+        AreaLevel < LEVEL_ACT_5_START
+        DropLevel >= LEVEL_ACT_4_START
+    #.multi
+        AreaLevel < LEVEL_ACT_4_START
+        DropLevel >= LEVEL_ACT_3_START
+    #.multi
+        AreaLevel < LEVEL_ACT_3_START
+        DropLevel >= LEVEL_ACT_2_START
+    #.multi
+        AreaLevel < LEVEL_ACT_2_START
+        Rarity >= Magic
+
+Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+    AreaLevel == LEVEL_ACT_1_START
+
+# Hidden
+
+Hide
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    #.import STYLE | miscellaneous -> hidden
+    #.import armour > _util -> multi_t5_full
+
+Hide
+    Class == GEAR_WEAPONS
+    #.import STYLE | miscellaneous -> hidden
+    #.import weapon > _util -> multi_t5_full
+
+Hide
+    Class == GEAR_JEWELLERY
+    #.import STYLE | miscellaneous -> hidden
+    #.import jewellery > _util -> multi_t5_full
+
+Hide
+    Class == GEAR_FLASKS
+    #.import STYLE | miscellaneous -> hidden
+    #.import flask > _util -> multi_t5_full

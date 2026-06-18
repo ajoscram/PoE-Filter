@@ -2,12 +2,12 @@
 
 Show
 	BaseType == "Fertile Catalyst" "Tainted Catalyst" "Sinistral Catalyst" "Dextral Catalyst"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Prismatic Catalyst" "Noxious Catalyst" "Accelerating Catalyst" "Unstable Catalyst"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType == "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Intrinsic Catalyst"
-	#.import < < styles > currency -> 1-c good
+	#.import STYLE | currency -> t4

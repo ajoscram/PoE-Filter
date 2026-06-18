@@ -1,0 +1,5 @@
+#.subsection Mana Flask
+
+Show
+	Class == "Mana Flasks"
+    #.import STYLE | miscellaneous -> catchall

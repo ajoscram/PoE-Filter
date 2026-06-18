@@ -1,0 +1,5 @@
+#.section Relic
+
+Show
+	Class == "Relics"
+    #.import STYLE | miscellaneous -> catchall

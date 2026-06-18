@@ -1,48 +1,44 @@
 #.subsection Miscellaneous
 
 Show
-    Class == "Gold"
-    SetFontSize 25
-
-Show
-	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather"
-	#.import < < styles > currency -> 100+c expensive
-
-Show
-	BaseType == "Orb of Remembrance" "Orb of Unravelling" "Shaper's Exalted Orb" "Elder's Exalted Orb" "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Exalted Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
-	#.import < < styles > currency -> 100+c
+	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather" "Orb of Remembrance" "Orb of Unravelling" "Shaper's Exalted Orb" "Elder's Exalted Orb" "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Exalted Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Memory of Trauma" "Memory of Reverence" "Memory of Loneliness" "Volatile Vaal Orb" "Refracting Fog" "Orb of Intention" "Prismatic Oil" "Exalted Orb" "Sacred Orb" "Veiled Chaos Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Flesh of Xesht" "Filled Coffin" "Ritual Vessel" "Veiled Scarab" "Orb of Unmaking" "Oil Extractor" "Tainted Blessing" "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Bestiary Orb" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Remnant of Corruption" "Stacked Deck" "Orb of Horizons" "Engineer's Orb"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType == "Empty Coffin" "Silver Coin" "Orb of Regret" "Enkindling Orb" "Instilling Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Blessed Orb" "Regal Orb" "Orb of Alteration"
-	#.import < < styles > currency -> 1-c good
+	#.import STYLE | currency -> t4
 
-Show #.name 1-c fine
-	Continue
+Show
 	BaseType == "Chromatic Orb" "Orb of Transmutation" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
-	#.import < < styles > currency -> 1-c fine
-Show
-	#.strict 3 .import -> 1-c fine -> BaseType
-	StackSize >= 5
-Show
-	#.strict 1 .import -> 1-c fine -> BaseType
+	#.import STYLE | currency -> t5
+    #.multi
+	    StackSize >= 15
+    #.multi
+	    StackSize >= 10 #.strict STRICTNESS_STRICT .if Show
+    #.multi
+	    StackSize >= 5 #.strict STRICTNESS_LENIENT .if Show
+    #.multi
+	    #.strict STRICTNESS_BASE
 
-Show #.name 1-c trash
-	Continue
+Show
 	BaseType == "Scroll of Wisdom" "Portal Scroll" "Orb of Augmentation"
-	#.import < < styles > currency -> 1-c trash
-Show
-	#.strict 3 .import -> 1-c trash -> BaseType
-	StackSize >= 15
-Show
-	#.strict 0 .import -> 1-c trash -> BaseType
-	AreaLevel < 68
-Hide
-	#.import -> 1-c trash -> BaseType
+	#.import STYLE | currency -> t5
+    #.multi
+	    StackSize >= 15 #.strict STRICTNESS_STRICT .if Show
+	    AreaLevel < LEVEL_RED_MAPS_START
+    #.multi
+	    StackSize >= 10 #.strict STRICTNESS_LENIENT .if Show
+	    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.multi
+	    StackSize >= 5 #.strict STRICTNESS_BASE .if Show
+	    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi
+	    #.strict STRICTNESS_BASE

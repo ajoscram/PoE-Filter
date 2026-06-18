@@ -2,7 +2,7 @@
 1. Update scripts to ensure similar workflow
 2. Add conditions constants
 3. Move to the "multi-style" version
-4. Add style constants
+4. Add style constants (colors!!!)
 
 # Official docs
 https://www.pathofexile.com/item-filter/about
@@ -17,12 +17,6 @@ bases
     atlas
     ritual
     good bases
-
-item level
-    black border = below iLvl 60
-    yellow border = chaos recipe
-    blue border = regal recipe
-    white border = all mods can be crafted on this item
 
 mods
     t1 mod(s) on uncorrupted magic items 
@@ -43,6 +37,9 @@ corrupted
     synthesized
     fractured
     veiled
+    elevated mods (VERY IMPORTANT ON MISCELLANEOUS)
+
+memory strands
 
 unique
     replica

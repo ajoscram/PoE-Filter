@@ -3,14 +3,14 @@
 Show
     #.econ mbr 100
 	BaseType == "Allflame Ember of the Ethereal"
-	#.import < < styles > fragment -> 10_100c
+	#.import STYLE | fragment -> t1
 
 Show
     #.econ mbr 10 100
 	BaseType == "Allflame Ember of Propagation" "Allflame Ember of Kulemak" "Allflame Ember of the Gilded"
-	#.import < < styles > fragment -> 1_10c
+	#.import STYLE | fragment -> t2
 
 Show
     #.econ mbr 0 10
 	BaseType == "Allflame Ember of Resplendence" "Allflame Ember of the Wildwood" "Allflame Ember of Flesh" "Allflame Ember of Toads"
-	#.import < < styles > fragment -> 1-c
+	#.import STYLE | fragment -> t3

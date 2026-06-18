@@ -1,0 +1,29 @@
+Show #.name t1
+	SetTextColor 255 0 0
+	SetBackgroundColor 120 240 250
+	MinimapIcon ICON_SIZE_LARGE Cyan Kite
+	PlayEffect Cyan
+	PlayAlertSoundPositional SOUND_SHORT_T1
+
+Show #.name t2
+	SetBackgroundColor 120 240 250
+	MinimapIcon ICON_SIZE_MEDIUM Cyan Kite
+	PlayEffect Cyan
+	PlayAlertSoundPositional SOUND_SHORT_T2
+
+Show #.name t3
+	SetBackgroundColor 80 210 200
+	MinimapIcon ICON_SIZE_SMALL Cyan Kite
+	PlayEffect Cyan Temp
+	PlayAlertSoundPositional SOUND_SHORT_T3
+
+Show #.name t4
+	SetBackgroundColor 80 210 200
+	PlayAlertSoundPositional SOUND_SHORT_T4
+
+Show #.name t5
+	SetBackgroundColor 40 105 100
+
+Show #.name catchall
+	MinimapIcon ICON_SIZE_LARGE Pink Kite
+	#.import shared > miscellaneous -> catchall

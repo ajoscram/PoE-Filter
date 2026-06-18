@@ -1,0 +1,5 @@
+#.subsection Quiver
+
+Show
+	Class == "Quivers"
+    #.import STYLE | miscellaneous -> catchall

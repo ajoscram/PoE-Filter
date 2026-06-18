@@ -1,0 +1,354 @@
+#.subsection Helmet
+
+#.alias HELMET_BEST_BASE_DROP_LEVEL = 84
+#.alias HELMET_BEST_MOD_ITEM_LEVEL  = 85
+#.alias HELMET_EXCEPTIONAL_BASES    = "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
+
+#.alias HELMET_EXCEPTIONAL_MODS     = "Subterranean" "of the Underground" "Xopec's" "of Puhuarte" "Redblade" "of the Sentinel" "Infamous" "of Infamy" "Haunted" "of Haunting"
+#.alias HELMET_GRAND_MODS           = "Athlete's" "Masterwork" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Zaffre" "Durable" "Legend's" "Seraphim's" "Unassailable" "Seething" "Vaporous" "Mirage's" "Impregnable" "Encased" "of the Gods" "of the Blur" "of Raiding" "of Grandmastery" "of Lioneye" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of Nullification" "of the Genius" "of Ardour" "of Runes"
+#.alias HELMET_GREATER_MODS         = "Virile" "Owen's" "Exquisite" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Blue" "Flexible" "Hero's" "Prior's" "Deacon's" "Djinn's" "Indomitable" "Pulsing" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Honed" "Girded" "Mammoth's" "Carapaced" "Urchin's" "Pirate's" "of the Titan" "of the Wind" "of the Remora" "of Thirst" "of Plunder" "of Mastery" "of the Ranger" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Rejuvenation" "of Youth" "of Abjuration" "of the Virtuoso" "of Buffering" "of Inscription"
+#.alias HELMET_LESSER_MODS          = "Rotund" "Annest's" "Elegant" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Mazarine" "Pliant" "Duelist's" "Monk's" "Acolyte's" "Naga's" "Dauntless" "Radiating" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Polished" "Scorching" "Frozen" "Arcing" "Thickened" "Elephant's" "Plated" "Oyster's" "Magpie's" "of the Leviathan" "of the Phantom" "of Ease" "of Skill" "of the Marksman" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Silken Hood" "Hubris Circlet" "Necromancer Circlet" "Nightmare Bascinet" "Runic Helm" "Ezomyte Burgonet" "Fluted Bascinet" "Harlequin Mask" "Royal Burgonet" "Golden Mask" "Magistrate Crown" "Raven Mask" "Solaris Circlet" "Gilded Sallet"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 100
+    BaseType == "Leather Hood" "Ezomyte Burgonet"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Great Crown" "Hubris Circlet" "Zealot Helmet" "Necromancer Circlet" "Sinner Tricorne" "Silken Hood" "Pig-Faced Bascinet" "Praetor Crown" "Ezomyte Burgonet" "Siege Helmet" "Leather Hood" "Steel Circlet" "Golden Mask" "Runic Crown" "Bone Circlet" "Prophet Crown" "Nightmare Bascinet" "Lich's Circlet" "Faithful Helmet" "Iron Circlet" "Lacquered Helmet" "Royal Burgonet" "Lunaris Circlet" "Visored Sallet" "Gilded Sallet"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 10 100
+    BaseType == "Leather Hood" "Ezomyte Burgonet"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Lion Pelt" "Great Crown" "Hubris Circlet" "Callous Mask" "Aventail Helmet" "Harlequin Mask" "Ursine Pelt" "Zealot Helmet" "Necromancer Circlet" "Iron Mask" "Sinner Tricorne" "Leather Cap" "Regicide Mask" "Silken Hood" "Tricorne" "Praetor Crown" "Eternal Burgonet" "Close Helmet" "Deicide Mask" "Reaver Helmet" "Ezomyte Burgonet" "Mind Cage" "Golden Mask" "Steel Circlet" "Festival Mask" "Barbute Helmet" "Bone Circlet" "Prophet Crown" "Nightmare Bascinet" "Iron Circlet" "Bone Helmet" "Solaris Circlet" "Soldier Helmet" "Lacquered Helmet" "Vaal Mask" "Royal Burgonet" "Magistrate Crown" "Gilded Sallet" "Paladin Crown"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t3
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Sinner Tricorne" "Great Helmet" "Festival Mask"
+    Class == "Helmets" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t3
+
+# Exceptional Mods
+
+Show
+    Class == "Helmets"
+    HasExplicitMod == HELMET_EXCEPTIONAL_MODS
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Helmets"
+    HasExplicitMod == HELMET_EXCEPTIONAL_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Class == "Helmets"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t1
+    #.multi
+        HasExplicitMod ==6 HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod >=5 HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show
+    Class == "Helmets"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t2
+    #.multi
+        HasExplicitMod >=5 HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod >=4 HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_STRICT
+    Class == "Helmets"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t2
+    #.multi
+        HasExplicitMod >=3 HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_LENIENT
+    Class == "Helmets"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t3
+    #.multi
+        HasExplicitMod >=3 HELMET_GREATER_MODS HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 HELMET_GREATER_MODS HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_BASE
+    Class == "Helmets"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t3
+    #.multi
+        HasExplicitMod >=3 HELMET_LESSER_MODS HELMET_GREATER_MODS HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 HELMET_LESSER_MODS HELMET_GREATER_MODS HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+# Magic
+
+Show
+    Class == "Helmets"
+    Rarity == Magic
+    HasExplicitMod ==2 HELMET_GRAND_MODS
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import STYLE | armour > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Class == "Helmets"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t2
+    #.multi
+        HasExplicitMod ==2 HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod == HELMET_GRAND_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_LENIENT
+    Class == "Helmets"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == HELMET_GRAND_MODS
+    #.multi
+        HasExplicitMod ==2 HELMET_GREATER_MODS
+    #.multi
+        HasExplicitMod == HELMET_GREATER_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_BASE
+    Class == "Helmets"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == HELMET_GREATER_MODS
+    #.multi
+        HasExplicitMod ==2 HELMET_LESSER_MODS
+    #.multi
+        HasExplicitMod == HELMET_LESSER_MODS
+        DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+
+# Fractured
+
+Show
+    Class == "Helmets"
+    FracturedItem True
+    HasExplicitMod == HELMET_GRAND_MODS
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Helmets"
+    FracturedItem True
+    HasExplicitMod == HELMET_GRAND_MODS
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    FracturedItem True
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Helmets"
+    FracturedItem True
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3_rare
+    #.import _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    Class == "Helmets"
+    SynthesisedItem True
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    Class == "Helmets"
+    SynthesisedItem True
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2
+
+# Influenced
+
+Show
+    Class == "Helmets"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Helmets"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+# Eater / Exarch
+
+Show
+    Class == "Helmets"
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+Show
+    Class == "Helmets"
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+# Memory Strands
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t1
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t2
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t3
+
+# High Quality
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    Quality == 30
+    #.import _util -> multi_t1
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    Quality == 30
+    #.import _util -> multi_t2
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+# Exceptional Base
+
+Show
+    BaseType == HELMET_EXCEPTIONAL_BASES
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == HELMET_EXCEPTIONAL_BASES
+    #.import _util -> multi_t3
+
+# Best Base
+
+Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    BaseDefencePercentile == 100
+    #.import _util -> craftable
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    ItemLevel >= HELMET_BEST_MOD_ITEM_LEVEL
+    #.import _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Helmets"
+    DropLevel >= HELMET_BEST_BASE_DROP_LEVEL
+    #.import _util -> craftable

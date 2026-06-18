@@ -1,0 +1,5 @@
+#.subsection Sceptre
+
+Show
+	Class == "Sceptres"
+    #.import STYLE | miscellaneous -> catchall

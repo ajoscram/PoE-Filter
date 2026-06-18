@@ -1,0 +1,5 @@
+#.subsection Amulet
+
+Show
+	Class == "Amulets"
+    #.import STYLE | miscellaneous -> catchall

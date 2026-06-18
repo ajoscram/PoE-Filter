@@ -2,4 +2,4 @@
 
 Show
 	BaseType ==  "Templar Astrolabe" "Fruiting Astrolabe" "Lightless Astrolabe" "Grasping Astrolabe" "Nameless Astrolabe" "Fungal Astrolabe" "Chaotic Astrolabe" "Enshrouded Astrolabe" "Timeless Astrolabe" "Runic Astrolabe"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3

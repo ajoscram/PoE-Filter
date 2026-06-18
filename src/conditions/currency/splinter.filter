@@ -1,18 +1,17 @@
 #.subsection Splinter
 
 Show
-	BaseType == "Ritual Splinter" "Crescent Splinter" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Splinter of Chayula"
-	#.import < < styles > splinter -> 1+c
+	BaseType == "Ritual Splinter" "Crescent Splinter" "Splinter of Chayula"
+	#.import STYLE | currency -> t4
 
-Show #.name 1-c
-	Continue
-	BaseType == "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
-	#.import < < styles > splinter -> 1-c
 Show
-	#.import -> 1-c -> BaseType
-	StackSize >= 10
-Show
-	#.strict 3 .import -> 1-c -> BaseType
-	StackSize >= 5
-Show
-	#.strict 2 .import -> 1-c -> BaseType
+	BaseType == "Simulacrum Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+	#.import STYLE | currency -> t5
+    #.multi
+	    StackSize >= 20
+    #.multi
+	    StackSize >= 10 #.strict STRICTNESS_STRICT
+    #.multi
+	    StackSize >= 5 #.strict STRICTNESS_LENIENT
+    #.multi
+        #.strict STRICTNESS_BASE

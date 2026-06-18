@@ -1,0 +1,5 @@
+#.subsection One-handed Mace
+
+Show
+	Class == "One Hand Maces"
+    #.import STYLE | miscellaneous -> catchall

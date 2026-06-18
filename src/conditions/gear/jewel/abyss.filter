@@ -1,0 +1,5 @@
+#.subsection Abyss Jewel
+
+Show
+	Class == "Abyss Jewels"
+    #.import STYLE | miscellaneous -> catchall

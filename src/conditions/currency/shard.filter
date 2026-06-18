@@ -2,22 +2,22 @@
 
 Show
 	BaseType == "Mirror Shard"
-	#.import < < styles > currency -> 100+c expensive
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Fracturing Shard" "Exalted Shard" "Ancient Shard" "Annulment Shard"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3
 
 Show
-	#.strict 1
+	#.strict STRICTNESS_LENIENT
 	BaseType == "Chaos Shard" "Horizon Shard" "Harbinger's Shard"
-	#.import < < styles > currency -> 1-c fine
+	#.import STYLE | currency -> t4
 
 Show
-	#.strict 0
+	#.strict STRICTNESS_BASE
 	BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard" "Binding Shard" "Engineer's Shard"
-	#.import < < styles > currency -> 1-c trash
+	#.import STYLE | currency -> t5
 
 Hide
 	BaseType == "Transmutation Shard" "Scroll Fragment"
-	#.import < < styles > currency -> 1-c trash
+	#.import STYLE | currency -> t5

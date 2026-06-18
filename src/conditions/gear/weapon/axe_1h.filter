@@ -1,0 +1,5 @@
+#.subsection One-handed Axe
+
+Show
+	Class == "One Hand Axes"
+    #.import STYLE | miscellaneous -> catchall

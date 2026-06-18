@@ -1,0 +1,5 @@
+#.subsection Base Jewel
+
+Show
+	BaseType == "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Prismatic Jewel"
+    #.import STYLE | miscellaneous -> catchall

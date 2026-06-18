@@ -1,0 +1,188 @@
+#.subsection Priming
+
+# Base Priming
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    #.import armour > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    #.import weapon > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    #.import jewellery > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == GEAR_FLASKS
+    #.import flask > _util -> multi_t4_full
+
+# Synthesized
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    SynthesisedItem True
+    #.import armour > _util -> multi_t3
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    SynthesisedItem True
+    #.import weapon > _util -> multi_t3
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    SynthesisedItem True
+    #.import jewellery > _util -> multi_t3
+
+# Influenced
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import armour > _util -> multi_t3
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import weapon > _util -> multi_t3
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import jewellery > _util -> multi_t3
+
+# Corrupted Mods
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    CorruptedMods >= 1
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    CorruptedMods >= 1
+    #.import weapon > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    CorruptedMods >= 1
+    #.import jewellery > _util -> multi_t3_full
+
+# 3+ Links
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    LinkedSockets >= 3
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    LinkedSockets >= 3
+    #.import weapon > _util -> multi_t3_full
+
+# 6 Sockets
+
+Show
+    Continue
+    Class == GEAR_6_SOCKET_ARMOUR
+    Sockets == 6
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_6_SOCKET_WEAPON
+    Sockets == 6
+    #.import weapon > _util -> multi_t3_full
+
+# Elevated Mods
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    #.import jewellery > _util -> multi_t2
+
+# Perfect Eater / Exarch
+
+Show
+    Continue
+    Class == GEAR_ARMOUR
+    HasEaterOfWorldsImplicit == ELDRITCH_PERFECT
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == GEAR_ARMOUR
+    HasSearingExarchImplicit == ELDRITCH_PERFECT
+    #.import armour > _util -> multi_t2
+
+# Fractured and Veiled
+
+Show
+    Continue
+    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == GEAR_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == GEAR_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import jewellery > _util -> multi_t2
+
+# 6 Links
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == GEAR_6_SOCKET_ARMOUR
+    LinkedSockets == 6
+    #.import armour > _util -> multi_t2_full
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == GEAR_6_SOCKET_WEAPON
+    LinkedSockets == 6
+    #.import weapon > _util -> multi_t2_full

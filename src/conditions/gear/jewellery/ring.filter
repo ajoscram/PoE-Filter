@@ -1,0 +1,5 @@
+#.subsection Ring
+
+Show
+	Class == "Rings"
+    #.import STYLE | miscellaneous -> catchall

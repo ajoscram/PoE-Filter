@@ -1,0 +1,5 @@
+#.subsection Rune Dagger
+
+Show
+	Class == "Rune Daggers"
+    #.import STYLE | miscellaneous -> catchall

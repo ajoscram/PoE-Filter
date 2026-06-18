@@ -1,0 +1,29 @@
+Show #.name t1
+	SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	MinimapIcon ICON_SIZE_LARGE White Circle
+	PlayEffect White
+	PlayAlertSoundPositional SOUND_SHORT_T1
+
+Show #.name t2
+	SetBackgroundColor 255 255 255
+	MinimapIcon ICON_SIZE_MEDIUM White Circle
+	PlayEffect White
+	PlayAlertSoundPositional SOUND_SHORT_T2
+
+Show #.name t3
+	SetBackgroundColor 255 240 210
+	MinimapIcon ICON_SIZE_SMALL White Circle
+	PlayEffect White Temp
+	PlayAlertSoundPositional SOUND_SHORT_T3
+
+Show #.name t4
+	SetBackgroundColor 170 155 130
+	MinimapIcon ICON_SIZE_SMALL White Circle
+
+Show #.name t5
+	SetBackgroundColor 110 95 80
+
+Show #.name catchall
+	MinimapIcon ICON_SIZE_LARGE Pink Circle
+	#.import shared > miscellaneous -> catchall

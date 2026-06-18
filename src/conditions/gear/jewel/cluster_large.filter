@@ -1,0 +1,5 @@
+#.subsection Large Cluster Jewel
+
+Show
+	BaseType == "Large Cluster Jewel"
+    #.import STYLE | miscellaneous -> catchall

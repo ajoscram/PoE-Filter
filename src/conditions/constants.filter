@@ -1,0 +1,25 @@
+#.# Strictness levels
+
+#.alias STRICTNESS_BASE    = 0
+#.alias STRICTNESS_LENIENT = 1
+#.alias STRICTNESS_STRICT  = 2
+#.alias STRICTNESS_UBER    = 3
+
+#.# Area levels
+
+#.alias LEVEL_ACT_1_START        = 1
+#.alias LEVEL_ACT_2_START        = 16
+#.alias LEVEL_ACT_3_START        = 23
+#.alias LEVEL_ACT_4_START        = 33
+#.alias LEVEL_ACT_5_START        = 41
+#.alias LEVEL_ACT_6_START        = 45
+#.alias LEVEL_ACT_7_START        = 50
+#.alias LEVEL_ACT_8_START        = 55
+#.alias LEVEL_ACT_9_START        = 61
+#.alias LEVEL_ACT_10_START       = 64
+#.alias LEVEL_WHITE_MAPS_START   = 68
+#.alias LEVEL_YELLOW_MAPS_START  = 73
+#.alias LEVEL_RED_MAPS_START     = 78
+#.alias LEVEL_RED_MAPS_T16       = 83
+
+#.import STYLE | constants

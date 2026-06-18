@@ -3,19 +3,19 @@
 Show
 	#.econ tat 100
 	BaseType == "Journey Tattoo of the Soul" "Journey Tattoo of the Mind" "Journey Tattoo of the Body"
-	#.import < < styles > currency -> 100+c
+	#.import STYLE | currency -> t1
 
 Show
 	#.econ tat 10 100
 	BaseType == "Tattoo of the Tasalio Scout" "Tattoo of the Ramako Shaman" "Tattoo of the Hinekora Storyteller" "Tattoo of the Tawhoa Shaman" "Tattoo of the Rongokurai Turtle" "Tattoo of the Ramako Fleetfoot"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	#.econ tat 1 10
 	BaseType == "Tattoo of the Kitava Shaman" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Valako Shieldbearer" "Tattoo of the Ramako Sniper" "Tattoo of the Tasalio Warrior" "Tattoo of the Tukohama Warcaller" "Tattoo of the Ngamahu Woodcarver" "Tattoo of the Arohongui Shaman" "Tattoo of the Hinekora Warmonger" "Tattoo of the Arohongui Moonwarden" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Valako Stormrider" "Tattoo of the Ngamahu Warmonger"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3
 
 Show
 	#.econ tat 0 1
 	BaseType == "Tattoo of the Tasalio Bladedancer" "Tattoo of the Tukohama Brawler" "Tattoo of the Tasalio Tideshifter" "Tattoo of the Kitava Heart Eater" "Tattoo of the Hinekora Shaman" "Tattoo of the Tukohama Shaman" "Tattoo of the Arohongui Warmonger" "Tattoo of the Tawhoa Warrior" "Tattoo of the Tawhoa Naturalist" "Tattoo of the Tukohama Warrior" "Tattoo of the Kitava Rebel" "Tattoo of the Valako Scout" "Tattoo of the Hinekora Deathwarden" "Tattoo of the Rongokurai Guard" "Tattoo of the Ramako Scout" "Tattoo of the Hinekora Warrior" "Tattoo of the Kitava Blood Drinker" "Tattoo of the Rongokurai Warrior" "Tattoo of the Tukohama Warmonger" "Tattoo of the Arohongui Scout" "Tattoo of the Valako Warrior" "Tattoo of the Arohongui Warrior" "Tattoo of the Ngamahu Shaman" "Tattoo of the Ngamahu Warrior" "Tattoo of the Tawhoa Scout" "Tattoo of the Tasalio Shaman" "Tattoo of the Rongokurai Brute" "Tattoo of the Kitava Warrior" "Tattoo of the Rongokurai Goliath" "Tattoo of the Ramako Archer" "Tattoo of the Valako Shaman"
-	#.import < < styles > currency -> 1-c fine
+	#.import STYLE | currency -> t4

@@ -1,0 +1,29 @@
+Show #.name t1
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 230 100
+	MinimapIcon ICON_SIZE_LARGE Green Hexagon
+	PlayEffect Green
+	PlayAlertSoundPositional SOUND_SHORT_T1
+
+Show #.name t2
+	SetBackgroundColor 50 230 100
+	MinimapIcon ICON_SIZE_MEDIUM Green Hexagon
+	PlayEffect Green
+	PlayAlertSoundPositional SOUND_SHORT_T2
+
+Show #.name t3
+	SetBackgroundColor 50 150 100
+	MinimapIcon ICON_SIZE_SMALL Green Hexagon
+	PlayEffect Green Temp
+	PlayAlertSoundPositional SOUND_SHORT_T3
+
+Show #.name t4
+	SetBackgroundColor 50 110 100
+	MinimapIcon ICON_SIZE_SMALL Green Hexagon
+
+Show #.name t5
+	SetBackgroundColor 50 110 100
+
+Show #.name catchall
+	MinimapIcon ICON_SIZE_LARGE Pink Hexagon
+	#.import shared > miscellaneous -> catchall

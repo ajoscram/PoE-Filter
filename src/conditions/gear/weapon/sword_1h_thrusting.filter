@@ -1,0 +1,5 @@
+#.subsection Thrusting One-handed Sword
+
+Show
+	Class == "Thrusting One Hand Swords"
+    #.import STYLE | miscellaneous -> catchall

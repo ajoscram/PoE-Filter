@@ -3,64 +3,51 @@
 Show
 	Class == "Maps"
 	Rarity = Unique
-	#.import < < styles > mapping -> unique
 
 Show
 	Continue
 	#.strict 2
 	MapTier >= 1
-	#.import < < styles > mapping -> white
 Show
 	Continue
 	#.strict 3
 	MapTier > 5
-	#.import < < styles > mapping -> yellow
 Show
 	Continue
 	#.strict 4
 	MapTier > 10
-	#.import < < styles > mapping -> red
 Show
 	Continue
 	MapTier = 16
-	#.import < < styles > mapping -> high_red
 Show
     Continue
     MapTier = 17
-    #.import < < styles > mapping -> purple
 
 Show
 	ElderMap True
-	#.import < < styles > mapping -> elder
 
 Show
 	ShapedMap True
-	#.import < < styles > mapping -> shaper
 
 Show
     ZanaMemory True
-	#.import < < styles > mapping -> shaper
 
 Show
 	BlightedMap True
-	#.import < < styles > mapping -> blight
 
 Show
 	UberBlightedMap True
-	#.import < < styles > mapping -> uber_blight
 
 Show
-	#.strict 2
 	MapTier <= 5
 	Class == "Maps"
 
 Show
-	#.strict 3
 	MapTier <= 10
 	Class == "Maps"
 
 Show
-	#.strict 4
+	#.strict STRICTNESS_STRICT
 	MapTier <= 15
 	Class == "Maps"
 

@@ -1,0 +1,354 @@
+#.subsection Gloves
+
+#.alias GLOVES_BEST_BASE_DROP_LEVEL = 84
+#.alias GLOVES_BEST_MOD_ITEM_LEVEL  = 85
+#.alias GLOVES_EXCEPTIONAL_BASES    = "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Runic Gauntlets"
+
+#.alias GLOVES_EXCEPTIONAL_MODS     = "Subterranean" "of the Underground" "Topotante's" "Xopec's" "of Puhuarte" "Brinerot" "Sentinel's" "Infamous" "of Infamy" "Haunted" "of Haunting"
+#.alias GLOVES_GRAND_MODS           = "Athlete's" "Masterwork" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Zaffre" "Durable" "Legend's" "Seraphim's" "Unassailable" "Seething" "Vaporous" "Mirage's" "Impregnable" "Encased" "of the Gods" "of the Blur" "of Raiding" "of Grandmastery" "of Lioneye" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of Nullification" "of the Genius" "of Ardour" "of Runes"
+#.alias GLOVES_GREATER_MODS         = "Virile" "Owen's" "Exquisite" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Blue" "Flexible" "Hero's" "Prior's" "Deacon's" "Djinn's" "Indomitable" "Pulsing" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Honed" "Girded" "Mammoth's" "Carapaced" "Urchin's" "Pirate's" "of the Titan" "of the Wind" "of the Remora" "of Thirst" "of Plunder" "of Mastery" "of the Ranger" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Rejuvenation" "of Youth" "of Abjuration" "of the Virtuoso" "of Buffering" "of Inscription"
+#.alias GLOVES_LESSER_MODS          = "Rotund" "Annest's" "Elegant" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Mazarine" "Pliant" "Duelist's" "Monk's" "Acolyte's" "Naga's" "Dauntless" "Radiating" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Polished" "Scorching" "Frozen" "Arcing" "Thickened" "Elephant's" "Plated" "Oyster's" "Magpie's" "of the Leviathan" "of the Phantom" "of Ease" "of Skill" "of the Marksman" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Runic Gages" "Goliath Gauntlets" "Carnal Mitts" "Ancient Gauntlets" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 100
+    BaseType == "Vaal Gauntlets"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Samite Gloves" "Fingerless Silk Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Zealot Gloves" "Martyr Gloves" "Runic Gauntlets" "Hydrascale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Silk Gloves" "Riveted Gloves" "Murder Mitts" "Embroidered Gloves" "Deerskin Gloves"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 10 100
+    BaseType == "Vaal Gauntlets"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Arcanist Gloves" "Bronzescale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Slink Gloves" "Crusader Gloves" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets" "Ironscale Gauntlets" "Shagreen Gloves" "Clasped Mitts" "Soldier Gloves" "Goliath Gauntlets" "Hydrascale Gauntlets" "Silk Gloves" "Wyrmscale Gauntlets" "Steelscale Gauntlets" "Wool Gloves" "Steel Gauntlets" "Iron Gauntlets" "Murder Mitts" "Deerskin Gloves" "Mesh Gloves" "Satin Gloves" "Strapped Mitts" "Samite Gloves" "Nubuck Gloves" "Goathide Gloves" "Serpentscale Gauntlets" "Zealot Gloves" "Chain Gloves" "Carnal Mitts" "Vaal Gauntlets" "Wrapped Mitts" "Ancient Gauntlets" "Spiked Gloves" "Velvet Gloves" "Conjurer Gloves"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    #.import STYLE | armour > unique -> t3
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Samite Gloves" "Arcanist Gloves" "Zealot Gloves" "Satin Gloves"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica True
+    #.import STYLE | armour > unique -> t3
+
+# Exceptional Mods
+
+Show
+    Class == "Gloves"
+    HasExplicitMod == GLOVES_EXCEPTIONAL_MODS
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Gloves"
+    HasExplicitMod == GLOVES_EXCEPTIONAL_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Class == "Gloves"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t1
+    #.multi
+        HasExplicitMod ==6 GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod >=5 GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show
+    Class == "Gloves"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t2
+    #.multi
+        HasExplicitMod >=5 GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod >=4 GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_STRICT
+    Class == "Gloves"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t2
+    #.multi
+        HasExplicitMod >=3 GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_LENIENT
+    Class == "Gloves"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t3
+    #.multi
+        HasExplicitMod >=3 GLOVES_GREATER_MODS GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 GLOVES_GREATER_MODS GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_BASE
+    Class == "Gloves"
+    Rarity == Rare
+    #.import STYLE | armour > rare -> t3
+    #.multi
+        HasExplicitMod >=3 GLOVES_LESSER_MODS GLOVES_GREATER_MODS GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod >=2 GLOVES_LESSER_MODS GLOVES_GREATER_MODS GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+# Magic
+
+Show
+    Class == "Gloves"
+    Rarity == Magic
+    HasExplicitMod ==2 GLOVES_GRAND_MODS
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import STYLE | armour > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Class == "Gloves"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t2
+    #.multi
+        HasExplicitMod ==2 GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod == GLOVES_GRAND_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_LENIENT
+    Class == "Gloves"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == GLOVES_GRAND_MODS
+    #.multi
+        HasExplicitMod ==2 GLOVES_GREATER_MODS
+    #.multi
+        HasExplicitMod == GLOVES_GREATER_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+Show #.strict STRICTNESS_BASE
+    Class == "Gloves"
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == GLOVES_GREATER_MODS
+    #.multi
+        HasExplicitMod ==2 GLOVES_LESSER_MODS
+    #.multi
+        HasExplicitMod == GLOVES_LESSER_MODS
+        DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+
+# Fractured
+
+Show
+    Class == "Gloves"
+    FracturedItem True
+    HasExplicitMod == GLOVES_GRAND_MODS
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Gloves"
+    FracturedItem True
+    HasExplicitMod == GLOVES_GRAND_MODS
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    FracturedItem True
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Gloves"
+    FracturedItem True
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3_rare
+    #.import _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    Class == "Gloves"
+    SynthesisedItem True
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    Class == "Gloves"
+    SynthesisedItem True
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t2
+
+# Influenced
+
+Show
+    Class == "Gloves"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Gloves"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+# Eater / Exarch
+
+Show
+    Class == "Gloves"
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+Show
+    Class == "Gloves"
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> multi_t3
+
+# Memory Strands
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t1
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t2
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t3
+
+# High Quality
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    Quality == 30
+    #.import _util -> multi_t1
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    Quality == 30
+    #.import _util -> multi_t2
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+# Exceptional Base
+
+Show
+    BaseType == GLOVES_EXCEPTIONAL_BASES
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == GLOVES_EXCEPTIONAL_BASES
+    #.import _util -> multi_t3
+
+# Best Base
+
+Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    BaseDefencePercentile == 100
+    #.import _util -> craftable
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
+    #.import _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Gloves"
+    DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
+    #.import _util -> craftable

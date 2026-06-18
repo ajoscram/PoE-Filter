@@ -1,0 +1,5 @@
+#.subsection Staff
+
+Show
+	Class == "Staves"
+    #.import STYLE | miscellaneous -> catchall

@@ -1,0 +1,5 @@
+#.subsection Belt
+
+Show
+	Class == "Belts"
+    #.import STYLE | miscellaneous -> catchall

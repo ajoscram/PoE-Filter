@@ -1,5 +1,9 @@
 # Mirage
 
+## 3.28b
+### General Changes
+* **Charms** and **Sentinels** have been removed, because their support was anemic and they are effectively removed from the game.
+
 ## 3.28
 ### League Changes
 * Added the new **Astrolabe** items.
@@ -18,6 +22,8 @@
 * Added the new **divination cards**.
 * Added support for all existing **exceptional** gems.
 * Added support for **imbued** gems.
+
+# Keepers of the Flame
 
 ## 3.27b
 ### League Changes

@@ -3,13 +3,13 @@
 Show
 	#.econ via 10
 	BaseType == "Vial of the Ghost" "Vial of Transcendence" "Vial of Awakening" "Vial of Sacrifice" "Vial of Dominance" "Vial of Consequence" "Vial of Summoning"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	#.econ via 0 10
 	BaseType == "Vial of Fate" "Vial of the Ritual"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType "Vial of"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
