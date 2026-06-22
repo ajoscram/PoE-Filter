@@ -40,7 +40,7 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod == HYBRID_FLASK_GRAND_MODS HYBRID_FLASK_GREATER_MODS
+    HasExplicitMod == HYBRID_FLASK_GREATER_MODS
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 

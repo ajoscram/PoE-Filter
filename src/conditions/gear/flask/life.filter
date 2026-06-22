@@ -40,7 +40,7 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod == LIFE_FLASK_GRAND_MODS LIFE_FLASK_GREATER_MODS
+    HasExplicitMod == LIFE_FLASK_GREATER_MODS
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
