@@ -21,7 +21,7 @@
 #.alias GEAR_OFFHANDS   = "Shields" "Quivers"
 #.alias GEAR_WEAPONS    = "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves"
 #.alias GEAR_JEWELLERY  = "Amulets" "Belts" "Rings" "Trinkets" "Jewels"
-#.alias GEAR_FLASKS     = "Life Flasks" "Mana Flasks" "Utility Flasks" "Tinctures"
+#.alias GEAR_FLASKS     = "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Tinctures"
 
 #.alias GEAR_PROGRESSABLE_FLASKS = "Life Flasks" "Mana Flasks"
 #.alias GEAR_6_SOCKET_ARMOUR     = "Body Armours"

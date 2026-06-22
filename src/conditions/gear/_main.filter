@@ -1,32 +1,41 @@
-#.section Gear
-
 #.import constants
 #.import priming
 
+#.section Special Uniques
+#.import unique > foulborn
+#.import unique > replica
+
+#.section Jewel
 #.import jewel > base
 #.import jewel > abyss
 #.import jewel > cluster_large
 #.import jewel > cluster_medium
 #.import jewel > cluster_small
 
+#.section Jewellery
 #.import jewellery > amulet
 #.import jewellery > belt
 #.import jewellery > ring
 #.import jewellery > trinket
 
+#.section Flask
 #.import flask > life
 #.import flask > mana
+#.import flask > hybrid
 #.import flask > utility
 #.import flask > tincture
 
+#.section Armour
 #.import armour > body_armour
 #.import armour > boots
 #.import armour > gloves
 #.import armour > helmet
 
+#.section Offhand
 #.import offhand > shield
 #.import offhand > quiver
 
+#.section Weapon
 #.import weapon > axe_1h
 #.import weapon > axe_2h
 #.import weapon > bow

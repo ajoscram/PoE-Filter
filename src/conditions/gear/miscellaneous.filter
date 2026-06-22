@@ -1,4 +1,4 @@
-#.subsection Miscellaneous
+#.section Miscellaneous Gear
 
 # Uniques
 
@@ -145,6 +145,16 @@ Show #.strict STRICTNESS_BASE .if Show
         SocketGroup RGB
     #.multi
         LinkedSockets == 3
+
+# Quality
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_FLASKS
+    Quality >= 15
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_FLASKS
+    Quality >= 10
 
 # Progression
 

@@ -1,5 +1,73 @@
 #.subsection Tincture
 
+#.alias TINCTURE_BEST_MOD_ITEM_LEVEL  = 85
+#.alias TINCTURE_GRAND_MODS           = "Horticultural" "Enriched" "of Dissolution" "of Overpowering" "of Ferocity" "of Mastery" "of Regrowth" "of Devouring"
+#.alias TINCTURE_GREATER_MODS         = "Medicinal" "Concentrated" "Persevering" "of the Beast" "of Melting" "of the Unleashed" "of Fury" "of Ease" "of Restoration" "of Siphoning" "of Overwhelming"
+#.alias TINCTURE_LESSER_MODS          = "Natural" "Potent" "Persistent" "of the Savage" "of Liquefaction" "of Empowering" "of Rage" "of Skill" "of Assassination" "of Rejuvenation" "of Enveloping" "of Crushing"
+
+# Unique
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Tinctures"
+    Rarity == Unique
+    #.import STYLE | flask > unique -> t3
+
+# Magic
+
 Show
-	Class == "Tinctures"
-    #.import STYLE | miscellaneous -> catchall
+    Class == "Tinctures"
+    HasExplicitMod ==2 TINCTURE_GRAND_MODS
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Tinctures"
+    HasExplicitMod ==2 TINCTURE_GRAND_MODS TINCTURE_GREATER_MODS
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == "Tinctures"
+    HasExplicitMod ==2 TINCTURE_GRAND_MODS TINCTURE_GREATER_MODS TINCTURE_LESSER_MODS
+    #.import STYLE | flask > magic -> t3
+
+# High Quality
+
+Show
+    Class == "Tinctures"
+    Quality >= 25
+    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    Class == "Tinctures"
+    Quality >= 25
+    #.import _util -> multi_t2
+
+Show
+    Class == "Tinctures"
+    Quality >= 20
+    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Tinctures"
+    Quality >= 20
+    #.import _util -> multi_t3
+
+# Best Base
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Tinctures"
+    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t3
+
+# Progression
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Tinctures"
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import < _util -> craftable
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == "Tinctures"
+    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.import < _util -> craftable

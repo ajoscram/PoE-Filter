@@ -37,5 +37,5 @@ get_styles(){
 # gets the list of the filter's strictness names and values
 get_strictness_values(){
     cat src/conditions/constants.filter | \
-    sed -rn 's/^[[:space:]]*#\.alias[[:space:]]*([[:alnum:]]+)[[:space:]]*=[[:space:]]*([[:digit:]]+)/\1 \2/p'
+    sed -rn 's/^[[:space:]]*#\.alias[[:space:]]*STRICTNESS_([[:alnum:]]+)[[:space:]]*=[[:space:]]*([[:digit:]]+)/\1 \2/p'
 }

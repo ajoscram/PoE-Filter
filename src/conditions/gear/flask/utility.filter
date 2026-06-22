@@ -1,5 +1,93 @@
 #.subsection Utility Flask
 
+#.alias UTILITY_FLASK_BEST_MOD_ITEM_LEVEL = 85
+#.alias UTILITY_FLASK_GRAND_MODS          = "Perpetual" "Surgeon's" "Flagellant's" "Experimenter's" "Alchemist's" "of the Armadillo" "of the Impala" "of the Cheetah" "of Incision" "of Tenaciousness" "of the Owl" "of Bog Moss" "of Craft" "of the Opossum" "of the Eel" "of the Penguin" "of the Iguana"
+#.alias UTILITY_FLASK_GREATER_MODS        = "Ample" "Bottomless" "Specialist's" "Masochist's" "Clinician's" "Dabbler's" "Chemist's" "of the Pangolin" "of the Ibex" "of the Lynx" "of the Rainbow" "of Bloodletting" "of Draining" "of Penetrating" "of Relentlessness" "of the Kakapo" "of Plume Moss" "of the Opossum" "of the Moray" "of the Walrus" "of the Starfish" "of the Skink"
+#.alias UTILITY_FLASK_LESSER_MODS         = "Abundant" "Endless" "Doctor's" "Transgressor's" "Examiner's" "Abecedarian's" "Brewer's" "of the Tortoise" "of the Antelope" "of the Hare" "of the Kaleidoscope" "of Butchery" "of Siphoning" "of Rupturing" "of Persistence" "of the Curlew" "of Tooth Moss" "of the Skunk" "of the Conger" "of the Deer" "of the Mussel" "of the Lizard"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Iron Flask" "Gold Flask" "Quartz Flask" "Bismuth Flask" "Amethyst Flask" "Silver Flask" "Sulphur Flask" "Ruby Flask"
+    Class == "Utility Flasks" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | flask > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Sapphire Flask" "Granite Flask" "Stibnite Flask"
+    Class == "Utility Flasks" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | flask > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Granite Flask" "Topaz Flask" "Bismuth Flask" "Quartz Flask" "Quicksilver Flask" "Amethyst Flask" "Sulphur Flask" "Ruby Flask" "Stibnite Flask"
+    Class == "Utility Flasks" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | flask > unique -> t3
+
+# Magic
+
 Show
-	Class == "Utility Flasks"
-    #.import STYLE | miscellaneous -> catchall
+    Class == "Utility Flasks"
+    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Utility Flasks"
+    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS UTILITY_FLASK_GREATER_MODS
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == "Utility Flasks"
+    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS UTILITY_FLASK_GREATER_MODS UTILITY_FLASK_LESSER_MODS
+    #.import STYLE | flask > magic -> t3
+
+# High Quality
+
+Show
+    Class == "Utility Flasks"
+    Quality >= 25
+    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    Class == "Utility Flasks"
+    Quality >= 25
+    #.import _util -> multi_t2
+
+Show
+    Class == "Utility Flasks"
+    Quality >= 20
+    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Utility Flasks"
+    Quality >= 20
+    #.import _util -> multi_t3
+
+# Best Base
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Utility Flasks"
+    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    #.import < _util -> craftable
+    #.import _util -> multi_t3
+
+# Progression
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Utility Flasks"
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import < _util -> craftable
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == "Utility Flasks"
+    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.import < _util -> craftable

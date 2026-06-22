@@ -1,5 +1,91 @@
 #.subsection Mana Flask
 
+#.alias MANA_FLASK_BEST_MOD_ITEM_LEVEL  = 82
+#.alias MANA_FLASK_BEST_BASE            = "Eternal Mana Flask"
+#.alias MANA_FLASK_FLASK_GRAND_MODS     = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"
+#.alias MANA_FLASK_FLASK_GREATER_MODS   = "of Restraint" "of Allaying" "of Liberation" "of Insulation" "of Quelling" "of Entropy" "of the Cure"
+#.alias MANA_FLASK_FLASK_LESSER_MODS    = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
+
+# Unique
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Mana Flasks"
+    Rarity == Unique
+    Replica False
+    #.import STYLE | flask > unique -> t3
+
+# Magic
+
 Show
-	Class == "Mana Flasks"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == MANA_FLASK_BEST_BASE
+    HasExplicitMod ==2 MANA_FLASK_GRAND_MODS
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    HasExplicitMod ==2 MANA_FLASK_GRAND_MODS MANA_FLASK_GREATER_MODS
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    HasExplicitMod ==2 MANA_FLASK_GRAND_MODS MANA_FLASK_GREATER_MODS MANA_FLASK_LESSER_MODS
+    #.import STYLE | flask > magic -> t3
+
+# Fractured
+
+Show
+    BaseType == MANA_FLASK_BEST_BASE
+    HasExplicitMod == MANA_FLASK_GRAND_MODS
+    FracturedItem True
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    HasExplicitMod == MANA_FLASK_GRAND_MODS MANA_FLASK_GREATER_MODS
+    FracturedItem True
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    FracturedItem True
+    #.import STYLE | flask > magic -> t3
+
+# High Quality
+
+Show
+    BaseType == MANA_FLASK_BEST_BASE
+    Quality >= 30
+    #.import _util -> multi_t1
+
+Show
+    BaseType == MANA_FLASK_BEST_BASE
+    Quality >= 26
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    Quality >= 23
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    Quality >= 20
+    #.import _util -> multi_t3
+
+# Best Base
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    ItemLevel >= MANA_FLASK_BEST_MOD_ITEM_LEVEL
+    #.import < _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == MANA_FLASK_BEST_BASE
+    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.import < _util -> craftable
+
+Show
+    BaseType == MANA_FLASK_BEST_BASE
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import < _util -> craftable

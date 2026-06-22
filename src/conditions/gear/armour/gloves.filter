@@ -16,13 +16,7 @@ Show #.econ uni 100
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
-    #.import STYLE | armour > unique -> t1
-
-Show #.econ uni 100
-    BaseType == "Vaal Gauntlets"
-    Class == "Gloves" #.format
-    Rarity == Unique
-    Replica True
+    Foulborn False
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
@@ -30,13 +24,7 @@ Show #.econ uni 10 100
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
-    #.import STYLE | armour > unique -> t2
-
-Show #.econ uni 10 100
-    BaseType == "Vaal Gauntlets"
-    Class == "Gloves" #.format
-    Rarity == Unique
-    Replica True
+    Foulborn False
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
@@ -44,13 +32,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
-    #.import STYLE | armour > unique -> t3
-
-Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Samite Gloves" "Arcanist Gloves" "Zealot Gloves" "Satin Gloves"
-    Class == "Gloves" #.format
-    Rarity == Unique
-    Replica True
+    Foulborn False
     #.import STYLE | armour > unique -> t3
 
 # Exceptional Mods
@@ -338,17 +320,17 @@ Show
     DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
     ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
     BaseDefencePercentile == 100
-    #.import _util -> craftable
+    #.import < _util -> craftable
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Gloves"
     DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
     ItemLevel >= GLOVES_BEST_MOD_ITEM_LEVEL
-    #.import _util -> craftable
+    #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Gloves"
     DropLevel >= GLOVES_BEST_BASE_DROP_LEVEL
-    #.import _util -> craftable
+    #.import < _util -> craftable
