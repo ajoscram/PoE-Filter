@@ -13,22 +13,22 @@ Show #.strict STRICTNESS_STRICT .if Show
         Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
         LinkedSockets == 5
     #.multi
-        Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+        Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_JEWELS
         CorruptedMods == 2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Rarity == Unique
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS
     CorruptedMods == 1
 
 Show #.strict STRICTNESS_BASE .if Show
     Rarity == Unique
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
 
 # Fractured
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_JEWELLERY GEAR_FLASKS
+    Class == GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
     FracturedItem True
 
 Show #.strict STRICTNESS_BASE .if Show
@@ -38,7 +38,7 @@ Show #.strict STRICTNESS_BASE .if Show
 # Synthesized
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS
     SynthesisedItem True
 
 # Influenced
@@ -81,14 +81,17 @@ Show #.strict STRICTNESS_BASE .if Show
 
 # Memory Strands
 
-Show
+Show #.strict STRICTNESS_STRICT .if Show
     Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
-    #.multi
-        MemoryStrands >= 75 #.strict STRICTNESS_STRICT .if Show
-    #.multi
-        MemoryStrands >= 50 #.strict STRICTNESS_LENIENT .if Show
-    #.multi
-        MemoryStrands >= 25 #.strict STRICTNESS_BASE .if Show
+    MemoryStrands >= 75
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    MemoryStrands >= 50
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    MemoryStrands >= 25
 
 # Veiled
 
@@ -112,13 +115,23 @@ Show #.strict STRICTNESS_BASE .if Show
 # Legacy
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
     #.multi
 	    HasCruciblePassiveTree True
     #.multi
         Scourged True
     #.multi
         AnyEnchantment True
+
+# Corrupted
+
+Show
+    Class == GEAR_JEWELS
+    CorruptedMods == 2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == GEAR_JEWELS
+    CorruptedMods == 1
 
 # Sockets
 
@@ -201,7 +214,7 @@ Show #.strict STRICTNESS_BASE .if Show
         Rarity >= Magic
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_FLASKS
+    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
     AreaLevel == LEVEL_ACT_1_START
 
 # Hidden
@@ -217,7 +230,7 @@ Hide
     #.import weapon > _util -> multi_t5_full
 
 Hide
-    Class == GEAR_JEWELLERY
+    Class == GEAR_JEWELLERY GEAR_JEWELS
     #.import STYLE | miscellaneous -> hidden
     #.import jewellery > _util -> multi_t5_full
 

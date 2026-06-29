@@ -1,10 +1,10 @@
-#.subsection Mana Flask
+#.subsection Mana
 
-#.alias MANA_FLASK_BEST_MOD_ITEM_LEVEL  = 82
-#.alias MANA_FLASK_BEST_BASE            = "Eternal Mana Flask"
-#.alias MANA_FLASK_FLASK_GRAND_MODS     = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"
-#.alias MANA_FLASK_FLASK_GREATER_MODS   = "of Restraint" "of Allaying" "of Liberation" "of Insulation" "of Quelling" "of Entropy" "of the Cure"
-#.alias MANA_FLASK_FLASK_LESSER_MODS    = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
+#.alias MANA_FLASK_BEST_MOD_ITEM_LEVEL = 82
+#.alias MANA_FLASK_BEST_BASE           = "Eternal Mana Flask"
+#.alias MANA_FLASK_GRAND_MODS          = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"
+#.alias MANA_FLASK_GREATER_MODS        = "of Restraint" "of Allaying" "of Liberation" "of Insulation" "of Quelling" "of Entropy" "of the Cure"
+#.alias MANA_FLASK_LESSER_MODS         = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
 
 # Unique
 

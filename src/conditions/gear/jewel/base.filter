@@ -1,5 +1,103 @@
-#.subsection Base Jewel
+#.subsection Base
+
+#.alias BASE_JEWEL_BASE_TYPES       = "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Prismatic Jewel"
+#.alias BASE_JEWEL_GRAND_MODS       = "Shimmering" "Electromantic" "Cryomantic" "Pyromantic" "Resonant" "Warding" "Wright's" "Jinxing" "Arming" "Honed" "Slicing" "Ripping" "Volleying" "Blunt" "Fencing" "Cleaving" "Beating" "Charging" "Harmonic" "Warrior's" "Bandit's" "Vivid" "Puncturing" "Rupturing" "Piercing" "Infernal" "Arctic" "Surging" "Decrepifying" "Cerebral" "of Wounding" "of Berserking" "of Zeal" "of Potency" "of Demolishing" "of the Elements" "of Order" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Poisoning" "of Exsanguinating" "of Atrophy" "of Gelidity" "of Zealousness" "of Acrimony" "of Absorption" "of Enchanting" "of Unmaking"
+#.alias BASE_JEWEL_GREATER_MODS     = "Master's" "Leadership" "Battlemage's" "Sorcerer's" "Wizard's" "Cruel" "Evasive" "Trapping" "Sabotage" "Fierce" "Savage" "Lethal" "Judging" "Vicious" "Sinister" "Brutal" "Flanking" "Gladiator's" "Champion's" "Soldier's" "Flaming" "Chilling" "Humming" "Sharpened" "Chaotic" "Enlightened" "Armoured" "Deflecting" "Shielding" "Parrying" "Halting" "Thwarting" "Dissipating" "of Archery" "of Combat" "of Entropy" "of Blasting" "of Strength" "of Dexterity" "of Intelligence" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of Rejuvenation" "of the Dragon" "of the Beast" "of Grounding" "of the Hearth" "of Insulation" "of Shelter" "of Impaling" "of Venom" "of Haemophilia" "of Combusting" "of Mysticism" "of Soaring" "of Focus"
+#.alias BASE_JEWEL_LESSER_MODS      = "Serene" "Technical" "Sundering" "Harming" "Incinerating" "Avalanching" "Thundering" "Shaman's" "Prolonging" "Carved" "of Hungering" "of Infusion" "of Menace" "of Weight" "of the Apocalypse" "of Stunning" "of Hexwarding" "of Precision" "of Deadliness" "of Annihilation"
+
+# Unique
 
 Show
-	BaseType == "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Prismatic Jewel"
-    #.import STYLE | miscellaneous -> catchall
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t1
+    #.multi
+        BaseType == "Prismatic Jewel"
+    #.multi
+        BaseType == "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+        Corrupted False
+
+Show
+    BaseType == "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t2
+
+# Fractured
+
+Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    FracturedItem True
+    HasExplicitMod == BASE_JEWEL_GRAND_MODS
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    FracturedItem True
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Synthesized
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    SynthesisedItem True
+    #.import < jewellery > _util -> multi_t2
+
+# Rare
+
+Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Rare
+    HasExplicitMod >=3 BASE_JEWEL_GRAND_MODS
+    #.import STYLE | jewellery > rare -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t3
+    #.multi
+        HasExplicitMod >=2 BASE_JEWEL_GRAND_MODS
+    #.multi
+        HasExplicitMod >=3 BASE_JEWEL_GRAND_MODS BASE_JEWEL_GREATER_MODS
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t3
+    #.multi
+        HasExplicitMod >=2 BASE_JEWEL_GRAND_MODS BASE_JEWEL_GREATER_MODS
+    #.multi
+        HasExplicitMod >=3 BASE_JEWEL_GRAND_MODS BASE_JEWEL_GREATER_MODS BASE_JEWEL_LESSER_MODS
+
+# Magic
+
+Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Magic
+    HasExplicitMod ==2 BASE_JEWEL_GRAND_MODS
+    #.import STYLE | jewellery > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Magic
+    #.import STYLE | jewellery > magic -> t3
+    #.multi
+        HasExplicitMod == BASE_JEWEL_GRAND_MODS
+    #.multi
+        HasExplicitMod ==2 BASE_JEWEL_GREATER_MODS
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    Rarity == Magic
+    #.import STYLE | jewellery > magic -> t3
+    #.multi
+        HasExplicitMod == BASE_JEWEL_GREATER_MODS
+    #.multi
+        HasExplicitMod ==2 BASE_JEWEL_LESSER_MODS
+
+# Miscellaneous
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASE_JEWEL_BASE_TYPES
+    #.import < _util -> craftable
+    #.import < jewellery > _util -> multi_t3

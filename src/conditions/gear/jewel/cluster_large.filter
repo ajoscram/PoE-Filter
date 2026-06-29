@@ -1,5 +1,722 @@
-#.subsection Large Cluster Jewel
+#.subsection Large Cluster
+
+#.alias LARGE_CLUSTER_NOTABLE_MODS = "Notable" "of Significance"
+#.alias LARGE_CLUSTER_GRAND_MODS   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "Powerful" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Mastery" "of Expertise" "of Manifesting" "of the Earthquake" "of Flashfires" "of the Strike" "of the Avalanche" "of the Eclipse" "of Razing"
+#.alias LARGE_CLUSTER_GREATER_MODS = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "Potent" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Flatworm" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of Banishment" "of the Lost" "of Ease" "of Nimbleness" "of Evoking" "of Tremors" "of Smoke" "of Sudden Storms" "of Frigidity" "of Midnight" "of Ravaging"
+#.alias LARGE_CLUSTER_LESSER_MODS  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Prodigy" "of the Cloud" "of the Lizard" "of the Whelpling" "of the Inuit" "of the Cloud" "of the Crystal" "of Skill" "of Talent" "of Coaxing" "of Rumbling" "of Kindling" "of Gathering Clouds" "of Cooling" "of Dusk" "of Pillaging"
+
+# Unique
 
 Show
-	BaseType == "Large Cluster Jewel"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == "Large Cluster Jewel"
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t1
+
+# Notable Mods
+
+Show
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    HasExplicitMod ==3 LARGE_CLUSTER_NOTABLE_MODS
+    #.import STYLE | jewellery > rare -> t1
+
+Show
+    BaseType == "Large Cluster Jewel"
+    HasExplicitMod >=2 LARGE_CLUSTER_NOTABLE_MODS
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Large Cluster Jewel"
+    HasExplicitMod == LARGE_CLUSTER_NOTABLE_MODS
+    HasExplicitMod <=2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Rare
+
+Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS
+    #.import STYLE | jewellery > rare -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS
+    #.import STYLE | jewellery > rare -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    #.import STYLE | jewellery > rare -> t3
+
+# Magic
+
+Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS
+    #.import STYLE | jewellery > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS
+    #.import STYLE | jewellery > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == "Large Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    #.import STYLE | jewellery > magic -> t3
+
+# Fractured
+
+Show
+    BaseType == "Large Cluster Jewel"
+    FracturedItem True
+    HasExplicitMod == LARGE_CLUSTER_NOTABLE_MODS LARGE_CLUSTER_GRAND_MODS
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Large Cluster Jewel"
+    FracturedItem True
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Synthesized
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == "Large Cluster Jewel"
+    SynthesisedItem True
+    #.import < jewellery > _util -> multi_t2
+
+# 12 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage" "Spell Damage" "Minion Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Physical Damage" "Elemental Damage" "Attack Damage while holding a Shield" "Damage with Two Handed Weapons" "Attack Damage while Dual Wielding" "Axe and Sword Damage" "Lightning Damage" "Dagger and Claw Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Cold Damage" "Mace and Staff Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 12 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Cold Damage" "Attack Damage while Dual Wielding" "Elemental Damage" "Minion Damage" "Axe and Sword Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Cold Damage" "Attack Damage while Dual Wielding" "Elemental Damage" "Minion Damage" "Axe and Sword Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Cold Damage" "Attack Damage while Dual Wielding" "Elemental Damage" "Minion Damage" "Axe and Sword Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 12 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Mace and Staff Damage" "Physical Damage" "Attack Damage while holding a Shield" "Cold Damage" "Elemental Damage" "Damage with Two Handed Weapons" "Attack Damage while Dual Wielding" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Mace and Staff Damage" "Physical Damage" "Attack Damage while holding a Shield" "Cold Damage" "Elemental Damage" "Damage with Two Handed Weapons" "Attack Damage while Dual Wielding" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 12 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage" "Chaos Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Minion Damage" "Lightning Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Physical Damage" "Elemental Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Dagger and Claw Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 12 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Minion Damage" "Attack Damage while holding a Shield" "Bow Damage" "Attack Damage while Dual Wielding" "Lightning Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Axe and Sword Damage" "Chaos Damage" "Elemental Damage" "Damage with Two Handed Weapons" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 12
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# 11 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Axe and Sword Damage" "Physical Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Mace and Staff Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Minion Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Wand Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Fire Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Spell Damage" "Dagger and Claw Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 11 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Elemental Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Elemental Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Bow Damage" "Elemental Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 11 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Wand Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Wand Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Minion Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Axe and Sword Damage" "Fire Damage" "Elemental Damage" "Bow Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Dagger and Claw Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 11 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Axe and Sword Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Elemental Damage" "Dagger and Claw Damage" "Lightning Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Physical Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Attack Damage while Dual Wielding" "Minion Damage" "Damage with Two Handed Weapons" "Spell Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 11 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Spell Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Elemental Damage" "Mace and Staff Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Minion Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Dagger and Claw Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 11
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# 10 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Fire Damage" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Dagger and Claw Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Physical Damage" "Elemental Damage" "Attack Damage while holding a Shield" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Spell Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 10 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Physical Damage" "Mace and Staff Damage" "Fire Damage" "Chaos Damage" "Elemental Damage" "Bow Damage" "Cold Damage" "Attack Damage while holding a Shield" "Attack Damage while Dual Wielding" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Damage with Two Handed Weapons"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Physical Damage" "Mace and Staff Damage" "Fire Damage" "Chaos Damage" "Elemental Damage" "Bow Damage" "Cold Damage" "Attack Damage while holding a Shield" "Attack Damage while Dual Wielding" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Damage with Two Handed Weapons"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Physical Damage" "Mace and Staff Damage" "Fire Damage" "Chaos Damage" "Elemental Damage" "Bow Damage" "Cold Damage" "Attack Damage while holding a Shield" "Attack Damage while Dual Wielding" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Damage with Two Handed Weapons"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 10 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Mace and Staff Damage" "Fire Damage" "Physical Damage" "Elemental Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Mace and Staff Damage" "Fire Damage" "Physical Damage" "Elemental Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 10 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Physical Damage" "Chaos Damage" "Attack Damage while Dual Wielding" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 10 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Wand Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Attack Damage" "Lightning Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Chaos Damage" "Cold Damage" "Bow Damage" "Elemental Damage" "Attack Damage while holding a Shield" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Spell Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 10
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# 9 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Axe and Sword Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Minion Damage" "Physical Damage" "Bow Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Dagger and Claw Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 9 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Axe and Sword Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Axe and Sword Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Minion Damage" "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Physical Damage" "Fire Damage" "Axe and Sword Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Bow Damage" "Attack Damage while Dual Wielding" "Mace and Staff Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 9 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Bow Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Dagger and Claw Damage" "Attack Damage" "Chaos Damage" "Axe and Sword Damage" "Mace and Staff Damage" "Physical Damage" "Attack Damage while holding a Shield" "Elemental Damage" "Cold Damage" "Attack Damage while Dual Wielding" "Minion Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 9 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Bow Damage" "Wand Damage" "Physical Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Axe and Sword Damage" "Damage with Two Handed Weapons"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Mace and Staff Damage" "Attack Damage while holding a Shield" "Cold Damage" "Attack Damage while Dual Wielding" "Minion Damage" "Lightning Damage" "Spell Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 9 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Chaos Damage" "Attack Damage while Dual Wielding"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chaos Damage" "Attack Damage while Dual Wielding"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Axe and Sword Damage" "Physical Damage" "Cold Damage" "Spell Damage" "Minion Damage" "Damage with Two Handed Weapons" "Dagger and Claw Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 9
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# 8 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Attack Damage while holding a Shield" "Chaos Damage" "Minion Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Physical Damage" "Fire Damage" "Cold Damage" "Bow Damage" "Spell Damage" "Mace and Staff Damage" "Axe and Sword Damage" "Lightning Damage" "Dagger and Claw Damage" "Wand Damage" "Damage with Two Handed Weapons"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Elemental Damage" "Attack Damage while Dual Wielding"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 8 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Chaos Damage" "Mace and Staff Damage" "Physical Damage" "Attack Damage while holding a Shield" "Cold Damage" "Bow Damage" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chaos Damage" "Mace and Staff Damage" "Physical Damage" "Attack Damage while holding a Shield" "Cold Damage" "Bow Damage" "Damage with Two Handed Weapons" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Elemental Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Dagger and Claw Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 8 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Cold Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Minion Damage" "Chaos Damage" "Physical Damage" "Attack Damage while holding a Shield" "Bow Damage" "Damage with Two Handed Weapons" "Mace and Staff Damage" "Axe and Sword Damage" "Lightning Damage" "Spell Damage" "Wand Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Elemental Damage" "Dagger and Claw Damage" "Attack Damage while Dual Wielding"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 8 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Attack Damage" "Chaos Damage" "Axe and Sword Damage" "Physical Damage" "Attack Damage while holding a Shield" "Bow Damage" "Elemental Damage" "Mace and Staff Damage" "Damage with Two Handed Weapons" "Lightning Damage" "Dagger and Claw Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Cold Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Minion Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Cold Damage" "Spell Damage" "Attack Damage while Dual Wielding" "Minion Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 8 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Wand Damage" "Mace and Staff Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chaos Damage" "Physical Damage" "Elemental Damage" "Cold Damage" "Damage with Two Handed Weapons" "Attack Damage while Dual Wielding" "Minion Damage" "Axe and Sword Damage" "Lightning Damage" "Dagger and Claw Damage" "Fire Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Attack Damage" "Spell Damage"
+    BaseType == "Large Cluster Jewel"
+    EnchantmentPassiveNum == 8
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# Miscellaneous
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == "Large Cluster Jewel"
+    #.import < _util -> craftable

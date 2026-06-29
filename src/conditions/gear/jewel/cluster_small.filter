@@ -1,5 +1,337 @@
-#.subsection Small Cluster Jewel
+#.subsection Small Cluster
+
+#.alias SMALL_CLUSTER_GRAND_MODS   = "Stout" "Cerulean" "Pulsing" "Plated" "Blurred" "Deadly" "Powerful" "of the Gorilla" "of the Panther" "of the Philosopher" "of the Heavens" "of the Hydra" "of the Furnace" "of the Walrus" "of the Tempest" "of the Storm" "of Exile"
+#.alias SMALL_CLUSTER_GREATER_MODS = "Stalwart" "Sapphire" "Radiating" "Fortified" "Fleet" "Destructive" "Potent" "of the Lion" "of the Falcon" "of the Augur" "of the Comet" "of the Starfish" "of the Kiln" "of the Yeti" "of the Thunderhead" "of Variegation" "of Expulsion" "of Eviction"
+#.alias SMALL_CLUSTER_LESSER_MODS  = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Flatworm" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of the Prism" "of Banishment" "of the Lost"
+
+# Unique
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t3
+
+# Notable Mods
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Small Cluster Jewel"
+    HasExplicitMod == "Notable"
+    HasExplicitMod <=2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Rare
 
 Show
-	BaseType == "Small Cluster Jewel"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == "Small Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS
+    #.import STYLE | jewellery > rare -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS
+    #.import STYLE | jewellery > rare -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Rare
+    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    #.import STYLE | jewellery > rare -> t3
+
+# Magic
+
+Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS
+    #.import STYLE | jewellery > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS
+    #.import STYLE | jewellery > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == "Small Cluster Jewel"
+    Rarity == Magic
+    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    #.import STYLE | jewellery > magic -> t3
+
+# Fractured
+
+Show
+    BaseType == "Small Cluster Jewel"
+    FracturedItem True
+    HasExplicitMod == "Notable" SMALL_CLUSTER_GRAND_MODS
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == "Small Cluster Jewel"
+    FracturedItem True
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Synthesized
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == "Small Cluster Jewel"
+    SynthesisedItem True
+    #.import < jewellery > _util -> multi_t2
+
+# 3 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Chance to Block Attack Damage" "Chance to Suppress Spell Damage"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Fire Resistance" "Chaos Resistance" "Life" "Cold Resistance" "Evasion" "Mana" "Armour" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 3 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Mana" "Armour" "Fire Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 3 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Cold Resistance" "Evasion" "Mana" "Armour" "Fire Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 3 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Fire Resistance" "Reservation Efficiency" "Chance to Block Attack Damage" "Mana" "Lightning Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Fire Resistance" "Reservation Efficiency" "Chance to Block Attack Damage" "Mana" "Lightning Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Spell Damage" "Armour" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 3 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Mana" "Chance to Block Attack Damage" "Energy Shield" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Mana" "Chance to Block Attack Damage" "Energy Shield" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Suppress Spell Damage" "Life" "Cold Resistance" "Armour" "Fire Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 3
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# 2 Passives - iLvl 84+
+
+Show #.econ clj 100
+    EnchantmentPassiveNode ==
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Reservation Efficiency" "Life" "Chance to Block Attack Damage" "Mana" "Armour" "Fire Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Cold Resistance" "Evasion" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel >= 84
+    #.import < jewellery > _util -> multi_t3
+
+# 2 Passives - iLvl 75 to 83
+
+Show #.econ clj 100
+    EnchantmentPassiveNode ==
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Mana" "Fire Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 83
+    ItemLevel >= 75
+    #.import < jewellery > _util -> multi_t3
+
+# 2 Passives - iLvl 68 to 74
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Mana" "Fire Resistance" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Chance to Block Spell Damage" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 74
+    ItemLevel >= 68
+    #.import < jewellery > _util -> multi_t3
+
+# 2 Passives - iLvl 50 to 67
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Chaos Resistance" "Lightning Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Mana" "Energy Shield" "Cold Resistance" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Life" "Evasion" "Chance to Block Spell Damage" "Armour" "Fire Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 67
+    ItemLevel >= 50
+    #.import < jewellery > _util -> multi_t3
+
+# 2 Passives - iLvl 49-
+
+Show #.econ clj 100
+    EnchantmentPassiveNode == "Chaos Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t1
+
+Show #.econ clj 10 100
+    EnchantmentPassiveNode == "Armour" "Curse Effect" "Chance to Suppress Spell Damage" "Reservation Efficiency"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t2
+
+Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
+    EnchantmentPassiveNode == "Lightning Resistance" "Life" "Cold Resistance" "Mana" "Chance to Block Spell Damage" "Fire Resistance"
+    BaseType == "Small Cluster Jewel"
+    EnchantmentPassiveNum == 2
+    ItemLevel <= 49
+    #.import < jewellery > _util -> multi_t3
+
+# Miscellaneous
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == "Small Cluster Jewel"
+    #.import < _util -> craftable

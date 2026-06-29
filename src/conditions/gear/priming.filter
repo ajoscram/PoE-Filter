@@ -14,7 +14,7 @@ Show
 
 Show
     Continue
-    Class == GEAR_JEWELLERY
+    Class == GEAR_JEWELLERY GEAR_JEWELS
     #.import jewellery > _util -> multi_t4_full
 
 Show
@@ -38,7 +38,7 @@ Show
 
 Show
     Continue
-    Class == GEAR_JEWELLERY
+    Class == GEAR_JEWELLERY GEAR_JEWELS
     SynthesisedItem True
     #.import jewellery > _util -> multi_t3
 
@@ -85,6 +85,12 @@ Show
     CorruptedMods >= 1
     #.import jewellery > _util -> multi_t3_full
 
+Show
+    Continue
+    Class == GEAR_JEWELS
+    CorruptedMods >= 1
+    #.import jewellery > _util -> multi_t2_full
+
 # 3+ Links
 
 Show
@@ -128,13 +134,6 @@ Show
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
     #.import weapon > _util -> multi_t2
-
-Show
-    Continue
-    Class == GEAR_JEWELLERY
-    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    HasExplicitMod == MODS_ELEVATED
-    #.import jewellery > _util -> multi_t2
 
 # Perfect Eater / Exarch
 
