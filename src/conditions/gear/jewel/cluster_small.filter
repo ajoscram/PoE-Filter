@@ -6,7 +6,7 @@
 
 # Unique
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show #.strict STRICTNESS_STRICT .if Show
     BaseType == "Small Cluster Jewel"
     Rarity == Unique
     #.import STYLE | jewellery > unique -> t3
@@ -209,7 +209,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 84+
 
 Show #.econ clj 100
-    EnchantmentPassiveNode ==
+    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Reservation Efficiency" "Life" "Chance to Block Attack Damage" "Mana" "Armour" "Fire Resistance"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel >= 84
@@ -232,7 +232,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode ==
+    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 83

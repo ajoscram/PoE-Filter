@@ -1,5 +1,275 @@
 #.subsection Warstaff
 
+#.alias STAFF_WAR_EXCEPTIONAL_BASES    = "Eventuality Rod" "Potentiality Rod"
+#.alias STAFF_WAR_BEST_BASES           = "Ezomyte Staff" "Maelström Staff" "Judgement Staff"
+
+#.alias STAFF_WAR_EXCEPTIONAL_MODS     = "Infamous" "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "of Exsanguinating" "of the Fanatical" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "of Infamy"
+#.alias STAFF_WAR_GRAND_MODS           = "Zaffre" "Anarchist's" "Tempest King's" "Winterbringer's" "Lava Caller's" "of the Gods" "of the Genius" "of Celebration" "of Hemorrhaging" "of the Zealous" "of Atrophying"
+#.alias STAFF_WAR_GREATER_MODS         = "Blue" "Paragon's" "Weaponmaster's" "Nihilist's" "Thunder Lord's" "Frost Weaver's" "Flame Spinner's" "of the Titan" "of the Virtuoso" "of Infamy" "of Ashes" "of Glaciation" "of Arcing" "of the Ranger" "of Conflagration" "of Phlebotomising" "of the Ardent" "of Deteriorating"
+#.alias STAFF_WAR_LESSER_MODS          = "Mazarine" "Combatant's" "of the Leviathan" "of the Savant" "of Fame" "of Immolation" "of Floe" "of Discharge" "of the Marksman" "of Combustion" "of Spilling" "of the Fervid" "of Wasting"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Foul Staff" "Maelström Staff" "Ezomyte Staff"
+    Class == "Warstaves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Serpentine Staff" "Judgement Staff" "Maelström Staff"
+    Class == "Warstaves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Vile Staff" "Iron Staff" "Judgement Staff" "Ezomyte Staff" "Coiled Staff" "Foul Staff" "Maelström Staff"
+    Class == "Warstaves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t3
+
+# Exceptional Mods
+
 Show
-	Class == "Warstaves"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == STAFF_WAR_BEST_BASES
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL STAFF_WAR_EXCEPTIONAL_MODS
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Warstaves"
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL STAFF_WAR_EXCEPTIONAL_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t1
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod ==6 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod >=5 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod >=5 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod >=4 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod >=3 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod >=3 MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod >=3 MODS_WEAPON_LESSER STAFF_WAR_LESSER_MODS MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_LESSER STAFF_WAR_LESSER_MODS MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+# Magic
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    Rarity == Magic
+    HasExplicitMod ==2 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.import STYLE | weapon > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t2
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod ==2 MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod == MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod ==2 MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod == MODS_WEAPON_GREATER STAFF_WAR_GREATER_MODS
+    #.multi
+        Class == "Warstaves"
+        HasExplicitMod ==2 MODS_WEAPON_LESSER STAFF_WAR_LESSER_MODS
+    #.multi
+        BaseType == STAFF_WAR_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_LESSER STAFF_WAR_LESSER_MODS
+
+# Fractured
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND STAFF_WAR_GRAND_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    FracturedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    FracturedItem True
+    #.import _util -> multi_t3_rare
+    #.import _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    SynthesisedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    SynthesisedItem True
+    #.import _util -> multi_t2
+
+# Influenced
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import _util -> multi_t3
+
+# Memory Strands
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t1
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t2
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    MemoryStrands == 100
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    MemoryStrands >= 50
+    #.import _util -> multi_t3
+
+# High Quality
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality == 30
+    #.import _util -> multi_t1
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    Quality == 30
+    #.import _util -> multi_t2
+
+Show
+    BaseType == STAFF_WAR_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    Quality > 25
+    #.import _util -> multi_t3
+
+# Exceptional Base
+
+Show
+    BaseType == STAFF_WAR_EXCEPTIONAL_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == STAFF_WAR_EXCEPTIONAL_BASES
+    #.import _util -> multi_t2
+
+# Best Base
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import < _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == STAFF_WAR_BEST_BASES
+    #.import < _util -> craftable

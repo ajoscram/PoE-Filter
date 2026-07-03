@@ -2,4 +2,4 @@
 
 Show
 	Class == "Fishing Rods"
-    #.import STYLE | miscellaneous -> catchall
+    #.import _util -> multi_t1_full

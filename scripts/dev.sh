@@ -25,6 +25,6 @@ touch "$OUTPUT" && code "$OUTPUT"
 pfg.exe -watch "src/_main.filter" "$OUTPUT" \
     .import STYLE=styles \> $STYLE \
     .alias VERSION=$VERSION, STYLE=${STYLE^}, VARIANT=${STRICTNESS^} .index \
-    .alias $DOT_STAND_IN=. .strict $STRICTNESS_NUMBER .if $ECON .multi
+    .alias $DOT_STAND_IN=. .multi .strict $STRICTNESS_NUMBER .if $ECON
 
 rm "$OUTPUT"

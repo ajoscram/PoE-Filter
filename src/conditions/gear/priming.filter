@@ -119,21 +119,14 @@ Show
     Sockets == 6
     #.import weapon > _util -> multi_t3_full
 
-# Elevated Mods
+# Elevated
 
 Show
     Continue
-    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    Class == GEAR_ARMOUR
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
     #.import armour > _util -> multi_t2
-
-Show
-    Continue
-    Class == GEAR_WEAPONS
-    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    HasExplicitMod == MODS_ELEVATED
-    #.import weapon > _util -> multi_t2
 
 # Perfect Eater / Exarch
 

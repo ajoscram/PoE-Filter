@@ -1,5 +1,272 @@
 #.subsection Rune Dagger
 
+#.alias DAGGER_RUNE_EXCEPTIONAL_BASES    = "Infernal Blade"
+#.alias DAGGER_RUNE_BEST_BASES           = "Demon Dagger" "Imperial Skean" "Platinum Kris" "Ezomyte Dagger"
+
+#.alias DAGGER_RUNE_EXCEPTIONAL_MODS     = "Magister's" "Runic" "Lich's" "Glyphic" "Topotante's" "Tacati's" "Matatl's" "of Tacati" "of Matatl" "of Heartstopping" "of the Gelid" "of Disintegrating"
+#.alias DAGGER_RUNE_GRAND_MODS           = "Zaffre" "Incanter's" "Archmage's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Wind" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of Atrophying"
+#.alias DAGGER_RUNE_GREATER_MODS         = "Blue" "Occultist's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Phantom" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of the Marksman" "of the Boreal" "of Deteriorating"
+#.alias DAGGER_RUNE_LESSER_MODS          = "Mazarine" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Jaguar" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of the Sniper" "of the Bleak" "of Wasting"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Imperial Skean" "Slaughter Knife"
+    Class == "Rune Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Demon Dagger" "Fiend Dagger"
+    Class == "Rune Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Royal Skean" "Demon Dagger" "Imperial Skean" "Ezomyte Dagger"
+    Class == "Rune Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+# Exceptional Mods
+
 Show
-	Class == "Rune Daggers"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == DAGGER_RUNE_BEST_BASES
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL DAGGER_RUNE_EXCEPTIONAL_MODS
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Rune Daggers"
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL DAGGER_RUNE_EXCEPTIONAL_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t1
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod ==6 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod >=5 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod >=5 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod >=4 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod >=3 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod >=3 MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod >=3 MODS_WEAPON_LESSER DAGGER_RUNE_LESSER_MODS MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_LESSER DAGGER_RUNE_LESSER_MODS MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+# Magic
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    Rarity == Magic
+    HasExplicitMod ==2 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.import STYLE | weapon > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t2
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod ==2 MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod == MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod ==2 MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod == MODS_WEAPON_GREATER DAGGER_RUNE_GREATER_MODS
+    #.multi
+        Class == "Rune Daggers"
+        HasExplicitMod ==2 MODS_WEAPON_LESSER DAGGER_RUNE_LESSER_MODS
+    #.multi
+        BaseType == DAGGER_RUNE_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_LESSER DAGGER_RUNE_LESSER_MODS
+
+# Fractured
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND DAGGER_RUNE_GRAND_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    FracturedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    FracturedItem True
+    #.import _util -> multi_t3_rare
+    #.import _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    SynthesisedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    SynthesisedItem True
+    #.import _util -> multi_t2
+
+# Influenced
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import _util -> multi_t3
+
+# Memory Strands
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t1
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t2
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    MemoryStrands == 100
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    MemoryStrands >= 50
+    #.import _util -> multi_t3
+
+# High Quality
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality == 30
+    #.import _util -> multi_t1
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    Quality == 30
+    #.import _util -> multi_t2
+
+Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    Quality > 25
+    #.import _util -> multi_t3
+
+# Exceptional Base
+
+Show
+    BaseType == DAGGER_RUNE_EXCEPTIONAL_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == DAGGER_RUNE_EXCEPTIONAL_BASES
+    #.import _util -> multi_t2
+
+# Best Base
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import < _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == DAGGER_RUNE_BEST_BASES
+    #.import < _util -> craftable

@@ -6,15 +6,16 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # To-Do
-* Check why some of the miscellaneous gear progression blocks are dirty with `.import`/`.multi` statements.
-* Finish gear conditions
+* Implement templating on gear to remove redundancies.
+* Add offhand conditions.
+* Add jewellery conditions.
 * Update the `create-release` script
 * Create a `update-economy` script that updates all filter files that have `.econ`.
 * Add style constants (colors!!!)
 * Figure out a re-organization of the "mapping" filter section.
 * Add support for HasInfluence on maps.
 * Add currency shard stack size filtering.
-* The Sacred Blossom and Blood-filled veessels are  not supported in fragments for some reason.
+* The Sacred Blossom and Blood-filled veessels are not supported in fragments for some reason.
 * Add Pieces (Harbinger and Ultimatum map) to unique tiering.
 * Implement stacks filtering for currency shards.
 * Add a wiki page for this project.

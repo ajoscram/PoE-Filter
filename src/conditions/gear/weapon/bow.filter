@@ -1,5 +1,275 @@
 #.subsection Bow
 
+#.alias BOW_EXCEPTIONAL_BASES    = "Solarine Bow"
+#.alias BOW_BEST_BASES           = "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Spine Bow" "Assassin Bow" "Ranger Bow" "Citadel Bow"
+
+#.alias BOW_EXCEPTIONAL_MODS     = "Topotante's" "Tacati's" "of Many" "of Tacati" "of Infamy"
+#.alias BOW_GRAND_MODS           = "Sharpshooter's" "of Acclaim" "of the Gale" "of Splintering" "of Lioneye"
+#.alias BOW_GREATER_MODS         = "Paragon's" "Fletcher's" "of Renown" "of the Zephyr" "of the Ranger"
+#.alias BOW_LESSER_MODS          = "of Mastery" "of Propulsion" "of the Marksman" "of the Remora"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Imperial Bow" "Spine Bow"
+    Class == "Bows" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Maraketh Bow" "Assassin Bow" "Crude Bow" "Imperial Bow" "Steelwood Bow"
+    Class == "Bows" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Recurve Bow" "Royal Bow" "Citadel Bow" "Short Bow" "Death Bow" "Crude Bow" "Harbinger Bow" "Ranger Bow" "Spine Bow" "Long Bow"
+    Class == "Bows" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t3
+
+# Exceptional Mods
+
 Show
-	Class == "Bows"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == BOW_BEST_BASES
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL BOW_EXCEPTIONAL_MODS
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    Class == "Bows"
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL BOW_EXCEPTIONAL_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t1
+    #.multi
+        Class == "Bows"
+        HasExplicitMod ==6 MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod >=5 MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+Show
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Bows"
+        HasExplicitMod >=5 MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod >=4 MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t2
+    #.multi
+        Class == "Bows"
+        HasExplicitMod >=3 MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Bows"
+        HasExplicitMod >=3 MODS_WEAPON_GREATER BOW_GREATER_MODS MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_GREATER BOW_GREATER_MODS MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Rare
+    #.import STYLE | weapon > rare -> t3
+    #.multi
+        Class == "Bows"
+        HasExplicitMod >=3 MODS_WEAPON_LESSER BOW_LESSER_MODS MODS_WEAPON_GREATER BOW_GREATER_MODS MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod >=2 MODS_WEAPON_LESSER BOW_LESSER_MODS MODS_WEAPON_GREATER BOW_GREATER_MODS MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+# Magic
+
+Show
+    BaseType == BOW_BEST_BASES
+    Rarity == Magic
+    HasExplicitMod ==2 MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.import STYLE | weapon > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t2
+    #.multi
+        Class == "Bows"
+        HasExplicitMod ==2 MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GRAND BOW_GRAND_MODS
+
+Show #.strict STRICTNESS_LENIENT
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Bows"
+        HasExplicitMod == MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.multi
+        Class == "Bows"
+        HasExplicitMod ==2 MODS_WEAPON_GREATER BOW_GREATER_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_GREATER BOW_GREATER_MODS
+
+Show #.strict STRICTNESS_BASE
+    Rarity == Magic
+    #.import STYLE | weapon > magic -> t3
+    #.multi
+        Class == "Bows"
+        HasExplicitMod == MODS_WEAPON_GREATER BOW_GREATER_MODS
+    #.multi
+        Class == "Bows"
+        HasExplicitMod ==2 MODS_WEAPON_LESSER BOW_LESSER_MODS
+    #.multi
+        BaseType == BOW_BEST_BASES
+        HasExplicitMod == MODS_WEAPON_LESSER BOW_LESSER_MODS
+
+# Fractured
+
+Show
+    BaseType == BOW_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND BOW_GRAND_MODS
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1_rare
+    #.import _util -> multi_t1_magic
+
+Show
+    BaseType == BOW_BEST_BASES
+    FracturedItem True
+    HasExplicitMod == MODS_WEAPON_GRAND BOW_GRAND_MODS
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BOW_BEST_BASES
+    FracturedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2_rare
+    #.import _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BOW_BEST_BASES
+    FracturedItem True
+    #.import _util -> multi_t3_rare
+    #.import _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    BaseType == BOW_BEST_BASES
+    SynthesisedItem True
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == BOW_BEST_BASES
+    SynthesisedItem True
+    #.import _util -> multi_t2
+
+# Influenced
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BOW_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BOW_BEST_BASES
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import _util -> multi_t3
+
+# Memory Strands
+
+Show
+    BaseType == BOW_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands == 100
+    #.import _util -> multi_t1
+
+Show
+    BaseType == BOW_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    MemoryStrands >= 50
+    #.import _util -> multi_t2
+
+Show
+    BaseType == BOW_BEST_BASES
+    MemoryStrands == 100
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BOW_BEST_BASES
+    MemoryStrands >= 50
+    #.import _util -> multi_t3
+
+# High Quality
+
+Show
+    BaseType == BOW_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality == 30
+    #.import _util -> multi_t1
+
+Show
+    BaseType == BOW_BEST_BASES
+    Quality == 30
+    #.import _util -> multi_t2
+
+Show
+    BaseType == BOW_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    Quality > 25
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BOW_BEST_BASES
+    Quality > 25
+    #.import _util -> multi_t3
+
+# Exceptional Base
+
+Show
+    BaseType == BOW_EXCEPTIONAL_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import _util -> multi_t1
+
+Show
+    BaseType == BOW_EXCEPTIONAL_BASES
+    #.import _util -> multi_t2
+
+# Best Base
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BOW_BEST_BASES
+    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    #.import < _util -> craftable
+    #.import _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BOW_BEST_BASES
+    #.import < _util -> craftable

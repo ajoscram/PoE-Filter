@@ -44,9 +44,14 @@ Show
 # Influenced
 
 Show
+    Class == GEAR_ARMOUR
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+
+Show
     Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    HasExplicitMod == MODS_INFLUENCED MODS_ELEVATED
+    HasExplicitMod == MODS_INFLUENCED
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == GEAR_JEWELLERY
