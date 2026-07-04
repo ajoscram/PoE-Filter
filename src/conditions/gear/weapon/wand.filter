@@ -1,12 +1,12 @@
 #.subsection Wand
 
-#.alias WAND_EXCEPTIONAL_BASES    = "Accumulator Wand"
-#.alias WAND_BEST_BASES           = "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Kinetic Wand" "Demon's Horn"
+#.alias BASES_WAND_EXCEPTIONAL    = "Accumulator Wand"
+#.alias BASES_WAND_BEST           = "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Kinetic Wand" "Demon's Horn"
 
-#.alias WAND_EXCEPTIONAL_MODS     = "Empress's" "Infamous" "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of Exsanguinating" "of Hemorrhaging" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "of Infamy"
-#.alias WAND_GRAND_MODS           = "Martinet's" "King's" "Queen's" "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Genius" "of Finesse" "of Acclaim" "of Unmaking" "of the Gale" "of Lioneye" "of Atrophying" "of the Boreal" "of the Ardent" "of Phlebotomising" "of Infuriation" "of Destiny" "of the Legion" "of the Convocation"
-#.alias WAND_GREATER_MODS         = "Prince's" "Princess's" "Blue" "Striking" "Hailing" "Volcanic" "Occultist's" "Mage's" "Discharging" "Polar" "Blasting" "of the Virtuoso" "of Sortilege" "of Renown" "of Ruin" "of the Zephyr" "of Ashes" "of Glaciation" "of Arcing" "of the Ranger" "of Conflagration" "of Deteriorating" "of the Bleak" "of the Fervid" "of Spilling" "of Provocation" "of Determinism" "of the Invasion"
-#.alias WAND_LESSER_MODS          = "Duke's" "Duchess's" "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Shocking" "Glaciated" "Incinerating" "of the Savant" "of Prestidigitation" "of Mastery" "of Calamity" "of Propulsion" "of Immolation" "of Floe" "of Discharge" "of the Marksman" "of Combustion" "of Wasting" "of the Inclement" "of the Earnest" "of Seeping" "of Instigation" "of Serendipity" "of the Swarm"
+#.alias MODS_WAND_EXCEPTIONAL     = "Empress's" "Infamous" "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of Exsanguinating" "of Hemorrhaging" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "of Infamy"
+#.alias MODS_WAND_GRAND           = "Martinet's" "King's" "Queen's" "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Genius" "of Finesse" "of Acclaim" "of Unmaking" "of the Gale" "of Lioneye" "of Atrophying" "of the Boreal" "of the Ardent" "of Phlebotomising" "of Infuriation" "of Destiny" "of the Legion" "of the Convocation"
+#.alias MODS_WAND_GREATER         = "Prince's" "Princess's" "Blue" "Striking" "Hailing" "Volcanic" "Occultist's" "Mage's" "Discharging" "Polar" "Blasting" "of the Virtuoso" "of Sortilege" "of Renown" "of Ruin" "of the Zephyr" "of Ashes" "of Glaciation" "of Arcing" "of the Ranger" "of Conflagration" "of Deteriorating" "of the Bleak" "of the Fervid" "of Spilling" "of Provocation" "of Determinism" "of the Invasion"
+#.alias MODS_WAND_LESSER          = "Duke's" "Duchess's" "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Shocking" "Glaciated" "Incinerating" "of the Savant" "of Prestidigitation" "of Mastery" "of Calamity" "of Propulsion" "of Immolation" "of Floe" "of Discharge" "of the Marksman" "of Combustion" "of Wasting" "of the Inclement" "of the Earnest" "of Seeping" "of Instigation" "of Serendipity" "of the Swarm"
 
 # Unique
 
@@ -37,14 +37,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Exceptional Mods
 
 Show
-    BaseType == WAND_BEST_BASES
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL WAND_EXCEPTIONAL_MODS
+    BaseType == BASES_WAND_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_WAND_EXCEPTIONAL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Wands"
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL WAND_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_WAND_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -55,57 +55,57 @@ Show
     #.import STYLE | weapon > rare -> t1
     #.multi
         Class == "Wands"
-        HasExplicitMod ==6 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod ==6 MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod >=5 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 Show
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Wands"
-        HasExplicitMod >=5 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod >=4 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod >=4 MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Wands"
-        HasExplicitMod >=3 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Wands"
-        HasExplicitMod >=3 MODS_WEAPON_GREATER WAND_GREATER_MODS MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GREATER MODS_WAND_GREATER MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GREATER WAND_GREATER_MODS MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GREATER MODS_WAND_GREATER MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 Show #.strict STRICTNESS_BASE
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Wands"
-        HasExplicitMod >=3 MODS_WEAPON_LESSER WAND_LESSER_MODS MODS_WEAPON_GREATER WAND_GREATER_MODS MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_LESSER MODS_WAND_LESSER MODS_WEAPON_GREATER MODS_WAND_GREATER MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_LESSER WAND_LESSER_MODS MODS_WEAPON_GREATER WAND_GREATER_MODS MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod >=2 MODS_WEAPON_LESSER MODS_WAND_LESSER MODS_WEAPON_GREATER MODS_WAND_GREATER MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 # Magic
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     Rarity == Magic
-    HasExplicitMod ==2 MODS_WEAPON_GRAND WAND_GRAND_MODS
+    HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.import STYLE | weapon > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -113,63 +113,63 @@ Show #.strict STRICTNESS_STRICT
     #.import STYLE | weapon > magic -> t2
     #.multi
         Class == "Wands"
-        HasExplicitMod ==2 MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GRAND WAND_GRAND_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_WAND_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Wands"
-        HasExplicitMod == MODS_WEAPON_GRAND WAND_GRAND_MODS
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.multi
         Class == "Wands"
-        HasExplicitMod ==2 MODS_WEAPON_GREATER WAND_GREATER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GREATER MODS_WAND_GREATER
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GREATER WAND_GREATER_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_WAND_GREATER
 
 Show #.strict STRICTNESS_BASE
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Wands"
-        HasExplicitMod == MODS_WEAPON_GREATER WAND_GREATER_MODS
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_WAND_GREATER
     #.multi
         Class == "Wands"
-        HasExplicitMod ==2 MODS_WEAPON_LESSER WAND_LESSER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_LESSER MODS_WAND_LESSER
     #.multi
-        BaseType == WAND_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_LESSER WAND_LESSER_MODS
+        BaseType == BASES_WAND_BEST
+        HasExplicitMod == MODS_WEAPON_LESSER MODS_WAND_LESSER
 
 # Fractured
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND WAND_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_WAND_GRAND
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND WAND_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_WAND_GRAND
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     FracturedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     FracturedItem True
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
@@ -177,96 +177,96 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # Synthesized
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     SynthesisedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     SynthesisedItem True
     #.import _util -> multi_t2
 
 # Influenced
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
 # High Quality
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality == 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == WAND_EXCEPTIONAL_BASES
+    BaseType == BASES_WAND_EXCEPTIONAL
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == WAND_EXCEPTIONAL_BASES
+    BaseType == BASES_WAND_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == WAND_BEST_BASES
+    BaseType == BASES_WAND_BEST
     #.import < _util -> craftable

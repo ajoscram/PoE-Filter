@@ -1,9 +1,10 @@
 #.subsection Tincture
 
-#.alias TINCTURE_BEST_MOD_ITEM_LEVEL  = 85
-#.alias TINCTURE_GRAND_MODS           = "Horticultural" "Enriched" "of Dissolution" "of Overpowering" "of Ferocity" "of Mastery" "of Regrowth" "of Devouring"
-#.alias TINCTURE_GREATER_MODS         = "Medicinal" "Concentrated" "Persevering" "of the Beast" "of Melting" "of the Unleashed" "of Fury" "of Ease" "of Restoration" "of Siphoning" "of Overwhelming"
-#.alias TINCTURE_LESSER_MODS          = "Natural" "Potent" "Persistent" "of the Savage" "of Liquefaction" "of Empowering" "of Rage" "of Skill" "of Assassination" "of Rejuvenation" "of Enveloping" "of Crushing"
+#.alias ITEM_LEVEL_TINCTURE_BEST  = 85
+
+#.alias MODS_TINCTURE_GRAND           = "Horticultural" "Enriched" "of Dissolution" "of Overpowering" "of Ferocity" "of Mastery" "of Regrowth" "of Devouring"
+#.alias MODS_TINCTURE_GREATER         = "Medicinal" "Concentrated" "Persevering" "of the Beast" "of Melting" "of the Unleashed" "of Fury" "of Ease" "of Restoration" "of Siphoning" "of Overwhelming"
+#.alias MODS_TINCTURE_LESSER          = "Natural" "Potent" "Persistent" "of the Savage" "of Liquefaction" "of Empowering" "of Rage" "of Skill" "of Assassination" "of Rejuvenation" "of Enveloping" "of Crushing"
 
 # Unique
 
@@ -16,17 +17,17 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Tinctures"
-    HasExplicitMod ==2 TINCTURE_GRAND_MODS
+    HasExplicitMod ==2 MODS_TINCTURE_GRAND
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Tinctures"
-    HasExplicitMod ==2 TINCTURE_GRAND_MODS TINCTURE_GREATER_MODS
+    HasExplicitMod ==2 MODS_TINCTURE_GRAND MODS_TINCTURE_GREATER
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
     Class == "Tinctures"
-    HasExplicitMod ==2 TINCTURE_GRAND_MODS TINCTURE_GREATER_MODS TINCTURE_LESSER_MODS
+    HasExplicitMod ==2 MODS_TINCTURE_GRAND MODS_TINCTURE_GREATER MODS_TINCTURE_LESSER
     #.import STYLE | flask > magic -> t3
 
 # High Quality
@@ -34,7 +35,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show
     Class == "Tinctures"
     Quality >= 25
-    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_TINCTURE_BEST
     #.import _util -> multi_t1
 
 Show
@@ -45,7 +46,7 @@ Show
 Show
     Class == "Tinctures"
     Quality >= 20
-    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_TINCTURE_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
@@ -57,7 +58,7 @@ Show #.strict STRICTNESS_LENIENT .if Show
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Tinctures"
-    ItemLevel >= TINCTURE_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_TINCTURE_BEST
     #.import _util -> multi_t3
 
 # Progression

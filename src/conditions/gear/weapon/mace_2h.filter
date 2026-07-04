@@ -1,12 +1,12 @@
 #.subsection Two-hand Mace
 
-#.alias TWO_HAND_MACE_EXCEPTIONAL_BASES    = "Impact Force Propagator"
-#.alias TWO_HAND_MACE_BEST_BASES           = "Coronal Maul" "Imperial Maul" "Meatgrinder" "Terror Maul" "Piledriver"
+#.alias BASES_TWO_HAND_MACE_EXCEPTIONAL    = "Impact Force Propagator"
+#.alias BASES_TWO_HAND_MACE_BEST           = "Coronal Maul" "Imperial Maul" "Meatgrinder" "Terror Maul" "Piledriver"
 
-#.alias TWO_HAND_MACE_EXCEPTIONAL_MODS     = "Topotante's" "Tacati's" "of Tacati"
-#.alias TWO_HAND_MACE_GRAND_MODS           = "of the Gods" "of Celebration" "of the Ranger"
-#.alias TWO_HAND_MACE_GREATER_MODS         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
-#.alias TWO_HAND_MACE_LESSER_MODS          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
+#.alias MODS_TWO_HAND_MACE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_TWO_HAND_MACE_GRAND           = "of the Gods" "of Celebration" "of the Ranger"
+#.alias MODS_TWO_HAND_MACE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
+#.alias MODS_TWO_HAND_MACE_LESSER          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
 
 # Unique
 
@@ -40,14 +40,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Exceptional Mods
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL TWO_HAND_MACE_EXCEPTIONAL_MODS
+    BaseType == BASES_TWO_HAND_MACE_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_TWO_HAND_MACE_EXCEPTIONAL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Two Hand Maces"
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL TWO_HAND_MACE_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_TWO_HAND_MACE_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -58,57 +58,57 @@ Show
     #.import STYLE | weapon > rare -> t1
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod ==6 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod ==6 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod >=5 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 Show
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod >=5 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod >=4 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod >=4 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod >=3 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod >=3 MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 Show #.strict STRICTNESS_BASE
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod >=3 MODS_WEAPON_LESSER TWO_HAND_MACE_LESSER_MODS MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_LESSER MODS_TWO_HAND_MACE_LESSER MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_LESSER TWO_HAND_MACE_LESSER_MODS MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_LESSER MODS_TWO_HAND_MACE_LESSER MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 # Magic
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     Rarity == Magic
-    HasExplicitMod ==2 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+    HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.import STYLE | weapon > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -116,63 +116,63 @@ Show #.strict STRICTNESS_STRICT
     #.import STYLE | weapon > magic -> t2
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod ==2 MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod == MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod ==2 MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER
 
 Show #.strict STRICTNESS_BASE
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod == MODS_WEAPON_GREATER TWO_HAND_MACE_GREATER_MODS
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_TWO_HAND_MACE_GREATER
     #.multi
         Class == "Two Hand Maces"
-        HasExplicitMod ==2 MODS_WEAPON_LESSER TWO_HAND_MACE_LESSER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_LESSER MODS_TWO_HAND_MACE_LESSER
     #.multi
-        BaseType == TWO_HAND_MACE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_LESSER TWO_HAND_MACE_LESSER_MODS
+        BaseType == BASES_TWO_HAND_MACE_BEST
+        HasExplicitMod == MODS_WEAPON_LESSER MODS_TWO_HAND_MACE_LESSER
 
 # Fractured
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND TWO_HAND_MACE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_TWO_HAND_MACE_GRAND
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     FracturedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     FracturedItem True
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
@@ -180,96 +180,96 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # Synthesized
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     SynthesisedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     SynthesisedItem True
     #.import _util -> multi_t2
 
 # Influenced
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
 # High Quality
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality == 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == TWO_HAND_MACE_EXCEPTIONAL_BASES
+    BaseType == BASES_TWO_HAND_MACE_EXCEPTIONAL
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == TWO_HAND_MACE_EXCEPTIONAL_BASES
+    BaseType == BASES_TWO_HAND_MACE_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == TWO_HAND_MACE_BEST_BASES
+    BaseType == BASES_TWO_HAND_MACE_BEST
     #.import < _util -> craftable

@@ -1,8 +1,8 @@
 #.subsection Small Cluster
 
-#.alias SMALL_CLUSTER_GRAND_MODS   = "Stout" "Cerulean" "Pulsing" "Plated" "Blurred" "Deadly" "Powerful" "of the Gorilla" "of the Panther" "of the Philosopher" "of the Heavens" "of the Hydra" "of the Furnace" "of the Walrus" "of the Tempest" "of the Storm" "of Exile"
-#.alias SMALL_CLUSTER_GREATER_MODS = "Stalwart" "Sapphire" "Radiating" "Fortified" "Fleet" "Destructive" "Potent" "of the Lion" "of the Falcon" "of the Augur" "of the Comet" "of the Starfish" "of the Kiln" "of the Yeti" "of the Thunderhead" "of Variegation" "of Expulsion" "of Eviction"
-#.alias SMALL_CLUSTER_LESSER_MODS  = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Flatworm" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of the Prism" "of Banishment" "of the Lost"
+#.alias MODS_SMALL_CLUSTER_GRAND   = "Stout" "Cerulean" "Pulsing" "Plated" "Blurred" "Deadly" "Powerful" "of the Gorilla" "of the Panther" "of the Philosopher" "of the Heavens" "of the Hydra" "of the Furnace" "of the Walrus" "of the Tempest" "of the Storm" "of Exile"
+#.alias MODS_SMALL_CLUSTER_GREATER = "Stalwart" "Sapphire" "Radiating" "Fortified" "Fleet" "Destructive" "Potent" "of the Lion" "of the Falcon" "of the Augur" "of the Comet" "of the Starfish" "of the Kiln" "of the Yeti" "of the Thunderhead" "of Variegation" "of Expulsion" "of Eviction"
+#.alias MODS_SMALL_CLUSTER_LESSER  = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Flatworm" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of the Prism" "of Banishment" "of the Lost"
 
 # Unique
 
@@ -16,7 +16,7 @@ Show #.strict STRICTNESS_STRICT .if Show
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Small Cluster Jewel"
     HasExplicitMod == "Notable"
-    HasExplicitMod <=2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    HasExplicitMod <=2 MODS_SMALL_CLUSTER_GRAND MODS_SMALL_CLUSTER_GREATER MODS_SMALL_CLUSTER_LESSER
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
@@ -25,19 +25,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Small Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS
+    HasExplicitMod >=3 MODS_SMALL_CLUSTER_GRAND
     #.import STYLE | jewellery > rare -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == "Small Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS
+    HasExplicitMod >=3 MODS_SMALL_CLUSTER_GRAND MODS_SMALL_CLUSTER_GREATER
     #.import STYLE | jewellery > rare -> t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Small Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    HasExplicitMod >=3 MODS_SMALL_CLUSTER_GRAND MODS_SMALL_CLUSTER_GREATER MODS_SMALL_CLUSTER_LESSER
     #.import STYLE | jewellery > rare -> t3
 
 # Magic
@@ -45,19 +45,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Small Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS
+    HasExplicitMod ==2 MODS_SMALL_CLUSTER_GRAND
     #.import STYLE | jewellery > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Small Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS
+    HasExplicitMod ==2 MODS_SMALL_CLUSTER_GRAND MODS_SMALL_CLUSTER_GREATER
     #.import STYLE | jewellery > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
     BaseType == "Small Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 SMALL_CLUSTER_GRAND_MODS SMALL_CLUSTER_GREATER_MODS SMALL_CLUSTER_LESSER_MODS
+    HasExplicitMod ==2 MODS_SMALL_CLUSTER_GRAND MODS_SMALL_CLUSTER_GREATER MODS_SMALL_CLUSTER_LESSER
     #.import STYLE | jewellery > magic -> t3
 
 # Fractured
@@ -65,7 +65,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show
     BaseType == "Small Cluster Jewel"
     FracturedItem True
-    HasExplicitMod == "Notable" SMALL_CLUSTER_GRAND_MODS
+    HasExplicitMod == "Notable" MODS_SMALL_CLUSTER_GRAND
     #.import < jewellery > _util -> multi_t2_rare
     #.import < jewellery > _util -> multi_t2_magic
 

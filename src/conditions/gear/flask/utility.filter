@@ -1,9 +1,10 @@
 #.subsection Utility
 
-#.alias UTILITY_FLASK_BEST_MOD_ITEM_LEVEL = 85
-#.alias UTILITY_FLASK_GRAND_MODS          = "Perpetual" "Surgeon's" "Flagellant's" "Experimenter's" "Alchemist's" "of the Armadillo" "of the Impala" "of the Cheetah" "of Incision" "of Tenaciousness" "of the Owl" "of Bog Moss" "of Craft" "of the Opossum" "of the Eel" "of the Penguin" "of the Iguana"
-#.alias UTILITY_FLASK_GREATER_MODS        = "Ample" "Bottomless" "Specialist's" "Masochist's" "Clinician's" "Dabbler's" "Chemist's" "of the Pangolin" "of the Ibex" "of the Lynx" "of the Rainbow" "of Bloodletting" "of Draining" "of Penetrating" "of Relentlessness" "of the Kakapo" "of Plume Moss" "of the Opossum" "of the Moray" "of the Walrus" "of the Starfish" "of the Skink"
-#.alias UTILITY_FLASK_LESSER_MODS         = "Abundant" "Endless" "Doctor's" "Transgressor's" "Examiner's" "Abecedarian's" "Brewer's" "of the Tortoise" "of the Antelope" "of the Hare" "of the Kaleidoscope" "of Butchery" "of Siphoning" "of Rupturing" "of Persistence" "of the Curlew" "of Tooth Moss" "of the Skunk" "of the Conger" "of the Deer" "of the Mussel" "of the Lizard"
+#.alias ITEM_LEVEL_UTILITY_FLASK_BEST = 85
+
+#.alias MODS_UTILITY_FLASK_GRAND          = "Perpetual" "Surgeon's" "Flagellant's" "Experimenter's" "Alchemist's" "of the Armadillo" "of the Impala" "of the Cheetah" "of Incision" "of Tenaciousness" "of the Owl" "of Bog Moss" "of Craft" "of the Opossum" "of the Eel" "of the Penguin" "of the Iguana"
+#.alias MODS_UTILITY_FLASK_GREATER        = "Ample" "Bottomless" "Specialist's" "Masochist's" "Clinician's" "Dabbler's" "Chemist's" "of the Pangolin" "of the Ibex" "of the Lynx" "of the Rainbow" "of Bloodletting" "of Draining" "of Penetrating" "of Relentlessness" "of the Kakapo" "of Plume Moss" "of the Opossum" "of the Moray" "of the Walrus" "of the Starfish" "of the Skink"
+#.alias MODS_UTILITY_FLASK_LESSER         = "Abundant" "Endless" "Doctor's" "Transgressor's" "Examiner's" "Abecedarian's" "Brewer's" "of the Tortoise" "of the Antelope" "of the Hare" "of the Kaleidoscope" "of Butchery" "of Siphoning" "of Rupturing" "of Persistence" "of the Curlew" "of Tooth Moss" "of the Skunk" "of the Conger" "of the Deer" "of the Mussel" "of the Lizard"
 
 # Unique
 
@@ -35,30 +36,30 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Utility Flasks"
-    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS
+    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Utility Flasks"
-    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS UTILITY_FLASK_GREATER_MODS
+    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND MODS_UTILITY_FLASK_GREATER
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
     Class == "Utility Flasks"
-    HasExplicitMod ==2 UTILITY_FLASK_GRAND_MODS UTILITY_FLASK_GREATER_MODS UTILITY_FLASK_LESSER_MODS
+    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND MODS_UTILITY_FLASK_GREATER MODS_UTILITY_FLASK_LESSER
     #.import STYLE | flask > magic -> t3
 
 # Fractured
 
 Show
     Class == "Utility Flasks"
-    HasExplicitMod == LIFE_FLASK_GRAND_MODS
+    HasExplicitMod == MODS_LIFE_FLASK_GRAND
     FracturedItem True
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Utility Flasks"
-    HasExplicitMod == LIFE_FLASK_GREATER_MODS
+    HasExplicitMod == MODS_LIFE_FLASK_GREATER
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
@@ -72,7 +73,7 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Utility Flasks"
     Quality >= 25
-    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
     #.import _util -> multi_t1
 
 Show
@@ -83,7 +84,7 @@ Show
 Show
     Class == "Utility Flasks"
     Quality >= 20
-    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
@@ -95,7 +96,7 @@ Show #.strict STRICTNESS_LENIENT .if Show
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Utility Flasks"
-    ItemLevel >= UTILITY_FLASK_BEST_MOD_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 

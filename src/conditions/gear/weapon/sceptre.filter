@@ -1,12 +1,12 @@
 #.subsection Sceptre
 
-#.alias SCEPTRE_EXCEPTIONAL_BASES    = "Alternating Sceptre" "Stabilising Sceptre" "Oscillating Sceptre"
-#.alias SCEPTRE_BEST_BASES           = "Opal Sceptre" "Carnal Sceptre" "Sambar Sceptre" "Vaal Sceptre" "Void Sceptre"
+#.alias BASES_SCEPTRE_EXCEPTIONAL    = "Alternating Sceptre" "Stabilising Sceptre" "Oscillating Sceptre"
+#.alias BASES_SCEPTRE_BEST           = "Opal Sceptre" "Carnal Sceptre" "Sambar Sceptre" "Vaal Sceptre" "Void Sceptre"
 
-#.alias SCEPTRE_EXCEPTIONAL_MODS     = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Tacati" "of Matatl" "of Citaqualotl"
-#.alias SCEPTRE_GRAND_MODS           = "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Lithomancer's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of the Ardent" "of the Boreal"
-#.alias SCEPTRE_GREATER_MODS         = "Blue" "Striking" "Crystalline" "Volcanic" "Occultist's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of the Fervid" "of the Bleak"
-#.alias SCEPTRE_LESSER_MODS          = "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of the Earnest" "of the Inclement"
+#.alias MODS_SCEPTRE_EXCEPTIONAL     = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Tacati" "of Matatl" "of Citaqualotl"
+#.alias MODS_SCEPTRE_GRAND           = "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Lithomancer's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of the Ardent" "of the Boreal"
+#.alias MODS_SCEPTRE_GREATER         = "Blue" "Striking" "Crystalline" "Volcanic" "Occultist's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of the Fervid" "of the Bleak"
+#.alias MODS_SCEPTRE_LESSER          = "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of the Earnest" "of the Inclement"
 
 # Unique
 
@@ -37,14 +37,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Exceptional Mods
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL SCEPTRE_EXCEPTIONAL_MODS
+    BaseType == BASES_SCEPTRE_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_SCEPTRE_EXCEPTIONAL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Sceptres"
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL SCEPTRE_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_SCEPTRE_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -55,57 +55,57 @@ Show
     #.import STYLE | weapon > rare -> t1
     #.multi
         Class == "Sceptres"
-        HasExplicitMod ==6 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod ==6 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod >=5 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 Show
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Sceptres"
-        HasExplicitMod >=5 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod >=4 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod >=4 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Sceptres"
-        HasExplicitMod >=3 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Sceptres"
-        HasExplicitMod >=3 MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 Show #.strict STRICTNESS_BASE
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Sceptres"
-        HasExplicitMod >=3 MODS_WEAPON_LESSER SCEPTRE_LESSER_MODS MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_LESSER MODS_SCEPTRE_LESSER MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_LESSER SCEPTRE_LESSER_MODS MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_LESSER MODS_SCEPTRE_LESSER MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 # Magic
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     Rarity == Magic
-    HasExplicitMod ==2 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+    HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.import STYLE | weapon > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -113,63 +113,63 @@ Show #.strict STRICTNESS_STRICT
     #.import STYLE | weapon > magic -> t2
     #.multi
         Class == "Sceptres"
-        HasExplicitMod ==2 MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Sceptres"
-        HasExplicitMod == MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.multi
         Class == "Sceptres"
-        HasExplicitMod ==2 MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER
 
 Show #.strict STRICTNESS_BASE
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Sceptres"
-        HasExplicitMod == MODS_WEAPON_GREATER SCEPTRE_GREATER_MODS
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_SCEPTRE_GREATER
     #.multi
         Class == "Sceptres"
-        HasExplicitMod ==2 MODS_WEAPON_LESSER SCEPTRE_LESSER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_LESSER MODS_SCEPTRE_LESSER
     #.multi
-        BaseType == SCEPTRE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_LESSER SCEPTRE_LESSER_MODS
+        BaseType == BASES_SCEPTRE_BEST
+        HasExplicitMod == MODS_WEAPON_LESSER MODS_SCEPTRE_LESSER
 
 # Fractured
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND SCEPTRE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_SCEPTRE_GRAND
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     FracturedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     FracturedItem True
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
@@ -177,96 +177,96 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # Synthesized
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     SynthesisedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     SynthesisedItem True
     #.import _util -> multi_t2
 
 # Influenced
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
 # High Quality
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality == 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == SCEPTRE_EXCEPTIONAL_BASES
+    BaseType == BASES_SCEPTRE_EXCEPTIONAL
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == SCEPTRE_EXCEPTIONAL_BASES
+    BaseType == BASES_SCEPTRE_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == SCEPTRE_BEST_BASES
+    BaseType == BASES_SCEPTRE_BEST
     #.import < _util -> craftable

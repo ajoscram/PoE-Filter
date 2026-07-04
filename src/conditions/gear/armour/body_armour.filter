@@ -1,13 +1,13 @@
 #.subsection Body Armour
 
-#.alias BODY_ARMOUR_BEST_BASE_DROP_LEVEL = 84
-#.alias BODY_ARMOUR_BEST_MOD_ITEM_LEVEL  = 86
-#.alias BODY_ARMOUR_EXCEPTIONAL_BASES    = "Grasping Mail" "Sacrificial Garb"
+#.alias DROP_LEVEL_BODY_ARMOUR_BEST   = 84
+#.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
+#.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
 
-#.alias BODY_ARMOUR_EXCEPTIONAL_MODS     = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
-#.alias BODY_ARMOUR_GRAND_MODS           = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
-#.alias BODY_ARMOUR_GREATER_MODS         = "Rapturous" "Apparition's" "Illusory" "Saintly" "Seraphim's" "Inspired" "Adaptable" "Legend's" "Bishop's" "Exarch's" "Unassailable" "Incandescent" "Blue" "Ibex's" "Lissome" "Hummingbird's" "Mirage's" "Impregnable" "Mammoth's" "Unmoving" "Crocodile's" "of the Phantom" "of the Titan" "of Life-giving" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of the Protector" "of Abjuration" "of the Virtuoso" "of Second Wind"
-#.alias BODY_ARMOUR_LESSER_MODS          = "Vigorous" "Fecund" "Athlete's" "Virile" "Eidolon's" "Unreal" "Consecrated" "Djinn's" "Interpolated" "Resilient" "Hero's" "Priest's" "Abbot's" "Indomitable" "Scintillating" "Mazarine" "Ram's" "Adroit" "Dragonfly's" "Nightmare's" "Girded" "Elephant's" "Abating" "Nautilus's" "of the Jaguar" "of the Leviathan" "of Recuperation" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of the Keeper" "of the Sentry" "of the Watchman" "of Revoking" "of Snuffing" "of the Savant" "of Vigour"
+#.alias MODS_BODY_ARMOUR_EXCEPTIONAL     = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
+#.alias MODS_BODY_ARMOUR_GRAND           = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
+#.alias MODS_BODY_ARMOUR_GREATER         = "Rapturous" "Apparition's" "Illusory" "Saintly" "Seraphim's" "Inspired" "Adaptable" "Legend's" "Bishop's" "Exarch's" "Unassailable" "Incandescent" "Blue" "Ibex's" "Lissome" "Hummingbird's" "Mirage's" "Impregnable" "Mammoth's" "Unmoving" "Crocodile's" "of the Phantom" "of the Titan" "of Life-giving" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of the Protector" "of Abjuration" "of the Virtuoso" "of Second Wind"
+#.alias MODS_BODY_ARMOUR_LESSER          = "Vigorous" "Fecund" "Athlete's" "Virile" "Eidolon's" "Unreal" "Consecrated" "Djinn's" "Interpolated" "Resilient" "Hero's" "Priest's" "Abbot's" "Indomitable" "Scintillating" "Mazarine" "Ram's" "Adroit" "Dragonfly's" "Nightmare's" "Girded" "Elephant's" "Abating" "Nautilus's" "of the Jaguar" "of the Leviathan" "of Recuperation" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of the Keeper" "of the Sentry" "of the Watchman" "of Revoking" "of Snuffing" "of the Savant" "of Vigour"
 
 # Unique
 
@@ -42,14 +42,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Body Armours"
-    HasExplicitMod == BODY_ARMOUR_EXCEPTIONAL_MODS
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BODY_ARMOUR_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Body Armours"
-    HasExplicitMod == BODY_ARMOUR_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_BODY_ARMOUR_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -60,58 +60,58 @@ Show
     Rarity == Rare
     #.import STYLE | armour > rare -> t1
     #.multi
-        HasExplicitMod ==6 BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod ==6 MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod >=5 BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=5 MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show
     Class == "Body Armours"
     Rarity == Rare
     #.import STYLE | armour > rare -> t2
     #.multi
-        HasExplicitMod >=5 BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod >=5 MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod >=4 BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=4 MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show #.strict STRICTNESS_STRICT
     Class == "Body Armours"
     Rarity == Rare
     #.import STYLE | armour > rare -> t2
     #.multi
-        HasExplicitMod >=3 BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod >=3 MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod >=2 BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Body Armours"
     Rarity == Rare
     #.import STYLE | armour > rare -> t3
     #.multi
-        HasExplicitMod >=3 BODY_ARMOUR_GREATER_MODS BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod >=3 MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod >=2 BODY_ARMOUR_GREATER_MODS BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Body Armours"
     Rarity == Rare
     #.import STYLE | armour > rare -> t3
     #.multi
-        HasExplicitMod >=3 BODY_ARMOUR_LESSER_MODS BODY_ARMOUR_GREATER_MODS BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod >=3 MODS_BODY_ARMOUR_LESSER MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod >=2 BODY_ARMOUR_LESSER_MODS BODY_ARMOUR_GREATER_MODS BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BODY_ARMOUR_LESSER MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 # Magic
 
 Show
     Class == "Body Armours"
     Rarity == Magic
-    HasExplicitMod ==2 BODY_ARMOUR_GRAND_MODS
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    HasExplicitMod ==2 MODS_BODY_ARMOUR_GRAND
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import STYLE | armour > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -119,66 +119,66 @@ Show #.strict STRICTNESS_STRICT
     Rarity == Magic
     #.import STYLE | armour > magic -> t2
     #.multi
-        HasExplicitMod ==2 BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod ==2 MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod == BODY_ARMOUR_GRAND_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BODY_ARMOUR_GRAND
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Body Armours"
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
-        HasExplicitMod == BODY_ARMOUR_GRAND_MODS
+        HasExplicitMod == MODS_BODY_ARMOUR_GRAND
     #.multi
-        HasExplicitMod ==2 BODY_ARMOUR_GREATER_MODS
+        HasExplicitMod ==2 MODS_BODY_ARMOUR_GREATER
     #.multi
-        HasExplicitMod == BODY_ARMOUR_GREATER_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BODY_ARMOUR_GREATER
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Body Armours"
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
-        HasExplicitMod == BODY_ARMOUR_GREATER_MODS
+        HasExplicitMod == MODS_BODY_ARMOUR_GREATER
     #.multi
-        HasExplicitMod ==2 BODY_ARMOUR_LESSER_MODS
+        HasExplicitMod ==2 MODS_BODY_ARMOUR_LESSER
     #.multi
-        HasExplicitMod == BODY_ARMOUR_LESSER_MODS
-        DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BODY_ARMOUR_LESSER
+        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
 
 # Fractured
 
 Show
     Class == "Body Armours"
     FracturedItem True
-    HasExplicitMod == BODY_ARMOUR_GRAND_MODS
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BODY_ARMOUR_GRAND
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Body Armours"
     FracturedItem True
-    HasExplicitMod == BODY_ARMOUR_GRAND_MODS
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BODY_ARMOUR_GRAND
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     FracturedItem True
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
     FracturedItem True
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
 
@@ -187,14 +187,14 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Body Armours"
     SynthesisedItem True
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
     SynthesisedItem True
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t2
 
 # Influenced
@@ -203,22 +203,22 @@ Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Eater / Exarch
@@ -226,54 +226,54 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Body Armours"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show
     Class == "Body Armours"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
@@ -281,59 +281,59 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     Quality == 30
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == BODY_ARMOUR_EXCEPTIONAL_BASES
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    BaseType == BASES_BODY_ARMOUR_EXCEPTIONAL
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1
 
 Show
-    BaseType == BODY_ARMOUR_EXCEPTIONAL_BASES
+    BaseType == BASES_BODY_ARMOUR_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     BaseDefencePercentile == 100
     #.import < _util -> craftable
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BODY_ARMOUR_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
-    DropLevel >= BODY_ARMOUR_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
     #.import < _util -> craftable

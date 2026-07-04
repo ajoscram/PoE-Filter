@@ -1,8 +1,8 @@
 #.subsection Medium Cluster
 
-#.alias MEDIUM_CLUSTER_GRAND_MODS   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Disintegration" "of Guidance" "of Suppression" "of the Herald" "of the Canon" "of Bellowing" "of Rage" "of Motherhood" "of Horizons" "of Propulsion" "of Deployment" "of Forethought" "of Overflowing"
-#.alias MEDIUM_CLUSTER_GREATER_MODS = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of the Crystal" "of Banishment" "of the Lost" "of Degeneration" "of Influence" "of Dominance" "of the Messenger" "of the Teachings" "of Shouting" "of Anger" "of Nurturing" "of Range" "of Flight" "of Assembly" "of Latching" "of Concentration" "of Brimming" 
-#.alias MEDIUM_CLUSTER_LESSER_MODS  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Pupil" "of the Cloud" "of the Flatworm" "of the Whelpling" "of the Inuit" "of the Cloud" "of Decline" "of Outreach" "of Clout" "of the Courier" "of the Message" "of Yelling" "of Ire" "of Fostering" "of Reach" "of Darting" "of Tinkering" "of The Way" "of Grasping" "of Attention" "of Refilling"
+#.alias MODS_MEDIUM_CLUSTER_GRAND   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Disintegration" "of Guidance" "of Suppression" "of the Herald" "of the Canon" "of Bellowing" "of Rage" "of Motherhood" "of Horizons" "of Propulsion" "of Deployment" "of Forethought" "of Overflowing"
+#.alias MODS_MEDIUM_CLUSTER_GREATER = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of the Crystal" "of Banishment" "of the Lost" "of Degeneration" "of Influence" "of Dominance" "of the Messenger" "of the Teachings" "of Shouting" "of Anger" "of Nurturing" "of Range" "of Flight" "of Assembly" "of Latching" "of Concentration" "of Brimming" 
+#.alias MODS_MEDIUM_CLUSTER_LESSER  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Pupil" "of the Cloud" "of the Flatworm" "of the Whelpling" "of the Inuit" "of the Cloud" "of Decline" "of Outreach" "of Clout" "of the Courier" "of the Message" "of Yelling" "of Ire" "of Fostering" "of Reach" "of Darting" "of Tinkering" "of The Way" "of Grasping" "of Attention" "of Refilling"
 
 # Unique
 
@@ -24,7 +24,7 @@ Show
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum <= 5
     HasExplicitMod ==2 "Notable"
-    HasExplicitMod ==2 MEDIUM_CLUSTER_GRAND_MODS
+    HasExplicitMod ==2 MODS_MEDIUM_CLUSTER_GRAND
     #.import STYLE | jewellery > rare -> t1
 
 Show
@@ -35,7 +35,7 @@ Show
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Medium Cluster Jewel"
     HasExplicitMod == "Notable"
-    HasExplicitMod <=2 MEDIUM_CLUSTER_GRAND_MODS MEDIUM_CLUSTER_GREATER_MODS MEDIUM_CLUSTER_LESSER_MODS
+    HasExplicitMod <=2 MODS_MEDIUM_CLUSTER_GRAND MODS_MEDIUM_CLUSTER_GREATER MODS_MEDIUM_CLUSTER_LESSER
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
@@ -44,19 +44,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 MEDIUM_CLUSTER_GRAND_MODS
+    HasExplicitMod >=3 MODS_MEDIUM_CLUSTER_GRAND
     #.import STYLE | jewellery > rare -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 MEDIUM_CLUSTER_GRAND_MODS MEDIUM_CLUSTER_GREATER_MODS
+    HasExplicitMod >=3 MODS_MEDIUM_CLUSTER_GRAND MODS_MEDIUM_CLUSTER_GREATER
     #.import STYLE | jewellery > rare -> t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 MEDIUM_CLUSTER_GRAND_MODS MEDIUM_CLUSTER_GREATER_MODS MEDIUM_CLUSTER_LESSER_MODS
+    HasExplicitMod >=3 MODS_MEDIUM_CLUSTER_GRAND MODS_MEDIUM_CLUSTER_GREATER MODS_MEDIUM_CLUSTER_LESSER
     #.import STYLE | jewellery > rare -> t3
 
 # Magic
@@ -64,19 +64,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 MEDIUM_CLUSTER_GRAND_MODS
+    HasExplicitMod ==2 MODS_MEDIUM_CLUSTER_GRAND
     #.import STYLE | jewellery > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 MEDIUM_CLUSTER_GRAND_MODS MEDIUM_CLUSTER_GREATER_MODS
+    HasExplicitMod ==2 MODS_MEDIUM_CLUSTER_GRAND MODS_MEDIUM_CLUSTER_GREATER
     #.import STYLE | jewellery > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
     BaseType == "Medium Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 MEDIUM_CLUSTER_GRAND_MODS MEDIUM_CLUSTER_GREATER_MODS MEDIUM_CLUSTER_LESSER_MODS
+    HasExplicitMod ==2 MODS_MEDIUM_CLUSTER_GRAND MODS_MEDIUM_CLUSTER_GREATER MODS_MEDIUM_CLUSTER_LESSER
     #.import STYLE | jewellery > magic -> t3
 
 # Fractured
@@ -84,7 +84,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show
     BaseType == "Medium Cluster Jewel"
     FracturedItem True
-    HasExplicitMod == "Notable" MEDIUM_CLUSTER_GRAND_MODS
+    HasExplicitMod == "Notable" MODS_MEDIUM_CLUSTER_GRAND
     #.import < jewellery > _util -> multi_t2_rare
     #.import < jewellery > _util -> multi_t2_magic
 

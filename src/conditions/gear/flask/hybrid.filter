@@ -1,10 +1,11 @@
 #.subsection Hybrid
 
-#.alias HYBRID_FLASK_BEST_MOD_ITEM_LEVEL  = 84
-#.alias HYBRID_FLASK_BEST_BASE            = "Hallowed Hybrid Flask"
-#.alias HYBRID_FLASK_GRAND_MODS           = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"
-#.alias HYBRID_FLASK_GREATER_MODS         = "Cautious" "Saturated" "Effervescent" "Terrified" "Gypsum" "of the Cure" "of Freedom" "of the Conjurer" "of Restraint" "of Insulation" "of Quelling" "of Allaying" "of Entropy"
-#.alias HYBRID_FLASK_LESSER_MODS          = "Careful" "Concentrated" "Effusive" "Alarmed" "of the Remedy" "of Motion" "of the Summoner" "of Occlusion" "of Grounding" "of Quashing" "of Alleviation" "of Thermodynamics"
+#.alias ITEM_LEVEL_HYBRID_FLASK_BEST  = 84
+#.alias BASE_HYBRID_FLASK_BEST        = "Hallowed Hybrid Flask"
+
+#.alias MODS_HYBRID_FLASK_GRAND           = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"
+#.alias MODS_HYBRID_FLASK_GREATER         = "Cautious" "Saturated" "Effervescent" "Terrified" "Gypsum" "of the Cure" "of Freedom" "of the Conjurer" "of Restraint" "of Insulation" "of Quelling" "of Allaying" "of Entropy"
+#.alias MODS_HYBRID_FLASK_LESSER          = "Careful" "Concentrated" "Effusive" "Alarmed" "of the Remedy" "of Motion" "of the Summoner" "of Occlusion" "of Grounding" "of Quashing" "of Alleviation" "of Thermodynamics"
 
 # Unique
 
@@ -16,75 +17,75 @@ Show #.strict STRICTNESS_STRICT .if Show
 # Magic
 
 Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod ==2 HYBRID_FLASK_GRAND_MODS
+    BaseType == BASE_HYBRID_FLASK_BEST
+    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod ==2 HYBRID_FLASK_GRAND_MODS HYBRID_FLASK_GREATER_MODS
+    BaseType == BASE_HYBRID_FLASK_BEST
+    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND MODS_HYBRID_FLASK_GREATER
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod ==2 HYBRID_FLASK_GRAND_MODS HYBRID_FLASK_GREATER_MODS HYBRID_FLASK_LESSER_MODS
+    BaseType == BASE_HYBRID_FLASK_BEST
+    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND MODS_HYBRID_FLASK_GREATER MODS_HYBRID_FLASK_LESSER
     #.import STYLE | flask > magic -> t3
 
 # Fractured
 
 Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod == HYBRID_FLASK_GRAND_MODS
+    BaseType == BASE_HYBRID_FLASK_BEST
+    HasExplicitMod == MODS_HYBRID_FLASK_GRAND
     FracturedItem True
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    HasExplicitMod == HYBRID_FLASK_GREATER_MODS
+    BaseType == BASE_HYBRID_FLASK_BEST
+    HasExplicitMod == MODS_HYBRID_FLASK_GREATER
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
 # High Quality
 
 Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     Quality >= 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     Quality >= 26
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     Quality >= 23
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     Quality >= 20
     #.import _util -> multi_t3
 
 # Best Base
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
-    ItemLevel >= HYBRID_FLASK_BEST_MOD_ITEM_LEVEL
+    BaseType == BASE_HYBRID_FLASK_BEST
+    ItemLevel >= ITEM_LEVEL_HYBRID_FLASK_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     AreaLevel < LEVEL_YELLOW_MAPS_START
     #.import < _util -> craftable
 
 Show
-    BaseType == HYBRID_FLASK_BEST_BASE
+    BaseType == BASE_HYBRID_FLASK_BEST
     AreaLevel < LEVEL_WHITE_MAPS_START
     #.import < _util -> craftable

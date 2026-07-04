@@ -1,12 +1,12 @@
 #.subsection Claw
 
-#.alias CLAW_EXCEPTIONAL_BASES    = "Void Fangs"
-#.alias CLAW_BEST_BASES           = "Gemini Claw" "Imperial Claw" "Vaal Claw"
+#.alias BASES_CLAW_EXCEPTIONAL    = "Void Fangs"
+#.alias BASES_CLAW_BEST           = "Gemini Claw" "Imperial Claw" "Vaal Claw"
 
-#.alias CLAW_EXCEPTIONAL_MODS     = "Topotante's" "Tacati's" "of Tacati"
-#.alias CLAW_GRAND_MODS           = "Zaffre" "of the Wind" "of Celebration" "of the Ranger"
-#.alias CLAW_GREATER_MODS         = "Blue" "Paragon's" "Weaponmaster's" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias CLAW_LESSER_MODS          = "Mazarine" "Combatant's" "of the Jaguar" "of Fame" "of the Sniper"
+#.alias MODS_CLAW_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_CLAW_GRAND           = "Zaffre" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_CLAW_GREATER         = "Blue" "Paragon's" "Weaponmaster's" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_CLAW_LESSER          = "Mazarine" "Combatant's" "of the Jaguar" "of Fame" "of the Sniper"
 
 # Unique
 
@@ -37,14 +37,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Exceptional Mods
 
 Show
-    BaseType == CLAW_BEST_BASES
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL CLAW_EXCEPTIONAL_MODS
+    BaseType == BASES_CLAW_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_CLAW_EXCEPTIONAL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Claws"
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL CLAW_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_CLAW_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -55,57 +55,57 @@ Show
     #.import STYLE | weapon > rare -> t1
     #.multi
         Class == "Claws"
-        HasExplicitMod ==6 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod ==6 MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod >=5 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 Show
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Claws"
-        HasExplicitMod >=5 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod >=4 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod >=4 MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "Claws"
-        HasExplicitMod >=3 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Claws"
-        HasExplicitMod >=3 MODS_WEAPON_GREATER CLAW_GREATER_MODS MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GREATER MODS_CLAW_GREATER MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GREATER CLAW_GREATER_MODS MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GREATER MODS_CLAW_GREATER MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 Show #.strict STRICTNESS_BASE
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "Claws"
-        HasExplicitMod >=3 MODS_WEAPON_LESSER CLAW_LESSER_MODS MODS_WEAPON_GREATER CLAW_GREATER_MODS MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_LESSER MODS_CLAW_LESSER MODS_WEAPON_GREATER MODS_CLAW_GREATER MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_LESSER CLAW_LESSER_MODS MODS_WEAPON_GREATER CLAW_GREATER_MODS MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod >=2 MODS_WEAPON_LESSER MODS_CLAW_LESSER MODS_WEAPON_GREATER MODS_CLAW_GREATER MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 # Magic
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     Rarity == Magic
-    HasExplicitMod ==2 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+    HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.import STYLE | weapon > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -113,63 +113,63 @@ Show #.strict STRICTNESS_STRICT
     #.import STYLE | weapon > magic -> t2
     #.multi
         Class == "Claws"
-        HasExplicitMod ==2 MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_CLAW_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Claws"
-        HasExplicitMod == MODS_WEAPON_GRAND CLAW_GRAND_MODS
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.multi
         Class == "Claws"
-        HasExplicitMod ==2 MODS_WEAPON_GREATER CLAW_GREATER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GREATER MODS_CLAW_GREATER
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GREATER CLAW_GREATER_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_CLAW_GREATER
 
 Show #.strict STRICTNESS_BASE
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "Claws"
-        HasExplicitMod == MODS_WEAPON_GREATER CLAW_GREATER_MODS
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_CLAW_GREATER
     #.multi
         Class == "Claws"
-        HasExplicitMod ==2 MODS_WEAPON_LESSER CLAW_LESSER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_LESSER MODS_CLAW_LESSER
     #.multi
-        BaseType == CLAW_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_LESSER CLAW_LESSER_MODS
+        BaseType == BASES_CLAW_BEST
+        HasExplicitMod == MODS_WEAPON_LESSER MODS_CLAW_LESSER
 
 # Fractured
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND CLAW_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_CLAW_GRAND
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND CLAW_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_CLAW_GRAND
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     FracturedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     FracturedItem True
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
@@ -177,96 +177,96 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # Synthesized
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     SynthesisedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     SynthesisedItem True
     #.import _util -> multi_t2
 
 # Influenced
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
 # High Quality
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality == 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == CLAW_EXCEPTIONAL_BASES
+    BaseType == BASES_CLAW_EXCEPTIONAL
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == CLAW_EXCEPTIONAL_BASES
+    BaseType == BASES_CLAW_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == CLAW_BEST_BASES
+    BaseType == BASES_CLAW_BEST
     #.import < _util -> craftable

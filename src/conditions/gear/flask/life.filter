@@ -1,10 +1,11 @@
 #.subsection Life
 
-#.alias LIFE_FLASK_BEST_MOD_ITEM_LEVEL  = 82
-#.alias LIFE_FLASK_BEST_BASE            = "Divine Life Flask"
-#.alias LIFE_FLASK_GRAND_MODS           = "Panicked" "Bubbling" "Saturated" "Seething" "of the Necromancer" "of Assuaging" "of the Dielectric" "of Thawing" "of Quenching" "of the Antidote"
-#.alias LIFE_FLASK_GREATER_MODS         = "Terrified" "Catalysed" "Effervescent" "Sapping" "Cautious" "Concentrated" "Gypsum" "of the Conjurer" "of Warding" "of Liberation" "of Perenniality" "of Allaying" "of Insulation" "of Entropy" "of Quelling" "of the Cure"
-#.alias LIFE_FLASK_LESSER_MODS          = "Alarmed" "Condensed" "Effusive" "Vitiating" "Careful" "Full-bodied" "Kainite" "of the Summoner" "of Freedom" "of Incessance" "of Alleviation" "of Grounding" "of Thermodynamics" "of Quashing" "of the Remedy"
+#.alias ITEM_LEVEL_LIFE_FLASK_BEST = 82
+#.alias BASE_LIFE_FLASK_BEST       = "Divine Life Flask"
+
+#.alias MODS_LIFE_FLASK_GRAND           = "Panicked" "Bubbling" "Saturated" "Seething" "of the Necromancer" "of Assuaging" "of the Dielectric" "of Thawing" "of Quenching" "of the Antidote"
+#.alias MODS_LIFE_FLASK_GREATER         = "Terrified" "Catalysed" "Effervescent" "Sapping" "Cautious" "Concentrated" "Gypsum" "of the Conjurer" "of Warding" "of Liberation" "of Perenniality" "of Allaying" "of Insulation" "of Entropy" "of Quelling" "of the Cure"
+#.alias MODS_LIFE_FLASK_LESSER          = "Alarmed" "Condensed" "Effusive" "Vitiating" "Careful" "Full-bodied" "Kainite" "of the Summoner" "of Freedom" "of Incessance" "of Alleviation" "of Grounding" "of Thermodynamics" "of Quashing" "of the Remedy"
 
 # Unique
 
@@ -16,75 +17,75 @@ Show #.strict STRICTNESS_STRICT .if Show
 # Magic
 
 Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod ==2 LIFE_FLASK_GRAND_MODS
+    BaseType == BASE_LIFE_FLASK_BEST
+    HasExplicitMod ==2 MODS_LIFE_FLASK_GRAND
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod ==2 LIFE_FLASK_GRAND_MODS LIFE_FLASK_GREATER_MODS
+    BaseType == BASE_LIFE_FLASK_BEST
+    HasExplicitMod ==2 MODS_LIFE_FLASK_GRAND MODS_LIFE_FLASK_GREATER
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod ==2 LIFE_FLASK_GRAND_MODS LIFE_FLASK_GREATER_MODS LIFE_FLASK_LESSER_MODS
+    BaseType == BASE_LIFE_FLASK_BEST
+    HasExplicitMod ==2 MODS_LIFE_FLASK_GRAND MODS_LIFE_FLASK_GREATER MODS_LIFE_FLASK_LESSER
     #.import STYLE | flask > magic -> t3
 
 # Fractured
 
 Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod == LIFE_FLASK_GRAND_MODS
+    BaseType == BASE_LIFE_FLASK_BEST
+    HasExplicitMod == MODS_LIFE_FLASK_GRAND
     FracturedItem True
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    HasExplicitMod == LIFE_FLASK_GREATER_MODS
+    BaseType == BASE_LIFE_FLASK_BEST
+    HasExplicitMod == MODS_LIFE_FLASK_GREATER
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
 # High Quality
 
 Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     Quality >= 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     Quality >= 26
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     Quality >= 23
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     Quality >= 20
     #.import _util -> multi_t3
 
 # Best Base
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
-    ItemLevel >= LIFE_FLASK_BEST_MOD_ITEM_LEVEL
+    BaseType == BASE_LIFE_FLASK_BEST
+    ItemLevel >= ITEM_LEVEL_LIFE_FLASK_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     AreaLevel < LEVEL_YELLOW_MAPS_START
     #.import < _util -> craftable
 
 Show
-    BaseType == LIFE_FLASK_BEST_BASE
+    BaseType == BASE_LIFE_FLASK_BEST
     AreaLevel < LEVEL_WHITE_MAPS_START
     #.import < _util -> craftable

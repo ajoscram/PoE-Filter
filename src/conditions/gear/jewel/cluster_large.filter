@@ -1,9 +1,9 @@
 #.subsection Large Cluster
 
-#.alias LARGE_CLUSTER_NOTABLE_MODS = "Notable" "of Significance"
-#.alias LARGE_CLUSTER_GRAND_MODS   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "Powerful" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Mastery" "of Expertise" "of Manifesting" "of the Earthquake" "of Flashfires" "of the Strike" "of the Avalanche" "of the Eclipse" "of Razing"
-#.alias LARGE_CLUSTER_GREATER_MODS = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "Potent" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Flatworm" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of Banishment" "of the Lost" "of Ease" "of Nimbleness" "of Evoking" "of Tremors" "of Smoke" "of Sudden Storms" "of Frigidity" "of Midnight" "of Ravaging"
-#.alias LARGE_CLUSTER_LESSER_MODS  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Prodigy" "of the Cloud" "of the Lizard" "of the Whelpling" "of the Inuit" "of the Cloud" "of the Crystal" "of Skill" "of Talent" "of Coaxing" "of Rumbling" "of Kindling" "of Gathering Clouds" "of Cooling" "of Dusk" "of Pillaging"
+#.alias MODS_LARGE_CLUSTER_NOTABLE = "Notable" "of Significance"
+#.alias MODS_LARGE_CLUSTER_GRAND   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "Powerful" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Mastery" "of Expertise" "of Manifesting" "of the Earthquake" "of Flashfires" "of the Strike" "of the Avalanche" "of the Eclipse" "of Razing"
+#.alias MODS_LARGE_CLUSTER_GREATER = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "Potent" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Flatworm" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of Banishment" "of the Lost" "of Ease" "of Nimbleness" "of Evoking" "of Tremors" "of Smoke" "of Sudden Storms" "of Frigidity" "of Midnight" "of Ravaging"
+#.alias MODS_LARGE_CLUSTER_LESSER  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Prodigy" "of the Cloud" "of the Lizard" "of the Whelpling" "of the Inuit" "of the Cloud" "of the Crystal" "of Skill" "of Talent" "of Coaxing" "of Rumbling" "of Kindling" "of Gathering Clouds" "of Cooling" "of Dusk" "of Pillaging"
 
 # Unique
 
@@ -17,19 +17,19 @@ Show
 Show
     BaseType == "Large Cluster Jewel"
     EnchantmentPassiveNum == 8
-    HasExplicitMod ==3 LARGE_CLUSTER_NOTABLE_MODS
+    HasExplicitMod ==3 MODS_LARGE_CLUSTER_NOTABLE
     #.import STYLE | jewellery > rare -> t1
 
 Show
     BaseType == "Large Cluster Jewel"
-    HasExplicitMod >=2 LARGE_CLUSTER_NOTABLE_MODS
+    HasExplicitMod >=2 MODS_LARGE_CLUSTER_NOTABLE
     #.import < jewellery > _util -> multi_t2_rare
     #.import < jewellery > _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Large Cluster Jewel"
-    HasExplicitMod == LARGE_CLUSTER_NOTABLE_MODS
-    HasExplicitMod <=2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    HasExplicitMod == MODS_LARGE_CLUSTER_NOTABLE
+    HasExplicitMod <=2 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER MODS_LARGE_CLUSTER_LESSER
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
@@ -38,19 +38,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Large Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS
+    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND
     #.import STYLE | jewellery > rare -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == "Large Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS
+    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER
     #.import STYLE | jewellery > rare -> t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Large Cluster Jewel"
     Rarity == Rare
-    HasExplicitMod >=3 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER MODS_LARGE_CLUSTER_LESSER
     #.import STYLE | jewellery > rare -> t3
 
 # Magic
@@ -58,19 +58,19 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == "Large Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS
+    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND
     #.import STYLE | jewellery > magic -> t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == "Large Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS
+    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER
     #.import STYLE | jewellery > magic -> t3
 
 Show #.strict STRICTNESS_BASE .if Show
     BaseType == "Large Cluster Jewel"
     Rarity == Magic
-    HasExplicitMod ==2 LARGE_CLUSTER_GRAND_MODS LARGE_CLUSTER_GREATER_MODS LARGE_CLUSTER_LESSER_MODS
+    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER MODS_LARGE_CLUSTER_LESSER
     #.import STYLE | jewellery > magic -> t3
 
 # Fractured
@@ -78,7 +78,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show
     BaseType == "Large Cluster Jewel"
     FracturedItem True
-    HasExplicitMod == LARGE_CLUSTER_NOTABLE_MODS LARGE_CLUSTER_GRAND_MODS
+    HasExplicitMod == MODS_LARGE_CLUSTER_NOTABLE MODS_LARGE_CLUSTER_GRAND
     #.import < jewellery > _util -> multi_t2_rare
     #.import < jewellery > _util -> multi_t2_magic
 

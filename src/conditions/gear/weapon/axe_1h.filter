@@ -1,12 +1,12 @@
 #.subsection One-hand Axe
 
-#.alias ONE_HAND_AXE_EXCEPTIONAL_BASES    = "Psychotic Axe"
-#.alias ONE_HAND_AXE_BEST_BASES           = "Runic Hatchet" "Royal Axe" "Siege Axe"
+#.alias BASES_ONE_HAND_AXE_EXCEPTIONAL    = "Psychotic Axe"
+#.alias BASES_ONE_HAND_AXE_BEST           = "Runic Hatchet" "Royal Axe" "Siege Axe"
 
-#.alias ONE_HAND_AXE_EXCEPTIONAL_MODS     = "Topotante's" "Tacati's" "of Tacati"
-#.alias ONE_HAND_AXE_GRAND_MODS           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
-#.alias ONE_HAND_AXE_GREATER_MODS         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias ONE_HAND_AXE_LESSER_MODS          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
+#.alias MODS_ONE_HAND_AXE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_AXE_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_AXE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_AXE_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
 
 # Unique
 
@@ -37,14 +37,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Exceptional Mods
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL ONE_HAND_AXE_EXCEPTIONAL_MODS
+    BaseType == BASES_ONE_HAND_AXE_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_ONE_HAND_AXE_EXCEPTIONAL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "One Hand Axes"
-    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL ONE_HAND_AXE_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_ONE_HAND_AXE_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -55,57 +55,57 @@ Show
     #.import STYLE | weapon > rare -> t1
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod ==6 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod ==6 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod >=5 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 Show
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod >=5 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod >=5 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod >=4 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod >=4 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t2
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod >=3 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod >=3 MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 Show #.strict STRICTNESS_BASE
     Rarity == Rare
     #.import STYLE | weapon > rare -> t3
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod >=3 MODS_WEAPON_LESSER ONE_HAND_AXE_LESSER_MODS MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod >=3 MODS_WEAPON_LESSER MODS_ONE_HAND_AXE_LESSER MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod >=2 MODS_WEAPON_LESSER ONE_HAND_AXE_LESSER_MODS MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod >=2 MODS_WEAPON_LESSER MODS_ONE_HAND_AXE_LESSER MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 # Magic
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     Rarity == Magic
-    HasExplicitMod ==2 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+    HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.import STYLE | weapon > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -113,63 +113,63 @@ Show #.strict STRICTNESS_STRICT
     #.import STYLE | weapon > magic -> t2
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod ==2 MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
 
 Show #.strict STRICTNESS_LENIENT
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod == MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+        HasExplicitMod == MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod ==2 MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER
 
 Show #.strict STRICTNESS_BASE
     Rarity == Magic
     #.import STYLE | weapon > magic -> t3
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod == MODS_WEAPON_GREATER ONE_HAND_AXE_GREATER_MODS
+        HasExplicitMod == MODS_WEAPON_GREATER MODS_ONE_HAND_AXE_GREATER
     #.multi
         Class == "One Hand Axes"
-        HasExplicitMod ==2 MODS_WEAPON_LESSER ONE_HAND_AXE_LESSER_MODS
+        HasExplicitMod ==2 MODS_WEAPON_LESSER MODS_ONE_HAND_AXE_LESSER
     #.multi
-        BaseType == ONE_HAND_AXE_BEST_BASES
-        HasExplicitMod == MODS_WEAPON_LESSER ONE_HAND_AXE_LESSER_MODS
+        BaseType == BASES_ONE_HAND_AXE_BEST
+        HasExplicitMod == MODS_WEAPON_LESSER MODS_ONE_HAND_AXE_LESSER
 
 # Fractured
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     FracturedItem True
-    HasExplicitMod == MODS_WEAPON_GRAND ONE_HAND_AXE_GRAND_MODS
+    HasExplicitMod == MODS_WEAPON_GRAND MODS_ONE_HAND_AXE_GRAND
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     FracturedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     FracturedItem True
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
@@ -177,96 +177,96 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # Synthesized
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     SynthesisedItem True
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     SynthesisedItem True
     #.import _util -> multi_t2
 
 # Influenced
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
 # High Quality
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality == 30
     #.import _util -> multi_t1
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == ONE_HAND_AXE_EXCEPTIONAL_BASES
+    BaseType == BASES_ONE_HAND_AXE_EXCEPTIONAL
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import _util -> multi_t1
 
 Show
-    BaseType == ONE_HAND_AXE_EXCEPTIONAL_BASES
+    BaseType == BASES_ONE_HAND_AXE_EXCEPTIONAL
     #.import _util -> multi_t2
 
 # Best Base
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == ONE_HAND_AXE_BEST_BASES
+    BaseType == BASES_ONE_HAND_AXE_BEST
     #.import < _util -> craftable

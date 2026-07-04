@@ -1,13 +1,13 @@
 #.subsection Boots
 
-#.alias BOOTS_BEST_BASE_DROP_LEVEL = 84
-#.alias BOOTS_BEST_MOD_ITEM_LEVEL  = 86
-#.alias BOOTS_EXCEPTIONAL_BASES    = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
+#.alias DROP_LEVEL_BOOTS_BEST   = 84
+#.alias ITEM_LEVEL_BOOTS_BEST   = 86
+#.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
 
-#.alias BOOTS_EXCEPTIONAL_MODS     = "Subterranean" "of the Underground" "Xopec's" "Matatl's" "Mutewind" "Sentinel's" "Infamous" "Haunted" "of Haunting"
-#.alias BOOTS_GRAND_MODS           = "Athlete's" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Durable" "Legend's" "Unassailable" "Seething" "Zaffre" "Vaporous" "Mirage's" "Impregnable" "Encased" "Hellion's" "Pirate's" "of the Gods" "of Raiding" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of the Wind" "of Nullification" "of the Genius" "of Ardour"
-#.alias BOOTS_GREATER_MODS         = "Virile" "Owen's" "Masterwork" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Flexible" "Mammoth's" "Hero's" "Deacon's" "Prior's" "Seraphim's" "Indomitable" "Pulsing" "Blue" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Girded" "Carapaced" "Urchin's" "Cheetah's" "Gazelle's" "Magpie's" "of the Titan" "of Plunder" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Youth" "of the Phantom" "of Abjuration" "of the Virtuoso" "of Buffering" "of Runes" "of Inscription"
-#.alias BOOTS_LESSER_MODS          = "Rotund" "Annest's" "Exquisite" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Pliant" "Elephant's" "Duelist's" "Acolyte's" "Monk's" "Djinn's" "Dauntless" "Radiating" "Mazarine" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Thickened" "Plated" "Oyster's" "Stallion's" "of the Leviathan" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Perpetuity" "of the Jaguar" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
+#.alias MODS_BOOTS_EXCEPTIONAL     = "Subterranean" "of the Underground" "Xopec's" "Matatl's" "Mutewind" "Sentinel's" "Infamous" "Haunted" "of Haunting"
+#.alias MODS_BOOTS_GRAND           = "Athlete's" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Durable" "Legend's" "Unassailable" "Seething" "Zaffre" "Vaporous" "Mirage's" "Impregnable" "Encased" "Hellion's" "Pirate's" "of the Gods" "of Raiding" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of the Wind" "of Nullification" "of the Genius" "of Ardour"
+#.alias MODS_BOOTS_GREATER         = "Virile" "Owen's" "Masterwork" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Flexible" "Mammoth's" "Hero's" "Deacon's" "Prior's" "Seraphim's" "Indomitable" "Pulsing" "Blue" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Girded" "Carapaced" "Urchin's" "Cheetah's" "Gazelle's" "Magpie's" "of the Titan" "of Plunder" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Youth" "of the Phantom" "of Abjuration" "of the Virtuoso" "of Buffering" "of Runes" "of Inscription"
+#.alias MODS_BOOTS_LESSER          = "Rotund" "Annest's" "Exquisite" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Pliant" "Elephant's" "Duelist's" "Acolyte's" "Monk's" "Djinn's" "Dauntless" "Radiating" "Mazarine" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Thickened" "Plated" "Oyster's" "Stallion's" "of the Leviathan" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Perpetuity" "of the Jaguar" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
 
 # Unique
 
@@ -39,14 +39,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Boots"
-    HasExplicitMod == BOOTS_EXCEPTIONAL_MODS
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BOOTS_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Boots"
-    HasExplicitMod == BOOTS_EXCEPTIONAL_MODS
+    HasExplicitMod == MODS_BOOTS_EXCEPTIONAL
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -57,58 +57,58 @@ Show
     Rarity == Rare
     #.import STYLE | armour > rare -> t1
     #.multi
-        HasExplicitMod ==6 BOOTS_GRAND_MODS
+        HasExplicitMod ==6 MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod >=5 BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=5 MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show
     Class == "Boots"
     Rarity == Rare
     #.import STYLE | armour > rare -> t2
     #.multi
-        HasExplicitMod >=5 BOOTS_GRAND_MODS
+        HasExplicitMod >=5 MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod >=4 BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=4 MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show #.strict STRICTNESS_STRICT
     Class == "Boots"
     Rarity == Rare
     #.import STYLE | armour > rare -> t2
     #.multi
-        HasExplicitMod >=3 BOOTS_GRAND_MODS
+        HasExplicitMod >=3 MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod >=2 BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Boots"
     Rarity == Rare
     #.import STYLE | armour > rare -> t3
     #.multi
-        HasExplicitMod >=3 BOOTS_GREATER_MODS BOOTS_GRAND_MODS
+        HasExplicitMod >=3 MODS_BOOTS_GREATER MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod >=2 BOOTS_GREATER_MODS BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BOOTS_GREATER MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Boots"
     Rarity == Rare
     #.import STYLE | armour > rare -> t3
     #.multi
-        HasExplicitMod >=3 BOOTS_LESSER_MODS BOOTS_GREATER_MODS BOOTS_GRAND_MODS
+        HasExplicitMod >=3 MODS_BOOTS_LESSER MODS_BOOTS_GREATER MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod >=2 BOOTS_LESSER_MODS BOOTS_GREATER_MODS BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod >=2 MODS_BOOTS_LESSER MODS_BOOTS_GREATER MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 # Magic
 
 Show
     Class == "Boots"
     Rarity == Magic
-    HasExplicitMod ==2 BOOTS_GRAND_MODS
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    HasExplicitMod ==2 MODS_BOOTS_GRAND
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import STYLE | armour > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -116,66 +116,66 @@ Show #.strict STRICTNESS_STRICT
     Rarity == Magic
     #.import STYLE | armour > magic -> t2
     #.multi
-        HasExplicitMod ==2 BOOTS_GRAND_MODS
+        HasExplicitMod ==2 MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod == BOOTS_GRAND_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BOOTS_GRAND
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Boots"
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
-        HasExplicitMod == BOOTS_GRAND_MODS
+        HasExplicitMod == MODS_BOOTS_GRAND
     #.multi
-        HasExplicitMod ==2 BOOTS_GREATER_MODS
+        HasExplicitMod ==2 MODS_BOOTS_GREATER
     #.multi
-        HasExplicitMod == BOOTS_GREATER_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BOOTS_GREATER
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Boots"
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
-        HasExplicitMod == BOOTS_GREATER_MODS
+        HasExplicitMod == MODS_BOOTS_GREATER
     #.multi
-        HasExplicitMod ==2 BOOTS_LESSER_MODS
+        HasExplicitMod ==2 MODS_BOOTS_LESSER
     #.multi
-        HasExplicitMod == BOOTS_LESSER_MODS
-        DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+        HasExplicitMod == MODS_BOOTS_LESSER
+        DropLevel >= DROP_LEVEL_BOOTS_BEST
 
 # Fractured
 
 Show
     Class == "Boots"
     FracturedItem True
-    HasExplicitMod == BOOTS_GRAND_MODS
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BOOTS_GRAND
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
 Show
     Class == "Boots"
     FracturedItem True
-    HasExplicitMod == BOOTS_GRAND_MODS
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    HasExplicitMod == MODS_BOOTS_GRAND
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     FracturedItem True
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
     FracturedItem True
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
 
@@ -184,14 +184,14 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Boots"
     SynthesisedItem True
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
     SynthesisedItem True
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2
 
 # Influenced
@@ -200,22 +200,22 @@ Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic  
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 # Eater / Exarch
@@ -223,54 +223,54 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Boots"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 Show
     Class == "Boots"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
@@ -278,59 +278,59 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     Quality == 30
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 # Exceptional Base
 
 Show
-    BaseType == BOOTS_EXCEPTIONAL_BASES
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    BaseType == BASES_BOOTS_EXCEPTIONAL
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BOOTS_EXCEPTIONAL_BASES
+    BaseType == BASES_BOOTS_EXCEPTIONAL
     #.import _util -> multi_t3
 
 # Best Base
 
 Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     BaseDefencePercentile == 100
     #.import < _util -> craftable
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
-    ItemLevel >= BOOTS_BEST_MOD_ITEM_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
-    DropLevel >= BOOTS_BEST_BASE_DROP_LEVEL
+    DropLevel >= DROP_LEVEL_BOOTS_BEST
     #.import < _util -> craftable
