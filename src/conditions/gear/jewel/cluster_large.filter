@@ -33,67 +33,10 @@ Show #.strict STRICTNESS_LENIENT .if Show
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
-# Rare
-
-Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Rare
-    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND
-    #.import STYLE | jewellery > rare -> t2
-
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Rare
-    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER
-    #.import STYLE | jewellery > rare -> t3
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Rare
-    HasExplicitMod >=3 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER MODS_LARGE_CLUSTER_LESSER
-    #.import STYLE | jewellery > rare -> t3
-
-# Magic
-
-Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Magic
-    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND
-    #.import STYLE | jewellery > magic -> t2
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Magic
-    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER
-    #.import STYLE | jewellery > magic -> t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    BaseType == "Large Cluster Jewel"
-    Rarity == Magic
-    HasExplicitMod ==2 MODS_LARGE_CLUSTER_GRAND MODS_LARGE_CLUSTER_GREATER MODS_LARGE_CLUSTER_LESSER
-    #.import STYLE | jewellery > magic -> t3
-
-# Fractured
-
-Show
-    BaseType == "Large Cluster Jewel"
-    FracturedItem True
-    HasExplicitMod == MODS_LARGE_CLUSTER_NOTABLE MODS_LARGE_CLUSTER_GRAND
-    #.import < jewellery > _util -> multi_t2_rare
-    #.import < jewellery > _util -> multi_t2_magic
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == "Large Cluster Jewel"
-    FracturedItem True
-    #.import < jewellery > _util -> multi_t3_rare
-    #.import < jewellery > _util -> multi_t3_magic
-
-# Synthesized
-
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == "Large Cluster Jewel"
-    SynthesisedItem True
-    #.import < jewellery > _util -> multi_t2
+#.import template > rare_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_GRAND = MODS_LARGE_CLUSTER_GRAND, MODS_GREATER = MODS_LARGE_CLUSTER_GREATER, MODS_LESSER = MODS_LARGE_CLUSTER_LESSER
+#.import template > magic_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_GRAND = MODS_LARGE_CLUSTER_GRAND, MODS_GREATER = MODS_LARGE_CLUSTER_GREATER, MODS_LESSER = MODS_LARGE_CLUSTER_LESSER
+#.import template > fractured_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_IMPORTANT = MODS_LARGE_CLUSTER_NOTABLE MODS_LARGE_CLUSTER_GRAND
+#.import template > synthesized_cluster { BASE_JEWEL = "Large Cluster Jewel"
 
 # 12 Passives - iLvl 84+
 

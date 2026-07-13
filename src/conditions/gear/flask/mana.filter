@@ -8,7 +8,7 @@
 #.alias MODS_MANA_FLASK_LESSER         = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
 
 #.import template > unique { CLASS = "Mana Flasks"
-#.import template > magic { BASES_BEST = BASE_MANA_FLASK_BEST, MODS_GRAND = MODS_MANA_FLASK_GRAND, MODS_GREATER = MODS_MANA_FLASK_GREATER, MODS_LESSER = MODS_MANA_FLASK_LESSER
+#.import template > magic_life_mana { BASES_BEST = BASE_MANA_FLASK_BEST, MODS_GRAND = MODS_MANA_FLASK_GRAND, MODS_GREATER = MODS_MANA_FLASK_GREATER, MODS_LESSER = MODS_MANA_FLASK_LESSER
 #.import template > fractured { BASES_BEST = BASE_MANA_FLASK_BEST, MODS_GRAND = MODS_MANA_FLASK_GRAND, MODS_GREATER = MODS_MANA_FLASK_GREATER
-#.import template > quality { BASES_BEST = BASE_MANA_FLASK_BEST
+#.import template > quality_life_mana { BASES_BEST = BASE_MANA_FLASK_BEST
 #.import template > best_base { BASES_BEST = BASE_MANA_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_MANA_FLASK_BEST

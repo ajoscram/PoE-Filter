@@ -40,3 +40,4 @@ Show #.strict STRICTNESS_BASE
     #.multi
         HasExplicitMod == MODS_LESSER
         DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    

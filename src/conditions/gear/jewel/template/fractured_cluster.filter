@@ -1,0 +1,14 @@
+# Fractured
+
+Show
+    BaseType == BASE_JEWEL
+    FracturedItem True
+    HasExplicitMod == MODS_IMPORTANT
+    #.import < < jewellery > _util -> multi_t2_rare
+    #.import < < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASE_JEWEL
+    FracturedItem True
+    #.import < < jewellery > _util -> multi_t3_rare
+    #.import < < jewellery > _util -> multi_t3_magic

@@ -8,7 +8,7 @@
 #.alias MODS_LIFE_FLASK_LESSER          = "Alarmed" "Condensed" "Effusive" "Vitiating" "Careful" "Full-bodied" "Kainite" "of the Summoner" "of Freedom" "of Incessance" "of Alleviation" "of Grounding" "of Thermodynamics" "of Quashing" "of the Remedy"
 
 #.import template > unique { CLASS = "Life Flasks"
-#.import template > magic { BASES_BEST = BASE_LIFE_FLASK_BEST, MODS_GRAND = MODS_LIFE_FLASK_GRAND, MODS_GREATER = MODS_LIFE_FLASK_GREATER, MODS_LESSER = MODS_LIFE_FLASK_LESSER
+#.import template > magic_life_mana { BASES_BEST = BASE_LIFE_FLASK_BEST, MODS_GRAND = MODS_LIFE_FLASK_GRAND, MODS_GREATER = MODS_LIFE_FLASK_GREATER, MODS_LESSER = MODS_LIFE_FLASK_LESSER
 #.import template > fractured { BASES_BEST = BASE_LIFE_FLASK_BEST, MODS_GRAND = MODS_LIFE_FLASK_GRAND, MODS_GREATER = MODS_LIFE_FLASK_GREATER
-#.import template > quality { BASES_BEST = BASE_LIFE_FLASK_BEST
+#.import template > quality_life_mana { BASES_BEST = BASE_LIFE_FLASK_BEST
 #.import template > best_base { BASES_BEST = BASE_LIFE_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_LIFE_FLASK_BEST

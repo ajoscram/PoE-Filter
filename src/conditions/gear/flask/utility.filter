@@ -32,7 +32,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Foulborn False
     #.import STYLE | flask > unique -> t3
 
-#.import template > magic_with_class { CLASS = "Utility Flasks", MODS_GRAND = MODS_UTILITY_FLASK_GRAND, MODS_GREATER = MODS_UTILITY_FLASK_GREATER, MODS_LESSER = MODS_UTILITY_FLASK_LESSER
+#.import template > magic_utility { CLASS = "Utility Flasks", MODS_GRAND = MODS_UTILITY_FLASK_GRAND, MODS_GREATER = MODS_UTILITY_FLASK_GREATER, MODS_LESSER = MODS_UTILITY_FLASK_LESSER
 
 # Fractured
 
@@ -53,5 +53,5 @@ Show #.strict STRICTNESS_LENIENT .if Show
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
-#.import template > quality_with_class { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
+#.import template > quality_utility { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
 #.import template > progression { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST

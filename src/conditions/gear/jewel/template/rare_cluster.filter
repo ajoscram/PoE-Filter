@@ -1,0 +1,19 @@
+# Rare
+
+Show
+    BaseType == BASE_JEWEL
+    Rarity == Rare
+    HasExplicitMod >=3 MODS_GRAND
+    #.import STYLE | jewellery > rare -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASE_JEWEL
+    Rarity == Rare
+    HasExplicitMod >=3 MODS_GRAND MODS_GREATER
+    #.import STYLE | jewellery > rare -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASE_JEWEL
+    Rarity == Rare
+    HasExplicitMod >=3 MODS_GRAND MODS_GREATER MODS_LESSER
+    #.import STYLE | jewellery > rare -> t3

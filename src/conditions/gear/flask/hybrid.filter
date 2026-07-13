@@ -8,7 +8,7 @@
 #.alias MODS_HYBRID_FLASK_LESSER  = "Careful" "Concentrated" "Effusive" "Alarmed" "of the Remedy" "of Motion" "of the Summoner" "of Occlusion" "of Grounding" "of Quashing" "of Alleviation" "of Thermodynamics"
 
 #.import template > unique { CLASS = "Hybrid Flasks"
-#.import template > magic { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER, MODS_LESSER = MODS_HYBRID_FLASK_LESSER
+#.import template > magic_life_mana { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER, MODS_LESSER = MODS_HYBRID_FLASK_LESSER
 #.import template > fractured { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER
-#.import template > quality { BASES_BEST = BASE_HYBRID_FLASK_BEST
+#.import template > quality_life_mana { BASES_BEST = BASE_HYBRID_FLASK_BEST
 #.import template > best_base { BASES_BEST = BASE_HYBRID_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_HYBRID_FLASK_BEST

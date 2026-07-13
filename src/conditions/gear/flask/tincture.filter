@@ -7,6 +7,6 @@
 #.alias MODS_TINCTURE_LESSER          = "Natural" "Potent" "Persistent" "of the Savage" "of Liquefaction" "of Empowering" "of Rage" "of Skill" "of Assassination" "of Rejuvenation" "of Enveloping" "of Crushing"
 
 #.import template > unique { CLASS = "Tinctures"
-#.import template > magic_with_class { CLASS = "Tinctures", MODS_GRAND = MODS_TINCTURE_GRAND, MODS_GREATER = MODS_TINCTURE_GREATER, MODS_LESSER = MODS_TINCTURE_LESSER
-#.import template > quality_with_class { CLASS = "Tinctures", ITEM_LEVEL_BEST = ITEM_LEVEL_TINCTURE_BEST
+#.import template > magic_utility { CLASS = "Tinctures", MODS_GRAND = MODS_TINCTURE_GRAND, MODS_GREATER = MODS_TINCTURE_GREATER, MODS_LESSER = MODS_TINCTURE_LESSER
+#.import template > quality_utility { CLASS = "Tinctures", ITEM_LEVEL_BEST = ITEM_LEVEL_TINCTURE_BEST
 #.import template > progression { CLASS = "Tinctures", ITEM_LEVEL_BEST = ITEM_LEVEL_TINCTURE_BEST
