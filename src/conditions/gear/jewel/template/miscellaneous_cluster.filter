@@ -1,0 +1,5 @@
+# Miscellaneous
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASE_JEWEL
+    #.import < _util -> craftable

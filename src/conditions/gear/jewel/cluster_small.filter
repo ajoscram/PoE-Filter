@@ -273,8 +273,4 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t3
 
-# Miscellaneous
-
-Show #.strict STRICTNESS_BASE .if Show
-    BaseType == "Small Cluster Jewel"
-    #.import < _util -> craftable
+#.import template > miscellaneous_cluster { BASE_JEWEL = "Small Cluster Jewel"
