@@ -1,0 +1,33 @@
+# Fractured
+
+Show
+    Class == CLASS
+    FracturedItem True
+    HasExplicitMod == MODS_GRAND
+    ItemLevel >= ITEM_LEVEL_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t1_rare
+    #.import < _util -> multi_t1_magic
+
+Show
+    Class == CLASS
+    FracturedItem True
+    HasExplicitMod == MODS_GRAND
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t2_rare
+    #.import < _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == CLASS
+    FracturedItem True
+    ItemLevel >= ITEM_LEVEL_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t2_rare
+    #.import < _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == CLASS
+    FracturedItem True
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t3_rare
+    #.import < _util -> multi_t3_magic

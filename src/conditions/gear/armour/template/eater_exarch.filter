@@ -1,0 +1,27 @@
+# Eater / Exarch
+
+Show
+    Class == CLASS
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t3
+
+Show
+    Class == CLASS
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == CLASS
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == CLASS
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t3

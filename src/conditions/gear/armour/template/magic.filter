@@ -1,0 +1,42 @@
+# Magic
+
+Show
+    Class == CLASS
+    Rarity == Magic
+    HasExplicitMod ==2 MODS_GRAND
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import STYLE | armour > magic -> t2
+
+Show #.strict STRICTNESS_STRICT
+    Class == CLASS
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t2
+    #.multi
+        HasExplicitMod ==2 MODS_GRAND
+    #.multi
+        HasExplicitMod == MODS_GRAND
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
+
+Show #.strict STRICTNESS_LENIENT
+    Class == CLASS
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == MODS_GRAND
+    #.multi
+        HasExplicitMod ==2 MODS_GREATER
+    #.multi
+        HasExplicitMod == MODS_GREATER
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
+
+Show #.strict STRICTNESS_BASE
+    Class == CLASS
+    Rarity == Magic
+    #.import STYLE | armour > magic -> t3
+    #.multi
+        HasExplicitMod == MODS_GREATER
+    #.multi
+        HasExplicitMod ==2 MODS_LESSER
+    #.multi
+        HasExplicitMod == MODS_LESSER
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST

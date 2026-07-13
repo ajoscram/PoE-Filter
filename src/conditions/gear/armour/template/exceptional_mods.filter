@@ -1,0 +1,14 @@
+# Exceptional Mods
+
+Show
+    Class == CLASS
+    HasExplicitMod == MODS_EXCEPTIONAL
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    #.import < _util -> multi_t1_rare
+    #.import < _util -> multi_t1_magic
+
+Show
+    Class == CLASS
+    HasExplicitMod == MODS_EXCEPTIONAL
+    #.import < _util -> multi_t2_rare
+    #.import < _util -> multi_t2_magic
