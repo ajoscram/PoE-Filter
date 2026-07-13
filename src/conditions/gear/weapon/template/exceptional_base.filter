@@ -1,0 +1,10 @@
+# Exceptional Base
+
+Show
+    BaseType == BASES_EXCEPTIONAL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
+    #.import < _util -> multi_t1
+
+Show
+    BaseType == BASES_EXCEPTIONAL
+    #.import < _util -> multi_t2
