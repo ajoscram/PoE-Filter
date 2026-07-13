@@ -8,6 +8,11 @@
 #.alias ELDRITCH_EXQUISITE   = 5
 #.alias ELDRITCH_PERFECT     = 6
 
+#.# Levels
+
+#.alias ITEM_LEVEL_WEAPON_BEST = 86
+#.alias DROP_LEVEL_ARMOUR_BEST = 84
+
 #.# Mods
 
 #.alias MODS_INFLUENCED      = "The Shaper's" "The Elder's" "Crusader's" "Hunter's" "Redeemer's" "Warlord's"
@@ -15,7 +20,6 @@
 #.alias MODS_VEILED_NAMED    = "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 #.alias MODS_VEILED_UNNAMED  = "Veiled" "of the Veil"
 
-#.alias MODS_WEAPON_BEST_ITEM_LEVEL = 86
 #.alias MODS_WEAPON_EXCEPTIONAL     = "Dictator's" "Emperor's" "Merciless" "Tyrannical" "Deceiver's" "Betrayer's" "Turncoat's" "Subterranean" "of the Underground" "of the Sentinel"
 #.alias MODS_WEAPON_GRAND           = "Conqueror's" "Cruel" "Flaring" "Carbonising" "Crystalising" "Vapourising" "Devastating" "Malicious" "of Incision" "of Destruction" "of Dissolution"
 #.alias MODS_WEAPON_GREATER         = "Champion's" "Bloodthirsty" "Tempered" "Cremating" "Entombing" "Electrocuting" "Overpowering" "of Revitalization" "of Retention" "of Penetrating" "of Ferocity" "of Radiance" "of Melting"

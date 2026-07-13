@@ -1,6 +1,5 @@
 #.subsection Boots
 
-#.alias DROP_LEVEL_BOOTS_BEST   = 84
 #.alias ITEM_LEVEL_BOOTS_BEST   = 86
 #.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
 
@@ -40,7 +39,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 Show
     Class == "Boots"
     HasExplicitMod == MODS_BOOTS_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
@@ -60,7 +59,7 @@ Show
         HasExplicitMod ==6 MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod >=5 MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show
     Class == "Boots"
@@ -70,7 +69,7 @@ Show
         HasExplicitMod >=5 MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod >=4 MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_STRICT
     Class == "Boots"
@@ -80,7 +79,7 @@ Show #.strict STRICTNESS_STRICT
         HasExplicitMod >=3 MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Boots"
@@ -90,7 +89,7 @@ Show #.strict STRICTNESS_LENIENT
         HasExplicitMod >=3 MODS_BOOTS_GREATER MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BOOTS_GREATER MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Boots"
@@ -100,7 +99,7 @@ Show #.strict STRICTNESS_BASE
         HasExplicitMod >=3 MODS_BOOTS_LESSER MODS_BOOTS_GREATER MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BOOTS_LESSER MODS_BOOTS_GREATER MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 # Magic
 
@@ -108,7 +107,7 @@ Show
     Class == "Boots"
     Rarity == Magic
     HasExplicitMod ==2 MODS_BOOTS_GRAND
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import STYLE | armour > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -119,7 +118,7 @@ Show #.strict STRICTNESS_STRICT
         HasExplicitMod ==2 MODS_BOOTS_GRAND
     #.multi
         HasExplicitMod == MODS_BOOTS_GRAND
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Boots"
@@ -131,7 +130,7 @@ Show #.strict STRICTNESS_LENIENT
         HasExplicitMod ==2 MODS_BOOTS_GREATER
     #.multi
         HasExplicitMod == MODS_BOOTS_GREATER
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Boots"
@@ -143,7 +142,7 @@ Show #.strict STRICTNESS_BASE
         HasExplicitMod ==2 MODS_BOOTS_LESSER
     #.multi
         HasExplicitMod == MODS_BOOTS_LESSER
-        DropLevel >= DROP_LEVEL_BOOTS_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 # Fractured
 
@@ -152,7 +151,7 @@ Show
     FracturedItem True
     HasExplicitMod == MODS_BOOTS_GRAND
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
@@ -160,7 +159,7 @@ Show
     Class == "Boots"
     FracturedItem True
     HasExplicitMod == MODS_BOOTS_GRAND
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -168,14 +167,14 @@ Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     FracturedItem True
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
     FracturedItem True
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
 
@@ -184,14 +183,14 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Boots"
     SynthesisedItem True
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
     SynthesisedItem True
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2
 
 # Influenced
@@ -200,7 +199,7 @@ Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic  
@@ -208,14 +207,14 @@ Show
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Eater / Exarch
@@ -223,54 +222,54 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Boots"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 Show
     Class == "Boots"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
@@ -278,27 +277,27 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     Quality == 30
     #.import _util -> multi_t1
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     Quality > 25
     #.import _util -> multi_t3
 
@@ -317,7 +316,7 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     BaseDefencePercentile == 100
     #.import < _util -> craftable
@@ -325,12 +324,12 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BOOTS_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Boots"
-    DropLevel >= DROP_LEVEL_BOOTS_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import < _util -> craftable

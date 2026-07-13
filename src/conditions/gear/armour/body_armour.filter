@@ -1,6 +1,5 @@
 #.subsection Body Armour
 
-#.alias DROP_LEVEL_BODY_ARMOUR_BEST   = 84
 #.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
 #.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
 
@@ -43,7 +42,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 Show
     Class == "Body Armours"
     HasExplicitMod == MODS_BODY_ARMOUR_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
@@ -63,7 +62,7 @@ Show
         HasExplicitMod ==6 MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod >=5 MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show
     Class == "Body Armours"
@@ -73,7 +72,7 @@ Show
         HasExplicitMod >=5 MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod >=4 MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_STRICT
     Class == "Body Armours"
@@ -83,7 +82,7 @@ Show #.strict STRICTNESS_STRICT
         HasExplicitMod >=3 MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Body Armours"
@@ -93,7 +92,7 @@ Show #.strict STRICTNESS_LENIENT
         HasExplicitMod >=3 MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Body Armours"
@@ -103,7 +102,7 @@ Show #.strict STRICTNESS_BASE
         HasExplicitMod >=3 MODS_BODY_ARMOUR_LESSER MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod >=2 MODS_BODY_ARMOUR_LESSER MODS_BODY_ARMOUR_GREATER MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 # Magic
 
@@ -111,7 +110,7 @@ Show
     Class == "Body Armours"
     Rarity == Magic
     HasExplicitMod ==2 MODS_BODY_ARMOUR_GRAND
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import STYLE | armour > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
@@ -122,7 +121,7 @@ Show #.strict STRICTNESS_STRICT
         HasExplicitMod ==2 MODS_BODY_ARMOUR_GRAND
     #.multi
         HasExplicitMod == MODS_BODY_ARMOUR_GRAND
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_LENIENT
     Class == "Body Armours"
@@ -134,7 +133,7 @@ Show #.strict STRICTNESS_LENIENT
         HasExplicitMod ==2 MODS_BODY_ARMOUR_GREATER
     #.multi
         HasExplicitMod == MODS_BODY_ARMOUR_GREATER
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 Show #.strict STRICTNESS_BASE
     Class == "Body Armours"
@@ -146,7 +145,7 @@ Show #.strict STRICTNESS_BASE
         HasExplicitMod ==2 MODS_BODY_ARMOUR_LESSER
     #.multi
         HasExplicitMod == MODS_BODY_ARMOUR_LESSER
-        DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+        DropLevel >= DROP_LEVEL_ARMOUR_BEST
 
 # Fractured
 
@@ -155,7 +154,7 @@ Show
     FracturedItem True
     HasExplicitMod == MODS_BODY_ARMOUR_GRAND
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
@@ -163,7 +162,7 @@ Show
     Class == "Body Armours"
     FracturedItem True
     HasExplicitMod == MODS_BODY_ARMOUR_GRAND
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -171,14 +170,14 @@ Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     FracturedItem True
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
     FracturedItem True
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3_rare
     #.import _util -> multi_t3_magic
 
@@ -187,14 +186,14 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Body Armours"
     SynthesisedItem True
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
     SynthesisedItem True
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t2
 
 # Influenced
@@ -203,7 +202,7 @@ Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
@@ -211,14 +210,14 @@ Show
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Eater / Exarch
@@ -226,54 +225,54 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Body Armours"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show
     Class == "Body Armours"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
     HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import _util -> multi_t3
 
 # Memory Strands
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     MemoryStrands == 100
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t3
 
@@ -281,27 +280,27 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     Quality == 30
     #.import _util -> multi_t1
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     Quality == 30
     #.import _util -> multi_t2
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     Quality > 25
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     Quality > 25
     #.import _util -> multi_t3
 
@@ -320,7 +319,7 @@ Show
 
 Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     BaseDefencePercentile == 100
     #.import < _util -> craftable
@@ -328,12 +327,12 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BODY_ARMOUR_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Body Armours"
-    DropLevel >= DROP_LEVEL_BODY_ARMOUR_BEST
+    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import < _util -> craftable

@@ -150,7 +150,7 @@ Show
     BaseType == BASES_DAGGER_RUNE_BEST
     FracturedItem True
     HasExplicitMod == MODS_WEAPON_GRAND MODS_DAGGER_RUNE_GRAND
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import _util -> multi_t1_rare
     #.import _util -> multi_t1_magic
 
@@ -164,7 +164,7 @@ Show
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == BASES_DAGGER_RUNE_BEST
     FracturedItem True
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import _util -> multi_t2_rare
     #.import _util -> multi_t2_magic
 
@@ -179,7 +179,7 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     BaseType == BASES_DAGGER_RUNE_BEST
     SynthesisedItem True
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import _util -> multi_t1
 
 Show
@@ -192,7 +192,7 @@ Show
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == BASES_DAGGER_RUNE_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
@@ -204,13 +204,13 @@ Show #.strict STRICTNESS_LENIENT .if Show
 
 Show
     BaseType == BASES_DAGGER_RUNE_BEST
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     MemoryStrands == 100
     #.import _util -> multi_t1
 
 Show
     BaseType == BASES_DAGGER_RUNE_BEST
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     MemoryStrands >= 50
     #.import _util -> multi_t2
 
@@ -228,7 +228,7 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     BaseType == BASES_DAGGER_RUNE_BEST
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     Quality == 30
     #.import _util -> multi_t1
 
@@ -239,7 +239,7 @@ Show
 
 Show
     BaseType == BASES_DAGGER_RUNE_BEST
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     Quality > 25
     #.import _util -> multi_t3
 
@@ -252,7 +252,7 @@ Show #.strict STRICTNESS_STRICT .if Show
 
 Show
     BaseType == BASES_DAGGER_RUNE_EXCEPTIONAL
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import _util -> multi_t1
 
 Show
@@ -263,7 +263,7 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == BASES_DAGGER_RUNE_BEST
-    ItemLevel >= MODS_WEAPON_BEST_ITEM_LEVEL
+    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
     #.import < _util -> craftable
     #.import _util -> multi_t3
 
