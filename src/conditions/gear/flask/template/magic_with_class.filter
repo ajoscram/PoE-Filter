@@ -1,0 +1,16 @@
+# Magic
+
+Show
+    Class == CLASS
+    HasExplicitMod ==2 MODS_GRAND
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == CLASS
+    HasExplicitMod ==2 MODS_GRAND MODS_GREATER
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == CLASS
+    HasExplicitMod ==2 MODS_GRAND MODS_GREATER MODS_LESSER
+    #.import STYLE | flask > magic -> t3

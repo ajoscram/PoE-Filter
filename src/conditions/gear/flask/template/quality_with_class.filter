@@ -1,0 +1,23 @@
+# High Quality
+
+Show
+    Class == "Tinctures"
+    Quality >= 25
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t1
+
+Show
+    Class == "Tinctures"
+    Quality >= 25
+    #.import < _util -> multi_t2
+
+Show
+    Class == "Tinctures"
+    Quality >= 20
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Tinctures"
+    Quality >= 20
+    #.import < _util -> multi_t3

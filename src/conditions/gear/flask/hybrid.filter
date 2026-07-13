@@ -1,91 +1,14 @@
 #.subsection Hybrid
 
-#.alias ITEM_LEVEL_HYBRID_FLASK_BEST  = 84
-#.alias BASE_HYBRID_FLASK_BEST        = "Hallowed Hybrid Flask"
+#.alias ITEM_LEVEL_HYBRID_FLASK_BEST = 84
+#.alias BASE_HYBRID_FLASK_BEST       = "Hallowed Hybrid Flask"
 
-#.alias MODS_HYBRID_FLASK_GRAND           = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"
-#.alias MODS_HYBRID_FLASK_GREATER         = "Cautious" "Saturated" "Effervescent" "Terrified" "Gypsum" "of the Cure" "of Freedom" "of the Conjurer" "of Restraint" "of Insulation" "of Quelling" "of Allaying" "of Entropy"
-#.alias MODS_HYBRID_FLASK_LESSER          = "Careful" "Concentrated" "Effusive" "Alarmed" "of the Remedy" "of Motion" "of the Summoner" "of Occlusion" "of Grounding" "of Quashing" "of Alleviation" "of Thermodynamics"
+#.alias MODS_HYBRID_FLASK_GRAND   = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"
+#.alias MODS_HYBRID_FLASK_GREATER = "Cautious" "Saturated" "Effervescent" "Terrified" "Gypsum" "of the Cure" "of Freedom" "of the Conjurer" "of Restraint" "of Insulation" "of Quelling" "of Allaying" "of Entropy"
+#.alias MODS_HYBRID_FLASK_LESSER  = "Careful" "Concentrated" "Effusive" "Alarmed" "of the Remedy" "of Motion" "of the Summoner" "of Occlusion" "of Grounding" "of Quashing" "of Alleviation" "of Thermodynamics"
 
-# Unique
-
-Show #.strict STRICTNESS_STRICT .if Show
-    Class == "Hybrid Flasks"
-    Rarity == Unique
-    #.import STYLE | flask > unique -> t3
-
-# Magic
-
-Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND
-    #.import STYLE | flask > magic -> t2
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND MODS_HYBRID_FLASK_GREATER
-    #.import STYLE | flask > magic -> t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    HasExplicitMod ==2 MODS_HYBRID_FLASK_GRAND MODS_HYBRID_FLASK_GREATER MODS_HYBRID_FLASK_LESSER
-    #.import STYLE | flask > magic -> t3
-
-# Fractured
-
-Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    HasExplicitMod == MODS_HYBRID_FLASK_GRAND
-    FracturedItem True
-    #.import STYLE | flask > magic -> t2
-
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    HasExplicitMod == MODS_HYBRID_FLASK_GREATER
-    FracturedItem True
-    #.import STYLE | flask > magic -> t3
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    FracturedItem True
-    #.import STYLE | flask > magic -> t3
-
-# High Quality
-
-Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    Quality >= 30
-    #.import _util -> multi_t1
-
-Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    Quality >= 26
-    #.import _util -> multi_t2
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    Quality >= 23
-    #.import _util -> multi_t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    Quality >= 20
-    #.import _util -> multi_t3
-
-# Best Base
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    ItemLevel >= ITEM_LEVEL_HYBRID_FLASK_BEST
-    #.import < _util -> craftable
-    #.import _util -> multi_t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    AreaLevel < LEVEL_YELLOW_MAPS_START
-    #.import < _util -> craftable
-
-Show
-    BaseType == BASE_HYBRID_FLASK_BEST
-    AreaLevel < LEVEL_WHITE_MAPS_START
-    #.import < _util -> craftable
+#.import template > unique { CLASS = "Hybrid Flasks"
+#.import template > magic { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER, MODS_LESSER = MODS_HYBRID_FLASK_LESSER
+#.import template > fractured { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER
+#.import template > quality { BASES_BEST = BASE_HYBRID_FLASK_BEST
+#.import template > best_base { BASES_BEST = BASE_HYBRID_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_HYBRID_FLASK_BEST

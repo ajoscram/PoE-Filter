@@ -1,0 +1,6 @@
+# Unique
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == CLASS
+    Rarity == Unique
+    #.import STYLE | flask > unique -> t3

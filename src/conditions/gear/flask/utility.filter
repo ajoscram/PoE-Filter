@@ -32,34 +32,19 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Foulborn False
     #.import STYLE | flask > unique -> t3
 
-# Magic
-
-Show
-    Class == "Utility Flasks"
-    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND
-    #.import STYLE | flask > magic -> t2
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    Class == "Utility Flasks"
-    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND MODS_UTILITY_FLASK_GREATER
-    #.import STYLE | flask > magic -> t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    Class == "Utility Flasks"
-    HasExplicitMod ==2 MODS_UTILITY_FLASK_GRAND MODS_UTILITY_FLASK_GREATER MODS_UTILITY_FLASK_LESSER
-    #.import STYLE | flask > magic -> t3
+#.import template > magic_with_class { CLASS = "Utility Flasks", MODS_GRAND = MODS_UTILITY_FLASK_GRAND, MODS_GREATER = MODS_UTILITY_FLASK_GREATER, MODS_LESSER = MODS_UTILITY_FLASK_LESSER
 
 # Fractured
 
 Show
     Class == "Utility Flasks"
-    HasExplicitMod == MODS_LIFE_FLASK_GRAND
+    HasExplicitMod == MODS_UTILITY_FLASK_GRAND
     FracturedItem True
     #.import STYLE | flask > magic -> t2
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Utility Flasks"
-    HasExplicitMod == MODS_LIFE_FLASK_GREATER
+    HasExplicitMod == MODS_UTILITY_FLASK_GREATER
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
@@ -68,46 +53,5 @@ Show #.strict STRICTNESS_LENIENT .if Show
     FracturedItem True
     #.import STYLE | flask > magic -> t3
 
-# High Quality
-
-Show
-    Class == "Utility Flasks"
-    Quality >= 25
-    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
-    #.import _util -> multi_t1
-
-Show
-    Class == "Utility Flasks"
-    Quality >= 25
-    #.import _util -> multi_t2
-
-Show
-    Class == "Utility Flasks"
-    Quality >= 20
-    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
-    #.import _util -> multi_t2
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    Class == "Utility Flasks"
-    Quality >= 20
-    #.import _util -> multi_t3
-
-# Best Base
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    Class == "Utility Flasks"
-    ItemLevel >= ITEM_LEVEL_UTILITY_FLASK_BEST
-    #.import < _util -> craftable
-    #.import _util -> multi_t3
-
-# Progression
-
-Show #.strict STRICTNESS_LENIENT .if Show
-    Class == "Utility Flasks"
-    AreaLevel < LEVEL_WHITE_MAPS_START
-    #.import < _util -> craftable
-
-Show #.strict STRICTNESS_BASE .if Show
-    Class == "Utility Flasks"
-    AreaLevel < LEVEL_YELLOW_MAPS_START
-    #.import < _util -> craftable
+#.import template > quality_with_class { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
+#.import template > progression { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
