@@ -2,6 +2,7 @@
 
 #.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
 #.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
+#.alias BASES_BODY_ARMOUR_BEST        = "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
 
 #.alias MODS_BODY_ARMOUR_EXCEPTIONAL     = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
 #.alias MODS_BODY_ARMOUR_GRAND           = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
@@ -37,4 +38,4 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     LinkedSockets < 5 #.format
     #.import STYLE | armour > unique -> t3
 
-#.import template > _main { CLASS = "Body Armours", ITEM_LEVEL_BEST = ITEM_LEVEL_BODY_ARMOUR_BEST, BASES_EXCEPTIONAL = BASES_BODY_ARMOUR_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BODY_ARMOUR_EXCEPTIONAL, MODS_GRAND = MODS_BODY_ARMOUR_GRAND, MODS_GREATER = MODS_BODY_ARMOUR_GREATER, MODS_LESSER = MODS_BODY_ARMOUR_LESSER
+#.import template > _main { CLASS = "Body Armours", BASES_BEST = BASES_BODY_ARMOUR_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_BODY_ARMOUR_BEST, BASES_EXCEPTIONAL = BASES_BODY_ARMOUR_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BODY_ARMOUR_EXCEPTIONAL, MODS_GRAND = MODS_BODY_ARMOUR_GRAND, MODS_GREATER = MODS_BODY_ARMOUR_GREATER, MODS_LESSER = MODS_BODY_ARMOUR_LESSER

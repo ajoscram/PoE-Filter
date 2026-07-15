@@ -1,33 +1,29 @@
 # Fractured
 
 Show
-    Class == CLASS
-    FracturedItem True
-    HasExplicitMod == MODS_GRAND
+    BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    HasExplicitMod == MODS_GRAND
+    FracturedItem True
     #.import < _util -> multi_t1_rare
     #.import < _util -> multi_t1_magic
 
 Show
-    Class == CLASS
-    FracturedItem True
+    BaseType == BASES_BEST
     HasExplicitMod == MODS_GRAND
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    FracturedItem True
     #.import < _util -> multi_t2_rare
     #.import < _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == CLASS
-    FracturedItem True
+    BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    FracturedItem True
     #.import < _util -> multi_t2_rare
     #.import < _util -> multi_t2_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == CLASS
+    BaseType == BASES_BEST
     FracturedItem True
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import < _util -> multi_t3_rare
     #.import < _util -> multi_t3_magic

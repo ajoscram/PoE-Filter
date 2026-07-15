@@ -1,5 +1,37 @@
 #.subsection Quiver
 
-Show
-	Class == "Quivers"
-    #.import STYLE | miscellaneous -> catchall
+#.alias ITEM_LEVEL_QUIVER_BEST   = 86
+#.alias BASES_QUIVER_EXCEPTIONAL = "Ornate Quiver"
+#.alias BASES_QUIVER_BEST        = "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver" "Blazing Arrow Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Artillery Quiver"
+
+#.alias MODS_QUIVER_EXCEPTIONAL     = "Subterranean" "of the Underground" "of the Sentinel" "Infamous"
+#.alias MODS_QUIVER_GRAND           = ""
+#.alias MODS_QUIVER_GREATER         = ""
+#.alias MODS_QUIVER_LESSER          = ""
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Ornate Quiver"
+    Class == "Quivers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Vile Arrow Quiver" "Primal Arrow Quiver" "Ornate Quiver" "Two-Point Arrow Quiver"
+    Class == "Quivers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Heavy Arrow Quiver" "Blunt Arrow Quiver" "Two-Point Arrow Quiver" "Broadhead Arrow Quiver" "Primal Arrow Quiver" "Sharktooth Arrow Quiver" "Penetrating Arrow Quiver" "Serrated Arrow Quiver" "Spike-Point Arrow Quiver" "Feathered Arrow Quiver"
+    Class == "Quivers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t3
+

@@ -2,6 +2,7 @@
 
 #.alias ITEM_LEVEL_GLOVES_BEST   = 85
 #.alias BASES_GLOVES_EXCEPTIONAL = "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Runic Gauntlets"
+#.alias BASES_GLOVES_BEST        = "Leviathan Gauntlets" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets" "Paladin Gloves" "Phantom Mitts"
 
 #.alias MODS_GLOVES_EXCEPTIONAL     = "Subterranean" "of the Underground" "Topotante's" "Xopec's" "of Puhuarte" "Brinerot" "Sentinel's" "Infamous" "of Infamy" "Haunted" "of Haunting"
 #.alias MODS_GLOVES_GRAND           = "Athlete's" "Masterwork" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Zaffre" "Durable" "Legend's" "Seraphim's" "Unassailable" "Seething" "Vaporous" "Mirage's" "Impregnable" "Encased" "of the Gods" "of the Blur" "of Raiding" "of Grandmastery" "of Lioneye" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of Nullification" "of the Genius" "of Ardour" "of Runes"
@@ -34,4 +35,4 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Foulborn False
     #.import STYLE | armour > unique -> t3
 
-#.import template > _main { CLASS = "Gloves", ITEM_LEVEL_BEST = ITEM_LEVEL_GLOVES_BEST, BASES_EXCEPTIONAL = BASES_GLOVES_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_GLOVES_EXCEPTIONAL, MODS_GRAND = MODS_GLOVES_GRAND, MODS_GREATER = MODS_GLOVES_GREATER, MODS_LESSER = MODS_GLOVES_LESSER
+#.import template > _main { CLASS = "Gloves", BASES_BEST = BASES_GLOVES_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_GLOVES_BEST, BASES_EXCEPTIONAL = BASES_GLOVES_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_GLOVES_EXCEPTIONAL, MODS_GRAND = MODS_GLOVES_GRAND, MODS_GREATER = MODS_GLOVES_GREATER, MODS_LESSER = MODS_GLOVES_LESSER

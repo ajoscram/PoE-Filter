@@ -1,23 +1,20 @@
 # Influenced
 
 Show
-    Class == CLASS
-    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    BaseType == BASES_BEST
     HasExplicitMod == MODS_ELEVATED
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     ItemLevel >= ITEM_LEVEL_BEST
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import < _util -> multi_t1_rare
     #.import < _util -> multi_t1_magic
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == CLASS
-    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     #.import < _util -> multi_t2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == CLASS
+    BaseType == BASES_BEST
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
     #.import < _util -> multi_t3

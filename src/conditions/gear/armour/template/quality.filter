@@ -1,27 +1,23 @@
 # High Quality
 
 Show
-    Class == CLASS
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
     Quality >= 30
     #.import < _util -> multi_t1
 
 Show
-    Class == CLASS
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    BaseType == BASES_BEST
     Quality >= 30
     #.import < _util -> multi_t2
 
 Show
-    Class == CLASS
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
     Quality >= 25
     #.import < _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == CLASS
-    DropLevel >= DROP_LEVEL_ARMOUR_BEST
+    BaseType == BASES_BEST
     Quality >= 25
     #.import < _util -> multi_t3
