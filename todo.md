@@ -6,8 +6,6 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # To-Do
-* Implement templating on gear to remove redundancies.
-* Add offhand conditions.
 * Add jewellery conditions.
 * Update the `create-release` script
 * Create a `update-economy` script that updates all filter files that have `.econ`.

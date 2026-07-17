@@ -4,10 +4,10 @@
 #.alias BASES_QUIVER_EXCEPTIONAL = "Ornate Quiver"
 #.alias BASES_QUIVER_BEST        = "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver" "Blazing Arrow Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Artillery Quiver"
 
-#.alias MODS_QUIVER_EXCEPTIONAL     = "Subterranean" "of the Underground" "of the Sentinel" "Infamous"
-#.alias MODS_QUIVER_GRAND           = ""
-#.alias MODS_QUIVER_GREATER         = ""
-#.alias MODS_QUIVER_LESSER          = ""
+#.alias MODS_QUIVER_EXCEPTIONAL = "Subterranean" "of the Underground" "of the Sentinel" "Infamous"
+#.alias MODS_QUIVER_GRAND       = "Fecund" "Flaring" "Cremating" "Entombing" "Electrocuting" "Malicious" "Impaling" "of the Blur" "of Grandmastery" "of Lioneye" "of Rending" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Destruction" "of the Gale" "of Splintering" "of Dissolution"
+#.alias MODS_QUIVER_GREATER     = "Athlete's" "Tempered" "Blasting" "Polar" "Discharging" "Lacerating" "of the Wind" "of Mastery" "of the Ranger" "of Incision" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Ferocity" "of the Zephyr" "of Melting"
+#.alias MODS_QUIVER_LESSER      = "Virile" "Razor-sharp" "Incinerating" "Glaciated" "Shocking" "Incisive" "of the Phantom" "of the Remora" "of Thirst" "of Ease" "of the Marksman" "of Penetrating" "of the Volcano" "of the Polar Bear" "of the Maelstrom" "of Expulsion" "of Eviction" "of Fury" "of Rage" "of Propulsion" "of Retention" "of Liquefaction"
 
 # Unique
 
@@ -35,3 +35,23 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Foulborn False
     #.import STYLE | armour > unique -> t3
 
+#.import < armour > template > exceptional_mods { CLASS = "Quivers", BASES_BEST = BASES_QUIVER_BEST, MODS_EXCEPTIONAL = MODS_QUIVER_EXCEPTIONAL
+#.import < armour > template > rare { CLASS = "Quivers", BASES_BEST = BASES_QUIVER_BEST, MODS_GRAND = MODS_QUIVER_GRAND, MODS_GREATER = MODS_QUIVER_GREATER, MODS_LESSER = MODS_QUIVER_LESSER
+#.import < armour > template > magic { CLASS = "Quivers", BASES_BEST = BASES_QUIVER_BEST, MODS_GRAND = MODS_QUIVER_GRAND, MODS_GREATER = MODS_QUIVER_GREATER, MODS_LESSER = MODS_QUIVER_LESSER
+#.import < armour > template > fractured { CLASS = "Quivers", BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST, MODS_GRAND = MODS_QUIVER_GRAND
+#.import < armour > template > synthesized { CLASS = "Quivers", BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
+#.import template > influenced { BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
+#.import < armour > template > memory_strands { BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
+#.import < armour > template > exceptional_base { BASES_EXCEPTIONAL = BASES_QUIVER_EXCEPTIONAL, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
+
+# Best Base
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_QUIVER_BEST
+    ItemLevel >= ITEM_LEVEL_QUIVER_BEST
+    #.import < _util -> craftable
+    #.import < armour > _util -> multi_t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASES_QUIVER_BEST
+    #.import < _util -> craftable
