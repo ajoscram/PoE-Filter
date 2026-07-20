@@ -1,5 +1,48 @@
 #.subsection Amulet
 
+#.alias ITEM_LEVEL_AMULET_BEST   = 86
+
+#.alias BASES_AMULET_EXQUISITE   = "Unset Amulet" "Focused Amulet" "Simplex Amulet" "Astrolabe Amulet"
+#.alias BASES_AMULET_EXCEPTIONAL = "Marble Amulet" "Blue Pearl Amulet"
+#.alias BASES_AMULET_GRAND       = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
+#.alias BASES_AMULET_GREAT       = "Gold Amulet" "Seaglass Amulet"
+#.alias BASES_AMULET_LESSER      = "Coral Amulet" "Paua Amulet"
+
+#.alias MODS_AMULET_EXCEPTIONAL = "Infamous" "Guatelitzi's" "Xopec's" "Subterranean" "of the Underground" "of Puhuarte" "of Guatelitzi" "of the Sentinel" "Exalter's"
+#.alias MODS_AMULET_GRAND       = "Athlete's" "Ultramarine" "Dazzling" "Flaring" "Cremating" "Entombing" "Impregnable" "Vaporous" "Unassailable" "Wizard's" "Devastating" "Perandus'" "Provocateur's" "Behemoth's" "Stormbrewer's" "Rimedweller's" "Vulcanist's" "of the Gods" "of the Wind" "of the Genius" "of the Multiverse" "of Excavation" "of Legerdemain" "of the Ranger" "of the Phoenix" "of Nirvana" "of Incision" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Span" "of Destruction" "of Regrowth" "of Immolation" "of Floe" "of Discharge" "of Dissolution"
+#.alias MODS_AMULET_GREATER     = "Virile" "Zaffre" "Resplendent" "Tempered" "Blasting" "Polar" "Girded" "Phased" "Indomitable" "Thaumaturgist's" "Overpowering" "Dragon's" "of the Titan" "of the Phantom" "of the Virtuoso" "of the Infinite" "of Archaeology" "of Expertise" "of the Marksman" "of Ryslatha" "of Euphoria" "of Penetrating" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of the Rainbow" "of Ferocity" "of Restoration" "of Flames" "of Rime" "of Voltage" "of Melting"
+#.alias MODS_AMULET_LESSER      = "Rotund" "Blue" "Incandescent" "Razor-sharp" "Incinerating" "Glaciated" "Thickened" "Blurred" "Dauntless" "Sorcerer's" "Unleashed" "Pirate's" "of the Leviathan" "of the Jaguar" "of the Savant" "of the Universe" "of the Galaxy" "of the Vampire" "of Parching" "of Raiding" "of Nimbleness" "of the Sniper" "of the Troll" "of Bliss" "of Rupturing" "of the Volcano" "of the Polar Bear" "of the Maelstrom" "of Expulsion" "of Eviction" "of Variegation" "of the Kaleidoscope" "of Fury" "of Rage" "of Rejuvenation" "of Cinders" "of Ice" "of Electricity" "of Masterstroke" "of Retention" "of Liquefaction" "of Dispersion"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Lapis Amulet" "Seaglass Amulet" "Unset Amulet" "Agate Amulet" "Paua Amulet" "Coral Amulet" "Astrolabe Amulet" "Onyx Amulet"
+    Class == "Amulets" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Lapis Amulet" "Turquoise Amulet" "Greatwolf Talisman" "Agate Amulet" "Jade Amulet" "Amber Amulet" "Onyx Amulet" "Marble Amulet"
+    Class == "Amulets" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Paua Amulet" "Blue Pearl Amulet" "Lapis Amulet" "Rotfeather Talisman" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Jade Amulet" "Amber Amulet" "Clutching Talisman" "Gold Amulet" "Coral Amulet" "Wereclaw Talisman" "Onyx Amulet" "Black Maw Talisman"
+    Class == "Amulets" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t3
+
+# Legacy Talisman
+
 Show
-	Class == "Amulets"
-    #.import STYLE | miscellaneous -> catchall
+    BaseType == "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
+    #.import _util -> multi_t2
+
+#.import template > _main { CLASS = "Amulets", ITEM_LEVEL_BEST = ITEM_LEVEL_AMULET_BEST, MODS_EXCEPTIONAL = MODS_AMULET_EXCEPTIONAL, MODS_GRAND = MODS_AMULET_GRAND, MODS_GREATER = MODS_AMULET_GREATER, MODS_LESSER = MODS_AMULET_LESSER, BASES_BEST = BASES_AMULET_EXCEPTIONAL BASES_AMULET_GRAND, BASES_EXQUISITE = BASES_AMULET_EXQUISITE, BASES_EXCEPTIONAL = BASES_AMULET_EXCEPTIONAL, BASES_GRAND = BASES_AMULET_GRAND, BASES_GREAT = BASES_AMULET_GREAT, BASES_LESSER = BASES_AMULET_LESSER

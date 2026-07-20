@@ -5,8 +5,14 @@ https://www.craftofexile.com
 https://poedb.tw/us
 https://www.filterblade.xyz
 
+# 3.29 To-Do
+* Move Cord Belts to exquisite tier, because Mirage is not going core.
+* Move Moonstone Rings to great tier, because they now give Cast Speed.
+* Check patch notes for changes.
+
 # To-Do
 * Add jewellery conditions.
+* Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Update the `create-release` script
 * Create a `update-economy` script that updates all filter files that have `.econ`.
 * Add style constants (colors!!!)

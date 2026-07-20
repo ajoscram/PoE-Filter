@@ -1,6 +1,7 @@
 #.subsection Helmet
 
 #.alias ITEM_LEVEL_HELMET_BEST   = 85
+
 #.alias BASES_HELMET_EXCEPTIONAL = "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
 #.alias BASES_HELMET_BEST        = "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Torturer's Mask"
 

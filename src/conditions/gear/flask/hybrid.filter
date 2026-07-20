@@ -1,6 +1,7 @@
 #.subsection Hybrid
 
 #.alias ITEM_LEVEL_HYBRID_FLASK_BEST = 84
+
 #.alias BASE_HYBRID_FLASK_BEST       = "Hallowed Hybrid Flask"
 
 #.alias MODS_HYBRID_FLASK_GRAND   = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"

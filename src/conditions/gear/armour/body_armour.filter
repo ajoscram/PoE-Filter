@@ -1,6 +1,7 @@
 #.subsection Body Armour
 
 #.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
+
 #.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
 #.alias BASES_BODY_ARMOUR_BEST        = "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
 

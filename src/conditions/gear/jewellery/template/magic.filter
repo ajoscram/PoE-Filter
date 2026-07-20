@@ -4,40 +4,32 @@ Show
     BaseType == BASES_BEST
     Rarity == Magic
     HasExplicitMod ==2 MODS_GRAND
-    #.import STYLE | armour > magic -> t2
+    #.import STYLE | jewellery > magic -> t2
 
 Show #.strict STRICTNESS_STRICT
     Rarity == Magic
-    #.import STYLE | armour > magic -> t2
-    #.multi
+    #.import STYLE | jewellery > magic -> t2
+    #.multi .strict STRICTNESS_STRICT
         Class == CLASS
         HasExplicitMod ==2 MODS_GRAND
-    #.multi
+    #.multi .strict STRICTNESS_STRICT
         BaseType == BASES_BEST
         HasExplicitMod == MODS_GRAND
-
-Show #.strict STRICTNESS_LENIENT
-    Rarity == Magic
-    #.import STYLE | armour > magic -> t3
-    #.multi
+    #.multi .strict STRICTNESS_LENIENT
         Class == CLASS
         HasExplicitMod == MODS_GRAND
-    #.multi
+    #.multi .strict STRICTNESS_LENIENT
         Class == CLASS
         HasExplicitMod ==2 MODS_GREATER
-    #.multi
+    #.multi .strict STRICTNESS_LENIENT
         BaseType == BASES_BEST
         HasExplicitMod == MODS_GREATER
-
-Show #.strict STRICTNESS_BASE
-    Rarity == Magic
-    #.import STYLE | armour > magic -> t3
-    #.multi
+    #.multi .strict STRICTNESS_BASE
         Class == CLASS
         HasExplicitMod == MODS_GREATER
-    #.multi
+    #.multi .strict STRICTNESS_BASE
         Class == CLASS
         HasExplicitMod ==2 MODS_LESSER
-    #.multi
+    #.multi .strict STRICTNESS_BASE
         BaseType == BASES_BEST
         HasExplicitMod == MODS_LESSER

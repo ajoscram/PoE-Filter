@@ -20,6 +20,6 @@
 #.alias LEVEL_WHITE_MAPS_START   = 68
 #.alias LEVEL_YELLOW_MAPS_START  = 73
 #.alias LEVEL_RED_MAPS_START     = 78
-#.alias LEVEL_RED_MAPS_T16       = 83
+#.alias LEVEL_MAPS_T16           = 83
 
 #.import STYLE | constants

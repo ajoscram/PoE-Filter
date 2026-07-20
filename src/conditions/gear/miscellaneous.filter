@@ -166,6 +166,10 @@ Show #.strict STRICTNESS_BASE .if Show
 
 # Quality
 
+Show
+    Class == GEAR_JEWELLERY
+    Quality > 0
+
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == GEAR_FLASKS
     Quality >= 15
@@ -179,7 +183,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show #.strict STRICTNESS_BASE .if Show
     Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_PROGRESSABLE_FLASKS
     #.multi
-        AreaLevel <= LEVEL_RED_MAPS_T16
+        AreaLevel <= LEVEL_MAPS_T16
         DropLevel >= LEVEL_RED_MAPS_START
     #.multi
         AreaLevel < LEVEL_RED_MAPS_START
@@ -216,7 +220,6 @@ Show #.strict STRICTNESS_BASE .if Show
         DropLevel >= LEVEL_ACT_2_START
     #.multi
         AreaLevel < LEVEL_ACT_2_START
-        Rarity >= Magic
 
 Show
     Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS

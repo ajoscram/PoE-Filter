@@ -1,0 +1,5 @@
+# Exceptional Base
+
+Show
+    BaseType == BASES_EXQUISITE
+    #.import < _util -> multi_t1

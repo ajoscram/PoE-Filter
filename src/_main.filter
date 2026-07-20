@@ -19,9 +19,10 @@ Show
 #.import conditions > divination_card
 #.import conditions > gem
 #.import conditions > mapping > _main
+#.import conditions > gear > _main
 #.import conditions > relic
 #.import conditions > rogue
-#.import conditions > gear > _main
+#.import conditions > trinket
 
 #.section Catchall
 

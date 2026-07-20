@@ -56,21 +56,21 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 Show #.econ uni 100
     BaseType == "Cloth Belt" "Chain Belt" "Turquoise Amulet" "Viridian Jewel" "Leather Belt"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
     BaseType == "Paua Amulet" "Jade Amulet" "Ruby Ring" "Cobalt Jewel" "Sapphire Ring" "Crimson Jewel" "Rustic Sash" "Heavy Belt"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     BaseType == "Cloth Belt" "Chain Belt" "Turquoise Amulet" "Viridian Jewel" "Leather Belt"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | jewellery > unique -> t3

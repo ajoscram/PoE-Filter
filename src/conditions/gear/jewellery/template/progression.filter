@@ -1,0 +1,67 @@
+# Progression - Rare
+
+Show #.if Show
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t3
+    #.multi
+        BaseType == BASES_EXCEPTIONAL
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_STRICT
+        BaseType == BASES_GRAND
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_STRICT
+        BaseType == BASES_EXCEPTIONAL
+    #.multi .strict STRICTNESS_LENIENT
+        BaseType == BASES_GRAND
+    #.multi .strict STRICTNESS_LENIENT
+        BaseType == BASES_GREAT
+        AreaLevel < LEVEL_MAPS_T16
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_LESSER
+        AreaLevel < LEVEL_WHITE_MAPS_START
+
+# Progression - Magic
+
+Show #.if Show
+    Rarity == Magic
+    #.import < < _util -> craftable
+    #.import STYLE | jewellery > magic -> t3
+    #.multi
+        BaseType == BASES_EXCEPTIONAL
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_STRICT
+        BaseType == BASES_GRAND
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_LENIENT
+        BaseType == BASES_EXCEPTIONAL
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_GRAND
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_GREAT
+        AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_LESSER
+        AreaLevel < LEVEL_ACT_6_START
+
+# Progression - Normal
+
+Show #.if Show
+    Rarity == Normal
+    #.import < < _util -> craftable
+    #.import STYLE | jewellery > normal -> t3
+    #.multi
+        BaseType == BASES_EXCEPTIONAL
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_STRICT
+        BaseType == BASES_GRAND
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_LENIENT
+        BaseType == BASES_EXCEPTIONAL
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_GRAND
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_GREAT
+        AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_LESSER
+        AreaLevel < LEVEL_ACT_6_START

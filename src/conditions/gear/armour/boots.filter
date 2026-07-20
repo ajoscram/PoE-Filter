@@ -1,6 +1,7 @@
 #.subsection Boots
 
 #.alias ITEM_LEVEL_BOOTS_BEST   = 86
+
 #.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
 #.alias BASES_BOOTS_BEST        = "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots"
 

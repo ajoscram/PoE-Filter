@@ -1,6 +1,7 @@
 #.subsection Gloves
 
 #.alias ITEM_LEVEL_GLOVES_BEST   = 85
+
 #.alias BASES_GLOVES_EXCEPTIONAL = "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Runic Gauntlets"
 #.alias BASES_GLOVES_BEST        = "Leviathan Gauntlets" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets" "Paladin Gloves" "Phantom Mitts"
 

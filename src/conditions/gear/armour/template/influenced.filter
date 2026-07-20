@@ -2,8 +2,8 @@
 
 Show
     BaseType == BASES_BEST
-    HasExplicitMod == MODS_ELEVATED
     ItemLevel >= ITEM_LEVEL_BEST
+    HasExplicitMod == MODS_ELEVATED
     #.import < _util -> multi_t1_rare
     #.import < _util -> multi_t1_magic
 

@@ -1,5 +1,42 @@
 #.subsection Belt
 
-Show
-	Class == "Belts"
-    #.import STYLE | miscellaneous -> catchall
+#.alias ITEM_LEVEL_BELT_BEST   = 86
+
+#.alias BASES_BELT_EXQUISITE   = "Micro-Distillery Belt" "Mechanical Belt" "Cord Belt"
+#.alias BASES_BELT_EXCEPTIONAL = "Stygian Vise" "Crystal Belt"
+#.alias BASES_BELT_GRAND       = "Leather Belt" "Vanguard Belt"
+#.alias BASES_BELT_GREAT       = "Chain Belt" "Rustic Sash" "Heavy Belt"
+#.alias BASES_BELT_LESSER      = "Cloth Belt" "Studded Belt"
+
+#.alias MODS_BELT_EXCEPTIONAL = "Guatelitzi's" "Subterranean" "Sentinel's" "Infamous" "of the Underground" "of Guatelitzi" "of Infamy"
+#.alias MODS_BELT_GRAND       = "Fecund" "Blue" "Dazzling" "Enveloped" "Devastating" "Magnifying" "of the Godslayer" "of Recuperation" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Overflowing" "of Sipping" "of Reveling"
+#.alias MODS_BELT_GREATER     = "Athlete's" "Mazarine" "Resplendent" "Encased" "Overpowering" "Condensing" "of the Gods" "of the Phoenix" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Brimming" "of Relishing"
+#.alias MODS_BELT_LESSER      = "Virile" "Chalybeous" "Incandescent" "Carapaced" "Unleashed" "Distilling" "Regenerating" "Inspiring" "of the Titan" "of Ryslatha" "of the Volcano" "of the Polar Bear" "of the Maelstrom" "of Expulsion" "of Eviction" "of Pouring" "of Savouring"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Leather Belt" "Vanguard Belt" "Heavy Belt" "Studded Belt" "Chain Belt"
+    Class == "Belts" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Cloth Belt" "Leather Belt" "Vanguard Belt" "Stygian Vise" "Heavy Belt" "Studded Belt" "Chain Belt"
+    Class == "Belts" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Cloth Belt" "Leather Belt" "Rustic Sash" "Vanguard Belt" "Heavy Belt" "Studded Belt" "Chain Belt" "Crystal Belt"
+    Class == "Belts" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t3
+
+#.import template > _main { CLASS = "Belts", ITEM_LEVEL_BEST = ITEM_LEVEL_BELT_BEST, MODS_EXCEPTIONAL = MODS_BELT_EXCEPTIONAL, MODS_GRAND = MODS_BELT_GRAND, MODS_GREATER = MODS_BELT_GREATER, MODS_LESSER = MODS_BELT_LESSER, BASES_BEST = BASES_BELT_EXCEPTIONAL BASES_BELT_GRAND, BASES_EXQUISITE = BASES_BELT_EXQUISITE, BASES_EXCEPTIONAL = BASES_BELT_EXCEPTIONAL, BASES_GRAND = BASES_BELT_GRAND, BASES_GREAT = BASES_BELT_GREAT, BASES_LESSER = BASES_BELT_LESSER

@@ -16,7 +16,6 @@
 #.import jewellery > amulet
 #.import jewellery > belt
 #.import jewellery > ring
-#.import jewellery > trinket
 
 #.section Flask
 #.import flask > life

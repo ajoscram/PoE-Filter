@@ -56,21 +56,21 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 Show #.econ uni 100
     BaseType == "Iron Ring" "Heavy Belt" "Moonstone Ring" "Gold Ring" "Leather Belt" "Crimson Jewel" "Ruby Ring" "Onyx Amulet" "Two-Stone Ring" "Paua Amulet" "Turquoise Amulet" "Viridian Jewel" "Cobalt Jewel" "Amber Amulet"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
     BaseType == "Iron Ring" "Heavy Belt" "Moonstone Ring" "Studded Belt" "Gold Ring" "Jade Amulet" "Topaz Ring" "Crimson Jewel" "Chain Belt" "Diamond Ring" "Cloth Belt" "Onyx Amulet" "Agate Amulet" "Amethyst Ring" "Prismatic Ring" "Lapis Amulet" "Viridian Jewel" "Cobalt Jewel"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     BaseType == "Heavy Belt" "Moonstone Ring" "Leather Belt" "Crystal Belt" "Prismatic Ring" "Chain Belt" "Cloth Belt" "Diamond Ring" "Ruby Ring" "Onyx Amulet" "Agate Amulet" "Amber Amulet" "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Viridian Jewel" "Sapphire Ring" "Turquoise Amulet"
-    Class == "Amulets" "Belts" "Rings" "Trinkets" "Jewels" #.format
+    Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True
     #.import STYLE | jewellery > unique -> t3

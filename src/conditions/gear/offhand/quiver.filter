@@ -1,6 +1,7 @@
 #.subsection Quiver
 
 #.alias ITEM_LEVEL_QUIVER_BEST   = 86
+
 #.alias BASES_QUIVER_EXCEPTIONAL = "Ornate Quiver"
 #.alias BASES_QUIVER_BEST        = "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver" "Blazing Arrow Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Artillery Quiver"
 
