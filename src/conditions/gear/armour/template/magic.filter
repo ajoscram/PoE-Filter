@@ -6,7 +6,7 @@ Show
     HasExplicitMod ==2 MODS_GRAND
     #.import STYLE | armour > magic -> t2
 
-Show #.strict STRICTNESS_STRICT
+Show #.strict STRICTNESS_STRICT .if Show
     Rarity == Magic
     #.import STYLE | armour > magic -> t2
     #.multi
@@ -16,7 +16,7 @@ Show #.strict STRICTNESS_STRICT
         BaseType == BASES_BEST
         HasExplicitMod == MODS_GRAND
 
-Show #.strict STRICTNESS_LENIENT
+Show #.strict STRICTNESS_LENIENT .if Show
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
@@ -29,7 +29,7 @@ Show #.strict STRICTNESS_LENIENT
         BaseType == BASES_BEST
         HasExplicitMod == MODS_GREATER
 
-Show #.strict STRICTNESS_BASE
+Show #.strict STRICTNESS_BASE .if Show
     Rarity == Magic
     #.import STYLE | armour > magic -> t3
     #.multi
