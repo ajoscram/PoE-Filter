@@ -91,18 +91,50 @@ Show
     CorruptedMods >= 1
     #.import jewellery > _util -> multi_t2_full
 
-# 3+ Links
+# 3 Links
 
 Show
     Continue
     Class == GEAR_ARMOUR GEAR_OFFHANDS
-    LinkedSockets >= 3
+    LinkedSockets == 3
+    AreaLevel < LEVEL_ACT_6_START
     #.import armour > _util -> multi_t3_full
 
 Show
     Continue
     Class == GEAR_WEAPONS
-    LinkedSockets >= 3
+    LinkedSockets == 3
+    AreaLevel < LEVEL_ACT_6_START
+    #.import weapon > _util -> multi_t3_full
+
+# 4 Links
+
+Show
+    Continue
+    Class == GEAR_ARMOUR
+    LinkedSockets == 4
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_6_SOCKET_WEAPON
+    LinkedSockets == 4
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import weapon > _util -> multi_t3_full
+
+# 5+ Links
+
+Show
+    Continue
+    Class == GEAR_6_SOCKET_ARMOUR
+    LinkedSockets >= 5
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == GEAR_6_SOCKET_WEAPON
+    LinkedSockets >= 5
     #.import weapon > _util -> multi_t3_full
 
 # 6 Sockets
