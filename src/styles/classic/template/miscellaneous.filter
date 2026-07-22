@@ -1,0 +1,7 @@
+Show #.name catchall
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLOODLINE OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+    PlayEffect EFFECT_ERROR
+    MinimapIcon ICON_SIZE_LARGE EFFECT_ERROR ICON_TEMPLATE
+    PlayAlertSoundPositional SOUND_ERROR VOLUME_LOUD

@@ -1,24 +1,44 @@
 #.# Colors
 
-#.alias COLOR_BLACK   = 0 0 0
-#.alias COLOR_WHITE   = 255 255 255
-#.alias COLOR_CREAM   = 250 230 180
-#.alias COLOR_RED     = 255 75 75
-#.alias COLOR_GREEN   = 115 255 75
-#.alias COLOR_BLUE    = 50 150 255
-#.alias COLOR_BROWN   = 200 100 0
-#.alias COLOR_YELLOW  = 255 200 0
-#.alias COLOR_CYAN    = 0 230 230
-#.alias COLOR_ORANGE  = 255 150 0
-#.alias COLOR_PINK    = 255 100 255
-#.alias COLOR_PURPLE  = 150 100 255
+#.alias COLOR_BLACK     = 0 0 0
+#.alias COLOR_WHITE     = 255 255 255
+#.alias COLOR_NORMAL    = 200 200 200
+#.alias COLOR_MAGIC     = 136 136 255
+#.alias COLOR_RARE      = 255 255 119
+#.alias COLOR_UNIQUE    = 175 96 37
+#.alias COLOR_GOLD      = 188 162 81
+#.alias COLOR_GEM       = 27 162 155
+#.alias COLOR_CURRENCY  = 170 158 130
+#.alias COLOR_QUEST     = 74 230 58
+#.alias COLOR_DIV_CARD  = 14 186 255
+#.alias COLOR_CORRUPTED = 210 0 0
+#.alias COLOR_BLOODLINE = 210 0 220
+#.alias COLOR_TORMENT   = 50 230 100
 
-#.# ICONS
+#.# Effect colors
 
-#.alias ICON_QUEST      = Star
-#.alias ICON_CURRENCY   = Circle
-#.alias ICON_GEM        = Diamond
-#.alias ICON_GEAR       = UpsideDownHouse
-#.alias ICON_MAP        = Square
+#.alias EFFECT_ERROR    = Pink
+#.alias EFFECT_GOLD     = Yellow
+#.alias EFFECT_QUEST    = Green
+#.alias EFFECT_CURRENCY = White
+#.alias EFFECT_FRAGMENT = Green
+#.alias EFFECT_DIV_CARD = Blue
+#.alias EFFECT_GEM      = Cyan
+#.alias EFFECT_NORMAL   = White
+#.alias EFFECT_MAGIC    = Purple
+#.alias EFFECT_RARE     = Yellow
+#.alias EFFECT_UNIQUE   = Brown
+
+#.# Icons
+
+#.alias ICON_QUEST     = Star
+#.alias ICON_CURRENCY  = Circle
+#.alias ICON_GEM       = Diamond
+#.alias ICON_MAP       = Hexagon
+#.alias ICON_DIV_CARD  = Square
+#.alias ICON_ARMOUR    = UpsideDownHouse
+#.alias ICON_WEAPON    = Kite
+#.alias ICON_FLASK     = Raindrop
+#.alias ICON_JEWELLERY = Cross
 
 #.import < constants

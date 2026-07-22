@@ -11,11 +11,12 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Add jewellery conditions.
+* Set gold breakpoints in order to intelligently hide small amounts per area level
+* Add style constants (colors!!!)
+* Re-categorize sounds, they are all over the place.
 * Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Update the `create-release` script
 * Create a `update-economy` script that updates all filter files that have `.econ`.
-* Add style constants (colors!!!)
 * Figure out a re-organization of the "mapping" filter section.
 * Add support for HasInfluence on maps.
 * Add currency shard stack size filtering.

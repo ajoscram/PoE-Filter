@@ -9,11 +9,11 @@ Show #.name hidden
     DisableDropSound
 
 Show #.name quest
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-	SetTextColor 50 230 100
-	SetBorderColor 50 230 100
+	SetTextColor COLOR_QUEST
+    SetBackgroundColor COLOR_BLACK
+	SetBorderColor COLOR_QUEST
+	MinimapIcon ICON_SIZE_LARGE EFFECT_QUEST ICON_QUEST
+	PlayEffect EFFECT_QUEST
 
 Show #.name catchall
-    MinimapIcon ICON_SIZE_LARGE Pink Star
-    #.import shared > miscellaneous -> catchall
+    #.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_QUEST

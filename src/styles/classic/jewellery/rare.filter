@@ -1,17 +1,14 @@
 Show #.name t1
-    #.import < shared > rare -> t1
-    MinimapIcon ICON_SIZE_LARGE Yellow ICON_GEAR
+    #.import < template > rare -> t1 { ICON_TEMPLATE = ICON_JEWELLERY
 
 Show #.name t2
-    #.import < shared > rare -> t2
-    MinimapIcon ICON_SIZE_MEDIUM Yellow ICON_GEAR
+    #.import < template > rare -> t2 { ICON_TEMPLATE = ICON_JEWELLERY
 
 Show #.name t3
-    #.import < shared > rare -> t3
-    MinimapIcon ICON_SIZE_SMALL Yellow ICON_GEAR
+    #.import < template > rare -> t3 { ICON_TEMPLATE = ICON_JEWELLERY
 
 Show #.name t4
-    #.import < shared > rare -> t4
+    #.import < template > rare -> t4
 
 Show #.name t5
-    #.import < shared > rare -> t5
+    #.import < template > rare -> t5

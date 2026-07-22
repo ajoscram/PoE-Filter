@@ -1,0 +1,27 @@
+Show #.name t1
+	SetTextColor COLOR_BLACK OPACITY_HIGH
+	SetBackgroundColor COLOR_GOLD OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+	MinimapIcon ICON_SIZE_MEDIUM EFFECT_GOLD ICON_CURRENCY
+	PlayEffect EFFECT_GOLD Temp
+    SetFontSize 30
+
+Show #.name t2
+    SetTextColor COLOR_GOLD OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_GOLD OPACITY_HIGH
+	MinimapIcon ICON_SIZE_SMALL EFFECT_GOLD ICON_CURRENCY
+	PlayEffect EFFECT_GOLD Temp
+    SetFontSize 30
+
+Show #.name t3
+	SetTextColor COLOR_GOLD OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_GOLD OPACITY_LOW
+    SetFontSize 30
+
+Show #.name t4
+	SetTextColor COLOR_GOLD OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBorderColor COLOR_BLACK OPACITY_NONE
+    SetFontSize 30

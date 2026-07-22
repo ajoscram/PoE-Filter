@@ -1,29 +1,37 @@
 Show #.name t1
-	SetTextColor 255 0 0
-	SetBackgroundColor 50 230 100
-	MinimapIcon ICON_SIZE_LARGE Green Hexagon
-	PlayEffect Green
-	PlayAlertSoundPositional SOUND_SHORT_T1
+	SetTextColor COLOR_CORRUPTED OPACITY_HIGH
+	SetBackgroundColor COLOR_TORMENT OPACITY_HIGH
+    SetBorderColor COLOR_CORRUPTED OPACITY_HIGH
+	MinimapIcon ICON_SIZE_LARGE EFFECT_FRAGMENT ICON_MAP
+	PlayEffect EFFECT_FRAGMENT
+	PlayAlertSoundPositional SOUND_SHORT_T2 VOLUME_LOUD
 
 Show #.name t2
-	SetBackgroundColor 50 230 100
-	MinimapIcon ICON_SIZE_MEDIUM Green Hexagon
-	PlayEffect Green
-	PlayAlertSoundPositional SOUND_SHORT_T2
+	SetTextColor COLOR_BLACK OPACITY_HIGH
+	SetBackgroundColor COLOR_TORMENT OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+	MinimapIcon ICON_SIZE_MEDIUM EFFECT_FRAGMENT ICON_MAP
+	PlayEffect EFFECT_FRAGMENT
+	PlayAlertSoundPositional SOUND_SHORT_T3 VOLUME_MID
 
 Show #.name t3
-	SetBackgroundColor 50 150 100
-	MinimapIcon ICON_SIZE_SMALL Green Hexagon
-	PlayEffect Green Temp
-	PlayAlertSoundPositional SOUND_SHORT_T3
+    SetTextColor COLOR_TORMENT OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_TORMENT OPACITY_HIGH
+	MinimapIcon ICON_SIZE_SMALL EFFECT_FRAGMENT ICON_MAP
+	PlayEffect EFFECT_FRAGMENT Temp
+	PlayAlertSoundPositional SOUND_SHORT_T4 VOLUME_LOW
 
 Show #.name t4
-	SetBackgroundColor 50 110 100
-	MinimapIcon ICON_SIZE_SMALL Green Hexagon
+	SetTextColor COLOR_TORMENT OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_TORMENT OPACITY_LOW
+	MinimapIcon ICON_SIZE_SMALL EFFECT_FRAGMENT ICON_MAP
 
 Show #.name t5
-	SetBackgroundColor 50 110 100
+	SetTextColor COLOR_TORMENT OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name catchall
-	MinimapIcon ICON_SIZE_LARGE Pink Hexagon
-	#.import shared > miscellaneous -> catchall
+	#.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_MAP

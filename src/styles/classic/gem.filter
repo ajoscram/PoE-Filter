@@ -1,29 +1,37 @@
 Show #.name t1
-	SetTextColor 255 0 0
-	SetBackgroundColor 120 240 250
-	MinimapIcon ICON_SIZE_LARGE Cyan Kite
-	PlayEffect Cyan
-	PlayAlertSoundPositional SOUND_SHORT_T1
+	SetTextColor COLOR_CORRUPTED OPACITY_HIGH
+	SetBackgroundColor COLOR_GEM OPACITY_HIGH
+    SetBorderColor COLOR_CORRUPTED OPACITY_HIGH
+	MinimapIcon ICON_SIZE_LARGE EFFECT_GEM ICON_GEM
+	PlayEffect EFFECT_GEM
+	PlayAlertSoundPositional SOUND_SHORT_T2 VOLUME_LOUD
 
 Show #.name t2
-	SetBackgroundColor 120 240 250
-	MinimapIcon ICON_SIZE_MEDIUM Cyan Kite
-	PlayEffect Cyan
-	PlayAlertSoundPositional SOUND_SHORT_T2
+	SetTextColor COLOR_BLACK OPACITY_HIGH
+	SetBackgroundColor COLOR_GEM OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+	MinimapIcon ICON_SIZE_MEDIUM EFFECT_GEM ICON_GEM
+	PlayEffect EFFECT_GEM
+	PlayAlertSoundPositional SOUND_SHORT_T3 VOLUME_MID
 
 Show #.name t3
-	SetBackgroundColor 80 210 200
-	MinimapIcon ICON_SIZE_SMALL Cyan Kite
-	PlayEffect Cyan Temp
-	PlayAlertSoundPositional SOUND_SHORT_T3
+    SetTextColor COLOR_GEM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_GEM OPACITY_HIGH
+	MinimapIcon ICON_SIZE_SMALL EFFECT_GEM ICON_GEM
+	PlayEffect EFFECT_GEM Temp
+	PlayAlertSoundPositional SOUND_SHORT_T4 VOLUME_LOW
 
 Show #.name t4
-	SetBackgroundColor 80 210 200
-	PlayAlertSoundPositional SOUND_SHORT_T4
+	SetTextColor COLOR_GEM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_GEM OPACITY_LOW
+	MinimapIcon ICON_SIZE_SMALL EFFECT_GEM ICON_GEM
 
 Show #.name t5
-	SetBackgroundColor 40 105 100
+	SetTextColor COLOR_GEM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name catchall
-	MinimapIcon ICON_SIZE_LARGE Pink Kite
-	#.import shared > miscellaneous -> catchall
+	#.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_GEM

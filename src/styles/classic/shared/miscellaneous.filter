@@ -1,6 +1,0 @@
-Show #.name catchall
-    PlayEffect Pink
-    SetBorderColor COLOR_PURPLE
-    SetBackgroundColor COLOR_PINK
-    SetTextColor COLOR_PURPLE
-    PlayAlertSoundPositional SOUND_ERROR

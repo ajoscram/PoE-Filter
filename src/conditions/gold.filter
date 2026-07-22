@@ -1,5 +1,20 @@
 #.section Gold
 
 Show
-    Class == "Gold"
-    SetFontSize 25
+    BaseType == "Gold"
+    StackSize >= 3000
+    #.import STYLE | gold -> t1
+
+Show
+    BaseType == "Gold"
+    StackSize >= 1500
+    #.import STYLE | gold -> t2
+
+Show
+    BaseType == "Gold"
+    StackSize >= 500
+    #.import STYLE | gold -> t3
+
+Show
+    BaseType == "Gold"
+    #.import STYLE | gold -> t4
