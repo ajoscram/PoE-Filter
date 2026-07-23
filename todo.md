@@ -12,19 +12,18 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Implement the "Other Equipment" section and styles.
-* Rename "GEAR_" aliases to "CLASSES_" to keep naming convention.
-
 * Figure out a re-organization of the "mapping" filter section.
 * Add support for HasInfluence on maps.
 * The Sacred Blossom and Blood-filled veessels are not supported in fragments for some reason.
 
-* Add currency shard stack size filtering.
-* Implement stacks filtering for currency shards.
+* Rename "GEAR_" aliases to "CLASSES_" to keep naming convention.
+
+* Split "miscellaneous" and basic currecy.
+* Implement stack-size filtering for currency shards.
 
 * Figure out a re-organization of the "gem" section.
 
-* Set gold breakpoints in order to intelligently hide small amounts per area level
+* Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Re-categorize sounds, they are all over the place.
 * Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Update the `create-release` script.
