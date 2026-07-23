@@ -4,81 +4,81 @@
 
 Show
     Rarity == Unique
-    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    Class == CLASSES_6_SOCKET_ARMOUR CLASSES_6_SOCKET_WEAPON
     LinkedSockets == 6
 
 Show #.strict STRICTNESS_STRICT .if Show
     Rarity == Unique
     #.multi
-        Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+        Class == CLASSES_6_SOCKET_ARMOUR CLASSES_6_SOCKET_WEAPON
         LinkedSockets == 5
     #.multi
-        Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_JEWELS
+        Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_JEWELS
         CorruptedMods == 2
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Rarity == Unique
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS
     CorruptedMods == 1
 
 Show #.strict STRICTNESS_BASE .if Show
     Rarity == Unique
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
 
 # Fractured
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
+    Class == CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
     FracturedItem True
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
     FracturedItem True
 
 # Synthesized
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS
     SynthesisedItem True
 
 # Influenced
 
 Show
-    Class == GEAR_ARMOUR
+    Class == CLASSES_ARMOUR
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_ELEVATED
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     HasExplicitMod == MODS_INFLUENCED
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == GEAR_JEWELLERY
+    Class == CLASSES_JEWELLERY
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
 
 # Eater / Exarch
 
 Show
-    Class == GEAR_ARMOUR
+    Class == CLASSES_ARMOUR
     #.multi
         HasEaterOfWorldsImplicit == ELDRITCH_PERFECT
     #.multi
         HasSearingExarchImplicit == ELDRITCH_PERFECT
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_ARMOUR
+    Class == CLASSES_ARMOUR
     #.multi
         HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
     #.multi
         HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR
+    Class == CLASSES_ARMOUR
     #.multi
         HasEaterOfWorldsImplicit >= ELDRITCH_LESSER
     #.multi
@@ -87,26 +87,26 @@ Show #.strict STRICTNESS_BASE .if Show
 # Memory Strands
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     MemoryStrands >= 75
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     MemoryStrands >= 50
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     MemoryStrands >= 25
 
 # Veiled
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     HasExplicitMod == MODS_VEILED_NAMED
     FracturedItem True
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     #.multi
         HasExplicitMod == MODS_VEILED_NAMED
     #.multi
@@ -114,13 +114,13 @@ Show #.strict STRICTNESS_LENIENT .if Show
         FracturedItem True
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     HasExplicitMod == MODS_VEILED_UNNAMED
 
 # Legacy
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
     #.multi
 	    HasCruciblePassiveTree True
     #.multi
@@ -131,33 +131,33 @@ Show
 # Corrupted
 
 Show
-    Class == GEAR_JEWELS
+    Class == CLASSES_JEWELS
     CorruptedMods == 2
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == GEAR_JEWELS
+    Class == CLASSES_JEWELS
     CorruptedMods == 1
 
 # Sockets
 
 Show #.strict STRICTNESS_STRICT .if Show
-    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    Class == CLASSES_6_SOCKET_ARMOUR CLASSES_6_SOCKET_WEAPON
     LinkedSockets == 6
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_6_SOCKET_ARMOUR GEAR_6_SOCKET_WEAPON
+    Class == CLASSES_6_SOCKET_ARMOUR CLASSES_6_SOCKET_WEAPON
     #.multi
         LinkedSockets == 5
     #.multi
         Sockets == 6
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_ARMOUR GEAR_6_SOCKET_WEAPON
+    Class == CLASSES_ARMOUR CLASSES_6_SOCKET_WEAPON
     AreaLevel < LEVEL_WHITE_MAPS_START
     LinkedSockets == 4
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
     AreaLevel < LEVEL_ACT_6_START
     #.multi
         SocketGroup RGB
@@ -167,21 +167,21 @@ Show #.strict STRICTNESS_BASE .if Show
 # Quality
 
 Show
-    Class == GEAR_JEWELLERY
+    Class == CLASSES_JEWELLERY
     Quality > 0
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Class == GEAR_FLASKS
+    Class == CLASSES_FLASKS
     Quality >= 15
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_FLASKS
+    Class == CLASSES_FLASKS
     Quality >= 10
 
 # Progression
 
 Show #.strict STRICTNESS_BASE .if Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_PROGRESSABLE_FLASKS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_PROGRESSABLE_FLASKS
     #.multi
         AreaLevel <= LEVEL_MAPS_T16
         DropLevel >= LEVEL_RED_MAPS_START
@@ -222,27 +222,27 @@ Show #.strict STRICTNESS_BASE .if Show
         AreaLevel < LEVEL_ACT_2_START
 
 Show
-    Class == GEAR_ARMOUR GEAR_OFFHANDS GEAR_WEAPONS GEAR_JEWELLERY GEAR_JEWELS GEAR_FLASKS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
     AreaLevel == LEVEL_ACT_1_START
 
 # Hidden
 
 Hide
-    Class == GEAR_ARMOUR GEAR_OFFHANDS
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
     #.import STYLE | miscellaneous -> hidden
     #.import armour > _util -> multi_t5_full
 
 Hide
-    Class == GEAR_WEAPONS
+    Class == CLASSES_WEAPONS
     #.import STYLE | miscellaneous -> hidden
     #.import weapon > _util -> multi_t5_full
 
 Hide
-    Class == GEAR_JEWELLERY GEAR_JEWELS
+    Class == CLASSES_JEWELLERY CLASSES_JEWELS
     #.import STYLE | miscellaneous -> hidden
     #.import jewellery > _util -> multi_t5_full
 
 Hide
-    Class == GEAR_FLASKS
+    Class == CLASSES_FLASKS
     #.import STYLE | miscellaneous -> hidden
     #.import flask > _util -> multi_t5_full

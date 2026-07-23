@@ -16,8 +16,7 @@ https://www.filterblade.xyz
 * Add support for HasInfluence on maps.
 * The Sacred Blossom and Blood-filled veessels are not supported in fragments for some reason.
 
-* Rename "GEAR_" aliases to "CLASSES_" to keep naming convention.
-
+* Clean up some of the "currency" filter section files.
 * Split "miscellaneous" and basic currecy.
 * Implement stack-size filtering for currency shards.
 
