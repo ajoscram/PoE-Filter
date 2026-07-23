@@ -20,9 +20,9 @@ Show
 #.import conditions > gem
 #.import conditions > mapping > _main
 #.import conditions > gear > _main
-#.import conditions > relic
-#.import conditions > rogue
-#.import conditions > trinket
+#.import conditions > equipment > relic
+#.import conditions > equipment > trinket
+#.import conditions > equipment > heist > _main
 
 #.section Catchall
 

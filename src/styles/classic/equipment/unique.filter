@@ -1,0 +1,14 @@
+Show #.name t1
+    #.import < template > unique -> t1 { ICON_TEMPLATE = ICON_EQUIPMENT
+
+Show #.name t2
+    #.import < template > unique -> t2 { ICON_TEMPLATE = ICON_EQUIPMENT
+
+Show #.name t3
+    #.import < template > unique -> t3 { ICON_TEMPLATE = ICON_EQUIPMENT
+
+Show #.name t4
+    #.import < template > unique -> t4
+
+Show #.name t5
+    #.import < template > unique -> t5

@@ -31,6 +31,7 @@
 
 #.# Icons
 
+#.alias ICON_ERROR     = Star
 #.alias ICON_QUEST     = Star
 #.alias ICON_CURRENCY  = Circle
 #.alias ICON_GEM       = Diamond
@@ -40,5 +41,6 @@
 #.alias ICON_WEAPON    = Kite
 #.alias ICON_FLASK     = Raindrop
 #.alias ICON_JEWELLERY = Cross
+#.alias ICON_EQUIPMENT = Triangle
 
 #.import < constants

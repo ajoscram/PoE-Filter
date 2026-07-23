@@ -1,0 +1,89 @@
+#.section Relic
+
+#.alias ITEM_LEVEL_RELIC_BEST = 85
+
+#.alias MODS_RELIC_EXCEPTIONAL = "Auspicious" "Cornucopic" "Plentiful" "of Clairvoyance" "of Illumination"
+#.alias MODS_RELIC_GRAND       = "Annihilating" "Encouraging" "Iron-Willed" "Glowing" "Girded" "Tumbler's" "Blurred" "Regicidal" "Sinner's" "Impassioned" "Emboldening" "Resolute" "King's" "Inspiring" "of Doubling" "of Hidden Treasure" "of Triumph" "of the Trophy" "of Diplomacy" "of Rejuvenation" "of the Phalanx" "of the Citadel" "of the Phantasm" "of the Titan" "of the Seraphim" "of Youth" "of Sainthood" "of Impenetrability" "of Investigation"
+#.alias MODS_RELIC_GREATER     = "Punishing" "Heartening" "Resilient" "Shining" "Layered" "Acrobat's" "Fleet" "Usurper's" "Violator's" "Fervent" "Enlivening" "Ardent" "Nobleman's" "Invigorating" "of Extravagance" "of the Trove" "of Conquest" "of the Prize" "of Charity" "of Advancement" "of Willpower" "of the Vanguard" "of the Bastion" "of the Spectre" "of the Beast" "of the Djinn" "of Convalescence" "of Righteousness" "of Fortification" "of Learning"
+#.alias MODS_RELIC_LESSER      = "Crushing" "Rallying" "Tenacious" "Glimmering" "Reinforced" "Dancer's" "Agile" "Challenger's" "Transgressor's" "Inspirited" "Galvanising" "Adamant" "Merchant's" "Augmenting" "of Opulence" "of Fortune" "of Achievement" "of the Stipend" "of Progress" "of Determination" "of the Aegis" "of the Bulwark" "of the Shade" "of the Boar" "of the Pixie" "of Refreshment" "of Piousness" "of Resistance" "of Discovery"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == ""
+    Class == "Relics" #.format
+    Rarity == Unique
+    #.import STYLE | equipment > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == ""
+    Class == "Relics" #.format
+    Rarity == Unique
+    #.import STYLE | equipment > unique -> t2
+
+Show #.econ uni 1 10
+    BaseType == ""
+    Class == "Relics" #.format
+    Rarity == Unique
+    #.import STYLE | equipment > unique -> t3
+
+Show
+    Class == "Relics"
+    Rarity == Unique
+    #.import STYLE | equipment > unique -> t4
+
+# Identified
+
+Show #.if Show
+    Class == "Relics"
+    HasExplicitMod ==2 MODS_RELIC_EXCEPTIONAL
+    #.import STYLE | equipment > magic -> t1
+
+Show #.if Show
+    Class == "Relics"
+    #.import STYLE | equipment > magic -> t2
+    #.multi
+        HasExplicitMod == MODS_RELIC_EXCEPTIONAL
+    #.multi
+        HasExplicitMod ==2 MODS_RELIC_GRAND
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Relics"
+    #.import STYLE | equipment > magic -> t3
+    #.multi
+        HasExplicitMod == MODS_RELIC_GRAND
+    #.multi
+        HasExplicitMod ==2 MODS_RELIC_GREATER
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Relics"
+    #.import STYLE | equipment > magic -> t3
+    #.multi
+        HasExplicitMod == MODS_RELIC_GREATER
+    #.multi
+        HasExplicitMod ==2 MODS_RELIC_LESSER
+
+# Corrupted
+
+Show
+    Class == "Relics"
+    CorruptedMods == 1
+    #.import STYLE | equipment > magic -> t3
+
+# Unidentified
+
+Show #.if Show
+    Class == "Relics"
+    Identified False
+    #.import STYLE | equipment > magic -> t4
+    #.multi
+        ItemLevel >= ITEM_LEVEL_RELIC_BEST
+    #.multi
+        #.strict STRICTNESS_LENIENT
+
+# Hidden
+
+Hide
+    Class == "Relics"
+    #.import STYLE | miscellaneous -> hidden
+    #.import STYLE | equipment > magic -> t5

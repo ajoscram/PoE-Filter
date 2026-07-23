@@ -16,4 +16,4 @@ Show #.name quest
 	PlayEffect EFFECT_QUEST
 
 Show #.name catchall
-    #.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_QUEST
+    #.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_ERROR

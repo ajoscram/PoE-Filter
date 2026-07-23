@@ -1,7 +1,7 @@
 #.subsection Miscellaneous
 
 Show
-	BaseType == "Mirror of Kalandra" "Eternal Orb" "Albino Rhoa Feather" "Orb of Remembrance" "Orb of Unravelling" "Shaper's Exalted Orb" "Elder's Exalted Orb" "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Exalted Orb" "Hinekora's Lock" "Fracturing Orb" "Divine Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
+	BaseType == "Mirror of Kalandra" "Divine Orb" "Eternal Orb" "Albino Rhoa Feather" "Orb of Remembrance" "Orb of Unravelling" "Shaper's Exalted Orb" "Elder's Exalted Orb" "Reflecting Mist" "Valdo's Puzzle Box" "Veiled Exalted Orb" "Hinekora's Lock" "Fracturing Orb" "Orb of Dominance" "Awakener's Orb" "Warlord's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Crusader's Exalted Orb" "Blessing of Chayula"
 	#.import STYLE | currency -> t1
 
 Show

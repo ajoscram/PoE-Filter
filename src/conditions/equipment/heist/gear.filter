@@ -1,0 +1,9 @@
+#.subsection Gear
+
+#.alias BASES_HEIST_GEAR_BEST = "Obsidian Sharpening Stone" "Precise Arrowhead" "Burst Band"
+
+#.alias MODS_HEIST_GEAR_GRAND   = "Archmage's" "Sniper's" "Crackling" "Frigid" "Burning" "Honed" "Destructive" "Interrupting" "Masterful" "Veteran" "of Charisma" "of Greed" "of Passage" "of Revelation" "of Ingenuity" "of Aplomb" "of Markdown" "of Rupturing" "of Plenty" "of Cooperation"
+#.alias MODS_HEIST_GEAR_GREATER = "Witch's" "Ranger's" "Snapping" "Icy" "Smoking" "Polished" "Dangerous" "Delaying" "Professional" "Accomplished" "of Charm" "of Selfishness" "of Bypasses" "of Discovery" "of Cunning" "of Concession" "of Piercing" "of Overflowing" "of Coordination"
+#.alias MODS_HEIST_GEAR_LESSER  = "Conjuror's" "Poacher's" "Buzzing" "Chilled" "Smouldering" "Burnished" "Hazardous" "Stalling" "Skillful" "Experienced" "of Presence" "of Negotiating" "of Shortcuts" "of Disclosure" "of Subtlety" "of Reduction" "of Stinging" "of Brimming" "of Aid" 
+
+#.import template > _main { CLASS = "Heist Gear", BASES_BEST = BASES_HEIST_GEAR_BEST, MODS_GRAND = MODS_HEIST_GEAR_GRAND, MODS_GREATER = MODS_HEIST_GEAR_GREATER, MODS_LESSER = MODS_HEIST_GEAR_LESSER

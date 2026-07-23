@@ -1,0 +1,9 @@
+#.subsection Brooch
+
+#.alias BASES_HEIST_BROOCH_BEST = "Foliate Brooch"
+
+#.alias MODS_HEIST_BROOCH_GRAND   = "Destructive" "Interrupting" "Masterful" "Sophisticated" "Ransacker's" "Sponsor's" "of Charisma" "of Greed" "of Passage" "of the Hoard" "of Assembly" "of Compendiums" "of Insanity" "of Deafening" "of Wings" "of Catalysts" "of Anointments" "of the Legion"
+#.alias MODS_HEIST_BROOCH_GREATER = "Dangerous" "Delaying" "Professional" "Cultured" "Looter's" "Patron's" "of Charm" "of Selfishness" "of Bypasses" "of the Stockpile" "of Radiance" "of the Atlas" "of Puzzles" "of Collections" "of Voices" "of Screaming" "of Gilding" "of Concatenation" "of the Countless" "of Consecrations" 
+#.alias MODS_HEIST_BROOCH_LESSER  = "Hazardous" "Stalling" "Skillful" "Tasteful" "Thief's" "Client's" "of Presence" "of Negotiating" "of Shortcuts" "of the Stash" "of Dazzling" "of Maps" "of Pieces" "of Decks" "of Uncertainty" "of Weeping" "of Polish" "of Reactants" "of the Many" "of Blessings"
+
+#.import template > _main { CLASS = "Heist Brooches", BASES_BEST = BASES_HEIST_BROOCH_BEST, MODS_GRAND = MODS_HEIST_BROOCH_GRAND, MODS_GREATER = MODS_HEIST_BROOCH_GREATER, MODS_LESSER = MODS_HEIST_BROOCH_LESSER

@@ -1,0 +1,9 @@
+#.subsection Cloak
+
+#.alias BASES_HEIST_CLOAK_BEST = "Whisper-woven Cloak"
+
+#.alias MODS_HEIST_CLOAK_GRAND   = "Destructive" "Assassin's" "Marauder's" "Interrupting" "Masterful" "Veteran" "of Charisma" "of Greed" "of Passage" "of Silence" "of Deactivating" "of Choreography" "of Astonishment" "of Dominance"
+#.alias MODS_HEIST_CLOAK_GREATER = "Dangerous" "Ambusher's" "Raider's" "Delaying" "Professional" "Accomplished" "of Charm" "of Selfishness" "of Bypasses" "of Quiet" "of Disabling" "of Planning" "of Surprise" "of Control"
+#.alias MODS_HEIST_CLOAK_LESSER  = "Hazardous" "Instigator's" "Attacker's" "Stalling" "Skillful" "Experienced" "of Presence" "of Negotiating" "of Shortcuts" "of Stealth" "of Disarming" "of Startling" "of Power"
+
+#.import template > _main { CLASS = "Heist Cloaks", BASES_BEST = BASES_HEIST_CLOAK_BEST, MODS_GRAND = MODS_HEIST_CLOAK_GRAND, MODS_GREATER = MODS_HEIST_CLOAK_GREATER, MODS_LESSER = MODS_HEIST_CLOAK_LESSER
