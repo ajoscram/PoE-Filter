@@ -2,3 +2,4 @@
 
 Show
 	Class == "Idols"
+    #.import _util -> multi_t3

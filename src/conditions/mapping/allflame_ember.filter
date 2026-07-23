@@ -2,15 +2,15 @@
 
 Show
     #.econ mbr 100
-	BaseType == "Allflame Ember of the Ethereal"
+	BaseType == "Allflame Ember of the Gilded" "Allflame Ember of the Ethereal" "Allflame Ember of Flesh" "Allflame Ember of Propagation"
 	#.import STYLE | fragment -> t1
 
 Show
     #.econ mbr 10 100
-	BaseType == "Allflame Ember of Propagation" "Allflame Ember of Kulemak" "Allflame Ember of the Gilded"
+	BaseType == "Allflame Ember of Kulemak" "Allflame Ember of the Wildwood" "Allflame Ember of Resplendence" "Allflame Ember of Toads"
 	#.import STYLE | fragment -> t2
 
 Show
     #.econ mbr 0 10
-	BaseType == "Allflame Ember of Resplendence" "Allflame Ember of the Wildwood" "Allflame Ember of Flesh" "Allflame Ember of Toads"
+	BaseType == "Allflame Ember of Toads"
 	#.import STYLE | fragment -> t3

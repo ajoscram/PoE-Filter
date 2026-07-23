@@ -12,22 +12,22 @@ Show #.name multi_t1
 Show #.name multi_t1_unique
     #.multi
         Rarity == Unique
-        #.import STYLE | mapping > unique -> t1
+        #.import STYLE | map > unique -> t1
 
 Show #.name multi_t1_rare
     #.multi
         Rarity == Rare
-        #.import STYLE | mapping > rare -> t1
+        #.import STYLE | map > rare -> t1
 
 Show #.name multi_t1_magic
     #.multi
         Rarity == Magic
-        #.import STYLE | mapping > magic -> t1
+        #.import STYLE | map > magic -> t1
 
 Show #.name multi_t1_normal
     #.multi
         Rarity == Normal
-        #.import STYLE | mapping > normal -> t1
+        #.import STYLE | map > normal -> t1
 
 Show #.name multi_t2_full
     #.import -> multi_t2_unique
@@ -43,22 +43,22 @@ Show #.name multi_t2
 Show #.name multi_t2_unique
     #.multi
         Rarity == Unique
-        #.import STYLE | mapping > unique -> t2
+        #.import STYLE | map > unique -> t2
 
 Show #.name multi_t2_rare
     #.multi
         Rarity == Rare
-        #.import STYLE | mapping > rare -> t2
+        #.import STYLE | map > rare -> t2
 
 Show #.name multi_t2_magic
     #.multi
         Rarity == Magic
-        #.import STYLE | mapping > magic -> t2
+        #.import STYLE | map > magic -> t2
 
 Show #.name multi_t2_normal
     #.multi
         Rarity == Normal
-        #.import STYLE | mapping > normal -> t2
+        #.import STYLE | map > normal -> t2
 
 Show #.name multi_t3_full
     #.import -> multi_t3_unique
@@ -74,22 +74,22 @@ Show #.name multi_t3
 Show #.name multi_t3_unique
     #.multi
         Rarity == Unique
-        #.import STYLE | mapping > unique -> t3
+        #.import STYLE | map > unique -> t3
 
 Show #.name multi_t3_rare
     #.multi
         Rarity == Rare
-        #.import STYLE | mapping > rare -> t3
+        #.import STYLE | map > rare -> t3
 
 Show #.name multi_t3_magic
     #.multi
         Rarity == Magic
-        #.import STYLE | mapping > magic -> t3
+        #.import STYLE | map > magic -> t3
 
 Show #.name multi_t3_normal
     #.multi
         Rarity == Normal
-        #.import STYLE | mapping > normal -> t3
+        #.import STYLE | map > normal -> t3
 
 Show #.name multi_t4_full
     #.import -> multi_t4_unique
@@ -105,22 +105,22 @@ Show #.name multi_t4
 Show #.name multi_t4_unique
     #.multi
         Rarity == Unique
-        #.import STYLE | mapping > unique -> t4
+        #.import STYLE | map > unique -> t4
 
 Show #.name multi_t4_rare
     #.multi
         Rarity == Rare
-        #.import STYLE | mapping > rare -> t4
+        #.import STYLE | map > rare -> t4
 
 Show #.name multi_t4_magic
     #.multi
         Rarity == Magic
-        #.import STYLE | mapping > magic -> t4
+        #.import STYLE | map > magic -> t4
 
 Show #.name multi_t4_normal
     #.multi
         Rarity == Normal
-        #.import STYLE | mapping > normal -> t4
+        #.import STYLE | map > normal -> t4
 
 Show #.name multi_t5_full
     #.import -> multi_t5_unique
@@ -136,19 +136,19 @@ Show #.name multi_t5
 Show #.name multi_t5_unique
     #.multi
         Rarity == Unique
-        #.import STYLE | mapping > unique -> t5
+        #.import STYLE | map > unique -> t5
 
 Show #.name multi_t5_rare
     #.multi
         Rarity == Rare
-        #.import STYLE | mapping > rare -> t5
+        #.import STYLE | map > rare -> t5
 
 Show #.name multi_t5_magic
     #.multi
         Rarity == Magic
-        #.import STYLE | mapping > magic -> t5
+        #.import STYLE | map > magic -> t5
 
 Show #.name multi_t5_normal
     #.multi
         Rarity == Normal
-        #.import STYLE | mapping > normal -> t5
+        #.import STYLE | map > normal -> t5

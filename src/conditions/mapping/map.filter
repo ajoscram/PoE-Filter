@@ -1,60 +1,139 @@
 #.subsection Map
 
-Show
-	Class == "Maps"
-	Rarity = Unique
+#.alias LEVEL_MAP_TIER_3  = 70
+#.alias LEVEL_MAP_TIER_4  = 71
+#.alias LEVEL_MAP_TIER_5  = 72
+#.alias LEVEL_MAP_TIER_6  = 73
+#.alias LEVEL_MAP_TIER_7  = 74
+#.alias LEVEL_MAP_TIER_8  = 75
+#.alias LEVEL_MAP_TIER_9  = 76
+#.alias LEVEL_MAP_TIER_10 = 77
+#.alias LEVEL_MAP_TIER_11 = 78
+#.alias LEVEL_MAP_TIER_12 = 79
+#.alias LEVEL_MAP_TIER_13 = 80
+#.alias LEVEL_MAP_TIER_14 = 81
+#.alias LEVEL_MAP_TIER_15 = 82
+#.alias LEVEL_MAP_TIER_16 = 83
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Map (Tier 2)" "Map (Tier 16)" "Map (Tier 10)" "Map (Tier 14)"
+    Class == "Maps" #.format
+    Rarity == Unique
+    #.import STYLE | map > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Map (Tier 16)" "Map (Tier 10)" "Map (Tier 13)" "Map (Tier 15)"
+    Class == "Maps" #.format
+    Rarity == Unique
+    #.import STYLE | map > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Map (Tier 13)" "Map (Tier 12)" "Map (Tier 15)" "Map (Tier 10)" "Map (Tier 16)" "Map (Tier 4)"
+    Class == "Maps" #.format
+    Rarity == Unique
+    #.import STYLE | map > unique -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Maps"
+    Rarity == Unique
+    #.import STYLE | map > unique -> t2
+
+# Exceptional
 
 Show
-	Continue
-	#.strict 2
-	MapTier >= 1
-Show
-	Continue
-	#.strict 3
-	MapTier > 5
-Show
-	Continue
-	#.strict 4
-	MapTier > 10
-Show
-	Continue
-	MapTier = 16
-Show
-    Continue
-    MapTier = 17
+    BaseType == "Valdo Map"
+    #.import _util -> multi_t1
 
 Show
-	ElderMap True
+    BaseType == "Nightmare Map" "Vaal Temple Map"
+    #.import _util -> multi_t2
 
 Show
-	ShapedMap True
-
-Show
-    ZanaMemory True
-
-Show
-	BlightedMap True
+    Class == "Maps"
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import _util -> multi_t2
 
 Show
 	UberBlightedMap True
+    #.import _util -> multi_t2
 
 Show
-	MapTier <= 5
-	Class == "Maps"
+	BlightedMap True
+    #.import _util -> multi_t2
 
 Show
-	MapTier <= 10
-	Class == "Maps"
+	MirageMap True
+    #.import _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    ZanaMemory True
+    #.import _util -> multi_t2
+
+# Priming
 
 Show
-	#.strict STRICTNESS_STRICT
-	MapTier <= 15
-	Class == "Maps"
-
-Show
-	MapTier = 16
-	Class == "Maps"
-
-Show
-    MapTier = 17
+    Continue
     Class == "Maps"
+    #.import _util -> multi_t3
+
+# Progression
+
+Show #.if Show
+    Rarity < Unique
+    #.multi
+        MapTier == 16
+    #.multi .strict STRICTNESS_LENIENT
+        MapTier >= 14
+        AreaLevel <= LEVEL_MAP_TIER_16
+    #.multi
+        MapTier >= 14
+        AreaLevel <= LEVEL_MAP_TIER_15
+    #.multi
+        MapTier == 13
+        AreaLevel <= LEVEL_MAP_TIER_15
+    #.multi
+        MapTier == 12
+        AreaLevel <= LEVEL_MAP_TIER_14
+    #.multi
+        MapTier == 11
+        AreaLevel <= LEVEL_MAP_TIER_13
+    #.multi
+        MapTier == 10
+        AreaLevel <= LEVEL_MAP_TIER_12
+    #.multi
+        MapTier == 9
+        AreaLevel <= LEVEL_MAP_TIER_11
+    #.multi
+        MapTier == 8
+        AreaLevel <= LEVEL_MAP_TIER_10
+    #.multi
+        MapTier == 7
+        AreaLevel <= LEVEL_MAP_TIER_9
+    #.multi
+        MapTier == 6
+        AreaLevel <= LEVEL_MAP_TIER_8
+    #.multi
+        MapTier == 5
+        AreaLevel <= LEVEL_MAP_TIER_7
+    #.multi
+        MapTier == 4
+        AreaLevel <= LEVEL_MAP_TIER_6
+    #.multi
+        MapTier == 3
+        AreaLevel <= LEVEL_MAP_TIER_5
+    #.multi
+        MapTier == 2
+        AreaLevel <= LEVEL_MAP_TIER_4
+    #.multi
+        MapTier == 1
+        AreaLevel <= LEVEL_MAP_TIER_3
+
+# Hidden
+
+Hide
+    MapTier >= 1
+    MapTier <= 16
+    #.import STYLE | miscellaneous -> hidden
+    #.import _util -> multi_t5_full

@@ -3,14 +3,14 @@
 #.alias CLASSES_MAPPING = "Maps" "Misc Map Items" "Map Fragments" "Labyrinth Map Items" "Contracts" "Blueprints" "Expedition Logbooks" "Breachstones" "Sanctum Research" "Vault Keys" "Idols"
 
 #.import map
-#.import fragment
-#.import scarab
-#.import allflame_ember
-#.import sanctum
 #.import blueprint
 #.import contract
 #.import logbook
 #.import idol
+#.import sanctum
+#.import scarab
+#.import allflame_ember
+#.import fragment
 
 #.subsection Miscellaneous
 

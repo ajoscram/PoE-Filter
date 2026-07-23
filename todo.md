@@ -12,19 +12,18 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Figure out a re-organization of the "mapping" filter section.
-* Add support for HasInfluence on maps.
-* The Sacred Blossom and Blood-filled veessels are not supported in fragments for some reason.
-
 * Clean up some of the "currency" filter section files.
-* Split "miscellaneous" and basic currecy.
+* Split "miscellaneous" and basic currency.
 * Implement stack-size filtering for currency shards.
 
-* Figure out a re-organization of the "gem" section.
+* Update the `create-release` script.
+* Create a `update-economy` script that updates all filter files that have `.econ`.
 
+* Add the **Beam** filter style.
+
+* Figure out a re-organization of the "gem" section.
+* Elaborate `idols.filter`.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Re-categorize sounds, they are all over the place.
 * Think about best bases for offhands, it is currently inadequate because they will be shown too often.
-* Update the `create-release` script.
-* Create a `update-economy` script that updates all filter files that have `.econ`.
 * Add a wiki page for this project.

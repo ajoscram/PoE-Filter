@@ -1,4 +1,19 @@
 #.subsection Contract
 
+# Unique
+
+Show
+    BaseType == "Vengeful Contract"
+    Rarity == Unique
+    #.import STYLE | map > unique -> t2
+
 Show
 	Class == "Contracts"
+    Rarity == Unique
+    #.import STYLE | map > unique -> t3
+
+# Miscellaneous
+
+Show
+	Class == "Contracts"
+    #.import _util -> multi_t3

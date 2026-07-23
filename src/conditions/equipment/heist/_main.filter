@@ -2,10 +2,10 @@
 
 #.alias CLASSES_HEIST = "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches"
 
-#.alias DROP_LEVEL_HEIST_EXCEPTIONAL = 83
-#.alias DROP_LEVEL_HEIST_GRAND       = 80
-#.alias DROP_LEVEL_HEIST_GREAT       = 75
-#.alias DROP_LEVEL_HEIST_LESSER      = 60
+#.alias  LEVEL_HEIST_EXCEPTIONAL = 83
+#.alias  LEVEL_HEIST_GRAND       = 80
+#.alias  LEVEL_HEIST_GREAT       = 75
+#.alias  LEVEL_HEIST_LESSER      = 60
 
 #.import gear
 #.import tool
@@ -18,22 +18,22 @@
 
 Show
     Class == CLASSES_HEIST
-    DropLevel >= DROP_LEVEL_HEIST_EXCEPTIONAL
+    DropLevel >=  LEVEL_HEIST_EXCEPTIONAL
     #.import < _util -> multi_t3
 
 Show #.strict STRICTNESS_STRICT .if Show
     Class == CLASSES_HEIST
-    DropLevel >= DROP_LEVEL_HEIST_GRAND
+    DropLevel >=  LEVEL_HEIST_GRAND
     #.import < _util -> multi_t3
 
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == CLASSES_HEIST
-    DropLevel >= DROP_LEVEL_HEIST_GREAT
+    DropLevel >=  LEVEL_HEIST_GREAT
     #.import < _util -> multi_t4
 
 Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_HEIST
-    DropLevel >= DROP_LEVEL_HEIST_LESSER
+    DropLevel >=  LEVEL_HEIST_LESSER
     #.import < _util -> multi_t4
 
 # Hidden
