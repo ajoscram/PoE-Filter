@@ -12,13 +12,11 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Add catchalls for sections that are fetched with `.econ`.
-
 * Update the `create-release` script.
-* Create a `update-economy` script that updates all filter files that have `.econ`.
 
 * Add the **Beam** filter style.
 
+* Create a `update-economy` script that updates all filter files that have `.econ`.
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 * `splinter.filter` needs to be revisited mid-league to check up on real prices.
 
