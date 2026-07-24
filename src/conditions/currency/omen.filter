@@ -3,7 +3,7 @@
 # Economy
 
 Show #.econ omn 100
-	BaseType == "Omen of Refreshment" "Omen of the Jeweller" "Omen of Blanching" "Omen of Amelioration" "Omen of Fortune" "Omen of Connections"
+	BaseType == "Omen of Refreshment" "Omen of the Jeweller" "Omen of Trichromatism" "Omen of Amelioration" "Omen of Fortune" "Omen of Connections"
 	#.import STYLE | currency -> t1
 
 Show #.econ omn 10 100

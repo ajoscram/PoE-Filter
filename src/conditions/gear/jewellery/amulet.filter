@@ -4,9 +4,14 @@
 
 #.alias BASES_AMULET_EXQUISITE   = "Unset Amulet" "Focused Amulet" "Simplex Amulet" "Astrolabe Amulet"
 #.alias BASES_AMULET_EXCEPTIONAL = "Marble Amulet" "Blue Pearl Amulet"
-#.alias BASES_AMULET_GRAND       = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
+#.alias BASES_AMULET_GRAND       = "Pearlescent Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
 #.alias BASES_AMULET_GREAT       = "Gold Amulet" "Seaglass Amulet"
 #.alias BASES_AMULET_LESSER      = "Coral Amulet" "Paua Amulet"
+
+#.alias BASES_TALISMAN_EXQUISITE   = "Croaker Talisman" "Vulture Talisman" "Cobra Talisman" "Retch Talisman" "Taurus Talisman" "Pitbull Talisman" "Flame Hellion Talisman" "Frost Hellion Talisman" "Lynx Talisman"
+#.alias BASES_TALISMAN_EXCEPTIONAL = "Great Maw Talisman" "Spider Crab Talisman" "Tiger Talisman" "Carrion Queen Talisman" "Ursa Talisman" "Wolf Alpha Talisman" "Ape Talisman" "Savage Crab Talisman" "Watcher Talisman" "Plagued Arachnid Talisman" "Devourer Talisman" "Sand Spitter Talisman"
+#.alias BASES_TALISMAN_GRAND       = "Farric Talisman" "Saqawine Talisman" "Fenumal Talisman" "Craicic Talisman" "Hybrid Arachnid Talisman" "Rhex Talisman" "Scorpion Talisman" "Black Widow Talisman" "Scrabbler Talisman" "Shield Crab Talisman" "Blood Viper Talisman" "Chimeral Talisman" "Squid Talisman" "Chieftain Talisman" "Gargantuan Talisman" "Goliath Talisman" "Rhoa Talisman"
+#.alias BASES_TALISMAN_GREAT       = "Goatman Talisman" "Magma Hound Talisman" "Octopus Talisman"
 
 #.alias MODS_AMULET_EXCEPTIONAL = "Infamous" "Guatelitzi's" "Xopec's" "Subterranean" "of the Underground" "of Puhuarte" "of Guatelitzi" "of the Sentinel" "Exalter's"
 #.alias MODS_AMULET_GRAND       = "Athlete's" "Ultramarine" "Dazzling" "Flaring" "Cremating" "Entombing" "Impregnable" "Vaporous" "Unassailable" "Wizard's" "Devastating" "Perandus'" "Provocateur's" "Behemoth's" "Stormbrewer's" "Rimedweller's" "Vulcanist's" "of the Gods" "of the Wind" "of the Genius" "of the Multiverse" "of Excavation" "of Legerdemain" "of the Ranger" "of the Phoenix" "of Nirvana" "of Incision" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Span" "of Destruction" "of Regrowth" "of Immolation" "of Floe" "of Discharge" "of Dissolution"
@@ -45,4 +50,4 @@ Show
     BaseType == "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
     #.import _util -> multi_t2
 
-#.import template > _main { CLASS = "Amulets", ITEM_LEVEL_BEST = ITEM_LEVEL_AMULET_BEST, MODS_EXCEPTIONAL = MODS_AMULET_EXCEPTIONAL, MODS_GRAND = MODS_AMULET_GRAND, MODS_GREATER = MODS_AMULET_GREATER, MODS_LESSER = MODS_AMULET_LESSER, BASES_BEST = BASES_AMULET_EXCEPTIONAL BASES_AMULET_GRAND, BASES_EXQUISITE = BASES_AMULET_EXQUISITE, BASES_EXCEPTIONAL = BASES_AMULET_EXCEPTIONAL, BASES_GRAND = BASES_AMULET_GRAND, BASES_GREAT = BASES_AMULET_GREAT, BASES_LESSER = BASES_AMULET_LESSER
+#.import template > _main { CLASS = "Amulets", ITEM_LEVEL_BEST = ITEM_LEVEL_AMULET_BEST, MODS_EXCEPTIONAL = MODS_AMULET_EXCEPTIONAL, MODS_GRAND = MODS_AMULET_GRAND, MODS_GREATER = MODS_AMULET_GREATER, MODS_LESSER = MODS_AMULET_LESSER, BASES_BEST = BASES_AMULET_EXCEPTIONAL BASES_TALISMAN_EXCEPTIONAL BASES_AMULET_GRAND BASES_TALISMAN_GRAND, BASES_EXQUISITE = BASES_AMULET_EXQUISITE BASES_TALISMAN_EXQUISITE, BASES_EXCEPTIONAL = BASES_AMULET_EXCEPTIONAL BASES_TALISMAN_EXCEPTIONAL, BASES_GRAND = BASES_AMULET_GRAND BASES_TALISMAN_GRAND, BASES_GREAT = BASES_AMULET_GREAT BASES_TALISMAN_GREAT, BASES_LESSER = BASES_AMULET_LESSER

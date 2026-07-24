@@ -4,6 +4,7 @@
 #.section Special Uniques
 #.import unique > foulborn
 #.import unique > replica
+#.import unique > vestigial
 
 #.section Jewel
 #.import jewel > base

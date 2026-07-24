@@ -10,7 +10,7 @@ Show
     
 Show
     BaseType == "Imperfect Adherent of Zarokh" "Imperfect Conjuror of Rot" "Imperfect Astral Lich" "Imperfect Forest Warrior" "Imperfect Shadow Construct" "Imperfect Guardian Turtle" "Imperfect Forest Tiger" "Imperfect Eldritch Eye" "Imperfect Meatsack" "Imperfect Half-remembered Goliath" "Imperfect Spider Matriarch" "Imperfect Sanguimancer Demon" "Imperfect Hulking Miscreation" "Imperfect Dark Reaper" "Imperfect Warlord" "Imperfect Runic Skeleton" "Imperfect Primal Demiurge" "Imperfect Spirit of Fortune" "Imperfect Primal Thunderbird" "Imperfect Judgemental Spirit" "Imperfect Blasphemer" "Imperfect Druidic Alchemist" "Imperfect Slashing Horror" "Imperfect Blood Demon" "Imperfect Sawblade Horror" "Imperfect Pain Artist" "Imperfect Serpent Warrior" "Imperfect Needle Horror" "Imperfect Dancing Sword" "Imperfect Naval Officer" "Imperfect Dark Marionette" "Imperfect Fiery Cannibal" "Imperfect Frozen Cannibal" "Imperfect Hydra"
-    #.import STYLE | currency -> t3
+    #.import STYLE | currency -> t4
 
 Show
 	Class == "Corpses"

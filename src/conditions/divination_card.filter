@@ -3,11 +3,11 @@
 # Economy
 
 Show #.econ div 100
-	BaseType == "The Slumbering Beast" "The Doctor" "Doryani's Epiphany" "I See Brothers" "Broken Promises" "The Fortunate" "Love Through Ice" "Temperance" "The Miracle" "Desecrated Virtue" "The Apothecary" "The Vast" "The Hook" "The Sephirot" "The Lake" "The Enlightened" "Divine Justice" "One Last Score" "Brother's Gift" "The Soul" "Imperfect Memories" "Luminous Trove" "The Immortal" "Apocalypse" "The Nurse" "The Insane Cat" "Brotherhood in Exile" "The Rusted Bard" "The Fishmonger" "Time-Lost Relic" "The Eye of Terror" "House of Mirrors" "Auspicious Ambitions" "Unrequited Love" "Damnation" "Rebirth and Renewal" "Fire Of Unknown Origin" "The Price of Devotion" "Wealth and Power" "The Everlasting" "The Fiend" "Magnum Opus" "The Journey" "The Formless Sea" "History" "Divine Beauty" "Seven Years Bad Luck"
+	BaseType == "Home" "The Catch" "Energy Sword" "Pearls Before Swine" "The Slumbering Beast" "The Doctor" "Doryani's Epiphany" "I See Brothers" "Broken Promises" "The Fortunate" "Love Through Ice" "Temperance" "The Miracle" "Desecrated Virtue" "The Apothecary" "The Vast" "The Hook" "The Sephirot" "The Lake" "The Enlightened" "Divine Justice" "One Last Score" "Brother's Gift" "The Soul" "Imperfect Memories" "Luminous Trove" "The Immortal" "Apocalypse" "The Nurse" "The Insane Cat" "Brotherhood in Exile" "The Rusted Bard" "The Fishmonger" "Time-Lost Relic" "The Eye of Terror" "House of Mirrors" "Auspicious Ambitions" "Unrequited Love" "Damnation" "Rebirth and Renewal" "Fire Of Unknown Origin" "The Price of Devotion" "Wealth and Power" "The Everlasting" "The Fiend" "Magnum Opus" "The Journey" "The Formless Sea" "History" "Divine Beauty" "Seven Years Bad Luck"
 	#.import STYLE | divination_card -> t1
 
 Show #.econ div 10 100
-	BaseType == "Something Dark" "Baited Expectations" "Eldritch Perfection" "The Last One Standing" "Darker Half" "Tranquillity" "The Forbidden Fruit" "The Polymath" "The Last Supper" "The Eternal War" "The Shieldbearer" "The Long Con" "Home" "Monochrome" "Costly Curio" "The Void" "The Innocent" "The Shortcut" "A Modest Request" "The Side Quest" "Reflection of the Heart" "Avian Pursuit" "Alluring Bounty"
+	BaseType == "Imperfect Memories" "Matryoshka" "Call to the First Ones" "Something Dark" "Baited Expectations" "Eldritch Perfection" "The Last One Standing" "Darker Half" "Tranquillity" "The Forbidden Fruit" "The Polymath" "The Last Supper" "The Eternal War" "The Shieldbearer" "The Long Con" "Monochrome" "Costly Curio" "The Void" "The Innocent" "The Shortcut" "A Modest Request" "The Side Quest" "Reflection of the Heart" "Avian Pursuit" "Alluring Bounty"
 	#.import STYLE | divination_card -> t2
 
 Show #.econ div 2 10
@@ -19,7 +19,7 @@ Show
 	#.import STYLE | divination_card -> t4
 
 Hide #.econ div 0 2
-	BaseType == "The Metalsmith's Gift" "The Price of Protection" "More is Never Enough" "The Tireless Extractor" "Lingering Remnants" "Mawr Blaidd" "The Wrath"
+	BaseType == "Divine Shard" "The Metalsmith's Gift" "The Price of Protection" "More is Never Enough" "The Tireless Extractor" "Lingering Remnants" "Mawr Blaidd" "The Wrath"
 	#.import STYLE | divination_card -> t5
 
 # Catchall

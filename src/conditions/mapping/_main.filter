@@ -1,11 +1,12 @@
 #.section Mapping
 
-#.alias CLASSES_MAPPING = "Maps" "Misc Map Items" "Map Fragments" "Labyrinth Map Items" "Contracts" "Blueprints" "Expedition Logbooks" "Breachstones" "Sanctum Research" "Vault Keys" "Idols"
+#.alias CLASSES_MAPPING = "Maps" "Misc Map Items" "Map Fragments" "Labyrinth Map Items" "Contracts" "Blueprints" "Expedition Logbooks" "Chart" "Breachstones" "Sanctum Research" "Vault Keys" "Idols"
 
 #.import map
 #.import blueprint
 #.import contract
 #.import logbook
+#.import chart
 #.import idol
 #.import sanctum
 #.import scarab

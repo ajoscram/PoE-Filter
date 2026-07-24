@@ -1,14 +1,36 @@
+# Curse of the Allflame
+
+## 3.29
+### League Changes
+* Added the new **Ducat** currency items.
+* Added the new **Chart** class of items.
+* Added the new **Message in a Bottle** currency item.
+* Added support for **Dead Man's Sulphur** and provided a basic progression scheme.
+
+### General Changes
+* Added the new **Scrying Orb** currency item.
+* Added the new **Divination Cards**. Changed the tiers of cards changed in this patch.
+* Added basic support for the new **Vestigial** uniques.
+* **Moonstone Ring**s have been up-tiered as a result of their buff.
+* **Chromatic Orbs** are now rarer and more valuable. They were up-tiered as a result.
+* **Chromatic Orb vendor recipe items** are now shown up to **Strict** as a result of the previous change.
+* Removed **Unrelenting Timeless Emblems** because they were removed from the game.
+* Added the new **Trarthan Scarabs**.
+* Added the new **Mercenary Warrants** map fragment.
+* Added the new **Pearlescent Amulet** base type.
+* Added the new Talisman base types.
+* Added the new **Enshrouding Crystals** and **Enshrouded uniques**.
+
 # Mirage
 
 ## 3.28b
 ### General Changes
 * The filter has been completely rewritten!
-* The basic style is now called **Loyal**, as it is intended to be loyal to th filter's colors and themes. More styles will be added in the future.
+* The basic style is now called **Loyal**, as it is intended to be loyal to the filter's colors and themes. More styles will be added in the future.
 * Each style will have a separate ZIP folder which can be donwloaded, as opposed to a single **Subfilters.zip** file.
 * Many previously existing sections of items that have been removed were deleted.
 * **Chaos Orb recipe** tiering has now been removed.
 * **Strictness levels** have been simplified to **Base**, **Lenient**, **Strict** and **Uber**, with each level getting stricter respectively.
-* **Charms** and **Sentinels** have been removed, because their support was anemic and they are effectively removed from the game.
 
 ## 3.28
 ### League Changes

@@ -1,6 +1,6 @@
 #.subsection One-hand Sword
 
-#.alias BASES_ONE_HAND_SWORD_EXCEPTIONAL    = "Charan's Sword" "Anarchic Spiritblade"
+#.alias BASES_ONE_HAND_SWORD_EXCEPTIONAL    = "Charan's Sword" "Anarchic Spiritblade" "Ghostflame Blade"
 #.alias BASES_ONE_HAND_SWORD_BEST           = "Legion Sword" "Eternal Sword" "Midnight Blade" "Tiger Hook"
 
 #.alias MODS_ONE_HAND_SWORD_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"

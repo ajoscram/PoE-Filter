@@ -1,0 +1,13 @@
+#.subsection Ducat
+
+Show
+    BaseType == "Katakohi's Ducat" "Tzamoto's Ducat"
+    #.import STYLE | currency -> t1
+
+Show
+    BaseType == "Cyaxan's Ducat" "The Genteel's Ducat" "Kishara's Ducat" "Rotmother's Ducat" "Brinehook's Ducat"
+    #.import STYLE | currency -> t2
+    
+Show
+    BaseType == "Merrick's Ducat" "The Changeling's Ducat" "Telesia's Ducat"
+    #.import STYLE | currency -> t3

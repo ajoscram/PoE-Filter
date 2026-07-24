@@ -17,13 +17,13 @@ Show #.strict STRICTNESS_STRICT .if Show
         CorruptedMods == 2
 
 Show #.strict STRICTNESS_LENIENT .if Show
-    Rarity == Unique
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS
+    Rarity == Unique
     CorruptedMods == 1
 
 Show #.strict STRICTNESS_BASE .if Show
-    Rarity == Unique
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
+    Rarity == Unique
 
 # Fractured
 
@@ -156,13 +156,14 @@ Show #.strict STRICTNESS_LENIENT .if Show
     AreaLevel < LEVEL_WHITE_MAPS_START
     LinkedSockets == 4
 
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
+    SocketGroup RGB
+
 Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
     AreaLevel < LEVEL_ACT_6_START
-    #.multi
-        SocketGroup RGB
-    #.multi
-        LinkedSockets == 3
+    LinkedSockets == 3
 
 # Quality
 

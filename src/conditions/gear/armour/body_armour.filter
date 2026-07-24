@@ -18,6 +18,7 @@ Show #.econ uni 100
     Rarity == Unique
     Replica False
     Foulborn False
+    Vestigial False
     LinkedSockets < 5 #.format
     #.import STYLE | armour > unique -> t1
 
@@ -27,6 +28,7 @@ Show #.econ uni 10 100
     Rarity == Unique
     Replica False
     Foulborn False
+    Vestigial False
     LinkedSockets < 5 #.format
     #.import STYLE | armour > unique -> t2
 
@@ -36,6 +38,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Rarity == Unique
     Replica False
     Foulborn False
+    Vestigial False
     LinkedSockets < 5 #.format
     #.import STYLE | armour > unique -> t3
 

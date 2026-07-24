@@ -2,9 +2,9 @@
 
 #.alias BASES_BASIC_CURENCY_PERFECT     = "Divine Orb" "Mirror of Kalandra" "Reflecting Mist" "Valdo's Puzzle Box" "Hinekora's Lock" "Fracturing Orb"
 #.alias BASES_BASIC_CURENCY_EXQUISITE   = "Sacred Orb" "Orb of Annulment" "Ancient Orb"
-#.alias BASES_BASIC_CURENCY_EXCEPTIONAL = "Exalted Orb" "Chaos Orb" "Orb of Regret" "Gemcutter's Prism" "Vaal Orb" "Stacked Deck"
+#.alias BASES_BASIC_CURENCY_EXCEPTIONAL = "Exalted Orb" "Chaos Orb" "Orb of Regret" "Gemcutter's Prism" "Chromatic Orb" "Vaal Orb" "Stacked Deck"
 #.alias BASES_BASIC_CURENCY_GRAND       = "Regal Orb" "Orb of Alchemy" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking"
-#.alias BASES_BASIC_CURENCY_GREATER     = "Chromatic Orb" "Orb of Alteration" "Orb of Transmutation" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
+#.alias BASES_BASIC_CURENCY_GREATER     = "Orb of Alteration" "Orb of Transmutation" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
 #.alias BASES_BASIC_CURENCY_LESSER      = "Scroll of Wisdom" "Portal Scroll" "Orb of Augmentation"
 
 Show

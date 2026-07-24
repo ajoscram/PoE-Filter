@@ -3,7 +3,7 @@
 # Economy
 
 Show #.econ ast 100
-	BaseType == "Templar Astrolabe" "Fruiting Astrolabe" "Lightless Astrolabe" "Grasping Astrolabe" "Nameless Astrolabe" "Fungal Astrolabe" "Chaotic Astrolabe" "Enshrouded Astrolabe" "Timeless Astrolabe" "Runic Astrolabe"
+	BaseType == "Templar Astrolabe" "Fruiting Astrolabe" "Lightless Astrolabe" "Grasping Astrolabe" "Nameless Astrolabe" "Fungal Astrolabe" "Chaotic Astrolabe" "Deceptive Astrolabe" "Timeless Astrolabe" "Runic Astrolabe"
 	#.import STYLE | currency -> t1
 
 Show #.econ ast 10 100

@@ -7,7 +7,7 @@ Show
 	#.import STYLE | currency -> t1
 
 Show
-	BaseType == "Memory of Trauma" "Memory of Reverence" "Memory of Loneliness" "Orb of Intention" "Veiled Chaos Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+	BaseType == "Message in a Bottle" "Scrying Orb" "Memory of Trauma" "Memory of Reverence" "Memory of Loneliness" "Orb of Intention" "Veiled Chaos Orb" "Infused Engineer's Orb" "Facetor's Lens" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Blessing of Uul-Netol" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
 	#.import STYLE | currency -> t2
 
 Show

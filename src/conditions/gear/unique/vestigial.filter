@@ -1,0 +1,10 @@
+#.subsection Vestigial
+
+Show
+    Class == "Enshrouded Items"
+    #.import STYLE | armour > unique -> t2
+
+Show
+    Rarity == Unique
+    Vestigial True
+    #.import STYLE | armour > unique -> t2
