@@ -12,13 +12,13 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Update the `create-release` script.
 * Add the **Beam** filter style.
-
 * Create a `update-economy` script that updates all filter files that have `.econ`.
+
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 * `splinter.filter` needs to be revisited mid-league to check up on real prices.
 
+* Update README.md with a summary of current filter contents.
 * Elaborate `idols.filter`.
 * Figure out a re-organization of the "gem" section.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.

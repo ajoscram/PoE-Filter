@@ -14,7 +14,7 @@ DOT_STAND_IN="%"
 VERSION=$(scripts/version.sh | sed "s/\./\\$DOT_STAND_IN/")
 ECON="" && contains "econ" $@ && ECON=".econ"
 
-STYLE=${2:-"classic"}
+STYLE=${2:-"loyal"}
 STRICTNESS=${1:-"base"}
 STRICTNESS_NUMBER=$(get_strictness_number)
 [ -z "$STRICTNESS_NUMBER" ] \

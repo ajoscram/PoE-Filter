@@ -3,6 +3,8 @@
 ## 3.28b
 ### General Changes
 * The filter has been completely rewritten!
+* The basic style is now called **Loyal**, as it is intended to be loyal to th filter's colors and themes. More styles will be added in the future.
+* Each style will have a separate ZIP folder which can be donwloaded, as opposed to a single **Subfilters.zip** file.
 * Many previously existing sections of items that have been removed were deleted.
 * **Chaos Orb recipe** tiering has now been removed.
 * **Strictness levels** have been simplified to **Base**, **Lenient**, **Strict** and **Uber**, with each level getting stricter respectively.

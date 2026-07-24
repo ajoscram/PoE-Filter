@@ -17,10 +17,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     
     - name: Download PFG
-      uses: robinraju/release-downloader@v1.9
+      uses: robinraju/release-downloader@v1.13
       with:
         repository: ajoscram/PoE-Filter-Generator
         fileName: "pfg.exe"

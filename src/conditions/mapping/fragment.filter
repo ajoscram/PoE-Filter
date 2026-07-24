@@ -1,7 +1,7 @@
 #.subsection Fragment
 
 #.# Note: This subsection should have a catch-all at the bottom but doesn't because there is no pattern
-#.# which can be exploited to catch every different item listed here.
+#.# which can be exploited to catch every different item listed here
 
 Show #.econ fra 100 .econ inv 100
 	BaseType == "Blazing Fragment" "Valdo's Puzzle Box" "Veritania's Crest" "Synthesising Fragment" "Fragment of Emptiness" "Baran's Crest" "Fragment of the Hydra" "Unrelenting Timeless Karui Emblem" "Drox's Crest" "Fragment of Shape" "Simulacrum" "Fragment of Knowledge" "Reverent Fragment" "Gift to the Goddess" "Traumatic Fragment" "Sacred Blossom" "Unrelenting Timeless Eternal Emblem" "Memory of Reverence" "Voidborn Reliquary Key" "Devouring Fragment" "Unrelenting Timeless Templar Emblem" "Fragment of Terror" "Echo of Trauma" "Decaying Fragment" "Reality Fragment" "Fragment of Enslavement" "Unrelenting Timeless Vaal Emblem" "An Audience With The King" "Fragment of Purification" "Fragment of Eradication" "Syndicate Medallion" "Lonely Fragment" "Al-Hezmin's Crest" "The Maven's Writ" "Hivebrain Gland" "Echo of Reverence" "The Black Barya" "Fragment of the Minotaur" "Fragment of the Phoenix" "Cosmic Fragment" "Unrelenting Timeless Maraketh Emblem" "Dedication to the Goddess" "Echo of Loneliness" "Incandescent Invitation" "Screaming Invitation"
