@@ -2,8 +2,8 @@
 
 Show
 	BaseType == "Prime Chaotic Resonator"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Primitive Chaotic Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator"
-	#.import < < styles > currency -> 1_10c
+	#.import STYLE | currency -> t3

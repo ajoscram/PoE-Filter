@@ -1,0 +1,21 @@
+# High Quality
+
+Show
+    BaseType == BASES_BEST
+    Quality >= 30
+    #.import < _util -> multi_t1
+
+Show
+    BaseType == BASES_BEST
+    Quality >= 26
+    #.import < _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASES_BEST
+    Quality >= 23
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASES_BEST
+    Quality >= 20
+    #.import < _util -> multi_t3

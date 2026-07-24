@@ -1,0 +1,42 @@
+#.subsection Body Armour
+
+#.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
+
+#.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
+#.alias BASES_BODY_ARMOUR_BEST        = "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
+
+#.alias MODS_BODY_ARMOUR_EXCEPTIONAL     = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
+#.alias MODS_BODY_ARMOUR_GRAND           = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
+#.alias MODS_BODY_ARMOUR_GREATER         = "Rapturous" "Apparition's" "Illusory" "Saintly" "Seraphim's" "Inspired" "Adaptable" "Legend's" "Bishop's" "Exarch's" "Unassailable" "Incandescent" "Blue" "Ibex's" "Lissome" "Hummingbird's" "Mirage's" "Impregnable" "Mammoth's" "Unmoving" "Crocodile's" "of the Phantom" "of the Titan" "of Life-giving" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of the Protector" "of Abjuration" "of the Virtuoso" "of Second Wind"
+#.alias MODS_BODY_ARMOUR_LESSER          = "Vigorous" "Fecund" "Athlete's" "Virile" "Eidolon's" "Unreal" "Consecrated" "Djinn's" "Interpolated" "Resilient" "Hero's" "Priest's" "Abbot's" "Indomitable" "Scintillating" "Mazarine" "Ram's" "Adroit" "Dragonfly's" "Nightmare's" "Girded" "Elephant's" "Abating" "Nautilus's" "of the Jaguar" "of the Leviathan" "of Recuperation" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of the Keeper" "of the Sentry" "of the Watchman" "of Revoking" "of Snuffing" "of the Savant" "of Vigour"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Crusader Plate" "Carnal Armour" "Wyrmscale Doublet" "Spidersilk Robe" "Desert Brigandine" "Sage's Robe" "Lacquered Garb"
+    Class == "Body Armours" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Sentinel Jacket" "Cabalist Regalia" "Carnal Armour" "Saint's Hauberk" "Silken Vest" "Sadist Garb" "Gladiator Plate" "Lacquered Garb" "Savant's Robe" "Sage's Robe"
+    Class == "Body Armours" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Crusader Plate" "Blood Raiment" "Scholar's Robe" "Sadist Garb" "Lacquered Garb" "Vaal Regalia" "Glorious Plate" "Spidersilk Robe" "Zodiac Leather" "Torturer Garb" "Destiny Leather" "Majestic Plate" "Wyrmscale Doublet" "Saint's Hauberk" "Elegant Ringmail" "Necromancer Silks" "Varnished Coat" "Gladiator Plate" "Sage's Robe" "Destroyer Regalia" "Exquisite Leather" "Silken Vest" "Astral Plate"
+    Class == "Body Armours" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | armour > unique -> t3
+
+#.import template > _main { CLASS = "Body Armours", BASES_BEST = BASES_BODY_ARMOUR_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_BODY_ARMOUR_BEST, BASES_EXCEPTIONAL = BASES_BODY_ARMOUR_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BODY_ARMOUR_EXCEPTIONAL, MODS_GRAND = MODS_BODY_ARMOUR_GRAND, MODS_GREATER = MODS_BODY_ARMOUR_GREATER, MODS_LESSER = MODS_BODY_ARMOUR_LESSER

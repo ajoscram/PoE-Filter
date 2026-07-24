@@ -1,13 +1,13 @@
 #.subsection Expedition
 
 Show
-	BaseType == "Burial Medallion"
-	#.import < < styles > currency -> 10_100c
+	BaseType == "Exotic Coinage"
+	#.import STYLE | currency -> t2
 
 Show
-	BaseType == "Astragali" "Exotic Coinage" "Scrap Metal"
-	#.import < < styles > currency -> 1_10c
+	BaseType == "Burial Medallion" "Scrap Metal"
+	#.import STYLE | currency -> t3
 
 Show
-	BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
-	#.import < < styles > currency -> 1-c good
+	BaseType == "Astragali" "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact" "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
+	#.import STYLE | currency -> t4

@@ -1,0 +1,5 @@
+#.subsection Expedition Logbook
+
+Show
+	Class == "Expedition Logbooks"
+    #.import _util -> multi_t2

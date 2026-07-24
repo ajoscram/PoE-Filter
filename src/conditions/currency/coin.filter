@@ -1,9 +1,9 @@
-#.subsection Coin
+#.subsection Djinn Coin
 
 Show
     BaseType == "Coin of Knowledge" "Coin of Power" "Coin of Skill"
-    #.import < < styles > currency -> 10_100c
+    #.import STYLE | currency -> t1
 
 Show
     BaseType == "Coin of Restoration" "Coin of Desecration"
-    #.import < < styles > currency -> 1_10c
+    #.import STYLE | currency -> t4

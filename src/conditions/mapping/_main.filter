@@ -1,16 +1,19 @@
 #.section Mapping
 
-Show #.name text
-	Continue
-	Class == "Maps" "Misc Map Item" "Map Fragments" "Labyrinth Map Items" "Contract" "Blueprint" "Expedition Logbooks" "Breachstones" "Sanctum Research" "Vault Key"
-	#.import < < styles > general -> text
+#.alias CLASSES_MAPPING = "Maps" "Misc Map Items" "Map Fragments" "Labyrinth Map Items" "Contracts" "Blueprints" "Expedition Logbooks" "Breachstones" "Sanctum Research" "Vault Keys" "Idols"
 
-#.import allflame_ember
-#.import scarab
-#.import fragment
 #.import map
-#.import miscellaneous
+#.import blueprint
+#.import contract
+#.import logbook
+#.import idol
+#.import sanctum
+#.import scarab
+#.import allflame_ember
+#.import fragment
+
+#.subsection Miscellaneous
 
 Show
-	#.import -> text -> Class
-	#.import < < styles > mapping -> catchall
+	Class == CLASSES_MAPPING
+	#.import STYLE | fragment -> catchall

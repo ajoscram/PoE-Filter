@@ -1,0 +1,154 @@
+Show #.name multi_t1_full
+    #.import -> multi_t1_unique
+    #.import -> multi_t1_rare
+    #.import -> multi_t1_magic
+    #.import -> multi_t1_normal
+
+Show #.name multi_t1
+    #.import -> multi_t1_rare
+    #.import -> multi_t1_magic
+    #.import -> multi_t1_normal
+
+Show #.name multi_t1_unique
+    #.multi
+        Rarity == Unique
+        #.import STYLE | weapon > unique -> t1
+
+Show #.name multi_t1_rare
+    #.multi
+        Rarity == Rare
+        #.import STYLE | weapon > rare -> t1
+
+Show #.name multi_t1_magic
+    #.multi
+        Rarity == Magic
+        #.import STYLE | weapon > magic -> t1
+
+Show #.name multi_t1_normal
+    #.multi
+        Rarity == Normal
+        #.import STYLE | weapon > normal -> t1
+
+Show #.name multi_t2_full
+    #.import -> multi_t2_unique
+    #.import -> multi_t2_rare
+    #.import -> multi_t2_magic
+    #.import -> multi_t2_normal
+
+Show #.name multi_t2
+    #.import -> multi_t2_rare
+    #.import -> multi_t2_magic
+    #.import -> multi_t2_normal
+
+Show #.name multi_t2_unique
+    #.multi
+        Rarity == Unique
+        #.import STYLE | weapon > unique -> t2
+
+Show #.name multi_t2_rare
+    #.multi
+        Rarity == Rare
+        #.import STYLE | weapon > rare -> t2
+
+Show #.name multi_t2_magic
+    #.multi
+        Rarity == Magic
+        #.import STYLE | weapon > magic -> t2
+
+Show #.name multi_t2_normal
+    #.multi
+        Rarity == Normal
+        #.import STYLE | weapon > normal -> t2
+
+Show #.name multi_t3_full
+    #.import -> multi_t3_unique
+    #.import -> multi_t3_rare
+    #.import -> multi_t3_magic
+    #.import -> multi_t3_normal
+
+Show #.name multi_t3
+    #.import -> multi_t3_rare
+    #.import -> multi_t3_magic
+    #.import -> multi_t3_normal
+
+Show #.name multi_t3_unique
+    #.multi
+        Rarity == Unique
+        #.import STYLE | weapon > unique -> t3
+
+Show #.name multi_t3_rare
+    #.multi
+        Rarity == Rare
+        #.import STYLE | weapon > rare -> t3
+
+Show #.name multi_t3_magic
+    #.multi
+        Rarity == Magic
+        #.import STYLE | weapon > magic -> t3
+
+Show #.name multi_t3_normal
+    #.multi
+        Rarity == Normal
+        #.import STYLE | weapon > normal -> t3
+
+Show #.name multi_t4_full
+    #.import -> multi_t4_unique
+    #.import -> multi_t4_rare
+    #.import -> multi_t4_magic
+    #.import -> multi_t4_normal
+
+Show #.name multi_t4
+    #.import -> multi_t4_rare
+    #.import -> multi_t4_magic
+    #.import -> multi_t4_normal
+
+Show #.name multi_t4_unique
+    #.multi
+        Rarity == Unique
+        #.import STYLE | weapon > unique -> t4
+
+Show #.name multi_t4_rare
+    #.multi
+        Rarity == Rare
+        #.import STYLE | weapon > rare -> t4
+
+Show #.name multi_t4_magic
+    #.multi
+        Rarity == Magic
+        #.import STYLE | weapon > magic -> t4
+
+Show #.name multi_t4_normal
+    #.multi
+        Rarity == Normal
+        #.import STYLE | weapon > normal -> t4
+
+Show #.name multi_t5_full
+    #.import -> multi_t5_unique
+    #.import -> multi_t5_rare
+    #.import -> multi_t5_magic
+    #.import -> multi_t5_normal
+
+Show #.name multi_t5
+    #.import -> multi_t5_rare
+    #.import -> multi_t5_magic
+    #.import -> multi_t5_normal
+
+Show #.name multi_t5_unique
+    #.multi
+        Rarity == Unique
+        #.import STYLE | weapon > unique -> t5
+
+Show #.name multi_t5_rare
+    #.multi
+        Rarity == Rare
+        #.import STYLE | weapon > rare -> t5
+
+Show #.name multi_t5_magic
+    #.multi
+        Rarity == Magic
+        #.import STYLE | weapon > magic -> t5
+
+Show #.name multi_t5_normal
+    #.multi
+        Rarity == Normal
+        #.import STYLE | weapon > normal -> t5

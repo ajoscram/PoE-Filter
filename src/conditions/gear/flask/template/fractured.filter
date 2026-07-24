@@ -1,0 +1,18 @@
+# Fractured
+
+Show
+    BaseType == BASES_BEST
+    HasExplicitMod == MODS_GRAND
+    FracturedItem True
+    #.import STYLE | flask > magic -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_BEST
+    HasExplicitMod == MODS_GREATER
+    FracturedItem True
+    #.import STYLE | flask > magic -> t3
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASES_BEST
+    FracturedItem True
+    #.import STYLE | flask > magic -> t3

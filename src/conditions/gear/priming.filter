@@ -1,0 +1,212 @@
+#.section Gear Priming
+
+# Base Priming
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    #.import armour > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    #.import weapon > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY CLASSES_JEWELS
+    #.import jewellery > _util -> multi_t4_full
+
+Show
+    Continue
+    Class == CLASSES_FLASKS
+    #.import flask > _util -> multi_t4_full
+
+# Synthesized
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    SynthesisedItem True
+    #.import armour > _util -> multi_t3
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    SynthesisedItem True
+    #.import weapon > _util -> multi_t3
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY CLASSES_JEWELS
+    SynthesisedItem True
+    #.import jewellery > _util -> multi_t3
+
+# Influenced
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import armour > _util -> multi_t3
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import weapon > _util -> multi_t3
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_INFLUENCED
+    #.import jewellery > _util -> multi_t3
+
+# Corrupted Mods
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    CorruptedMods >= 1
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    CorruptedMods >= 1
+    #.import weapon > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    CorruptedMods >= 1
+    #.import jewellery > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_JEWELS
+    CorruptedMods >= 1
+    #.import jewellery > _util -> multi_t2_full
+
+# 3 Links
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    LinkedSockets == 3
+    AreaLevel < LEVEL_ACT_6_START
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    LinkedSockets == 3
+    AreaLevel < LEVEL_ACT_6_START
+    #.import weapon > _util -> multi_t3_full
+
+# 4 Links
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR
+    LinkedSockets == 4
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    LinkedSockets == 4
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import weapon > _util -> multi_t3_full
+
+# 5+ Links
+
+Show
+    Continue
+    Class == CLASSES_6_SOCKET_ARMOUR
+    LinkedSockets >= 5
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    LinkedSockets >= 5
+    #.import weapon > _util -> multi_t3_full
+
+# 6 Sockets
+
+Show
+    Continue
+    Class == CLASSES_6_SOCKET_ARMOUR
+    Sockets == 6
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    Sockets == 6
+    #.import weapon > _util -> multi_t3_full
+
+# Elevated
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    HasExplicitMod == MODS_ELEVATED
+    #.import armour > _util -> multi_t2
+
+# Perfect Eater / Exarch
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR
+    HasEaterOfWorldsImplicit == ELDRITCH_PERFECT
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR
+    HasSearingExarchImplicit == ELDRITCH_PERFECT
+    #.import armour > _util -> multi_t2
+
+# Fractured and Veiled
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    FracturedItem True
+    #.import jewellery > _util -> multi_t2
+
+# 6 Links
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_ARMOUR
+    LinkedSockets == 6
+    #.import armour > _util -> multi_t2_full
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    LinkedSockets == 6
+    #.import weapon > _util -> multi_t2_full

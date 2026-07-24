@@ -1,0 +1,38 @@
+#.# Eldritch currency tiers
+
+#.alias ELDRITCH_NONE        = 0
+#.alias ELDRITCH_LESSER      = 1
+#.alias ELDRITCH_GREATER     = 2
+#.alias ELDRITCH_GRAND       = 3
+#.alias ELDRITCH_EXCEPTIONAL = 4
+#.alias ELDRITCH_EXQUISITE   = 5
+#.alias ELDRITCH_PERFECT     = 6
+
+#.# Levels
+
+#.alias ITEM_LEVEL_WEAPON_BEST = 86
+
+#.# Mods
+
+#.alias MODS_INFLUENCED      = "The Shaper's" "The Elder's" "Crusader's" "Hunter's" "Redeemer's" "Warlord's"
+#.alias MODS_ELEVATED        = "Elevated Shaper's" "Elevated Elder's" "Elevated Crusader's" "Elevated Hunter's" "Elevated Redeemer's" "Elevated Warlord's"
+#.alias MODS_VEILED_NAMED    = "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+#.alias MODS_VEILED_UNNAMED  = "Veiled" "of the Veil"
+
+#.alias MODS_WEAPON_EXCEPTIONAL     = "Dictator's" "Emperor's" "Merciless" "Tyrannical" "Deceiver's" "Betrayer's" "Turncoat's" "Subterranean" "of the Underground" "of the Sentinel"
+#.alias MODS_WEAPON_GRAND           = "Conqueror's" "Cruel" "Flaring" "Carbonising" "Crystalising" "Vapourising" "Devastating" "Malicious" "of Incision" "of Destruction" "of Dissolution"
+#.alias MODS_WEAPON_GREATER         = "Champion's" "Bloodthirsty" "Tempered" "Cremating" "Entombing" "Electrocuting" "Overpowering" "of Revitalization" "of Retention" "of Penetrating" "of Ferocity" "of Radiance" "of Melting"
+#.alias MODS_WEAPON_LESSER          = "Mercenary's" "Vicious" "Razor-sharp" "Blasting" "Polar" "Discharging" "Unleashed" "of Recuperation" "of Permeation" "of Puncturing" "of Fury" "of Light" "of Thirst" "of Liquefaction"
+
+#.# Gear
+
+#.alias CLASSES_ARMOUR    = "Body Armours" "Boots" "Gloves" "Helmets"
+#.alias CLASSES_OFFHANDS  = "Shields" "Quivers"
+#.alias CLASSES_WEAPONS   = "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves"
+#.alias CLASSES_JEWELLERY = "Amulets" "Belts" "Rings" "Trinkets"
+#.alias CLASSES_JEWELS    = "Jewels" "Abyss Jewels"
+#.alias CLASSES_FLASKS    = "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Tinctures"
+
+#.alias CLASSES_PROGRESSABLE_FLASKS = "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+#.alias CLASSES_6_SOCKET_ARMOUR     = "Body Armours"
+#.alias CLASSES_6_SOCKET_WEAPON     = "Two Hand Axes" "Bows" "Two Hand Maces" "Sceptres" "Staves" "Two Hand Sword" "Warstaves"

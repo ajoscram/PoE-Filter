@@ -1,0 +1,13 @@
+#.subsection Sanctum
+
+Show
+    BaseType == "Sanctum Cathedral Research" "Sanctum Necropolis Research"
+    #.import STYLE | fragment -> t1
+
+Show
+    BaseType == "Sanctum Archives Research" "Sanctum Vaults Research"
+    #.import STYLE | fragment -> t2
+
+Show
+    BaseType == "Forbidden Tome"
+    #.import STYLE | fragment -> t3

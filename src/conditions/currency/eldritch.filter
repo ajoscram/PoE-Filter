@@ -1,9 +1,24 @@
 #.subsection Eldritch
 
-Show
-	BaseType == "Orb of Conflict" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Eldritch Chaos Orb" "Exceptional Eldritch Ichor" "Exceptional Eldritch Ember"
-	#.import < < styles > currency -> 10_100c
+#.alias BASES_ELDRITCH_EMBER_LESSER = "Lesser Eldritch Ember" "Lesser Eldritch Ichor"
 
 Show
-	BaseType == "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Grand Eldritch Ichor" "Grand Eldritch Ember"
-	#.import < < styles > currency -> 1_10c
+	BaseType == "Orb of Conflict" "Exceptional Eldritch Ichor" "Exceptional Eldritch Ember"
+	#.import STYLE | currency -> t1
+
+Show
+	BaseType == "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Eldritch Chaos Orb"
+	#.import STYLE | currency -> t2
+
+Show
+	BaseType == "Greater Eldritch Ember" "Greater Eldritch Ichor" "Grand Eldritch Ichor" "Grand Eldritch Ember"
+	#.import STYLE | currency -> t3
+
+Show #.strict STRICTNESS_STRICT
+    BaseType == BASES_ELDRITCH_EMBER_LESSER
+	#.import STYLE | currency -> t4
+
+Hide
+    BaseType == BASES_ELDRITCH_EMBER_LESSER
+    #.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5

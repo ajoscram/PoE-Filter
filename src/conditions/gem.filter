@@ -1,111 +1,103 @@
 #.section Gem
 
-Show #.name text
-	Continue
-	Class == "Skill Gems" "Support Gems"
-	#.import < styles > general -> text
+#.alias GEM_CLASSES = "Skill Gems" "Support Gems"
 
 Show
 	BaseType == "Empower Support" "Enhance Support" "Enlighten Support"
 	GemLevel 4
-	#.import < styles > gem -> tier_1
+	#.import STYLE | gem -> t1
 
 Show
 	BaseType "Awakened"
 	Class == "Support Gems"
-	#.import < styles > gem -> tier_1
+	#.import STYLE | gem -> t1
 
 Show
 	GemLevel 21
 	Quality = 23
-	#.import < styles > gem -> tier_1
+	#.import STYLE | gem -> t1
 
-Show #.name exceptional
+Show
     BaseType == "Greater Spell Cascade Support" "Eclipse Support" "Invert the Rules Support" "Cast on Ward Break Support" "Vaal Sacrifice Support" "Greater Spell Echo Support" "Vaal Temptation Support" "Machinations Support" "Pyre Support" "Bonespire Support" "Foulgrasp Support" "Hiveborn Support" "Scornful Herald Support" "Cull the Weak Support" "Greater Ancestral Call Support" "Fissure Support" "Hextoad Support" "Hexpass Support" "Greater Fork Support" "Greater Chain Support" "Lethal Dose Support" "Companionship Support" "Divine Sentinel Support" "Annihilation Support" "Invention Support" "Greater Kinetic Instability Support" "Cooldown Recovery Support" "Voidstorm Support" "Void Shockwave Support" "Eldritch Blasphemy Support" "Gluttony Support" "Overheat Support" "Greater Multistrike Support" "Congregation Support" "Frostmage Support" "Greater Devour Support" "Greater Unleash Support" "Pacifism Support" "Bloodsoaked Banner Support" "Minion Pact Support" "Unholy Trinity Support" "Overloaded Intensity Support" "Transfusion Support"
-	#.import < styles > gem -> tier_1
+	#.import STYLE | gem -> t1
 
 Show
 	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
 	Quality = 23
-	#.import < styles > gem -> tier_1
+	#.import STYLE | gem -> t1
 
 Show
 	GemLevel 21
 	Quality >= 20
-	#.import < styles > gem -> tier_2
+	#.import STYLE | gem -> t2
 
 Show
 	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
 	Quality >= 20
-	#.import < styles > gem -> tier_2
+	#.import STYLE | gem -> t2
 
 Show
-	#.import -> text -> Class
+	Class == GEM_CLASSES
     Imbued True
-	#.import < styles > gem -> tier_2
+	#.import STYLE | gem -> t2
 
 Show
 	BaseType == "Empower Support" "Enlighten Support" "Enlighten Support"
-	#.import < styles > gem -> tier_2
+	#.import STYLE | gem -> t2
 
 Show
 	BaseType == "Blood and Sand" "Brand Recall"
 	GemLevel 7
-	#.import < styles > gem -> tier_3
+	#.import STYLE | gem -> t3
 
 Show
 	GemLevel 21
-	#.import < styles > gem -> tier_3
+	#.import STYLE | gem -> t3
 
 Show
 	GemLevel = 20
 	Quality = 20
-	#.import < styles > gem -> tier_3
+	#.import STYLE | gem -> t3
 
 Show
-	#.import -> text -> Class
+	Class == GEM_CLASSES
     TransfiguredGem True
-	#.import < styles > gem -> tier_3
+	#.import STYLE | gem -> t3
 
 Show
-	#.import -> text -> Class
+	Class == GEM_CLASSES
 	Quality >= 20
-	#.import < styles > gem -> tier_4
+	#.import STYLE | gem -> t4
 
 Show
 	GemLevel = 20
-	#.import < styles > gem -> tier_4
+	#.import STYLE | gem -> t4
 
-Show
-    #.strict 4
-	#.import -> text -> Class
+Show #.strict STRICTNESS_STRICT
+	Class == GEM_CLASSES
 	Quality >= 5
-	#.import < styles > gem -> tier_4
+	#.import STYLE | gem -> t4
 
-Show
-    #.strict 3
-	#.import -> text -> Class
+Show #.strict STRICTNESS_LENIENT
+	Class == GEM_CLASSES
 	Quality > 0
-	#.import < styles > gem -> tier_4
+	#.import STYLE | gem -> t4
 
-Show
-	#.strict 2
+Show #.strict STRICTNESS_LENIENT
 	BaseType == "Portal"
-	#.import < styles > gem -> tier_5
+	#.import STYLE | gem -> t5
 
 Show
-	#.import -> text -> Class
-	AreaLevel = 1
-	#.import < styles > gem -> tier_5
+	Class == GEM_CLASSES
+	AreaLevel = LEVEL_ACT_1_START
+	#.import STYLE | gem -> t5
 
-Show
-	#.strict 1 .import -> text -> Class
-	AreaLevel < 45
-	#.import < styles > gem -> tier_5
+Show #.strict STRICTNESS_LENIENT
+	AreaLevel < LEVEL_ACT_6_START
+	#.import STYLE | gem -> t5
 
 Hide
-	Continue
-	#.import -> text -> Class
-	#.import < styles > gem -> tier_5
+	Class == GEM_CLASSES
+	#.import STYLE | gem -> t5

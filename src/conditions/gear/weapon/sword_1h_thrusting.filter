@@ -1,0 +1,44 @@
+#.subsection Thrusting One-hand Sword
+
+#.alias BASES_ONE_HAND_SWORD_THRUSTING_BEST           = "Dragoon Sword" "Jewelled Foil" "Vaal Rapier" "Harpy Rapier"
+
+#.alias MODS_ONE_HAND_SWORD_THRUSTING_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_SWORD_THRUSTING_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_SWORD_THRUSTING_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_SWORD_THRUSTING_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Vaal Rapier"
+    Class == "Thrusting One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Jewelled Foil"
+    Class == "Thrusting One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Basket Rapier"
+    Class == "Thrusting One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > exceptional_mods { CLASS = "Thrusting One Hand Swords", BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST, MODS_EXCEPTIONAL = MODS_ONE_HAND_SWORD_THRUSTING_EXCEPTIONAL
+#.import template > rare { CLASS = "Thrusting One Hand Swords", BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST, MODS_GRAND = MODS_ONE_HAND_SWORD_THRUSTING_GRAND, MODS_GREATER = MODS_ONE_HAND_SWORD_THRUSTING_GREATER, MODS_LESSER = MODS_ONE_HAND_SWORD_THRUSTING_LESSER
+#.import template > magic { CLASS = "Thrusting One Hand Swords", BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST, MODS_GRAND = MODS_ONE_HAND_SWORD_THRUSTING_GRAND, MODS_GREATER = MODS_ONE_HAND_SWORD_THRUSTING_GREATER, MODS_LESSER = MODS_ONE_HAND_SWORD_THRUSTING_LESSER
+#.import template > fractured { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST, MODS_GRAND = MODS_ONE_HAND_SWORD_THRUSTING_GRAND
+#.import template > synthesized { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
+#.import template > influenced { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
+#.import template > memory_strands { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
+#.import template > quality { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
+#.import template > best_base { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST

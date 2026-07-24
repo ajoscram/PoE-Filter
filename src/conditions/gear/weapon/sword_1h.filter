@@ -1,0 +1,37 @@
+#.subsection One-hand Sword
+
+#.alias BASES_ONE_HAND_SWORD_EXCEPTIONAL    = "Charan's Sword" "Anarchic Spiritblade"
+#.alias BASES_ONE_HAND_SWORD_BEST           = "Legion Sword" "Eternal Sword" "Midnight Blade" "Tiger Hook"
+
+#.alias MODS_ONE_HAND_SWORD_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_SWORD_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_SWORD_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_SWORD_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Legion Sword" "Gemstone Sword" "Charan's Sword" "Dusk Blade" "Vaal Blade" "Elegant Sword"
+    Class == "One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Gladius" "Gemstone Sword"
+    Class == "One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Legion Sword" "Twilight Blade" "Rusted Sword" "Sabre" "Cutlass" "Corsair Sword" "Eternal Sword" "Vaal Blade" "Midnight Blade" "Elder Sword"
+    Class == "One Hand Swords" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "One Hand Swords", BASES_BEST = BASES_ONE_HAND_SWORD_BEST, BASES_EXCEPTIONAL = BASES_ONE_HAND_SWORD_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_ONE_HAND_SWORD_EXCEPTIONAL, MODS_GRAND = MODS_ONE_HAND_SWORD_GRAND, MODS_GREATER = MODS_ONE_HAND_SWORD_GREATER, MODS_LESSER = MODS_ONE_HAND_SWORD_LESSER

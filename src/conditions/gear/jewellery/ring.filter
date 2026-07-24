@@ -1,0 +1,42 @@
+#.subsection Ring
+
+#.alias ITEM_LEVEL_RING_BEST   = 85
+
+#.alias BASES_RING_EXQUISITE   = "Cogwork Ring" "Composite Ring" "Geodesic Ring" "Helical Ring" "Manifold Ring" "Ratcheting Ring" "Dusk Ring" "Gloam Ring" "Shadowed Ring" "Formless Ring"
+#.alias BASES_RING_EXCEPTIONAL = "Cryonic Ring" "Enthalpic Ring" "Fugitive Ring" "Organic Ring" "Synaptic Ring" "Nameless Ring" "Penumbra Ring" "Tenebrous Ring"
+#.alias BASES_RING_GRAND       = "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
+#.alias BASES_RING_GREAT       = "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Bone Ring" "Diamond Ring" "Gold Ring"
+#.alias BASES_RING_LESSER      = "Coral Ring" "Iron Ring" "Paua Ring" "Moonstone Ring"
+
+#.alias MODS_RING_EXCEPTIONAL = "Subterranean" "Sentinel's" "Xopec's" "Guatelitzi's" "of Guatelitzi" "of Infamy" "of the Underground"
+#.alias MODS_RING_GRAND       = "Virile" "Ultramarine" "Resplendent" "Annealed" "Cremating" "Entombing" "Electrocuting" "Shocking" "Overpowering" "Perandus'" "of the Gods" "of the Wind" "of the Genius" "of the Comet" "of Excavation" "of Expertise" "of Skill" "of the Ranger" "of Ryslatha" "of Nirvana" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Rainbow" "of Flames" "of Rime" "of Voltage" "of Fleshbinding"
+#.alias MODS_RING_GREATER     = "Rotund" "Zaffre" "Incandescent" "Gleaming" "Blasting" "Polar" "Discharging" "Phased" "Unleashed" "Dragon's" "of the Titan" "of the Phantom" "of the Virtuoso" "of the Meteor" "of Archaeology" "of Nimbleness" "of the Marksman" "of the Troll" "of Euphoria" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Variegation" "of Cinders" "of Ice" "of Electricity" "of Masterstroke" "of Retention" "of Radiance" "of Suturing"
+#.alias MODS_RING_LESSER      = "Robust" "Stout" "Blue" "Scintillating" "Honed" "Incinerating" "Glaciated" "Shocking" "Blurred" "Empowering" "Pirate's" "of the Leviathan" "of the Jaguar" "of the Savant" "of the Sky" "of the Remora" "of Thirst" "of Raiding" "of Talent" "of the Sniper" "of the Hydra" "of Bliss" "of the Volcano" "of the Polar Bear" "of the Maelstrom" "of Expulsion" "of Eviction" "of the Kaleidoscope" "of Rejuvenation" "of Coals" "of Sleet" "of Static" "of Feat" "of Permeation" "of Light" "of Stitching"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Ring" "Amethyst Ring" "Formless Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Steel Ring" "Vermillion Ring" "Opal Ring" "Prismatic Ring" "Fugitive Ring" "Two-Stone Ring" "Paua Ring"
+    Class == "Rings" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Amethyst Ring" "Ruby Ring" "Nameless Ring" "Topaz Ring" "Sapphire Ring" "Steel Ring" "Cryonic Ring" "Opal Ring" "Synaptic Ring" "Prismatic Ring" "Coral Ring" "Moonstone Ring" "Gold Ring" "Two-Stone Ring" "Unset Ring" "Paua Ring"
+    Class == "Rings" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Amethyst Ring" "Ruby Ring" "Nameless Ring" "Steel Ring" "Sapphire Ring" "Organic Ring" "Iron Ring" "Opal Ring" "Topaz Ring" "Diamond Ring" "Prismatic Ring" "Coral Ring" "Moonstone Ring" "Gold Ring" "Two-Stone Ring" "Unset Ring" "Paua Ring" "Enthalpic Ring"
+    Class == "Rings" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | jewellery > unique -> t3
+
+#.import template > _main { CLASS = "Rings", ITEM_LEVEL_BEST = ITEM_LEVEL_RING_BEST, MODS_EXCEPTIONAL = MODS_RING_EXCEPTIONAL, MODS_GRAND = MODS_RING_GRAND, MODS_GREATER = MODS_RING_GREATER, MODS_LESSER = MODS_RING_LESSER, BASES_BEST = BASES_RING_EXCEPTIONAL BASES_RING_GRAND, BASES_EXQUISITE = BASES_RING_EXQUISITE, BASES_EXCEPTIONAL = BASES_RING_EXCEPTIONAL, BASES_GRAND = BASES_RING_GRAND, BASES_GREAT = BASES_RING_GREAT, BASES_LESSER = BASES_RING_LESSER

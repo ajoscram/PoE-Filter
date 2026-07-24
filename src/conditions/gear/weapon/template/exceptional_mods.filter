@@ -1,0 +1,13 @@
+# Exceptional Mods
+
+Show
+    BaseType == BASES_BEST
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_EXCEPTIONAL
+    #.import < _util -> multi_t1_rare
+    #.import < _util -> multi_t1_magic
+
+Show
+    Class == CLASS
+    HasExplicitMod == MODS_WEAPON_EXCEPTIONAL MODS_EXCEPTIONAL
+    #.import < _util -> multi_t2_rare
+    #.import < _util -> multi_t2_magic

@@ -1,0 +1,5 @@
+#.subsection Fishing Rod
+
+Show
+	Class == "Fishing Rods"
+    #.import _util -> multi_t1_full

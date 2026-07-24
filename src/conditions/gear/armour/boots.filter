@@ -1,0 +1,39 @@
+#.subsection Boots
+
+#.alias ITEM_LEVEL_BOOTS_BEST   = 86
+
+#.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
+#.alias BASES_BOOTS_BEST        = "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots"
+
+#.alias MODS_BOOTS_EXCEPTIONAL     = "Subterranean" "of the Underground" "Xopec's" "Matatl's" "Mutewind" "Sentinel's" "Infamous" "Haunted" "of Haunting"
+#.alias MODS_BOOTS_GRAND           = "Athlete's" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Durable" "Legend's" "Unassailable" "Seething" "Zaffre" "Vaporous" "Mirage's" "Impregnable" "Encased" "Hellion's" "Pirate's" "of the Gods" "of Raiding" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of the Wind" "of Nullification" "of the Genius" "of Ardour"
+#.alias MODS_BOOTS_GREATER         = "Virile" "Owen's" "Masterwork" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Flexible" "Mammoth's" "Hero's" "Deacon's" "Prior's" "Seraphim's" "Indomitable" "Pulsing" "Blue" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Girded" "Carapaced" "Urchin's" "Cheetah's" "Gazelle's" "Magpie's" "of the Titan" "of Plunder" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Youth" "of the Phantom" "of Abjuration" "of the Virtuoso" "of Buffering" "of Runes" "of Inscription"
+#.alias MODS_BOOTS_LESSER          = "Rotund" "Annest's" "Exquisite" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Pliant" "Elephant's" "Duelist's" "Acolyte's" "Monk's" "Djinn's" "Dauntless" "Radiating" "Mazarine" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Thickened" "Plated" "Oyster's" "Stallion's" "of the Leviathan" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Perpetuity" "of the Jaguar" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Rawhide Boots" "Assassin's Boots" "Crusader Boots" "Murder Boots" "Runic Sollerets" "Dragonscale Boots" "Sorcerer Boots"
+    Class == "Boots" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Carnal Boots" "Rawhide Boots" "Slink Boots" "Riveted Boots" "Reinforced Greaves" "Goathide Boots" "Titan Greaves" "Runic Sabatons" "Sorcerer Boots" "Stealth Boots"
+    Class == "Boots" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Conjurer Boots" "Arcanist Slippers" "Trapper Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Velvet Slippers" "Nubuck Boots" "Carnal Boots" "Wyrmscale Boots" "Ancient Greaves" "Mesh Boots" "Hydrascale Boots" "Wool Shoes" "Dragonscale Boots" "Legion Boots" "Titan Greaves" "Bronzescale Boots" "Ironscale Boots" "Slink Boots" "Silk Slippers" "Fugitive Boots" "Murder Boots" "Satin Slippers" "Soldier Boots" "Two-Toned Boots" "Vaal Greaves" "Assassin's Boots" "Serpentscale Boots" "Goathide Boots" "Goliath Greaves"
+    Class == "Boots" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t3
+
+#.import template > _main { CLASS = "Boots", BASES_BEST = BASES_BOOTS_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_BOOTS_BEST, BASES_EXCEPTIONAL = BASES_BOOTS_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BOOTS_EXCEPTIONAL, MODS_GRAND = MODS_BOOTS_GRAND, MODS_GREATER = MODS_BOOTS_GREATER, MODS_LESSER = MODS_BOOTS_LESSER

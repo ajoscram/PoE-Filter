@@ -1,16 +1,37 @@
 #.subsection Oil
 
-Show
-	#.econ oil 10
-	BaseType == "Tainted Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
-	#.import < < styles > currency -> 10_100c
+# Related
 
 Show
-	#.econ oil 1 10
-	BaseType == "Crimson Oil" "Black Oil" "Reflective Oil"
-	#.import < < styles > currency -> 1_10c
+    BaseType == "Oil Extractor"
+	#.import STYLE | currency -> t2
+
+# Economy
+
+Show #.econ oil 100
+	BaseType == "Prismatic Oil" "Opalescent Oil" "Golden Oil" "Silver Oil" "Reflective Oil" "Tainted Oil" "Black Oil"
+	#.import STYLE | currency -> t1
+
+Show #.econ oil 10 100
+	BaseType == "Crimson Oil" "Violet Oil"
+	#.import STYLE | currency -> t2
+
+Show #.econ oil 1 10
+	BaseType == "Azure Oil" "Indigo Oil" "Teal Oil"
+	#.import STYLE | currency -> t3
+
+Show #.econ oil 0 1 .strict STRICTNESS_LENIENT .if Show
+	BaseType == "Amber Oil" "Sepia Oil" "Clear Oil" "Verdant Oil"
+	#.import STYLE | currency -> t4
+
+Hide #.econ oil 0 1
+	BaseType == "Amber Oil" "Sepia Oil" "Clear Oil" "Verdant Oil"
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+
+# Catchall
 
 Show
-	#.econ oil 0 1 .strict 2
-	BaseType == "Clear Oil" "Azure Oil" "Amber Oil" "Indigo Oil" "Violet Oil" "Sepia Oil" "Verdant Oil" "Teal Oil"
-	#.import < < styles > currency -> 1-c fine
+    BaseType "Oil"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

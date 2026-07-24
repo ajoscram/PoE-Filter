@@ -1,16 +1,31 @@
 #.subsection Fossil
 
-Show
-	#.econ fos 10
-	BaseType == "Glyphic Fossil" "Fractured Fossil" "Hollow Fossil" "Faceted Fossil"
-	#.import < < styles > currency -> 10_100c
+# Economy
+
+Show #.econ fos 100
+	BaseType == "Hollow Fossil" "Glyphic Fossil" "Gilded Fossil" "Sanctified Fossil" "Faceted Fossil"
+	#.import STYLE | currency -> t1
+
+Show #.econ fos 10 100
+	BaseType == "Shuddering Fossil" "Dense Fossil" "Frigid Fossil" "Prismatic Fossil" "Deft Fossil" "Fractured Fossil" "Aetheric Fossil" "Opulent Fossil" "Corroded Fossil" "Metallic Fossil" "Scorched Fossil" "Aberrant Fossil" "Serrated Fossil"
+	#.import STYLE | currency -> t2
+
+Show #.econ fos 1 10
+	BaseType == "Bound Fossil" "Pristine Fossil" "Jagged Fossil"
+	#.import STYLE | currency -> t3
+
+Show #.econ fos 0 1 .strict STRICTNESS_LENIENT .if Show
+	BaseType == "Lucent Fossil" "Fundamental Fossil"
+	#.import STYLE | currency -> t4
+
+Hide #.econ fos 0 1
+	BaseType == "Lucent Fossil" "Fundamental Fossil"
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+
+# Catchall
 
 Show
-	#.econ fos 1 10
-	BaseType == "Bloodstained Fossil" "Corroded Fossil" "Sanctified Fossil" "Tangled Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil" "Bound Fossil" "Opulent Fossil"
-	#.import < < styles > currency -> 1_10c
-
-Show
-	#.econ fos 0 1
-	BaseType == "Scorched Fossil" "Deft Fossil" "Frigid Fossil" "Dense Fossil" "Gilded Fossil" "Jagged Fossil" "Aetheric Fossil" "Aberrant Fossil" "Metallic Fossil" "Lucent Fossil" "Fundamental Fossil" "Pristine Fossil"
-	#.import < < styles > currency -> 1-c good
+    BaseType "Fossil"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

@@ -1,16 +1,31 @@
 #.subsection Omen
 
-Show
-	#.econ omn 100
-	BaseType == "Omen of Connections" "Omen of Fortune"
-	#.import < < styles > currency -> 100+c
+# Economy
+
+Show #.econ omn 100
+	BaseType == "Omen of Refreshment" "Omen of the Jeweller" "Omen of Blanching" "Omen of Amelioration" "Omen of Fortune" "Omen of Connections"
+	#.import STYLE | currency -> t1
+
+Show #.econ omn 10 100
+	BaseType == "Omen of Brilliance"
+	#.import STYLE | currency -> t2
+
+Show #.econ omn 1 10
+	BaseType == "Omen of Death's Door"
+	#.import STYLE | currency -> t3
+
+Show #.econ omn 0 1 .strict STRICTNESS_LENIENT .if Show
+	BaseType == "Omen of Death-dancing"
+	#.import STYLE | currency -> t4
+
+Hide #.econ omn 0 1
+	BaseType == "Omen of Death-dancing"
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+
+# Catchall
 
 Show
-	#.econ omn 10
-	BaseType == "Omen of Amelioration" "Omen of Connections" "Omen of Blanching" "Omen of the Jeweller" "Omen of Fortune"
-	#.import < < styles > currency -> 10_100c
-
-Show
-	#.econ omn 0 10
-	BaseType == "Omen of Death-dancing" "Omen of Death's Door" "Omen of Brilliance" "Omen of Adrenaline" "Omen of Return" "Omen of Refreshment" "Omen of the Soul Devourer"
-	#.import < < styles > currency -> 1_10c
+    BaseType "Omen of"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

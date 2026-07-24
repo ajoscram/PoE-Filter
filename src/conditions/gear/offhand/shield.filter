@@ -1,0 +1,47 @@
+#.subsection Shield
+
+#.alias ITEM_LEVEL_SHIELD_BEST   = 86
+
+#.alias BASES_SHIELD_EXCEPTIONAL = "Heat-attuned Tower Shield" "Cold-attuned Buckler" "Transfer-attuned Spirit Shield"
+#.alias BASES_SHIELD_BEST        = "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Imperial Buckler" "Crusader Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Champion Kite Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+
+#.alias MODS_SHIELD_EXCEPTIONAL = "Topotante's" "of Tacati" "Sentinel's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Empress's"
+#.alias MODS_SHIELD_GRAND       = "Martinet's" "Queen's" "Apparition's" "Hummingbird's" "Incorporeal" "Saintly" "Interpermeated" "Adaptable" "Victor's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's" "Incanter's" "Magmatic" "Crystalline" "Smiting" "Seraphim's" "Unfaltering" "Incandescent" "Zaffre" "Lissome" "Illusion's" "Vigorous" "Impenetrable" "Unmoving" "Unyielding" "Oracle's" "of the Gods" "of Life-giving" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Span" "of Will" "of the Conservator" "of Obstruction" "of the Solar Storm" "of the Mammoth" "of Harmony" "of the Deathless" "of the Wind" "of Grandmastery" "of the Ranger" "of Nullification" "of the Genius" "of Unmaking" "of Second Wind" "of the Despot" "of Metamorphosis" "of Imperviousness" "of the Phalanx" "of Destiny" "of the Convocation"
+#.alias MODS_SHIELD_GREATER     = "Princess's" "Eidolon's" "Dragonfly's" "Illusory" "Consecrated" "Inspired" "Resilient" "Mammoth's" "Legend's" "Occultist's" "Volcanic" "Hailing" "Striking" "Abbot's" "Priest's" "Djinn's" "Unassailable" "Scintillating" "Blue" "Ram's" "Adroit" "Mirage's" "Fecund" "Impregnable" "Unmoving" "Nautilus's" "Weaponmaster's" "Enduring" "Seer's" "of the Titan" "of Recuperation" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of the Rainbow" "of Fortitude" "of the Protector" "of Interference" "of the Molten Core" "of the Tundra" "of Concord" "of the Sempiternal" "of the Phantom" "of Mastery" "of the Marksman" "of Abjuration" "of the Virtuoso" "of Ruin" "of Vigour" "of the Slavedriver" "of Evolution" "of Countervailing" "of the Brigade" "of Determinism"
+#.alias MODS_SHIELD_LESSER      = "Duchess's" "Spirit's" "Wasp's" "Unreal" "Beatified" "Interpolated" "Sturdy" "Elephant's" "Hero's" "Professor's" "Cauterising" "Snowy" "Coursing" "Prior's" "Deacon's" "Naga's" "Indomitable" "Blazing" "Mazarine" "Fawn's" "Elusory" "Nightmare's" "Athlete's" "Girded" "Enveloped" "Urchin's" "Combatant's" "Unwavering" "Enlightened" "of the Leviathan" "of the Phoenix" "of the Volcano" "of the Polar Bear" "of the Maelstrom" "of Expulsion" "of Eviction" "of Variegation" "of Resolve" "of the Keeper" "of the Sentry" "of Deadening" "of the Bushfire" "of Furs" "of Regularity" "of the Jaguar" "of Ease" "of the Sniper" "of Revoking" "of Snuffing" "of the Savant" "of Calamity" "of Galvanising" "of the Taskmaster" "of Adaptation" "of Impermeability" "of the Guard" "of Serendipity"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Chiming Spirit Shield" "Girded Tower Shield" "Lacewood Spirit Shield" "Elegant Round Shield" "Ezomyte Tower Shield" "Vaal Spirit Shield" "Titanium Spirit Shield" "Mirrored Spiked Shield"
+    Class == "Shields" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Pinnacle Tower Shield" "Spiny Round Shield" "Vaal Spirit Shield" "Champion Kite Shield" "Titanium Spirit Shield" "Crimson Round Shield" "Jingling Spirit Shield" "Ebony Tower Shield" "Archon Kite Shield" "Golden Buckler" "Maple Round Shield" "Steel Kite Shield" "Sovereign Spiked Shield"
+    Class == "Shields" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Chiming Spirit Shield" "Vaal Spirit Shield" "Laminated Kite Shield" "Plank Kite Shield" "Branded Kite Shield" "Painted Buckler" "War Buckler" "Tarnished Spirit Shield" "Cardinal Round Shield" "Teak Round Shield" "Pine Buckler" "Harmonic Spirit Shield" "Ancient Spirit Shield" "Mosaic Kite Shield" "Compound Spiked Shield" "Rawhide Tower Shield" "Polished Spiked Shield" "Ironwood Buckler" "Corrugated Buckler" "Enameled Buckler" "Archon Kite Shield" "Painted Tower Shield" "Baroque Round Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Pinnacle Tower Shield" "Cedar Tower Shield" "Brass Spirit Shield" "Rotted Round Shield" "Ezomyte Tower Shield" "Lacquered Buckler" "Colossal Tower Shield"
+    Class == "Shields" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t3
+
+#.import < armour > template > exceptional_mods { CLASS = "Shields", BASES_BEST = BASES_SHIELD_BEST, MODS_EXCEPTIONAL = MODS_SHIELD_EXCEPTIONAL
+#.import < armour > template > rare { CLASS = "Shields", BASES_BEST = BASES_SHIELD_BEST, MODS_GRAND = MODS_SHIELD_GRAND, MODS_GREATER = MODS_SHIELD_GREATER, MODS_LESSER = MODS_SHIELD_LESSER
+#.import < armour > template > magic { CLASS = "Shields", BASES_BEST = BASES_SHIELD_BEST, MODS_GRAND = MODS_SHIELD_GRAND, MODS_GREATER = MODS_SHIELD_GREATER, MODS_LESSER = MODS_SHIELD_LESSER
+#.import < armour > template > fractured { CLASS = "Shields", BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST, MODS_GRAND = MODS_SHIELD_GRAND
+#.import < armour > template > synthesized { CLASS = "Shields", BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
+#.import template > influenced { BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
+#.import < armour > template > memory_strands { BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
+#.import < armour > template > exceptional_base { BASES_EXCEPTIONAL = BASES_SHIELD_EXCEPTIONAL, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
+#.import < armour > template > best_base { BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST

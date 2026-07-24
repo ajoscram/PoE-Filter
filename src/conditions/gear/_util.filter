@@ -1,0 +1,6 @@
+# This file contains helper bits to avoid duplication from the rest of the files.
+# It should never be imported directly.
+
+Show #.name craftable
+    Corrupted False
+    Mirrored False

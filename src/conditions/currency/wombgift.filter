@@ -1,5 +1,17 @@
 #.subsection Wombgift
 
 Show
-    BaseType == "Lavish Wombgift" "Ancient Wombgift" "Mysterious Wombgift" "Provisioning Wombgift"
-    #.import < < styles > currency -> 1_10c
+	BaseType == "Ancient Wombgift"
+	#.import STYLE | currency -> t1
+
+Show
+	#.import STYLE | currency -> t2
+    #.multi
+	    BaseType == "Lavish Wombgift"
+    #.multi
+        BaseType == "Mysterious Wombgift"
+        ItemLevel >= 84
+
+Show
+	BaseType == "Provisioning Wombgift" "Mysterious Wombgift"
+	#.import STYLE | currency -> t3

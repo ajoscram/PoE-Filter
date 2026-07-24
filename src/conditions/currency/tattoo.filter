@@ -1,21 +1,45 @@
 #.subsection Tattoo
 
-Show
-	#.econ tat 100
-	BaseType == "Journey Tattoo of the Soul" "Journey Tattoo of the Mind" "Journey Tattoo of the Body"
-	#.import < < styles > currency -> 100+c
+# Legacy
 
 Show
-	#.econ tat 10 100
-	BaseType == "Tattoo of the Tasalio Scout" "Tattoo of the Ramako Shaman" "Tattoo of the Hinekora Storyteller" "Tattoo of the Tawhoa Shaman" "Tattoo of the Rongokurai Turtle" "Tattoo of the Ramako Fleetfoot"
-	#.import < < styles > currency -> 10_100c
+    BaseType == "Tattoo of the Valako Makanga" "Tattoo of the Tukohama Makanga" "Tattoo of the Tawhoa Makanga" "Tattoo of the Tasalio Makanga" "Tattoo of the Rongokurai Makanga" "Tattoo of the Ramako Makanga" "Tattoo of the Ngamahu Makanga" "Tattoo of the Kitava Makanga" "Tattoo of the Hinekora Makanga" "Tattoo of the Arohongui Makanga" "Loyalty Tattoo of Utula" "Loyalty Tattoo of Tawhanuku" "Loyalty Tattoo of Rakiata" "Loyalty Tattoo of Kiloava" "Loyalty Tattoo of Kahuturoa" "Loyalty Tattoo of Akoya" "Journey Tattoo of Makanui" "Honoured Tattoo of the Wise" "Honoured Tattoo of the Warlord" "Honoured Tattoo of the Storm" "Honoured Tattoo of the Pa" "Honoured Tattoo of the Mountain" "Honoured Tattoo of the Hunter" "Honoured Tattoo of the Barbarian" "Forbidden Tattoo of the Duelist" "Forbidden Tattoo of the Marauder" "Forbidden Tattoo of the Ranger" "Forbidden Tattoo of the Scion" "Forbidden Tattoo of the Shadow" "Forbidden Tattoo of the Templar" "Forbidden Tattoo of the Witch"
+	#.import STYLE | currency -> t1
 
 Show
-	#.econ tat 1 10
-	BaseType == "Tattoo of the Kitava Shaman" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Valako Shieldbearer" "Tattoo of the Ramako Sniper" "Tattoo of the Tasalio Warrior" "Tattoo of the Tukohama Warcaller" "Tattoo of the Ngamahu Woodcarver" "Tattoo of the Arohongui Shaman" "Tattoo of the Hinekora Warmonger" "Tattoo of the Arohongui Moonwarden" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Valako Stormrider" "Tattoo of the Ngamahu Warmonger"
-	#.import < < styles > currency -> 1_10c
+    BaseType == "Loyalty Tattoo of Maata" "Loyalty Tattoo of Kaom" "Loyalty Tattoo of Ikiaho" "Loyalty Tattoo of Ahuana" "Honoured Tattoo of the Oak" "Honoured Tattoo of the Makanga" "Honoured Tattoo of the Hatungo" "Honoured Tattoo of the Flock" "Honoured Tattoo of the Dove" "Honoured Tattoo of the Berserker" "Ancestral Tattoo of Bloodlines"
+	#.import STYLE | currency -> t2
 
 Show
-	#.econ tat 0 1
-	BaseType == "Tattoo of the Tasalio Bladedancer" "Tattoo of the Tukohama Brawler" "Tattoo of the Tasalio Tideshifter" "Tattoo of the Kitava Heart Eater" "Tattoo of the Hinekora Shaman" "Tattoo of the Tukohama Shaman" "Tattoo of the Arohongui Warmonger" "Tattoo of the Tawhoa Warrior" "Tattoo of the Tawhoa Naturalist" "Tattoo of the Tukohama Warrior" "Tattoo of the Kitava Rebel" "Tattoo of the Valako Scout" "Tattoo of the Hinekora Deathwarden" "Tattoo of the Rongokurai Guard" "Tattoo of the Ramako Scout" "Tattoo of the Hinekora Warrior" "Tattoo of the Kitava Blood Drinker" "Tattoo of the Rongokurai Warrior" "Tattoo of the Tukohama Warmonger" "Tattoo of the Arohongui Scout" "Tattoo of the Valako Warrior" "Tattoo of the Arohongui Warrior" "Tattoo of the Ngamahu Shaman" "Tattoo of the Ngamahu Warrior" "Tattoo of the Tawhoa Scout" "Tattoo of the Tasalio Shaman" "Tattoo of the Rongokurai Brute" "Tattoo of the Kitava Warrior" "Tattoo of the Rongokurai Goliath" "Tattoo of the Ramako Archer" "Tattoo of the Valako Shaman"
-	#.import < < styles > currency -> 1-c fine
+    BaseType == "Honoured Tattoo of the Turtle" "Honoured Tattoo of the Tuatara" "Honoured Tattoo of the Flood" "Honoured Tattoo of the Pillager" "Honoured Tattoo of the Sky"
+	#.import STYLE | currency -> t3
+
+# Economy
+
+Show #.econ tat 100
+	BaseType == "Tattoo of the Ngamahu Woodcarver" "Tattoo of the Ramako Scout" "Journey Tattoo of the Soul" "Tattoo of the Ramako Fleetfoot" "Journey Tattoo of the Body" "Tattoo of the Ngamahu Warrior" "Journey Tattoo of the Mind" "Tattoo of the Ramako Shaman" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Rongokurai Guard" "Tattoo of the Tasalio Warrior" "Tattoo of the Valako Shaman" "Tattoo of the Tawhoa Shaman" "Tattoo of the Hinekora Warrior" "Tattoo of the Tukohama Shaman" "Tattoo of the Tawhoa Naturalist" "Tattoo of the Arohongui Warmonger" "Tattoo of the Valako Stormrider" "Tattoo of the Hinekora Storyteller" "Tattoo of the Arohongui Shaman" "Tattoo of the Rongokurai Warrior" "Tattoo of the Tukohama Warmonger" "Tattoo of the Valako Shieldbearer" "Tattoo of the Hinekora Warmonger" "Tattoo of the Tukohama Warcaller"
+	#.import STYLE | currency -> t1
+
+Show #.econ tat 10 100
+	BaseType == "Tattoo of the Valako Warrior" "Tattoo of the Tasalio Shaman" "Tattoo of the Arohongui Warrior" "Tattoo of the Kitava Warrior" "Tattoo of the Ramako Sniper" "Tattoo of the Ngamahu Warmonger" "Tattoo of the Arohongui Moonwarden" "Tattoo of the Tasalio Scout" "Tattoo of the Tawhoa Warrior" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Tasalio Bladedancer" "Tattoo of the Tukohama Warrior" "Tattoo of the Rongokurai Turtle" "Tattoo of the Kitava Shaman" "Tattoo of the Ramako Archer" "Tattoo of the Tasalio Tideshifter"
+	#.import STYLE | currency -> t2
+
+Show #.econ tat 1 10
+	BaseType == "Tattoo of the Kitava Blood Drinker" "Tattoo of the Rongokurai Brute" "Tattoo of the Hinekora Shaman" "Tattoo of the Kitava Rebel" "Tattoo of the Hinekora Deathwarden" "Tattoo of the Tawhoa Scout"
+	#.import STYLE | currency -> t3
+
+Show #.econ tat 0 1 .strict STRICTNESS_LENIENT .if Show
+	BaseType == "Tattoo of the Valako Scout"
+	#.import STYLE | currency -> t4
+
+Hide #.econ tat 0 1
+	BaseType == "Tattoo of the Valako Scout"
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+
+# Catchall
+
+Show
+    BaseType "Tattoo of"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

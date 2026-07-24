@@ -1,0 +1,37 @@
+#.subsection One-hand Mace
+
+#.alias BASES_ONE_HAND_MACE_EXCEPTIONAL    = "Boom Mace"
+#.alias BASES_ONE_HAND_MACE_BEST           = "Gavel" "Behemoth Mace" "Nightmare Mace"
+
+#.alias MODS_ONE_HAND_MACE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_MACE_GRAND           = "of the Gods" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_MACE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_MACE_LESSER          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Gavel"
+    Class == "One Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Gavel"
+    Class == "One Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Rock Breaker" "Nightmare Mace" "Dream Mace" "War Hammer"
+    Class == "One Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "One Hand Maces", BASES_BEST = BASES_ONE_HAND_MACE_BEST, BASES_EXCEPTIONAL = BASES_ONE_HAND_MACE_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_ONE_HAND_MACE_EXCEPTIONAL, MODS_GRAND = MODS_ONE_HAND_MACE_GRAND, MODS_GREATER = MODS_ONE_HAND_MACE_GREATER, MODS_LESSER = MODS_ONE_HAND_MACE_LESSER

@@ -1,0 +1,39 @@
+# Rare
+
+Show
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t1
+    #.multi
+        Class == CLASS
+        HasExplicitMod ==6 MODS_GRAND
+    #.multi
+        BaseType == BASES_BEST
+        HasExplicitMod >=5 MODS_GRAND
+
+Show #.if Show
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t2
+    #.multi
+        Class == CLASS
+        HasExplicitMod >=5 MODS_GRAND
+    #.multi
+        BaseType == BASES_BEST
+        HasExplicitMod >=4 MODS_GRAND
+    #.multi .strict STRICTNESS_STRICT
+        Class == CLASS
+        HasExplicitMod >=3 MODS_GRAND
+    #.multi .strict STRICTNESS_STRICT
+        BaseType == BASES_BEST
+        HasExplicitMod >=2 MODS_GRAND
+    #.multi .strict STRICTNESS_LENIENT
+        Class == CLASS
+        HasExplicitMod >=3 MODS_GREATER MODS_GRAND
+    #.multi .strict STRICTNESS_LENIENT
+        BaseType == BASES_BEST
+        HasExplicitMod >=2 MODS_GREATER MODS_GRAND
+    #.multi .strict STRICTNESS_BASE
+        Class == CLASS
+        HasExplicitMod >=3 MODS_LESSER MODS_GREATER MODS_GRAND
+    #.multi .strict STRICTNESS_BASE
+        BaseType == BASES_BEST
+        HasExplicitMod >=2 MODS_LESSER MODS_GREATER MODS_GRAND

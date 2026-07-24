@@ -1,0 +1,13 @@
+#.section Trinket
+
+#.alias ITEM_LEVEL_TRINKET_BEST = 83
+
+Show
+	Class == "Trinkets"
+    Rarity == Rare
+    ItemLevel < ITEM_LEVEL_TRINKET_BEST
+    #.import STYLE | equipment > rare -> t3
+
+Show
+	Class == "Trinkets"
+    #.import _util -> multi_t2

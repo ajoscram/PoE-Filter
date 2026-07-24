@@ -1,0 +1,37 @@
+#.subsection Claw
+
+#.alias BASES_CLAW_EXCEPTIONAL    = "Void Fangs"
+#.alias BASES_CLAW_BEST           = "Gemini Claw" "Imperial Claw" "Vaal Claw"
+
+#.alias MODS_CLAW_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_CLAW_GRAND           = "Zaffre" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_CLAW_GREATER         = "Blue" "Paragon's" "Weaponmaster's" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_CLAW_LESSER          = "Mazarine" "Combatant's" "of the Jaguar" "of Fame" "of the Sniper"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Vaal Claw" "Hellion's Paw"
+    Class == "Claws" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Vaal Claw"
+    Class == "Claws" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Fright Claw" "Imperial Claw" "Nailed Fist" "Terror Claw" "Hellion's Paw" "Timeworn Claw" "Throat Stabber"
+    Class == "Claws" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "Claws", BASES_BEST = BASES_CLAW_BEST, BASES_EXCEPTIONAL = BASES_CLAW_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_CLAW_EXCEPTIONAL, MODS_GRAND = MODS_CLAW_GRAND, MODS_GREATER = MODS_CLAW_GREATER, MODS_LESSER = MODS_CLAW_LESSER

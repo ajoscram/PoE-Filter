@@ -23,3 +23,19 @@ extract(){
 line(){
     sed "0,/$1/b; Q" | tail -n 1
 }
+
+# turns the text received lowercase, then capitalizes the first letter
+title(){
+    echo ${1,,} | sed 's/./\u&/'
+}
+
+# gets the list of the filter's style names
+get_styles(){
+    find src/styles -mindepth 1 -maxdepth 1 -type d | sed -rn 's/.*\/(.*)/\1/p'
+}
+
+# gets the list of the filter's strictness names and values
+get_strictness_values(){
+    cat src/conditions/constants.filter | \
+    sed -rn 's/^[[:space:]]*#\.alias[[:space:]]*STRICTNESS_([[:alnum:]]+)[[:space:]]*=[[:space:]]*([[:digit:]]+)/\1 \2/p'
+}

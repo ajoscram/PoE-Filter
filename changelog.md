@@ -1,5 +1,13 @@
 # Mirage
 
+## 3.28b
+### General Changes
+* The filter has been completely rewritten!
+* Many previously existing sections of items that have been removed were deleted.
+* **Chaos Orb recipe** tiering has now been removed.
+* **Strictness levels** have been simplified to **Base**, **Lenient**, **Strict** and **Uber**, with each level getting stricter respectively.
+* **Charms** and **Sentinels** have been removed, because their support was anemic and they are effectively removed from the game.
+
 ## 3.28
 ### League Changes
 * Added the new **Astrolabe** items.
@@ -18,6 +26,8 @@
 * Added the new **divination cards**.
 * Added support for all existing **exceptional** gems.
 * Added support for **imbued** gems.
+
+# Keepers of the Flame
 
 ## 3.27b
 ### League Changes

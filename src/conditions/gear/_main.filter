@@ -1,24 +1,55 @@
-#.section Gear
+#.import constants
+#.import priming
 
-#.import flask
-#.import jewel
-#.import tincture
-#.import charm
+#.section Special Uniques
+#.import unique > foulborn
+#.import unique > replica
 
-# here i want background application (links and sockets)
-# here i want border application (itemlevel)
-# here i want generic levelling
+#.section Jewel
+#.import jewel > base
+#.import jewel > abyss
+#.import jewel > cluster_large
+#.import jewel > cluster_medium
+#.import jewel > cluster_small
 
-#.import amulet
-#.import ring
-#.import belt
-#.import body_armour
-#.import boots
-#.import gloves
-#.import helmet
-#.import quiver
-#.import shield
-#.import trinket
-#.import relic
-#.import idol
-#.import weapons > _main
+#.section Jewellery
+#.import jewellery > amulet
+#.import jewellery > belt
+#.import jewellery > ring
+
+#.section Flask
+#.import flask > life
+#.import flask > mana
+#.import flask > hybrid
+#.import flask > utility
+#.import flask > tincture
+
+#.section Armour
+#.import armour > body_armour
+#.import armour > boots
+#.import armour > gloves
+#.import armour > helmet
+
+#.section Offhand
+#.import offhand > shield
+#.import offhand > quiver
+
+#.section Weapon
+#.import weapon > axe_1h
+#.import weapon > axe_2h
+#.import weapon > bow
+#.import weapon > claw
+#.import weapon > dagger
+#.import weapon > fishing_rod
+#.import weapon > mace_1h
+#.import weapon > mace_2h
+#.import weapon > rune_dagger
+#.import weapon > sceptre
+#.import weapon > staff
+#.import weapon > sword_1h
+#.import weapon > sword_1h_thrusting
+#.import weapon > sword_2h
+#.import weapon > wand
+#.import weapon > warstaff
+
+#.import miscellaneous

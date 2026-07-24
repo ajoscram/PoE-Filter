@@ -1,11 +1,9 @@
 #.subsection Incubator
 
 Show
-	#.econ inc 10
-	BaseType == "Ornate Incubator" "Sacred Incubator"
-	#.import < < styles > currency -> 10_100c
+	BaseType == "Honoured Incubator" "Miraged Incubator" "Sacred Incubator" "Ornate Incubator"
+	#.import STYLE | currency -> t2
 
 Show
-	#.econ inc 0 10
-	BaseType == "Honoured Incubator" "Miraged Incubator" "Otherworldly Incubator" "Singular Incubator" "Diviner's Incubator" "Cartographer's Incubator" "Celestial Blacksmith's Incubator" "Infused Incubator" "Geomancer's Incubator" "Maddening Incubator" "Blighted Incubator" "Obscured Incubator" "Fossilised Incubator" "Kalguuran Incubator" "Skittering Incubator" "Mysterious Incubator" "Thaumaturge's Incubator" "Fine Incubator" "Foreboding Incubator" "Fragmented Incubator" "Gemcutter's Incubator" "Whispering Incubator" "Primal Incubator" "Celestial Armoursmith's Incubator" "Abyssal Incubator" "Celestial Jeweller's Incubator"
-	#.import < < styles > currency -> 1_10c
+	BaseType == "Otherworldly Incubator" "Singular Incubator" "Diviner's Incubator" "Cartographer's Incubator" "Celestial Blacksmith's Incubator" "Infused Incubator" "Geomancer's Incubator" "Maddening Incubator" "Blighted Incubator" "Obscured Incubator" "Fossilised Incubator" "Kalguuran Incubator" "Skittering Incubator" "Mysterious Incubator" "Thaumaturge's Incubator" "Fine Incubator" "Foreboding Incubator" "Fragmented Incubator" "Gemcutter's Incubator" "Whispering Incubator" "Primal Incubator" "Celestial Armoursmith's Incubator" "Abyssal Incubator" "Celestial Jeweller's Incubator"
+	#.import STYLE | currency -> t3

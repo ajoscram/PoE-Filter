@@ -1,0 +1,9 @@
+#.subsection Tool
+
+#.alias BASES_HEIST_TOOL_BEST = "Master Lockpick" "Steel Bracers" "Thaumetic Blowtorch" "Silkweave Sole" "Thaumaturgical Ward" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Grandmaster Keyring" "Regicide Disguise Kit"
+
+#.alias MODS_HEIST_TOOL_GRAND   = "Ingenious" "Spy's" "Lithe" "Dismantling" "Mental" "Explosive" "Revealing" "Herculean" "Destructive" "Interrupting" "Masterful" "Veteran" "Untouchable" "Skillful" "Lockpick's" "Master's" "Stalling" "of Charisma" "of Greed" "of Passage" "of Revelation" "of Ingenuity" "of Aplomb" "of Markdown"
+#.alias MODS_HEIST_TOOL_GREATER = "Dangerous" "Delaying" "Professional" "Accomplished" "Elusive" "Expert's" "Delaying" "of Charm" "of Selfishness" "of Bypasses" "of Discovery" "of Cunning" "of Concession"
+#.alias MODS_HEIST_TOOL_LESSER  = "Hazardous" "Skillful" "Experienced" "Wiley" "Apprentice's" "Hindering" "of Presence" "of Negotiating" "of Shortcuts" "of Disclosure" "of Subtlety" "of Reduction"
+
+#.import template > _main { CLASS = "Heist Tools", BASES_BEST = BASES_HEIST_TOOL_BEST, MODS_GRAND = MODS_HEIST_TOOL_GRAND, MODS_GREATER = MODS_HEIST_TOOL_GREATER, MODS_LESSER = MODS_HEIST_TOOL_LESSER

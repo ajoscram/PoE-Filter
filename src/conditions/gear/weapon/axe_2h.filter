@@ -1,0 +1,40 @@
+#.subsection Two-hand Axe
+
+#.alias BASES_TWO_HAND_AXE_EXCEPTIONAL    = "Apex Cleaver"
+#.alias BASES_TWO_HAND_AXE_BEST           = "Karui Chopper" "Despot Axe" "Vaal Axe" "Fleshripper"
+
+#.alias MODS_TWO_HAND_AXE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_TWO_HAND_AXE_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_TWO_HAND_AXE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_TWO_HAND_AXE_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Vaal Axe" "Despot Axe" "Void Axe"
+    Class == "Two Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Abyssal Axe"
+    Class == "Two Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Vaal Axe" "Despot Axe" "Shadow Axe" "Abyssal Axe" "Ezomyte Axe" "Karui Chopper" "Woodsplitter" "Headsman Axe"
+    Class == "Two Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "Two Hand Axes", BASES_BEST = BASES_TWO_HAND_AXE_BEST, BASES_EXCEPTIONAL = BASES_TWO_HAND_AXE_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_TWO_HAND_AXE_EXCEPTIONAL, MODS_GRAND = MODS_TWO_HAND_AXE_GRAND, MODS_GREATER = MODS_TWO_HAND_AXE_GREATER, MODS_LESSER = MODS_TWO_HAND_AXE_LESSER

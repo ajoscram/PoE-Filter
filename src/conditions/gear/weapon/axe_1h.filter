@@ -1,0 +1,37 @@
+#.subsection One-hand Axe
+
+#.alias BASES_ONE_HAND_AXE_EXCEPTIONAL    = "Psychotic Axe"
+#.alias BASES_ONE_HAND_AXE_BEST           = "Runic Hatchet" "Royal Axe" "Siege Axe"
+
+#.alias MODS_ONE_HAND_AXE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_AXE_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_AXE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_AXE_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Siege Axe" "Spectral Axe"
+    Class == "One Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Butcher Axe"
+    Class == "One Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Vaal Hatchet" "Tomahawk" "Royal Axe" "Jade Hatchet"
+    Class == "One Hand Axes" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "One Hand Axes", BASES_BEST = BASES_ONE_HAND_AXE_BEST, BASES_EXCEPTIONAL = BASES_ONE_HAND_AXE_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_ONE_HAND_AXE_EXCEPTIONAL, MODS_GRAND = MODS_ONE_HAND_AXE_GRAND, MODS_GREATER = MODS_ONE_HAND_AXE_GREATER, MODS_LESSER = MODS_ONE_HAND_AXE_LESSER

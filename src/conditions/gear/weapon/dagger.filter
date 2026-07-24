@@ -1,0 +1,37 @@
+#.subsection Dagger
+
+#.alias BASES_DAGGER_EXCEPTIONAL    = "Pneumatic Dagger" "Pressurised Dagger"
+#.alias BASES_DAGGER_BEST           = "Gutting Knife" "Ambusher" "Sai"
+
+#.alias MODS_DAGGER_EXCEPTIONAL     = "Topotante's" "Tacati's" "Matatl's" "of Tacati" "of Matatl" "of Disintegrating"
+#.alias MODS_DAGGER_GRAND           = "Zaffre" "Anarchist's" "Tempest King's" "Winterbringer's" "Lava Caller's" "of the Wind" "of the Genius" "of Celebration" "of the Ranger" "of Atrophying"
+#.alias MODS_DAGGER_GREATER         = "Blue" "Paragon's" "Weaponmaster's" "Nihilist's" "Thunder Lord's" "Frost Weaver's" "Flame Spinner's" "of the Phantom" "of the Virtuoso" "of Infamy" "of the Marksman" "of Deteriorating"
+#.alias MODS_DAGGER_LESSER          = "Mazarine" "Combatant's" "of the Jaguar" "of the Savant" "of Fame" "of the Sniper" "of Wasting"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Ambusher"
+    Class == "Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Ambusher"
+    Class == "Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Ambusher"
+    Class == "Daggers" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "Daggers", BASES_BEST = BASES_DAGGER_BEST, BASES_EXCEPTIONAL = BASES_DAGGER_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_DAGGER_EXCEPTIONAL, MODS_GRAND = MODS_DAGGER_GRAND, MODS_GREATER = MODS_DAGGER_GREATER, MODS_LESSER = MODS_DAGGER_LESSER

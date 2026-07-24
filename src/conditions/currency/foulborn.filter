@@ -2,8 +2,8 @@
 
 Show
     BaseType == "Foulborn Exalted Orb"
-	#.import < < styles > currency -> 10_100c
+	#.import STYLE | currency -> t1
 
 Show
     BaseType == "Foulborn Regal Orb" "Foulborn Orb of Augmentation"
-    #.import < < styles > currency -> 1_10c
+    #.import STYLE | currency -> t2

@@ -1,0 +1,23 @@
+# Eater / Exarch
+
+Show
+    BaseType == BASES_BEST
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t3
+
+Show
+    BaseType == BASES_BEST
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_BEST
+    HasSearingExarchImplicit >= ELDRITCH_EXCEPTIONAL
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_BEST
+    HasEaterOfWorldsImplicit >= ELDRITCH_EXCEPTIONAL
+    #.import < _util -> multi_t3

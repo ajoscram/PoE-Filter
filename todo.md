@@ -1,80 +1,28 @@
-# Path to overrhaul in line with PoE 2's filter structure
-1. Update scripts to ensure similar workflow
-2. Add conditions constants
-3. Move to the "multi-style" version
-4. Add style constants
-
-# Official docs
+# Useful links
 https://www.pathofexile.com/item-filter/about
-https://www.poewiki.net/wiki/Body_armour
-https://www.craftofexile.com/?b=45&ob=both&v=d&a=e&l=a&lg=11&bp=y&as=1&hb=0&bld={}&im={}&ggt=|&ccp={}
-https://www.filterblade.xyz/
-https://github.com/ajoscram/PoE-Filter/tree/28ffa9f0f5821540138253391b051a9724a01cdb/src/conditions/gear
+https://www.poewiki.net
+https://www.craftofexile.com
+https://poedb.tw/us
+https://www.filterblade.xyz
 
-# conditions
-bases
-    heist
-    atlas
-    ritual
-    good bases
-
-item level
-    black border = below iLvl 60
-    yellow border = chaos recipe
-    blue border = regal recipe
-    white border = all mods can be crafted on this item
-
-mods
-    t1 mod(s) on uncorrupted magic items 
-    mod tiers
-    corrupted implicits
-    eldritch
-
-quality
-
-defence percentile (maybe ignore this)
-
-corrupted
-    scourged
-    number of implicit mods
-
-"influence"
-    conqueror, shaper, elder
-    synthesized
-    fractured
-    veiled
-
-unique
-    replica
-    double corrupted uniques
-    double+ abyss socket unique
-
-# styles available
-SetBackgroundColor -> used for chromatic / six socket / six link
-SetBorderColor -> used for item level
-SetTextColor -> used for rarity (poe standard)
-
-PlayEffect (beam)
-MinimapIcon
-PlayAlertSound
+# 3.29 To-Do
+* Move Cord Belts to exquisite tier, because Mirage is not going core.
+* Move Moonstone Rings to great tier, because they now give Cast Speed.
+* Synth items were removed. Gotta clean those gear sections up and add it as a legacy base type.
+* Check patch notes for changes.
 
 # To-Do
-* Account for Foulborn Uniques in the future when restructuring the filter (?)
-* Reorganize gems with the Trasfigured Gems changes.
-* Figure out a re-organization of the "mapping" filter section.
-* Support 5+ mods abyss jewels.
-* Add support for HasInfluence on maps.
-* Add support for the EnchantmentPassiveNode and EnchantmentPassiveNum cluster jewel conditions.
-* Fix six sockets on minimap bug.
-* Add currency shard stack size filtering.
-* Group gear by class and tier base types.
-* The Sacred Blossom and Blood-filled veessels are  not supported in fragments for some reason.
-* Add Pieces (Harbinger and Ultimatum map) to unique tiering.
-* Implement stacks filtering for currency shards.
-* Add support for the Ritual base types, which are usually expensive.
-* Add unique filtering by base type.
-* Add support for base defences (BaseDefencePercentile).
-* Expand the Influenced base types section with the best bases/levels per influence.
-* Add beasts section.
+* Update the `create-release` script.
+* Add the **Beam** filter style.
+
+* Create a `update-economy` script that updates all filter files that have `.econ`.
+* `corpse.filter` needs to be revisited mid-league to check up on real prices.
+* `splinter.filter` needs to be revisited mid-league to check up on real prices.
+
+* Elaborate `idols.filter`.
+* Figure out a re-organization of the "gem" section.
+* Set gold breakpoints in order to intelligently hide small amounts per area level.
+* Consider hiding some scarabs at the bottom prices.
+* Re-categorize sounds, they are all over the place.
+* Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Add a wiki page for this project.
-* Do a pass of existing tiered items on the base filter for league-start.

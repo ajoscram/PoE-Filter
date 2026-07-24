@@ -1,0 +1,39 @@
+#.subsection Gloves
+
+#.alias ITEM_LEVEL_GLOVES_BEST   = 85
+
+#.alias BASES_GLOVES_EXCEPTIONAL = "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Runic Gauntlets"
+#.alias BASES_GLOVES_BEST        = "Leviathan Gauntlets" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets" "Paladin Gloves" "Phantom Mitts"
+
+#.alias MODS_GLOVES_EXCEPTIONAL     = "Subterranean" "of the Underground" "Topotante's" "Xopec's" "of Puhuarte" "Brinerot" "Sentinel's" "Infamous" "of Infamy" "Haunted" "of Haunting"
+#.alias MODS_GLOVES_GRAND           = "Athlete's" "Masterwork" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Zaffre" "Durable" "Legend's" "Seraphim's" "Unassailable" "Seething" "Vaporous" "Mirage's" "Impregnable" "Encased" "of the Gods" "of the Blur" "of Raiding" "of Grandmastery" "of Lioneye" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of Nullification" "of the Genius" "of Ardour" "of Runes"
+#.alias MODS_GLOVES_GREATER         = "Virile" "Owen's" "Exquisite" "Lettered" "Goldsmith's" "Sylph's" "Unreal" "Sanctified" "Interpolated" "Blue" "Flexible" "Hero's" "Prior's" "Deacon's" "Djinn's" "Indomitable" "Pulsing" "Fawn's" "Phased" "Hummingbird's" "Nightmare's" "Honed" "Girded" "Mammoth's" "Carapaced" "Urchin's" "Pirate's" "of the Titan" "of the Wind" "of the Remora" "of Thirst" "of Plunder" "of Mastery" "of the Ranger" "of Ryslatha" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of Rejuvenation" "of Youth" "of Abjuration" "of the Virtuoso" "of Buffering" "of Inscription"
+#.alias MODS_GLOVES_LESSER          = "Rotund" "Annest's" "Elegant" "Inscribed" "Silversmith's" "Nymph's" "Evanescent" "Anointed" "Inculcated" "Mazarine" "Pliant" "Duelist's" "Monk's" "Acolyte's" "Naga's" "Dauntless" "Radiating" "Flea's" "Blurred" "Dragonfly's" "Phantasm's" "Polished" "Scorching" "Frozen" "Arcing" "Thickened" "Elephant's" "Plated" "Oyster's" "Magpie's" "of the Leviathan" "of the Phantom" "of Ease" "of Skill" "of the Marksman" "of the Troll" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of Vivification" "of Revoking" "of the Savant" "of Dispersal" "of Engraving"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Runic Gages" "Goliath Gauntlets" "Carnal Mitts" "Ancient Gauntlets" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Samite Gloves" "Fingerless Silk Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Zealot Gloves" "Martyr Gloves" "Runic Gauntlets" "Hydrascale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Silk Gloves" "Riveted Gloves" "Murder Mitts" "Embroidered Gloves" "Deerskin Gloves"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Arcanist Gloves" "Bronzescale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Slink Gloves" "Crusader Gloves" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets" "Ironscale Gauntlets" "Shagreen Gloves" "Clasped Mitts" "Soldier Gloves" "Goliath Gauntlets" "Hydrascale Gauntlets" "Silk Gloves" "Wyrmscale Gauntlets" "Steelscale Gauntlets" "Wool Gloves" "Steel Gauntlets" "Iron Gauntlets" "Murder Mitts" "Deerskin Gloves" "Mesh Gloves" "Satin Gloves" "Strapped Mitts" "Samite Gloves" "Nubuck Gloves" "Goathide Gloves" "Serpentscale Gauntlets" "Zealot Gloves" "Chain Gloves" "Carnal Mitts" "Vaal Gauntlets" "Wrapped Mitts" "Ancient Gauntlets" "Spiked Gloves" "Velvet Gloves" "Conjurer Gloves"
+    Class == "Gloves" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    #.import STYLE | armour > unique -> t3
+
+#.import template > _main { CLASS = "Gloves", BASES_BEST = BASES_GLOVES_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_GLOVES_BEST, BASES_EXCEPTIONAL = BASES_GLOVES_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_GLOVES_EXCEPTIONAL, MODS_GRAND = MODS_GLOVES_GRAND, MODS_GREATER = MODS_GLOVES_GREATER, MODS_LESSER = MODS_GLOVES_LESSER

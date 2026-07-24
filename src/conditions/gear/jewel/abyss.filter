@@ -1,0 +1,141 @@
+#.subsection Abyss
+
+#.alias MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST = 86
+
+#.alias MODS_ABYSS_JEWEL_EXCEPTIONAL    = "Subterranean" "of the Underground"
+#.alias MODS_ABYSS_JEWEL_GRAND          = "Stalwart" "Sapphire" "Acuminate" "Flaring" "Electrocuting" "Cremating" "Entombing" "Malicious" "Vile" "Encased" "Beclouded" "Resplendent" "Expediting" "Lancing" "of Strength" "of Dexterity" "of Intelligence" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of the Dragon" "of the Beast" "of Grounding" "of the Hearth" "of Insulation" "of Shelter" "of Resistance" "of Order" "of Berserking" "of Potency" "of the Lightning Rod" "of Immunity" "of the Tourniquet" "of Poise" "of the Deadeye" "of Mangling" "of Phasing" "of the Raider" "of Abuse" "of Opportunity" "of the Inferno" "of Vivaciousness" "of the Inquisitor" "of Momentum"
+#.alias MODS_ABYSS_JEWEL_GREATER        = "Sanguine" "Azure" "Exuberant" "Deleterious" "Discharging" "Blasting" "Polar" "Malignant" "Resonating" "Carapaced" "Vaporous" "Incandescent" "Facilitating" "Skewering" "Motivating" "of Chilling" "of Shocking" "of Menace" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of Sin" "of Insulating" "of Tolerance" "of Stemming" "of Balance" "of the Ranger" "of Instinct" "of the Sanctum" "of Preparation" "of Praxis" "of Maneuvering" "of the Guardian" "of the Assassin" "of the Slayer"  "of Confidence" 
+#.alias MODS_ABYSS_JEWEL_LESSER         = "Healthy" "Cobalt" "Lively" "Degenerative" "Tempered" "Shocking" "Incinerating" "Glaciated" "Darkened" "Breathtaking" "Vivacious" "Inspirational" "Fortified" "Fleet" "Seething" "Spurring" "of Immolation" "of Floe" "of Discharge" "of Impact" "of Malice" "of Blinding" "of the Marksman" "of Readiness" "of Escape" "of Enervation" "of Clouding" "of Languishing" "of Daunting" "of Guarding"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Ghastly Eye Jewel"
+    Class == "Abyss Jewels" #.format
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Murderous Eye Jewel"
+    Class == "Abyss Jewels" #.format
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Searching Eye Jewel" "Hypnotic Eye Jewel"
+    Class == "Abyss Jewels" #.format
+    Rarity == Unique
+    #.import STYLE | jewellery > unique -> t3
+
+# Exceptional Mods
+
+Show
+    Class == "Abyss Jewels"
+    HasExplicitMod == MODS_ABYSS_JEWEL_EXCEPTIONAL
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+# Rare
+
+Show
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    HasExplicitMod >=5 MODS_ABYSS_JEWEL_GRAND
+    #.import STYLE | jewellery > rare -> t1
+
+Show
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    HasExplicitMod >=3 MODS_ABYSS_JEWEL_GRAND
+    #.import STYLE | jewellery > rare -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t3
+    #.multi
+        HasExplicitMod >=2 MODS_ABYSS_JEWEL_GRAND
+    #.multi
+        HasExplicitMod >=3 MODS_ABYSS_JEWEL_GRAND MODS_ABYSS_JEWEL_GREATER
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    #.import STYLE | jewellery > rare -> t3
+    #.multi
+        HasExplicitMod >=2 MODS_ABYSS_JEWEL_GRAND MODS_ABYSS_JEWEL_GREATER
+    #.multi
+        HasExplicitMod >=3 MODS_ABYSS_JEWEL_GRAND MODS_ABYSS_JEWEL_GREATER MODS_ABYSS_JEWEL_LESSER
+
+# Magic
+
+Show
+    Class == "Abyss Jewels"
+    Rarity == Magic
+    HasExplicitMod ==2 MODS_ABYSS_JEWEL_GRAND
+    #.import STYLE | jewellery > magic -> t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Abyss Jewels"
+    Rarity == Magic
+    #.import STYLE | jewellery > magic -> t2
+    #.multi
+        HasExplicitMod == MODS_ABYSS_JEWEL_GRAND
+    #.multi
+        HasExplicitMod ==2 MODS_ABYSS_JEWEL_GREATER
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Abyss Jewels"
+    Rarity == Magic
+    #.import STYLE | jewellery > magic -> t3
+    #.multi
+        HasExplicitMod == MODS_ABYSS_JEWEL_GREATER
+    #.multi
+        HasExplicitMod ==2 MODS_ABYSS_JEWEL_LESSER
+
+# Fractured
+
+Show
+    Class == "Abyss Jewels"
+    FracturedItem True
+    HasExplicitMod == MODS_ABYSS_JEWEL_GRAND
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Abyss Jewels"
+    FracturedItem True
+    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    #.import < jewellery > _util -> multi_t2_rare
+    #.import < jewellery > _util -> multi_t2_magic
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Abyss Jewels"
+    FracturedItem True
+    #.import < jewellery > _util -> multi_t3_rare
+    #.import < jewellery > _util -> multi_t3_magic
+
+# Synthesized
+
+Show
+    Class == "Abyss Jewels"
+    SynthesisedItem True
+    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    #.import < jewellery > _util -> multi_t1
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == "Abyss Jewels"
+    SynthesisedItem True
+    #.import < jewellery > _util -> multi_t2
+
+# Miscellaneous
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Abyss Jewels"
+    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    #.import < _util -> craftable
+    #.import < jewellery > _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    Class == "Abyss Jewels"
+    #.import < _util -> craftable

@@ -1,0 +1,33 @@
+Show #.name t1
+    SetTextColor COLOR_NORMAL OPACITY_HIGH
+    SetBackgroundColor COLOR_UNIQUE OPACITY_HIGH
+    SetBorderColor COLOR_NORMAL OPACITY_HIGH
+    MinimapIcon ICON_SIZE_LARGE EFFECT_UNIQUE ICON_TEMPLATE
+    PlayEffect EFFECT_UNIQUE
+    PlayAlertSoundPositional SOUND_LONG_T2 VOLUME_LOUD
+
+Show #.name t2
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_UNIQUE OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+    MinimapIcon ICON_SIZE_MEDIUM EFFECT_UNIQUE ICON_TEMPLATE
+    PlayEffect EFFECT_UNIQUE
+    PlayAlertSoundPositional SOUND_LONG_T2 VOLUME_MID
+
+Show #.name t3
+    SetTextColor COLOR_UNIQUE OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_UNIQUE OPACITY_LOW
+    MinimapIcon ICON_SIZE_SMALL EFFECT_UNIQUE ICON_TEMPLATE
+    PlayEffect EFFECT_UNIQUE Temp
+    PlayAlertSoundPositional SOUND_LONG_T2 VOLUME_LOW
+
+Show #.name t4
+    SetTextColor COLOR_UNIQUE OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_BLACK OPACITY_LOW
+
+Show #.name t5
+    SetTextColor COLOR_UNIQUE OPACITY_MID
+    SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBorderColor COLOR_BLACK OPACITY_NONE

@@ -1,0 +1,15 @@
+#.subsection Life
+
+#.alias ITEM_LEVEL_LIFE_FLASK_BEST = 82
+
+#.alias BASE_LIFE_FLASK_BEST       = "Divine Life Flask"
+
+#.alias MODS_LIFE_FLASK_GRAND           = "Panicked" "Bubbling" "Saturated" "Seething" "of the Necromancer" "of Assuaging" "of the Dielectric" "of Thawing" "of Quenching" "of the Antidote"
+#.alias MODS_LIFE_FLASK_GREATER         = "Terrified" "Catalysed" "Effervescent" "Sapping" "Cautious" "Concentrated" "Gypsum" "of the Conjurer" "of Warding" "of Liberation" "of Perenniality" "of Allaying" "of Insulation" "of Entropy" "of Quelling" "of the Cure"
+#.alias MODS_LIFE_FLASK_LESSER          = "Alarmed" "Condensed" "Effusive" "Vitiating" "Careful" "Full-bodied" "Kainite" "of the Summoner" "of Freedom" "of Incessance" "of Alleviation" "of Grounding" "of Thermodynamics" "of Quashing" "of the Remedy"
+
+#.import template > unique { CLASS = "Life Flasks"
+#.import template > magic_life_mana { BASES_BEST = BASE_LIFE_FLASK_BEST, MODS_GRAND = MODS_LIFE_FLASK_GRAND, MODS_GREATER = MODS_LIFE_FLASK_GREATER, MODS_LESSER = MODS_LIFE_FLASK_LESSER
+#.import template > fractured { BASES_BEST = BASE_LIFE_FLASK_BEST, MODS_GRAND = MODS_LIFE_FLASK_GRAND, MODS_GREATER = MODS_LIFE_FLASK_GREATER
+#.import template > quality_life_mana { BASES_BEST = BASE_LIFE_FLASK_BEST
+#.import template > best_base { BASES_BEST = BASE_LIFE_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_LIFE_FLASK_BEST

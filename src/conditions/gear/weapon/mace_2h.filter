@@ -1,0 +1,40 @@
+#.subsection Two-hand Mace
+
+#.alias BASES_TWO_HAND_MACE_EXCEPTIONAL    = "Impact Force Propagator"
+#.alias BASES_TWO_HAND_MACE_BEST           = "Coronal Maul" "Imperial Maul" "Meatgrinder" "Terror Maul" "Piledriver"
+
+#.alias MODS_TWO_HAND_MACE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_TWO_HAND_MACE_GRAND           = "of the Gods" "of Celebration" "of the Ranger"
+#.alias MODS_TWO_HAND_MACE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
+#.alias MODS_TWO_HAND_MACE_LESSER          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
+
+# Unique
+
+Show #.econ uni 100
+    BaseType == "Karui Maul"
+    Class == "Two Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t1
+
+Show #.econ uni 10 100
+    BaseType == "Imperial Maul" "Coronal Maul" "Piledriver"
+    Class == "Two Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t2
+
+Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
+    BaseType == "Meatgrinder" "Great Mallet" "Brass Maul"
+    Class == "Two Hand Maces" #.format
+    Rarity == Unique
+    Replica False
+    Foulborn False
+    LinkedSockets < 5 #.format
+    #.import STYLE | weapon > unique -> t3
+
+#.import template > _main { CLASS = "Two Hand Maces", BASES_BEST = BASES_TWO_HAND_MACE_BEST, BASES_EXCEPTIONAL = BASES_TWO_HAND_MACE_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_TWO_HAND_MACE_EXCEPTIONAL, MODS_GRAND = MODS_TWO_HAND_MACE_GRAND, MODS_GREATER = MODS_TWO_HAND_MACE_GREATER, MODS_LESSER = MODS_TWO_HAND_MACE_LESSER

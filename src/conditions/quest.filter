@@ -1,9 +1,5 @@
 #.section Quest
 
 Show
-	ArchnemesisMod ""
-	#.import < styles > quest -> general
-
-Show
 	Class == "Quest Items" "Heist Target" "Labyrinth Items" "Labyrinth Trinket" "Pantheon Souls" "Incursion Item" "Atlas Upgrade Items"
-	#.import < styles > quest -> important
+	#.import STYLE | miscellaneous -> quest

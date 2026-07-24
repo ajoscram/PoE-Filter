@@ -1,0 +1,12 @@
+# Synthesized
+
+Show
+    Class == CLASS
+    SynthesisedItem True
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < _util -> multi_t1
+
+Show
+    Class == CLASS
+    SynthesisedItem True
+    #.import < _util -> multi_t2

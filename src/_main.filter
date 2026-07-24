@@ -1,23 +1,32 @@
-#.import utils > headers -> Cursive
+#                       _,                ______     _           
+#                      / |    o   o      (  /    o  // _/_       
+#                     /--|   ,  __' (     -/--  ,  //  /   _  _  
+#                   _/   |__/|_(_) /_)_  _/     (_(/_ (__ (/_/ (_
+#                           /)                                   
+#                          (/                                    
 
-#.index
+#.index PoE 1 | vVERSION | STYLE | VARIANT
 
-#.section General
+#.section Priming
 
 Show
-	Continue
-	#.import styles > general -> shown
+    Continue
+    #.import STYLE | miscellaneous -> shown
 
 #.import conditions > quest
+#.import conditions > gold
 #.import conditions > currency > _main
-#.import conditions > mapping > _main
 #.import conditions > divination_card
 #.import conditions > gem
-#.import conditions > sentinel
-#.import conditions > rogue_equipment
-#.import conditions > gear_old > _main
+#.import conditions > mapping > _main
+#.import conditions > gear > _main
+#.import conditions > equipment > relic
+#.import conditions > equipment > trinket
+#.import conditions > equipment > heist > _main
 
 #.section Catchall
 
-Hide
-	#.import styles > general -> hidden
+Show
+	#.import STYLE | miscellaneous -> catchall
+
+#.import conditions > constants

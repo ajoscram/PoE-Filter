@@ -1,0 +1,19 @@
+# Influenced
+
+Show
+    BaseType == BASES_BEST
+    ItemLevel >= ITEM_LEVEL_BEST
+    HasExplicitMod == MODS_ELEVATED
+    #.import < _util -> multi_t1_rare
+    #.import < _util -> multi_t1_magic
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_BEST
+    ItemLevel >= ITEM_LEVEL_BEST
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import < _util -> multi_t2
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASES_BEST
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    #.import < _util -> multi_t3

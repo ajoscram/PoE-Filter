@@ -1,41 +1,29 @@
 #.section Currency
 
-Show #.name text
-	Continue
-	Class == "Currency" "Incubator" "Delve Stackable Socketable Currency" "Corpses" "Embers of the Allflame" "Wombgift"
-	#.import < < styles > general -> text
-
-#.import coin
-#.import astrolabe
-#.import wombgift
-#.import foulborn
-#.import implant
-#.import runegraft
-#.import allflame_ember
-#.import corpse
-#.import omen
-#.import tattoo
-#.import invocation
-#.import lifeforce
-#.import sentinel
+#.import basic
+#.import shard
+#.import chisel
+#.import splinter
+#.import essence
 #.import eldritch
-#.import scouting_report
+#.import fossil
+#.import resonator
+#.import oil
+#.import lifeforce
+#.import astrolabe
+#.import catalyst
+#.import tattoo
+#.import runegraft
+#.import omen
 #.import tainted
 #.import expedition
 #.import heist
 #.import delirium_orb
-#.import catalyst
+#.import scouting_report
 #.import incubator
+#.import corpse
+#.import foulborn
+#.import wombgift
 #.import vial
-#.import fossil
-#.import resonator
-#.import oil
-#.import splinter
-#.import essence
-#.import shard
-#.import chisel
+#.import coin
 #.import miscellaneous
-
-Show
-	#.import -> text -> Class
-	#.import < < styles > currency -> catchall
