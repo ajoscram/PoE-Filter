@@ -1,14 +1,11 @@
 # Mirage
 
-## 3.28c
+## 3.28b
 ### General Changes
 * The filter has been completely rewritten!
 * Many previously existing sections of items that have been removed were deleted.
 * **Chaos Orb recipe** tiering has now been removed.
 * **Strictness levels** have been simplified to **Base**, **Lenient**, **Strict** and **Uber**, with each level getting stricter respectively.
-
-## 3.28b
-### General Changes
 * **Charms** and **Sentinels** have been removed, because their support was anemic and they are effectively removed from the game.
 
 ## 3.28

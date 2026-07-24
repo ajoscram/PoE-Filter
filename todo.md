@@ -13,7 +13,6 @@ https://www.filterblade.xyz
 
 # To-Do
 * Update the `create-release` script.
-
 * Add the **Beam** filter style.
 
 * Create a `update-economy` script that updates all filter files that have `.econ`.
