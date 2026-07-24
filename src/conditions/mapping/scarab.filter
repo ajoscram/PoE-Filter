@@ -1,21 +1,26 @@
 #.subsection Scarab
 
-Show
-	#.econ sca 100
+# Economy
+
+Show #.econ sca 100
 	BaseType == "Horned Scarab of Preservation" "Cartography Scarab of Risk" "Harvest Scarab of Doubling" "Horned Scarab of Glittering" "Blight Scarab of Blooming" "Essence Scarab of Calcification" "Legion Scarab of Eternal Conflict" "Ultimatum Scarab of Catalysing" "Harvest Scarab of Cornucopia" "Abyss Scarab of Profound Depth" "Scarab of the Sinistral" "Horned Scarab of Pandemonium" "Horned Scarab of Bloodlines" "Betrayal Scarab of Unbreaking" "Ambush Scarab of Containment" "Essence Scarab of Adaptation" "Divination Scarab of Pilfering" "Breach Scarab of Resonant Cascade" "Domination Scarab of Terrors" "Abyss Scarab of Descending" "Kalguuran Scarab of Refinement" "Horned Scarab of Awakening" "Incursion Scarab of Timelines" "Scarab of the Dextral"
 	#.import STYLE | fragment -> t1
 
-Show
-	#.econ sca 10 100
+Show #.econ sca 10 100
 	BaseType == "Breach Scarab of Instability" "Breach Scarab of the Incensed Swarm" "Cartography Scarab of the Multitude" "Influencing Scarab of Interference" "Ritual Scarab of Corpses" "Legion Scarab of Officers" "Domination Scarab" "Scarab of Wisps" "Delirium Scarab of Delusions" "Beyond Scarab of Haemophilia" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Resurgence" "Beyond Scarab of the Invasion" "Expedition Scarab of Infusion" "Legion Scarab" "Bestiary Scarab of Duplicating" "Scarab of Stability" "Ambush Scarab of Hidden Compartments" "Delirium Scarab of Paranoia" "Incursion Scarab of Invasion" "Ambush Scarab of Potency" "Bestiary Scarab of the Herd" "Ultimatum Scarab of Bribing" "Domination Scarab of Evolution" "Expedition Scarab" "Kalguuran Scarab" "Ambush Scarab" "Divination Scarab of The Cloister" "Abyss Scarab of Multitudes" "Titanic Scarab of Legend" "Ultimatum Scarab of Dueling" "Ritual Scarab of Wisps" "Kalguuran Scarab of Enriching" "Influencing Scarab of Hordes" "Ambush Scarab of Discernment" "Divination Scarab of Plenty" "Cartography Scarab of Corruption" "Titanic Scarab of Treasures" "Delirium Scarab of Mania" "Essence Scarab of Stability" "Ultimatum Scarab of Inscription" "Ritual Scarab of Abundance" "Abyss Scarab of Edifice" "Legion Scarab of Treasures" "Essence Scarab of Ascent" "Ultimatum Scarab" "Blight Scarab of Invigoration" "Scarab of Monstrous Lineage" "Horned Scarab of Tradition"
 	#.import STYLE | fragment -> t2
 
-Show
-	#.econ sca 1 10
+Show #.econ sca 1 10
 	BaseType == "Anarchy Scarab of the Exceptional" "Scarab of Adversaries" "Influencing Scarab of the Shaper" "Anarchy Scarab of Partnership" "Essence Scarab" "Influencing Scarab of the Elder" "Betrayal Scarab" "Incursion Scarab of Champions" "Kalguuran Scarab of Guarded Riches" "Betrayal Scarab of the Allflame" "Expedition Scarab of Runefinding" "Torment Scarab" "Blight Scarab" "Expedition Scarab of Archaeology" "Ritual Scarab of Selectiveness" "Horned Scarab of Nemeses" "Sulphite Scarab" "Sulphite Scarab of Fumes" "Torment Scarab of Possession" "Titanic Scarab" "Delirium Scarab of Neuroses" "Delirium Scarab" "Scarab of Divinity" "Bestiary Scarab" "Cartography Scarab of Escalation" "Breach Scarab of the Hive" "Expedition Scarab of Verisium Powder" "Harvest Scarab" "Anarchy Scarab" "Abyss Scarab" "Beyond Scarab" "Incursion Scarab" "Breach Scarab of the Marshal"
 	#.import STYLE | fragment -> t3
 
-Show
-	#.econ sca 0 1
+Show #.econ sca 0 1
 	BaseType == "Scarab of Hunted Traitors" "Torment Scarab of Peculiarity" "Blight Scarab of the Blightheart" "Anarchy Scarab of Gigantification" "Domination Scarab of Apparitions"
 	#.import STYLE | fragment -> t4
+
+# Catchall
+
+Show
+    BaseType "Scarab"
+    Class == "Map Fragments"
+	#.import STYLE | currency -> t2

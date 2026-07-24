@@ -10,8 +10,7 @@ Show #.econ div 10 100
 	BaseType == "Something Dark" "Baited Expectations" "Eldritch Perfection" "The Last One Standing" "Darker Half" "Tranquillity" "The Forbidden Fruit" "The Polymath" "The Last Supper" "The Eternal War" "The Shieldbearer" "The Long Con" "Home" "Monochrome" "Costly Curio" "The Void" "The Innocent" "The Shortcut" "A Modest Request" "The Side Quest" "Reflection of the Heart" "Avian Pursuit" "Alluring Bounty"
 	#.import STYLE | divination_card -> t2
 
-Show
-	#.econ div 2 10
+Show #.econ div 2 10
 	BaseType == "The Bitter Blossom" "Lachrymal Necrosis" "Emperor's Luck" "A Stone Perfected" "The Prince of Darkness" "The Primordial" "The Union" "Sambodhi's Wisdom"
 	#.import STYLE | divination_card -> t3
 

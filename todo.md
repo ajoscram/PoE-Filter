@@ -25,6 +25,7 @@ https://www.filterblade.xyz
 * Elaborate `idols.filter`.
 * Figure out a re-organization of the "gem" section.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
+* Consider hiding some scarabs at the bottom prices.
 * Re-categorize sounds, they are all over the place.
 * Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Add a wiki page for this project.

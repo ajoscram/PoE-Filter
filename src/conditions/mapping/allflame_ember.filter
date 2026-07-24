@@ -1,16 +1,22 @@
 #.subsection Allflame Ember
 
-Show
-    #.econ mbr 100
+# Economy
+
+Show #.econ mbr 100
 	BaseType == "Allflame Ember of the Gilded" "Allflame Ember of the Ethereal" "Allflame Ember of Flesh" "Allflame Ember of Propagation"
 	#.import STYLE | fragment -> t1
 
-Show
-    #.econ mbr 10 100
+Show #.econ mbr 10 100
 	BaseType == "Allflame Ember of Kulemak" "Allflame Ember of the Wildwood" "Allflame Ember of Resplendence" "Allflame Ember of Toads"
 	#.import STYLE | fragment -> t2
 
-Show
-    #.econ mbr 0 10
+Show #.econ mbr 0 10
 	BaseType == "Allflame Ember of Toads"
 	#.import STYLE | fragment -> t3
+
+# Catchall
+
+Show
+    BaseType "Allflame Ember"
+    Class == "Map Fragments"
+	#.import STYLE | currency -> t2
