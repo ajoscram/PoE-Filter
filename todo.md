@@ -12,17 +12,18 @@ https://www.filterblade.xyz
 * Check patch notes for changes.
 
 # To-Do
-* Clean up some of the "currency" filter section files.
-* Split "miscellaneous" and basic currency.
-* Implement stack-size filtering for currency shards.
+* Add catchalls for sections that are fetched with `.econ`.
 
 * Update the `create-release` script.
 * Create a `update-economy` script that updates all filter files that have `.econ`.
 
 * Add the **Beam** filter style.
 
-* Figure out a re-organization of the "gem" section.
+* `corpse.filter` needs to be revisited mid-league to check up on real prices.
+* `splinter.filter` needs to be revisited mid-league to check up on real prices.
+
 * Elaborate `idols.filter`.
+* Figure out a re-organization of the "gem" section.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Re-categorize sounds, they are all over the place.
 * Think about best bases for offhands, it is currently inadequate because they will be shown too often.

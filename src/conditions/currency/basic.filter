@@ -1,0 +1,56 @@
+#.subsection Basic
+
+#.alias BASES_BASIC_CURENCY_PERFECT     = "Divine Orb" "Mirror of Kalandra" "Reflecting Mist" "Valdo's Puzzle Box" "Hinekora's Lock" "Fracturing Orb"
+#.alias BASES_BASIC_CURENCY_EXQUISITE   = "Sacred Orb" "Orb of Annulment" "Ancient Orb"
+#.alias BASES_BASIC_CURENCY_EXCEPTIONAL = "Exalted Orb" "Chaos Orb" "Orb of Regret" "Gemcutter's Prism" "Vaal Orb" "Stacked Deck"
+#.alias BASES_BASIC_CURENCY_GRAND       = "Regal Orb" "Orb of Alchemy" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking"
+#.alias BASES_BASIC_CURENCY_GREATER     = "Chromatic Orb" "Orb of Alteration" "Orb of Transmutation" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
+#.alias BASES_BASIC_CURENCY_LESSER      = "Scroll of Wisdom" "Portal Scroll" "Orb of Augmentation"
+
+Show
+	BaseType == BASES_BASIC_CURENCY_PERFECT
+	#.import STYLE | currency -> t1
+
+Show
+	BaseType == BASES_BASIC_CURENCY_EXQUISITE
+	#.import STYLE | currency -> t2
+
+Show
+	BaseType == BASES_BASIC_CURENCY_EXCEPTIONAL
+	#.import STYLE | currency -> t3
+
+Show
+	BaseType == BASES_BASIC_CURENCY_GRAND
+	#.import STYLE | currency -> t4
+
+Show #.if Show
+	BaseType == BASES_BASIC_CURENCY_GREATER
+	#.import STYLE | currency -> t4
+    #.multi
+	    StackSize >= 15
+    #.multi .strict STRICTNESS_STRICT
+	    StackSize >= 10
+    #.multi .strict STRICTNESS_LENIENT
+	    StackSize >= 5
+    #.multi .strict STRICTNESS_BASE
+	    AreaLevel < LEVEL_RED_MAPS_START
+
+Show #.if Show
+	BaseType == BASES_BASIC_CURENCY_LESSER
+	#.import STYLE | currency -> t4
+    #.multi
+	    StackSize >= 15
+    #.multi .strict STRICTNESS_BASE
+	    StackSize >= 10
+	    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+	    StackSize >= 5
+	    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+	    AreaLevel < LEVEL_ACT_6_START
+
+Hide
+    BaseType == BASES_BASIC_CURENCY_GREATER BASES_BASIC_CURENCY_LESSER
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+

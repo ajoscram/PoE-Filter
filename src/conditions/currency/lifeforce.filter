@@ -1,9 +1,42 @@
 #.subsection Lifeforce
 
+# Miscellaneous
+
 Show
 	BaseType == "Sacred Crystallised Lifeforce" "Crystallised Rancour"
 	#.import STYLE | currency -> t1
 
-Show
-	BaseType == "Wild Crystallised Lifeforce" "Vivid Crystallised Lifeforce" "Primal Crystallised Lifeforce"
-	#.import STYLE | currency -> t2
+Show #.if Show
+	BaseType == "Vivid Crystallised Lifeforce"
+    #.multi
+        StackSize >= 300
+	    #.import STYLE | currency -> t1
+    #.multi
+        StackSize >= 30
+	    #.import STYLE | currency -> t2
+    #.multi
+        StackSize >= 3
+	    #.import STYLE | currency -> t3
+    #.multi
+    	#.import STYLE | currency -> t4
+
+Show #.if Show
+	BaseType == "Wild Crystallised Lifeforce" "Primal Crystallised Lifeforce"
+    #.multi
+        StackSize >= 2000
+	    #.import STYLE | currency -> t1
+    #.multi
+        StackSize >= 200
+	    #.import STYLE | currency -> t2
+    #.multi
+        StackSize >= 20
+	    #.import STYLE | currency -> t3
+    #.multi
+    	#.import STYLE | currency -> t4
+
+# Hidden
+
+Hide
+	BaseType == "Vivid Crystallised Lifeforce" "Wild Crystallised Lifeforce" "Primal Crystallised Lifeforce"
+	#.import STYLE | miscellaneous -> hidden
+    #.import STYLE | currency -> t5

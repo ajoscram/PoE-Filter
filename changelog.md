@@ -3,6 +3,7 @@
 ## 3.28c
 ### General Changes
 * The filter has been completely rewritten!
+* Many previously existing sections of items that have been removed were deleted.
 * **Chaos Orb recipe** tiering has now been removed.
 * **Strictness levels** have been simplified to **Base**, **Lenient**, **Strict** and **Uber**, with each level getting stricter respectively.
 

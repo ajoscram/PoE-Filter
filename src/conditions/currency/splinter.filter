@@ -1,17 +1,78 @@
 #.subsection Splinter
 
-Show
-	BaseType == "Ritual Splinter" "Crescent Splinter" "Splinter of Chayula"
-	#.import STYLE | currency -> t4
+# Legacy
 
 Show
-	BaseType == "Simulacrum Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
-	#.import STYLE | currency -> t5
+	BaseType == "Splinter of Chayula"
+	#.import STYLE | currency -> t3
+
+Show
+	BaseType == "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh" "Splinter of Tul"
+	#.import STYLE | currency -> t4
+
+# Miscellaneous
+
+Show
+	BaseType == "Crescent Splinter"
+	#.import STYLE | currency -> t2
+
+Show #.if Show
+	BaseType == "Simulacrum Splinter"
     #.multi
-	    StackSize >= 20
+        StackSize >= 120
+	    #.import STYLE | currency -> t1
     #.multi
-	    StackSize >= 10 #.strict STRICTNESS_STRICT
+        StackSize >= 60
+	    #.import STYLE | currency -> t2
     #.multi
-	    StackSize >= 5 #.strict STRICTNESS_LENIENT
+        StackSize >= 45
+	    #.import STYLE | currency -> t3
     #.multi
-        #.strict STRICTNESS_BASE
+        StackSize >= 30
+    	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_LENIENT
+        StackSize >= 15
+    	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_BASE
+	    #.import STYLE | currency -> t4
+
+Show #.if Show
+	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
+    #.multi
+        StackSize >= 50
+	    #.import STYLE | currency -> t1
+    #.multi
+        StackSize >= 10
+	    #.import STYLE | currency -> t2
+    #.multi
+        StackSize >= 6
+	    #.import STYLE | currency -> t3
+    #.multi
+        StackSize >= 3
+    	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_LENIENT
+    	#.import STYLE | currency -> t4
+
+Show #.if Show
+	BaseType == "Ritual Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter"
+    #.multi
+        StackSize >= 75
+	    #.import STYLE | currency -> t2
+    #.multi
+        StackSize >= 20
+	    #.import STYLE | currency -> t3
+    #.multi .strict STRICTNESS_STRICT
+        StackSize >= 10
+    	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_LENIENT
+        StackSize >= 5
+    	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_BASE
+	    #.import STYLE | currency -> t4
+
+# Hidden
+
+Hide
+	BaseType == "Simulacrum Splinter" "Ritual Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter"
+	#.import STYLE | miscellaneous -> hidden
+    #.import STYLE | currency -> t5

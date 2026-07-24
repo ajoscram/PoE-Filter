@@ -1,13 +1,13 @@
 #.subsection Chisel
 
 Show
-	BaseType == "Maven's Chisel of Divination" "Maven's Chisel of Avarice"
+    BaseType == "Maven's Chisel of Avarice"
+	#.import STYLE | currency -> t1
+
+Show
+	BaseType == "Maven's Chisel of Divination" "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs"
 	#.import STYLE | currency -> t2
 
 Show
-	BaseType == "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs"
+	BaseType == "Maven's Chisel of Procurement" "Cartographer's Chisel"
 	#.import STYLE | currency -> t3
-
-Show
-	BaseType == "Cartographer's Chisel"
-	#.import STYLE | currency -> t4

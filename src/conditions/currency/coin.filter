@@ -2,8 +2,8 @@
 
 Show
     BaseType == "Coin of Knowledge" "Coin of Power" "Coin of Skill"
-    #.import STYLE | currency -> t2
+    #.import STYLE | currency -> t1
 
 Show
     BaseType == "Coin of Restoration" "Coin of Desecration"
-    #.import STYLE | currency -> t3
+    #.import STYLE | currency -> t4

@@ -1,5 +1,22 @@
 #.subsection Astrolabe
 
-Show
-	BaseType ==  "Templar Astrolabe" "Fruiting Astrolabe" "Lightless Astrolabe" "Grasping Astrolabe" "Nameless Astrolabe" "Fungal Astrolabe" "Chaotic Astrolabe" "Enshrouded Astrolabe" "Timeless Astrolabe" "Runic Astrolabe"
+# Economy
+
+Show #.econ ast 100
+	BaseType == "Templar Astrolabe" "Fruiting Astrolabe" "Lightless Astrolabe" "Grasping Astrolabe" "Nameless Astrolabe" "Fungal Astrolabe" "Chaotic Astrolabe" "Enshrouded Astrolabe" "Timeless Astrolabe" "Runic Astrolabe"
+	#.import STYLE | currency -> t1
+
+Show #.econ ast 10 100
+	BaseType == "Runic Astrolabe"
+	#.import STYLE | currency -> t2
+
+Show #.econ ast 0 10
+	BaseType == "Templar Astrolabe"
 	#.import STYLE | currency -> t3
+
+# Catchall
+
+Show
+    BaseType "Astrolabe"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

@@ -1,14 +1,20 @@
 #.subsection Vial
 
-Show
-	#.econ via 10
-	BaseType == "Vial of the Ghost" "Vial of Transcendence" "Vial of Awakening" "Vial of Sacrifice" "Vial of Dominance" "Vial of Consequence" "Vial of Summoning"
+# Economy
+
+Show #.econ via 100
+	BaseType == "Vial of Summoning" "Vial of the Ghost" "Vial of Dominance" "Vial of Sacrifice" "Vial of Transcendence"
+	#.import STYLE | currency -> t1
+
+Show #.econ via 10 100
+	BaseType == "Vial of Consequence" "Vial of Awakening"
 	#.import STYLE | currency -> t2
 
-Show
-	#.econ via 0 10
+Show #.econ via 0 10
 	BaseType == "Vial of Fate" "Vial of the Ritual"
 	#.import STYLE | currency -> t3
+
+# Catchall
 
 Show
 	BaseType "Vial of"

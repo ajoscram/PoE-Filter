@@ -1,13 +1,13 @@
 #.subsection Tainted
 
 Show
-	BaseType == "Tainted Chaos Orb" "Tainted Divine Teardrop" "Tainted Exalted Orb" "Tainted Mythic Orb"
+	BaseType == "Tainted Divine Teardrop" "Tainted Chaos Orb" "Tainted Exalted Orb"
+	#.import STYLE | currency -> t1
+
+Show
+	BaseType == "Tainted Mythic Orb" "Tainted Orb of Fusing"
 	#.import STYLE | currency -> t2
 
 Show
-	BaseType == "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
+	BaseType == "Tainted Chromatic Orb" "Tainted Jeweller's Orb" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone"
 	#.import STYLE | currency -> t3
-
-Show
-	BaseType == "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone"
-	#.import STYLE | currency -> t4

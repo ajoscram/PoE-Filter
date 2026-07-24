@@ -1,23 +1,51 @@
 #.subsection Shard
 
+# Legacy
+
+Show
+	BaseType == "Exalted Shard" "Ancient Shard" "Annulment Shard" "Binding Shard" "Engineer's Shard" "Chaos Shard" "Horizon Shard" "Harbinger's Shard" "Regal Shard"
+	#.import STYLE | currency -> t4
+
+# Miscellaneous
+
 Show
 	BaseType == "Mirror Shard"
 	#.import STYLE | currency -> t1
 
 Show
-	BaseType == "Fracturing Shard" "Exalted Shard" "Ancient Shard" "Annulment Shard"
-	#.import STYLE | currency -> t3
+	BaseType == "Fracturing Shard"
+	#.import STYLE | currency -> t2
 
-Show
-	#.strict STRICTNESS_LENIENT
-	BaseType == "Chaos Shard" "Horizon Shard" "Harbinger's Shard"
+Show #.if Show
+	BaseType == "Alchemy Shard" "Alteration Shard"
 	#.import STYLE | currency -> t4
+    #.multi
+        StackSize == 20
+    #.multi .strict STRICTNESS_BASE
+        StackSize >= 15
+        AreaLevel < LEVEL_RED_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        StackSize >= 10
+        AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        StackSize >= 5
+        AreaLevel < LEVEL_ACT_6_START
 
-Show
-	#.strict STRICTNESS_BASE
-	BaseType == "Regal Shard" "Alchemy Shard" "Alteration Shard" "Binding Shard" "Engineer's Shard"
-	#.import STYLE | currency -> t5
+Show #.if Show
+	BaseType == "Transmutation Shard"
+	#.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_BASE
+        StackSize == 20
+        AreaLevel < LEVEL_RED_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        StackSize >= 15
+        AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_BASE
+        StackSize >= 10
+        AreaLevel < LEVEL_ACT_6_START
+
+# Hidden
 
 Hide
-	BaseType == "Transmutation Shard" "Scroll Fragment"
+	BaseType == "Scroll Fragment" "Transmutation Shard" "Alchemy Shard" "Alteration Shard"
 	#.import STYLE | currency -> t5

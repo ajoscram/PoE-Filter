@@ -1,21 +1,31 @@
 #.subsection Runegraft
 
-Show
-    #.econ run 100
-    BaseType == "Runegraft of Rotblood" "Runegraft of Refraction" "Runegraft of Gemcraft" "Runegraft of the Angler"
+# Economy
+
+Show #.econ run 100
+	BaseType == "Runegraft of Gemcraft" "Runegraft of Restitching" "Runegraft of the Jeweller" "Runegraft of Quaffing" "Runegraft of Stability" "Runegraft of the Bound" "Runegraft of the Spellbound" "Runegraft of Refraction" "Runegraft of Blasphemy" "Runegraft of the Warp" "Runegraft of the Soulwick" "Runegraft of Bellows" "Runegraft of the Fortress" "Runegraft of Time" "Runegraft of Rotblood" "Runegraft of Treachery"
 	#.import STYLE | currency -> t1
 
-Show
-    #.econ run 10 100
-    BaseType == "Runegraft of Resurgence" "Runegraft of the Spellbound" "Runegraft of the Agile" "Runegraft of Rallying" "Runegraft of the Soulwick" "Runegraft of the Warp" "Runegraft of Stability" "Runegraft of the Fortress" "Runegraft of Quaffing" "Runegraft of Treachery"
+Show #.econ run 10 100
+	BaseType == "Runegraft of Rallying" "Runegraft of the Imbued" "Runegraft of the River" "Runegraft of the Sinistral" "Runegraft of Resurgence"
 	#.import STYLE | currency -> t2
 
-Show
-    #.econ run 1 10
-    BaseType == "Runegraft of Connection" "Runegraft of Suffering" "Runegraft of the Imbued" "Runegraft of Fury" "Runegraft of Consecration" "Runegraft of the River" "Runegraft of Bellows" "Runegraft of the Bound" "Runegraft of Time" "Runegraft of the Witchmark" "Runegraft of the Sinistral" "Runegraft of Restitching" "Runegraft of the Novamark" "Runegraft of Blasphemy" "Runegraft of the Combatant" "Runegraft of the Jeweller" "Runegraft of Loyalty"
-    #.import STYLE | currency -> t3
+Show #.econ run 1 10
+	BaseType == "Runegraft of the Combatant" "Runegraft of Connection" "Runegraft of Loyalty" "Runegraft of the Novamark"
+	#.import STYLE | currency -> t3
+
+Show #.econ run 0 1 .strict STRICTNESS_LENIENT .if Show
+	BaseType == "Runegraft of the Witchmark" "Runegraft of the Agile"
+	#.import STYLE | currency -> t4
+
+Hide #.econ run 0 1
+	BaseType == "Runegraft of the Witchmark" "Runegraft of the Agile"
+	#.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5
+
+# Catchall
 
 Show
-    #.econ run 0 1
-    BaseType == "Runegraft of Connection" "Runegraft of Suffering" "Runegraft of the Imbued" "Runegraft of Fury" "Runegraft of Consecration" "Runegraft of the River" "Runegraft of Bellows" "Runegraft of the Bound" "Runegraft of Time" "Runegraft of the Witchmark" "Runegraft of the Sinistral" "Runegraft of Restitching" "Runegraft of the Novamark" "Runegraft of Blasphemy" "Runegraft of the Combatant" "Runegraft of the Jeweller" "Runegraft of Loyalty"
-    #.import STYLE | currency -> t4
+    BaseType "Runegraft of"
+    Class == "Currency"
+	#.import STYLE | currency -> t2

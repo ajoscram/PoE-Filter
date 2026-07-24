@@ -4,16 +4,24 @@ Show
 	BaseType == "Tempering Orb" "Tailoring Orb"
 	#.import STYLE | currency -> t1
 
-Show
-	BaseType == "Prime Regrading Lens" "Secondary Regrading Lens"
-	#.import STYLE | currency -> t2
-
-Show
+Show #.if Show
 	BaseType == "Rogue's Marker"
-	#.import STYLE | currency -> t3
     #.multi
-        #.strict STRICTNESS_STRICT
+        StackSize >= 2000
+	    #.import STYLE | currency -> t2
+    #.multi
+        StackSize >= 1000
+	    #.import STYLE | currency -> t3
+    #.multi .strict STRICTNESS_STRICT
+        StackSize >= 750
+	    #.import STYLE | currency -> t3
+    #.multi .strict STRICTNESS_LENIENT
         StackSize >= 500
-    #.multi
-        #.strict STRICTNESS_LENIENT
-        StackSize < 500
+	    #.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_BASE
+	    #.import STYLE | currency -> t4
+
+Hide
+	BaseType == "Rogue's Marker"
+    #.import STYLE | miscellaneous -> hidden
+	#.import STYLE | currency -> t5

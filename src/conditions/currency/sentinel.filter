@@ -1,9 +1,0 @@
-#.subsection Sentinel
-
-Show
-	BaseType == "Armour Recombinator" "Weapon Recombinator" "Jewellery Recombinator"
-	#.import STYLE | currency -> t2
-
-Show
-	BaseType == "Power Core" "Transforming Power Core" "Amplifying Power Core" "Augmenting Power Core"
-	#.import STYLE | currency -> t3
