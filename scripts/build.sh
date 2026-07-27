@@ -1,3 +1,5 @@
+# Builds all output filter files for publishing.
+
 source scripts/utils.sh
 source .env
 

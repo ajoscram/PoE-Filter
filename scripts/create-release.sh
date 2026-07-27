@@ -1,3 +1,5 @@
+# Creates the files used in the GitHub release. Requires 'build.sh' to be run previously.
+
 source scripts/utils.sh
 
 [ ! -d "release" ] && mkdir "release"

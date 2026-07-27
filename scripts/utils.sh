@@ -1,3 +1,5 @@
+# Contains multiple helper functions used by other scripts.
+
 # checks if the first argument received by the function
 # is contained in the rest of the arguments received
 contains(){

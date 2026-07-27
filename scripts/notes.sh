@@ -1,3 +1,5 @@
+# Obtains the release notes with the latest set of changes from 'changelog.md'.
+
 source scripts/utils.sh
 
 start="^##[[:space:]]"

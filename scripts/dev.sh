@@ -1,3 +1,5 @@
+# Runs PFG with the '-watch' argument to quickly iterate filter changes.
+
 source scripts/utils.sh
 source .env
 
