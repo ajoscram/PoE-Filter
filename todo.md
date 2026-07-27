@@ -6,8 +6,6 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # 3.29 To-Do
-* We can't use this green for fragments LMAO
-
 * Create a `update-economy` script that updates all filter files that have `.econ`.
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 * `splinter.filter` needs to be revisited mid-league to check up on real prices.
