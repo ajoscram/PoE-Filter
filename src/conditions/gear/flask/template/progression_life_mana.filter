@@ -1,0 +1,45 @@
+# Progression
+
+Show #.strict STRICTNESS_LENIENT .if Show
+    BaseType == BASES_BEST
+    ItemLevel >= ITEM_LEVEL_BEST
+    #.import < < _util -> craftable
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASES_BEST
+    Rarity == Magic
+    AreaLevel < LEVEL_YELLOW_MAPS_START
+    #.import < < _util -> craftable
+
+Show
+    Class == CLASS
+    #.multi
+        AreaLevel < LEVEL_WHITE_MAPS_START
+        DropLevel >= LEVEL_ACT_10_START
+    #.multi
+        AreaLevel < LEVEL_ACT_10_START
+        DropLevel >= LEVEL_ACT_9_START
+    #.multi
+        AreaLevel < LEVEL_ACT_9_START
+        DropLevel >= LEVEL_ACT_8_START
+    #.multi
+        AreaLevel < LEVEL_ACT_8_START
+        DropLevel >= LEVEL_ACT_7_START
+    #.multi
+        AreaLevel < LEVEL_ACT_7_START
+        DropLevel >= LEVEL_ACT_6_START
+    #.multi
+        AreaLevel < LEVEL_ACT_6_START
+        DropLevel >= LEVEL_ACT_5_START
+    #.multi
+        AreaLevel < LEVEL_ACT_5_START
+        DropLevel >= LEVEL_ACT_4_START
+    #.multi
+        AreaLevel < LEVEL_ACT_4_START
+        DropLevel >= LEVEL_ACT_3_START
+    #.multi
+        AreaLevel < LEVEL_ACT_3_START
+        DropLevel >= LEVEL_ACT_2_START
+    #.multi
+        AreaLevel < LEVEL_ACT_2_START

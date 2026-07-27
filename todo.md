@@ -6,7 +6,8 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # 3.29 To-Do
-* Add the **Beam** filter style.
+* We can't use this green for fragments LMAO
+
 * Create a `update-economy` script that updates all filter files that have `.econ`.
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 * `splinter.filter` needs to be revisited mid-league to check up on real prices.
@@ -14,6 +15,7 @@ https://www.filterblade.xyz
 * `ducat.filter` needs to be revisited mid-league to check up on real prices.
 * `sulphur.filter` needs to be revisited mid-league to check up on real tiering. Maybe cluster with gold?
 * `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
+* Elaborate `wombgift.filter`.
 * Elaborate `vestigial.filter`.
 * Elaborate `chart.filter`.
 * Synth items were removed. Gotta clean those gear sections up and add it as a legacy base type.
@@ -27,13 +29,17 @@ https://www.filterblade.xyz
     * Reduced Enemy Stun Threshold Modifiers no longer roll on Sceptres or caster Staves.
     * Stun Duration Modifiers no longer roll on all weapons, but now can only roll on Maces, attack Staves, Swords, Axes and Bows.
     * The top tier increased Cast Speed Modifiers on caster weapons now have the same weightings as the lower tier modifiers (previously these had lower weightings).
+    * The Demon's Horn, Opal Wand and Tornado Wand Base Types now have increased Spell Damage Implicit Modifiers, instead of added Damage. Existing items are not affected by this change.
 
 # To-Do
+
 * Update README.md with a summary of current filter contents.
 * Elaborate `idols.filter`.
 * Figure out a re-organization of the "gem" section.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Consider hiding some scarabs at the bottom prices.
-* Re-categorize sounds, they are all over the place.
-* Think about best bases for offhands, it is currently inadequate because they will be shown too often.
 * Add a wiki page for this project.
+
+* Re-categorize sounds, they are all over the place.
+* Sounds should be set in stone because they indicate something to the user which should be standard across styles.
+* This sounds idea might indicate that a "base" style from which all other styles inherit might be a good idea.

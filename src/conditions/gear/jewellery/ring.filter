@@ -5,8 +5,8 @@
 #.alias BASES_RING_EXQUISITE   = "Cogwork Ring" "Composite Ring" "Geodesic Ring" "Helical Ring" "Manifold Ring" "Ratcheting Ring" "Dusk Ring" "Gloam Ring" "Shadowed Ring" "Formless Ring"
 #.alias BASES_RING_EXCEPTIONAL = "Cryonic Ring" "Enthalpic Ring" "Fugitive Ring" "Organic Ring" "Synaptic Ring" "Nameless Ring" "Penumbra Ring" "Tenebrous Ring"
 #.alias BASES_RING_GRAND       = "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-#.alias BASES_RING_GREAT       = "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Bone Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring"
-#.alias BASES_RING_LESSER      = "Coral Ring" "Iron Ring" "Paua Ring"
+#.alias BASES_RING_GREAT       = "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Bone Ring" "Moonstone Ring" "Diamond Ring"
+#.alias BASES_RING_LESSER      = "Coral Ring" "Iron Ring" "Paua Ring" "Gold Ring"
 
 #.alias MODS_RING_EXCEPTIONAL = "Subterranean" "Sentinel's" "Xopec's" "Guatelitzi's" "of Guatelitzi" "of Infamy" "of the Underground"
 #.alias MODS_RING_GRAND       = "Virile" "Ultramarine" "Resplendent" "Annealed" "Cremating" "Entombing" "Electrocuting" "Shocking" "Overpowering" "Perandus'" "of the Gods" "of the Wind" "of the Genius" "of the Comet" "of Excavation" "of Expertise" "of Skill" "of the Ranger" "of Ryslatha" "of Nirvana" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Rainbow" "of Flames" "of Rime" "of Voltage" "of Fleshbinding"

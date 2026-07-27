@@ -3,10 +3,10 @@
 #.alias ITEM_LEVEL_AMULET_BEST   = 86
 
 #.alias BASES_AMULET_EXQUISITE   = "Unset Amulet" "Focused Amulet" "Simplex Amulet" "Astrolabe Amulet"
-#.alias BASES_AMULET_EXCEPTIONAL = "Marble Amulet" "Blue Pearl Amulet"
-#.alias BASES_AMULET_GRAND       = "Pearlescent Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
-#.alias BASES_AMULET_GREAT       = "Gold Amulet" "Seaglass Amulet"
-#.alias BASES_AMULET_LESSER      = "Coral Amulet" "Paua Amulet"
+#.alias BASES_AMULET_EXCEPTIONAL = "Pearlescent Amulet"
+#.alias BASES_AMULET_GRAND       = "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
+#.alias BASES_AMULET_GREAT       = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
+#.alias BASES_AMULET_LESSER      = "Coral Amulet" "Paua Amulet" "Gold Amulet"
 
 #.alias BASES_TALISMAN_EXQUISITE   = "Croaker Talisman" "Vulture Talisman" "Cobra Talisman" "Retch Talisman" "Taurus Talisman" "Pitbull Talisman" "Flame Hellion Talisman" "Frost Hellion Talisman" "Lynx Talisman"
 #.alias BASES_TALISMAN_EXCEPTIONAL = "Great Maw Talisman" "Spider Crab Talisman" "Tiger Talisman" "Carrion Queen Talisman" "Ursa Talisman" "Wolf Alpha Talisman" "Ape Talisman" "Savage Crab Talisman" "Watcher Talisman" "Plagued Arachnid Talisman" "Devourer Talisman" "Sand Spitter Talisman"

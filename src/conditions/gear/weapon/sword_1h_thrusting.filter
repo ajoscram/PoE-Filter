@@ -41,4 +41,4 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 #.import template > influenced { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
 #.import template > memory_strands { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
 #.import template > quality { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
-#.import template > best_base { BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST
+#.import template > progression { CLASS = "Thrusting One Hand Swords", BASES_BEST = BASES_ONE_HAND_SWORD_THRUSTING_BEST

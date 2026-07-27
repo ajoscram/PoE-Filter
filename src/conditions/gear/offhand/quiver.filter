@@ -45,7 +45,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 #.import < armour > template > memory_strands { BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
 #.import < armour > template > exceptional_base { BASES_EXCEPTIONAL = BASES_QUIVER_EXCEPTIONAL, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
 
-# Best Base
+# Progression
 
 Show #.strict STRICTNESS_STRICT .if Show
     BaseType == BASES_QUIVER_BEST
@@ -53,6 +53,18 @@ Show #.strict STRICTNESS_STRICT .if Show
     #.import < _util -> craftable
     #.import < armour > _util -> multi_t3
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show #.strict STRICTNESS_BASE .if Show
     BaseType == BASES_QUIVER_BEST
-    #.import < _util -> craftable
+    Rarity == Rare
+
+Show
+    Class == "Quivers"
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_WHITE_MAPS_START
+    #.multi
+        Rarity == Magic
+        AreaLevel < LEVEL_ACT_6_START
+    #.multi
+        Rarity == Normal
+        AreaLevel < LEVEL_ACT_3_START

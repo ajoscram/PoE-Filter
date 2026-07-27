@@ -1,6 +1,6 @@
 #.subsection Abyss
 
-#.alias MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST = 86
+#.alias ITEM_LEVEL_ABYSS_JEWEL_BEST = 86
 
 #.alias MODS_ABYSS_JEWEL_EXCEPTIONAL    = "Subterranean" "of the Underground"
 #.alias MODS_ABYSS_JEWEL_GRAND          = "Stalwart" "Sapphire" "Acuminate" "Flaring" "Electrocuting" "Cremating" "Entombing" "Malicious" "Vile" "Encased" "Beclouded" "Resplendent" "Expediting" "Lancing" "of Strength" "of Dexterity" "of Intelligence" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of the Dragon" "of the Beast" "of Grounding" "of the Hearth" "of Insulation" "of Shelter" "of Resistance" "of Order" "of Berserking" "of Potency" "of the Lightning Rod" "of Immunity" "of the Tourniquet" "of Poise" "of the Deadeye" "of Mangling" "of Phasing" "of the Raider" "of Abuse" "of Opportunity" "of the Inferno" "of Vivaciousness" "of the Inquisitor" "of Momentum"
@@ -105,7 +105,7 @@ Show
 Show #.strict STRICTNESS_STRICT .if Show
     Class == "Abyss Jewels"
     FracturedItem True
-    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    ItemLevel >= ITEM_LEVEL_ABYSS_JEWEL_BEST
     #.import < jewellery > _util -> multi_t2_rare
     #.import < jewellery > _util -> multi_t2_magic
 
@@ -120,7 +120,7 @@ Show #.strict STRICTNESS_LENIENT .if Show
 Show
     Class == "Abyss Jewels"
     SynthesisedItem True
-    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    ItemLevel >= ITEM_LEVEL_ABYSS_JEWEL_BEST
     #.import < jewellery > _util -> multi_t1
 
 Show #.strict STRICTNESS_STRICT .if Show
@@ -128,14 +128,27 @@ Show #.strict STRICTNESS_STRICT .if Show
     SynthesisedItem True
     #.import < jewellery > _util -> multi_t2
 
-# Miscellaneous
+# Progression
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show
     Class == "Abyss Jewels"
-    ItemLevel >= MOD_ITEM_LEVEL_ABYSS_JEWEL_BEST
+    ItemLevel >= ITEM_LEVEL_ABYSS_JEWEL_BEST
     #.import < _util -> craftable
     #.import < jewellery > _util -> multi_t3
 
+Show #.strict STRICTNESS_LENIENT .if Show
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    AreaLevel >= LEVEL_WHITE_MAPS_START
+    #.import STYLE | jewellery > rare -> t3
+
 Show #.strict STRICTNESS_BASE .if Show
     Class == "Abyss Jewels"
-    #.import < _util -> craftable
+    Rarity == Magic
+    AreaLevel >= LEVEL_WHITE_MAPS_START
+    #.import STYLE | jewellery > magic -> t3
+
+Show
+    Class == "Abyss Jewels"
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import < jewellery > _util -> multi_t3

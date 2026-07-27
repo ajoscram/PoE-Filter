@@ -54,4 +54,4 @@ Show #.strict STRICTNESS_LENIENT .if Show
     #.import STYLE | flask > magic -> t3
 
 #.import template > quality_utility { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
-#.import template > progression { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST
+#.import template > progression_utility { CLASS = "Utility Flasks", ITEM_LEVEL_BEST = ITEM_LEVEL_UTILITY_FLASK_BEST

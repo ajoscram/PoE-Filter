@@ -47,4 +47,64 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 #.import template > influenced { BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
 #.import < armour > template > memory_strands { BASES_BEST = BASES_SHIELD_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
 #.import < armour > template > exceptional_base { BASES_EXCEPTIONAL = BASES_SHIELD_EXCEPTIONAL, ITEM_LEVEL_BEST = ITEM_LEVEL_SHIELD_BEST
-#.import < armour > template > best_base { BASES_BEST = BASES_QUIVER_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_QUIVER_BEST
+
+# Progression
+
+Show
+    BaseType == BASES_SHIELD_BEST
+    ItemLevel >= ITEM_LEVEL_SHIELD_BEST
+    BaseDefencePercentile == 100
+    #.import < _util -> craftable
+    #.import < armour > _util -> multi_t2
+
+Show #.strict STRICTNESS_STRICT .if Show
+    BaseType == BASES_SHIELD_BEST
+    ItemLevel >= ITEM_LEVEL_SHIELD_BEST
+    #.import < _util -> craftable
+    #.import < armour > _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASES_SHIELD_BEST
+    Rarity == Rare
+    
+Show
+    Class == "Shields"
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_WHITE_MAPS_START
+        DropLevel >= LEVEL_ACT_10_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_10_START
+        DropLevel >= LEVEL_ACT_9_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_9_START
+        DropLevel >= LEVEL_ACT_8_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_8_START
+        DropLevel >= LEVEL_ACT_7_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_7_START
+        DropLevel >= LEVEL_ACT_6_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_6_START
+        DropLevel >= LEVEL_ACT_5_START
+    #.multi
+        Rarity == Rare
+        AreaLevel < LEVEL_ACT_5_START
+        DropLevel >= LEVEL_ACT_4_START
+    #.multi
+        Rarity == Magic Rare
+        AreaLevel < LEVEL_ACT_4_START
+        DropLevel >= LEVEL_ACT_3_START
+    #.multi
+        Rarity == Magic Rare
+        AreaLevel < LEVEL_ACT_3_START
+        DropLevel >= LEVEL_ACT_2_START
+    #.multi
+        Rarity == Magic Rare
+        AreaLevel < LEVEL_ACT_2_START

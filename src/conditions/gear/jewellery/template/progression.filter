@@ -1,67 +1,162 @@
 # Progression - Rare
 
+#.# Exceptional
+
 Show #.if Show
+    BaseType == BASES_EXCEPTIONAL
     Rarity == Rare
-    #.import STYLE | jewellery > rare -> t3
+    #.import < < _util -> craftable
     #.multi
-        BaseType == BASES_EXCEPTIONAL
         ItemLevel >= ITEM_LEVEL_BEST
+        #.import < < _util -> craftable
+        #.import STYLE | jewellery > rare -> t2
     #.multi .strict STRICTNESS_STRICT
-        BaseType == BASES_GRAND
+        #.import STYLE | jewellery > rare -> t3
+
+#.# Grand
+
+Show #.if Show
+    BaseType == BASES_GRAND
+    Rarity == Rare
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_STRICT
         ItemLevel >= ITEM_LEVEL_BEST
-    #.multi .strict STRICTNESS_STRICT
-        BaseType == BASES_EXCEPTIONAL
+        #.import < < _util -> craftable
+        #.import STYLE | jewellery > rare -> t2
     #.multi .strict STRICTNESS_LENIENT
-        BaseType == BASES_GRAND
+        #.import STYLE | jewellery > rare -> t3
+
+#.# Great
+
+Show #.if Show
+    BaseType == BASES_GREAT
+    Rarity == Rare
     #.multi .strict STRICTNESS_LENIENT
-        BaseType == BASES_GREAT
-        AreaLevel < LEVEL_MAPS_T16
+        ItemLevel >= ITEM_LEVEL_BEST
+        #.import < < _util -> craftable
+        #.import STYLE | jewellery > rare -> t3
     #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_LESSER
+        #.import STYLE | jewellery > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+
+#.# Lesser
+
+Show #.if Show
+    BaseType == BASES_LESSER
+    Rarity == Rare
+    #.multi .strict STRICTNESS_BASE
         AreaLevel < LEVEL_WHITE_MAPS_START
+        #.import STYLE | jewellery > rare -> t3
+    #.multi .strict STRICTNESS_BASE
 
 # Progression - Magic
 
+#.# Exceptional
+
 Show #.if Show
+    BaseType == BASES_EXCEPTIONAL
     Rarity == Magic
     #.import < < _util -> craftable
-    #.import STYLE | jewellery > magic -> t3
     #.multi
-        BaseType == BASES_EXCEPTIONAL
         ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > magic -> t2
     #.multi .strict STRICTNESS_STRICT
-        BaseType == BASES_GRAND
+        #.import STYLE | jewellery > magic -> t3
+
+#.# Grand
+
+Show #.if Show
+    BaseType == BASES_GRAND
+    Rarity == Magic
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_STRICT
         ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > magic -> t2
+    #.multi .strict STRICTNESS_BASE
+        #.import STYLE | jewellery > magic -> t3
     #.multi .strict STRICTNESS_LENIENT
-        BaseType == BASES_EXCEPTIONAL
+
+#.# Great
+
+Show #.if Show
+    BaseType == BASES_GREAT
+    Rarity == Magic
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > magic -> t3
     #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_GRAND
+        AreaLevel < LEVEL_ACT_9_START
+        AreaLevel >= LEVEL_ACT_6_START
     #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_GREAT
-        AreaLevel < LEVEL_WHITE_MAPS_START
-    #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_LESSER
         AreaLevel < LEVEL_ACT_6_START
+        #.import STYLE | jewellery > magic -> t3
+
+#.# Lesser
+
+Show #.if Show
+    BaseType == BASES_LESSER
+    Rarity == Magic
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_BASE
+        AreaLevel < LEVEL_ACT_6_START
+        AreaLevel >= LEVEL_ACT_3_START
+    #.multi .strict STRICTNESS_BASE
+        AreaLevel < LEVEL_ACT_3_START
+        #.import STYLE | jewellery > magic -> t3
 
 # Progression - Normal
 
+#.# Exceptional
+
 Show #.if Show
+    BaseType == BASES_EXCEPTIONAL
     Rarity == Normal
     #.import < < _util -> craftable
-    #.import STYLE | jewellery > normal -> t3
     #.multi
-        BaseType == BASES_EXCEPTIONAL
         ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > normal -> t2
     #.multi .strict STRICTNESS_STRICT
-        BaseType == BASES_GRAND
+        #.import STYLE | jewellery > normal -> t3
+
+#.# Grand
+
+Show #.if Show
+    BaseType == BASES_GRAND
+    Rarity == Normal
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_STRICT
         ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > normal -> t2
+    #.multi .strict STRICTNESS_BASE
+        #.import STYLE | jewellery > normal -> t3
     #.multi .strict STRICTNESS_LENIENT
-        BaseType == BASES_EXCEPTIONAL
+
+#.# Great
+
+Show #.if Show
+    BaseType == BASES_GREAT
+    Rarity == Normal
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_BEST
+        #.import STYLE | jewellery > normal -> t3
     #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_GRAND
+        AreaLevel < LEVEL_ACT_9_START
+        AreaLevel >= LEVEL_ACT_6_START
     #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_GREAT
-        AreaLevel < LEVEL_WHITE_MAPS_START
-    #.multi .strict STRICTNESS_BASE
-        BaseType == BASES_LESSER
         AreaLevel < LEVEL_ACT_6_START
+        #.import STYLE | jewellery > normal -> t3
+
+#.# Lesser
+
+Show #.if Show
+    BaseType == BASES_LESSER
+    Rarity == Normal
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_BASE
+        AreaLevel < LEVEL_ACT_6_START
+        AreaLevel >= LEVEL_ACT_3_START
+    #.multi .strict STRICTNESS_BASE
+        AreaLevel < LEVEL_ACT_3_START
+        #.import STYLE | jewellery > normal -> t3

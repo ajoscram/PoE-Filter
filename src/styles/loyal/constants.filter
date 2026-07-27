@@ -29,18 +29,4 @@
 #.alias EFFECT_RARE     = Yellow
 #.alias EFFECT_UNIQUE   = Brown
 
-#.# Icons
-
-#.alias ICON_ERROR     = Star
-#.alias ICON_QUEST     = Star
-#.alias ICON_CURRENCY  = Circle
-#.alias ICON_GEM       = Diamond
-#.alias ICON_MAP       = Hexagon
-#.alias ICON_DIV_CARD  = Square
-#.alias ICON_ARMOUR    = UpsideDownHouse
-#.alias ICON_WEAPON    = Kite
-#.alias ICON_FLASK     = Raindrop
-#.alias ICON_JEWELLERY = Cross
-#.alias ICON_EQUIPMENT = Triangle
-
 #.import < constants

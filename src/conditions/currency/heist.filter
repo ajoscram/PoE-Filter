@@ -19,7 +19,10 @@ Show #.if Show
         StackSize >= 500
 	    #.import STYLE | currency -> t4
     #.multi .strict STRICTNESS_BASE
+        StackSize >= 250
 	    #.import STYLE | currency -> t4
+    #.multi .strict STRICTNESS_BASE
+	    #.import STYLE | currency -> t5
 
 Hide
 	BaseType == "Rogue's Marker"

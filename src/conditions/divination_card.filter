@@ -20,6 +20,7 @@ Show
 
 Hide #.econ div 0 2
 	BaseType == "Divine Shard" "The Metalsmith's Gift" "The Price of Protection" "More is Never Enough" "The Tireless Extractor" "Lingering Remnants" "Mawr Blaidd" "The Wrath"
+	#.import STYLE | miscellaneous -> hidden
 	#.import STYLE | divination_card -> t5
 
 # Catchall

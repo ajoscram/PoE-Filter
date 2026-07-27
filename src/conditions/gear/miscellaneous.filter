@@ -179,48 +179,7 @@ Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_FLASKS
     Quality >= 10
 
-# Progression
-
-Show #.strict STRICTNESS_BASE .if Show
-    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_PROGRESSABLE_FLASKS
-    #.multi
-        AreaLevel <= LEVEL_MAPS_T16
-        DropLevel >= LEVEL_RED_MAPS_START
-    #.multi
-        AreaLevel < LEVEL_RED_MAPS_START
-        DropLevel >= LEVEL_YELLOW_MAPS_START
-    #.multi
-        AreaLevel < LEVEL_YELLOW_MAPS_START
-        DropLevel >= LEVEL_WHITE_MAPS_START
-    #.multi
-        AreaLevel < LEVEL_WHITE_MAPS_START
-        DropLevel >= LEVEL_ACT_10_START
-    #.multi
-        AreaLevel < LEVEL_ACT_10_START
-        DropLevel >= LEVEL_ACT_9_START
-    #.multi
-        AreaLevel < LEVEL_ACT_9_START
-        DropLevel >= LEVEL_ACT_8_START
-    #.multi
-        AreaLevel < LEVEL_ACT_8_START
-        DropLevel >= LEVEL_ACT_7_START
-    #.multi
-        AreaLevel < LEVEL_ACT_7_START
-        DropLevel >= LEVEL_ACT_6_START
-    #.multi
-        AreaLevel < LEVEL_ACT_6_START
-        DropLevel >= LEVEL_ACT_5_START
-    #.multi
-        AreaLevel < LEVEL_ACT_5_START
-        DropLevel >= LEVEL_ACT_4_START
-    #.multi
-        AreaLevel < LEVEL_ACT_4_START
-        DropLevel >= LEVEL_ACT_3_START
-    #.multi
-        AreaLevel < LEVEL_ACT_3_START
-        DropLevel >= LEVEL_ACT_2_START
-    #.multi
-        AreaLevel < LEVEL_ACT_2_START
+# First Zone
 
 Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS

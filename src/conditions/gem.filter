@@ -75,7 +75,7 @@ Show
 	GemLevel = 20
 	#.import STYLE | gem -> t4
 
-Show #.strict STRICTNESS_STRICT
+Show #.strict STRICTNESS_STRICT .if Show
 	Class == GEM_CLASSES
 	Quality >= 5
 	#.import STYLE | gem -> t4
@@ -85,20 +85,21 @@ Show #.strict STRICTNESS_LENIENT
 	Quality > 0
 	#.import STYLE | gem -> t4
 
-Show #.strict STRICTNESS_LENIENT
+Show #.strict STRICTNESS_LENIENT .if Show
 	BaseType == "Portal"
-	#.import STYLE | gem -> t5
+	#.import STYLE | gem -> t4
 
 Show
 	Class == GEM_CLASSES
 	AreaLevel = LEVEL_ACT_1_START
-	#.import STYLE | gem -> t5
+	#.import STYLE | gem -> t4
 
-Show #.strict STRICTNESS_LENIENT
+Show #.strict STRICTNESS_LENIENT .if Show
 	Class == GEM_CLASSES
 	AreaLevel < LEVEL_ACT_6_START
-	#.import STYLE | gem -> t5
+	#.import STYLE | gem -> t4
 
 Hide
 	Class == GEM_CLASSES
+	#.import STYLE | miscellaneous -> hidden
 	#.import STYLE | gem -> t5

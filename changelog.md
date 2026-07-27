@@ -1,5 +1,18 @@
 # Curse of the Allflame
 
+## 3.29b
+### General Changes
+* **Progression of all base types** are now performed **per item class** as opposed having a single set of rules for all gear. As a result most normal and magic items are now hidden. Socket logic is unnaffected by this change.
+* Stacks of under 250 **Rogue's Markers** are now less visible.
+* Shown **flasks with 10 or more quality** are now shown more visibly.
+* **Chromatic recipe items** are now shown more visibly.
+* **3-links** are now less visible from act 3 onwards, but still shown until the start of act 6.
+* **4-links** are now less visible from act 9 onwards, but still shown until maps.
+* **4-links** are now more visible during the campaign.
+* Fixed a bug where **divination cards** and **gems** were not being shrunk when hidden.
+* Fixed a bug where **utility flasks with quality higher-than or equal to 20** were not being shown.
+* **Amulet, ring and belt base-tiering** was updated to better match the rarities of the items involved. Rare items in the more common bases are now shown during maps to compensate this change.
+
 ## 3.29
 ### League Changes
 * Added the new **Ducat** currency items.

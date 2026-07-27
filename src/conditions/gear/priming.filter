@@ -91,20 +91,38 @@ Show
     CorruptedMods >= 1
     #.import jewellery > _util -> multi_t2_full
 
+# Quality
+
+Show
+    Continue
+    Class == CLASSES_FLASKS
+    Quality > 10
+    #.import flask > _util -> multi_t3_full
+
 # 3 Links
+
+Show
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    SocketGroup RGB
+    #.import armour > _util -> multi_t3_full
+
+Show
+    Class == CLASSES_WEAPONS
+    SocketGroup RGB
+    #.import weapon > _util -> multi_t3_full
 
 Show
     Continue
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS
     LinkedSockets == 3
-    AreaLevel < LEVEL_ACT_6_START
+    AreaLevel < LEVEL_ACT_3_START
     #.import armour > _util -> multi_t3_full
 
 Show
     Continue
     Class == CLASSES_WEAPONS
     LinkedSockets == 3
-    AreaLevel < LEVEL_ACT_6_START
+    AreaLevel < LEVEL_ACT_3_START
     #.import weapon > _util -> multi_t3_full
 
 # 4 Links
@@ -113,28 +131,28 @@ Show
     Continue
     Class == CLASSES_ARMOUR
     LinkedSockets == 4
-    AreaLevel < LEVEL_WHITE_MAPS_START
+    AreaLevel < LEVEL_ACT_9_START
     #.import armour > _util -> multi_t3_full
 
 Show
     Continue
     Class == CLASSES_6_SOCKET_WEAPON
     LinkedSockets == 4
-    AreaLevel < LEVEL_WHITE_MAPS_START
+    AreaLevel < LEVEL_ACT_9_START
     #.import weapon > _util -> multi_t3_full
 
-# 5+ Links
+# 5 Links
 
 Show
     Continue
     Class == CLASSES_6_SOCKET_ARMOUR
-    LinkedSockets >= 5
+    LinkedSockets == 5
     #.import armour > _util -> multi_t3_full
 
 Show
     Continue
     Class == CLASSES_6_SOCKET_WEAPON
-    LinkedSockets >= 5
+    LinkedSockets == 5
     #.import weapon > _util -> multi_t3_full
 
 # 6 Sockets
@@ -150,6 +168,36 @@ Show
     Class == CLASSES_6_SOCKET_WEAPON
     Sockets == 6
     #.import weapon > _util -> multi_t3_full
+
+# 5 Links (campaign)
+
+Show #.strict STRICTNESS_BASE .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_ARMOUR
+    LinkedSockets == 5
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import armour > _util -> multi_t2_full
+
+Show #.strict STRICTNESS_BASE .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    LinkedSockets == 5
+    AreaLevel < LEVEL_WHITE_MAPS_START
+    #.import weapon > _util -> multi_t2_full
+
+# 6 Links
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_ARMOUR
+    LinkedSockets == 6
+    #.import armour > _util -> multi_t2_full
+
+Show #.strict STRICTNESS_STRICT .if Show
+    Continue
+    Class == CLASSES_6_SOCKET_WEAPON
+    LinkedSockets == 6
+    #.import weapon > _util -> multi_t2_full
 
 # Elevated
 
@@ -196,17 +244,3 @@ Show
     HasExplicitMod == MODS_VEILED_NAMED
     FracturedItem True
     #.import jewellery > _util -> multi_t2
-
-# 6 Links
-
-Show #.strict STRICTNESS_STRICT .if Show
-    Continue
-    Class == CLASSES_6_SOCKET_ARMOUR
-    LinkedSockets == 6
-    #.import armour > _util -> multi_t2_full
-
-Show #.strict STRICTNESS_STRICT .if Show
-    Continue
-    Class == CLASSES_6_SOCKET_WEAPON
-    LinkedSockets == 6
-    #.import weapon > _util -> multi_t2_full

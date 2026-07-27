@@ -96,9 +96,19 @@ Show #.strict STRICTNESS_BASE .if Show
     #.multi
         HasExplicitMod ==2 MODS_BASE_JEWEL_LESSER
 
-# Miscellaneous
+# Progression
 
-Show #.strict STRICTNESS_BASE .if Show
+Show #.if Show
     BaseType == BASE_TYPES_BASE_JEWEL
-    #.import < _util -> craftable
+    AreaLevel >= LEVEL_WHITE_MAPS_START
+    #.multi .strict STRICTNESS_LENIENT
+        Rarity == Rare
+        #.import STYLE | jewellery > rare -> t3
+    #.multi .strict STRICTNESS_BASE
+        Rarity == Magic
+        #.import STYLE | jewellery > magic -> t3
+
+Show
+    BaseType == BASE_TYPES_BASE_JEWEL
+    AreaLevel < LEVEL_WHITE_MAPS_START
     #.import < jewellery > _util -> multi_t3

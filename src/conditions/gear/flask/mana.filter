@@ -4,12 +4,12 @@
 
 #.alias BASE_MANA_FLASK_BEST       = "Eternal Mana Flask"
 
-#.alias MODS_MANA_FLASK_GRAND          = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"
-#.alias MODS_MANA_FLASK_GREATER        = "of Restraint" "of Allaying" "of Liberation" "of Insulation" "of Quelling" "of Entropy" "of the Cure"
-#.alias MODS_MANA_FLASK_LESSER         = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
+#.alias MODS_MANA_FLASK_GRAND   = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"
+#.alias MODS_MANA_FLASK_GREATER = "of Restraint" "of Allaying" "of Liberation" "of Insulation" "of Quelling" "of Entropy" "of the Cure"
+#.alias MODS_MANA_FLASK_LESSER  = "of Occlusion" "of Alleviation" "of Freedom" "of Grounding" "of Quashing" "of Thermodynamics" "of the Remedy"
 
 #.import template > unique { CLASS = "Mana Flasks"
 #.import template > magic_life_mana { BASES_BEST = BASE_MANA_FLASK_BEST, MODS_GRAND = MODS_MANA_FLASK_GRAND, MODS_GREATER = MODS_MANA_FLASK_GREATER, MODS_LESSER = MODS_MANA_FLASK_LESSER
 #.import template > fractured { BASES_BEST = BASE_MANA_FLASK_BEST, MODS_GRAND = MODS_MANA_FLASK_GRAND, MODS_GREATER = MODS_MANA_FLASK_GREATER
 #.import template > quality_life_mana { BASES_BEST = BASE_MANA_FLASK_BEST
-#.import template > best_base { BASES_BEST = BASE_MANA_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_MANA_FLASK_BEST
+#.import template > progression_life_mana { CLASS = "Mana Flasks", BASES_BEST = BASE_MANA_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_MANA_FLASK_BEST

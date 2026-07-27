@@ -3,10 +3,10 @@
 #.alias ITEM_LEVEL_BELT_BEST   = 86
 
 #.alias BASES_BELT_EXQUISITE   = "Micro-Distillery Belt" "Mechanical Belt" "Cord Belt"
-#.alias BASES_BELT_EXCEPTIONAL = "Stygian Vise" "Crystal Belt"
-#.alias BASES_BELT_GRAND       = "Leather Belt" "Vanguard Belt"
-#.alias BASES_BELT_GREAT       = "Chain Belt" "Rustic Sash" "Heavy Belt"
-#.alias BASES_BELT_LESSER      = "Cloth Belt" "Studded Belt"
+#.alias BASES_BELT_EXCEPTIONAL = "Stygian Vise"
+#.alias BASES_BELT_GRAND       = "Vanguard Belt" "Crystal Belt"
+#.alias BASES_BELT_GREAT       = "Leather Belt" "Rustic Sash" "Heavy Belt"
+#.alias BASES_BELT_LESSER      = "Cloth Belt" "Studded Belt" "Chain Belt"
 
 #.alias MODS_BELT_EXCEPTIONAL = "Guatelitzi's" "Subterranean" "Sentinel's" "Infamous" "of the Underground" "of Guatelitzi" "of Infamy"
 #.alias MODS_BELT_GRAND       = "Fecund" "Blue" "Dazzling" "Enveloped" "Devastating" "Magnifying" "of the Godslayer" "of Recuperation" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Overflowing" "of Sipping" "of Reveling"

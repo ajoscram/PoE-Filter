@@ -1,17 +1,18 @@
-# Best Base
+# Progression
 
-Show #.strict STRICTNESS_LENIENT .if Show
-    BaseType == BASES_BEST
+Show #.strict STRICTNESS_STRICT .if Show
+    Class == CLASS
     ItemLevel >= ITEM_LEVEL_BEST
-    #.import < < _util -> craftable
     #.import < _util -> multi_t3
-
+    
 Show #.strict STRICTNESS_BASE .if Show
-    BaseType == BASES_BEST
+    Class == CLASS
     AreaLevel < LEVEL_YELLOW_MAPS_START
+    AreaLevel >= LEVEL_WHITE_MAPS_START
     #.import < < _util -> craftable
 
 Show
-    BaseType == BASES_BEST
+    Class == CLASS
     AreaLevel < LEVEL_WHITE_MAPS_START
     #.import < < _util -> craftable
+    #.import < _util -> multi_t3
