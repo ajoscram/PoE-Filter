@@ -5,9 +5,10 @@
 * Added a new filter style! **Beam** is inspired by the game's neon-esque beam effect colors.
 * **Progression of all base types** are now performed **per item class** as opposed having a single set of rules for all gear. As a result most normal and magic items are now hidden. Socket logic is unnaffected by this change.
 * All of **Loyal's map fragment tiers are now red colored**, inspired by the in-game's red tint for fire damage.
-* Stacks of under 250 **Rogue's Markers** are now less visible.
-* Shown **flasks with 10 or more quality** are now shown more visibly.
 * **Chromatic recipe items** are now shown more visibly.
+* **Flasks with 10 or more quality** are now shown more visibly.
+* **Gems with 10 or more quality** are now shown more visibly.
+* Stacks of under 250 **Rogue's Markers** are now less visible.
 * **3-links** are now less visible from act 3 onwards, but still shown until the start of act 6.
 * **4-links** are now less visible from act 9 onwards, but still shown until maps.
 * **4-links** are now more visible during the campaign.

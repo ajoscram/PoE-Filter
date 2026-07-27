@@ -7,15 +7,7 @@ https://www.filterblade.xyz
 
 # 3.29 To-Do
 * Create a `update-economy` script that updates all filter files that have `.econ`.
-* `corpse.filter` needs to be revisited mid-league to check up on real prices.
-* `splinter.filter` needs to be revisited mid-league to check up on real prices.
-* `enshrouding_crystal.filter` needs to be revisited mid-league to check up on real prices.
-* `ducat.filter` needs to be revisited mid-league to check up on real prices.
-* `sulphur.filter` needs to be revisited mid-league to check up on real tiering. Maybe cluster with gold?
-* `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
-* Elaborate `wombgift.filter`.
-* Elaborate `vestigial.filter`.
-* Elaborate `chart.filter`.
+
 * Synth items were removed. Gotta clean those gear sections up and add it as a legacy base type.
 * Modpool changes need implementing:
     * Added a new Modifier that can roll on Jewels, providing 10-15% increased Mana Cost Efficiency.
@@ -29,11 +21,22 @@ https://www.filterblade.xyz
     * The top tier increased Cast Speed Modifiers on caster weapons now have the same weightings as the lower tier modifiers (previously these had lower weightings).
     * The Demon's Horn, Opal Wand and Tornado Wand Base Types now have increased Spell Damage Implicit Modifiers, instead of added Damage. Existing items are not affected by this change.
 
+* Figure out a re-organization of the "gem" section.
+
+* `corpse.filter` needs to be revisited mid-league to check up on real prices.
+* `splinter.filter` needs to be revisited mid-league to check up on real prices.
+* `enshrouding_crystal.filter` needs to be revisited mid-league to check up on real prices.
+* `ducat.filter` needs to be revisited mid-league to check up on real prices.
+* `sulphur.filter` needs to be revisited mid-league to check up on real tiering. Maybe cluster with gold?
+* `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
+* Elaborate `wombgift.filter`.
+* Elaborate `vestigial.filter`.
+* Elaborate `chart.filter`.
+
 # To-Do
 
 * Update README.md with a summary of current filter contents.
 * Elaborate `idols.filter`.
-* Figure out a re-organization of the "gem" section.
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Consider hiding some scarabs at the bottom prices.
 * Add a wiki page for this project.

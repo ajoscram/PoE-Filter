@@ -77,8 +77,8 @@ Show
 
 Show #.strict STRICTNESS_STRICT .if Show
 	Class == GEM_CLASSES
-	Quality >= 5
-	#.import STYLE | gem -> t4
+	Quality >= 10
+	#.import STYLE | gem -> t3
 
 Show #.strict STRICTNESS_LENIENT
 	Class == GEM_CLASSES
