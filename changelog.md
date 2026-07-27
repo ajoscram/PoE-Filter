@@ -1,5 +1,9 @@
 # Curse of the Allflame
 
+## 3.29c
+### League Changes
+### General Changes
+
 ## 3.29b
 ### General Changes
 * Added a new filter style! **Beam** is inspired by the game's neon-esque beam effect colors.
