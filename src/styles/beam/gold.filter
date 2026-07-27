@@ -1,0 +1,15 @@
+Show #.name t1
+    #.import template > miscellaneous -> t2 { COLOR_TEMPLATE = COLOR_CREAM, EFFECT_TEMPLATE = Yellow, ICON_TEMPLATE = ICON_CURRENCY
+    SetFontSize 30
+
+Show #.name t2
+    #.import template > miscellaneous -> t3 { COLOR_TEMPLATE = COLOR_CREAM, EFFECT_TEMPLATE = Yellow, ICON_TEMPLATE = ICON_CURRENCY
+    SetFontSize 30
+
+Show #.name t3
+    #.import template > miscellaneous -> t4 { COLOR_TEMPLATE = COLOR_CREAM, ICON_TEMPLATE = ICON_CURRENCY
+    SetFontSize 30
+
+Show #.name t4
+    #.import template > miscellaneous -> t5 { COLOR_TEMPLATE = COLOR_CREAM
+    SetFontSize 30

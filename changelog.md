@@ -2,6 +2,7 @@
 
 ## 3.29b
 ### General Changes
+* Added a new filter style! **Beam** is inspired by the game's neon-esque beam effect colors.
 * **Progression of all base types** are now performed **per item class** as opposed having a single set of rules for all gear. As a result most normal and magic items are now hidden. Socket logic is unnaffected by this change.
 * Stacks of under 250 **Rogue's Markers** are now less visible.
 * Shown **flasks with 10 or more quality** are now shown more visibly.

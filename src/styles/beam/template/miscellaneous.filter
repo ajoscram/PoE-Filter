@@ -1,0 +1,38 @@
+Show #.name t1
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_TEMPLATE OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
+    MinimapIcon ICON_SIZE_LARGE EFFECT_TEMPLATE ICON_TEMPLATE
+    PlayEffect EFFECT_TEMPLATE
+
+Show #.name t2
+    SetTextColor COLOR_TEMPLATE OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_TEMPLATE OPACITY_HIGH
+    MinimapIcon ICON_SIZE_MEDIUM EFFECT_TEMPLATE ICON_TEMPLATE
+    PlayEffect EFFECT_TEMPLATE
+
+Show #.name t3
+    SetTextColor COLOR_TEMPLATE OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_TEMPLATE OPACITY_LOW
+    MinimapIcon ICON_SIZE_SMALL EFFECT_TEMPLATE ICON_TEMPLATE
+    PlayEffect EFFECT_TEMPLATE Temp
+
+Show #.name t4
+    SetTextColor COLOR_TEMPLATE OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_BLACK OPACITY_LOW
+
+Show #.name t5
+    SetTextColor COLOR_TEMPLATE OPACITY_MID
+    SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBorderColor COLOR_BLACK OPACITY_NONE
+
+Show #.name catchall
+    SetTextColor COLOR_PURPLE OPACITY_HIGH
+    SetBackgroundColor COLOR_PINK OPACITY_HIGH
+    SetBorderColor COLOR_PURPLE OPACITY_HIGH
+    MinimapIcon ICON_SIZE_LARGE Pink ICON_TEMPLATE
+    PlayEffect Pink
+    PlayAlertSoundPositional SOUND_ERROR VOLUME_LOUD

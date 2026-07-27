@@ -1,0 +1,21 @@
+Show #.name t1
+    #.import template > miscellaneous -> t1 { COLOR_TEMPLATE = COLOR_RED, EFFECT_TEMPLATE = Red, ICON_TEMPLATE = ICON_MAP
+	PlayAlertSoundPositional SOUND_SHORT_T2 VOLUME_LOUD
+
+Show #.name t2
+    #.import template > miscellaneous -> t2 { COLOR_TEMPLATE = COLOR_RED, EFFECT_TEMPLATE = Red, ICON_TEMPLATE = ICON_MAP
+	PlayAlertSoundPositional SOUND_SHORT_T3 VOLUME_MID
+
+Show #.name t3
+    #.import template > miscellaneous -> t3 { COLOR_TEMPLATE = COLOR_RED, EFFECT_TEMPLATE = Red, ICON_TEMPLATE = ICON_MAP
+	PlayAlertSoundPositional SOUND_SHORT_T4 VOLUME_LOW
+
+Show #.name t4
+    #.import template > miscellaneous -> t4 { COLOR_TEMPLATE = COLOR_RED, ICON_TEMPLATE = ICON_MAP
+	MinimapIcon ICON_SIZE_SMALL Red ICON_MAP
+
+Show #.name t5
+    #.import template > miscellaneous -> t5 { COLOR_TEMPLATE = COLOR_RED
+
+Show #.name catchall
+	#.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_MAP

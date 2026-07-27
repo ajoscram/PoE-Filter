@@ -1,0 +1,19 @@
+Show #.name shown
+    SetFontSize 36
+
+Show #.name hidden
+    SetFontSize 18
+    PlayEffect None
+    PlayAlertSoundPositional None
+    DisableDropSound
+    MinimapIcon ICON_SIZE_DISABLED
+
+Show #.name quest
+	SetTextColor COLOR_GREEN OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	SetBorderColor COLOR_GREEN OPACITY_HIGH
+	PlayEffect Green
+	MinimapIcon ICON_SIZE_LARGE Green ICON_QUEST
+
+Show #.name catchall
+    #.import template > miscellaneous -> catchall { ICON_TEMPLATE = ICON_ERROR

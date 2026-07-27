@@ -1,0 +1,17 @@
+Show #.name t1
+    #.import miscellaneous -> t1 { COLOR_TEMPLATE = COLOR_WHITE, EFFECT_TEMPLATE = White
+    PlayAlertSoundPositional SOUND_SHORT_T1 VOLUME_LOUD
+
+Show #.name t2
+    #.import miscellaneous -> t2 { COLOR_TEMPLATE = COLOR_WHITE, EFFECT_TEMPLATE = White
+    PlayAlertSoundPositional SOUND_LONG_T2 VOLUME_LOUD
+
+Show #.name t3
+    #.import miscellaneous -> t3 { COLOR_TEMPLATE = COLOR_WHITE, EFFECT_TEMPLATE = White
+    PlayAlertSoundPositional SOUND_LONG_T3 VOLUME_LOW
+
+Show #.name t4
+    #.import miscellaneous -> t4 { COLOR_TEMPLATE = COLOR_WHITE
+
+Show #.name t5
+    #.import miscellaneous -> t5 { COLOR_TEMPLATE = COLOR_WHITE
