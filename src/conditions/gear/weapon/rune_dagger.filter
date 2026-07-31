@@ -1,12 +1,12 @@
 #.subsection Rune Dagger
 
-#.alias BASES_DAGGER_RUNE_EXCEPTIONAL    = "Infernal Blade"
-#.alias BASES_DAGGER_RUNE_BEST           = "Demon Dagger" "Imperial Skean" "Platinum Kris" "Ezomyte Dagger"
+#.alias BASES_DAGGER_RUNE_EXCEPTIONAL = "Infernal Blade"
+#.alias BASES_DAGGER_RUNE_BEST        = "Demon Dagger" "Imperial Skean" "Platinum Kris" "Ezomyte Dagger"
 
-#.alias MODS_DAGGER_RUNE_EXCEPTIONAL     = "Magister's" "Runic" "Lich's" "Glyphic" "Topotante's" "Tacati's" "Matatl's" "of Tacati" "of Matatl" "of Heartstopping" "of the Gelid" "of Disintegrating"
-#.alias MODS_DAGGER_RUNE_GRAND           = "Zaffre" "Incanter's" "Archmage's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Wind" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of Atrophying"
-#.alias MODS_DAGGER_RUNE_GREATER         = "Blue" "Occultist's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Phantom" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of the Marksman" "of the Boreal" "of Deteriorating"
-#.alias MODS_DAGGER_RUNE_LESSER          = "Mazarine" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Jaguar" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of the Sniper" "of the Bleak" "of Wasting"
+#.alias MODS_DAGGER_RUNE_EXCEPTIONAL = "Magister's" "Runic" "Lich's" "Topotante's" "Tacati's" "Matatl's" "of Tacati" "of Matatl" "of Heartstopping" "of the Gelid" "of Disintegrating"
+#.alias MODS_DAGGER_RUNE_GRAND       = "Zaffre" "Glyphic" "Archmage's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Wind" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of Atrophying"
+#.alias MODS_DAGGER_RUNE_GREATER     = "Blue" "Incanter's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Phantom" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of the Marksman" "of the Boreal" "of Deteriorating"
+#.alias MODS_DAGGER_RUNE_LESSER      = "Mazarine" "Occultist's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Jaguar" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of the Sniper" "of the Bleak" "of Wasting"
 
 # Unique
 

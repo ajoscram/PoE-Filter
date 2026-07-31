@@ -1,12 +1,12 @@
 #.subsection Sceptre
 
-#.alias BASES_SCEPTRE_EXCEPTIONAL    = "Alternating Sceptre" "Stabilising Sceptre" "Oscillating Sceptre"
-#.alias BASES_SCEPTRE_BEST           = "Opal Sceptre" "Carnal Sceptre" "Sambar Sceptre" "Vaal Sceptre" "Void Sceptre"
+#.alias BASES_SCEPTRE_EXCEPTIONAL = "Alternating Sceptre" "Stabilising Sceptre" "Oscillating Sceptre"
+#.alias BASES_SCEPTRE_BEST        = "Opal Sceptre" "Carnal Sceptre" "Sambar Sceptre" "Vaal Sceptre" "Void Sceptre"
 
-#.alias MODS_SCEPTRE_EXCEPTIONAL     = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Tacati" "of Matatl" "of Citaqualotl"
-#.alias MODS_SCEPTRE_GRAND           = "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Lithomancer's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of the Ardent" "of the Boreal"
-#.alias MODS_SCEPTRE_GREATER         = "Blue" "Striking" "Crystalline" "Volcanic" "Occultist's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of the Fervid" "of the Bleak"
-#.alias MODS_SCEPTRE_LESSER          = "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of the Earnest" "of the Inclement"
+#.alias MODS_SCEPTRE_EXCEPTIONAL = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Lich's" "Magister's" "of the Fanatical" "of the Zealous" "of Heartstopping" "of the Gelid" "of Tacati" "of Matatl" "of Citaqualotl"
+#.alias MODS_SCEPTRE_GRAND       = "Zaffre" "Glyphic" "Smiting" "Crystalline" "Magmatic" "Archmage's" "Lithomancer's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of the Ardent" "of the Boreal"
+#.alias MODS_SCEPTRE_GREATER     = "Blue" "Striking" "Crystalline" "Volcanic" "Incanter's" "Mage's" "Weaponmaster's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of the Fervid" "of the Bleak"
+#.alias MODS_SCEPTRE_LESSER      = "Mazarine" "Coursing" "Snowy" "Cauterising" "Occultist's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of the Earnest" "of the Inclement"
 
 # Unique
 

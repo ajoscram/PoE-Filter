@@ -1,12 +1,12 @@
 #.subsection Warstaff
 
-#.alias BASES_STAFF_WAR_EXCEPTIONAL    = "Eventuality Rod" "Potentiality Rod"
-#.alias BASES_STAFF_WAR_BEST           = "Ezomyte Staff" "Maelström Staff" "Judgement Staff"
+#.alias BASES_STAFF_WAR_EXCEPTIONAL = "Eventuality Rod" "Potentiality Rod"
+#.alias BASES_STAFF_WAR_BEST        = "Ezomyte Staff" "Maelström Staff" "Judgement Staff"
 
-#.alias MODS_STAFF_WAR_EXCEPTIONAL     = "Infamous" "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "of Exsanguinating" "of the Fanatical" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "of Infamy"
-#.alias MODS_STAFF_WAR_GRAND           = "Zaffre" "Anarchist's" "Tempest King's" "Winterbringer's" "Lava Caller's" "of the Gods" "of the Genius" "of Celebration" "of Hemorrhaging" "of the Zealous" "of Atrophying"
-#.alias MODS_STAFF_WAR_GREATER         = "Blue" "Paragon's" "Weaponmaster's" "Nihilist's" "Thunder Lord's" "Frost Weaver's" "Flame Spinner's" "of the Titan" "of the Virtuoso" "of Infamy" "of Ashes" "of Glaciation" "of Arcing" "of the Ranger" "of Conflagration" "of Phlebotomising" "of the Ardent" "of Deteriorating"
-#.alias MODS_STAFF_WAR_LESSER          = "Mazarine" "Combatant's" "of the Leviathan" "of the Savant" "of Fame" "of Immolation" "of Floe" "of Discharge" "of the Marksman" "of Combustion" "of Spilling" "of the Fervid" "of Wasting"
+#.alias MODS_STAFF_WAR_EXCEPTIONAL = "Infamous" "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "of Exsanguinating" "of the Fanatical" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "of Infamy"
+#.alias MODS_STAFF_WAR_GRAND       = "Zaffre" "Anarchist's" "Tempest King's" "Winterbringer's" "Lava Caller's" "of the Gods" "of the Genius" "of Celebration" "of Hemorrhaging" "of the Zealous" "of Atrophying"
+#.alias MODS_STAFF_WAR_GREATER     = "Blue" "Paragon's" "Weaponmaster's" "Nihilist's" "Thunder Lord's" "Frost Weaver's" "Flame Spinner's" "of the Titan" "of the Virtuoso" "of Infamy" "of Ashes" "of Glaciation" "of Arcing" "of the Ranger" "of Conflagration" "of Phlebotomising" "of the Ardent" "of Deteriorating"
+#.alias MODS_STAFF_WAR_LESSER      = "Mazarine" "Combatant's" "of the Leviathan" "of the Savant" "of Fame" "of Immolation" "of Floe" "of Discharge" "of the Marksman" "of Combustion" "of Spilling" "of the Fervid" "of Wasting"
 
 # Unique
 

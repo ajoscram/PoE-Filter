@@ -1,12 +1,12 @@
 #.subsection One-hand Mace
 
-#.alias BASES_ONE_HAND_MACE_EXCEPTIONAL    = "Boom Mace"
-#.alias BASES_ONE_HAND_MACE_BEST           = "Gavel" "Behemoth Mace" "Nightmare Mace"
+#.alias BASES_ONE_HAND_MACE_EXCEPTIONAL = "Boom Mace"
+#.alias BASES_ONE_HAND_MACE_BEST        = "Gavel" "Behemoth Mace" "Nightmare Mace"
 
-#.alias MODS_ONE_HAND_MACE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_ONE_HAND_MACE_GRAND           = "of the Gods" "of Celebration" "of the Ranger"
-#.alias MODS_ONE_HAND_MACE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
-#.alias MODS_ONE_HAND_MACE_LESSER          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
+#.alias MODS_ONE_HAND_MACE_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_MACE_GRAND       = "of the Gods" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_MACE_GREATER     = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_MACE_LESSER      = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
 
 # Unique
 

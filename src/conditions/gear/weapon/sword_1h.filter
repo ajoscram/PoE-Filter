@@ -1,12 +1,12 @@
 #.subsection One-hand Sword
 
-#.alias BASES_ONE_HAND_SWORD_EXCEPTIONAL    = "Charan's Sword" "Anarchic Spiritblade" "Ghostflame Blade"
-#.alias BASES_ONE_HAND_SWORD_BEST           = "Legion Sword" "Eternal Sword" "Midnight Blade" "Tiger Hook"
+#.alias BASES_ONE_HAND_SWORD_EXCEPTIONAL = "Charan's Sword" "Anarchic Spiritblade" "Ghostflame Blade"
+#.alias BASES_ONE_HAND_SWORD_BEST        = "Legion Sword" "Eternal Sword" "Midnight Blade" "Tiger Hook"
 
-#.alias MODS_ONE_HAND_SWORD_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_ONE_HAND_SWORD_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
-#.alias MODS_ONE_HAND_SWORD_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias MODS_ONE_HAND_SWORD_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
+#.alias MODS_ONE_HAND_SWORD_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_SWORD_GRAND       = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_SWORD_GREATER     = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_SWORD_LESSER      = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
 
 # Unique
 

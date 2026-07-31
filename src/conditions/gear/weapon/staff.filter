@@ -1,12 +1,12 @@
 #.subsection Staff
 
-#.alias BASES_STAFF_EXCEPTIONAL    = "Battery Staff"
-#.alias BASES_STAFF_BEST           = "Eclipse Staff" "Imperial Staff" "Lathi"
+#.alias BASES_STAFF_EXCEPTIONAL = "Battery Staff"
+#.alias BASES_STAFF_BEST        = "Eclipse Staff" "Imperial Staff" "Lathi"
 
-#.alias MODS_STAFF_EXCEPTIONAL     = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Glyphic" "Lich's" "Magister's" "of Exsanguinating" "of the Fanatical" "of Heartstopping" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "Infamous" "of Infamy"
-#.alias MODS_STAFF_GRAND           = "Zaffre" "Smiting" "Crystalline" "Magmatic" "Incanter's" "Archmage's" "Tecton's" "Splintermind's" "Tempest Master's" "Winter Beckoner's" "Lava Conjurer's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of Hemorrhaging" "of the Zealous" "of the Gelid" "of Atrophying"
-#.alias MODS_STAFF_GREATER         = "Blue" "Striking" "Hailing" "Volcanic" "Occultist's" "Mage's" "Weaponmaster's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of Phlebotomising" "of the Ardent" "of the Boreal" "of Deteriorating"
-#.alias MODS_STAFF_LESSER          = "Mazarine" "Coursing" "Snowy" "Cauterising" "Professor's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of Spilling" "of the Fervid" "of the Bleak" "of Wasting"
+#.alias MODS_STAFF_EXCEPTIONAL = "Topotante's" "Matatl's" "Tacati's" "Citaqualotl's" "Magmancer's" "Ice Shaper's" "Typhoon Lord's" "Schismatist's" "Stone Singer's" "Esh's" "Ionising" "Tul's" "Cryomancer's" "Xoph's" "Pyroclastic" "Runic" "Lich's" "of Exsanguinating" "of the Fanatical" "of Heartstopping" "of Disintegrating" "of Tacati" "of Matatl" "of Citaqualotl" "Infamous" "of Infamy"
+#.alias MODS_STAFF_GRAND       = "Archon's" "Zaffre" "Smiting" "Crystalline" "Magmatic" "Glyphic" "Archmage's" "Tecton's" "Splintermind's" "Tempest Master's" "Winter Beckoner's" "Lava Conjurer's" "Electrocuting" "Entombing" "Cremating" "of the Gods" "of the Genius" "of Finesse" "of Celebration" "of Unmaking" "of the Ranger" "of Hemorrhaging" "of the Zealous" "of the Gelid" "of Atrophying" "of the Oracle" "of the Sectarian"
+#.alias MODS_STAFF_GREATER     = "Magister's" "Blue" "Striking" "Hailing" "Volcanic" "Incanter's" "Mage's" "Weaponmaster's" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "Discharging" "Polar" "Blasting" "of the Titan" "of the Virtuoso" "of Sortilege" "of Infamy" "of Ruin" "of Ashes" "of Glaciation" "of Arcing" "of the Marksman" "of Conflagration" "of Phlebotomising" "of the Ardent" "of the Boreal" "of Deteriorating" "of the Seer" "of the Idealogue"
+#.alias MODS_STAFF_LESSER      = "Mazarine" "Coursing" "Snowy" "Cauterising" "Occultist's" "Warlock's" "Combatant's" "Shocking" "Glaciated" "Incinerating" "of the Leviathan" "of the Savant" "of Prestidigitation" "of Fame" "of Calamity" "of Immolation" "of Floe" "of Discharge" "of the Sniper" "of Combustion" "of Spilling" "of the Fervid" "of the Bleak" "of Wasting" "of the Enlightened" "of the Devotee"
 
 # Unique
 

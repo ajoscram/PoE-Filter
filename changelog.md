@@ -11,6 +11,11 @@
 * **Gems with quality greater than 0 but lower than 5** are now only shown in the Base strictness.
 * **Area Level restrictions for basic currency on maps** have been removed. They are now filtered out by strictness instead.
 * **Support for Synthesised bases** has been made legacy because Synthesised items can no longer drop. Now all synthesised items are shown with a high degree of importance in all strictnesses.
+* Added the new **base jewel mod** that grants **increased Mana Cost Efficiency**.
+* **Opal Wand** and **Demon's Horn** are no longer considered "best bases" for Wands due to their explicits being changed.
+* **Spell damage mods on caster weapons** have been made **more strict** due to the mod weights being changed.
+* **New gem level mods** on staves have been added. Other tiers were made more strict due to the mod weights being changed.
+* **New block mods on staves** have been added.
 
 ## 3.29b
 ### General Changes

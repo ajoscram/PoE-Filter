@@ -1,12 +1,12 @@
 #.subsection Two-hand Sword
 
-#.alias BASES_TWO_HAND_SWORD_EXCEPTIONAL    = "Banishing Blade"
-#.alias BASES_TWO_HAND_SWORD_BEST           = "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Ezomyte Blade" "Reaver Sword"
+#.alias BASES_TWO_HAND_SWORD_EXCEPTIONAL = "Banishing Blade"
+#.alias BASES_TWO_HAND_SWORD_BEST        = "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Ezomyte Blade" "Reaver Sword"
 
-#.alias MODS_TWO_HAND_SWORD_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_TWO_HAND_SWORD_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
-#.alias MODS_TWO_HAND_SWORD_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias MODS_TWO_HAND_SWORD_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
+#.alias MODS_TWO_HAND_SWORD_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_TWO_HAND_SWORD_GRAND       = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_TWO_HAND_SWORD_GREATER     = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_TWO_HAND_SWORD_LESSER      = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper"
 
 # Unique
 

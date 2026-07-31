@@ -1,12 +1,12 @@
 #.subsection One-hand Axe
 
-#.alias BASES_ONE_HAND_AXE_EXCEPTIONAL    = "Psychotic Axe"
-#.alias BASES_ONE_HAND_AXE_BEST           = "Runic Hatchet" "Royal Axe" "Siege Axe"
+#.alias BASES_ONE_HAND_AXE_EXCEPTIONAL = "Psychotic Axe"
+#.alias BASES_ONE_HAND_AXE_BEST        = "Runic Hatchet" "Royal Axe" "Siege Axe"
 
-#.alias MODS_ONE_HAND_AXE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_ONE_HAND_AXE_GRAND           = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
-#.alias MODS_ONE_HAND_AXE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias MODS_ONE_HAND_AXE_LESSER          = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
+#.alias MODS_ONE_HAND_AXE_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_ONE_HAND_AXE_GRAND       = "of the Gods" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_ONE_HAND_AXE_GREATER     = "Paragon's" "Weaponmaster's" "of the Titan" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_ONE_HAND_AXE_LESSER      = "Combatant's" "of the Leviathan" "of the Jaguar" "of Fame" "of the Sniper" "of the Vampire"
 
 # Unique
 

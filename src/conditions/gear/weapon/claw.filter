@@ -1,12 +1,12 @@
 #.subsection Claw
 
-#.alias BASES_CLAW_EXCEPTIONAL    = "Void Fangs"
-#.alias BASES_CLAW_BEST           = "Gemini Claw" "Imperial Claw" "Vaal Claw"
+#.alias BASES_CLAW_EXCEPTIONAL = "Void Fangs"
+#.alias BASES_CLAW_BEST        = "Gemini Claw" "Imperial Claw" "Vaal Claw"
 
-#.alias MODS_CLAW_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_CLAW_GRAND           = "Zaffre" "of the Wind" "of Celebration" "of the Ranger"
-#.alias MODS_CLAW_GREATER         = "Blue" "Paragon's" "Weaponmaster's" "of the Phantom" "of Infamy" "of the Marksman"
-#.alias MODS_CLAW_LESSER          = "Mazarine" "Combatant's" "of the Jaguar" "of Fame" "of the Sniper"
+#.alias MODS_CLAW_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_CLAW_GRAND       = "Zaffre" "of the Wind" "of Celebration" "of the Ranger"
+#.alias MODS_CLAW_GREATER     = "Blue" "Paragon's" "Weaponmaster's" "of the Phantom" "of Infamy" "of the Marksman"
+#.alias MODS_CLAW_LESSER      = "Mazarine" "Combatant's" "of the Jaguar" "of Fame" "of the Sniper"
 
 # Unique
 

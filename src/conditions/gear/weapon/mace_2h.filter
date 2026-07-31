@@ -1,12 +1,12 @@
 #.subsection Two-hand Mace
 
-#.alias BASES_TWO_HAND_MACE_EXCEPTIONAL    = "Impact Force Propagator"
-#.alias BASES_TWO_HAND_MACE_BEST           = "Coronal Maul" "Imperial Maul" "Meatgrinder" "Terror Maul" "Piledriver"
+#.alias BASES_TWO_HAND_MACE_EXCEPTIONAL = "Impact Force Propagator"
+#.alias BASES_TWO_HAND_MACE_BEST        = "Coronal Maul" "Imperial Maul" "Meatgrinder" "Terror Maul" "Piledriver"
 
-#.alias MODS_TWO_HAND_MACE_EXCEPTIONAL     = "Topotante's" "Tacati's" "of Tacati"
-#.alias MODS_TWO_HAND_MACE_GRAND           = "of the Gods" "of Celebration" "of the Ranger"
-#.alias MODS_TWO_HAND_MACE_GREATER         = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
-#.alias MODS_TWO_HAND_MACE_LESSER          = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
+#.alias MODS_TWO_HAND_MACE_EXCEPTIONAL = "Topotante's" "Tacati's" "of Tacati"
+#.alias MODS_TWO_HAND_MACE_GRAND       = "of the Gods" "of Celebration" "of the Ranger"
+#.alias MODS_TWO_HAND_MACE_GREATER     = "Paragon's" "Weaponmaster's" "of the Titan" "of Infamy" "of the Marksman"
+#.alias MODS_TWO_HAND_MACE_LESSER      = "Combatant's" "of the Leviathan" "of Fame" "of the Sniper"
 
 # Unique
 
