@@ -35,12 +35,6 @@ Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS
     FracturedItem True
 
-# Synthesized
-
-Show
-    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS
-    SynthesisedItem True
-
 # Influenced
 
 Show
@@ -123,6 +117,8 @@ Show
         Scourged True
     #.multi
         AnyEnchantment True
+    #.multi
+        SynthesisedItem True
 
 # Corrupted
 

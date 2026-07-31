@@ -22,26 +22,6 @@ Show
     Class == CLASSES_FLASKS
     #.import flask > _util -> multi_t4_full
 
-# Synthesized
-
-Show
-    Continue
-    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
-    SynthesisedItem True
-    #.import armour > _util -> multi_t3
-
-Show
-    Continue
-    Class == CLASSES_WEAPONS
-    SynthesisedItem True
-    #.import weapon > _util -> multi_t3
-
-Show
-    Continue
-    Class == CLASSES_JEWELLERY CLASSES_JEWELS
-    SynthesisedItem True
-    #.import jewellery > _util -> multi_t3
-
 # Influenced
 
 Show
@@ -244,3 +224,17 @@ Show
     HasExplicitMod == MODS_VEILED_NAMED
     FracturedItem True
     #.import jewellery > _util -> multi_t2
+
+# Legacy
+
+Show
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
+    #.import jewellery > _util -> multi_t2
+    #.multi
+	    HasCruciblePassiveTree True
+    #.multi
+        Scourged True
+    #.multi
+        AnyEnchantment True
+    #.multi
+        SynthesisedItem True

@@ -3,13 +3,14 @@
 ## 3.29c
 ### League Changes
 ### General Changes
-* Fixed a plethora of visual bugs on every non-Base strictness caused by an error in filter generation.
+* Fixed a plethora of visual bugs on every non-Base strictnesses caused by an error in filter generation.
 * **Sundering Axe** is now considered a "best base" for Two Hand Axes.
 * **Gear with Memory Strands** is now more strictly filtered out across all strictnesses.
 * **Rare "best bases" with 25 or more memory strands** are now shown in the Base strictness.
 * **Normal and Magic armour "best bases"** are now shown up to Base strictness. **Rares** for the same base types are now shown up to Lenient.
 * **Gems with quality greater than 0 but lower than 5** are now only shown in the Base strictness.
 * **Area Level restrictions for basic currency on maps** have been removed. They are now filtered out by strictness instead.
+* **Support for Synthesised bases** has been made legacy because Synthesised items can no longer drop. Now all synthesised items are shown with a high degree of importance in all strictnesses.
 
 ## 3.29b
 ### General Changes

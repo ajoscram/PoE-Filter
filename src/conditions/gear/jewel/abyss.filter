@@ -115,19 +115,6 @@ Show #.strict STRICTNESS_LENIENT .if Show
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
-# Synthesized
-
-Show
-    Class == "Abyss Jewels"
-    SynthesisedItem True
-    ItemLevel >= ITEM_LEVEL_ABYSS_JEWEL_BEST
-    #.import < jewellery > _util -> multi_t1
-
-Show #.strict STRICTNESS_STRICT .if Show
-    Class == "Abyss Jewels"
-    SynthesisedItem True
-    #.import < jewellery > _util -> multi_t2
-
 # Progression
 
 Show

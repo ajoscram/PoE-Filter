@@ -1,6 +1,0 @@
-# Synthesized
-
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASE_JEWEL
-    SynthesisedItem True
-    #.import < < jewellery > _util -> multi_t2

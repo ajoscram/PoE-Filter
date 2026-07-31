@@ -6,9 +6,6 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # 3.29 To-Do
-* run econ.sh, but first account for the changes made and commit them.
-
-* Synth items were removed. Gotta clean those gear sections up and add it as a legacy base type.
 * Modpool changes need implementing:
     * Added a new Modifier that can roll on Jewels, providing 10-15% increased Mana Cost Efficiency.
     * Chance to Block Attack Damage and Chance to Block Spell Damage Modifiers can now roll on Staves.
@@ -21,7 +18,7 @@ https://www.filterblade.xyz
     * The top tier increased Cast Speed Modifiers on caster weapons now have the same weightings as the lower tier modifiers (previously these had lower weightings).
     * The Demon's Horn, Opal Wand and Tornado Wand Base Types now have increased Spell Damage Implicit Modifiers, instead of added Damage. Existing items are not affected by this change.
 
-* Figure out a re-organization of the "gem" section.
+* run econ.sh, but first account for the changes made and commit them.
 
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 * `splinter.filter` needs to be revisited mid-league to check up on real prices.
@@ -29,11 +26,14 @@ https://www.filterblade.xyz
 * `ducat.filter` needs to be revisited mid-league to check up on real prices.
 * `sulphur.filter` needs to be revisited mid-league to check up on real tiering. Maybe cluster with gold?
 * `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
+
 * Elaborate `wombgift.filter`.
 * Elaborate `vestigial.filter`.
 * Elaborate `chart.filter`.
 
-* Loyal's t2 looks kinda tacky. Maybe some background transparency fixes that?
+* Re-organize the "gem" section.
+
+* Loyal's t1/t2 looks kinda tacky. Maybe some background transparency fixes that?
 
 * Re-categorize sounds, they are all over the place.
 * Change T2 non-unique rarity progression sound because it is the unique sound.

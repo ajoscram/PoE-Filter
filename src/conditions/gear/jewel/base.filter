@@ -37,13 +37,6 @@ Show #.strict STRICTNESS_LENIENT .if Show
     #.import < jewellery > _util -> multi_t3_rare
     #.import < jewellery > _util -> multi_t3_magic
 
-# Synthesized
-
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASE_TYPES_BASE_JEWEL
-    SynthesisedItem True
-    #.import < jewellery > _util -> multi_t2
-
 # Rare
 
 Show

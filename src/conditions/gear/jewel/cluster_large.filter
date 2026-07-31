@@ -36,7 +36,6 @@ Show #.strict STRICTNESS_LENIENT .if Show
 #.import template > rare_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_GRAND = MODS_LARGE_CLUSTER_GRAND, MODS_GREATER = MODS_LARGE_CLUSTER_GREATER, MODS_LESSER = MODS_LARGE_CLUSTER_LESSER
 #.import template > magic_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_GRAND = MODS_LARGE_CLUSTER_GRAND, MODS_GREATER = MODS_LARGE_CLUSTER_GREATER, MODS_LESSER = MODS_LARGE_CLUSTER_LESSER
 #.import template > fractured_cluster { BASE_JEWEL = "Large Cluster Jewel", MODS_IMPORTANT = MODS_LARGE_CLUSTER_NOTABLE MODS_LARGE_CLUSTER_GRAND
-#.import template > synthesized_cluster { BASE_JEWEL = "Large Cluster Jewel"
 
 # 12 Passives - iLvl 84+
 
