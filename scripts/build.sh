@@ -17,7 +17,7 @@ get_styles | while read style; do
         title_strictness=$(title $strictness)
         pfg.exe "$OUTPUT" "build/$title_style/$title_strictness.filter" \
             .alias VERSION=$VERSION, STYLE=$title_style, VARIANT=$title_strictness .index \
-            .alias $DOT_STAND_IN=. .strict $number .if $ECON .multi .format || exit
+            .alias $DOT_STAND_IN=. .multi .strict $number .if $ECON .format || exit
 
     done
 done

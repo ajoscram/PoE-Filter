@@ -33,19 +33,16 @@ Show #.if Show
     #.multi .strict STRICTNESS_LENIENT
 	    StackSize >= 5
     #.multi .strict STRICTNESS_BASE
-	    AreaLevel < LEVEL_RED_MAPS_START
 
 Show #.if Show
 	BaseType == BASES_BASIC_CURENCY_LESSER
 	#.import STYLE | currency -> t4
     #.multi
 	    StackSize >= 15
-    #.multi .strict STRICTNESS_BASE
+    #.multi .strict STRICTNESS_LENIENT
 	    StackSize >= 10
-	    AreaLevel < LEVEL_YELLOW_MAPS_START
     #.multi .strict STRICTNESS_BASE
 	    StackSize >= 5
-	    AreaLevel < LEVEL_WHITE_MAPS_START
     #.multi .strict STRICTNESS_BASE
 	    AreaLevel < LEVEL_ACT_6_START
 

@@ -86,17 +86,13 @@ Show #.strict STRICTNESS_BASE .if Show
 
 # Memory Strands
 
-Show #.strict STRICTNESS_STRICT .if Show
+Show #.strict STRICTNESS_LENIENT .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     MemoryStrands >= 75
 
-Show #.strict STRICTNESS_LENIENT .if Show
-    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
-    MemoryStrands >= 50
-
 Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
-    MemoryStrands >= 25
+    MemoryStrands >= 50
 
 # Veiled
 

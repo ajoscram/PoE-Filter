@@ -80,7 +80,12 @@ Show #.strict STRICTNESS_STRICT .if Show
 	Quality >= 10
 	#.import STYLE | gem -> t3
 
-Show #.strict STRICTNESS_LENIENT
+Show #.strict STRICTNESS_LENIENT .if Show
+	Class == GEM_CLASSES
+	Quality > 5
+	#.import STYLE | gem -> t4
+
+Show #.strict STRICTNESS_BASE .if Show
 	Class == GEM_CLASSES
 	Quality > 0
 	#.import STYLE | gem -> t4

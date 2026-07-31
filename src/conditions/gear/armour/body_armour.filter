@@ -1,14 +1,14 @@
 #.subsection Body Armour
 
-#.alias ITEM_LEVEL_BODY_ARMOUR_BEST   = 86
+#.alias ITEM_LEVEL_BODY_ARMOUR_BEST = 86
 
 #.alias BASES_BODY_ARMOUR_EXCEPTIONAL = "Grasping Mail" "Sacrificial Garb"
 #.alias BASES_BODY_ARMOUR_BEST        = "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
 
-#.alias MODS_BODY_ARMOUR_EXCEPTIONAL     = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
-#.alias MODS_BODY_ARMOUR_GRAND           = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
-#.alias MODS_BODY_ARMOUR_GREATER         = "Rapturous" "Apparition's" "Illusory" "Saintly" "Seraphim's" "Inspired" "Adaptable" "Legend's" "Bishop's" "Exarch's" "Unassailable" "Incandescent" "Blue" "Ibex's" "Lissome" "Hummingbird's" "Mirage's" "Impregnable" "Mammoth's" "Unmoving" "Crocodile's" "of the Phantom" "of the Titan" "of Life-giving" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of the Protector" "of Abjuration" "of the Virtuoso" "of Second Wind"
-#.alias MODS_BODY_ARMOUR_LESSER          = "Vigorous" "Fecund" "Athlete's" "Virile" "Eidolon's" "Unreal" "Consecrated" "Djinn's" "Interpolated" "Resilient" "Hero's" "Priest's" "Abbot's" "Indomitable" "Scintillating" "Mazarine" "Ram's" "Adroit" "Dragonfly's" "Nightmare's" "Girded" "Elephant's" "Abating" "Nautilus's" "of the Jaguar" "of the Leviathan" "of Recuperation" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of the Keeper" "of the Sentry" "of the Watchman" "of Revoking" "of Snuffing" "of the Savant" "of Vigour"
+#.alias MODS_BODY_ARMOUR_EXCEPTIONAL = "Guatelitzi's" "of Tacati" "Subterranean" "of the Underground" "of Infamy" "of Haunting" "of the Sentinel"
+#.alias MODS_BODY_ARMOUR_GRAND       = "Prime" "Phantasm's" "Incorporeal" "Godly" "Interpermeated" "Versatile" "Victor's" "Unfaltering" "Resplendent" "Zaffre" "Fugitive" "Illusion's" "Impenetrable" "Impervious" "of the Wind" "of the Gods" "of Convalescence" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Conservator" "of Nullification" "of the Genius"
+#.alias MODS_BODY_ARMOUR_GREATER     = "Rapturous" "Apparition's" "Illusory" "Saintly" "Seraphim's" "Inspired" "Adaptable" "Legend's" "Bishop's" "Exarch's" "Unassailable" "Incandescent" "Blue" "Ibex's" "Lissome" "Hummingbird's" "Mirage's" "Impregnable" "Mammoth's" "Unmoving" "Crocodile's" "of the Phantom" "of the Titan" "of Life-giving" "of the Magma" "of the Ice" "of the Lightning" "of Exile" "of Expulsion" "of the Protector" "of Abjuration" "of the Virtuoso" "of Second Wind"
+#.alias MODS_BODY_ARMOUR_LESSER      = "Vigorous" "Fecund" "Athlete's" "Virile" "Eidolon's" "Unreal" "Consecrated" "Djinn's" "Interpolated" "Resilient" "Hero's" "Priest's" "Abbot's" "Indomitable" "Scintillating" "Mazarine" "Ram's" "Adroit" "Dragonfly's" "Nightmare's" "Girded" "Elephant's" "Abating" "Nautilus's" "of the Jaguar" "of the Leviathan" "of Recuperation" "of the Volcano" "of the Furnace" "of the Polar Bear" "of the Walrus" "of the Maelstrom" "of the Tempest" "of Eviction" "of the Keeper" "of the Sentry" "of the Watchman" "of Revoking" "of Snuffing" "of the Savant" "of Vigour"
 
 # Unique
 

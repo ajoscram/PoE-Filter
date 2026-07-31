@@ -1,7 +1,6 @@
 #.subsection Mana
 
 #.alias ITEM_LEVEL_MANA_FLASK_BEST = 82
-
 #.alias BASE_MANA_FLASK_BEST       = "Eternal Mana Flask"
 
 #.alias MODS_MANA_FLASK_GRAND   = "Seething" "Enduring" "of Warding" "of Assuaging" "of the Dielectric" "of Quenching" "of Thawing" "of the Antidote"

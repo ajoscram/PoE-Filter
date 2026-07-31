@@ -6,7 +6,7 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # 3.29 To-Do
-* Create a `update-economy` script that updates all filter files that have `.econ`.
+* run econ.sh, but first account for the changes made and commit them.
 
 * Synth items were removed. Gotta clean those gear sections up and add it as a legacy base type.
 * Modpool changes need implementing:
@@ -33,6 +33,13 @@ https://www.filterblade.xyz
 * Elaborate `vestigial.filter`.
 * Elaborate `chart.filter`.
 
+* Loyal's t2 looks kinda tacky. Maybe some background transparency fixes that?
+
+* Re-categorize sounds, they are all over the place.
+* Change T2 non-unique rarity progression sound because it is the unique sound.
+* Sounds should be set in stone because they indicate something to the user which should be standard across styles.
+* This sounds idea might indicate that a "base" style from which all other styles inherit might be a good idea.
+
 # To-Do
 
 * Update README.md with a summary of current filter contents.
@@ -40,7 +47,3 @@ https://www.filterblade.xyz
 * Set gold breakpoints in order to intelligently hide small amounts per area level.
 * Consider hiding some scarabs at the bottom prices.
 * Add a wiki page for this project.
-
-* Re-categorize sounds, they are all over the place.
-* Sounds should be set in stone because they indicate something to the user which should be standard across styles.
-* This sounds idea might indicate that a "base" style from which all other styles inherit might be a good idea.

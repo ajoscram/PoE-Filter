@@ -1,7 +1,6 @@
 #.subsection Life
 
 #.alias ITEM_LEVEL_LIFE_FLASK_BEST = 82
-
 #.alias BASE_LIFE_FLASK_BEST       = "Divine Life Flask"
 
 #.alias MODS_LIFE_FLASK_GRAND   = "Panicked" "Bubbling" "Saturated" "Seething" "of the Necromancer" "of Assuaging" "of the Dielectric" "of Thawing" "of Quenching" "of the Antidote"

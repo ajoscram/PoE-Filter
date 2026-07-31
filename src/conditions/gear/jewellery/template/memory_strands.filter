@@ -17,7 +17,13 @@ Show
     MemoryStrands == 100
     #.import < _util -> multi_t2
 
-Show #.strict STRICTNESS_STRICT .if Show
+Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == BASES_BEST
     MemoryStrands >= 50
-    #.import < _util -> multi_t2
+    #.import < _util -> multi_t3
+
+Show #.strict STRICTNESS_BASE .if Show
+    BaseType == BASES_BEST
+    Rarity == Rare
+    MemoryStrands >= 25
+    #.import < _util -> multi_t3

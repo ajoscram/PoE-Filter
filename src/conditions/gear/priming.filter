@@ -96,7 +96,7 @@ Show
 Show
     Continue
     Class == CLASSES_FLASKS
-    Quality > 10
+    Quality >= 10
     #.import flask > _util -> multi_t3_full
 
 # 3 Links

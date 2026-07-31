@@ -13,9 +13,12 @@ Show #.strict STRICTNESS_STRICT .if Show
     #.import < < _util -> craftable
     #.import < _util -> multi_t3
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show #.if Show
     BaseType == BASES_BEST
-    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT 
+        Rarity == Rare
+    #.multi .strict STRICTNESS_BASE
+        #.import < < _util -> craftable
 
 Show #.if Show
     Class == CLASS

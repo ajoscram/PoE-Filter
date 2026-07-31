@@ -1,6 +1,6 @@
 # Progression
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show #.strict STRICTNESS_BASE .if Show
     BaseType == BASES_BEST
     ItemLevel >= ITEM_LEVEL_BEST
     #.import < < _util -> craftable
