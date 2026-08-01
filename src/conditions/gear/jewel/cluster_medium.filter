@@ -1,7 +1,7 @@
 #.subsection Medium Cluster
 
 #.alias MODS_MEDIUM_CLUSTER_GRAND   = "Sanguine" "Azure" "Glowing" "Ribbed" "Acrobat's" "Dangerous" "of the Bear" "of the Fox" "of the Prodigy" "of the Meteor" "of the Drake" "of the Penguin" "of the Storm" "of the Kaleidoscope" "of Eviction" "of Disintegration" "of Guidance" "of Suppression" "of the Herald" "of the Canon" "of Bellowing" "of Rage" "of Motherhood" "of Horizons" "of Propulsion" "of Deployment" "of Forethought" "of Overflowing"
-#.alias MODS_MEDIUM_CLUSTER_GREATER = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of the Crystal" "of Banishment" "of the Lost" "of Degeneration" "of Influence" "of Dominance" "of the Messenger" "of the Teachings" "of Shouting" "of Anger" "of Nurturing" "of Range" "of Flight" "of Assembly" "of Latching" "of Concentration" "of Brimming" 
+#.alias MODS_MEDIUM_CLUSTER_GREATER = "Healthy" "Cobalt" "Glimmering" "Studded" "Dancer's" "Hazardous" "of the Wrestler" "of the Lynx" "of the Student" "of the Sky" "of the Salamander" "of the Seal" "of the Squall" "of the Prism" "of the Crystal" "of Banishment" "of the Lost" "of Degeneration" "of Influence" "of Dominance" "of the Messenger" "of the Teachings" "of Shouting" "of Anger" "of Nurturing" "of Range" "of Flight" "of Assembly" "of Latching" "of Concentration" "of Brimming"
 #.alias MODS_MEDIUM_CLUSTER_LESSER  = "Hale" "Beryl" "Shining" "Lacquered" "Agile" "Harmful" "of the Brute" "of the Mongoose" "of the Pupil" "of the Cloud" "of the Flatworm" "of the Whelpling" "of the Inuit" "of the Cloud" "of Decline" "of Outreach" "of Clout" "of the Courier" "of the Message" "of Yelling" "of Ire" "of Fostering" "of Reach" "of Darting" "of Tinkering" "of The Way" "of Grasping" "of Attention" "of Refilling"
 
 # Unique
@@ -46,21 +46,21 @@ Show #.strict STRICTNESS_LENIENT .if Show
 # 6 Passives - iLvl 84+
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Physical Damage over Time"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Area Damage" "Minion Life" "Minion Damage while you have a Herald" "Totem Damage" "Channelling Skill Damage" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Flask Duration" "Minion Life"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Damage while you have a Herald" "Trap and Mine Damage" "Chaos Damage over Time" "Brand Damage" "Flask Duration" "Cold Damage over Time" "Critical Chance" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Damage over Time"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Critical Chance" "Area Damage" "Totem Damage" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel >= 84
@@ -69,7 +69,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 6 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Area Damage" "Minion Damage while you have a Herald" "Brand Damage" "Damage over Time" "Projectile Damage" "Damage while you have a Herald" "Minion Life" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Trap and Mine Damage" "Chaos Damage over Time" "Flask Duration" "Cold Damage over Time" "Life and Mana recovery from Flasks" "Exerted Attack Damage" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Channelling Skill Damage"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 83
@@ -77,7 +77,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Area Damage" "Minion Damage while you have a Herald" "Brand Damage" "Damage over Time" "Projectile Damage" "Damage while you have a Herald" "Minion Life" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Trap and Mine Damage" "Chaos Damage over Time" "Flask Duration" "Cold Damage over Time" "Life and Mana recovery from Flasks" "Exerted Attack Damage" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Channelling Skill Damage"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 83
@@ -85,7 +85,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Area Damage" "Minion Damage while you have a Herald" "Brand Damage" "Damage over Time" "Projectile Damage" "Damage while you have a Herald" "Minion Life" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Trap and Mine Damage" "Chaos Damage over Time" "Flask Duration" "Cold Damage over Time" "Life and Mana recovery from Flasks" "Exerted Attack Damage" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Channelling Skill Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Critical Chance" "Minion Damage while you have a Herald" "Minion Life" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Chaos Damage over Time" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Totem Damage" "Projectile Damage" "Channelling Skill Damage" "Exerted Attack Damage" "Damage over Time" "Area Damage" "Physical Damage over Time" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 83
@@ -95,7 +95,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 6 Passives - iLvl 68 to 74
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Fire Damage over Time"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 74
@@ -103,7 +103,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Fire Damage over Time"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 74
@@ -111,7 +111,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Trap and Mine Damage" "Damage while you have a Herald" "Area Damage" "Minion Life" "Chaos Damage over Time" "Brand Damage" "Flask Duration" "Minion Damage while you have a Herald" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Cold Damage over Time" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Critical Chance" "Minion Damage while you have a Herald" "Minion Life" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Chaos Damage over Time" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Totem Damage" "Projectile Damage" "Channelling Skill Damage" "Exerted Attack Damage" "Damage over Time" "Area Damage" "Physical Damage over Time" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 74
@@ -121,7 +121,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 6 Passives - iLvl 50 to 67
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Physical Damage over Time" "Chaos Damage over Time" "Cold Damage over Time"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 67
@@ -129,7 +129,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Area Damage" "Minion Life" "Flask Duration" "Brand Damage" "Totem Damage" "Life and Mana recovery from Flasks"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 67
@@ -137,7 +137,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Trap and Mine Damage" "Damage while you have a Herald" "Critical Chance" "Effect of Non-Damaging Ailments" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Critical Chance" "Minion Damage while you have a Herald" "Minion Life" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Chaos Damage over Time" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Totem Damage" "Projectile Damage" "Channelling Skill Damage" "Exerted Attack Damage" "Damage over Time" "Area Damage" "Physical Damage over Time" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 67
@@ -147,21 +147,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 6 Passives - iLvl 49-
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Channelling Skill Damage" "Chaos Damage over Time" "Flask Duration"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Channelling Skill Damage" "Chaos Damage over Time" "Flask Duration"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Minion Damage while you have a Herald" "Cold Damage over Time" "Brand Damage" "Critical Chance" "Physical Damage over Time" "Life and Mana recovery from Flasks" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Critical Chance" "Minion Damage while you have a Herald" "Minion Life" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Chaos Damage over Time" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Totem Damage" "Projectile Damage" "Channelling Skill Damage" "Exerted Attack Damage" "Damage over Time" "Area Damage" "Physical Damage over Time" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 6
     ItemLevel <= 49
@@ -170,21 +170,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 5 Passives - iLvl 84+
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Fire Damage over Time" "Damage while you have a Herald" "Minion Life" "Chaos Damage over Time" "Flask Duration" "Critical Chance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Fire Damage over Time" "Damage while you have a Herald" "Minion Life" "Chaos Damage over Time" "Flask Duration" "Critical Chance"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Area Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Area Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Cold Damage over Time" "Brand Damage" "Totem Damage" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Critical Chance" "Flask Duration" "Totem Damage" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel >= 84
@@ -193,7 +193,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 5 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Flask Duration"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 83
@@ -201,7 +201,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Flask Duration"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 83
@@ -209,7 +209,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Trap and Mine Damage" "Area Damage" "Minion Life" "Minion Damage while you have a Herald" "Chaos Damage over Time" "Brand Damage" "Cold Damage over Time" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Critical Chance" "Flask Duration" "Area Damage" "Totem Damage" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 83
@@ -219,7 +219,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 5 Passives - iLvl 68 to 74
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Life and Mana recovery from Flasks"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 74
@@ -227,7 +227,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Totem Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Totem Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 74
@@ -235,7 +235,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Damage while you have a Herald" "Area Damage" "Trap and Mine Damage" "Minion Life" "Chaos Damage over Time" "Flask Duration" "Brand Damage" "Minion Damage while you have a Herald" "Cold Damage over Time" "Critical Chance" "Effect of Non-Damaging Ailments" "Physical Damage over Time" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Critical Chance" "Flask Duration" "Area Damage" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 74
@@ -245,7 +245,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 5 Passives - iLvl 50 to 67
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Chaos Damage over Time" "Flask Duration" "Totem Damage" "Critical Chance" "Damage over Time"
+    EnchantmentPassiveNode == "Physical Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 67
@@ -253,7 +253,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Minion Life" "Projectile Damage" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Critical Chance" "Flask Duration" "Area Damage" "Totem Damage" "Projectile Damage" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 67
@@ -261,7 +261,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Effect of Non-Damaging Ailments" "Brand Damage" "Cold Damage over Time" "Damage while you have a Herald"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 67
@@ -271,21 +271,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 5 Passives - iLvl 49-
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Physical Damage over Time" "Critical Chance" "Trap and Mine Damage"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Projectile Damage" "Minion Life" "Flask Duration" "Totem Damage" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Totem Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Fire Damage over Time" "Area Damage" "Brand Damage" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Critical Chance" "Flask Duration" "Area Damage" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 5
     ItemLevel <= 49
@@ -294,21 +294,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 4 Passives - iLvl 84+
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Critical Chance" "Flask Duration"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Trap and Mine Damage" "Damage while you have a Herald" "Minion Life" "Chaos Damage over Time" "Minion Damage while you have a Herald" "Brand Damage" "Totem Damage" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Damage while you have a Herald" "Chaos Damage over Time" "Critical Chance" "Area Damage" "Totem Damage" "Projectile Damage" "Fire Damage over Time" "Exerted Attack Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Area Damage" "Cold Damage over Time" "Life and Mana recovery from Flasks" "Effect of Non-Damaging Ailments" "Physical Damage over Time" "Channelling Skill Damage" "Damage over Time"
+    EnchantmentPassiveNode == "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel >= 84
@@ -317,7 +317,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 4 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Fire Damage over Time" "Damage while you have a Herald" "Area Damage" "Chaos Damage over Time" "Flask Duration"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 83
@@ -325,7 +325,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Fire Damage over Time" "Damage while you have a Herald" "Area Damage" "Chaos Damage over Time" "Flask Duration"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Critical Chance" "Area Damage" "Totem Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 83
@@ -333,7 +333,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Trap and Mine Damage" "Minion Life" "Minion Damage while you have a Herald" "Brand Damage" "Cold Damage over Time" "Totem Damage" "Critical Chance" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Projectile Damage" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 83
@@ -343,7 +343,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 4 Passives - iLvl 68 to 74
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Minion Life"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 74
@@ -351,7 +351,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Totem Damage" "Area Damage" "Flask Duration"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Critical Chance" "Totem Damage" "Area Damage" "Fire Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 74
@@ -359,7 +359,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Fire Damage over Time" "Trap and Mine Damage" "Chaos Damage over Time" "Brand Damage" "Minion Damage while you have a Herald" "Cold Damage over Time" "Critical Chance" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Life and Mana recovery from Flasks" "Channelling Skill Damage" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Projectile Damage" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Trap and Mine Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 74
@@ -369,7 +369,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 4 Passives - iLvl 50 to 67
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Projectile Damage" "Minion Damage while you have a Herald"
+    EnchantmentPassiveNode == "Trap and Mine Damage" "Chaos Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 67
@@ -377,7 +377,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Critical Chance" "Chaos Damage over Time" "Effect of Non-Damaging Ailments"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Critical Chance" "Flask Duration" "Area Damage" "Totem Damage" "Projectile Damage" "Physical Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 67
@@ -385,7 +385,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Trap and Mine Damage" "Area Damage" "Damage while you have a Herald" "Flask Duration" "Totem Damage" "Physical Damage over Time" "Damage over Time" "Exerted Attack Damage"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Fire Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 67
@@ -395,21 +395,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 4 Passives - iLvl 49-
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Totem Damage" "Critical Chance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Damage while you have a Herald" "Damage over Time" "Minion Damage while you have a Herald" "Cold Damage over Time"
+    EnchantmentPassiveNode == "Damage while you have a Herald" "Chaos Damage over Time" "Critical Chance" "Totem Damage" "Area Damage" "Projectile Damage" "Trap and Mine Damage"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Projectile Damage" "Exerted Attack Damage" "Effect of Non-Damaging Ailments"
+    EnchantmentPassiveNode == "Minion Life" "Life and Mana recovery from Flasks" "Cold Damage over Time" "Flask Duration" "Fire Damage over Time" "Physical Damage over Time" "Effect of Non-Damaging Ailments" "Brand Damage" "Channelling Skill Damage" "Minion Damage while you have a Herald" "Exerted Attack Damage" "Damage over Time"
     BaseType == "Medium Cluster Jewel"
     EnchantmentPassiveNum == 4
     ItemLevel <= 49

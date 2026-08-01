@@ -9,7 +9,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Iron Flask" "Gold Flask" "Quartz Flask" "Bismuth Flask" "Amethyst Flask" "Silver Flask" "Sulphur Flask" "Ruby Flask"
+    BaseType == "Bismuth Flask" "Quartz Flask" "Ruby Flask" "Amethyst Flask" "Sulphur Flask" "Silver Flask" "Gold Flask" "Iron Flask"
     Class == "Utility Flasks" #.format
     Rarity == Unique
     Replica False
@@ -17,7 +17,7 @@ Show #.econ uni 100
     #.import STYLE | flask > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Sapphire Flask" "Granite Flask" "Stibnite Flask"
+    BaseType == "Iron Flask" "Amethyst Flask" "Sapphire Flask"
     Class == "Utility Flasks" #.format
     Rarity == Unique
     Replica False
@@ -25,7 +25,7 @@ Show #.econ uni 10 100
     #.import STYLE | flask > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Granite Flask" "Topaz Flask" "Bismuth Flask" "Quartz Flask" "Quicksilver Flask" "Amethyst Flask" "Sulphur Flask" "Ruby Flask" "Stibnite Flask"
+    BaseType == "Quartz Flask" "Bismuth Flask" "Stibnite Flask" "Ruby Flask" "Sulphur Flask" "Topaz Flask" "Diamond Flask" "Silver Flask" "Quicksilver Flask" "Granite Flask" "Sapphire Flask"
     Class == "Utility Flasks" #.format
     Rarity == Unique
     Replica False

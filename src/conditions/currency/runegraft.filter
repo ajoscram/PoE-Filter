@@ -3,23 +3,23 @@
 # Economy
 
 Show #.econ run 100
-	BaseType == "Runegraft of Gemcraft" "Runegraft of Restitching" "Runegraft of the Jeweller" "Runegraft of Quaffing" "Runegraft of Stability" "Runegraft of the Bound" "Runegraft of the Spellbound" "Runegraft of Refraction" "Runegraft of Blasphemy" "Runegraft of the Warp" "Runegraft of the Soulwick" "Runegraft of Bellows" "Runegraft of the Fortress" "Runegraft of Time" "Runegraft of Rotblood" "Runegraft of Treachery"
+	BaseType == "Runegraft of the Angler" "Runegraft of the Fortress" "Runegraft of the Warp"
 	#.import STYLE | currency -> t1
 
 Show #.econ run 10 100
-	BaseType == "Runegraft of Rallying" "Runegraft of the Imbued" "Runegraft of the River" "Runegraft of the Sinistral" "Runegraft of Resurgence"
+	BaseType == "Runegraft of the Imbued" "Runegraft of the Bound" "Runegraft of Gemcraft" "Runegraft of Quaffing" "Runegraft of the Witchmark" "Runegraft of Suffering" "Runegraft of the Combatant" "Runegraft of Time" "Runegraft of Stability" "Runegraft of Rallying" "Runegraft of Resurgence" "Runegraft of Consecration" "Runegraft of the Jeweller" "Runegraft of the River" "Runegraft of Restitching" "Runegraft of Loyalty" "Runegraft of Refraction" "Runegraft of the Soulwick" "Runegraft of the Sinistral" "Runegraft of Rotblood" "Runegraft of Fury" "Runegraft of the Novamark" "Runegraft of the Spellbound" "Runegraft of Connection" "Runegraft of the Agile" "Runegraft of Blasphemy" "Runegraft of Bellows" "Runegraft of Treachery"
 	#.import STYLE | currency -> t2
 
 Show #.econ run 1 10
-	BaseType == "Runegraft of the Combatant" "Runegraft of Connection" "Runegraft of Loyalty" "Runegraft of the Novamark"
+	BaseType == "Runegraft of Bellows"
 	#.import STYLE | currency -> t3
 
 Show #.econ run 0 1 .strict STRICTNESS_LENIENT .if Show
-	BaseType == "Runegraft of the Witchmark" "Runegraft of the Agile"
+	BaseType == "Runegraft of the Witchmark"
 	#.import STYLE | currency -> t4
 
 Hide #.econ run 0 1
-	BaseType == "Runegraft of the Witchmark" "Runegraft of the Agile"
+	BaseType == "Runegraft of the Witchmark"
 	#.import STYLE | miscellaneous -> hidden
 	#.import STYLE | currency -> t5
 

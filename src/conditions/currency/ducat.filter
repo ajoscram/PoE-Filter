@@ -2,16 +2,12 @@
 
 # Economy
 
-Show #.econ duc 100
-    BaseType == "Katakohi's Ducat" "Tzamoto's Ducat" "Ukatoa's Ducat"
-    #.import STYLE | currency -> t1
-
-Show #.econ duc 10 100
-    BaseType == "Cyaxan's Ducat" "The Genteel's Ducat" "Kishara's Ducat" "Rotmother's Ducat" "Brinehook's Ducat"
+Show #.econ duc 10
+    BaseType == "Ukatoa's Ducat" "Brinehook's Ducat"
     #.import STYLE | currency -> t2
-    
+
 Show #.econ duc 0 10
-    BaseType == "Merrick's Ducat" "The Changeling's Ducat" "Telesia's Ducat"
+    BaseType == "Katakohi's Ducat" "Merrick's Ducat" "The Changeling's Ducat" "Tzamoto's Ducat" "Rotmother's Ducat" "Telesia's Ducat" "Kishara's Ducat" "Cyaxan's Ducat" "The Genteel's Ducat"
     #.import STYLE | currency -> t3
 
 # Catchall

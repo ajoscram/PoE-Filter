@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Vaal Claw" "Hellion's Paw"
+    BaseType == "Hellion's Paw" "Vaal Claw"
     Class == "Claws" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Fright Claw" "Imperial Claw" "Nailed Fist" "Terror Claw" "Hellion's Paw" "Timeworn Claw" "Throat Stabber"
+    BaseType == "Vaal Claw" "Timeworn Claw" "Nailed Fist" "Throat Stabber" "Terror Claw" "Hellion's Paw" "Awl" "Gut Ripper" "Fright Claw" "Imperial Claw"
     Class == "Claws" #.format
     Rarity == Unique
     Replica False

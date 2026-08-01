@@ -21,7 +21,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Lapis Amulet" "Seaglass Amulet" "Unset Amulet" "Agate Amulet" "Paua Amulet" "Coral Amulet" "Astrolabe Amulet" "Onyx Amulet"
+    BaseType == "Greatwolf Talisman" "Rhex Talisman" "Jade Amulet" "Paua Amulet" "Onyx Amulet" "Unset Amulet"
     Class == "Amulets" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 100
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Lapis Amulet" "Turquoise Amulet" "Greatwolf Talisman" "Agate Amulet" "Jade Amulet" "Amber Amulet" "Onyx Amulet" "Marble Amulet"
+    BaseType == "Jade Amulet" "Seaglass Amulet" "Agate Amulet" "Amber Amulet" "Onyx Amulet" "Pearlescent Amulet" "Lapis Amulet" "Turquoise Amulet" "Shield Crab Talisman" "Astrolabe Amulet"
     Class == "Amulets" #.format
     Rarity == Unique
     Replica False
@@ -37,7 +37,7 @@ Show #.econ uni 10 100
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Paua Amulet" "Blue Pearl Amulet" "Lapis Amulet" "Rotfeather Talisman" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Jade Amulet" "Amber Amulet" "Clutching Talisman" "Gold Amulet" "Coral Amulet" "Wereclaw Talisman" "Onyx Amulet" "Black Maw Talisman"
+    BaseType == "Wolf Alpha Talisman" "Citrine Amulet" "Jade Amulet" "Paua Amulet" "Amber Amulet" "Onyx Amulet" "Lapis Amulet" "Turquoise Amulet" "Black Maw Talisman" "Blue Pearl Amulet" "Gold Amulet" "Coral Amulet" "Marble Amulet" "Agate Amulet"
     Class == "Amulets" #.format
     Rarity == Unique
     Replica False

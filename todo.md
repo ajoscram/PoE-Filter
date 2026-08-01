@@ -6,7 +6,7 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # 3.29 To-Do
-* run econ.sh, but first account for the changes made and commit them.
+* fix all gear showing up as t2 jewellery
 
 # To-Do
 * Re-organize the "gem" section.

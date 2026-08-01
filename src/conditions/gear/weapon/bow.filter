@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Imperial Bow" "Spine Bow"
+    BaseType == "Spine Bow" "Imperial Bow"
     Class == "Bows" #.format
     Rarity == Unique
     Replica False
@@ -20,7 +20,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Maraketh Bow" "Assassin Bow" "Crude Bow" "Imperial Bow" "Steelwood Bow"
+    BaseType == "Imperial Bow"
     Class == "Bows" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Recurve Bow" "Royal Bow" "Citadel Bow" "Short Bow" "Death Bow" "Crude Bow" "Harbinger Bow" "Ranger Bow" "Spine Bow" "Long Bow"
+    BaseType == "Recurve Bow" "Long Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Steelwood Bow" "Death Bow" "Spine Bow" "Decimation Bow" "Royal Bow" "Crude Bow" "Ranger Bow" "Citadel Bow" "Short Bow"
     Class == "Bows" #.format
     Rarity == Unique
     Replica False

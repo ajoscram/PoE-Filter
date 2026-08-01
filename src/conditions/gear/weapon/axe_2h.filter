@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Vaal Axe" "Despot Axe" "Void Axe"
+    BaseType == "Vaal Axe" "Despot Axe"
     Class == "Two Hand Axes" #.format
     Rarity == Unique
     Replica False
@@ -20,7 +20,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Abyssal Axe"
+    BaseType == "Abyssal Axe" "Void Axe" "Vaal Axe" "Fleshripper"
     Class == "Two Hand Axes" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Vaal Axe" "Despot Axe" "Shadow Axe" "Abyssal Axe" "Ezomyte Axe" "Karui Chopper" "Woodsplitter" "Headsman Axe"
+    BaseType == "Headsman Axe" "Woodsplitter" "Despot Axe" "Poleaxe" "Vaal Axe" "Karui Chopper" "Ezomyte Axe" "Abyssal Axe" "Shadow Axe" "Jasper Chopper"
     Class == "Two Hand Axes" #.format
     Rarity == Unique
     Replica False

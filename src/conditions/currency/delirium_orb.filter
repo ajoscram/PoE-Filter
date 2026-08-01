@@ -2,16 +2,16 @@
 
 # Economy
 
-Show #.econ del 100
-	BaseType == "Diviner's Delirium Orb" "Fine Delirium Orb"
-	#.import STYLE | currency -> t2
+#.#Show #.econ del 100
+#.#	BaseType ==
+#.#	#.import STYLE | currency -> t2
 
 Show #.econ del 10 100
-	BaseType == "Fragmented Delirium Orb" "Armoursmith's Delirium Orb" "Thaumaturge's Delirium Orb" "Whispering Delirium Orb" "Blacksmith's Delirium Orb" "Singular Delirium Orb" "Cartographer's Delirium Orb" "Abyssal Delirium Orb" "Blighted Delirium Orb" "Jeweller's Delirium Orb" "Skittering Delirium Orb"
+	BaseType == "Skittering Delirium Orb" "Fine Delirium Orb" "Diviner's Delirium Orb"
 	#.import STYLE | currency -> t2
 
 Show #.econ del 0 10
-	BaseType == "Obscured Delirium Orb" "Timeless Delirium Orb"
+	BaseType == "Blacksmith's Delirium Orb" "Whispering Delirium Orb" "Blighted Delirium Orb" "Fragmented Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Armoursmith's Delirium Orb" "Singular Delirium Orb"
 	#.import STYLE | currency -> t3
 
 # Catchall

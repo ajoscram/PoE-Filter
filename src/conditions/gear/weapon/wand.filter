@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Prophecy Wand"
+    BaseType == "Opal Wand"
     Class == "Wands" #.format
     Rarity == Unique
     Replica False
@@ -19,7 +19,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Faun's Horn" "Sage Wand" "Opal Wand" "Prophecy Wand" "Somatic Wand"
+    BaseType == "Faun's Horn" "Sage Wand" "Prophecy Wand" "Somatic Wand"
     Class == "Wands" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Tornado Wand" "Sage Wand" "Spiraled Wand" "Kinetic Wand" "Goat's Horn" "Driftwood Wand" "Calling Wand" "Omen Wand" "Pagan Wand"
+    BaseType == "Spiraled Wand" "Omen Wand" "Pagan Wand" "Blasting Wand" "Tornado Wand" "Driftwood Wand" "Sage Wand" "Kinetic Wand" "Goat's Horn" "Calling Wand"
     Class == "Wands" #.format
     Rarity == Unique
     Replica False

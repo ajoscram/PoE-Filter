@@ -18,7 +18,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Jewelled Foil"
+    BaseType == "Vaal Rapier"
     Class == "Thrusting One Hand Swords" #.format
     Rarity == Unique
     Replica False
@@ -26,7 +26,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Basket Rapier"
+    BaseType == "Jewelled Foil" "Jagged Foil" "Basket Rapier" "Whalebone Rapier"
     Class == "Thrusting One Hand Swords" #.format
     Rarity == Unique
     Replica False

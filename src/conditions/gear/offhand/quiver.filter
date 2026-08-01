@@ -21,7 +21,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Vile Arrow Quiver" "Primal Arrow Quiver" "Ornate Quiver" "Two-Point Arrow Quiver"
+    BaseType == "Blunt Arrow Quiver" "Ornate Quiver" "Vile Arrow Quiver"
     Class == "Quivers" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Heavy Arrow Quiver" "Blunt Arrow Quiver" "Two-Point Arrow Quiver" "Broadhead Arrow Quiver" "Primal Arrow Quiver" "Sharktooth Arrow Quiver" "Penetrating Arrow Quiver" "Serrated Arrow Quiver" "Spike-Point Arrow Quiver" "Feathered Arrow Quiver"
+    BaseType == "Feathered Arrow Quiver" "Broadhead Arrow Quiver" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Blazing Arrow Quiver" "Two-Point Arrow Quiver" "Blunt Arrow Quiver" "Spike-Point Arrow Quiver" "Sharktooth Arrow Quiver" "Serrated Arrow Quiver" "Penetrating Arrow Quiver" "Vile Arrow Quiver"
     Class == "Quivers" #.format
     Rarity == Unique
     Replica False

@@ -16,7 +16,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Ring" "Amethyst Ring" "Formless Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Steel Ring" "Vermillion Ring" "Opal Ring" "Prismatic Ring" "Fugitive Ring" "Two-Stone Ring" "Paua Ring"
+    BaseType == "Vermillion Ring" "Sapphire Ring" "Ring" "Prismatic Ring" "Opal Ring" "Fugitive Ring" "Topaz Ring" "Formless Ring" "Two-Stone Ring" "Amethyst Ring"
     Class == "Rings" #.format
     Rarity == Unique
     Replica False
@@ -24,7 +24,7 @@ Show #.econ uni 100
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Amethyst Ring" "Ruby Ring" "Nameless Ring" "Topaz Ring" "Sapphire Ring" "Steel Ring" "Cryonic Ring" "Opal Ring" "Synaptic Ring" "Prismatic Ring" "Coral Ring" "Moonstone Ring" "Gold Ring" "Two-Stone Ring" "Unset Ring" "Paua Ring"
+    BaseType == "Nameless Ring" "Prismatic Ring" "Synaptic Ring" "Ruby Ring" "Unset Ring" "Steel Ring" "Topaz Ring" "Moonstone Ring" "Amethyst Ring" "Coral Ring"
     Class == "Rings" #.format
     Rarity == Unique
     Replica False
@@ -32,7 +32,7 @@ Show #.econ uni 10 100
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Amethyst Ring" "Ruby Ring" "Nameless Ring" "Steel Ring" "Sapphire Ring" "Organic Ring" "Iron Ring" "Opal Ring" "Topaz Ring" "Diamond Ring" "Prismatic Ring" "Coral Ring" "Moonstone Ring" "Gold Ring" "Two-Stone Ring" "Unset Ring" "Paua Ring" "Enthalpic Ring"
+    BaseType == "Ruby Ring" "Cryonic Ring" "Amethyst Ring" "Coral Ring" "Steel Ring" "Gold Ring" "Enthalpic Ring" "Paua Ring" "Iron Ring" "Sapphire Ring" "Diamond Ring" "Two-Stone Ring" "Moonstone Ring" "Unset Ring" "Nameless Ring" "Prismatic Ring" "Opal Ring" "Organic Ring" "Topaz Ring"
     Class == "Rings" #.format
     Rarity == Unique
     Replica False

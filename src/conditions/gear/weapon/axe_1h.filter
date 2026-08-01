@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Siege Axe" "Spectral Axe"
+    BaseType == "Siege Axe"
     Class == "One Hand Axes" #.format
     Rarity == Unique
     Replica False
@@ -19,7 +19,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Butcher Axe"
+    BaseType == "Spectral Axe"
     Class == "One Hand Axes" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Vaal Hatchet" "Tomahawk" "Royal Axe" "Jade Hatchet"
+    BaseType == "Decorative Axe" "Infernal Axe" "Jade Hatchet" "Royal Axe" "Butcher Axe" "Cleaver" "Vaal Hatchet" "Tomahawk"
     Class == "One Hand Axes" #.format
     Rarity == Unique
     Replica False

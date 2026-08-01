@@ -3,7 +3,7 @@
 # Armour and Offhands
 
 Show #.econ uni 100
-    BaseType == "Ebony Tower Shield" "Assassin's Boots" "Blood Raiment" "Spidersilk Robe" "Triumphant Lamellar" "Soldier Boots" "Carnal Armour" "Zodiac Leather"
+    BaseType == "Triumphant Lamellar" "Carnal Armour" "Soldier Boots" "Ebony Tower Shield"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -11,7 +11,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Leather Hood" "Elegant Ringmail" "Satin Gloves" "Ezomyte Burgonet" "Ornate Quiver" "Glorious Plate" "Shagreen Boots" "Vaal Gauntlets" "Zodiac Leather"
+    BaseType == "Vaal Gauntlets" "Lacquered Buckler" "Spidersilk Robe" "Assassin's Boots" "Blood Raiment" "Ezomyte Burgonet" "Glorious Plate" "Ornate Quiver"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -19,7 +19,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Carnal Armour" "Murder Boots" "Samite Gloves" "Titan Greaves" "Arcanist Slippers" "Great Helmet" "Crusader Chainmail" "Laminated Kite Shield" "Zealot Gloves" "Sinner Tricorne" "Spike-Point Arrow Quiver" "Silk Slippers" "Festival Mask" "Lacquered Buckler"
+    BaseType == "Elegant Ringmail" "Spike-Point Arrow Quiver" "Bronzescale Boots" "Zealot Gloves" "Sinner Tricorne" "Zodiac Leather" "Leather Hood" "Satin Gloves" "Great Helmet" "Titan Greaves" "Arcanist Gloves" "Laminated Kite Shield" "Arcanist Slippers" "Carnal Armour" "Silk Slippers" "Festival Mask" "Murder Boots" "Samite Gloves" "Shagreen Boots" "Crusader Chainmail"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -29,7 +29,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Weapons
 
 Show #.econ uni 100
-    BaseType == "Terror Maul" "Void Sceptre" "Maelström Staff"
+    BaseType == "Karui Sceptre" "Terror Maul" "Maelström Staff"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -37,7 +37,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Imperial Bow" "Boot Knife" "Great Mallet" "Ezomyte Dagger" "Eternal Sword" "Ornate Mace" "Vaal Claw" "Death Bow" "Decimation Bow" "Royal Skean" "Vaal Rapier" "Shadow Sceptre" "Calling Wand"
+    BaseType == "Void Sceptre" "Shadow Sceptre" "Vaal Rapier" "Great Mallet" "Imperial Bow"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -45,7 +45,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Infernal Sword" "Grinning Fetish" "Short Bow" "Gut Ripper" "Blasting Wand" "War Sword" "Stiletto" "Ezomyte Axe" "Opal Wand" "Nailed Fist" "Jasper Chopper" "Elder Sword" "Gnarled Branch"
+    BaseType == "Gut Ripper" "Calling Wand" "Gnarled Branch" "Ezomyte Dagger" "Ezomyte Axe" "Boot Knife" "Blasting Wand" "Elder Sword" "Jasper Chopper" "Nailed Fist" "Short Bow" "Eternal Sword" "Decimation Bow" "Ornate Mace" "Death Bow" "War Sword" "Infernal Sword" "Grinning Fetish" "Royal Skean" "Opal Wand" "Vaal Claw" "Stiletto"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -55,21 +55,21 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Jewellery and Jewels
 
 Show #.econ uni 100
-    BaseType == "Cloth Belt" "Chain Belt" "Turquoise Amulet" "Viridian Jewel" "Leather Belt"
+    BaseType == "Leather Belt"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Paua Amulet" "Jade Amulet" "Ruby Ring" "Cobalt Jewel" "Sapphire Ring" "Crimson Jewel" "Rustic Sash" "Heavy Belt"
+    BaseType == "Jade Amulet" "Turquoise Amulet" "Paua Amulet" "Cloth Belt" "Unset Ring" "Chain Belt" "Cobalt Jewel"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Cloth Belt" "Chain Belt" "Turquoise Amulet" "Viridian Jewel" "Leather Belt"
+    BaseType == "Rustic Sash" "Onyx Amulet" "Jade Amulet" "Diamond Ring" "Cobalt Jewel" "Unset Ring" "Sapphire Ring" "Viridian Jewel" "Paua Ring" "Crimson Jewel" "Heavy Belt" "Gold Amulet" "Ruby Ring"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Replica True
@@ -78,14 +78,14 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Flasks
 
 Show #.econ uni 10
-    BaseType == "Stibnite Flask" "Granite Flask"
+    BaseType == "Stibnite Flask"
     Class == "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Tinctures" #.format
     Rarity == Unique
     Replica True
     #.import STYLE | flask > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Sulphur Flask" "Sanctified Mana Flask"
+    BaseType == "Sulphur Flask" "Granite Flask" "Sanctified Mana Flask"
     Class == "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Tinctures" #.format
     Rarity == Unique
     Replica True

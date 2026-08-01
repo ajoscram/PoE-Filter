@@ -18,19 +18,19 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Map (Tier 2)" "Map (Tier 16)" "Map (Tier 10)" "Map (Tier 14)"
+    BaseType == "Map (Tier 16)"
     Class == "Maps" #.format
     Rarity == Unique
     #.import STYLE | map > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Map (Tier 16)" "Map (Tier 10)" "Map (Tier 13)" "Map (Tier 15)"
+    BaseType == "Map (Tier 15)" "Map (Tier 16)" "Map (Tier 14)" "Map (Tier 10)" "Map (Tier 12)"
     Class == "Maps" #.format
     Rarity == Unique
     #.import STYLE | map > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Map (Tier 13)" "Map (Tier 12)" "Map (Tier 15)" "Map (Tier 10)" "Map (Tier 16)" "Map (Tier 4)"
+    BaseType == "Map (Tier 16)" "Map (Tier 13)" "Map (Tier 8)" "Map (Tier 15)"
     Class == "Maps" #.format
     Rarity == Unique
     #.import STYLE | map > unique -> t3
@@ -38,7 +38,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 Show #.strict STRICTNESS_LENIENT .if Show
     Class == "Maps"
     Rarity == Unique
-    #.import STYLE | map > unique -> t2
+    #.import STYLE | map > unique -> t4
 
 # Exceptional
 

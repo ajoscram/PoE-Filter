@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Engraved Greatsword" "Lion Sword" "Infernal Sword"
+    BaseType == "Infernal Sword" "Engraved Greatsword" "Lion Sword"
     Class == "Two Hand Swords" #.format
     Rarity == Unique
     Replica False
@@ -20,7 +20,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Exquisite Blade"
+    BaseType == "Infernal Sword"
     Class == "Two Hand Swords" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Ornate Sword" "Lion Sword" "Infernal Sword" "Etched Greatsword" "Reaver Sword" "Ezomyte Blade" "Tiger Sword"
+    BaseType == "Reaver Sword" "Highland Blade" "Etched Greatsword" "Lion Sword" "Bastard Sword" "Tiger Sword" "Ezomyte Blade" "Ornate Sword" "Infernal Sword"
     Class == "Two Hand Swords" #.format
     Rarity == Unique
     Replica False

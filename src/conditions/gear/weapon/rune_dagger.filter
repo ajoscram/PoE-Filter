@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Imperial Skean" "Slaughter Knife"
+    BaseType == "Slaughter Knife" "Imperial Skean"
     Class == "Rune Daggers" #.format
     Rarity == Unique
     Replica False
@@ -19,7 +19,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Demon Dagger" "Fiend Dagger"
+    BaseType == "Fiend Dagger" "Demon Dagger"
     Class == "Rune Daggers" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Royal Skean" "Demon Dagger" "Imperial Skean" "Ezomyte Dagger"
+    BaseType == "Imperial Skean" "Boot Knife" "Boot Blade" "Platinum Kris" "Fiend Dagger" "Ezomyte Dagger" "Royal Skean" "Demon Dagger"
     Class == "Rune Daggers" #.format
     Rarity == Unique
     Replica False

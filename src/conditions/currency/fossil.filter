@@ -3,23 +3,23 @@
 # Economy
 
 Show #.econ fos 100
-	BaseType == "Hollow Fossil" "Glyphic Fossil" "Gilded Fossil" "Sanctified Fossil" "Faceted Fossil"
+	BaseType == "Fractured Fossil" "Hollow Fossil"
 	#.import STYLE | currency -> t1
 
 Show #.econ fos 10 100
-	BaseType == "Shuddering Fossil" "Dense Fossil" "Frigid Fossil" "Prismatic Fossil" "Deft Fossil" "Fractured Fossil" "Aetheric Fossil" "Opulent Fossil" "Corroded Fossil" "Metallic Fossil" "Scorched Fossil" "Aberrant Fossil" "Serrated Fossil"
+	BaseType == "Corroded Fossil" "Glyphic Fossil" "Dense Fossil" "Faceted Fossil" "Shuddering Fossil" "Sanctified Fossil"
 	#.import STYLE | currency -> t2
 
 Show #.econ fos 1 10
-	BaseType == "Bound Fossil" "Pristine Fossil" "Jagged Fossil"
+	BaseType == "Fundamental Fossil" "Aetheric Fossil" "Scorched Fossil" "Gilded Fossil" "Aberrant Fossil" "Pristine Fossil" "Metallic Fossil" "Opulent Fossil" "Frigid Fossil" "Tangled Fossil" "Bound Fossil" "Jagged Fossil" "Prismatic Fossil" "Bloodstained Fossil" "Deft Fossil" "Lucent Fossil" "Serrated Fossil"
 	#.import STYLE | currency -> t3
 
 Show #.econ fos 0 1 .strict STRICTNESS_LENIENT .if Show
-	BaseType == "Lucent Fossil" "Fundamental Fossil"
+	BaseType == "Serrated Fossil"
 	#.import STYLE | currency -> t4
 
 Hide #.econ fos 0 1
-	BaseType == "Lucent Fossil" "Fundamental Fossil"
+	BaseType == "Serrated Fossil"
 	#.import STYLE | miscellaneous -> hidden
 	#.import STYLE | currency -> t5
 

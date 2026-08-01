@@ -13,7 +13,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Chiming Spirit Shield" "Girded Tower Shield" "Lacewood Spirit Shield" "Elegant Round Shield" "Ezomyte Tower Shield" "Vaal Spirit Shield" "Titanium Spirit Shield" "Mirrored Spiked Shield"
+    BaseType == "Elegant Round Shield" "Girded Tower Shield" "Mirrored Spiked Shield" "Ezomyte Tower Shield"
     Class == "Shields" #.format
     Rarity == Unique
     Replica False
@@ -22,7 +22,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Pinnacle Tower Shield" "Spiny Round Shield" "Vaal Spirit Shield" "Champion Kite Shield" "Titanium Spirit Shield" "Crimson Round Shield" "Jingling Spirit Shield" "Ebony Tower Shield" "Archon Kite Shield" "Golden Buckler" "Maple Round Shield" "Steel Kite Shield" "Sovereign Spiked Shield"
+    BaseType == "Lacquered Buckler" "Pinnacle Tower Shield" "Steel Kite Shield" "Lacewood Spirit Shield" "Archon Kite Shield" "Vaal Spirit Shield" "Jingling Spirit Shield" "Champion Kite Shield" "Crimson Round Shield" "Ancient Spirit Shield" "Maple Round Shield" "Ebony Tower Shield" "Golden Buckler" "Titanium Spirit Shield"
     Class == "Shields" #.format
     Rarity == Unique
     Replica False
@@ -31,7 +31,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Chiming Spirit Shield" "Vaal Spirit Shield" "Laminated Kite Shield" "Plank Kite Shield" "Branded Kite Shield" "Painted Buckler" "War Buckler" "Tarnished Spirit Shield" "Cardinal Round Shield" "Teak Round Shield" "Pine Buckler" "Harmonic Spirit Shield" "Ancient Spirit Shield" "Mosaic Kite Shield" "Compound Spiked Shield" "Rawhide Tower Shield" "Polished Spiked Shield" "Ironwood Buckler" "Corrugated Buckler" "Enameled Buckler" "Archon Kite Shield" "Painted Tower Shield" "Baroque Round Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Pinnacle Tower Shield" "Cedar Tower Shield" "Brass Spirit Shield" "Rotted Round Shield" "Ezomyte Tower Shield" "Lacquered Buckler" "Colossal Tower Shield"
+    BaseType == "Painted Tower Shield" "Steel Kite Shield" "Compound Spiked Shield" "Laminated Kite Shield" "Painted Buckler" "Tarnished Spirit Shield" "Harmonic Spirit Shield" "Sovereign Spiked Shield" "Ezomyte Spiked Shield" "Lacquered Buckler" "Mosaic Kite Shield" "Rotted Round Shield" "Polished Spiked Shield" "Ezomyte Tower Shield" "Baroque Round Shield" "Rawhide Tower Shield" "War Buckler" "Brass Spirit Shield" "Reinforced Tower Shield" "Enameled Buckler" "Plank Kite Shield" "Pinnacle Tower Shield" "Archon Kite Shield" "Chiming Spirit Shield" "Studded Round Shield" "Teak Round Shield" "Spiny Round Shield" "Vaal Spirit Shield" "Colossal Tower Shield" "Elegant Round Shield" "Pine Buckler" "Cardinal Round Shield" "Ironwood Buckler" "Corrugated Buckler" "Cedar Tower Shield" "Ancient Spirit Shield" "Vaal Buckler" "Ebony Tower Shield" "Branded Kite Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
     Class == "Shields" #.format
     Rarity == Unique
     Replica False
@@ -65,7 +65,7 @@ Show #.strict STRICTNESS_STRICT .if Show
 Show #.strict STRICTNESS_BASE .if Show
     BaseType == BASES_SHIELD_BEST
     Rarity == Rare
-    
+
 Show
     Class == "Shields"
     #.multi

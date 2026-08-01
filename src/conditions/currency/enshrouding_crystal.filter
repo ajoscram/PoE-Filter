@@ -2,16 +2,12 @@
 
 # Economy
 
-Show #.econ enc 100
+Show #.econ enc 10
     BaseType == "Maraketh Enshrouding Crystal"
-    #.import STYLE | currency -> t1
-
-Show #.econ enc 10 100
-    BaseType == "Templar Enshrouding Crystal"
     #.import STYLE | currency -> t2
-    
+
 Show #.econ enc 0 10
-    BaseType == "Karui Enshrouding Crystal" "Imperial Enshrouding Crystal" "Vaal Enshrouding Crystal"
+    BaseType == "Karui Enshrouding Crystal" "Imperial Enshrouding Crystal" "Vaal Enshrouding Crystal" "Templar Enshrouding Crystal"
     #.import STYLE | currency -> t3
 
 # Catchall

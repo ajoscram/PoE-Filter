@@ -34,14 +34,14 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Chance to Block Attack Damage" "Chance to Suppress Spell Damage"
+    EnchantmentPassiveNode == "Mana"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Fire Resistance" "Chaos Resistance" "Life" "Cold Resistance" "Evasion" "Mana" "Armour" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chance to Suppress Spell Damage" "Chaos Resistance" "Curse Effect" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Armour" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel >= 84
@@ -50,7 +50,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 3 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 83
@@ -66,7 +66,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Mana" "Armour" "Fire Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Mana" "Curse Effect" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Armour" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 83
@@ -76,7 +76,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 3 Passives - iLvl 68 to 74
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 74
@@ -84,7 +84,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Reservation Efficiency"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 74
@@ -92,7 +92,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Cold Resistance" "Evasion" "Mana" "Armour" "Fire Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Mana" "Curse Effect" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Armour" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 74
@@ -102,7 +102,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 3 Passives - iLvl 50 to 67
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Fire Resistance" "Reservation Efficiency" "Chance to Block Attack Damage" "Mana" "Lightning Resistance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 67
@@ -110,7 +110,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Fire Resistance" "Reservation Efficiency" "Chance to Block Attack Damage" "Mana" "Lightning Resistance"
+    EnchantmentPassiveNode == "Reservation Efficiency"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 67
@@ -118,7 +118,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Spell Damage" "Armour" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Mana" "Curse Effect" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Armour" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 67
@@ -128,21 +128,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 3 Passives - iLvl 49-
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Mana" "Chance to Block Attack Damage" "Energy Shield" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Reservation Efficiency"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Mana" "Chance to Block Attack Damage" "Energy Shield" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Suppress Spell Damage" "Life" "Cold Resistance" "Armour" "Fire Resistance"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Curse Effect" "Mana" "Chance to Block Attack Damage" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Life" "Armour" "Chance to Block Spell Damage" "Cold Resistance"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 3
     ItemLevel <= 49
@@ -151,21 +151,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 84+
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Reservation Efficiency" "Life" "Chance to Block Attack Damage" "Mana" "Armour" "Fire Resistance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Chance to Block Spell Damage" "Reservation Efficiency" "Life" "Chance to Block Attack Damage" "Mana" "Armour" "Fire Resistance"
+    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency" "Armour"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel >= 84
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Cold Resistance" "Evasion" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Curse Effect" "Mana" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel >= 84
@@ -174,7 +174,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 75 to 83
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 83
@@ -182,7 +182,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 83
@@ -190,7 +190,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Lightning Resistance" "Chance to Block Spell Damage" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Mana" "Fire Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Curse Effect" "Mana" "Reservation Efficiency" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Armour" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 83
@@ -200,7 +200,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 68 to 74
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 74
@@ -208,7 +208,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Armour" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Reservation Efficiency" "Armour"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 74
@@ -216,7 +216,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Mana" "Fire Resistance" "Chaos Resistance" "Chance to Suppress Spell Damage" "Life" "Chance to Block Attack Damage" "Cold Resistance" "Evasion" "Chance to Block Spell Damage" "Lightning Resistance" "Curse Effect" "Energy Shield"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Curse Effect" "Mana" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Life" "Chance to Block Spell Damage" "Cold Resistance"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 74
@@ -226,7 +226,7 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 50 to 67
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Chance to Block Attack Damage" "Chaos Resistance" "Lightning Resistance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 67
@@ -234,7 +234,7 @@ Show #.econ clj 100
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Mana" "Energy Shield" "Cold Resistance" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Reservation Efficiency" "Armour"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 67
@@ -242,7 +242,7 @@ Show #.econ clj 10 100
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Life" "Evasion" "Chance to Block Spell Damage" "Armour" "Fire Resistance"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Mana" "Curse Effect" "Chance to Block Attack Damage" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Life" "Chance to Block Spell Damage" "Cold Resistance"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 67
@@ -252,21 +252,21 @@ Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
 # 2 Passives - iLvl 49-
 
 Show #.econ clj 100
-    EnchantmentPassiveNode == "Chaos Resistance"
+    EnchantmentPassiveNode == "Aura effect"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t1
 
 Show #.econ clj 10 100
-    EnchantmentPassiveNode == "Armour" "Curse Effect" "Chance to Suppress Spell Damage" "Reservation Efficiency"
+    EnchantmentPassiveNode == "Reservation Efficiency" "Armour"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 49
     #.import < jewellery > _util -> multi_t2
 
 Show #.econ clj 0 10 .strict STRICTNESS_STRICT .if Show
-    EnchantmentPassiveNode == "Lightning Resistance" "Life" "Cold Resistance" "Mana" "Chance to Block Spell Damage" "Fire Resistance"
+    EnchantmentPassiveNode == "Chaos Resistance" "Chance to Suppress Spell Damage" "Curse Effect" "Mana" "Chance to Block Attack Damage" "Cold Resistance" "Energy Shield" "Evasion" "Lightning Resistance" "Fire Resistance" "Chance to Block Spell Damage" "Life"
     BaseType == "Small Cluster Jewel"
     EnchantmentPassiveNum == 2
     ItemLevel <= 49

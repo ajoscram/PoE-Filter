@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Ambusher"
+    BaseType == "Sai"
     Class == "Daggers" #.format
     Rarity == Unique
     Replica False
@@ -19,7 +19,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Ambusher"
+    BaseType == "Sai"
     Class == "Daggers" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Ambusher"
+    BaseType == "Ambusher" "Stiletto" "Skinning Knife"
     Class == "Daggers" #.format
     Rarity == Unique
     Replica False

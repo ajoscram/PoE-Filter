@@ -13,7 +13,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Crusader Plate" "Carnal Armour" "Wyrmscale Doublet" "Spidersilk Robe" "Desert Brigandine" "Sage's Robe" "Lacquered Garb"
+    BaseType == "Zodiac Leather" "Carnal Armour" "Savant's Robe" "Sadist Garb"
     Class == "Body Armours" #.format
     Rarity == Unique
     Replica False
@@ -23,7 +23,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Sentinel Jacket" "Cabalist Regalia" "Carnal Armour" "Saint's Hauberk" "Silken Vest" "Sadist Garb" "Gladiator Plate" "Lacquered Garb" "Savant's Robe" "Sage's Robe"
+    BaseType == "Vaal Regalia" "Golden Plate" "Glorious Plate" "Crusader Plate" "Saint's Hauberk" "Lacquered Garb" "Sage's Robe" "Wyrmscale Doublet" "Elegant Ringmail" "Triumphant Lamellar" "Sentinel Jacket" "Sadist Garb" "Cabalist Regalia" "Gladiator Plate" "Blood Raiment" "Spidersilk Robe"
     Class == "Body Armours" #.format
     Rarity == Unique
     Replica False
@@ -33,7 +33,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Crusader Plate" "Blood Raiment" "Scholar's Robe" "Sadist Garb" "Lacquered Garb" "Vaal Regalia" "Glorious Plate" "Spidersilk Robe" "Zodiac Leather" "Torturer Garb" "Destiny Leather" "Majestic Plate" "Wyrmscale Doublet" "Saint's Hauberk" "Elegant Ringmail" "Necromancer Silks" "Varnished Coat" "Gladiator Plate" "Sage's Robe" "Destroyer Regalia" "Exquisite Leather" "Silken Vest" "Astral Plate"
+    BaseType == "Ornate Ringmail" "Golden Plate" "Simple Robe" "Exquisite Leather" "Varnished Coat" "Silken Vest" "Sentinel Jacket" "Sharkskin Tunic" "Scholar's Robe" "Plate Vest" "Destiny Leather" "Desert Brigandine" "Widowsilk Robe" "Lacquered Garb" "Full Wyrmscale" "Carnal Armour" "Occultist's Vestment" "Sadist Garb" "Destroyer Regalia" "Waxed Garb" "Sun Leather" "Saintly Chainmail" "Astral Plate" "Bone Armour" "Devout Chainmail" "General's Brigandine" "Zodiac Leather" "Crusader Chainmail" "Elegant Ringmail" "Conquest Chainmail" "Holy Chainmail" "Assassin's Garb" "Triumphant Lamellar" "Torturer Garb" "Wild Leather" "Full Dragonscale" "Copper Plate" "Vaal Regalia" "Latticed Ringmail" "Glorious Plate" "Necromancer Silks" "Crusader Plate" "Saint's Hauberk" "Sacrificial Garb" "Buckskin Tunic" "Sage's Robe" "Majestic Plate" "Colosseum Plate" "Cutthroat's Garb" "Spidersilk Robe"
     Class == "Body Armours" #.format
     Rarity == Unique
     Replica False

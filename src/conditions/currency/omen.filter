@@ -3,15 +3,15 @@
 # Economy
 
 Show #.econ omn 100
-	BaseType == "Omen of Refreshment" "Omen of the Jeweller" "Omen of Trichromatism" "Omen of Amelioration" "Omen of Fortune" "Omen of Connections"
+	BaseType == "Omen of Connections" "Omen of Fortune"
 	#.import STYLE | currency -> t1
 
 Show #.econ omn 10 100
-	BaseType == "Omen of Brilliance"
+	BaseType == "Omen of Trichromatism" "Omen of Brilliance" "Omen of Amelioration"
 	#.import STYLE | currency -> t2
 
 Show #.econ omn 1 10
-	BaseType == "Omen of Death's Door"
+	BaseType == "Omen of the Soul Devourer" "Omen of Refreshment" "Omen of Death's Door" "Omen of Adrenaline" "Omen of Return" "Omen of the Jeweller" "Omen of Death-dancing"
 	#.import STYLE | currency -> t3
 
 Show #.econ omn 0 1 .strict STRICTNESS_LENIENT .if Show

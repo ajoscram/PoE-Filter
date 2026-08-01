@@ -13,7 +13,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Rawhide Boots" "Assassin's Boots" "Crusader Boots" "Murder Boots" "Runic Sollerets" "Dragonscale Boots" "Sorcerer Boots"
+    BaseType == "Assassin's Boots" "Riveted Boots" "Carnal Boots" "Crusader Boots"
     Class == "Boots" #.format
     Rarity == Unique
     Replica False
@@ -22,7 +22,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Carnal Boots" "Rawhide Boots" "Slink Boots" "Riveted Boots" "Reinforced Greaves" "Goathide Boots" "Titan Greaves" "Runic Sabatons" "Sorcerer Boots" "Stealth Boots"
+    BaseType == "Carnal Boots" "Runic Sabatons" "Titan Greaves" "Rawhide Boots" "Runic Sollerets" "Sorcerer Boots" "Slink Boots" "Dragonscale Boots" "Stealth Boots" "Murder Boots"
     Class == "Boots" #.format
     Rarity == Unique
     Replica False
@@ -31,7 +31,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Conjurer Boots" "Arcanist Slippers" "Trapper Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Velvet Slippers" "Nubuck Boots" "Carnal Boots" "Wyrmscale Boots" "Ancient Greaves" "Mesh Boots" "Hydrascale Boots" "Wool Shoes" "Dragonscale Boots" "Legion Boots" "Titan Greaves" "Bronzescale Boots" "Ironscale Boots" "Slink Boots" "Silk Slippers" "Fugitive Boots" "Murder Boots" "Satin Slippers" "Soldier Boots" "Two-Toned Boots" "Vaal Greaves" "Assassin's Boots" "Serpentscale Boots" "Goathide Boots" "Goliath Greaves"
+    BaseType == "Titan Greaves" "Serpentscale Boots" "Assassin's Boots" "Strapped Boots" "Trapper Boots" "Shagreen Boots" "Satin Slippers" "Stealth Boots" "Mesh Boots" "Ancient Greaves" "Carnal Boots" "Plated Greaves" "Reinforced Greaves" "Hydrascale Boots" "Sorcerer Boots" "Velvet Slippers" "Two-Toned Boots" "Bronzescale Boots" "Silk Slippers" "Nubuck Boots" "Fugitive Boots" "Conjurer Boots" "Scholar Boots" "Arcanist Slippers" "Deerskin Boots" "Antique Greaves" "Goathide Boots" "Wool Shoes" "Soldier Boots" "Clasped Boots" "Murder Boots" "Vaal Greaves" "Slink Boots" "Dragonscale Boots" "Eelskin Boots" "Ironscale Boots" "Goliath Greaves" "Legion Boots" "Shackled Boots" "Wyrmscale Boots" "Sharkskin Boots"
     Class == "Boots" #.format
     Rarity == Unique
     Replica False

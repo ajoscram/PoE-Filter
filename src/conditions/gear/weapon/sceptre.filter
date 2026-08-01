@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Void Sceptre"
+    BaseType == "Platinum Sceptre"
     Class == "Sceptres" #.format
     Rarity == Unique
     Replica False
@@ -19,7 +19,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Shadow Sceptre" "Karui Sceptre" "Platinum Sceptre" "Vaal Sceptre"
+    BaseType == "Void Sceptre" "Crystal Sceptre" "Shadow Sceptre"
     Class == "Sceptres" #.format
     Rarity == Unique
     Replica False
@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Shadow Sceptre" "Bronze Sceptre" "Tyrant's Sekhem" "Platinum Sceptre" "Vaal Sceptre" "Royal Sceptre" "Void Sceptre" "Blood Sceptre" "Grinning Fetish" "Ritual Sceptre" "Crystal Sceptre"
+    BaseType == "Ritual Sceptre" "Blood Sceptre" "Shadow Sceptre" "Karui Sceptre" "Void Sceptre" "Crystal Sceptre" "Platinum Sceptre" "Tyrant's Sekhem" "Grinning Fetish" "Vaal Sceptre" "Carnal Sceptre" "Bronze Sceptre" "Opal Sceptre" "Royal Sceptre"
     Class == "Sceptres" #.format
     Rarity == Unique
     Replica False

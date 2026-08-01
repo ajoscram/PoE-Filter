@@ -16,7 +16,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Leather Belt" "Vanguard Belt" "Heavy Belt" "Studded Belt" "Chain Belt"
+    BaseType == "Leather Belt" "Cloth Belt" "Heavy Belt" "Vanguard Belt" "Studded Belt"
     Class == "Belts" #.format
     Rarity == Unique
     Replica False
@@ -24,7 +24,7 @@ Show #.econ uni 100
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Cloth Belt" "Leather Belt" "Vanguard Belt" "Stygian Vise" "Heavy Belt" "Studded Belt" "Chain Belt"
+    BaseType == "Cloth Belt" "Heavy Belt" "Chain Belt" "Vanguard Belt" "Studded Belt"
     Class == "Belts" #.format
     Rarity == Unique
     Replica False
@@ -32,7 +32,7 @@ Show #.econ uni 10 100
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Cloth Belt" "Leather Belt" "Rustic Sash" "Vanguard Belt" "Heavy Belt" "Studded Belt" "Chain Belt" "Crystal Belt"
+    BaseType == "Leather Belt" "Cloth Belt" "Studded Belt" "Rustic Sash" "Crystal Belt" "Heavy Belt" "Chain Belt" "Stygian Vise" "Vanguard Belt"
     Class == "Belts" #.format
     Rarity == Unique
     Replica False

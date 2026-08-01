@@ -10,19 +10,19 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Processional Relic" "Candlestick Relic" "Papyrus Relic"
+    BaseType == "Processional Relic" "Papyrus Relic" "Candlestick Relic" "Censer Relic"
     Class == "Relics" #.format
     Rarity == Unique
     #.import STYLE | equipment > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Censer Relic"
+    BaseType == "Processional Relic" "Censer Relic"
     Class == "Relics" #.format
     Rarity == Unique
     #.import STYLE | equipment > unique -> t2
 
 Show #.econ uni 1 10
-    BaseType == "Processional Relic" "Urn Relic" "Tome Relic" "Coffer Relic"
+    BaseType == "Urn Relic" "Tome Relic" "Coffer Relic"
     Class == "Relics" #.format
     Rarity == Unique
     #.import STYLE | equipment > unique -> t3

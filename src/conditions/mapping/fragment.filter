@@ -4,7 +4,7 @@
 #.# which can be exploited to catch every different item listed here
 
 Show #.econ fra 100 .econ inv 100
-	BaseType == "Blazing Fragment" "Valdo's Puzzle Box" "Veritania's Crest" "Synthesising Fragment" "Fragment of Emptiness" "Baran's Crest" "Fragment of the Hydra" "Drox's Crest" "Fragment of Shape" "Simulacrum" "Fragment of Knowledge" "Reverent Fragment" "Gift to the Goddess" "Traumatic Fragment" "Sacred Blossom" "Memory of Reverence" "Voidborn Reliquary Key" "Devouring Fragment" "Fragment of Terror" "Echo of Trauma" "Decaying Fragment" "Reality Fragment" "Fragment of Enslavement" "An Audience With The King" "Fragment of Purification" "Fragment of Eradication" "Syndicate Medallion" "Lonely Fragment" "Al-Hezmin's Crest" "The Maven's Writ" "Hivebrain Gland" "Echo of Reverence" "The Black Barya" "Fragment of the Minotaur" "Fragment of the Phoenix" "Cosmic Fragment" "Dedication to the Goddess" "Echo of Loneliness" "Incandescent Invitation" "Screaming Invitation"
+	BaseType == "Echo of Reverence" "Valdo's Puzzle Box" "Voidborn Reliquary Key" "Zorath's Eye of the Inevitable" "Syndicate Medallion" "Echo of Trauma" "Screaming Invitation"
 	#.import STYLE | fragment -> t1
 
 Show
@@ -12,7 +12,7 @@ Show
 	#.import STYLE | fragment -> t1
 
 Show #.econ fra 10 100 .econ inv 10 100
-	BaseType == "Mortal Grief" "Memory of Trauma" "Mortal Rage" "Mortal Hope" "Sacrifice at Noon" "Ritual Vessel" "Fragment of Constriction" "Timeless Karui Emblem" "Timeless Templar Emblem" "Offering to the Goddess" "Fragment of the Chimera" "Mortal Ignorance" "Sacrifice at Midnight" "Awakening Fragment" "Timeless Maraketh Emblem" "Timeless Vaal Emblem" "Tribute to the Goddess" "Crescent Splinter" "Memory of Loneliness"
+	BaseType == "Fragment of Purification" "Ritual Vessel" "Cosmic Fragment" "Traumatic Fragment" "Fragment of Eradication" "Fragment of Knowledge" "Blazing Fragment" "Reverent Fragment" "Memory of Trauma" "Lonely Fragment" "Message in a Bottle" "Mortal Ignorance" "Decaying Fragment" "Simulacrum" "Timeless Templar Emblem" "Echo of Loneliness" "Sacred Blossom" "Timeless Maraketh Emblem" "Devouring Fragment" "Fragment of Shape" "Fragment of Enslavement" "Hivebrain Gland" "Gift to the Goddess" "An Audience With The King" "Fragment of Constriction" "Fragment of Terror" "Synthesising Fragment" "Fragment of Emptiness" "Memory of Reverence" "Reality Fragment" "Fragment of the Chimera" "Polaric Invitation" "Incandescent Invitation"
 	#.import STYLE | fragment -> t2
 
 Show
@@ -20,7 +20,7 @@ Show
 	#.import STYLE | fragment -> t2
 
 Show #.econ fra 1 10 .econ inv 1 10
-	BaseType == "Sacrifice at Dawn" "Timeless Eternal Emblem" "Sacrifice at Dusk" "Polaric Invitation" "Writhing Invitation"
+	BaseType == "Baran's Crest" "Memory of Loneliness" "Zorath's Eye of Authority" "Timeless Karui Emblem" "Veritania's Crest" "Crescent Splinter" "Sacrifice at Noon" "Timeless Eternal Emblem" "Offering to the Goddess" "Mortal Rage" "Zorath's Eye of the Endless" "Fragment of the Phoenix" "Sacrifice at Midnight" "Timeless Vaal Emblem" "Dedication to the Goddess" "The Maven's Writ" "Drox's Crest" "Fragment of the Minotaur" "Mortal Grief" "Al-Hezmin's Crest" "Tribute to the Goddess" "Fragment of the Hydra" "Zorath's Eye of Malevolence" "Mortal Hope" "Awakening Fragment" "Writhing Invitation"
 	#.import STYLE | fragment -> t3
 
 Show
@@ -28,5 +28,5 @@ Show
 	#.import STYLE | fragment -> t3
 
 Show #.econ fra 0 1 .econ inv 0 1
-	BaseType == "Simulacrum Splinter" "Divine Vessel"
+	BaseType == "Divine Vessel" "Simulacrum Splinter" "Timeless Maraketh Splinter" "Sacrifice at Dusk" "Timeless Karui Splinter" "Sacrifice at Dawn" "Ritual Splinter" "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter"
 	#.import STYLE | fragment -> t4

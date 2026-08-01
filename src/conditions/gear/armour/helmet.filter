@@ -13,7 +13,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Silken Hood" "Hubris Circlet" "Necromancer Circlet" "Nightmare Bascinet" "Runic Helm" "Ezomyte Burgonet" "Fluted Bascinet" "Harlequin Mask" "Royal Burgonet" "Golden Mask" "Magistrate Crown" "Raven Mask" "Solaris Circlet" "Gilded Sallet"
+    BaseType == "Harlequin Mask" "Fluted Bascinet" "Silken Hood" "Magistrate Crown" "Necromancer Circlet" "Solaris Circlet" "Ezomyte Burgonet" "Faithful Helmet"
     Class == "Helmets" #.format
     Rarity == Unique
     Replica False
@@ -22,7 +22,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Great Crown" "Hubris Circlet" "Zealot Helmet" "Necromancer Circlet" "Sinner Tricorne" "Silken Hood" "Pig-Faced Bascinet" "Praetor Crown" "Ezomyte Burgonet" "Siege Helmet" "Leather Hood" "Steel Circlet" "Golden Mask" "Runic Crown" "Bone Circlet" "Prophet Crown" "Nightmare Bascinet" "Lich's Circlet" "Faithful Helmet" "Iron Circlet" "Lacquered Helmet" "Royal Burgonet" "Lunaris Circlet" "Visored Sallet" "Gilded Sallet"
+    BaseType == "Siege Helmet" "Runic Helm" "Bone Circlet" "Prophet Crown" "Golden Mask" "Runic Crown" "Bone Helmet" "Hubris Circlet" "Silken Hood" "Lacquered Helmet" "Royal Burgonet" "Magistrate Crown" "Raven Mask" "Callous Mask" "Great Crown" "Faithful Helmet"
     Class == "Helmets" #.format
     Rarity == Unique
     Replica False
@@ -31,7 +31,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Lion Pelt" "Great Crown" "Hubris Circlet" "Callous Mask" "Aventail Helmet" "Harlequin Mask" "Ursine Pelt" "Zealot Helmet" "Necromancer Circlet" "Iron Mask" "Sinner Tricorne" "Leather Cap" "Regicide Mask" "Silken Hood" "Tricorne" "Praetor Crown" "Eternal Burgonet" "Close Helmet" "Deicide Mask" "Reaver Helmet" "Ezomyte Burgonet" "Mind Cage" "Golden Mask" "Steel Circlet" "Festival Mask" "Barbute Helmet" "Bone Circlet" "Prophet Crown" "Nightmare Bascinet" "Iron Circlet" "Bone Helmet" "Solaris Circlet" "Soldier Helmet" "Lacquered Helmet" "Vaal Mask" "Royal Burgonet" "Magistrate Crown" "Gilded Sallet" "Paladin Crown"
+    BaseType == "Iron Mask" "Nightmare Bascinet" "Festival Mask" "Lunaris Circlet" "Gilded Sallet" "Bone Helmet" "Silken Hood" "Lacquered Helmet" "Aventail Helmet" "Leather Cap" "Mind Cage" "Solaris Circlet" "Praetor Crown" "Iron Hat" "Harlequin Mask" "Tricorne" "Secutor Helm" "Golden Mask" "Zealot Helmet" "Pig-Faced Bascinet" "Paladin Crown" "Reaver Helmet" "Sinner Tricorne" "Magistrate Crown" "Wolf Pelt" "Vine Circlet" "Steel Circlet" "Visored Sallet" "Prophet Crown" "Iron Circlet" "Barbute Helmet" "Hubris Circlet" "Necromancer Circlet" "Soldier Helmet" "Ursine Pelt" "Ezomyte Burgonet" "Vaal Mask" "Close Helmet" "Leather Hood" "Bone Circlet" "Lich's Circlet" "Tribal Circlet" "Samnite Helmet" "Royal Burgonet" "Eternal Burgonet" "Deicide Mask" "Regicide Mask" "Callous Mask" "Great Crown" "Lion Pelt"
     Class == "Helmets" #.format
     Rarity == Unique
     Replica False

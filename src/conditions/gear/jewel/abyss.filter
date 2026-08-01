@@ -4,25 +4,25 @@
 
 #.alias MODS_ABYSS_JEWEL_EXCEPTIONAL    = "Subterranean" "of the Underground"
 #.alias MODS_ABYSS_JEWEL_GRAND          = "Stalwart" "Sapphire" "Acuminate" "Flaring" "Electrocuting" "Cremating" "Entombing" "Malicious" "Vile" "Encased" "Beclouded" "Resplendent" "Expediting" "Lancing" "of Strength" "of Dexterity" "of Intelligence" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of the Dragon" "of the Beast" "of Grounding" "of the Hearth" "of Insulation" "of Shelter" "of Resistance" "of Order" "of Berserking" "of Potency" "of the Lightning Rod" "of Immunity" "of the Tourniquet" "of Poise" "of the Deadeye" "of Mangling" "of Phasing" "of the Raider" "of Abuse" "of Opportunity" "of the Inferno" "of Vivaciousness" "of the Inquisitor" "of Momentum"
-#.alias MODS_ABYSS_JEWEL_GREATER        = "Sanguine" "Azure" "Exuberant" "Deleterious" "Discharging" "Blasting" "Polar" "Malignant" "Resonating" "Carapaced" "Vaporous" "Incandescent" "Facilitating" "Skewering" "Motivating" "of Chilling" "of Shocking" "of Menace" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of Sin" "of Insulating" "of Tolerance" "of Stemming" "of Balance" "of the Ranger" "of Instinct" "of the Sanctum" "of Preparation" "of Praxis" "of Maneuvering" "of the Guardian" "of the Assassin" "of the Slayer"  "of Confidence" 
+#.alias MODS_ABYSS_JEWEL_GREATER        = "Sanguine" "Azure" "Exuberant" "Deleterious" "Discharging" "Blasting" "Polar" "Malignant" "Resonating" "Carapaced" "Vaporous" "Incandescent" "Facilitating" "Skewering" "Motivating" "of Chilling" "of Shocking" "of Menace" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of Sin" "of Insulating" "of Tolerance" "of Stemming" "of Balance" "of the Ranger" "of Instinct" "of the Sanctum" "of Preparation" "of Praxis" "of Maneuvering" "of the Guardian" "of the Assassin" "of the Slayer"  "of Confidence"
 #.alias MODS_ABYSS_JEWEL_LESSER         = "Healthy" "Cobalt" "Lively" "Degenerative" "Tempered" "Shocking" "Incinerating" "Glaciated" "Darkened" "Breathtaking" "Vivacious" "Inspirational" "Fortified" "Fleet" "Seething" "Spurring" "of Immolation" "of Floe" "of Discharge" "of Impact" "of Malice" "of Blinding" "of the Marksman" "of Readiness" "of Escape" "of Enervation" "of Clouding" "of Languishing" "of Daunting" "of Guarding"
 
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Ghastly Eye Jewel"
+    BaseType == "Hypnotic Eye Jewel" "Assembled Eye Jewel" "Searching Eye Jewel" "Ghastly Eye Jewel" "Murderous Eye Jewel"
     Class == "Abyss Jewels" #.format
     Rarity == Unique
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Murderous Eye Jewel"
+    BaseType == "Ghastly Eye Jewel" "Murderous Eye Jewel"
     Class == "Abyss Jewels" #.format
     Rarity == Unique
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Searching Eye Jewel" "Hypnotic Eye Jewel"
+    BaseType == "Hypnotic Eye Jewel" "Searching Eye Jewel"
     Class == "Abyss Jewels" #.format
     Rarity == Unique
     #.import STYLE | jewellery > unique -> t3

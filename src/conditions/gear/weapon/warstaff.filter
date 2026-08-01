@@ -11,7 +11,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Foul Staff" "Maelström Staff" "Ezomyte Staff"
+    BaseType == "Maelström Staff" "Foul Staff"
     Class == "Warstaves" #.format
     Rarity == Unique
     Replica False
@@ -20,7 +20,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Serpentine Staff" "Judgement Staff" "Maelström Staff"
+    BaseType == "Ezomyte Staff" "Serpentine Staff" "Judgement Staff" "Maelström Staff"
     Class == "Warstaves" #.format
     Rarity == Unique
     Replica False
@@ -29,7 +29,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Vile Staff" "Iron Staff" "Judgement Staff" "Ezomyte Staff" "Coiled Staff" "Foul Staff" "Maelström Staff"
+    BaseType == "Vile Staff" "Maelström Staff" "Military Staff" "Coiled Staff" "Iron Staff" "Ezomyte Staff" "Serpentine Staff" "Judgement Staff"
     Class == "Warstaves" #.format
     Rarity == Unique
     Replica False

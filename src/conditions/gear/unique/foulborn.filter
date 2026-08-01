@@ -3,7 +3,7 @@
 # Armour and Offhands
 
 Show #.econ uni 100
-    BaseType == "Sage's Robe" "Crusader Plate" "Lacquered Garb" "Scholar's Robe" "Harlequin Mask" "Gilded Sallet" "Zodiac Leather" "Spidersilk Robe" "Wyrmscale Doublet" "Elegant Round Shield" "Astral Plate" "Sorcerer Boots" "Archon Kite Shield" "Desert Brigandine" "Golden Mask" "Ezomyte Tower Shield" "Champion Kite Shield" "Titanium Spirit Shield" "Raven Mask" "Murder Mitts" "Rawhide Boots" "Praetor Crown" "Steel Kite Shield" "Silken Vest" "Gladiator Plate" "Royal Burgonet"
+    BaseType == "Wyrmscale Doublet" "Rawhide Boots" "Crusader Plate" "Lacquered Garb" "Titanium Spirit Shield" "Gilded Sallet" "Golden Mask" "Spidersilk Robe" "Astral Plate" "Steel Kite Shield" "Sage's Robe" "Gladiator Plate" "Exquisite Leather" "Elegant Round Shield" "Champion Kite Shield"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -11,7 +11,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Saintly Chainmail" "Ornate Quiver" "Scholar's Robe" "Gilded Sallet" "Legion Gloves" "Zodiac Leather" "Mosaic Kite Shield" "Exquisite Leather" "Deerskin Gloves" "Elegant Round Shield" "Ezomyte Burgonet" "Reinforced Greaves" "Golden Mask" "Devout Chainmail" "Majestic Plate" "Occultist's Vestment" "Sadist Garb" "Sinner Tricorne" "Ezomyte Tower Shield" "Lunaris Circlet" "Silk Gloves" "Necromancer Silks" "Vaal Gauntlets" "Nightmare Bascinet" "Steelscale Gauntlets" "Destroyer Regalia" "Samite Gloves" "Destiny Leather" "Varnished Coat" "Titan Greaves" "Ironwood Buckler" "Two-Point Arrow Quiver" "Crusader Gloves" "Praetor Crown" "Silken Vest" "Hubris Circlet" "Royal Burgonet" "Iron Circlet"
+    BaseType == "Archon Kite Shield" "Zodiac Leather" "Sorcerer Boots" "Royal Burgonet" "Sadist Garb" "Desert Brigandine" "Silk Gloves" "Praetor Crown" "Vaal Spirit Shield" "Lacquered Garb" "Ezomyte Tower Shield" "Crusader Plate" "Nightmare Bascinet" "Titanium Spirit Shield" "Deerskin Gloves" "Bronzescale Gauntlets" "Raven Mask" "Exquisite Leather" "Tarnished Spirit Shield" "Destiny Leather" "Murder Mitts" "Necromancer Silks" "Golden Mask" "Gladiator Plate" "Varnished Coat" "Ornate Quiver" "Vaal Gauntlets" "Scholar's Robe"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -19,7 +19,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Carnal Mitts" "Golden Plate" "Crusader Plate" "Crusader Chainmail" "Titan Gauntlets" "Penetrating Arrow Quiver" "Sage's Robe" "Strapped Mitts" "Assassin's Mitts" "Lacquered Garb" "Leather Hood" "Branded Kite Shield" "Vaal Spirit Shield" "Pinnacle Tower Shield" "Zodiac Leather" "Spidersilk Robe" "Widowsilk Robe" "Clasped Mitts" "Bronzescale Gauntlets" "Mind Cage" "Leather Cap" "Blunt Arrow Quiver" "Mosaic Kite Shield" "Steel Gauntlets" "Great Helmet" "Full Wyrmscale" "Zealot Helmet" "Spike-Point Arrow Quiver" "Nubuck Boots" "Assassin's Garb" "Copper Plate" "Soldier Boots" "Golden Mask" "Harmonic Spirit Shield" "Dragonscale Boots" "Sinner Tricorne" "Sadist Garb" "Ezomyte Tower Shield" "Triumphant Lamellar" "Tarnished Spirit Shield" "War Buckler" "Necromancer Silks" "Legion Boots" "Corrugated Buckler" "Silken Hood" "Plate Vest" "Destroyer Regalia" "Varnished Coat" "Samite Gloves" "Destiny Leather" "Nightmare Bascinet" "Close Helmet" "Titan Greaves" "Goathide Boots" "Cutthroat's Garb" "Chain Gloves" "Ironwood Buckler" "Wool Gloves" "Ironscale Gauntlets" "Wyrmscale Gauntlets" "Praetor Crown" "Ancient Spirit Shield" "Silken Vest" "Conjurer Gloves" "Holy Chainmail" "Royal Burgonet"
+    BaseType == "Ancient Spirit Shield" "Zodiac Leather" "Royal Burgonet" "Spidersilk Robe" "Leather Cap" "Ironscale Gauntlets" "Devout Chainmail" "Assassin's Garb" "Goathide Boots" "Mosaic Kite Shield" "Close Helmet" "Soldier Boots" "Assassin's Mitts" "Strapped Mitts" "Ezomyte Burgonet" "Nubuck Boots" "Plate Vest" "Nightmare Bascinet" "Deerskin Gloves" "Samite Gloves" "Majestic Plate" "Lunaris Circlet" "Triumphant Lamellar" "Cutthroat's Garb" "Zealot Helmet" "Sinner Tricorne" "Hubris Circlet" "Copper Plate" "Steelscale Gauntlets" "Titan Gauntlets" "Holy Chainmail" "Spike-Point Arrow Quiver" "Wyrmscale Gauntlets" "Lacquered Garb" "Clasped Mitts" "Great Helmet" "Ezomyte Tower Shield" "Crusader Plate" "Conjurer Gloves" "Gilded Sallet" "Sage's Robe" "Regicide Mask" "Silken Vest" "Elegant Round Shield" "Destiny Leather" "Legion Boots" "Silken Hood" "Necromancer Silks" "Branded Kite Shield" "Saintly Chainmail" "Praetor Crown" "Reinforced Greaves" "Widowsilk Robe" "Blunt Arrow Quiver" "Crusader Gloves" "Corrugated Buckler" "Legion Gloves" "Iron Circlet" "Destroyer Regalia" "Dragonscale Boots" "Ironwood Buckler" "War Buckler" "Full Wyrmscale" "Carnal Mitts" "Pinnacle Tower Shield" "Crusader Chainmail" "Sadist Garb" "Harlequin Mask" "Vaal Spirit Shield" "Titan Greaves" "Penetrating Arrow Quiver" "Occultist's Vestment" "Golden Plate" "Wool Gloves" "Mind Cage" "Two-Point Arrow Quiver" "Steel Gauntlets" "Leather Hood" "Golden Mask" "Chain Gloves" "Varnished Coat" "Buckskin Tunic" "Harmonic Spirit Shield" "Scholar's Robe"
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Quivers" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -29,7 +29,7 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Weapons
 
 Show #.econ uni 100
-    BaseType == "Terror Claw" "Terror Maul" "Vaal Axe" "Imperial Claw" "Gavel" "Ranger Bow" "Jewelled Foil" "Citadel Bow" "Prophecy Wand" "Vile Staff" "Somatic Wand" "Cutlass" "Vaal Sceptre"
+    BaseType == "Fishing Rod" "Prophecy Wand" "Somatic Wand" "Gavel" "Ranger Bow" "Imperial Claw"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -37,7 +37,7 @@ Show #.econ uni 100
     #.import STYLE | weapon > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Calling Wand" "Lion Sword" "Death Bow" "Vaal Axe" "Opal Wand" "Tomahawk" "Assassin Bow" "Ranger Bow" "Short Bow" "Steelhead" "Maraketh Bow" "Karui Chopper" "Lathi" "Cutlass" "Eternal Sword" "Karui Sceptre" "Coronal Maul"
+    BaseType == "Jewelled Foil" "Opal Wand" "Cutlass" "Gavel" "Eternal Sword" "Ranger Bow" "Vaal Axe" "Midnight Blade" "Imperial Claw"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -45,7 +45,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Platinum Sceptre" "Terror Claw" "Kinetic Wand" "Ornate Mace" "Spiraled Wand" "Citadel Bow" "Etched Greatsword" "Vaal Blade" "Timeworn Claw" "Royal Axe" "Goat's Horn" "Short Bow" "Jasper Chopper" "Thresher Claw" "Omen Wand" "Reaver Sword" "Imperial Claw" "Opal Wand" "Steelhead" "Abyssal Axe" "Cutlass" "Karui Sceptre" "Calling Wand" "Fiend Dagger" "Vaal Axe" "Assassin Bow" "Royal Bow" "Military Staff" "Midnight Blade" "Serpentine Staff"
+    BaseType == "Omen Wand" "Death Bow" "Vile Staff" "Steelhead" "Gavel" "Ornate Mace" "Karui Chopper" "Thresher Claw" "Imperial Claw" "Abyssal Axe" "Royal Bow" "Etched Greatsword" "Karui Sceptre" "Royal Axe" "Vaal Axe" "Jasper Chopper" "Short Bow" "Vaal Blade" "Military Staff" "Terror Claw" "Calling Wand" "Spiraled Wand" "Serpentine Staff" "Ranger Bow" "Terror Maul" "Vaal Sceptre" "Lathi" "Goat's Horn" "Opal Wand" "Assassin Bow" "Platinum Sceptre" "Fiend Dagger" "Cutlass" "Tomahawk" "Kinetic Wand" "Reaver Sword" "Midnight Blade" "Timeworn Claw" "Lion Sword" "Citadel Bow"
     Class == "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Fishing Rods" "One Hand Maces" "Two Hand Maces" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "Wands" "Warstaves" #.format
     Rarity == Unique
     LinkedSockets < 5 #.format
@@ -55,21 +55,21 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 # Jewellery and Jewels
 
 Show #.econ uni 100
-    BaseType == "Iron Ring" "Heavy Belt" "Moonstone Ring" "Gold Ring" "Leather Belt" "Crimson Jewel" "Ruby Ring" "Onyx Amulet" "Two-Stone Ring" "Paua Amulet" "Turquoise Amulet" "Viridian Jewel" "Cobalt Jewel" "Amber Amulet"
+    BaseType == "Onyx Amulet" "Diamond Ring" "Viridian Jewel" "Cobalt Jewel" "Jade Amulet" "Amber Amulet" "Turquoise Amulet" "Two-Stone Ring" "Heavy Belt" "Ruby Ring" "Iron Ring" "Moonstone Ring" "Crimson Jewel" "Leather Belt" "Lapis Amulet" "Paua Amulet" "Cloth Belt"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True
     #.import STYLE | jewellery > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Iron Ring" "Heavy Belt" "Moonstone Ring" "Studded Belt" "Gold Ring" "Jade Amulet" "Topaz Ring" "Crimson Jewel" "Chain Belt" "Diamond Ring" "Cloth Belt" "Onyx Amulet" "Agate Amulet" "Amethyst Ring" "Prismatic Ring" "Lapis Amulet" "Viridian Jewel" "Cobalt Jewel"
+    BaseType == "Onyx Amulet" "Viridian Jewel" "Cobalt Jewel" "Jade Amulet" "Amethyst Ring" "Gold Ring" "Amber Amulet" "Crimson Jewel" "Moonstone Ring" "Heavy Belt" "Iron Ring" "Studded Belt" "Lapis Amulet" "Topaz Ring" "Prismatic Ring" "Agate Amulet"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True
     #.import STYLE | jewellery > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Heavy Belt" "Moonstone Ring" "Leather Belt" "Crystal Belt" "Prismatic Ring" "Chain Belt" "Cloth Belt" "Diamond Ring" "Ruby Ring" "Onyx Amulet" "Agate Amulet" "Amber Amulet" "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Viridian Jewel" "Sapphire Ring" "Turquoise Amulet"
+    BaseType == "Onyx Amulet" "Diamond Ring" "Crystal Belt" "Gold Ring" "Amethyst Ring" "Heavy Belt" "Lapis Amulet" "Leather Belt" "Viridian Jewel" "Turquoise Amulet" "Two-Stone Ring" "Moonstone Ring" "Ruby Ring" "Cobalt Jewel" "Sapphire Ring" "Amber Amulet" "Cloth Belt" "Chain Belt" "Prismatic Ring" "Agate Amulet"
     Class == "Amulets" "Belts" "Rings" "Abyss Jewels" "Jewels" #.format
     Rarity == Unique
     Foulborn True

@@ -27,7 +27,7 @@ Show #.econ uni 10 100
     #.import STYLE | weapon > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Rock Breaker" "Nightmare Mace" "Dream Mace" "War Hammer"
+    BaseType == "Nightmare Mace" "Gavel" "Auric Mace" "War Hammer" "Spiked Club" "Rock Breaker" "Ornate Mace" "Dream Mace"
     Class == "One Hand Maces" #.format
     Rarity == Unique
     Replica False

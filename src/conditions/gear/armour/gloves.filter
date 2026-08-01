@@ -13,7 +13,7 @@
 # Unique
 
 Show #.econ uni 100
-    BaseType == "Runic Gages" "Goliath Gauntlets" "Carnal Mitts" "Ancient Gauntlets" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets"
+    BaseType == "Ancient Gauntlets" "Goliath Gauntlets" "Antique Gauntlets"
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
@@ -22,7 +22,7 @@ Show #.econ uni 100
     #.import STYLE | armour > unique -> t1
 
 Show #.econ uni 10 100
-    BaseType == "Samite Gloves" "Fingerless Silk Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Zealot Gloves" "Martyr Gloves" "Runic Gauntlets" "Hydrascale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Silk Gloves" "Riveted Gloves" "Murder Mitts" "Embroidered Gloves" "Deerskin Gloves"
+    BaseType == "Ambush Mitts" "Riveted Gloves" "Murder Mitts" "Vaal Gauntlets" "Hydrascale Gauntlets" "Runic Gages" "Martyr Gloves" "Carnal Mitts" "Assassin's Mitts"
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
@@ -31,7 +31,7 @@ Show #.econ uni 10 100
     #.import STYLE | armour > unique -> t2
 
 Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
-    BaseType == "Arcanist Gloves" "Bronzescale Gauntlets" "Titan Gauntlets" "Legion Gloves" "Slink Gloves" "Crusader Gloves" "Ambush Mitts" "Assassin's Mitts" "Antique Gauntlets" "Ironscale Gauntlets" "Shagreen Gloves" "Clasped Mitts" "Soldier Gloves" "Goliath Gauntlets" "Hydrascale Gauntlets" "Silk Gloves" "Wyrmscale Gauntlets" "Steelscale Gauntlets" "Wool Gloves" "Steel Gauntlets" "Iron Gauntlets" "Murder Mitts" "Deerskin Gloves" "Mesh Gloves" "Satin Gloves" "Strapped Mitts" "Samite Gloves" "Nubuck Gloves" "Goathide Gloves" "Serpentscale Gauntlets" "Zealot Gloves" "Chain Gloves" "Carnal Mitts" "Vaal Gauntlets" "Wrapped Mitts" "Ancient Gauntlets" "Spiked Gloves" "Velvet Gloves" "Conjurer Gloves"
+    BaseType == "Eelskin Gloves" "Ancient Gauntlets" "Serpentscale Gauntlets" "Deerskin Gloves" "Goliath Gauntlets" "Wyrmscale Gauntlets" "Chain Gloves" "Legion Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Carnal Mitts" "Strapped Mitts" "Wrapped Mitts" "Satin Gloves" "Embroidered Gloves" "Arcanist Gloves" "Nubuck Gloves" "Bronzescale Gauntlets" "Slink Gloves" "Wool Gloves" "Samite Gloves" "Clasped Mitts" "Hydrascale Gauntlets" "Velvet Gloves" "Spiked Gloves" "Assassin's Mitts" "Antique Gauntlets" "Silk Gloves" "Conjurer Gloves" "Ambush Mitts" "Shagreen Gloves" "Zealot Gloves" "Murder Mitts" "Runic Gauntlets" "Iron Gauntlets" "Dragonscale Gauntlets" "Goathide Gloves" "Fingerless Silk Gloves" "Steel Gauntlets" "Crusader Gloves" "Soldier Gloves" "Bronze Gauntlets" "Mesh Gloves" "Vaal Gauntlets" "Ironscale Gauntlets"
     Class == "Gloves" #.format
     Rarity == Unique
     Replica False
