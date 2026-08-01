@@ -2,7 +2,11 @@
 
 ## 3.29c
 ### League Changes
+* Added the new **Ukatoa's Ducat**.
+* Added **economy tiering for Ducats and Enshrouding Crystals**.
+
 ### General Changes
+* General economy update.
 * Fixed a plethora of visual bugs on every non-Base strictnesses caused by an error in filter generation.
 * **Sundering Axe** is now considered a "best base" for Two Hand Axes.
 * **Gear with Memory Strands** is now more strictly filtered out across all strictnesses.

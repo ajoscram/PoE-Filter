@@ -19,30 +19,21 @@ Show
 Show #.if Show
 	BaseType == "Simulacrum Splinter"
     #.multi
-        StackSize >= 120
-	    #.import STYLE | currency -> t1
-    #.multi
-        StackSize >= 60
+        StackSize == 300
 	    #.import STYLE | currency -> t2
     #.multi
-        StackSize >= 45
+        StackSize >= 150
 	    #.import STYLE | currency -> t3
     #.multi
-        StackSize >= 30
-    	#.import STYLE | currency -> t4
-    #.multi .strict STRICTNESS_LENIENT
         StackSize >= 15
     	#.import STYLE | currency -> t4
     #.multi .strict STRICTNESS_BASE
 	    #.import STYLE | currency -> t4
 
 Show #.if Show
-	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
+	BaseType == "Timeless Maraketh Splinter"
     #.multi
-        StackSize >= 50
-	    #.import STYLE | currency -> t1
-    #.multi
-        StackSize >= 10
+        StackSize >= 30
 	    #.import STYLE | currency -> t2
     #.multi
         StackSize >= 6
@@ -50,24 +41,21 @@ Show #.if Show
     #.multi
         StackSize >= 3
     	#.import STYLE | currency -> t4
-    #.multi .strict STRICTNESS_LENIENT
+    #.multi .strict STRICTNESS_STRICT
     	#.import STYLE | currency -> t4
 
 Show #.if Show
-	BaseType == "Ritual Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter"
+	BaseType == "Ritual Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter"
     #.multi
-        StackSize >= 75
+        StackSize >= 50
 	    #.import STYLE | currency -> t2
     #.multi
-        StackSize >= 20
-	    #.import STYLE | currency -> t3
-    #.multi .strict STRICTNESS_STRICT
         StackSize >= 10
-    	#.import STYLE | currency -> t4
-    #.multi .strict STRICTNESS_LENIENT
+	    #.import STYLE | currency -> t3
+    #.multi
         StackSize >= 5
     	#.import STYLE | currency -> t4
-    #.multi .strict STRICTNESS_BASE
+    #.multi .strict STRICTNESS_LENIENT
 	    #.import STYLE | currency -> t4
 
 # Hidden

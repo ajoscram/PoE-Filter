@@ -8,23 +8,17 @@ https://www.filterblade.xyz
 # 3.29 To-Do
 * run econ.sh, but first account for the changes made and commit them.
 
-* `corpse.filter` needs to be revisited mid-league to check up on real prices.
-* `splinter.filter` needs to be revisited mid-league to check up on real prices.
-* `enshrouding_crystal.filter` needs to be revisited mid-league to check up on real prices.
-* `ducat.filter` needs to be revisited mid-league to check up on real prices.
-* `sulphur.filter` needs to be revisited mid-league to check up on real tiering. Maybe cluster with gold?
+# To-Do
+* Re-organize the "gem" section.
+
 * `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
+* `corpse.filter` needs to be revisited mid-league to check up on real prices.
 
 * Elaborate `wombgift.filter`.
 * Elaborate `vestigial.filter`.
 * Elaborate `chart.filter`.
 
-* Re-organize the "gem" section.
-
-
-# To-Do
 * Loyal's t1/t2 looks kinda tacky. Maybe some background transparency fixes that?
-
 * Re-categorize sounds, they are all over the place.
 * Change T2 non-unique rarity progression sound because it is the unique sound.
 * Sounds should be set in stone because they indicate something to the user which should be standard across styles.

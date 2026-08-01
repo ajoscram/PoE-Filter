@@ -1,9 +1,22 @@
 #.subsection Enshrouding Crystal
 
-Show
-    BaseType == "Templar Enshrouding Crystal" "Maraketh Enshrouding Crystal"
-    #.import STYLE | currency -> t2
+# Economy
 
-Show
+Show #.econ enc 100
+    BaseType == "Maraketh Enshrouding Crystal"
+    #.import STYLE | currency -> t1
+
+Show #.econ enc 10 100
+    BaseType == "Templar Enshrouding Crystal"
+    #.import STYLE | currency -> t2
+    
+Show #.econ enc 0 10
     BaseType == "Karui Enshrouding Crystal" "Imperial Enshrouding Crystal" "Vaal Enshrouding Crystal"
     #.import STYLE | currency -> t3
+
+# Catchall
+
+Show
+    BaseType "Enshrouding Crystal"
+    Class == "Currency"
+	#.import STYLE | currency -> t2
