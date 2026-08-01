@@ -225,16 +225,87 @@ Show
     FracturedItem True
     #.import jewellery > _util -> multi_t2
 
-# Legacy
+# Enchanted
 
 Show
-    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    AnyEnchantment True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    AnyEnchantment True
+    #.import weapon > _util -> multi_t2
+
+# Crucible (Legacy)
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    HasCruciblePassiveTree True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    HasCruciblePassiveTree True
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    HasCruciblePassiveTree True
     #.import jewellery > _util -> multi_t2
-    #.multi
-	    HasCruciblePassiveTree True
-    #.multi
-        Scourged True
-    #.multi
-        AnyEnchantment True
-    #.multi
-        SynthesisedItem True
+
+# Scourged (Legacy)
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    Scourged True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    Scourged True
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    Scourged True
+    #.import jewellery > _util -> multi_t2
+
+# Synthesised (Legacy)
+
+Show
+    Continue
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS
+    HasExplicitMod == MODS_VEILED_NAMED
+    SynthesisedItem True
+    #.import armour > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_WEAPONS
+    HasExplicitMod == MODS_VEILED_NAMED
+    SynthesisedItem True
+    #.import weapon > _util -> multi_t2
+
+Show
+    Continue
+    Class == CLASSES_JEWELLERY
+    HasExplicitMod == MODS_VEILED_NAMED
+    SynthesisedItem True
+    #.import jewellery > _util -> multi_t2

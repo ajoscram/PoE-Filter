@@ -25,6 +25,17 @@ Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
     Rarity == Unique
 
+# Legacy
+
+Show
+    Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
+    #.multi
+	    HasCruciblePassiveTree True
+    #.multi
+        Scourged True
+    #.multi
+        SynthesisedItem True
+
 # Fractured
 
 Show #.strict STRICTNESS_LENIENT .if Show
@@ -107,18 +118,11 @@ Show #.strict STRICTNESS_BASE .if Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY
     HasExplicitMod == MODS_VEILED_UNNAMED
 
-# Legacy
+# Enchanted
 
 Show
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS CLASSES_WEAPONS CLASSES_JEWELLERY CLASSES_JEWELS CLASSES_FLASKS
-    #.multi
-	    HasCruciblePassiveTree True
-    #.multi
-        Scourged True
-    #.multi
-        AnyEnchantment True
-    #.multi
-        SynthesisedItem True
+    AnyEnchantment True
 
 # Corrupted
 

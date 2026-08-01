@@ -5,18 +5,15 @@ https://www.craftofexile.com
 https://poedb.tw/us
 https://www.filterblade.xyz
 
-# 3.29 To-Do
-* fix all gear showing up as t2 jewellery
-
 # To-Do
-* Re-organize the "gem" section.
-
 * `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 
 * Elaborate `wombgift.filter`.
 * Elaborate `vestigial.filter`.
 * Elaborate `chart.filter`.
+
+* Re-organize the "gem" section.
 
 * Loyal's t1/t2 looks kinda tacky. Maybe some background transparency fixes that?
 * Re-categorize sounds, they are all over the place.
