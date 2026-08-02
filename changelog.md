@@ -7,7 +7,7 @@
 
 ### General Changes
 * General economy update.
-* Fixed a plethora of visual bugs on every non-Base strictnesses caused by an error in filter generation.
+* Fixed a plethora of visual bugs on every non-Base strictnesses caused by errors in filter generation.
 * **Sundering Axe** is now considered a "best base" for Two Hand Axes.
 * **Gear with Memory Strands** is now more strictly filtered out across all strictnesses.
 * **Rare "best bases" with 25 or more memory strands** are now shown in the Base strictness.
