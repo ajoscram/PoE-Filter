@@ -2,6 +2,8 @@
 
 source scripts/utils.sh
 
+set -eo pipefail
+
 [ ! -d "release" ] && mkdir "release"
 
 get_styles | while read style; do

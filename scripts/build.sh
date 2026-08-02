@@ -3,6 +3,8 @@
 source scripts/utils.sh
 source .env
 
+set -eo pipefail
+
 DOT_STAND_IN="%"
 VERSION=$(scripts/version.sh | sed "s/\./\\$DOT_STAND_IN/")
 ECON=".econ" && contains "leaguestart" $@ && ECON=""
@@ -10,14 +12,14 @@ ECON=".econ" && contains "leaguestart" $@ && ECON=""
 get_styles | while read style; do
 
     title_style=$(title $style)
-    pfg.exe "src/_main.filter" "$OUTPUT" .import STYLE=styles \> $style || exit
+    pfg.exe "src/_main.filter" "$OUTPUT" .import STYLE=styles \> $style
 
     get_strictness_values | while read strictness number; do
 
         title_strictness=$(title $strictness)
         pfg.exe "$OUTPUT" "build/$title_style/$title_strictness.filter" \
             .alias VERSION=$VERSION, STYLE=$title_style, VARIANT=$title_strictness .index \
-            .alias $DOT_STAND_IN=. .multi .strict $number .if $ECON .format || exit
+            .alias $DOT_STAND_IN=. .multi .strict $number .if $ECON .format
 
     done
 done
