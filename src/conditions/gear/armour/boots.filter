@@ -2,7 +2,7 @@
 
 #.alias ITEM_LEVEL_BOOTS_BEST   = 86
 
-#.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons" "Fugitive Boots"
+#.alias BASES_BOOTS_EXCEPTIONAL = "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Runic Sabatons"
 #.alias BASES_BOOTS_BEST        = "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots"
 
 #.alias MODS_BOOTS_EXCEPTIONAL = "Subterranean" "of the Underground" "Xopec's" "Matatl's" "Mutewind" "Sentinel's" "Infamous" "Haunted" "of Haunting"
@@ -39,4 +39,4 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Vestigial False
     #.import STYLE | armour > unique -> t3
 
-#.import template > _main { CLASS = "Boots", BASES_BEST = BASES_BOOTS_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_BOOTS_BEST, BASES_EXCEPTIONAL = BASES_BOOTS_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BOOTS_EXCEPTIONAL, MODS_GRAND = MODS_BOOTS_GRAND, MODS_GREATER = MODS_BOOTS_GREATER, MODS_LESSER = MODS_BOOTS_LESSER
+#.import template > _main { CLASS = "Boots", BASES_BEST = BASES_BOOTS_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_BOOTS_BEST, AREA_LEVEL_BEST_DROP_START = LEVEL_MAPS_T17, BASES_EXCEPTIONAL = BASES_BOOTS_EXCEPTIONAL, MODS_EXCEPTIONAL = MODS_BOOTS_EXCEPTIONAL, MODS_GRAND = MODS_BOOTS_GRAND, MODS_GREATER = MODS_BOOTS_GREATER, MODS_LESSER = MODS_BOOTS_LESSER

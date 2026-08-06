@@ -1,6 +1,7 @@
 #.subsection Quiver
 
-#.alias ITEM_LEVEL_QUIVER_BEST   = 86
+#.alias ITEM_LEVEL_QUIVER_BEST            = 86
+#.alias AREA_LEVEL_QUIVER_BEST_DROP_START = 84
 
 #.alias BASES_QUIVER_EXCEPTIONAL = "Ornate Quiver"
 #.alias BASES_QUIVER_BEST        = "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver" "Blazing Arrow Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Artillery Quiver"
@@ -46,15 +47,19 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
 
 # Progression
 
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASES_QUIVER_BEST
-    ItemLevel >= ITEM_LEVEL_QUIVER_BEST
-    #.import < _util -> craftable
-    #.import < armour > _util -> multi_t3
-
-Show #.strict STRICTNESS_BASE .if Show
+Show #.if Show
     BaseType == BASES_QUIVER_BEST
     Rarity == Rare
+    #.multi .strict STRICTNESS_BASE
+        ItemLevel >= ITEM_LEVEL_QUIVER_BEST
+        #.import < _util -> craftable
+        #.import STYLE | armour > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_QUIVER_BEST
+        #.import < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        AreaLevel < AREA_LEVEL_QUIVER_BEST_DROP_START
+    #.multi .strict STRICTNESS_BASE
 
 Show
     Class == "Quivers"

@@ -1,8 +1,9 @@
 #.subsection Hybrid
 
-#.alias ITEM_LEVEL_HYBRID_FLASK_BEST = 84
+#.alias ITEM_LEVEL_HYBRID_FLASK_BEST            = 84
+#.alias AREA_LEVEL_HYBRID_FLASK_BEST_DROP_START = 82
 
-#.alias BASE_HYBRID_FLASK_BEST       = "Hallowed Hybrid Flask"
+#.alias BASE_HYBRID_FLASK_BEST = "Hallowed Hybrid Flask"
 
 #.alias MODS_HYBRID_FLASK_GRAND   = "Enduring" "Seething" "Bubbling" "Panicked" "Foreboding" "of the Antidote" "of Liberation" "of the Necromancer" "of the Dielectric" "of Quenching" "of Assuaging" "of Thawing"
 #.alias MODS_HYBRID_FLASK_GREATER = "Cautious" "Saturated" "Effervescent" "Terrified" "Gypsum" "of the Cure" "of Freedom" "of the Conjurer" "of Restraint" "of Insulation" "of Quelling" "of Allaying" "of Entropy"
@@ -12,4 +13,4 @@
 #.import template > magic_life_mana { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER, MODS_LESSER = MODS_HYBRID_FLASK_LESSER
 #.import template > fractured { BASES_BEST = BASE_HYBRID_FLASK_BEST, MODS_GRAND = MODS_HYBRID_FLASK_GRAND, MODS_GREATER = MODS_HYBRID_FLASK_GREATER
 #.import template > quality_life_mana { BASES_BEST = BASE_HYBRID_FLASK_BEST
-#.import template > progression_life_mana { CLASS = "Hybrid Flasks", BASES_BEST = BASE_HYBRID_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_HYBRID_FLASK_BEST
+#.import template > progression_life_mana { CLASS = "Hybrid Flasks", BASES_BEST = BASE_HYBRID_FLASK_BEST, ITEM_LEVEL_BEST = ITEM_LEVEL_HYBRID_FLASK_BEST, AREA_LEVEL_BEST_DROP_START = AREA_LEVEL_HYBRID_FLASK_BEST_DROP_START

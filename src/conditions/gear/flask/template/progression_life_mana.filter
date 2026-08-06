@@ -9,7 +9,7 @@ Show #.strict STRICTNESS_BASE .if Show
 Show #.strict STRICTNESS_BASE .if Show
     BaseType == BASES_BEST
     Rarity == Magic
-    AreaLevel < LEVEL_YELLOW_MAPS_START
+    AreaLevel < AREA_LEVEL_BEST_DROP_START
     #.import < < _util -> craftable
 
 Show

@@ -6,6 +6,8 @@ https://poedb.tw/us
 https://www.filterblade.xyz
 
 # To-Do
+* Change progressions so that only the best bases with the best item level can drop in the area level or greater that corresponds to them, otherwise drop the best base. This should happen up until lenient and should affect everything where best bases are concerned.
+
 * `amulet.filter` needs to be revisited mid-league to check up on real talisman prices.
 * `corpse.filter` needs to be revisited mid-league to check up on real prices.
 

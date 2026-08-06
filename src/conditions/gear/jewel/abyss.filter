@@ -123,17 +123,18 @@ Show
     #.import < _util -> craftable
     #.import < jewellery > _util -> multi_t3
 
-Show #.strict STRICTNESS_LENIENT .if Show
+Show #.if Show
     Class == "Abyss Jewels"
-    Rarity == Rare
     AreaLevel >= LEVEL_WHITE_MAPS_START
-    #.import STYLE | jewellery > rare -> t3
-
-Show #.strict STRICTNESS_BASE .if Show
-    Class == "Abyss Jewels"
-    Rarity == Magic
-    AreaLevel >= LEVEL_WHITE_MAPS_START
-    #.import STYLE | jewellery > magic -> t3
+    #.multi .strict STRICTNESS_BASE
+        Rarity == Rare
+        #.import STYLE | jewellery > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+        Rarity == Rare
+        #.import STYLE | jewellery > rare -> t4
+    #.multi .strict STRICTNESS_BASE
+        Rarity == Magic
+        #.import STYLE | jewellery > magic -> t4
 
 Show
     Class == "Abyss Jewels"

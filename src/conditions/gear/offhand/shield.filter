@@ -1,6 +1,7 @@
 #.subsection Shield
 
-#.alias ITEM_LEVEL_SHIELD_BEST   = 86
+#.alias ITEM_LEVEL_SHIELD_BEST            = 86
+#.alias AREA_LEVEL_SHIELD_BEST_DROP_START = 84
 
 #.alias BASES_SHIELD_EXCEPTIONAL = "Heat-attuned Tower Shield" "Cold-attuned Buckler" "Transfer-attuned Spirit Shield"
 #.alias BASES_SHIELD_BEST        = "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Imperial Buckler" "Crusader Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Champion Kite Shield" "Archon Kite Shield" "Supreme Spiked Shield"
@@ -56,15 +57,19 @@ Show
     #.import < _util -> craftable
     #.import < armour > _util -> multi_t2
 
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASES_SHIELD_BEST
-    ItemLevel >= ITEM_LEVEL_SHIELD_BEST
-    #.import < _util -> craftable
-    #.import < armour > _util -> multi_t3
-
-Show #.strict STRICTNESS_BASE .if Show
+Show #.if Show
     BaseType == BASES_SHIELD_BEST
     Rarity == Rare
+    #.multi .strict STRICTNESS_BASE
+        ItemLevel >= ITEM_LEVEL_SHIELD_BEST
+        #.import < _util -> craftable
+        #.import STYLE | armour > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_SHIELD_BEST
+        #.import < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        AreaLevel < AREA_LEVEL_SHIELD_BEST_DROP_START
+    #.multi .strict STRICTNESS_BASE
 
 Show
     Class == "Shields"

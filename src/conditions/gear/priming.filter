@@ -82,11 +82,13 @@ Show
 # 3 Links
 
 Show
+    Continue
     Class == CLASSES_ARMOUR CLASSES_OFFHANDS
     SocketGroup RGB
     #.import armour > _util -> multi_t3_full
 
 Show
+    Continue
     Class == CLASSES_WEAPONS
     SocketGroup RGB
     #.import weapon > _util -> multi_t3_full

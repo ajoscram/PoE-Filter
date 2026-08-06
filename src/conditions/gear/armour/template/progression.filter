@@ -7,18 +7,19 @@ Show
     #.import < < _util -> craftable
     #.import < _util -> multi_t2
 
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASES_BEST
-    ItemLevel >= ITEM_LEVEL_BEST
-    #.import < < _util -> craftable
-    #.import < _util -> multi_t3
-
 Show #.if Show
     BaseType == BASES_BEST
-    #.multi .strict STRICTNESS_LENIENT 
-        Rarity == Rare
+    Rarity == Rare
     #.multi .strict STRICTNESS_BASE
+        ItemLevel >= ITEM_LEVEL_BEST
         #.import < < _util -> craftable
+        #.import STYLE | armour > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_BEST
+        #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        AreaLevel < AREA_LEVEL_BEST_DROP_START
+    #.multi .strict STRICTNESS_BASE
 
 Show #.if Show
     Class == CLASS

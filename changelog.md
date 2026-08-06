@@ -1,10 +1,23 @@
 # Curse of the Allflame
 
+## 3.29d
+### League Changes
+* **Dead Man's Sulphur** has been made more visible as a result of it's increased price.
+### General Changes
+* Cleaned up **Divination Card** drops by manually hiding cards that are not listed in `poe.ninja` but are known to be useless.
+* Cleaned up the list of **bottom tier Divination Cards that always show**. In general these are cards that reward some sort of currency.
+* **"Best base" progressions** are now less visible for all non-jewellery gear across all strictnesses.
+* **Ring, amulet, belt and flask progressions** are now less visible, with the exception of rares which are now always shown during the campaign.
+* **Fugitive Boots** are no longer considered en "exceptional base".
+* **Base and abyss jewels** are now less visible across all strictnesses.
+* **Amethyst Ring**, **Prismatic Ring** and **Diamond Ring** are now less visible.
+* Fixed a bug where **Chromatic items** were shown for longer than intended.
+* Fixed a bug where **Life and Mana Flasks** had the wrong item level as the best possible for those classes.
+
 ## 3.29c
 ### League Changes
 * Added the new **Ukatoa's Ducat**.
 * Added **economy tiering for Ducats and Enshrouding Crystals**.
-
 ### General Changes
 * General economy update.
 * Fixed a plethora of visual bugs on every non-Base strictnesses caused by errors in filter generation.

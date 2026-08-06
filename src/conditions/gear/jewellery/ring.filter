@@ -1,12 +1,12 @@
 #.subsection Ring
 
-#.alias ITEM_LEVEL_RING_BEST   = 85
+#.alias ITEM_LEVEL_RING_BEST = 85
 
 #.alias BASES_RING_EXQUISITE   = "Cogwork Ring" "Composite Ring" "Geodesic Ring" "Helical Ring" "Manifold Ring" "Ratcheting Ring" "Dusk Ring" "Gloam Ring" "Shadowed Ring" "Formless Ring"
 #.alias BASES_RING_EXCEPTIONAL = "Cryonic Ring" "Enthalpic Ring" "Fugitive Ring" "Organic Ring" "Synaptic Ring" "Nameless Ring" "Penumbra Ring" "Tenebrous Ring"
-#.alias BASES_RING_GRAND       = "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-#.alias BASES_RING_GREAT       = "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Bone Ring" "Moonstone Ring" "Diamond Ring"
-#.alias BASES_RING_LESSER      = "Coral Ring" "Iron Ring" "Paua Ring" "Gold Ring"
+#.alias BASES_RING_GRAND       = "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
+#.alias BASES_RING_GREAT       = "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Bone Ring" "Moonstone Ring" "Amethyst Ring" "Prismatic Ring"
+#.alias BASES_RING_LESSER      = "Coral Ring" "Iron Ring" "Paua Ring" "Gold Ring" "Diamond Ring"
 
 #.alias MODS_RING_EXCEPTIONAL = "Subterranean" "Sentinel's" "Xopec's" "Guatelitzi's" "of Guatelitzi" "of Infamy" "of the Underground"
 #.alias MODS_RING_GRAND       = "Virile" "Ultramarine" "Resplendent" "Annealed" "Cremating" "Entombing" "Electrocuting" "Shocking" "Overpowering" "Perandus'" "of the Gods" "of the Wind" "of the Genius" "of the Comet" "of Excavation" "of Expertise" "of Skill" "of the Ranger" "of Ryslatha" "of Nirvana" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of the Rainbow" "of Flames" "of Rime" "of Voltage" "of Fleshbinding"
@@ -39,4 +39,4 @@ Show #.econ uni 1 10 .strict STRICTNESS_STRICT .if Show
     Foulborn False
     #.import STYLE | jewellery > unique -> t3
 
-#.import template > _main { CLASS = "Rings", ITEM_LEVEL_BEST = ITEM_LEVEL_RING_BEST, MODS_EXCEPTIONAL = MODS_RING_EXCEPTIONAL, MODS_GRAND = MODS_RING_GRAND, MODS_GREATER = MODS_RING_GREATER, MODS_LESSER = MODS_RING_LESSER, BASES_BEST = BASES_RING_EXCEPTIONAL BASES_RING_GRAND, BASES_EXQUISITE = BASES_RING_EXQUISITE, BASES_EXCEPTIONAL = BASES_RING_EXCEPTIONAL, BASES_GRAND = BASES_RING_GRAND, BASES_GREAT = BASES_RING_GREAT, BASES_LESSER = BASES_RING_LESSER
+#.import template > _main { CLASS = "Rings", ITEM_LEVEL_BEST = ITEM_LEVEL_RING_BEST, AREA_LEVEL_BEST_DROP_START = LEVEL_MAPS_T16, MODS_EXCEPTIONAL = MODS_RING_EXCEPTIONAL, MODS_GRAND = MODS_RING_GRAND, MODS_GREATER = MODS_RING_GREATER, MODS_LESSER = MODS_RING_LESSER, BASES_BEST = BASES_RING_EXCEPTIONAL BASES_RING_GRAND, BASES_EXQUISITE = BASES_RING_EXQUISITE, BASES_EXCEPTIONAL = BASES_RING_EXCEPTIONAL, BASES_GRAND = BASES_RING_GRAND, BASES_GREAT = BASES_RING_GREAT, BASES_LESSER = BASES_RING_LESSER

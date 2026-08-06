@@ -1,15 +1,18 @@
 # Progression
 
-Show #.strict STRICTNESS_STRICT .if Show
-    Class == CLASS
-    ItemLevel >= ITEM_LEVEL_BEST
-    #.import < _util -> multi_t3
-    
 Show #.strict STRICTNESS_BASE .if Show
     Class == CLASS
-    AreaLevel < LEVEL_YELLOW_MAPS_START
-    AreaLevel >= LEVEL_WHITE_MAPS_START
+    ItemLevel >= ITEM_LEVEL_BEST
     #.import < < _util -> craftable
+    #.import < _util -> multi_t3
+
+Show #.if Show
+    Class == CLASS
+    #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_BEST
+    #.multi .strict STRICTNESS_BASE
+        AreaLevel >= LEVEL_WHITE_MAPS_START
 
 Show
     Class == CLASS

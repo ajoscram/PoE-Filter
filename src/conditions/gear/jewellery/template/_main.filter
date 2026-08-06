@@ -1,8 +1,10 @@
 #.import exquisite_base
 #.import exceptional_mods
-#.import rare
-#.import magic
+#.import mods_rare
+#.import mods_magic
 #.import fractured
 #.import influenced
 #.import memory_strands
-#.import progression
+#.import progression_rare
+#.import progression_magic
+#.import progression_normal

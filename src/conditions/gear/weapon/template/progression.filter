@@ -1,14 +1,18 @@
 # Progression
 
-Show #.strict STRICTNESS_STRICT .if Show
-    BaseType == BASES_BEST
-    ItemLevel >= ITEM_LEVEL_WEAPON_BEST
-    #.import < < _util -> craftable
-    #.import < _util -> multi_t3
-
-Show #.strict STRICTNESS_BASE .if Show
+Show #.if Show
     BaseType == BASES_BEST
     Rarity == Rare
+    #.multi .strict STRICTNESS_BASE
+        ItemLevel >= ITEM_LEVEL_WEAPON_BEST
+        #.import < < _util -> craftable
+        #.import STYLE | weapon > rare -> t3
+    #.multi .strict STRICTNESS_LENIENT
+        ItemLevel >= ITEM_LEVEL_WEAPON_BEST
+        #.import < < _util -> craftable
+    #.multi .strict STRICTNESS_LENIENT
+        AreaLevel < LEVEL_MAPS_T17
+    #.multi .strict STRICTNESS_BASE
 
 Show
     Class == CLASS

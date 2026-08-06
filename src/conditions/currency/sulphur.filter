@@ -1,15 +1,15 @@
 #.subsection Dead Man's Sulphur
 
-Show #.if Show
+Show
 	BaseType == "Dead Man's Sulphur"
     #.multi
-        StackSize >= 25000
+        StackSize >= 15000
 	    #.import STYLE | currency -> t1
     #.multi
-        StackSize >= 2500
+        StackSize >= 1500
 	    #.import STYLE | currency -> t2
     #.multi
-        StackSize >= 250
+        StackSize >= 150
 	    #.import STYLE | currency -> t3
     #.multi
     	#.import STYLE | currency -> t4
