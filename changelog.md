@@ -14,6 +14,7 @@
 * **Amethyst Ring**, **Prismatic Ring** and **Diamond Ring** are now less visible.
 * Fixed a bug where **Chromatic items** were shown for longer than intended.
 * Fixed a bug where **Life and Mana Flasks** had the wrong item level as the best possible for those classes.
+* Fixed a bug where **Runic Crown** was considered an "exceptional base" instead of a "best base".
 
 ## 3.29c
 ### League Changes

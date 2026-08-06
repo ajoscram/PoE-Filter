@@ -2,8 +2,8 @@
 
 #.alias ITEM_LEVEL_HELMET_BEST = 85
 
-#.alias BASES_HELMET_EXCEPTIONAL = "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
-#.alias BASES_HELMET_BEST        = "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Torturer's Mask"
+#.alias BASES_HELMET_EXCEPTIONAL = "Penitent Mask" "Archdemon Crown" "Blizzard Crown"
+#.alias BASES_HELMET_BEST        = "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Torturer's Mask" "Runic Crown"
 
 #.alias MODS_HELMET_EXCEPTIONAL = "Subterranean" "of the Underground" "Xopec's" "of Puhuarte" "Redblade" "of the Sentinel" "Infamous" "of Infamy" "Haunted" "of Haunting"
 #.alias MODS_HELMET_GRAND       = "Athlete's" "Masterwork" "Runed" "Whitesmith's" "Cherub's" "Illusory" "Hallowed" "Inspired" "Zaffre" "Durable" "Legend's" "Seraphim's" "Unassailable" "Seething" "Vaporous" "Mirage's" "Impregnable" "Encased" "of the Gods" "of the Blur" "of Raiding" "of Grandmastery" "of Lioneye" "of the Phoenix" "of Tzteosh" "of Haast" "of Ephij" "of Bameth" "of Everlasting" "of Nullification" "of the Genius" "of Ardour" "of Runes"
