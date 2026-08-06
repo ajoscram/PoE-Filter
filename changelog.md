@@ -8,6 +8,7 @@
 * Cleaned up the list of **bottom tier Divination Cards that always show**. In general these are cards that reward some sort of currency.
 * **"Best base" progressions** are now less visible for all non-jewellery gear across all strictnesses.
 * **Ring, amulet, belt and flask progressions** are now less visible, with the exception of rares which are now always shown during the campaign.
+* **Fractured and influenced armours and weapons** are now less visible.
 * **Fugitive Boots** are no longer considered en "exceptional base".
 * **Base and abyss jewels** are now less visible across all strictnesses.
 * **Amethyst Ring**, **Prismatic Ring** and **Diamond Ring** are now less visible.

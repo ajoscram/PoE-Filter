@@ -19,11 +19,9 @@ Show #.strict STRICTNESS_STRICT .if Show
     BaseType == BASES_BEST
     FracturedItem True
     ItemLevel >= ITEM_LEVEL_WEAPON_BEST
-    #.import < _util -> multi_t2_rare
-    #.import < _util -> multi_t2_magic
+    #.import < _util -> multi_t3_rare
+    #.import < _util -> multi_t3_magic
 
 Show #.strict STRICTNESS_LENIENT .if Show
     BaseType == BASES_BEST
     FracturedItem True
-    #.import < _util -> multi_t3_rare
-    #.import < _util -> multi_t3_magic
